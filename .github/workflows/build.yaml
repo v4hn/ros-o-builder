@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: jspricke/ros-deb-builder-action@main
+      - uses: jspricke/ros-deb-builder-action@rosotest
         with:
           ROS_DISTRO: debian
           DEB_DISTRO: jammy
