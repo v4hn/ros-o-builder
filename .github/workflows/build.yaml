@@ -7,10 +7,22 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    env:
+      ROS_DISTRO: debian
+      DEB_DISTRO: jammy
     steps:
-      - uses: jspricke/ros-deb-builder-action@rosotest
+      - name: Cache ccache
+        uses: pat-s/always-upload-cache@v3
         with:
-          ROS_DISTRO: debian
-          DEB_DISTRO: jammy
+          path: /home/runner/.cache/ccache
+          key: ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}-${{ github.sha }}
+          restore-keys: |
+            ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}-${{ github.sha }}
+            ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}
+      - uses: v4hn/ros-deb-builder-action@rosotest
+        timeout-minutes: 350
+        with:
+          ROS_DISTRO: ${{ env.ROS_DISTRO }}
+          DEB_DISTRO: ${{ env.DEB_DISTRO }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SBUILD_CONF: '$verbose = 1;'
