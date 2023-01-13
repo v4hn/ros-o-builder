@@ -12,13 +12,12 @@ jobs:
       DEB_DISTRO: jammy
     steps:
       - name: Cache ccache
-        uses: pat-s/always-upload-cache@v3
+        uses: actions/cache@v3
         with:
           path: /home/runner/.cache/ccache
-          key: ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}-${{ github.sha }}
+          key: ccache-${{ inputs.DEB_DISTRO }}-${{ inputs.ROS_DISTRO }}-${{ github.sha }}
           restore-keys: |
-            ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}-${{ github.sha }}
-            ccache-${{ env.ROS_DISTRO }}-${{ env.DEB_DISTRO }}
+            ccache-${{ inputs.DEB_DISTRO }}-${{ inputs.ROS_DISTRO }}
       - uses: v4hn/ros-deb-builder-action@rosotest
         timeout-minutes: 350
         with:
