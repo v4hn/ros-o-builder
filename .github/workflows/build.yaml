@@ -27,3 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SBUILD_CONF: '$verbose = 1;'
           ROSDEP_SOURCE: yaml file:///home/runner/work/ros-o-builder/ros-o-builder/rosdep.yaml ${{ env.ROS_DISTRO }}
+          SQUASH_HISTORY: true
