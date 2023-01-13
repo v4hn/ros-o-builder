@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     env:
-      ROS_DISTRO: debian
+      ROS_DISTRO: roso
       DEB_DISTRO: jammy
     steps:
       - name: Cache ccache
