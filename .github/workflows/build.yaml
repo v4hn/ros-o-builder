@@ -27,5 +27,5 @@ jobs:
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SBUILD_CONF: '$verbose = 1;'
-          ROSDEP_SOURCE: yaml file:///home/runner/work/ros-o-builder/ros-o-builder/rosdep.yaml debian
+          ROSDEP_SOURCE: rosdep.yaml
           SQUASH_HISTORY: true
