@@ -20,6 +20,7 @@ jobs:
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ github.sha }}
           restore-keys: |
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
+            ccache-${{ env.DEB_DISTRO }}
       - uses: v4hn/ros-deb-builder-action@rosotest
         timeout-minutes: 350
         with:
