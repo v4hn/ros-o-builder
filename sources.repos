@@ -51,10 +51,11 @@ repositories:
     type: git
     url: https://github.com/ros/cmake_modules.git
     version: 0.4-devel
-  cob_extern:
-    type: git
-    url: https://github.com/ipa320/cob_extern.git
-    version: indigo_dev
+  # ExternalProject is explicitly not supported in sbuild
+  #cob_extern:
+  #  type: git
+  #  url: https://github.com/ipa320/cob_extern.git
+  #  version: indigo_dev
   common_msgs:
     type: git
     url: https://github.com/ros/common_msgs.git
