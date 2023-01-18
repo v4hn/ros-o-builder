@@ -14,7 +14,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Cache ccache
-        uses: actions/cache@v3
+        uses: actions/cache/restore@v3
         with:
           path: /home/runner/.cache/ccache
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ github.sha }}
@@ -32,3 +32,8 @@ jobs:
           SQUASH_HISTORY: true
           CONTINUE_ON_ERROR: true
           PUSH_ON_ERROR: true
+      - uses: actions/cache/save@v3
+        if: always() # save cache on timeout too
+        with:
+          path: /home/runner/.cache/ccache
+          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ github.sha }}
