@@ -10,13 +10,14 @@ jobs:
     env:
       ROS_DISTRO: one
       DEB_DISTRO: jammy
+      CCACHE_PATH: /home/runner/.cache/ccache
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Cache ccache
         uses: actions/cache/restore@v3
         with:
-          path: /home/runner/.cache/ccache
+          path: ${{ env.CCACHE_PATH }}
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ github.sha }}
           restore-keys: |
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
@@ -35,5 +36,5 @@ jobs:
       - uses: actions/cache/save@v3
         if: always() # save cache on timeout too
         with:
-          path: /home/runner/.cache/ccache
+          path: ${{ env.CCACHE_PATH }}
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ github.sha }}
