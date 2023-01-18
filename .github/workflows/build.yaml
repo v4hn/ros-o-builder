@@ -23,7 +23,6 @@ jobs:
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
             ccache-${{ env.DEB_DISTRO }}
       - uses: v4hn/ros-deb-builder-action@rosotest
-        timeout-minutes: 350
         with:
           ROS_DISTRO: ${{ env.ROS_DISTRO }}
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
@@ -31,6 +30,7 @@ jobs:
           SBUILD_CONF: '$verbose = 1;'
           ROSDEP_SOURCE: rosdep.yaml
           SQUASH_HISTORY: true
+          BUILD_TIMEOUT: 350
           CONTINUE_ON_ERROR: true
           PUSH_ON_ERROR: true
       - uses: actions/cache/save@v3
