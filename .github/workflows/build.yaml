@@ -10,14 +10,16 @@ jobs:
     with:
       repos: ros-robot
   ros-desktop:
-    uses: ./.github/workflows/debs-from-repos.yaml
+    if: always()
     needs: ros-robot
+    uses: ./.github/workflows/debs-from-repos.yaml
     with:
       repos: ros-desktop
       depends: ros-robot
   ros-universe:
-    uses: ./.github/workflows/debs-from-repos.yaml
+    if: always()
     needs: ros-desktop
+    uses: ./.github/workflows/debs-from-repos.yaml
     with:
       repos: ros-universe
       depends: ros-desktop
