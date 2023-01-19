@@ -1,8 +1,23 @@
 repositories:
+  actionlib:
+    url: https://github.com/ros/actionlib.git
+    version: noetic-devel
+  angles:
+    type: git
+    url: https://github.com/ros/angles.git
+    version: master
+  bond_core:
+    type: git
+    url: https://github.com/ros-o/bond_core
+    version: obese-devel
   class_loader:
     type: git
-    url: https://github.com/ros/class_loader
+    url: https://github.com/ros/class_loader.git
     version: melodic-devel
+  control_msgs:
+    type: git
+    url: https://github.com/ros-controls/control_msgs.git
+    version: kinetic-devel
   cmake_modules:
     type: git
     url: https://github.com/ros/cmake_modules.git
@@ -10,6 +25,22 @@ repositories:
   common_msgs:
     type: git
     url: https://github.com/ros/common_msgs.git
+    version: noetic-devel
+  diagnostics:
+    type: git
+    url: https://github.com/ros-o/diagnostics.git
+    version: obese-devel
+  dynamic_reconfigure:
+    type: git
+    url: https://github.com/ros/dynamic_reconfigure.git
+    version: noetic-devel
+  executive_smach:
+    type: git
+    url: https://github.com/ros/executive_smach.git
+    version: noetic-devel
+  filters:
+    type: git
+    url: https://github.com/ros/filters.git
     version: noetic-devel
   gencpp:
     type: git
@@ -35,6 +66,22 @@ repositories:
     type: git
     url: https://github.com/ros/genpy.git
     version: main
+  geometry:
+    type: git
+    url: https://github.com/ros-o/geometry
+    version: obese-devel
+  geometry2:
+    type: git
+    url: https://github.com/ros/geometry2
+    version: noetic-devel
+  joint_state_publisher:
+    type: git
+    url: https://github.com/ros/joint_state_publisher
+    version: noetic-devel
+  kdl_parser:
+    type: git
+    url: https://github.com/ros-o/kdl_parser
+    version: obese-devel
   message_generation:
     type: git
     url: https://github.com/ros/message_generation.git
@@ -43,9 +90,13 @@ repositories:
     type: git
     url: https://github.com/ros/message_runtime.git
     version: kinetic-devel
+  nodelet_core:
+    type: git
+    url: https://github.com/ros/nodelet_core.git
+    version: noetic-devel
   pluginlib:
     type: git
-    url: https://github.com/ros-o/pluginlib
+    url: https://github.com/ros-o/pluginlib.git
     version: obese-devel
   ros:
     type: git
@@ -61,7 +112,7 @@ repositories:
     version: kinetic-devel
   ros_environment:
     type: git
-    url: https://github.com/ros-o/ros_environment
+    url: https://github.com/ros-o/ros_environment.git
     version: debian
   rosbag_migration_rule:
     type: git
@@ -69,7 +120,7 @@ repositories:
     version: master
   rosconsole:
     type: git
-    url: https://github.com/ros-o/rosconsole
+    url: https://github.com/ros-o/rosconsole.git
     version: obese-devel
   rosconsole_bridge:
     type: git
@@ -79,6 +130,10 @@ repositories:
     type: git
     url: https://github.com/ros/roscpp_core.git
     version: noetic-devel
+  roslint:
+    type: git
+    url: https://github.com/ros/roslint.git
+    version: master
   roslisp:
     type: git
     url: https://github.com/ros/roslisp.git
@@ -95,3 +150,11 @@ repositories:
     type: git
     url: https://github.com/ros/std_msgs.git
     version: kinetic-devel
+  urdf:
+    type: git
+    url: https://github.com/ros-o/urdf
+    version: obese-devel
+  xacro:
+    type: git
+    url: https://github.com/ros/xacro.git
+    version: noetic-devel
