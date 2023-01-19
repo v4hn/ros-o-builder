@@ -9,8 +9,20 @@ jobs:
     uses: ./.github/workflows/debs-from-repos.yaml
     with:
       repos: ros-robot
-  deploy:
+  ros-desktop:
+    uses: ./.github/workflows/debs-from-repos.yaml
     needs: ros-robot
+    with:
+      repos: ros-desktop
+      depends: ros-robot
+  ros-universe:
+    uses: ./.github/workflows/debs-from-repos.yaml
+    needs: ros-desktop
+    with:
+      repos: ros-universe
+      depends: ros-desktop
+  deploy:
+    needs: ros-universe
     if: always()
     runs-on: ubuntu-22.04
     env:
@@ -21,7 +33,7 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-ros-core-${{ github.sha }}
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-ros-universe-${{ github.sha }}
       - uses: v4hn/ros-deb-builder-action/deploy@rosotest
         if: always() # alternatively success()
         with:
