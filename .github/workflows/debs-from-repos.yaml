@@ -1,0 +1,74 @@
+on:
+  workflow_call:
+    inputs:
+      repos:
+        type: string
+      depends:
+        type: string
+      cache_with_failures:
+        type: boolean
+        default: false
+
+# json use example:
+#  test:
+#    needs: build
+#    strategy:
+#      matrix:
+#        include:
+#        - ${{ fromjson(inputs.build-config) }}
+#    runs-on: ubuntu-latest
+#    steps:
+#    - run: echo "$MATRIX"
+#      env:
+#        MATRIX: ${{ tojson(matrix) }}
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    env:
+      ROS_DISTRO: one
+      DEB_DISTRO: jammy
+      CCACHE_PATH: /home/runner/.cache/ccache
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: Use apt packages from ${{ inputs.depends }}
+        if: ${{ inputs.depends }}
+        uses: actions/cache/restore@v3
+        with:
+          path: apt_repo
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}
+      - name: Use ccache
+        uses: actions/cache/restore@v3
+        with:
+          path: ${{ env.CCACHE_PATH }}
+          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+          restore-keys: |
+            ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}
+      - uses: v4hn/ros-deb-builder-action/build@rosotest
+        timeout-minutes: 340
+        with:
+          ROS_DISTRO: ${{ env.ROS_DISTRO }}
+          DEB_DISTRO: ${{ env.DEB_DISTRO }}
+          SBUILD_CONF: '$verbose = 1;'
+          ROSDEP_SOURCE: rosdep.yaml
+          REPOS_FILE: ${{ inputs.repos }}.repos
+          CONTINUE_ON_ERROR: true
+      - name: store ccache
+        uses: actions/cache/save@v3
+        if: always() # save cache on timeout too
+        with:
+          path: ${{ env.CCACHE_PATH }}
+          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+      - name: cache apt repo unconditionally
+        uses: actions/cache/save@v3
+        if: inputs.cache_with_failures && always() # alternatively success()
+        with:
+          path: /home/runner/apt_repo
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+      - name: cache apt repo on success
+        uses: actions/cache/save@v3
+        if: inputs.cache_with_failures == 'false' && success()
+        with:
+          path: /home/runner/apt_repo
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
