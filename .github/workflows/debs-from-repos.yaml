@@ -33,7 +33,7 @@ jobs:
         if: ${{ inputs.depends }}
         uses: actions/cache/restore@v3
         with:
-          path: apt_repo
+          path: /home/runner/apt_repo
           key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}
       - name: Use ccache
         uses: actions/cache/restore@v3
