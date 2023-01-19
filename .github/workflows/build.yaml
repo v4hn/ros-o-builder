@@ -10,3 +10,23 @@ jobs:
     with:
       repos: ros-core
       cache_with_failures: true
+  deploy:
+    needs: ros-core
+    runs-on: ubuntu-22.04
+    env:
+      ROS_DISTRO: one
+      DEB_DISTRO: jammy
+    steps:
+      - name: get apt packages from ros-core
+        uses: actions/cache/restore@v3
+        with:
+          path: /home/runner/apt_repo
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-ros-core-${{ github.sha }}
+      - uses: v4hn/ros-deb-builder-action/deploy@rosotest
+        if: always() # alternatively success()
+        with:
+          ROS_DISTRO: ${{ env.ROS_DISTRO }}
+          DEB_DISTRO: ${{ env.DEB_DISTRO }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+
