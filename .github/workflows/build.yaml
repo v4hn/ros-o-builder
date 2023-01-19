@@ -12,6 +12,7 @@ jobs:
       cache_with_failures: true
   deploy:
     needs: ros-core
+    if: always()
     runs-on: ubuntu-22.04
     env:
       ROS_DISTRO: one
