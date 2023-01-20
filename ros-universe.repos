@@ -53,7 +53,7 @@ repositories:
     version: master
 #  eml:
 #    type: git
-#    url: https://github.com/ros-o/eml
+#    url: https://github.com/ros-o/eml.git
 #    version: main
   ethercat_grant:
     type: git
@@ -65,12 +65,16 @@ repositories:
     version: melodic-devel
   fake_joint:
     type: git
-    url: https://github.com/ros-o/fake_joint
+    url: https://github.com/ros-o/fake_joint.git
     version: obese-devel
   four_wheel_steering_msgs:
     type: git
-    url: https://github.com/ros-drivers/four_wheel_steering_msgs
+    url: https://github.com/ros-drivers/four_wheel_steering_msgs.git
     version: master
+  gazebo_ros_pkgs:
+    type: git
+    url: https://github.com/ros-simulation/gazebo_ros_pkgs.git
+    version: noetic-devel
   graph_msgs:
     type: git
     url: https://github.com/PickNikRobotics/graph_msgs.git
@@ -95,6 +99,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/jsk_common.git
     version: obese-devel
+  jsk_visualization:
+    type: git
+    url: https://github.com/jsk-ros-pkg/jsk_visualization.git
+    version: master
   laser_assembler:
     type: git
     url: https://github.com/ros-perception/laser_assembler.git
@@ -231,6 +239,10 @@ repositories:
 #    type: git
 #    url: https://github.com/ros/urdf_sim_tutorial.git
 #    version: ros1
+  usb_cam:
+    type: git
+    url: https://github.com/ros-drivers/usb_cam
+    version: develop
   vision_opencv:
     type: git
     url: https://github.com/ros-perception/vision_opencv.git
