@@ -44,7 +44,7 @@ jobs:
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
       - name: Build packages
         uses: v4hn/ros-deb-builder-action/build@rosotest
-        timeout-minutes: 340 # 20min is a very generous buffer for storing
+        timeout-minutes: 350 # 10min is a generous buffer for storing
         with:
           ROS_DISTRO: ${{ env.ROS_DISTRO }}
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
