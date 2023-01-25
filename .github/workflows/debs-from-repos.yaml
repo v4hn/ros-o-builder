@@ -39,9 +39,8 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: ${{ env.CCACHE_PATH }}
-          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
           restore-keys: |
-            ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
       - name: Build packages
         uses: v4hn/ros-deb-builder-action/build@rosotest
@@ -58,7 +57,7 @@ jobs:
         if: always() # save cache on timeout too
         with:
           path: ${{ env.CCACHE_PATH }}
-          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+          key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
       - name: Cache apt repo unconditionally
         uses: actions/cache/save@v3
         if: always()
