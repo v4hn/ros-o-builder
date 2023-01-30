@@ -37,7 +37,7 @@ jobs:
         with:
           path: /home/runner/apt_repo
           key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}
-      - name: Require built dependencies for ${{ inputs.depends }}
+      - name: Require built dependencies ${{ inputs.depends }}
         if: ${{ inputs.depends && steps.depends-cache.outputs.cache-hit != 'true' }}
         run: exit 1
       - name: Use ccache
