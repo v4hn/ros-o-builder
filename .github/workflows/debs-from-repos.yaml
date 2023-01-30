@@ -26,15 +26,20 @@ jobs:
       ROS_DISTRO: one
       DEB_DISTRO: jammy
       CCACHE_PATH: /home/runner/.cache/ccache
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Use apt packages from ${{ inputs.depends }}
+        id: depends-cache
         if: ${{ inputs.depends }}
         uses: actions/cache/restore@v3
         with:
           path: /home/runner/apt_repo
           key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}
+      - name: Require built dependencies for ${{ inputs.depends }}
+        if: ${{ inputs.depends && steps.depends-cache.outputs.cache-hit != 'true' }}
+        run: exit 1
       - name: Use ccache
         uses: actions/cache/restore@v3
         with:
@@ -44,7 +49,7 @@ jobs:
             ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
       - name: Build packages
         uses: v4hn/ros-deb-builder-action/build@rosotest
-        timeout-minutes: 350 # 10min is a generous buffer for storing
+        timeout-minutes: 330
         with:
           ROS_DISTRO: ${{ env.ROS_DISTRO }}
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
