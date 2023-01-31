@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-      - name: Use apt packages from ${{ inputs.depends }}
+      - name: Use apt packages ${{ inputs.depends }}
         id: depends-cache
         if: ${{ inputs.depends }}
         uses: actions/cache/restore@v3
