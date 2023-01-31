@@ -10,5 +10,5 @@ fi
 
 for f in $REPOS; do
   echo importing $f
-  vcs import ws <$f >/dev/null
+  vcs import --shallow --recursive ws <$f >/dev/null
 done
