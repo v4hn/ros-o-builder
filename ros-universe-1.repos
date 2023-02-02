@@ -7,6 +7,14 @@ repositories:
     type: git
     url: https://github.com/RethinkRobotics/baxter_common
     version: master
+  cartographer:
+    type: git
+    url: https://github.com/cartographer-project/cartographer
+    version: master
+  cartographer_ros:
+    type: git
+    url: https://github.com/cartographer-project/cartographer_ros
+    version: master
   dynamixel_motor:
     type: git
     url: https://github.com/arebgun/dynamixel_motor
@@ -47,18 +55,18 @@ repositories:
     type: git
     url: https://github.com/tork-a/jskeus-release.git
     version: release/noetic/jskeus
-  laser_proc:
+  laser_filtering:
     type: git
-    url: https://github.com/ros-perception/laser_proc.git
-    version: melodic-devel
-  microstrain_3dmgx2_imu:
-    type: git
-    url: https://github.com/ros-drivers/microstrain_3dmgx2_imu.git
-    version: indigo-devel
+    url: https://github.com/DLu/laser_filtering.git
+    version: noetic
   ml_classifiers:
     type: git
     url: https://github.com/sniekum/ml_classifiers
     version: master
+  open_karto:
+    type: git
+    url: https://github.com/ros-perception/open_karto
+    version: melodic-devel
   openni_camera:
     type: git
     url: https://github.com/ros-drivers/openni_camera
@@ -67,67 +75,19 @@ repositories:
     type: git
     url: https://github.com/wg-perception/people
     version: noetic
-  pr2_common:
-    type: git
-    url: https://github.com/pr2/pr2_common.git
-    version: melodic-devel
-  pr2_controllers:
-    type: git
-    url: https://github.com/pr2/pr2_controllers.git
-    version: melodic-devel
-  pr2_ethercat_drivers:
-    type: git
-    url: https://github.com/pr2/pr2_ethercat_drivers.git
-    version: kinetic-devel
-  pr2_mechanism:
-    type: git
-    url: https://github.com/pr2/pr2_mechanism.git
-    version: melodic-devel
-  pr2_mechanism_msgs:
-    type: git
-    url: https://github.com/pr2/pr2_mechanism_msgs.git
-    version: master
-  pr2_power_drivers:
-    type: git
-    url: https://github.com/pr2/pr2_power_drivers.git
-    version: kinetic-devel
-  pr2_robot:
-    type: git
-    url: https://github.com/pr2/pr2_robot.git
-    version: kinetic-devel
-  prosilica_driver:
-    type: git
-    url: https://github.com/ros-drivers/prosilica_driver.git
-    version: noetic-devel
-  prosilica_gige_sdk:
-    type: git
-    url: https://github.com/ros-drivers/prosilica_gige_sdk.git
-    version: hydro-devel
   robot_calibration:
     type: git
     url: https://github.com/mikeferguson/robot_calibration
     version: ros1
-  robot_pose_ekf:
-    type: git
-    url: https://github.com/ros-planning/robot_pose_ekf.git
-    version: master
   ros_emacs_utils:
     type: git
     url: https://github.com/code-iai/ros_emacs_utils
     version: master
-  urg_c:
+  slam_karto:
     type: git
-    url: https://github.com/ros-drivers/urg_c.git
-    version: master
-  urg_node:
+    url: https://github.com/ros-perception/slam_karto.git
+    version: melodic-devel
+  wu_ros_tools:
     type: git
-    url: https://github.com/ros-drivers/urg_node
-    version: kinetic-devel
-  wge100_driver:
-    type: git
-    url: https://github.com/ros-drivers/wge100_driver.git
-    version: noetic-devel
-  wifi_ddwrt:
-    type: git
-    url: https://github.com/ros-drivers/wifi_ddwrt.git
-    version: noetic-devel
+    url: https://github.com/DLu/wu_ros_tools.git
+    version: noetic
