@@ -53,7 +53,6 @@ jobs:
       - uses: v4hn/ros-deb-builder-action/deploy@rosotest
         if: always() # alternatively success()
         with:
-          ROS_DISTRO: ${{ env.ROS_DISTRO }}
-          DEB_DISTRO: ${{ env.DEB_DISTRO }}
+          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
