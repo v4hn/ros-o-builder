@@ -23,22 +23,29 @@ jobs:
     with:
       repos: ros-desktop-full
       depends: ros-desktop
-  ros-universe-0:
+  universe-0:
     if: success() || failure() # can get cancelled
     needs: ros-desktop-full
     uses: ./.github/workflows/debs-from-repos.yaml
     with:
-      repos: ros-universe-0
+      repos: universe-0
       depends: ros-desktop-full
-  ros-universe-1:
+  universe-1:
     if: success() || failure() # can get cancelled
-    needs: ros-universe-0
+    needs: universe-0
     uses: ./.github/workflows/debs-from-repos.yaml
     with:
-      repos: ros-universe-1
-      depends: ros-universe-0
+      repos: universe-1
+      depends: universe-0
+  universe-2:
+    if: success() || failure() # can get cancelled
+    needs: universe-1
+    uses: ./.github/workflows/debs-from-repos.yaml
+    with:
+      repos: universe-2
+      depends: universe-1
   deploy:
-    needs: ros-universe-1
+    needs: universe-2
     if: success() || failure() # can get cancelled
     runs-on: ubuntu-22.04
     env:
@@ -49,7 +56,7 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-ros-universe-1-${{ github.sha }}
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-universe-2-${{ github.sha }}
       - uses: v4hn/ros-deb-builder-action/deploy@rosotest
         if: always() # alternatively success()
         with:
