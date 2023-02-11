@@ -3,7 +3,8 @@ FROM ubuntu:jammy
 
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
-RUN apt install -y vim less screen ca-certificates sudo bash-completion
+RUN apt install -y vim less screen ca-certificates sudo bash-completion python3-pip
+RUN pip3 install catkin-tools
 
 RUN echo "deb [trusted=yes] https://raw.githubusercontent.com/v4hn/ros-o-builder/jammy-one/ ./" | sudo tee /etc/apt/sources.list.d/v4hn_ros-o-builder.list
 RUN sudo apt update
@@ -12,3 +13,4 @@ RUN echo "yaml https://raw.githubusercontent.com/v4hn/ros-o-builder/jammy-one/lo
 RUN rosdep update
 
 RUN apt install -y ros-one-desktop-full
+RUN echo "source /opt/ros/one/setup.bash" | tee -a /root/.bashrc
