@@ -36,7 +36,7 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}
       - name: Require built dependencies ${{ inputs.depends }}
         if: ${{ inputs.depends && steps.depends-cache.outputs.cache-hit != 'true' }}
         run: exit 1
@@ -68,4 +68,4 @@ jobs:
         if: always()
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
