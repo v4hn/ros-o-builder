@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-carrot-planner
+Binary: ros-one-carrot-planner
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2023.03.08.06.20
+Distribution: jammy
+Urgency: high
+Maintainer: Aaron Hoy <ahoy@fetchrobotics.com>
+Changed-By: Aaron Hoy <ahoy@fetchrobotics.com>
+Description:
+ ros-one-carrot-planner - This planner attempts to find a legal place to put a carrot for t
+Changes:
+ ros-one-carrot-planner (1.17.3-3-g9ad64419-2023.03.08.06.20) jammy; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 9be23e6f9fba446809c53d86f3c4bac937f5dab0 571166 ros-one-carrot-planner-dbgsym_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.ddeb
+ 490b44d60314ef6135bf6c1eeca08be110d2fc22 23175 ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.buildinfo
+ 630306fdff740b48c9633ba3273efd910fc7c62d 34098 ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.deb
+Checksums-Sha256:
+ 8ec801a1de2f9a206ccf87b05ad12c082e206d68e3968c017f76d0cdd2eab225 571166 ros-one-carrot-planner-dbgsym_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.ddeb
+ ad93162991cd42ce6d57d4dee209e1f1d63810e0fefdc93dd2d32b67c9e4d76c 23175 ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.buildinfo
+ d033b6e0b7274159a31d3239af163fce0782e07fdd0650e42e470e7a308e5fd7 34098 ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.deb
+Files:
+ de54b259be81a7700090c99d20cdfdbc 571166 debug optional ros-one-carrot-planner-dbgsym_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.ddeb
+ 090796a13bd5ea366768010d320455cc 23175 misc optional ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.buildinfo
+ 2c311ebea172df540ebef0b6268a5963 34098 misc optional ros-one-carrot-planner_1.17.3-3-g9ad64419-2023.03.08.06.20_amd64.deb

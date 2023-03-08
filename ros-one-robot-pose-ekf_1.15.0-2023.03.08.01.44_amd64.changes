@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Tue, 02 Mar 2021 00:00:00 -0000
+Source: ros-one-robot-pose-ekf
+Binary: ros-one-robot-pose-ekf
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.15.0-2023.03.08.01.44
+Distribution: jammy
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-robot-pose-ekf - The Robot Pose EKF package is used to estimate the 3D pose of a r
+Changes:
+ ros-one-robot-pose-ekf (1.15.0-2023.03.08.01.44) jammy; urgency=high
+ .
+   * Merge pull request #13 <https://github.com/ros-planning/robot_pose_ekf/issues/13> from k-okada/add_travis_noetic
+     Close #12 <https://github.com/ros-planning/robot_pose_ekf/issues/12>
+   * use format3 to support both nfl and liborocos-blf-dev
+   * fixed bfl dependency to be liborocos-bfl-dev
+   * fixed bfl dependency to be liborocos-bfl
+   * updated wtf.py to be python3 compatible
+   * fixed travis.yml for build checks
+   * Merge pull request #8 <https://github.com/ros-planning/robot_pose_ekf/issues/8> from contradict/patch-1
+     Remove email from package.xml
+   * Remove email from package.xml
+     I did work on the package several years ago (a port to a new version of ROS), but I am not the author and also not the person named here. Would you mind removing my email from the package?
+   * Contributors: Dave Feil-Seifer, Kei Okada, Michael Ferguson, contradict
+Checksums-Sha1:
+ bea49ed11c2c152409d4d144e9864c567ed6d204 861086 ros-one-robot-pose-ekf-dbgsym_1.15.0-2023.03.08.01.44_amd64.ddeb
+ 6443ccbdfafc991735d55eccd7dc763b4aeca1ee 22364 ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.buildinfo
+ 662235ced2c46ce6b1c4496a5ee075dc675d3066 88318 ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.deb
+Checksums-Sha256:
+ 65ac13010057546b0401663338065a6b4571e8266ac629bb6c7733c3e4be7a95 861086 ros-one-robot-pose-ekf-dbgsym_1.15.0-2023.03.08.01.44_amd64.ddeb
+ 5e4b0160b75d361fcdba417cdf95a5681b6ff58e06035f3ae75b3cf40873dad2 22364 ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.buildinfo
+ 7322c718195149f2b783e33fd5547a8e3c25384320fffdb3c22bed1b6e2d5e0c 88318 ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.deb
+Files:
+ d80584018a1e3ca8e28d80704a8e04ba 861086 debug optional ros-one-robot-pose-ekf-dbgsym_1.15.0-2023.03.08.01.44_amd64.ddeb
+ 16b7abdb14f037241ef7b57c4b112ca0 22364 misc optional ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.buildinfo
+ 9c5ad3eed7ae84e22cb42e521018d081 88318 misc optional ros-one-robot-pose-ekf_1.15.0-2023.03.08.01.44_amd64.deb

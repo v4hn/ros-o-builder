@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 30 Sep 2021 00:00:00 -0000
+Source: ros-one-robot-state-publisher
+Binary: ros-one-robot-state-publisher
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.15.2-1-g8478b2a-2023.03.07.16.33
+Distribution: jammy
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-robot-state-publisher - This package allows you to publish the state of a robot to tf2.
+Changes:
+ ros-one-robot-state-publisher (1.15.2-1-g8478b2a-2023.03.07.16.33) jammy; urgency=high
+ .
+   * Reimplement tf_prefix in Noetic exactly as it was in Melodic (#169 <https://github.com/ros/robot_state_publisher/issues/169>)
+   * Include joint_states_index.bag in repo (#176 <https://github.com/ros/robot_state_publisher/issues/176>)
+   * Contributors: Shane Loretz
+Checksums-Sha1:
+ ffde4f87e7ad553061bb7db16ee9f4a4d9a41c1d 1205022 ros-one-robot-state-publisher-dbgsym_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.ddeb
+ c4d4d3e0a520496897956fc6d822d78063244618 23013 ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.buildinfo
+ 3ad5ae4b9721c8953f12895fb39a1d9abb923fb1 67776 ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.deb
+Checksums-Sha256:
+ 1a4a1f5593f72728ba8791dadc8cc0124a87d0d73ecb1df344ca1d9f87ebf0bb 1205022 ros-one-robot-state-publisher-dbgsym_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.ddeb
+ d28968f281dc5a103ca5a2f28eee362b176de4a3a024996fa424f4b9d6223c76 23013 ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.buildinfo
+ 1d443f285f87659423038cffca8918818fbd262bbff5130931d47d657443b611 67776 ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.deb
+Files:
+ 9896c1493b4a6002220780dc24de9d32 1205022 debug optional ros-one-robot-state-publisher-dbgsym_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.ddeb
+ 19067229513b10c9f9b5ac93076116b3 23013 misc optional ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.buildinfo
+ 15515e58fbc27cb62f41449edab2e896 67776 misc optional ros-one-robot-state-publisher_1.15.2-1-g8478b2a-2023.03.07.16.33_amd64.deb

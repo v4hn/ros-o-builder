@@ -1,0 +1,212 @@
+sbuild (Debian sbuild) 0.84.2~ubuntu2204+3 (28 December 2022) on fv-az362-805.irmh1a0300hepaf5bq0acnis3g.bx.internal.cloudapp.net
+
++=====================================================================================================+
+| ros-one-jsk-rviz-plugins 2.1.8-40-g8253b88-2023.03.08.10.25 (amd64) Wed, 08 Mar 2023 10:25:09 +0000 |
++=====================================================================================================+
+
+Package: ros-one-jsk-rviz-plugins
+Version: 2.1.8-40-g8253b88-2023.03.08.10.25
+Source Version: 2.1.8-40-g8253b88-2023.03.08.10.25
+Distribution: jammy
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/jammy-amd64.tar to /tmp/tmp.sbuild.uBDpN5aWPw...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+I: NOTICE: Log filtering will replace 'build/package//resolver-e5vNTg' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-gWCvgs/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-gWCvgs/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:3 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 file:/build/package//resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:4 file:/build/package//resolver-gWCvgs/apt_archive ./ Release.gpg
+Ign:4 file:/build/package//resolver-gWCvgs/apt_archive ./ Release.gpg
+Get:5 file:/build/package//resolver-gWCvgs/apt_archive ./ Packages [396 kB]
+Get:6 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Get:7 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Fetched 15.8 MB in 2s (8482 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization/ros-one-jsk-rviz-plugins_2.1.8-40-g8253b88-2023.03.08.10.25.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), catkin, gdown, libgmock-dev, libgtest-dev, ros-one-cv-bridge, ros-one-diagnostic-msgs, ros-one-dynamic-reconfigure, ros-one-face-detector, ros-one-geometry-msgs, ros-one-image-geometry, ros-one-image-transport, ros-one-joint-state-publisher, ros-one-jsk-data, ros-one-jsk-footstep-msgs, ros-one-jsk-gui-msgs, ros-one-jsk-hark-msgs, ros-one-jsk-recognition-msgs, ros-one-jsk-recognition-utils, ros-one-jsk-tools, ros-one-jsk-topic-tools, ros-one-message-generation, ros-one-mk, ros-one-openni2-launch, ros-one-people-msgs, ros-one-pr2-description, ros-one-robot-state-publisher, ros-one-rosbuild, ros-one-rostest, ros-one-rviz, ros-one-std-msgs, ros-one-urdfdom-py, ros-one-view-controller-msgs, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot
+Filtered Build-Depends: debhelper (>= 9.0.0), catkin, gdown, libgmock-dev, libgtest-dev, ros-one-cv-bridge, ros-one-diagnostic-msgs, ros-one-dynamic-reconfigure, ros-one-face-detector, ros-one-geometry-msgs, ros-one-image-geometry, ros-one-image-transport, ros-one-joint-state-publisher, ros-one-jsk-data, ros-one-jsk-footstep-msgs, ros-one-jsk-gui-msgs, ros-one-jsk-hark-msgs, ros-one-jsk-recognition-msgs, ros-one-jsk-recognition-utils, ros-one-jsk-tools, ros-one-jsk-topic-tools, ros-one-message-generation, ros-one-mk, ros-one-openni2-launch, ros-one-people-msgs, ros-one-pr2-description, ros-one-robot-state-publisher, ros-one-rosbuild, ros-one-rostest, ros-one-rviz, ros-one-std-msgs, ros-one-urdfdom-py, ros-one-view-controller-msgs, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [586 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [1358 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [1387 B]
+Fetched 3331 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:2 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:3 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ sbuild-build-depends-main-dummy : Depends: gdown but it is not installable
+                                   Depends: ros-one-face-detector but it is not installable
+                                   Depends: ros-one-jsk-data but it is not going to be installed
+                                   Depends: ros-one-jsk-recognition-utils but it is not installable
+                                   Depends: ros-one-jsk-tools but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+apt-get failed.
+E: Package installation failed
+Not removing build depends: cloned chroot in use
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: dose-distcheck
+Filtered Build-Depends: dose-distcheck
+dpkg-deb: building package 'sbuild-build-depends-dose3-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-dose3-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [586 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [1937 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [2002 B]
+Fetched 4525 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:2 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release [583 B]
+Get:3 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-gWCvgs/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install dose3 build dependencies (apt-based resolver)
+-----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  dose-distcheck
+The following NEW packages will be installed:
+  dose-distcheck sbuild-build-depends-dose3-dummy
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1215 kB of archives.
+After this operation, 4361 kB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-dose3-dummy 0.invalid.0 [652 B]
+Get:2 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/universe amd64 dose-distcheck amd64 7.0.0-1build1 [1214 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 1215 kB in 0s (48.8 MB/s)
+Selecting previously unselected package dose-distcheck.
+(Reading database ... 10521 files and directories currently installed.)
+Preparing to unpack .../dose-distcheck_7.0.0-1build1_amd64.deb ...
+Unpacking dose-distcheck (7.0.0-1build1) ...
+Selecting previously unselected package sbuild-build-depends-dose3-dummy.
+Preparing to unpack .../sbuild-build-depends-dose3-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-dose3-dummy (0.invalid.0) ...
+Setting up dose-distcheck (7.0.0-1build1) ...
+Setting up sbuild-build-depends-dose3-dummy (0.invalid.0) ...
+(I)Doseparse: Parsing and normalizing...
+(I)Dose_deb: Parsing Packages file -...
+(I)Dose_common: total packages 65496
+(I)Dose_applications: Cudf Universe: 65496 packages
+(I)Dose_applications: --checkonly specified, consider all packages as background packages
+(I)Dose_applications: Solving...
+output-version: 1.2
+native-architecture: amd64
+report:
+ -
+  package: sbuild-build-depends-main-dummy
+  version: 0.invalid.0
+  architecture: amd64
+  status: broken
+  reasons:
+   -
+    missing:
+     pkg:
+      package: sbuild-build-depends-main-dummy
+      version: 0.invalid.0
+      architecture: amd64
+      unsat-dependency: gdown:amd64
+ 
+background-packages: 65495
+foreground-packages: 1
+total-packages: 65496
+broken-packages: 1
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+E: Package build dependencies not satisfied; skipping
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Type: binary
+Build-Space: n/a
+Build-Time: 0
+Distribution: jammy
+Fail-Stage: install-deps
+Host Architecture: amd64
+Install-Time: 0
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization/ros-one-jsk-rviz-plugins_2.1.8-40-g8253b88-2023.03.08.10.25.dsc
+Machine Architecture: amd64
+Package: ros-one-jsk-rviz-plugins
+Package-Time: 0
+Source-Version: 2.1.8-40-g8253b88-2023.03.08.10.25
+Space: n/a
+Status: given-back
+Version: 2.1.8-40-g8253b88-2023.03.08.10.25
+--------------------------------------------------------------------------------
+Finished at 2023-03-08T10:25:09Z
+Build needed 00:00:00, no disk space

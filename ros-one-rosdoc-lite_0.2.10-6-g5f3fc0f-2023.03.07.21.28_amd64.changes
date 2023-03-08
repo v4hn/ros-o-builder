@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Fri, 07 Feb 2020 00:00:00 -0000
+Source: ros-one-rosdoc-lite
+Binary: ros-one-rosdoc-lite
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.10-6-g5f3fc0f-2023.03.07.21.28
+Distribution: jammy
+Urgency: high
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Changed-By: Jack O'Quin <jack.oquin@gmail.com>
+Description:
+ ros-one-rosdoc-lite - This ROS package wraps documentation tools like doxygen, sphinx,
+Changes:
+ ros-one-rosdoc-lite (0.2.10-6-g5f3fc0f-2023.03.07.21.28) jammy; urgency=high
+ .
+   * Add mdfile to INPUT
+   * Use conditional dependencies (#93 <https://github.com/ros-infrastructure/rosdoc_lite/issues/93>)
+     * Use conditional dependencies for all Python rosdep keys
+     * Only depend on epydoc if using Python 2
+     * Switch to python?-catkin-pkg-modules since the CLI tools aren't used
+     * Python 2 and 3 versions are side-by-side installable
+     * Switch to python?-rospkg-modules since the CLI tools aren't used
+     * Python 2 and 3 versions are side-by-side installable
+   * Add mdfile to INPUT
+   * backwards-compatible fix for python3 API changes
+   * fix cmake failure when building without tests
+   * Removes obsolete doxygen options
+     fix cmake failure when building without tests
+   * enable linking to documentation hosted on third party server
+   * Update exception handling to Python2.6+ / Python3 syntax
+   * Fix getting doxygen path when output_folder is defined
+   * Add unit tests for getting doxygen path
+   * Better name of function getting the documentation path
+   * Update exception handling to Python2.6+ / Python3 syntax
+   * Merge branch 'master' of github.com:jobleier/rosdoc_lite
+   * enable 'docs_url' pointing to documentation hosted on third party server with external Doxygen documentation using tag files
+   * Contributors: Alexander Gutenkunst, Finn-Thorben Sell, Johannes Bleier, Matthijs van der Burgh, Paul Dinh, Riku Shigematsu, Shane Loretz, Tully Foote, v4hn
+Checksums-Sha1:
+ 5eca6834e7ade8b9a8a5a02b89e09cbbf127d44d 7769 ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.buildinfo
+ 09b729b048844b028c666eee3b9f9cb35ce40de0 60874 ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.deb
+Checksums-Sha256:
+ 15b25956602e665de3810d6bd8748b803b614e17c16c44c8b8ab717d0c96c687 7769 ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.buildinfo
+ ebb5836d290a0d981245e9d669032b09ec8aa0b3f1b39396ac96d59f21cb692d 60874 ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.deb
+Files:
+ 66b836eaaa766e35a17a60f6a6c816b2 7769 misc optional ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.buildinfo
+ 9623d7d96357104cbec31045817bfd3c 60874 misc optional ros-one-rosdoc-lite_0.2.10-6-g5f3fc0f-2023.03.07.21.28_amd64.deb

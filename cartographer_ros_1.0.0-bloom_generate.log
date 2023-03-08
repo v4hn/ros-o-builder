@@ -1,0 +1,71 @@
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+[1m[32m==> [0m[0mGenerating debs for [36mubuntu:jammy[0m for package(s) ['cartographer_ros'][0m[0m
+[33mNo historical releaser history, using current maintainer name and email for each versioned changelog entry.[0m
+Package 'cartographer-ros' has dependencies:[0m
+[35mRun Dependencies:[0m[0m
+  [22m[4mrosdep key           => jammy key[0m[0m
+  [36mcartographer         [35m=> [36m['ros-one-cartographer'][0m[0m
+  [36mcartographer_ros_msgs [35m=> [36m['ros-one-cartographer-ros-msgs'][0m[0m
+  [36meigen_conversions    [35m=> [36m['ros-one-eigen-conversions'][0m[0m
+  [36mgeometry_msgs        [35m=> [36m['ros-one-geometry-msgs'][0m[0m
+  [36mlibgflags-dev        [35m=> [36m['libgflags-dev'][0m[0m
+  [36mlibgoogle-glog-dev   [35m=> [36m['libgoogle-glog-dev'][0m[0m
+  [36mlibpcl-all-dev       [35m=> [36m['libpcl-dev'][0m[0m
+  [36mmessage_runtime      [35m=> [36m['ros-one-message-runtime'][0m[0m
+  [36mnav_msgs             [35m=> [36m['ros-one-nav-msgs'][0m[0m
+  [36mpcl_conversions      [35m=> [36m['ros-one-pcl-conversions'][0m[0m
+  [36mrobot_state_publisher [35m=> [36m['ros-one-robot-state-publisher'][0m[0m
+  [36mrosbag               [35m=> [36m['ros-one-rosbag'][0m[0m
+  [36mroscpp               [35m=> [36m['ros-one-roscpp'][0m[0m
+  [36mroslaunch            [35m=> [36m['ros-one-roslaunch'][0m[0m
+  [36mroslib               [35m=> [36m['ros-one-roslib'][0m[0m
+  [36msensor_msgs          [35m=> [36m['ros-one-sensor-msgs'][0m[0m
+  [36mstd_msgs             [35m=> [36m['ros-one-std-msgs'][0m[0m
+  [36mtf2                  [35m=> [36m['ros-one-tf2'][0m[0m
+  [36mtf2_eigen            [35m=> [36m['ros-one-tf2-eigen'][0m[0m
+  [36mtf2_ros              [35m=> [36m['ros-one-tf2-ros'][0m[0m
+  [36murdf                 [35m=> [36m['ros-one-urdf'][0m[0m
+  [36mvisualization_msgs   [35m=> [36m['ros-one-visualization-msgs'][0m[0m
+[35mBuild and Build Tool Dependencies:[0m[0m
+  [22m[4mrosdep key           => jammy key[0m[0m
+  [36mgoogle-mock          [35m=> [36m['google-mock'][0m[0m
+  [36mg++-static           [35m=> [36m['g++'][0m[0m
+  [36mprotobuf-dev         [35m=> [36m['libprotobuf-dev', 'protobuf-compiler', 'libprotoc-dev'][0m[0m
+  [36mpython-sphinx        [35m=> [36m['python3-sphinx'][0m[0m
+  [36mcartographer         [35m=> [36m['ros-one-cartographer'][0m[0m
+  [36mcartographer_ros_msgs [35m=> [36m['ros-one-cartographer-ros-msgs'][0m[0m
+  [36meigen_conversions    [35m=> [36m['ros-one-eigen-conversions'][0m[0m
+  [36mgeometry_msgs        [35m=> [36m['ros-one-geometry-msgs'][0m[0m
+  [36mlibgflags-dev        [35m=> [36m['libgflags-dev'][0m[0m
+  [36mlibgoogle-glog-dev   [35m=> [36m['libgoogle-glog-dev'][0m[0m
+  [36mlibpcl-all-dev       [35m=> [36m['libpcl-dev'][0m[0m
+  [36mmessage_runtime      [35m=> [36m['ros-one-message-runtime'][0m[0m
+  [36mnav_msgs             [35m=> [36m['ros-one-nav-msgs'][0m[0m
+  [36mpcl_conversions      [35m=> [36m['ros-one-pcl-conversions'][0m[0m
+  [36mrobot_state_publisher [35m=> [36m['ros-one-robot-state-publisher'][0m[0m
+  [36mrosbag               [35m=> [36m['ros-one-rosbag'][0m[0m
+  [36mroscpp               [35m=> [36m['ros-one-roscpp'][0m[0m
+  [36mroslaunch            [35m=> [36m['ros-one-roslaunch'][0m[0m
+  [36mroslib               [35m=> [36m['ros-one-roslib'][0m[0m
+  [36msensor_msgs          [35m=> [36m['ros-one-sensor-msgs'][0m[0m
+  [36mstd_msgs             [35m=> [36m['ros-one-std-msgs'][0m[0m
+  [36mtf2                  [35m=> [36m['ros-one-tf2'][0m[0m
+  [36mtf2_eigen            [35m=> [36m['ros-one-tf2-eigen'][0m[0m
+  [36mtf2_ros              [35m=> [36m['ros-one-tf2-ros'][0m[0m
+  [36murdf                 [35m=> [36m['ros-one-urdf'][0m[0m
+  [36mvisualization_msgs   [35m=> [36m['ros-one-visualization-msgs'][0m[0m
+  [36mcatkin               [35m=> [36m['catkin', 'libgtest-dev', 'libgmock-dev'][0m[0m
+  [36mrosunit              [35m=> [36m['ros-one-rosunit'][0m[0m
+[1m[34m==>[0m Placing templates files in the 'debian' folder.[0m[0m
+[1m[34m==>[0m In place processing templates in 'debian' folder.[0m[0m
+Expanding 'debian/changelog.em' -> 'debian/changelog'[0m
+Expanding 'debian/copyright.em' -> 'debian/copyright'[0m
+Expanding 'debian/source/format.em' -> 'debian/source/format'[0m
+Expanding 'debian/source/options.em' -> 'debian/source/options'[0m
+Expanding 'debian/control.em' -> 'debian/control'[0m
+Expanding 'debian/compat.em' -> 'debian/compat'[0m
+Expanding 'debian/rules.em' -> 'debian/rules'[0m
+[33mThis version of bloom is '0.10.7', but the newest available version is '0.11.2'. Please update.[0m

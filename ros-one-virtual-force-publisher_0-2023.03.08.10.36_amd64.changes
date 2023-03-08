@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 07 Jun 2022 00:00:00 -0000
+Source: ros-one-virtual-force-publisher
+Binary: ros-one-virtual-force-publisher
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2023.03.08.10.36
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-virtual-force-publisher - publish end effector's force, which is estmated from joint torque
+Changes:
+ ros-one-virtual-force-publisher (0-2023.03.08.10.36) jammy; urgency=high
+ .
+   * Calcualte sr-inverse (#1731 <https://github.com/jsk-ros-pkg/jsk_common/issues/1731>)
+   * use ROS_DEBUG to suppress log output (#1674 <https://github.com/jsk-ros-pkg/jsk_common/issues/1674>)
+   * add left and right force launch (#1656 <https://github.com/jsk-ros-pkg/jsk_common/issues/1656>)
+   * Contributors: Naoaki Kanazawa, Shingo Kitagawa, Iori Yanokura
+Checksums-Sha1:
+ 1bdd520aa8abf8636fddffb3e7a46759bd7f5437 2665640 ros-one-virtual-force-publisher-dbgsym_0-2023.03.08.10.36_amd64.ddeb
+ c6e2182d5e92f96daedcbbcf55654d7043d7d657 23065 ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.buildinfo
+ b5fb59eeec57bd66133d19ef97f765f0e2f66fc4 75710 ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.deb
+Checksums-Sha256:
+ 8cd47e75119383b919df55d64e664c10b675fcd2285a0dfdbe0a309e7febf109 2665640 ros-one-virtual-force-publisher-dbgsym_0-2023.03.08.10.36_amd64.ddeb
+ 116d30d2e6372889e30880ddbeed365074b141ef936815e08db83c926228b070 23065 ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.buildinfo
+ 34fda639931ab73a98b3ced995547fe84e668cd509675e76f0ad1406a6fbbf1d 75710 ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.deb
+Files:
+ 5f0343a812dca4d52fb7bc398ee42f5f 2665640 debug optional ros-one-virtual-force-publisher-dbgsym_0-2023.03.08.10.36_amd64.ddeb
+ bf9e31a3d6f2e324ab5a564235877b8f 23065 misc optional ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.buildinfo
+ 4f74b4021bcd7815548a85333d2c4772 75710 misc optional ros-one-virtual-force-publisher_0-2023.03.08.10.36_amd64.deb

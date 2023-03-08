@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-map-server
+Binary: ros-one-map-server
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2023.03.08.04.38
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-map-server - map_server provides the map_server ROS Node, which offers map dat
+Changes:
+ ros-one-map-server (1.17.3-3-g9ad64419-2023.03.08.04.38) jammy; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 4fee95c02843898854624391e0b2acd77f4cd16c 942706 ros-one-map-server-dbgsym_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.ddeb
+ 87fbceb2cb47048a20a35e9133cc8d8be6ef4fc0 16783 ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.buildinfo
+ 00c8f610b11b94221fd0891396484d0cbf46ac0e 75956 ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.deb
+Checksums-Sha256:
+ 549d7190cac62ae47862edd59c0b6ff8826831753c803b5c7cbbed56bc184039 942706 ros-one-map-server-dbgsym_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.ddeb
+ c0610666b1012b27e386a87bcd3eab0bf37ed28f8c94fb89e073793e670f03bd 16783 ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.buildinfo
+ 229a8fd507cef60988fe0d6f3d15fe61e4426878c403c91f0d812c5b2a4d17d3 75956 ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.deb
+Files:
+ cb3f10a834cad3bb1aed394a8bfca393 942706 debug optional ros-one-map-server-dbgsym_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.ddeb
+ a242d5d3616a0e65712a39de568f0ae6 16783 misc optional ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.buildinfo
+ 599b59277c83ed652106dfcb2a62588c 75956 misc optional ros-one-map-server_1.17.3-3-g9ad64419-2023.03.08.04.38_amd64.deb

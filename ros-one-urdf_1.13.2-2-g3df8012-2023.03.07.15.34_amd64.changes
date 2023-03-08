@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 06 Mar 2020 00:00:00 -0000
+Source: ros-one-urdf
+Binary: ros-one-urdf
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.13.2-2-g3df8012-2023.03.07.15.34
+Distribution: jammy
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-urdf - This package contains a C++ parser for the Unified Robot Descript
+Changes:
+ ros-one-urdf (1.13.2-2-g3df8012-2023.03.07.15.34) jammy; urgency=high
+ .
+   * Windows bringup. (#31 <https://github.com/ros/urdf/issues/31>)
+   * update library install destination (#28 <https://github.com/ros/urdf/issues/28>)
+   * Solved problem when static linking against urdf (#25 <https://github.com/ros/urdf/issues/25>)
+   * unit test: add missing link name (#26 <https://github.com/ros/urdf/issues/26>)
+   * update deprecated macro for MSVC (#27 <https://github.com/ros/urdf/issues/27>)
+   * Contributors: James Xu, Robert Haschke, Sean Yen, ivanpauno
+Checksums-Sha1:
+ 0ad00de7beccdbfbb1df3c1324b32c69bb401b84 827698 ros-one-urdf-dbgsym_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.ddeb
+ c669ea17ee41e304792745938e48535704b5247a 19467 ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.buildinfo
+ b6b170f531eb66d9e08318581bb80f97eccaac2a 71562 ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.deb
+Checksums-Sha256:
+ 43e15400fbb0e7830655693a499a400e1a28d3004f7b78f53cf30e4c50767805 827698 ros-one-urdf-dbgsym_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.ddeb
+ 675ad2b944329f078d11927eb2b60b0acbca67e70b4f650d92827803090e6fc3 19467 ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.buildinfo
+ 2f4cdbae983c316937d36291c26b54048e7002ab5085d94a2fc8f572686ed282 71562 ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.deb
+Files:
+ 6761f14820b31f6cf61a3f226a012420 827698 debug optional ros-one-urdf-dbgsym_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.ddeb
+ 565e99ec7e281a18d10950515a9cf1f9 19467 misc optional ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.buildinfo
+ 4b270942aef9b6552a46dce17a89f37f 71562 misc optional ros-one-urdf_1.13.2-2-g3df8012-2023.03.07.15.34_amd64.deb

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 29 Sep 2022 00:00:00 -0000
+Source: ros-one-urg-node
+Binary: ros-one-urg-node
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.1.18-2-ga34fa24-2023.03.08.02.19
+Distribution: jammy
+Urgency: high
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Changed-By: Tony Baltovski <tony.baltovski@gmail.com>
+Description:
+ ros-one-urg-node - urg_node
+Changes:
+ ros-one-urg-node (0.1.18-2-ga34fa24-2023.03.08.02.19) jammy; urgency=high
+ .
+   * Encode sent msg to bytes object when comparing with returned msg bytes object from socket; ensures compatability with Python 2 and Python 3; add comments.
+   * Install Python helper script using catkin_install_python() so the correct Python version is selected automatically; ensure socket sends message as byte object for Python3, while ensuring backwards compatability with Python2.
+   * Contributors: Joey Yang
+Checksums-Sha1:
+ 8e47d096256bab2a8450259d2bf77e057ce7910a 2292474 ros-one-urg-node-dbgsym_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.ddeb
+ 220ac78c01ed044b9e74a913a40b08c1d0501a0f 22855 ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.buildinfo
+ 0b42b627e763700881794e15998936091dccaf2e 221702 ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.deb
+Checksums-Sha256:
+ 0633504cb3a4b60e30e2d9a021f349e4f6377d1931b47a56b1a0c37ad1c5f59a 2292474 ros-one-urg-node-dbgsym_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.ddeb
+ 8e25ad5992f4b17c9978796c66f4557a0855db138083180ce45d1cf7438e327f 22855 ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.buildinfo
+ bd654dc2ffbc3d27aff2bff10f4ea6d1b376a114f43481348430a749cafbf193 221702 ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.deb
+Files:
+ a4da99d0640346e36084a6697b2a965e 2292474 debug optional ros-one-urg-node-dbgsym_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.ddeb
+ 54c6b7c9ea5b63758f8dc325a79183ac 22855 misc optional ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.buildinfo
+ f99c9463660558efb96ce92523b2bf16 221702 misc optional ros-one-urg-node_0.1.18-2-ga34fa24-2023.03.08.02.19_amd64.deb

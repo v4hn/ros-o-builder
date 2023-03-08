@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 07 Oct 2021 00:00:00 -0000
+Source: ros-one-nodelet
+Binary: ros-one-nodelet
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.10.2-3-g6265cac-2023.03.07.14.27
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-nodelet - The nodelet package is designed to provide a way to run multiple
+Changes:
+ ros-one-nodelet (1.10.2-3-g6265cac-2023.03.07.14.27) jammy; urgency=high
+ .
+   * add version.h for nodelet (#105 <https://github.com/ros/nodelet_core/issues/105>)
+   * Fix missing num_threads call when NODELET_QUEUE_DEBUG (#112 <https://github.com/ros/nodelet_core/issues/112>)
+   * Contributors: Matthijs van der Burgh, Shingo Kitagawa
+Checksums-Sha1:
+ 954673f26d5b0bbfcbb1c5c195808d821edf18b9 1847938 ros-one-nodelet-dbgsym_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.ddeb
+ 493804bb7584353513f5b5d91b1d7f23bd563406 18330 ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.buildinfo
+ 31d68a9f7a30d5040d76d6b98c46d78d81beb9f9 148456 ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.deb
+Checksums-Sha256:
+ 682768272ed19cf4a37708338cfb8a2376b7ff613c97194fe4af15d18edb07ac 1847938 ros-one-nodelet-dbgsym_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.ddeb
+ cb7cabafdddca5aa02bbee6996a21f9b9b3fd4cbcb154543ed57e9b14cfe3001 18330 ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.buildinfo
+ 0cf8383086bb6f5446b7cacccb4ee5965403a7bd6b0352489fe79c369eadab57 148456 ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.deb
+Files:
+ 3adb2cf7cc38ca347bfd630c197f95a0 1847938 debug optional ros-one-nodelet-dbgsym_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.ddeb
+ 68b7ee171380f997c64c41d0da06981e 18330 misc optional ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.buildinfo
+ e6ff40eab93d4b96aa2d8b2df989e0da 148456 misc optional ros-one-nodelet_1.10.2-3-g6265cac-2023.03.07.14.27_amd64.deb

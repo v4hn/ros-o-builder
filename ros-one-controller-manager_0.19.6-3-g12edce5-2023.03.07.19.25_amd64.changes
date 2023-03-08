@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 21 Oct 2022 00:00:00 -0000
+Source: ros-one-controller-manager
+Binary: ros-one-controller-manager
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.19.6-3-g12edce5-2023.03.07.19.25
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-controller-manager - The controller manager.
+Changes:
+ ros-one-controller-manager (0.19.6-3-g12edce5-2023.03.07.19.25) jammy; urgency=high
+ .
+   * SPAWNER: Wait for the clock to be available before proceeding (#432 <https://github.com/ros-controls/ros_control/issues/432>)
+     This patch is to resolve an issue when the simulated clock is not published right away (coming from a remote gazebo instance for example).
+     If the clock is not published right away, the rosservice wait_for_service times out prematurely and the controllers fail to be loaded since the system is not yet ready (no Gazebo clock).
+     With no, gazebo system, the clock will be ready immediately and the spawner will proceed.
+     Issue: #431 <https://github.com/ros-controls/ros_control/issues/431>
+   * Contributors: Guillaume Autran
+Checksums-Sha1:
+ 636909d7b6d85e6a4ce521c7d2848062758d4da3 1304168 ros-one-controller-manager-dbgsym_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.ddeb
+ 0591f30edaff7d8fe4ef0758d70320a89fa22787 20513 ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.buildinfo
+ 5e93c861a3fb39c0efc076cf7ceaa06cd5197587 120866 ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.deb
+Checksums-Sha256:
+ a03403a676743c75eaa0cb8233d9856a1ed2307adbf468a596c080b90ef1ac74 1304168 ros-one-controller-manager-dbgsym_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.ddeb
+ 9ef0c4493ac97e02a3db2d9fad2159d43e715b49c4872741699608cdadedcd3c 20513 ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.buildinfo
+ 2e72162aac5504e9504bd19a601b46291a1cc45d7be73a43b404dd3eabbe98ad 120866 ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.deb
+Files:
+ e63dea465e5b48bf6748953aac05a071 1304168 debug optional ros-one-controller-manager-dbgsym_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.ddeb
+ 75ae1b9ad3a30c1b3ce4efec99351fb0 20513 misc optional ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.buildinfo
+ b8b6970cd8d1212975d556fb0f2e1fba 120866 misc optional ros-one-controller-manager_0.19.6-3-g12edce5-2023.03.07.19.25_amd64.deb

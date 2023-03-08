@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 11 Oct 2022 00:00:00 -0000
+Source: ros-one-tf2
+Binary: ros-one-tf2
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.7.6-2-gc92cd9a-2023.03.07.14.13
+Distribution: jammy
+Urgency: high
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Changed-By: Tully Foote <tfoote@osrfoundation.org>
+Description:
+ ros-one-tf2 - tf2 is the second generation of the transform library, which lets
+Changes:
+ ros-one-tf2 (0.7.6-2-gc92cd9a-2023.03.07.14.13) jammy; urgency=high
+ .
+   * Fix dead loop in message filter (#532 <https://github.com/ros/geometry2/issues/532>)
+   * Restore time difference order so future extrapolation exceptions don't show non-sensical negative seconds into the future (#522 <https://github.com/ros/geometry2/issues/522>)
+   * Contributors: Feng Zhaolin, Lucas Walter
+Checksums-Sha1:
+ ae33078bac65a65ce2371c321b6d761cff40cdaf 843718 ros-one-tf2-dbgsym_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.ddeb
+ ce190379f365d1c50e3410d037a1cf07bc36804b 9882 ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.buildinfo
+ 4fa4bfaba07e0cf7a11482c88dadd221f0480c8b 104760 ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.deb
+Checksums-Sha256:
+ 1cb2bdd0e14002791386f3d9b489567472db150fdbd424b865d81b6d4a733d05 843718 ros-one-tf2-dbgsym_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.ddeb
+ c15cbe8b2f46890956ca405c54b8ca0129d69fe7ebdca17e81c0aa2682d20b22 9882 ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.buildinfo
+ 206d67e5c2e652ae9388b9f8f055ce37088111b3ffc76082bf878ef6d57b86ef 104760 ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.deb
+Files:
+ adfbf7f18afbc40df9b58ab2954c4dd4 843718 debug optional ros-one-tf2-dbgsym_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.ddeb
+ a2e83d5d1e9c80c419ec59d33d5f08c0 9882 misc optional ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.buildinfo
+ 248030f75f46933b5ee411c42616b4c8 104760 misc optional ros-one-tf2_0.7.6-2-gc92cd9a-2023.03.07.14.13_amd64.deb
