@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Sat, 06 Nov 2021 00:00:00 -0000
+Source: ros-one-laser-filters
+Binary: ros-one-laser-filters
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.9.0-70-gdf2b333-2024.01.31.18.52
+Distribution: jammy
+Urgency: high
+Maintainer: Jon Binney <jon.binney@gmail.com>
+Changed-By: Jon Binney <jon.binney@gmail.com>
+Description:
+ ros-one-laser-filters - Assorted filters designed to operate on 2D planar laser scanners,
+Changes:
+ ros-one-laser-filters (1.9.0-70-gdf2b333-2024.01.31.18.52) jammy; urgency=high
+ .
+   * change_access specifier kinect
+   * Added nodelet version of scan_to_cloud_filter_chain .
+   * fix(speckle_filter): Possible segfault when ranges size was smaller than filter window
+     formatting
+   * Lots of fixes to CI
+   * scan_to_cloud_filter_chain: Make cloud channels configurable
+   * Fixed naming of laser filter plugins in yaml files
+   * Add circle sector sharp filter
+   * Added DynamicReconfigure for RangeFilter
+   * Added support for laserscanners that spin clockwise
+   * Added nodelet version of scan_to_cloud_filter_chain .
+   * Contributors: Arjanboeve, Eric Wiener, Jimmy F. Klarke, Jonathan Binney, Martin Pecka, Rein Appeldoorn, YoshuaNava, renan028, teundeplanque
+Checksums-Sha1:
+ 5d96fc2c397df1a22d4915ebe8360b6dd8c4d69b 11007574 ros-one-laser-filters-dbgsym_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.ddeb
+ d42b58eb43b27346008186e2b1c41d99dedf8465 22810 ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.buildinfo
+ 24fdf5eba28a76085adebc314492820fb7c809f3 529978 ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.deb
+Checksums-Sha256:
+ 84d156c00bb2bd64ec37d3fd579b4ba60373c7869f710eb938cf8d53c6e21c33 11007574 ros-one-laser-filters-dbgsym_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.ddeb
+ 28ebb1e7ad49c74d5e86d8ecd16bec9ef3c01f37d69af1616c87b06277194195 22810 ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.buildinfo
+ a69b91acd6fee1f5fc8e53f205907d009de3740399ff82df3b21109691e3dba0 529978 ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.deb
+Files:
+ cfa32b3478268a866ef69876d0b21bd5 11007574 debug optional ros-one-laser-filters-dbgsym_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.ddeb
+ e841a58572e3f815afb073e709caa3cd 22810 misc optional ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.buildinfo
+ 5adc750e12df566608ec367ac2ae545c 529978 misc optional ros-one-laser-filters_1.9.0-70-gdf2b333-2024.01.31.18.52_amd64.deb

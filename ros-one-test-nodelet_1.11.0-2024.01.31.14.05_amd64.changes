@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 09 Jan 2024 00:00:00 -0000
+Source: ros-one-test-nodelet
+Binary: ros-one-test-nodelet
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.11.0-2024.01.31.14.05
+Distribution: jammy
+Urgency: high
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Changed-By: Geoffrey Biggs <geoff@openrobotics.org>
+Description:
+ ros-one-test-nodelet - A package for nodelet unit tests
+Changes:
+ ros-one-test-nodelet (1.11.0-2024.01.31.14.05) jammy; urgency=high
+ .
+   * Fix use-after-free when a nodelet throws on initialization (#122 <https://github.com/ros/nodelet_core/issues/122>)
+   * Update package maintainers (#114 <https://github.com/ros/nodelet_core/issues/114>)
+   * Switch to new boost/bind/bind.hpp (#117 <https://github.com/ros/nodelet_core/issues/117>)
+   * Contributors: Geoffrey Biggs, Hugal31, Jochen Sprickerhof
+Checksums-Sha1:
+ ad4266ceb78d8b18cf5c449a97b9d89ed7de10fe 13850 ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.buildinfo
+ c1ac0e70df1528325fe2337ad775448eea16529c 6958 ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.deb
+Checksums-Sha256:
+ ab9f9118a75c870b9dbbf051c5674f469c9ff14b0b44ea86a0b14bed5820c72d 13850 ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.buildinfo
+ 377a7217ce70773a983e6d2cc699063a0c15e4c3e0cfa528ddfebee7522a7115 6958 ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.deb
+Files:
+ fc7d77d68e873d48904f34edb335e7ce 13850 misc optional ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.buildinfo
+ 677bd50dcd54254d23c87c2715eb3c18 6958 misc optional ros-one-test-nodelet_1.11.0-2024.01.31.14.05_amd64.deb

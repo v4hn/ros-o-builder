@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 19 Jul 2023 00:00:00 -0000
+Source: ros-one-pal-statistics
+Binary: ros-one-pal-statistics
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.5.1-2024.01.31.19.01
+Distribution: jammy
+Urgency: high
+Maintainer: victor <victor.lopez@pal-robotics.com>
+Changed-By: victor <victor.lopez@pal-robotics.com>
+Description:
+ ros-one-pal-statistics - The pal_statistics package
+Changes:
+ ros-one-pal-statistics (1.5.1-2024.01.31.19.01) jammy; urgency=high
+ .
+   * drop c++11 compiler flag
+     broke on newer systems as log4cxx requires c++17 for quite some time now.
+   * Contributors: v4hn
+Checksums-Sha1:
+ 4bd71f637da8ba3d4cb6900f0ffe2dbd691a57b4 1676848 ros-one-pal-statistics-dbgsym_1.5.1-2024.01.31.19.01_amd64.ddeb
+ d01c8f50c237c88453de9f9a9705efa310e13e72 20113 ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.buildinfo
+ 679ba7cadf31efcd214049a7384dd58aa72f3b8f 110766 ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.deb
+Checksums-Sha256:
+ 17b0ab70e964c729af25724ab864e8c2dc2434fabd95c323aa3a614a5a1c1c8c 1676848 ros-one-pal-statistics-dbgsym_1.5.1-2024.01.31.19.01_amd64.ddeb
+ 1640299130ed182d8af7f23eb413f55053de47b237589785bfefcb0f66a8c9d4 20113 ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.buildinfo
+ 4a79d6de52b0a34a7b6909294f63656f9a0ad7c7e455a93323d1d1c78df4f059 110766 ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.deb
+Files:
+ 3fc3adc65035a313549522e7aab3fbf7 1676848 debug optional ros-one-pal-statistics-dbgsym_1.5.1-2024.01.31.19.01_amd64.ddeb
+ 5aabdddbad6ea080710fc7ed90064b4d 20113 misc optional ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.buildinfo
+ f8b88734289ea0e654872b0f21d4494a 110766 misc optional ros-one-pal-statistics_1.5.1-2024.01.31.19.01_amd64.deb

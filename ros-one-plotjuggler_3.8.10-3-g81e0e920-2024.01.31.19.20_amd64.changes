@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 26 Jan 2024 00:00:00 -0000
+Source: ros-one-plotjuggler
+Binary: ros-one-plotjuggler
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.8.10-3-g81e0e920-2024.01.31.19.20
+Distribution: jammy
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-plotjuggler - PlotJuggler: juggle with data
+Changes:
+ ros-one-plotjuggler (3.8.10-3-g81e0e920-2024.01.31.19.20) jammy; urgency=high
+ .
+   * Fix issue #924: crash when loading rosbag with std_msgs/Empty
+   * Allow ZMQ plugin to work as server
+   * Link against Abseil for macOS builds & improve macOS compile docs #845 <https://github.com/facontidavide/PlotJuggler/issues/845> (#905 <https://github.com/facontidavide/PlotJuggler/issues/905>)
+   * fix issue in CSV #926 <https://github.com/facontidavide/PlotJuggler/issues/926>
+   * attempt to match ambiguous ros msg within package before using external known type (#922 <https://github.com/facontidavide/PlotJuggler/issues/922>)
+   * Contributors: Davide Faconti, Manuel Valch, Will MacCormack, rugged-robotics
+Checksums-Sha1:
+ 776464a39e98048c9815fa8587a52011cf7ca777 83303946 ros-one-plotjuggler-dbgsym_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.ddeb
+ f3305d2f4ad5a939f834c3aaa510687a39cbba62 21559 ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.buildinfo
+ ac2ce9fcda1eacd885d9ca7bc452ef4ab43fb84b 8254160 ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.deb
+Checksums-Sha256:
+ 02b7289cd3bb98f989ace16ee7362fa699be38e72dd42adde76fa0e5a6d1a094 83303946 ros-one-plotjuggler-dbgsym_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.ddeb
+ ee14546057ebacb4bff246de0acaaee0b016b1677d08af6893e3c496caf8cda5 21559 ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.buildinfo
+ b0a6e5cb7951ac409e777f4d82fd4f7e36532c90262ddd783664230f6b7c9bd5 8254160 ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.deb
+Files:
+ b197bd3034e7605ce6ac3dc227d63b01 83303946 debug optional ros-one-plotjuggler-dbgsym_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.ddeb
+ 7ef0f34033ad175689df950f8900ddaa 21559 misc optional ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.buildinfo
+ 1c2ae508d53b9874c4d04a72b52d813b 8254160 misc optional ros-one-plotjuggler_3.8.10-3-g81e0e920-2024.01.31.19.20_amd64.deb

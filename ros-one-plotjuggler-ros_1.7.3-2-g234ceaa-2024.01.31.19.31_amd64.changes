@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sat, 14 Jan 2023 00:00:00 -0000
+Source: ros-one-plotjuggler-ros
+Binary: ros-one-plotjuggler-ros
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.7.3-2-g234ceaa-2024.01.31.19.31
+Distribution: jammy
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-plotjuggler-ros - PlotJuggler plugin for ROS
+Changes:
+ ros-one-plotjuggler-ros (1.7.3-2-g234ceaa-2024.01.31.19.31) jammy; urgency=high
+ .
+   * Fix mapping of multiple pal_statistics topics (#61 <https://github.com/PlotJuggler/plotjuggler-ros-plugins/issues/61>)
+   * fix implicit uint8_t -> double narrowing (#42 <https://github.com/PlotJuggler/plotjuggler-ros-plugins/issues/42>)
+     YES, the standard committee believes this might be narrowing
+     and clang 12 throws this error:
+     > error: non-constant-expression cannot be narrowed from type 'uint8_t' (aka 'unsigned char') to 'double' in initializer list [-Wc++11-narrowing]
+   * Contributors: Michael Görner, Victor Lopez
+Checksums-Sha1:
+ c131fa44a6492b47f715fd9e4e87c23a86f5f5e1 17067926 ros-one-plotjuggler-ros-dbgsym_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.ddeb
+ 63c059181aa30f305ea3b4e46fa0c63e30c54711 26535 ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.buildinfo
+ 372364e4f4ebd44236c40789bb4d8ac4bfc6f04d 495580 ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.deb
+Checksums-Sha256:
+ 6b2a52ea978ffe6050a24d992c6acc3eac4461332871943af3fa8d23f7ffffe5 17067926 ros-one-plotjuggler-ros-dbgsym_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.ddeb
+ e3f6969e5d20166722c04aa089d16c18c4043e957028556205e0fb5aa3f43809 26535 ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.buildinfo
+ 7c92c4d11fe40943e13029d1568255b7e15f2aca961df218d2548ba7691a7ecb 495580 ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.deb
+Files:
+ 7cb0e6e2883979c0f4d53e65da6112c4 17067926 debug optional ros-one-plotjuggler-ros-dbgsym_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.ddeb
+ 6b6120af0aa06120403ecd9bec9c8a54 26535 misc optional ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.buildinfo
+ 1ded16350db0cf1a9afa69db07ca16fd 495580 misc optional ros-one-plotjuggler-ros_1.7.3-2-g234ceaa-2024.01.31.19.31_amd64.deb

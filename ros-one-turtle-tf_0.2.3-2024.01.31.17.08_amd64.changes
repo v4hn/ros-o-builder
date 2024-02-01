@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 02 Apr 2020 00:00:00 -0000
+Source: ros-one-turtle-tf
+Binary: ros-one-turtle-tf
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.2.3-2024.01.31.17.08
+Distribution: jammy
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-turtle-tf - turtle_tf demonstrates how to write a tf broadcaster and listener
+Changes:
+ ros-one-turtle-tf (0.2.3-2024.01.31.17.08) jammy; urgency=high
+ .
+   * Bump CMake version to avoid CMP0048 warning (#29 <https://github.com/ros/geometry_tutorials//issues/29>)
+   * Merge pull request #26 <https://github.com/ros/geometry_tutorials//issues/26> from jwhendy/tutorial-node-name-fix
+   * updated node names in all tf and tf2 nodes/.py files to match filenames for simplicity
+   * Merge pull request #22 <https://github.com/ros/geometry_tutorials//issues/22> from 23pointsNorth/patch-1
+   * Clean up code
+   * Merge pull request #20 <https://github.com/ros/geometry_tutorials//issues/20> from romainreignier/indigo-devel
+   * Add install rule for turtle_tf_message_filter
+   * Contributors: Alejandro Hernández Cordero, Daniel Angelov, John Henderson, Romain Reignier, Tully Foote
+Checksums-Sha1:
+ 3e2def1cd515dee1478ffb333504985b1fdde902 1793768 ros-one-turtle-tf-dbgsym_0.2.3-2024.01.31.17.08_amd64.ddeb
+ b99303eea7a1f5bbd4ed2f8f54fe94a57c6e5e12 19605 ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.buildinfo
+ e4ef8226504429c80c9ae5ceb17c53a9495d1d28 95620 ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.deb
+Checksums-Sha256:
+ 5efb50d817f9be49f74653baa69cde17cb13d99aee9a7a5f1c287e07c8ff548c 1793768 ros-one-turtle-tf-dbgsym_0.2.3-2024.01.31.17.08_amd64.ddeb
+ debe608fe80e81e638dce002b473909b727cd54718c64a11e96eaf40277f41b5 19605 ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.buildinfo
+ 27f523ac6aa94beca3c81c1bae091fbb5d88fa4cfeed652fe05c1bb6519ee2a0 95620 ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.deb
+Files:
+ 230b45a39115995d8e4e4b4cb29f6faf 1793768 debug optional ros-one-turtle-tf-dbgsym_0.2.3-2024.01.31.17.08_amd64.ddeb
+ 27df0be1e6272b06b1f7bdef31b23feb 19605 misc optional ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.buildinfo
+ 6060f6f15504dd54673c836deab813da 95620 misc optional ros-one-turtle-tf_0.2.3-2024.01.31.17.08_amd64.deb

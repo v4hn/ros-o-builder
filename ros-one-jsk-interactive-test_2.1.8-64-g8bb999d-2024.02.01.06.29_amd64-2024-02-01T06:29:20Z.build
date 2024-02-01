@@ -1,0 +1,209 @@
+sbuild (Debian sbuild) 0.84.2~ubuntu2204+3 (28 December 2022) on fv-az883-318.sk5y2rh0qbtexpi1qont3x1wzb.ex.internal.cloudapp.net
+
++=========================================================================================================+
+| ros-one-jsk-interactive-test 2.1.8-64-g8bb999d-2024.02.01.06.29 (amd64) Thu, 01 Feb 2024 06:29:20 +0000 |
++=========================================================================================================+
+
+Package: ros-one-jsk-interactive-test
+Version: 2.1.8-64-g8bb999d-2024.02.01.06.29
+Source Version: 2.1.8-64-g8bb999d-2024.02.01.06.29
+Distribution: jammy
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/jammy-amd64.tar to /tmp/tmp.sbuild.DGIm1EdXjU...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+I: NOTICE: Log filtering will replace 'build/package//resolver-hRNjHb' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-VvfzZc/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-VvfzZc/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:3 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 file:/build/package//resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:4 file:/build/package//resolver-VvfzZc/apt_archive ./ Release.gpg
+Ign:4 file:/build/package//resolver-VvfzZc/apt_archive ./ Release.gpg
+Get:5 file:/build/package//resolver-VvfzZc/apt_archive ./ Packages [408 kB]
+Get:6 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:7 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Fetched 15.8 MB in 1s (11.7 MB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization/jsk_interactive_markers/ros-one-jsk-interactive-test_2.1.8-64-g8bb999d-2024.02.01.06.29.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization/jsk_interactive_markers; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), catkin, libgmock-dev, libgtest-dev, ros-one-jsk-interactive, ros-one-jsk-interactive-marker, ros-one-mk, ros-one-rosbuild, ros-one-rospy, ros-one-visualization-msgs, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot
+Filtered Build-Depends: debhelper (>= 9.0.0), catkin, libgmock-dev, libgtest-dev, ros-one-jsk-interactive, ros-one-jsk-interactive-marker, ros-one-mk, ros-one-rosbuild, ros-one-rospy, ros-one-visualization-msgs, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [580 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [826 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [858 B]
+Fetched 2264 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:2 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:3 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ sbuild-build-depends-main-dummy : Depends: ros-one-jsk-interactive but it is not installable
+                                   Depends: ros-one-jsk-interactive-marker but it is not installable
+E: Unable to correct problems, you have held broken packages.
+apt-get failed.
+E: Package installation failed
+Not removing build depends: cloned chroot in use
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: dose-distcheck
+Filtered Build-Depends: dose-distcheck
+dpkg-deb: building package 'sbuild-build-depends-dose3-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-dose3-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [586 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [1405 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [1473 B]
+Fetched 3464 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:2 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release [583 B]
+Get:3 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-VvfzZc/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install dose3 build dependencies (apt-based resolver)
+-----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  dose-distcheck
+The following NEW packages will be installed:
+  dose-distcheck sbuild-build-depends-dose3-dummy
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1215 kB of archives.
+After this operation, 4361 kB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-dose3-dummy 0.invalid.0 [652 B]
+Get:2 http://127.0.0.1:3142/azure.archive.ubuntu.com/ubuntu jammy/universe amd64 dose-distcheck amd64 7.0.0-1build1 [1214 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 1215 kB in 0s (77.9 MB/s)
+Selecting previously unselected package dose-distcheck.
+(Reading database ... 10521 files and directories currently installed.)
+Preparing to unpack .../dose-distcheck_7.0.0-1build1_amd64.deb ...
+Unpacking dose-distcheck (7.0.0-1build1) ...
+Selecting previously unselected package sbuild-build-depends-dose3-dummy.
+Preparing to unpack .../sbuild-build-depends-dose3-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-dose3-dummy (0.invalid.0) ...
+Setting up dose-distcheck (7.0.0-1build1) ...
+Setting up sbuild-build-depends-dose3-dummy (0.invalid.0) ...
+(I)Doseparse: Parsing and normalizing...
+(I)Dose_deb: Parsing Packages file -...
+(I)Dose_common: total packages 65512
+(I)Dose_applications: Cudf Universe: 65512 packages
+(I)Dose_applications: --checkonly specified, consider all packages as background packages
+(I)Dose_applications: Solving...
+output-version: 1.2
+native-architecture: amd64
+report:
+ -
+  package: sbuild-build-depends-main-dummy
+  version: 0.invalid.0
+  architecture: amd64
+  status: broken
+  reasons:
+   -
+    missing:
+     pkg:
+      package: sbuild-build-depends-main-dummy
+      version: 0.invalid.0
+      architecture: amd64
+      unsat-dependency: ros-one-jsk-interactive:amd64
+ 
+background-packages: 65511
+foreground-packages: 1
+total-packages: 65512
+broken-packages: 1
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+E: Package build dependencies not satisfied; skipping
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Type: binary
+Build-Space: n/a
+Build-Time: 0
+Distribution: jammy
+Fail-Stage: install-deps
+Host Architecture: amd64
+Install-Time: 0
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/jsk_visualization/jsk_interactive_markers/ros-one-jsk-interactive-test_2.1.8-64-g8bb999d-2024.02.01.06.29.dsc
+Machine Architecture: amd64
+Package: ros-one-jsk-interactive-test
+Package-Time: 0
+Source-Version: 2.1.8-64-g8bb999d-2024.02.01.06.29
+Space: n/a
+Status: given-back
+Version: 2.1.8-64-g8bb999d-2024.02.01.06.29
+--------------------------------------------------------------------------------
+Finished at 2024-02-01T06:29:20Z
+Build needed 00:00:00, no disk space

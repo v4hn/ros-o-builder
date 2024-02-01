@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Thu, 30 Mar 2023 00:00:00 -0000
+Source: ros-one-rviz
+Binary: ros-one-rviz
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.14.20-23-gb466cb9d-2024.01.31.16.42
+Distribution: jammy
+Urgency: high
+Maintainer: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Changed-By: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Description:
+ ros-one-rviz - 3D visualization tool for ROS.
+Changes:
+ ros-one-rviz (1.14.20-23-gb466cb9d-2024.01.31.16.42) jammy; urgency=high
+ .
+   * Improvements to TF display (#1789 <https://github.com/ros-visualization/rviz/issues/1789>)
+ .
+       * Add regex filters (white+black list) to TF Display (#1744 <https://github.com/ros-visualization/rviz/issues/1744>)
+       * Reparent children to root tree node when deleting a frame
+       * Insert frame properties sorted
+       * Create tree nodes also if the frame is not connected to rviz' global frame
+ .
+   * RobotModel: Fix orientation of joint axis arrow (#1788 <https://github.com/ros-visualization/rviz/issues/1788>)
+   * Use static QCoreApplication::processEvents() w/o QApplication instance (#1772 <https://github.com/ros-visualization/rviz/issues/1772>)
+   * Contributors: Blaz Potokar, Robert Haschke, Yannis Gerlach
+Checksums-Sha1:
+ be9058415fff4b541ec0b9f0f62e868f4bf0a49a 63690230 ros-one-rviz-dbgsym_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.ddeb
+ 05556cf4db09e428090c99405d25ce6d8ebb0d86 28171 ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.buildinfo
+ fb441375ed80da29f139c5054c5243d1a39a679f 2348552 ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.deb
+Checksums-Sha256:
+ c163e7cac041e03868c784a79172a8a35eb65c4574e01b39c315558f21ee44a4 63690230 ros-one-rviz-dbgsym_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.ddeb
+ 9df4864174ebd9a29d03e594d70940d4ae085b40f6bb750a9c82616ee7f64f33 28171 ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.buildinfo
+ dd857affe6a9b4535a296943f89cd40573fbfc9d007ba2adb42a63da0831c11a 2348552 ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.deb
+Files:
+ 7d4b3be3c668ccf6a627382725f3de45 63690230 debug optional ros-one-rviz-dbgsym_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.ddeb
+ df9e223845596330e615a0fe1d2b4680 28171 misc optional ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.buildinfo
+ 8b9b0af01a0dbc62adc88f7f2e69a95c 2348552 misc optional ros-one-rviz_1.14.20-23-gb466cb9d-2024.01.31.16.42_amd64.deb
