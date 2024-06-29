@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 16 May 2024 00:00:00 -0000
+Source: ros-one-pal-statistics
+Binary: ros-one-pal-statistics
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.5.2-2-ga5b028b-2024.06.28.18.29
+Distribution: jammy
+Urgency: high
+Maintainer: victor <victor.lopez@pal-robotics.com>
+Changed-By: victor <victor.lopez@pal-robotics.com>
+Description:
+ ros-one-pal-statistics - The pal_statistics package
+Changes:
+ ros-one-pal-statistics (1.5.2-2-ga5b028b-2024.06.28.18.29) jammy; urgency=high
+ .
+   * do not rely on extension for std::vector<bool>
+     The standard does not define std::swap() for the bit proxy objects,
+     but defines a static method instead. This broke with clang++ 14.0.6 over
+     here.
+     See here for more details:
+     https://stackoverflow.com/a/58660208/21260084
+   * Contributors: v4hn
+Checksums-Sha1:
+ 6c26fe3d90d7339babf5c8408a7622b724e880b3 1676388 ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.ddeb
+ f51887df71d9eff7c3706979d81df9a5bd3bcc30 20201 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.buildinfo
+ 62d367f210727b04a7548b3536b8c53a485b3849 111004 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.deb
+Checksums-Sha256:
+ d57215b360b28b4983bd874545e339feae8b604d7b3d7997c99e5a4b27d77fd1 1676388 ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.ddeb
+ 19fc7d2325fb9269dd3fe513505b0c3656e437726b813f616a5ad3e6c14a2037 20201 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.buildinfo
+ 897d381fd8f05f2d9762937d6645254adcc55312a1174a5e1d6f4b108277fbcb 111004 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.deb
+Files:
+ 4007e94f785a2f033e99b9a21cb86447 1676388 debug optional ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.ddeb
+ 66171eef3d6012b19c413ac08d328c04 20201 misc optional ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.buildinfo
+ 490040dd9b859e69d7d45e07cdfdb21e 111004 misc optional ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.06.28.18.29_amd64.deb

@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 15 Jun 2023 00:00:00 -0000
+Source: ros-one-rostime
+Binary: ros-one-rostime
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.7.3-2024.06.28.13.06
+Distribution: jammy
+Urgency: high
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Changed-By: Martin Pecka <peckama2@fel.cvut.cz>
+Description:
+ ros-one-rostime - Time and Duration implementations for C++ libraries, including ro
+Changes:
+ ros-one-rostime (0.7.3-2024.06.28.13.06) jammy; urgency=high
+ .
+   * Fix min() usage
+   * Use shorter wall sleeps in sim time for very short durations
+   * Changed maintainer to Martin Pecka
+   * Removed constants for WEEK and YEAR as they might be ambiguous.
+   * rostime: Added <limits> headers wherever std::numeric_limits are used.
+   * Fixed handling of infinite or >int64 doubles in Time and Duration constructors. Added tests for Rate(double) constructor, verified Rate(inf) works and Rate(0) does not.
+   * rostime: Added useful time and duration constants.
+   * Contributors: Martin Pecka
+Checksums-Sha1:
+ 22d93fc96f1526ab8031f53fb8b587b81fe750aa 233658 ros-one-rostime-dbgsym_0.7.3-2024.06.28.13.06_amd64.ddeb
+ e0b3e99577853815839c36ffa2996b49138c21bc 8930 ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.buildinfo
+ 6f62a0afff2aa8f1294c5c1a66517e21c42e1e09 40432 ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.deb
+Checksums-Sha256:
+ f1d94fc04d5842d0648ebba824e9cb0d6c8123dc3498b71702f313b3e4bb0d8e 233658 ros-one-rostime-dbgsym_0.7.3-2024.06.28.13.06_amd64.ddeb
+ 9788f5c892927ccfdede3ab769d4c30bda3117aea4b4f38be38203f42599d5cf 8930 ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.buildinfo
+ 9e5a7a77a3da4567b94ded39f267406a51100075b1a4b2ca87fd79130632ffb2 40432 ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.deb
+Files:
+ 2b55a8c66af688f57f80b5e76713975b 233658 debug optional ros-one-rostime-dbgsym_0.7.3-2024.06.28.13.06_amd64.ddeb
+ 0ca9ff15ced36d210bfef0dbfe0e6f27 8930 misc optional ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.buildinfo
+ c35dcc12758290b980bbaacbdde5a1a8 40432 misc optional ros-one-rostime_0.7.3-2024.06.28.13.06_amd64.deb

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-costmap-2d
+Binary: ros-one-costmap-2d
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2024.06.29.01.30
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-costmap-2d - This package provides an implementation of a 2D costmap that take
+Changes:
+ ros-one-costmap-2d (1.17.3-3-g9ad64419-2024.06.29.01.30) jammy; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ eb5bd911d743eaae6bbbe6a5f59ad990d3b200ca 8472828 ros-one-costmap-2d-dbgsym_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.ddeb
+ a57a7442c8faaf86e3dd615de6860ff1bdec47b8 26153 ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.buildinfo
+ 288597880435a6c34665fa48180df44cf800814d 425936 ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.deb
+Checksums-Sha256:
+ 37d7f587fb4f14065c50069cde060d3d0f73bb2e58d856f0042aeb82f803965c 8472828 ros-one-costmap-2d-dbgsym_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.ddeb
+ 09fb44a5cd8c35f5e1e54f01f3c8556f33073b3e45a865a108398399c413a1db 26153 ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.buildinfo
+ 1a2b6982f2426ae1ebe7a26d11dd6c450394ea29b5226c7bc7b11896a9cf755c 425936 ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.deb
+Files:
+ 4292f196bd74497bc9e2d7e5881bebdd 8472828 debug optional ros-one-costmap-2d-dbgsym_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.ddeb
+ 28700017fd3087e01114c6e1cd126721 26153 misc optional ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.buildinfo
+ 7ea689bc854dc80988b0c541026dfc25 425936 misc optional ros-one-costmap-2d_1.17.3-3-g9ad64419-2024.06.29.01.30_amd64.deb

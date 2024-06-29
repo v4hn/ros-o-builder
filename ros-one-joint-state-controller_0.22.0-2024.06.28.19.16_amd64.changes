@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.22.0-2024.06.28.19.16
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2024.06.28.19.16) jammy; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ b4add2a68827a51166e18e69f91cc93b3ac9d3a4 583600 ros-one-joint-state-controller-dbgsym_0.22.0-2024.06.28.19.16_amd64.ddeb
+ c0903c6ca805586e0cdc9521d5475625735351d7 14449 ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.buildinfo
+ 0ad62733ea0f021bb577c2afc9a2c4fc05c31a6d 51614 ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.deb
+Checksums-Sha256:
+ 5f34eb7ec27880fa11efed566003e844fb8b7375a51d168592438a46cf1d7699 583600 ros-one-joint-state-controller-dbgsym_0.22.0-2024.06.28.19.16_amd64.ddeb
+ 8934a15eef12f5b9ab8abec4629006007a4ab9bb4af9bda6fbdf837295408360 14449 ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.buildinfo
+ 94c3f11584b671d765f8534b37ad22a674cb3e34db87f84b45de3d7660b22879 51614 ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.deb
+Files:
+ ab0d6a6347113dd8a6fafb4f524279e4 583600 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2024.06.28.19.16_amd64.ddeb
+ e1b8846b51275c0beeaf4633f1ddd116 14449 misc optional ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.buildinfo
+ ba448e57219a8c5a5d8e566396946fd6 51614 misc optional ros-one-joint-state-controller_0.22.0-2024.06.28.19.16_amd64.deb
