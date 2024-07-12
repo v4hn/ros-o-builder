@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 30 Jan 2023 00:00:00 -0000
+Source: ros-one-compressed-image-transport
+Binary: ros-one-compressed-image-transport
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.15.0-9-gcae592c-2024.07.11.16.13
+Distribution: jammy
+Urgency: high
+Maintainer: Kenji Brameld <kenjibrameld@gmail.com>
+Changed-By: Kenji Brameld <kenjibrameld@gmail.com>
+Description:
+ ros-one-compressed-image-transport - Compressed_image_transport provides a plugin to image_transport f
+Changes:
+ ros-one-compressed-image-transport (1.15.0-9-gcae592c-2024.07.11.16.13) jammy; urgency=high
+ .
+   * Update maintainer in ros1 branches (#132 <https://github.com/ros-perception/image_transport_plugins/issues/132>)
+   * Fix number of elements in vector parameter to call cv::imencode for OpenCV 4.7 (#130 <https://github.com/ros-perception/image_transport_plugins/issues/130>)
+   * Performance optimizations for JPEG decompression (#60 <https://github.com/ros-perception/image_transport_plugins/issues/60>)
+   * Fix copyright year 20012 -> 2012 (#80 <https://github.com/ros-perception/image_transport_plugins/issues/80>)
+   * Add a basic loopback unit test (#61 <https://github.com/ros-perception/image_transport_plugins/issues/61>)
+   * Contributors: Johannes Meyer, Kenji Brameld, Lucas Walter, Max Schwarz, Michael Carroll, ijnek, v4hn
+Checksums-Sha1:
+ f893ba0d480901c84b466e864b81c83a39a485ad 1624584 ros-one-compressed-image-transport-dbgsym_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.ddeb
+ 8ca6a2147dae9bbcebe9376a36deb7242bc96c12 30374 ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.buildinfo
+ 2fe296f3d7f92ba989c01a907397d49d07527b85 102706 ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.deb
+Checksums-Sha256:
+ 26b2aa4ded7a33211069cc74ca8d122f67a3b735412bf43be6f1cd2a43aef40f 1624584 ros-one-compressed-image-transport-dbgsym_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.ddeb
+ 5f0c48233067e0ef0185c7d59c8a9ca8a27d0cbda8f191c11b6c6adbe32726e0 30374 ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.buildinfo
+ 0448409fa11abc27b176a41577931d37bd059d027a829e7cdce2a1b2ddce219a 102706 ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.deb
+Files:
+ 2fb9d53380ec7bd11290d71761092d83 1624584 debug optional ros-one-compressed-image-transport-dbgsym_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.ddeb
+ a5708e26b57299552a764a74be84e073 30374 misc optional ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.buildinfo
+ e2e67027c6f3c3f53e7e5ab8f462e374 102706 misc optional ros-one-compressed-image-transport_1.15.0-9-gcae592c-2024.07.11.16.13_amd64.deb

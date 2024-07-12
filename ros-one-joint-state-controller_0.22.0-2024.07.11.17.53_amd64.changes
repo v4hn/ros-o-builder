@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.22.0-2024.07.11.17.53
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2024.07.11.17.53) jammy; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ 0a66df2b17888fc57d77f8c62d53d4f2f174d912 583594 ros-one-joint-state-controller-dbgsym_0.22.0-2024.07.11.17.53_amd64.ddeb
+ 843f37a3496ebdf4f3a6c494886988760ff4f509 14449 ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.buildinfo
+ 419a21c84e095d7f26fbe01813656412de1bfde0 51614 ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.deb
+Checksums-Sha256:
+ 2da56c36df8a8b120f173dc5033d09e88317271f3fd2dd54bfe27fb9c2706ffb 583594 ros-one-joint-state-controller-dbgsym_0.22.0-2024.07.11.17.53_amd64.ddeb
+ c2fc0b210714514496e76d0824e8cf29d1aaa8e24e8bd79b46ca5388cbf8c1b3 14449 ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.buildinfo
+ d4ac71687fb4ef761200621f18f2bc0517aae7b34d992e2f127ebfaa0db37340 51614 ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.deb
+Files:
+ 629215fe461f38016161bc0574a0f86b 583594 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2024.07.11.17.53_amd64.ddeb
+ 34e6b227ed41176d44e4906984b6c424 14449 misc optional ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.buildinfo
+ 2b8693d8e8e5e360be26e6f13b5ee5e3 51614 misc optional ros-one-joint-state-controller_0.22.0-2024.07.11.17.53_amd64.deb

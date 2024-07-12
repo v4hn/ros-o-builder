@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 15 Jun 2023 00:00:00 -0000
+Source: ros-one-roscpp-serialization
+Binary: ros-one-roscpp-serialization
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.7.3-2024.07.11.11.54
+Distribution: jammy
+Urgency: high
+Maintainer: Martin Pecka <peckama2@fel.cvut.cz>
+Changed-By: Martin Pecka <peckama2@fel.cvut.cz>
+Description:
+ ros-one-roscpp-serialization - roscpp_serialization contains the code for serialization as descr
+Changes:
+ ros-one-roscpp-serialization (0.7.3-2024.07.11.11.54) jammy; urgency=high
+ .
+   * Documented the API misuse in serializeServiceResponse
+   * Fixed wrong serialization of messages on ARM with GCC 9.3 and -O3 optimizations
+   * Changed maintainer to Martin Pecka
+   * Fix usage of deprecated std::allocator::rebind (#124 <https://github.com/ros/roscpp_core/issues/124>)
+   * Contributors: Martin Pecka, poggenhans
+Checksums-Sha1:
+ 5c8479a300c2167ed3989e348971e4c372ce0293 30616 ros-one-roscpp-serialization-dbgsym_0.7.3-2024.07.11.11.54_amd64.ddeb
+ c4ab02f972ed6f094856a560fb4fb4bf20a1b114 9140 ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.buildinfo
+ 4449d820e621a484f8f624392a4a66a8a37880a8 13780 ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.deb
+Checksums-Sha256:
+ 3414983f2f4d8906c5ff462cb8f87aa6f22960eb01e75b35eb5b72eea99c2277 30616 ros-one-roscpp-serialization-dbgsym_0.7.3-2024.07.11.11.54_amd64.ddeb
+ b099e6cf393060dca1195a17861d0277c14471ba4b3e9141d2c16e7cf11f5f2b 9140 ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.buildinfo
+ d5cea089066b2b33d790f293ea19885676393ac843c1f4daad5c030cc00f0a01 13780 ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.deb
+Files:
+ 9eb8a1fc960279be356a55bbc7ed18fa 30616 debug optional ros-one-roscpp-serialization-dbgsym_0.7.3-2024.07.11.11.54_amd64.ddeb
+ dc0a3836d4487c86eb8621f866df2675 9140 misc optional ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.buildinfo
+ 6386b5f3b6bc4ac94e0c838e10f05a70 13780 misc optional ros-one-roscpp-serialization_0.7.3-2024.07.11.11.54_amd64.deb
