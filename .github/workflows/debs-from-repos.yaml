@@ -56,7 +56,7 @@ jobs:
           SBUILD_CONF: '$verbose = 1;'
           ROSDEP_SOURCE: rosdep.yaml
           REPOS_FILE: ${{ inputs.repos }}.repos
-          CONTINUE_ON_ERROR: true
+          CONTINUE_ON_ERROR: false
       - name: Store ccache
         uses: actions/cache/save@v4
         if: always() # save cache on timeout too
