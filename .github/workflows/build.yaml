@@ -60,6 +60,6 @@ jobs:
       - uses: v4hn/ros-deb-builder-action/deploy@rosotest
         if: always() # alternatively success()
         with:
-          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
+          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-unstable
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
