@@ -29,11 +29,11 @@ jobs:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use apt packages ${{ inputs.depends }}
         id: depends-cache
         if: ${{ inputs.depends }}
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: /home/runner/apt_repo
           key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}
@@ -41,7 +41,7 @@ jobs:
         if: ${{ inputs.depends && steps.depends-cache.outputs.cache-hit != 'true' }}
         run: exit 1
       - name: Use ccache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: ${{ env.CCACHE_PATH }}
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
@@ -58,13 +58,13 @@ jobs:
           REPOS_FILE: ${{ inputs.repos }}.repos
           CONTINUE_ON_ERROR: true
       - name: Store ccache
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         if: always() # save cache on timeout too
         with:
           path: ${{ env.CCACHE_PATH }}
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
       - name: Cache apt repo unconditionally
-        uses: actions/cache/save@v3
+        uses: actions/cache/save@v4
         if: always()
         with:
           path: /home/runner/apt_repo

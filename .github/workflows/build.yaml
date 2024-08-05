@@ -53,7 +53,7 @@ jobs:
       DEB_DISTRO: jammy
     steps:
       - name: get apt packages from last job
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v4
         with:
           path: /home/runner/apt_repo
           key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-universe-2-${{ github.sha }}
