@@ -3,6 +3,11 @@ name: build
 on:
   workflow_dispatch:
   push:
+    paths:
+      - '**.repos'
+      - '**.yaml'
+  schedule:
+    - cron: '13 1 * * 2,6'
 
 jobs:
   ros-robot:
