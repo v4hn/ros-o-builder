@@ -28,13 +28,20 @@ jobs:
     with:
       repos: ros-desktop-full
       depends: ros-desktop
-  universe-0:
+  ros-manipulation:
     if: success() || failure() # can get cancelled
     needs: ros-desktop-full
     uses: ./.github/workflows/debs-from-repos.yaml
     with:
-      repos: universe-0
+      repos: ros-manipulation
       depends: ros-desktop-full
+  universe-0:
+    if: success() || failure() # can get cancelled
+    needs: ros-manipulation
+    uses: ./.github/workflows/debs-from-repos.yaml
+    with:
+      repos: universe-0
+      depends: ros-manipulation
   universe-1:
     if: success() || failure() # can get cancelled
     needs: universe-0
