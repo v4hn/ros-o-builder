@@ -5,6 +5,9 @@ on:
         type: string
       depends:
         type: string
+      extra_sbuild_conf:
+        type: string
+        default: ''
 
 # json use example:
 #  test:
@@ -51,7 +54,7 @@ jobs:
         with:
           ROS_DISTRO: ${{ env.ROS_DISTRO }}
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
-          SBUILD_CONF: '$verbose = 1;'
+          SBUILD_CONF: "$verbose = 1; ${{ inputs.extra_sbuild_conf }}"
           ROSDEP_SOURCE: rosdep.yaml
           REPOS_FILE: ${{ inputs.repos }}.repos
           CONTINUE_ON_ERROR: true
