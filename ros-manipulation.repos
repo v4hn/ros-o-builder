@@ -31,10 +31,11 @@ repositories:
     type: git
     url: https://github.com/ros-planning/moveit_resources.git
     version: master
-  moveit_tutorials:
-    type: git
-    url: https://github.com/ros-planning/moveit_tutorials.git
-    version: master
+#they require franka_description/franka_ros, in turn requiring pinocchio/hpp-fcl
+#  moveit_tutorials:
+#    type: git
+#    url: https://github.com/ros-planning/moveit_tutorials.git
+#    version: master
   moveit_visual_tools:
     type: git
     url: https://github.com/ros-planning/moveit_visual_tools.git
