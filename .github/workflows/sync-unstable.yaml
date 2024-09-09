@@ -1,0 +1,32 @@
+name: sync-unstable
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout unstable branch
+        uses: actions/checkout@v4
+      - name: validate branch
+        run: |
+          if [[ ${{ github.event.inputs.repo }} != *-unstable ]]; then
+            echo "This workflow is only meant for -unstable branches"
+            exit 1
+          fi
+      - name: Strip -unstable suffix
+        run: |
+          echo "BRANCH=$(echo ${{ github.event.inputs.repo }} | sed 's/-unstable$//')" >> $GITHUB_ENV
+          find . -type f -exec sed -i 's/-unstable//g' {} +
+      - name: Add sync date to README
+        run: |
+          sed -i "/ Date/ a | Synced As Stable | $(date) |" README.md
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ${{ env.BRANCH }}
+          FOLDER: .
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
