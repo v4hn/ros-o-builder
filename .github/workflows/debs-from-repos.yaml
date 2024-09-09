@@ -47,7 +47,7 @@ jobs:
           path: ${{ env.CCACHE_PATH }}
           key: ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
           restore-keys: |
-            ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}
+            ccache-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}
       - name: Build packages
         uses: v4hn/ros-deb-builder-action/build@rosotest
         timeout-minutes: 330
