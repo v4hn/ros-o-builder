@@ -39,8 +39,16 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}
-          fail-on-cache-miss: true
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}
+      - name: Verify cache
+        if: ${{ inputs.depends }}
+        run: |
+          if [ -z "${{ steps.depends-cache.outputs.cache-hit }}" ]; then
+            echo "Cache not found"
+            exit 1
+          fi
       - name: Use ccache
         uses: actions/cache/restore@v4
         with:
@@ -69,4 +77,4 @@ jobs:
         if: always()
         with:
           path: /home/runner/apt_repo
-          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}
+          key: apt-repo-${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-${{ inputs.repos }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
