@@ -1,4 +1,16 @@
 repositories:
+  axis_camera:
+    type: git
+    url: https://github.com/ros-drivers/axis_camera.git
+    version: noetic-devel
+  euslisp:
+    type: git
+    url: https://github.com/tork-a/euslisp-release.git
+    version: release/noetic/euslisp
+  executive_smach_visualization:
+    type: git
+    url: https://github.com/ros-visualization/executive_smach_visualization.git
+    version: melodic-devel
   openni_camera:
     type: git
     url: https://github.com/ros-o/openni_camera.git
@@ -15,10 +27,18 @@ repositories:
     type: git
     url: https://github.com/ros-o/slam_karto.git
     version: obese-devel
+  ml_classifiers:
+    type: git
+    url: https://github.com/sniekum/ml_classifiers
+    version: master
   moveit_msgs:
     type: git
     url: https://github.com/ros-planning/moveit_msgs.git
     version: master
+  multisense_ros:
+    type: git
+    url: https://github.com/ros-o/multisense_ros
+    version: obese-devel
   sparse_bundle_adjustment:
     type: git
     url: https://github.com/ros-perception/sparse_bundle_adjustment
@@ -27,6 +47,10 @@ repositories:
     type: git
     url: https://github.com/ros-perception/openslam_gmapping.git
     version: melodic-devel
+  ros_emacs_utils:
+    type: git
+    url: https://github.com/code-iai/ros_emacs_utils
+    version: master
   slam_gmapping:
     type: git
     url: https://github.com/ros-perception/slam_gmapping.git
@@ -51,6 +75,18 @@ repositories:
     type: git
     url: https://github.com/mikeferguson/robot_calibration
     version: ros1
+  rqt_ez_publisher:
+    type: git
+    url: https://github.com/OTL/rqt_ez_publisher.git
+    version: noetic-devel
+  rqt_joint_trajectory_plot:
+    type: git
+    url: https://github.com/ros-o/rqt_joint_trajectory_plot.git
+    version: obese-devel
+  jskeus:
+    type: git
+    url: https://github.com/tork-a/jskeus-release.git
+    version: release/noetic/jskeus
   laser_filtering:
     type: git
     url: https://github.com/DLu/laser_filtering.git
@@ -67,3 +103,7 @@ repositories:
     type: git
     url: https://github.com/ros-drivers/usb_cam
     version: develop
+  wu_ros_tools:
+    type: git
+    url: https://github.com/DLu/wu_ros_tools.git
+    version: noetic
