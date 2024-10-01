@@ -1,0 +1,83 @@
+on:
+  workflow_call:
+    inputs:
+      depends:
+        type: string
+      worker:
+        type: string
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    env:
+      ROS_DISTRO: one
+      DEB_DISTRO: jammy
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
+      JOBS_YAML: /home/runner/jobs.yaml
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Fetch job specification
+        id: fetch-jobs
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.JOBS_YAML }}
+          key: jobs-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            jobs-${{ github.sha }}-${{ github.run_id }}
+      - name: Verify jobs
+        run: |
+          if [ -z "${{ steps.fetch-jobs.outputs.cache-hit }}" ]; then
+            echo "Cache not found"
+            exit 1
+          fi
+      - name: Use apt packages ${{ inputs.depends }}
+        id: fetch-dependencies
+        if: ${{ inputs.depends }}
+        uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/apt_repo_dependencies
+          key: apt-repo-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            apt-repo-${{ inputs.depends }}-${{ github.sha }}-${{ github.run_id }}
+      - name: Verify cache
+        if: ${{ inputs.depends }}
+        run: |
+          if [ -z "${{ steps.fetch-dependencies.outputs.cache-hit }}" ]; then
+            echo "Cache not found"
+            exit 1
+          fi
+      - name: List repositories
+        run: |
+          OPTS=$(yq ".\"${{ inputs.worker }}\".sbuild_options" ${{ env.JOBS_YAML }})
+          [ "$OPTS" != "null" ] || OPTS=""
+          [ -z "$OPTS" ] || echo "extra_sbuild_conf=$OPTS" >> $GITHUB_ENV
+
+          QUERY=$(
+            echo -n '{ "repositories": {';
+            sep=""
+            yq '."${{ inputs.worker }}".jobs[]' ${{ env.JOBS_YAML }} | while read repo; do
+              echo -n "$sep \"$repo\": .repositories.\"$repo\""
+              sep=","
+            done
+            echo -n "} }"
+          )
+          yq "$QUERY" sources.repos | tee worker-jobs.repos
+          echo "extra_sbuild_conf: $OPTS"
+      - name: Build packages
+        uses: v4hn/ros-deb-builder-action/build@roso-noble
+        timeout-minutes: 330
+        with:
+          ROS_DISTRO: ${{ env.ROS_DISTRO }}
+          DEB_DISTRO: ${{ env.DEB_DISTRO }}
+          SBUILD_CONF: "$extra_packages = ['/home/runner/apt_repo_dependencies']; $enable_network = 1; ${{ env.extra_sbuild_conf }}"
+          ROSDEP_SOURCE: rosdep.yaml
+          REPOS_FILE: worker-jobs.repos
+          CONTINUE_ON_ERROR: true
+      - name: Store apt repo
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: /home/runner/apt_repo
+          key: apt-repo-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}

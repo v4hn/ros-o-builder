@@ -1,0 +1,135 @@
+on:
+  workflow_call:
+    inputs:
+      stage:
+        type: number
+        required: true
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-24.04
+    env:
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
+      REPO: /home/runner/apt_repo
+      AGG: /home/runner/apt_repo_dependencies
+      stage: stage${{ inputs.stage }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Prepare
+        run: |
+          echo "previous_stage=stage$((${{ inputs.stage }}-1))" >> $GITHUB_ENV
+          mkdir -p ${{ env.AGG }}
+      - name: Fetch results of previous stage
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.AGG }}
+          key: apt-repo-${{ env.previous_stage }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            apt-repo-${{ env.previous_stage }}-${{ github.sha }}-${{ github.run_id }}
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker0
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker1
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker2
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker3
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker4
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker5
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker6
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker7
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker8
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker9
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker10
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker11
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker12
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker13
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker14
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker15
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker16
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker17
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker18
+      - name: Aggregate worker
+        uses: ./.github/actions/aggregate-worker
+        with:
+          stage: ${{ env.stage }}
+          worker: worker19
+      - name: Store apt repo
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: ${{ env.AGG }}
+          key: apt-repo-${{ env.stage }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
