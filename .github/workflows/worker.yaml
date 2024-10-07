@@ -28,7 +28,7 @@ jobs:
             jobs-${{ github.sha }}-${{ github.run_id }}
       - name: Verify jobs
         run: |
-          if [ -z "${{ steps.fetch-jobs.outputs.cache-hit }}" ]; then
+          if [ -z "${{ steps.fetch-jobs.outputs.cache-matched-key }}" ]; then
             echo "Cache not found"
             exit 1
           fi
@@ -44,7 +44,7 @@ jobs:
       - name: Verify cache
         if: ${{ inputs.depends }}
         run: |
-          if [ -z "${{ steps.fetch-dependencies.outputs.cache-hit }}" ]; then
+          if [ -z "${{ steps.fetch-dependencies.outputs.cache-matched-key }}" ]; then
             echo "Cache not found"
             exit 1
           fi
