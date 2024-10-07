@@ -1,6 +1,9 @@
 python:
   debian:
     - python3-dev
+libfltk-dev:
+  debian:
+    - libfltk1.3-dev
 # this package does not exist (and shouldn't, because it was moved to moveit-resources)
 # but it's still referenced as conflicting with moveit_resources
 prbt_ikfast_manipulator_plugin:
