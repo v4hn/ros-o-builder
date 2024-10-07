@@ -2,13 +2,13 @@
 
 This repository builds an extended ROS ecosystem for Debian-based distributions in `ros-one-*.deb` packages on GitHub's free GitHub Action.
 
-**Target Distribution**: At the moment packages are build for Ubuntu 22.04 jammy - other Debian-based target distributions can be setup as well.
+**Target Distribution**: This branch targets Debian Sid (unstable).
 
 **Build Time**: Build times vary on the amount of packages selected. An extended system of around 850 packages takes around 12 hours to build using the staged parallel builder.
 
 ## Usage
 
-You can either [rely on this repository](https://github.com/v4hn/ros-o-builder/blob/jammy-one/README.md#install-instructions), or fork it to control package versions and syncs yourself.
+You can either rely on this repository, or fork it to control package versions and syncs yourself.
 
 ### Setup instructions for your own fork
 
@@ -64,7 +64,6 @@ The packages built here rely on Debian packages of ROS core infrastructure [[0](
 
 ### Target Platforms
 
-- Debian sid
 - Ubuntu noble
 
 ### Internals

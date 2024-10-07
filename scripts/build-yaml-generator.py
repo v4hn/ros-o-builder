@@ -107,7 +107,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       ROS_DISTRO: one
-      DEB_DISTRO: jammy
+      DEB_DISTRO: sid
     steps:
       - name: get apt packages from last job
         uses: actions/cache/restore@@v4
