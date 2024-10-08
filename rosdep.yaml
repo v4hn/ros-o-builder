@@ -68,6 +68,10 @@ bfl:
 prbt_ikfast_manipulator_plugin:
   ubuntu:
     - ros-one-prbt-ikfast-manipulator-plugin
+# this package is not available in the default ubuntu repositories due to licensing issues
+# rosdep still needs to resolve it when building warehouse_ros_mongo
+mongodb:
+  ubuntu: []
 # broken in roseus for now
 #euslisp:
 #  ubuntu:
