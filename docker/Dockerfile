@@ -4,6 +4,7 @@ FROM ubuntu:jammy
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
 RUN apt install -y vim less ca-certificates sudo bash-completion python3-pip git tmux python-is-python3
+RUN apt install -y python3-bloom
 RUN pip3 install catkin-tools
 
 RUN echo "deb [trusted=yes] https://raw.githubusercontent.com/v4hn/ros-o-builder/jammy-one-unstable/repository ./" | sudo tee /etc/apt/sources.list.d/v4hn_ros-o-builder.list
