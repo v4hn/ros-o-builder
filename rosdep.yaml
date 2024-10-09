@@ -1,6 +1,11 @@
 python:
   debian:
     - python3-dev
+# OR rosdep defines these as runtime-only libraries (with versions), but that requires repeated updating here with each boost release.
+# Instead, this requires the generic package name which on the downside also pulls in the development headers.
+libboost-thread:
+  debian:
+    - libboost-thread-dev
 libfltk-dev:
   debian:
     - libfltk1.3-dev
