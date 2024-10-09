@@ -1,11 +1,6 @@
 python:
   debian:
     - python3-dev
-# OR rosdep defines these as runtime-only libraries (with versions), but that requires repeated updating here with each boost release.
-# Instead, this requires the generic package name which on the downside also pulls in the development headers.
-libboost-thread:
-  debian:
-    - libboost-thread-dev
 libfltk-dev:
   debian:
     - libfltk1.3-dev
@@ -18,6 +13,10 @@ prbt_ikfast_manipulator_plugin:
   debian:
     - ros-one-prbt-ikfast-manipulator-plugin
 # this package is not available in the default ubuntu repositories due to licensing issues
-# rosdep still needs to resolve it when building warehouse_ros_mongo
+# rosdep still needs to resolve it when building mongo client packages with run-time dependency
 mongodb:
+  debian: []
+# OR rosdep defines these runtime-only libraries (with versions), but that requires repeated updating here with each boost release.
+# debhelper generates the correct library dependencies anyway, so just ignore these keys
+libboost-thread:
   debian: []
