@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 30 Apr 2017 00:00:00 -0000
+Source: ros-one-stage-ros
+Binary: ros-one-stage-ros ros-one-stage-ros-dbgsym
+Architecture: amd64
+Version: 1.8.0-2-gc7d6d25-2024.10.09.23.19
+Distribution: sid
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-stage-ros - This package provides ROS specific hooks for stage
+Changes:
+ ros-one-stage-ros (1.8.0-2-gc7d6d25-2024.10.09.23.19) sid; urgency=high
+ .
+   * Now uses Stage's native event loop properly and added reassuring startup output.
+   * Added a GUI section so that the world starts in a good place.
+   * Fixed issue such that ranger intensity values are no longer clipped to 256
+     See: #31 <https://github.com/ros-simulation/stage_ros/issues/31>
+   * Contributors: Richard Vaughan, Shane Loretz, William Woodall, gerkey
+Checksums-Sha1:
+ f394e1d0ee0c46f141e8f0c54d0ad496dbe1420b 747388 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb
+ 07cf5f4305b30af62e1d0c2c01c830c30c10e396 26782 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.buildinfo
+ cf900df6d0123168b967214160347a35bc690ead 99312 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb
+Checksums-Sha256:
+ 04248726369b28352789cf9eb67583818e009fa6bf5f713ac5e41753d3a93ef9 747388 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb
+ f68152d2525babc765a752cde852324bb3e05f38922a9fc00ca7ea1a5dc24a59 26782 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.buildinfo
+ 86e464b4d8b133b9ee897f091ec7bdfb06ca0b99152a2fd7beea5d0bc3aed342 99312 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb
+Files:
+ 56984591a5a36ccc1aca8ac2146fa4e1 747388 debug optional ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb
+ 51075bcf922830e21bd65c3100a9987a 26782 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.buildinfo
+ 846e6d0f1d4889bb8c3ffab8faf1b457 99312 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.10.09.23.19_amd64.deb

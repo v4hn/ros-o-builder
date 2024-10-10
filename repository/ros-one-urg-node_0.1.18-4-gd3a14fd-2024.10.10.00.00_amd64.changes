@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 29 Sep 2022 00:00:00 -0000
+Source: ros-one-urg-node
+Binary: ros-one-urg-node ros-one-urg-node-dbgsym
+Architecture: amd64
+Version: 0.1.18-4-gd3a14fd-2024.10.10.00.00
+Distribution: sid
+Urgency: high
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Changed-By: Tony Baltovski <tony.baltovski@gmail.com>
+Description:
+ ros-one-urg-node - urg_node
+Changes:
+ ros-one-urg-node (0.1.18-4-gd3a14fd-2024.10.10.00.00) sid; urgency=high
+ .
+   * Encode sent msg to bytes object when comparing with returned msg bytes object from socket; ensures compatability with Python 2 and Python 3; add comments.
+   * Install Python helper script using catkin_install_python() so the correct Python version is selected automatically; ensure socket sends message as byte object for Python3, while ensuring backwards compatability with Python2.
+   * Contributors: Joey Yang
+Checksums-Sha1:
+ 32dae6cd4387dcf3601159cb66ce0a607cdf9388 2304476 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb
+ cb0bb48e749ad645b5471fa1537261572914ea21 17420 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.buildinfo
+ d8898d173b8b88f1501ac8c805589631d12fa881 220964 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb
+Checksums-Sha256:
+ d7ef8580ac274bfcbaf13482f4e5d16be8a38d15a5167f2585639f762fe9ba13 2304476 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb
+ 7571f163511dbdb47cdcc393c965aae62b651abf9535cb98c7ee3d2d158572d8 17420 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.buildinfo
+ f581ebc001bb0084bc49c8d923f30da94f3d0a2424fd089c606332cfdaac8b6a 220964 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb
+Files:
+ 22f5fe70e0b25d122c03b6912cd47476 2304476 debug optional ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb
+ 55b228ff9e818588df44515327e3083c 17420 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.buildinfo
+ a2811fd3e004b0b59af01096cb07f131 220964 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.00_amd64.deb

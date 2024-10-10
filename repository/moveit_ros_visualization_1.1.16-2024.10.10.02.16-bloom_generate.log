@@ -1,0 +1,45 @@
+[31m[1mCould not resolve rosdep key 'libogre-dev' for distro 'sid':[0m
+[31m[1mTry to resolve the problem with rosdep and then continue.[0m
+ROS Distro index file associate with commit 'd5de3a7534275d3df02797df79f179327a83888a'[0m
+New ROS Distro index url: 'https://raw.githubusercontent.com/ros/rosdistro/d5de3a7534275d3df02797df79f179327a83888a/index-v4.yaml'[0m
+[1m[32m==> [0m[0mGenerating debs for [36mdebian:sid[0m for package(s) ['moveit_ros_visualization'][0m[0m
+No definition of [libogre-dev] for OS version [sid]
+	rosdep key : libogre-dev
+	OS name    : debian
+	OS version : sid
+	Data:
+arch:
+		- ogre
+		debian:
+		  buster:
+		  - libogre-1.9-dev
+		  stretch:
+		  - libogre-1.9-dev
+		  wheezy:
+		  - libogre-dev
+		fedora:
+		- ogre-devel
+		freebsd:
+		- ogre3d
+		gentoo:
+		- dev-games/ogre
+		macports:
+		- ogre
+		nixos:
+		- ogre1_9
+		openembedded:
+		- ogre@meta-ros-common
+		opensuse:
+		- libOgreMain-devel
+		- libOgreOverlay-devel
+		- libOgrePaging-devel
+		- libOgreProperty-devel
+		- libOgreRTShaderSystem-devel
+		- libOgreTerrain-devel
+		- libOgreVolume-devel
+		slackware:
+		- ogre
+		ubuntu:
+		- libogre-1.9-dev
+		
+[31m[1merror: (25, 'Inappropriate ioctl for device')[0m

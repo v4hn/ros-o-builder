@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Thu, 07 Sep 2023 00:00:00 -0000
+Source: ros-one-rosdoc-lite
+Binary: ros-one-rosdoc-lite
+Architecture: amd64
+Version: 0.2.11-2-gddd0835-2024.10.09.19.59
+Distribution: sid
+Urgency: high
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Changed-By: Jack O'Quin <jack.oquin@gmail.com>
+Description:
+ ros-one-rosdoc-lite - This ROS package wraps documentation tools like doxygen, sphinx,
+Changes:
+ ros-one-rosdoc-lite (0.2.11-2-gddd0835-2024.10.09.19.59) sid; urgency=high
+ .
+   * add generate_treeview option (#96 <https://github.com/ros-infrastructure/rosdoc_lite/issues/96>)
+     To enable the treeview set in rosdoc.yaml
+     ```
+     - builder: doxygen
+     generate_treeview: YES
+     ```
+   * change to setuptools in accordance with migration guide (#105 <https://github.com/ros-infrastructure/rosdoc_lite/issues/105>)
+   * Add option "required" to builder configs which will cause rosdoc_lite to fail if the builder fails. (#106 <https://github.com/ros-infrastructure/rosdoc_lite/issues/106>)
+     * Add option "required" to builder configs which will cause rosdoc_lite to fail if the builder fails.
+     * Require documentation of this package to finish properly.
+     * Added documentation to the added exception from generate_docs.
+   * Add support for configuring INPUT_FILTER doxygen option (#103 <https://github.com/ros-infrastructure/rosdoc_lite/issues/103>)
+   * Add missing graphviz dep
+     Used by Doxygen for inheritance diagrams.
+   * Read include_path from config file
+     * Removes warning about non existing INCLUDE_PATH. Closes #86 <https://github.com/ros-infrastructure/rosdoc_lite/issues/86>
+   * Bump CMake version to avoid CMP0048
+   * Contributors: Alexander Gutenkunst, Arne Hitzmann, Felix Ruess, Martin Pecka, Matthijs van der Burgh, Shane Loretz, Tully Foote
+Checksums-Sha1:
+ ff0a7cb2c3d4eddd7cae80e73d16ba2863dc5dce 7004 ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.buildinfo
+ ede53cdfe1ff0529f558bfcf129e5fc89c72649d 70592 ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.deb
+Checksums-Sha256:
+ 58a8474e5d690d79c2715e7715691d24b94aeb26944862c4ad8f7e815088381d 7004 ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.buildinfo
+ 965febfafde6f9141a773f50d8b897aee145224897c6d85e9565fba3622d8f3d 70592 ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.deb
+Files:
+ cfcaab5854230af48fd7047a0bc3ecf9 7004 misc optional ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.buildinfo
+ a19c2f46c54508617202d7459560d382 70592 misc optional ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.09.19.59_amd64.deb
