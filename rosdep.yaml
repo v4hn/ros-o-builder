@@ -73,7 +73,11 @@ prbt_ikfast_manipulator_plugin:
 mongodb:
   ubuntu: []
 
-# The deb builder does not resolve pip dependencies, so we have to ignore them
+# The deb builder does not resolve pip dependencies, so we have to ignore them where there is no apt package
+python-chainer-pip:
+  ubuntu: []
+python-fcn-pip:
+  ubuntu: []
 python-gdown-pip:
   ubuntu: []
 python-pygithub3:
