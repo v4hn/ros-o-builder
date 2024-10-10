@@ -7,12 +7,16 @@ libfltk-dev:
 log4cxx:
   debian:
     - liblog4cxx-dev
-# this package does not exist (and shouldn't, because it was moved to moveit-resources)
+# pre-noetic key for the library (libuvc-dev) used in package.xmls
+libuvc:
+  debian:
+    - libuvc-dev
+# does not exist (and shouldn't, because it was moved to moveit-resources)
 # but it's still referenced as conflicting with moveit_resources
 prbt_ikfast_manipulator_plugin:
   debian:
     - ros-one-prbt-ikfast-manipulator-plugin
-# this package is not available in the default ubuntu repositories due to licensing issues
+# not available in the default ubuntu repositories due to licensing changes in the past
 # rosdep still needs to resolve it when building mongo client packages with run-time dependency
 mongodb:
   debian: []
