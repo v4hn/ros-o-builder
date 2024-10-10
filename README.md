@@ -58,13 +58,11 @@ The packages built here rely on Debian packages of ROS core infrastructure [[0](
 - https://github.com/ipab-slmc/exotica
 
 - https://github.com/frankaemika/franka_ros
-- https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
 - https://github.com/TAMS-Group/robotiq
 - https://github.com/hanruihua/Turtlebot2_on_Noetic
 
 ### Target Platforms
 
-- Debian sid
 - Ubuntu noble
 
 ### Internals
