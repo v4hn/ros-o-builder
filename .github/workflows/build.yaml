@@ -2,9 +2,6 @@ name: build
 
 on:
   workflow_dispatch:
-  schedule:
-    # build weekly to find breakage
-    - cron: '13 1 * * 6'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -1484,6 +1481,6 @@ jobs:
           mv ${{ env.AGG }} /home/runner/apt_repo
       - uses: v4hn/ros-deb-builder-action/deploy@roso-noble
         with:
-          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-unstable
+          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-nocheck-unstable
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
