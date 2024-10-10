@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.22.0-2024.10.10.00.08
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2024.10.10.00.08) jammy; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ 05d7dce2cc187359fe8d83d6f85a9ef3741914f6 583794 ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.10.00.08_amd64.ddeb
+ 5e5e5fccaeafcdf72f4e81abdca208bdc40b185c 15045 ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.buildinfo
+ a6a24301cf3d7423ae654d5d0c395790ff993ad8 51776 ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.deb
+Checksums-Sha256:
+ 2a57df98e4c660a6d126df96a6ea8035c89f12605dbf9980cdeb3fa056bb95b0 583794 ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.10.00.08_amd64.ddeb
+ 9dbbfd7fde3fe66da4d50434c04fc1dd9b450c9675995949fe9289b8bb347a02 15045 ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.buildinfo
+ ef5a0cebc47a90c09e8f030e163fa39a7c21116c81890b48cccc2a35bfa0d046 51776 ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.deb
+Files:
+ b250f7dea971479e305016724943d524 583794 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.10.00.08_amd64.ddeb
+ 0ec72f7acc11193669651f0586a2e1ad 15045 misc optional ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.buildinfo
+ fbaacf4cdb6d9960c9f357d3cd74a8b8 51776 misc optional ros-one-joint-state-controller_0.22.0-2024.10.10.00.08_amd64.deb

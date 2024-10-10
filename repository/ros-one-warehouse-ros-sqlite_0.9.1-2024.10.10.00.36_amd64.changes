@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 06 Aug 2024 00:00:00 -0000
+Source: ros-one-warehouse-ros-sqlite
+Binary: ros-one-warehouse-ros-sqlite
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.9.1-2024.10.10.00.36
+Distribution: jammy
+Urgency: high
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Description:
+ ros-one-warehouse-ros-sqlite - Implementation of warehouse_ros for sqlite
+Changes:
+ ros-one-warehouse-ros-sqlite (0.9.1-2024.10.10.00.36) jammy; urgency=high
+ .
+   * Fix column name escaping (#44 <https://github.com/ros-planning/warehouse_ros_sqlite/issues/44>)
+   * Correctly declare and use pluginlib (#40 <https://github.com/ros-planning/warehouse_ros_sqlite/issues/40>)
+   * Do not enforce old C++ standard
+   * Use warehouse_ros from Debians (#36 <https://github.com/ros-planning/warehouse_ros_sqlite/issues/36>)
+   * Contributors: Bjar Ne, Michael Görner, Robert Haschke, v4hn
+Checksums-Sha1:
+ 9663335d81a13c06a96b6065c52ad4273ba42705 912188 ros-one-warehouse-ros-sqlite-dbgsym_0.9.1-2024.10.10.00.36_amd64.ddeb
+ 7d95a9d56b193a6a7d81559f26d6dd054ca5ee91 23196 ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.buildinfo
+ cc2bd575eeca8a616884e20b7fa0e58daf71703f 67254 ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.deb
+Checksums-Sha256:
+ 45487789f61742bc2d762b5b79565669b0428ae68da75bd214c9662faeabe674 912188 ros-one-warehouse-ros-sqlite-dbgsym_0.9.1-2024.10.10.00.36_amd64.ddeb
+ 38012e688f25f9fcc6213f8697081f6daa71ea80a8c56069c48655bf4ba4fbb6 23196 ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.buildinfo
+ 97e60a0544a92ee3f9d8c67f88a8916d6a0d518d043ed5a82ee46b5cbc19743d 67254 ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.deb
+Files:
+ c8f12f13ac22be7768f9cad0e3848e68 912188 debug optional ros-one-warehouse-ros-sqlite-dbgsym_0.9.1-2024.10.10.00.36_amd64.ddeb
+ ffd8ecdd2604db7c32e14583652006ea 23196 misc optional ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.buildinfo
+ 89bcec1fc0450461954deaffe09e55f1 67254 misc optional ros-one-warehouse-ros-sqlite_0.9.1-2024.10.10.00.36_amd64.deb

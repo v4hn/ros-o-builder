@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Fri, 02 Oct 2020 00:00:00 -0000
+Source: ros-one-gmapping
+Binary: ros-one-gmapping
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.4.2-2-geec8606-2024.10.09.23.18
+Distribution: jammy
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-gmapping - This package contains a ROS wrapper for OpenSlam's Gmapping.
+Changes:
+ ros-one-gmapping (1.4.2-2-geec8606-2024.10.09.23.18) jammy; urgency=high
+ .
+   * change find_package(Boost REQUIRED signales) to find_package(Boost REQUIRED) for noteic (#84 <https://github.com/ros-perception/slam_gmapping/issues/84>)
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ d7bb86eee3f75ac68b3c9a3b16ec1c54f091f2d0 5117882 ros-one-gmapping-dbgsym_1.4.2-2-geec8606-2024.10.09.23.18_amd64.ddeb
+ ce2da640f6f134dbfd260390973f590821ae482e 18775 ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.buildinfo
+ 988568a99cf9f1d0780adcf615cd11465af7e7ab 223290 ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.deb
+Checksums-Sha256:
+ 41b7c652b151c5fe22a6e7a7d0d296376e53a94e900e220251758492b52dd0f9 5117882 ros-one-gmapping-dbgsym_1.4.2-2-geec8606-2024.10.09.23.18_amd64.ddeb
+ 63bba031f1e205d1f10b425abbe2f793c96070c358db0a1738f915b26c7cd90a 18775 ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.buildinfo
+ 11536597b3f7e0aa39ccefa076eb1a880a3f3eb018f5f26adee58b4424f387f9 223290 ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.deb
+Files:
+ dd2660fbfd03861f884f85538104e9a4 5117882 debug optional ros-one-gmapping-dbgsym_1.4.2-2-geec8606-2024.10.09.23.18_amd64.ddeb
+ 0b69ee1e296310a90fb56449b20766e6 18775 misc optional ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.buildinfo
+ 6db9d59bc92742a270e641830cdcbd60 223290 misc optional ros-one-gmapping_1.4.2-2-geec8606-2024.10.09.23.18_amd64.deb

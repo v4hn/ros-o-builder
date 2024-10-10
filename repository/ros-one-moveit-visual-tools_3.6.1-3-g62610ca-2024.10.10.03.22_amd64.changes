@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 18 May 2023 00:00:00 -0000
+Source: ros-one-moveit-visual-tools
+Binary: ros-one-moveit-visual-tools
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.6.1-3-g62610ca-2024.10.10.03.22
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <dave@picknik.ai>
+Changed-By: Dave Coleman <dave@picknik.ai>
+Description:
+ ros-one-moveit-visual-tools - Helper functions for displaying and debugging MoveIt data in Rviz
+Changes:
+ ros-one-moveit-visual-tools (3.6.1-3-g62610ca-2024.10.10.03.22) jammy; urgency=high
+ .
+   * publishTrajectoryLine(): issue error when no end-effector tips are found (#129 <https://github.com/ros-planning/moveit_visual_tools/issues/129>)
+   * Fixed possible null-pointer segfault (#95 <https://github.com/ros-planning/moveit_visual_tools/issues/95>)
+   * Only set active joints (#84 <https://github.com/ros-planning/moveit_visual_tools/issues/84>)
+   * Use specified color for EndEffector marker (#96 <https://github.com/ros-planning/moveit_visual_tools/issues/96>)
+   * Contributors: Felix von Drigalski, Henning Kayser, Jochen Sprickerhof, Michael Görner, Robert Haschke, Simon Schmeisser, Stephanie Eng, Tyler Weaver, Vatan Aksoy Tezer, werner291
+Checksums-Sha1:
+ 54e56bae217bfe34cb6405ce4321b338fb4f14a4 8504454 ros-one-moveit-visual-tools-dbgsym_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.ddeb
+ 3054b790f59649c6cbe09252701d3cacdec1c285 31381 ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.buildinfo
+ fcad6dd16cdece7a7c8662caad148343809aa8b8 287178 ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.deb
+Checksums-Sha256:
+ 471b4bfd09d32ac1a712de0e38fa5baf1cf910a4964898d96d24da6a2520e5ac 8504454 ros-one-moveit-visual-tools-dbgsym_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.ddeb
+ 78ac7ca1daf0bfbcfe090e93b6a2f35397e7015ac5c265173230288940a194b4 31381 ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.buildinfo
+ e19257a76d6c96bea158815c40f8602919efd9b955307bd1481f0bf767c19008 287178 ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.deb
+Files:
+ 896e4db0ed8979fc5d3df0ce6be91792 8504454 debug optional ros-one-moveit-visual-tools-dbgsym_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.ddeb
+ ccca283ebfc7a2ecc077f6dea9ca903b 31381 misc optional ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.buildinfo
+ 5daf9e0cb5eaa96b8b05e9dccd0a8943 287178 misc optional ros-one-moveit-visual-tools_3.6.1-3-g62610ca-2024.10.10.03.22_amd64.deb

@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 07 Sep 2022 00:00:00 -0000
+Source: ros-one-pr2-description
+Binary: ros-one-pr2-description
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.13.1-2024.10.09.22.45
+Distribution: jammy
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-pr2-description - This package contains the description (mechanical, kinematic, vis
+Changes:
+ ros-one-pr2-description (1.13.1-2024.10.09.22.45) jammy; urgency=high
+ .
+   * allow pr2.urdf.xacro to accept customized calibration values (#285 <https://github.com/PR2/pr2_common/issues/285>)
+     If 0.0, use the default values. (This retains backward compatibility)
+     If not 0.0, use the passed values. (Enable custom calibration values for all macro instantiations
+     Using 0.0 to trigger the old defaults is necessary because some default values need to be computed from other parameters.
+   * Contributors: Shuang Li
+Checksums-Sha1:
+ cdc1d6117f9861d50c95a5e477ae28741dea34e6 10166 ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.buildinfo
+ aa60e040ed26a1d5eb6f6db767ec93a0c2c7de7a 18522050 ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.deb
+Checksums-Sha256:
+ 225ab46ebddb9e5181bde675270d7f1435301552f4f2f403e64eb19aae20d842 10166 ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.buildinfo
+ e6af97fd6f548f9c46cd0bbfd8e9cc579d4a7ce5dace0394afe53137c19dadee 18522050 ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.deb
+Files:
+ 3c773f8ac448c407c21db86bc50f6cac 10166 misc optional ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.buildinfo
+ 268ef4c63e96351b0ca0a991721febc8 18522050 misc optional ros-one-pr2-description_1.13.1-2024.10.09.22.45_amd64.deb

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 29 Sep 2022 00:00:00 -0000
+Source: ros-one-urg-node
+Binary: ros-one-urg-node
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0.1.18-4-gd3a14fd-2024.10.10.00.33
+Distribution: jammy
+Urgency: high
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Changed-By: Tony Baltovski <tony.baltovski@gmail.com>
+Description:
+ ros-one-urg-node - urg_node
+Changes:
+ ros-one-urg-node (0.1.18-4-gd3a14fd-2024.10.10.00.33) jammy; urgency=high
+ .
+   * Encode sent msg to bytes object when comparing with returned msg bytes object from socket; ensures compatability with Python 2 and Python 3; add comments.
+   * Install Python helper script using catkin_install_python() so the correct Python version is selected automatically; ensure socket sends message as byte object for Python3, while ensuring backwards compatability with Python2.
+   * Contributors: Joey Yang
+Checksums-Sha1:
+ 0ba756415d98985c18e7758bcbc0da2cee6576bc 2291676 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.ddeb
+ 262f7fdb085133cfa77c8e4f980815736e055698 19030 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.buildinfo
+ 7e1cf0d75d3aba1d0247a62a9735df563497fc77 221740 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.deb
+Checksums-Sha256:
+ 6745f526d99312517e26827cf713b586b3d18f6c5d1fbc806d837ed9a358d215 2291676 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.ddeb
+ 6b037c8ea2fc640e779ac816f59f24c48872157063897987a9a176c7d5873888 19030 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.buildinfo
+ cc2a5431a25427fccc9d1b955a2d8ded3bf70edec6f6b9d14bcf1e6efd45b1ba 221740 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.deb
+Files:
+ 0f889427f58808611adbb9ab9e13e085 2291676 debug optional ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.ddeb
+ 2641833ff1341f1c4cdb681cb9d15729 19030 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.buildinfo
+ af75d004ac06cb0daf9e1ca32636305e 221740 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.10.00.33_amd64.deb
