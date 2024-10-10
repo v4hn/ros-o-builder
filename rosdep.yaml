@@ -72,13 +72,27 @@ prbt_ikfast_manipulator_plugin:
 # rosdep still needs to resolve it when building warehouse_ros_mongo
 mongodb:
   ubuntu: []
-# broken in roseus for now
+
+# The deb builder does not resolve pip dependencies, so we have to ignore them
+python-gdown-pip:
+  ubuntu: []
+python-pygithub3:
+  ubuntu: []
+python-slacker-cli:
+  ubuntu: []
+python-tabulate-pip:
+  ubuntu:
+    - python3-tabulate
+
+# does not exist in ubuntu jammy yet, only added there in noble
+#python3-catkin-tools:
+#  ubuntu:
+#    - catkin-tools
+
+# these break in roseus in ubuntu jammy, so we have to rely on TORK's released catkin packages
 #euslisp:
 #  ubuntu:
 #    - euslisp-dev
 #jskeus:
 #  ubuntu:
 #    - jskeus-dev
-#debian-ros-environment:
-#  ubuntu:
-#    - ros-environment
