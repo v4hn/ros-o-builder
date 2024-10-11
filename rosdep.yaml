@@ -20,6 +20,9 @@ prbt_ikfast_manipulator_plugin:
 # rosdep still needs to resolve it when building mongo client packages with run-time dependency
 mongodb:
   debian: []
+# does not exist anymore from python 3.12
+python3-future:
+  debian: []
 # OR rosdep defines these runtime-only libraries (with versions), but that requires repeated updating here with each boost release.
 # debhelper generates the correct library dependencies anyway, so just ignore these keys
 libboost-thread:
