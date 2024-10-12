@@ -1,27 +1,29 @@
-# ros-o-builder - Your Own Online Builder for ROS-O deb Packages
+# Your Own GitHub Builder for ROS-O deb Packages
 
 This repository builds an extended ROS ecosystem for Debian-based distributions in `ros-one-*.deb` packages on GitHub's free GitHub Action.
 
-**Target Distribution**: At the moment packages are build for Ubuntu 22.04 jammy - other Debian-based target distributions can be setup as well.
+**Target Distribution**: At the moment packages are build for [Debian sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be setup as well.
 
-**Build Time**: Build times vary on the amount of packages selected. An extended system of around 850 packages takes around 12 hours to build using the staged parallel builder.
+**Build Time**: Build times vary on the amount of packages selected. An extended system of around 1000 packages takes around 13 hours to build using the provided parallelized build jobs.
 
 ## Usage
 
-You can either [rely on this repository](https://github.com/v4hn/ros-o-builder/blob/jammy-one/README.md#install-instructions), or fork it to control package versions and syncs yourself.
+You can either rely on this repository, e.g., [jammy-one](https://github.com/v4hn/ros-o-builder/blob/jammy-one/README.md#install-instructions), or fork it to control package versions, target distribution, and syncs yourself.
 
 ### Setup instructions for your own fork
 
 **Step 1:** Fork this repository.
 
 **Step 2:** Adjust Permissions.
-To use this repository yourself, you need [to change github's default permissions](https://github.com/ad-m/github-push-action/?tab=readme-ov-file#requirements-and-prerequisites) for the actions of your forked repository.
+To push built debs in this repository yourself, you need [to change github's default permissions](https://github.com/ad-m/github-push-action/?tab=readme-ov-file#requirements-and-prerequisites) for the actions of your forked repository.
 
-**Step 3 [optional]:** Navigate to Settings -> Pages -> Deploy from a branch and select the `<distro>-one` or `<distro>-one-unstable` branch to deploy a clean github page based on the generated `README.md`.
+**Step 3:** Revise `on.scheduled:` triggers in each `build-for-<distro>` branches `.github/workflows/build.yaml` to only build when necessary.
+
+**Step 4 [optional]:** Navigate to Settings -> Pages -> Deploy from a branch and select the `<distro>-one` or `<distro>-one-unstable` branch to deploy a clean github page based on the generated `README.md`.
 
 ## Branch Overview
 
-- `main` contains the [github workflow configurations](https://github.com/v4hn/ros-o-builder/tree/main/.github) and the [sources.repos](https://github.com/v4hn/ros-o-builder/blob/main/sources.repos) file.
+- `build-for-<distro>` contains the github workflow configurations in `.github`, e.g., [jammy-one/.github](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/.github), the [sources.repos](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/sources.repos) file specifying all repositories to be built, and custom [rosdep.yaml](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/rosdep.yaml) mapping for the target distribution.
 
 - `<distro>-one-unstable` contains the generated results of each individual action run (either manually triggered or scheduled)
 
@@ -36,11 +38,11 @@ To add additional packages, you simply need to add new entries to this file. Sti
 
 **Step 2:** Fix potential build issues in the overlay (as package builds in the main builder take much longer).
 
-**Step 3:** Propose a pull-request to add the `sources.repos` entries in this repository (or your fork). Notice that this is *not* a fully-featured buildfarm and we might exclude your packages for build time reasons.
+**Step 3:** Propose a pull-request to add the `sources.repos` entries in this repository (or your fork). Notice that this is *not* a fully-featured rosdistro/build farm replacement.
 
 ## Compatibility with OpenRobotics' ROS2 packages
 
-The packages built here rely on Debian packages of ROS core infrastructure [[0](https://packages.debian.org/source/sid/ros-rosdep), [1](https://packages.debian.org/source/sid/ros-catkin)]. For multiple reasons -partly technical, partly political- these packages are not compatible with OpenRobotics' ROS2 packages which build very similar packages themselves in incompatible ways. It is possible to set up a very similar builder based on individual OpenRobotics' deb repositories though.
+The packages built here rely on Debian packages of ROS core infrastructure [[0](https://packages.debian.org/source/sid/ros-rosdep), [1](https://packages.debian.org/source/sid/ros-catkin)]. For multiple reasons -partly technical, partly political- these packages are not compatible with OpenRobotics' ROS2 packages which build very similar packages themselves in incompatible ways. It is possible to set up a builder based on individual OpenRobotics' deb repositories though.
 
 ## TODOs
 
