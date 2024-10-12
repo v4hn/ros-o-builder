@@ -69,6 +69,9 @@ The packages built here rely on Debian packages of ROS core infrastructure [[0](
 
 ### Internals
 
+- optionally only build packages and downstream when they have changed upstream since the last build
+  Debian sid needs to be rebuild in full every time, but stable distributions keep API/ABI compatibility.
+
 - record build times 
   - use them in task-to-worker assignment
 
