@@ -7,14 +7,15 @@ on:
         type: string
         required: true
 
+env:
+  DEB_DISTRO: jammy
+  JOBS_YAML: /home/runner/jobs.yaml
+
 jobs:
   build:
     runs-on: ubuntu-24.04
     env:
-      ROS_DISTRO: one
-      DEB_DISTRO: jammy
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
-      JOBS_YAML: /home/runner/jobs.yaml
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -32,7 +33,7 @@ jobs:
             echo "Cache not found"
             exit 1
           fi
-      - name: Use apt packages ${{ inputs.depends }}
+      - name: Use dependencies ${{ inputs.depends }}
         id: fetch-dependencies
         if: ${{ inputs.depends }}
         uses: actions/cache/restore@v4
@@ -69,8 +70,8 @@ jobs:
         uses: v4hn/ros-deb-builder-action/build@roso-noble
         timeout-minutes: 330
         with:
-          ROS_DISTRO: ${{ env.ROS_DISTRO }}
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
+          ROS_DISTRO: one
           SBUILD_CONF: "$extra_packages = ['/home/runner/apt_repo_dependencies']; $enable_network = 1; ${{ env.extra_sbuild_conf }}"
           ROSDEP_SOURCE: rosdep.yaml
           REPOS_FILE: worker-jobs.repos

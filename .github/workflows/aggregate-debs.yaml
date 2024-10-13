@@ -5,14 +5,16 @@ on:
         type: number
         required: true
 
+env:
+  REPO: /home/runner/apt_repo
+  AGG: /home/runner/apt_repo_dependencies
+
 jobs:
   aggregate:
     runs-on: ubuntu-24.04
     env:
-      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
-      REPO: /home/runner/apt_repo
-      AGG: /home/runner/apt_repo_dependencies
       stage: stage${{ inputs.stage }}
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -30,103 +32,83 @@ jobs:
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker0
+          worker: ${{ env.stage }}-worker0
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker1
+          worker: ${{ env.stage }}-worker1
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker2
+          worker: ${{ env.stage }}-worker2
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker3
+          worker: ${{ env.stage }}-worker3
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker4
+          worker: ${{ env.stage }}-worker4
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker5
+          worker: ${{ env.stage }}-worker5
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker6
+          worker: ${{ env.stage }}-worker6
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker7
+          worker: ${{ env.stage }}-worker7
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker8
+          worker: ${{ env.stage }}-worker8
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker9
+          worker: ${{ env.stage }}-worker9
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker10
+          worker: ${{ env.stage }}-worker10
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker11
+          worker: ${{ env.stage }}-worker11
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker12
+          worker: ${{ env.stage }}-worker12
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker13
+          worker: ${{ env.stage }}-worker13
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker14
+          worker: ${{ env.stage }}-worker14
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker15
+          worker: ${{ env.stage }}-worker15
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker16
+          worker: ${{ env.stage }}-worker16
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker17
+          worker: ${{ env.stage }}-worker17
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker18
+          worker: ${{ env.stage }}-worker18
       - name: Aggregate worker
         uses: ./.github/actions/aggregate-worker
         with:
-          stage: ${{ env.stage }}
-          worker: worker19
+          worker: ${{ env.stage }}-worker19
       - name: Store apt repo
         uses: actions/cache/save@v4
         if: always()

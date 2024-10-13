@@ -1,9 +1,6 @@
 name: 'Aggregate Worker'
 description: 'Aggregate files from a worker'
 inputs:
-  stage:
-    type: string
-    required: true
   worker:
     type: string
     required: true
@@ -16,19 +13,19 @@ runs:
       uses: actions/cache/restore@v4
       with:
         path: ${{ env.REPO }}
-        key: apt-repo-${{ inputs.stage }}-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+        key: apt-repo-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
         restore-keys: |
-          apt-repo-${{ inputs.stage }}-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}
+          apt-repo-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}
     - name: Aggregate files
       shell: bash
       if: steps.restore.outputs.cache-matched-key != ''
       run: |
         cat ${{ env.REPO }}/pkg_build_status.csv >> ${{ env.AGG }}/pkg_build_status.csv
-        cat ${{ env.REPO }}/sources.repos |
-          if [ -f ${{ env.AGG }}/sources.repos ]; then
+        cat ${{ env.REPO }}/sources_exact.repos |
+          if [ -f ${{ env.AGG }}/sources_exact.repos ]; then
             tail -n+2 # skip "repositories:"
           else
             cat
-          fi | tee -a ${{ env.AGG }}/sources.repos
-        rm -f ${{ env.REPO }}/pkg_build_status.csv ${{ env.REPO }}/sources.repos ${{ env.REPO }}/local.yaml
+          fi | tee -a ${{ env.AGG }}/sources_exact.repos
+        rm -f ${{ env.REPO }}/pkg_build_status.csv ${{ env.REPO }}/sources_exact.repos ${{ env.REPO }}/local.yaml
         mv ${{ env.REPO }}/* ${{ env.AGG }}

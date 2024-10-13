@@ -10,59 +10,31 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 
 env:
-  AGG: /home/runner/apt_repo_dependencies
   DISTRIBUTION: ubuntu
+  DEB_DISTRO: jammy
+  BRANCH: jammy-one-unstable
+  JOBS_YAML: /home/runner/jobs.yaml
+  AGG: /home/runner/apt_repo_dependencies
 
 jobs:
   stage-1:
     runs-on: ubuntu-24.04
     outputs:
-      workers: ${{ steps.worker.outputs.workers }}
-    env:
-      JOBS_YAML: /home/runner/jobs.yaml
+      workers: ${{ steps.prepare.outputs.workers }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-      - name: Clone sources
+      - name: Prepare Pipeline
+        id: prepare
+        uses: ./.github/actions/prepare-worker-pipeline
+      - name: rosdep keys
+        shell: bash
         run: |
-          echo 'Acquire::Retries "20";'                  | sudo tee -a /etc/apt/apt.conf.d/80-retries
-          echo 'Acquire::Retries::Delay::Maximum "300";' | sudo tee -a /etc/apt/apt.conf.d/80-retries
-          echo 'Debug::Acquire::Retries "true";'         | sudo tee -a /etc/apt/apt.conf.d/80-retries
-          sudo add-apt-repository -y ppa:v-launchpad-jochen-sprickerhof-de/ros
-          sudo apt update
-          DEBIAN_FRONTEND=noninteractive sudo apt install -y vcstool catkin
-          mkdir workspace
-          echo 'Importing sources...'
-          vcs import -w 5 --recursive --shallow --input sources.repos workspace
-      - name: Prepare rosdep keys
+          cat ${{ env.AGG }}/local.yaml
+      - name: jobs
+        shell: bash
         run: |
-          cp rosdep.yaml local.yaml
-          echo >> local.yaml # ensure trailing newline
-          for PKG in $(catkin_topological_order --only-names workspace); do
-            printf "%s:\n  %s:\n  - %s\n" "$PKG" "${{ env.DISTRIBUTION }}" "ros-one-$(printf '%s' "$PKG" | tr '_' '-')" | tee -a local.yaml
-          done
-      - name: Prepare Jobs
-        id: worker
-        run: |
-          ./scripts/generate-jobs.py workspace | tee ${{ env.JOBS_YAML }}
-          echo "workers=$(cat ${{ env.JOBS_YAML }} | sed -n '/^stage.*:$/ p' | tr -d '\n')" >> $GITHUB_OUTPUT
-      - name: Store jobs cache
-        uses: actions/cache/save@v4
-        with:
-          path: ${{ env.JOBS_YAML }}
-          key: jobs-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Prepare meta data cache
-        run: |
-          mkdir -p ${{ env.AGG }}
-          mv local.yaml ${{ env.AGG }}/local.yaml
-          cp sources.repos ${{ env.AGG }}/sources_specified.repos
-          mkdir -p ${{ env.AGG }}/.github/workflows
-          cp .github/workflows/sync-unstable.yaml ${{ env.AGG }}/.github/workflows/sync-unstable.yaml
-      - name: Store meta data cache
-        uses: actions/cache/save@v4
-        with:
-          path: ${{ env.AGG }}
-          key: apt-repo-stage-1-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          cat ${{ env.JOBS_YAML }}
 
   stage0-worker0:
     uses: ./.github/workflows/worker.yaml
@@ -1468,9 +1440,6 @@ jobs:
     needs: stage18
     if: always() && !cancelled()
     runs-on: ubuntu-24.04
-    env:
-      ROS_DISTRO: one
-      DEB_DISTRO: jammy
     steps:
       - name: get apt packages from last job
         uses: actions/cache/restore@v4
@@ -1484,6 +1453,6 @@ jobs:
           mv ${{ env.AGG }} /home/runner/apt_repo
       - uses: v4hn/ros-deb-builder-action/deploy@roso-noble
         with:
-          BRANCH: ${{ env.DEB_DISTRO }}-${{ env.ROS_DISTRO }}-unstable
+          BRANCH: ${{ env.BRANCH }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
