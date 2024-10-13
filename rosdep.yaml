@@ -7,15 +7,21 @@ libfltk-dev:
 log4cxx:
   debian:
     - liblog4cxx-dev
-# pre-noetic key for the library (libuvc-dev) used in package.xmls
+
+# pre-noetic keys for the library used in package.xmls
 libuvc:
   debian:
     - libuvc-dev
+bfl:
+  debian:
+    - liborocos-bfl-dev
+
 # does not exist (and shouldn't, because it was moved to moveit-resources)
 # but it's still referenced as conflicting with moveit_resources
 prbt_ikfast_manipulator_plugin:
   debian:
     - ros-one-prbt-ikfast-manipulator-plugin
+
 # not available in the default repositories due to licensing changes in the past
 # rosdep still needs to resolve it when building mongo client packages with run-time dependency
 mongodb:
@@ -23,12 +29,14 @@ mongodb:
 # does not exist anymore from python 3.12
 python3-future:
   debian: []
+
 # OR rosdep defines these runtime-only libraries (with versions), but that requires repeated updating here with each boost release.
 # debhelper generates the correct library dependencies anyway, so just ignore these keys
 libboost-thread:
   debian: []
 liborocos-kdl:
   debian: []
+
 # ignore pip dependencies as we cannot handle them
 python-chainer-pip:
   debian: []
