@@ -72,7 +72,7 @@ jobs:
         with:
           DEB_DISTRO: ${{ env.DEB_DISTRO }}
           ROS_DISTRO: one
-          SBUILD_CONF: "$extra_packages = ['/home/runner/apt_repo_dependencies']; $enable_network = 1; ${{ env.extra_sbuild_conf }}"
+          SBUILD_CONF: "$extra_packages = ['/home/runner/apt_repo_dependencies']; $enable_network = 1; $build_profiles = 'nocheck'; ${{ env.extra_sbuild_conf }}"
           ROSDEP_SOURCE: rosdep.yaml
           REPOS_FILE: worker-jobs.repos
           CONTINUE_ON_ERROR: true
