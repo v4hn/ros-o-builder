@@ -1,8 +1,8 @@
 repositories:
-  PlotJuggler:
+  BehaviorTree.CPP:
     type: git
-    url: https://github.com/facontidavide/PlotJuggler.git
-    version: main
+    url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
+    version: master
   Stage:
     type: git
     url: https://github.com/ros-o/Stage.git
@@ -35,6 +35,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/actionlib.git
     version: obese-devel
+  agni_tf_tools:
+    type: git
+    url: https://github.com/ubi-agni/agni_tf_tools.git
+    version: master
   angles:
     type: git
     url: https://github.com/ros/angles.git
@@ -63,6 +67,10 @@ repositories:
     type: git
     url: https://github.com/pal-robotics/backward_ros.git
     version: kinetic-devel
+  baldor:
+    type: git
+    url: https://github.com/crigroup/baldor.git
+    version: master
   baxter_common:
     type: git
     url: https://github.com/RethinkRobotics/baxter_common.git
@@ -74,6 +82,10 @@ repositories:
   bond_core:
     type: git
     url: https://github.com/ros-o/bond_core.git
+    version: obese-devel
+  boost_sml:
+    type: git
+    url: https://github.com/ros-o/boost_sml.git
     version: obese-devel
   calibration:
     type: git
@@ -99,6 +111,10 @@ repositories:
     type: git
     url: https://github.com/mikeferguson/code_coverage.git
     version: master
+  collada_urdf:
+    type: git
+    url: https://github.com/ros-o/collada_urdf.git
+    version: obese-devel
   common_msgs:
     type: git
     url: https://github.com/ros/common_msgs.git
@@ -119,6 +135,14 @@ repositories:
     type: git
     url: https://github.com/ros/convex_decomposition.git
     version: melodic-devel
+  criutils:
+    type: git
+    url: https://github.com/crigroup/criutils.git
+    version: master
+  ddynamic_reconfigure:
+    type: git
+    url: https://github.com/ros-o/ddynamic_reconfigure.git
+    version: obese-devel
   diagnostics:
     type: git
     url: https://github.com/ros-o/diagnostics.git
@@ -179,14 +203,22 @@ repositories:
     type: git
     url: https://github.com/ros-drivers/four_wheel_steering_msgs.git
     version: master
+  franka_ros:
+    type: git
+    url: https://github.com/rhaschke/franka_ros.git
+    version: ros-o
+  freenect_stack:
+    type: git
+    url: https://github.com/ros-drivers/freenect_stack.git
+    version: master
   gazebo_ros_pkgs:
     type: git
     url: https://github.com/ros-simulation/gazebo_ros_pkgs.git
     version: noetic-devel
   gencpp:
     type: git
-    url: https://github.com/ros/gencpp.git
-    version: kinetic-devel
+    url: https://github.com/ros-o/gencpp.git
+    version: obese-devel
   geneus:
     type: git
     url: https://github.com/jsk-ros-pkg/geneus.git
@@ -231,6 +263,10 @@ repositories:
     type: git
     url: https://github.com/PickNikRobotics/graph_msgs.git
     version: jade-devel
+  handeye:
+    type: git
+    url: https://github.com/crigroup/handeye.git
+    version: master
   hpp-fcl:
     type: git
     url: https://github.com/humanoid-path-planner/hpp-fcl.git
@@ -327,6 +363,14 @@ repositories:
     type: git
     url: https://github.com/ros-perception/laser_proc.git
     version: noetic-devel
+  libfranka:
+    type: git
+    url: https://github.com/frankaemika/libfranka.git
+    version: main
+  librealsense2:
+    type: git
+    url: https://github.com/ros-o/librealsense.git
+    version: master
   libuvc_ros:
     type: git
     url: https://github.com/ros-o/libuvc_ros.git
@@ -371,17 +415,17 @@ repositories:
     type: git
     url: https://github.com/TAMS-Group/moveit_by_name.git
     version: main
+  moveit_calibration:
+    type: git
+    url: https://github.com/moveit/moveit_calibration.git
+    version: master
   moveit_monitoring:
     type: git
     url: https://github.com/v4hn/moveit_monitoring.git
     version: main
   moveit_msgs:
     type: git
-    url: https://github.com/ros-planning/moveit_msgs.git
-    version: master
-  moveit_msgs:
-    type: git
-    url: https://github.com/ros-planning/moveit_msgs.git
+    url: https://github.com/moveit/moveit_msgs.git
     version: master
   moveit_opw_kinematics_plugin:
     type: git
@@ -395,19 +439,18 @@ repositories:
     type: git
     url: https://github.com/moveit/moveit_resources.git
     version: master
-    #they require franka_description/franka_ros, in turn requiring pinocchio/hpp-fcl
-    #  moveit_tutorials:
-    #    type: git
-    #    url: https://github.com/moveit/moveit_tutorials.git
-    #    version: master
   moveit_task_constructor:
     type: git
     url: https://github.com/moveit/moveit_task_constructor.git
     version: master
+  moveit_tutorials:
+    type: git
+    url: https://github.com/moveit/moveit_tutorials.git
+    version: master
   moveit_visual_tools:
     type: git
     url: https://github.com/moveit/moveit_visual_tools.git
-    version: master
+    version: noetic-devel
   mtc_pour:
     type: git
     url: https://github.com/TAMS-Group/mtc_pour.git
@@ -424,10 +467,10 @@ repositories:
     type: git
     url: https://github.com/ros-planning/navigation_msgs.git
     version: ros1
-    #  openslam_gmapping:
-    #    type: git
-    #    url: https://github.com/ros-perception/openslam_gmapping.git
-    #    version: melodic-devel
+  openslam_gmapping:
+    type: git
+    url: https://github.com/ros-perception/openslam_gmapping.git
+    version: melodic-devel
   nodelet_core:
     type: git
     url: https://github.com/ros/nodelet_core.git
@@ -452,10 +495,6 @@ repositories:
     type: git
     url: https://github.com/ompl/ompl.git
     version: main
-    #  panda_moveit_config:
-    #    type: git
-    #    url: https://github.com/moveit/panda_moveit_config.git
-    #    version: noetic-devel
   open_karto:
     type: git
     url: https://github.com/ros-perception/open_karto.git
@@ -480,6 +519,10 @@ repositories:
     type: git
     url: https://github.com/pal-robotics/pal_statistics.git
     version: kinetic-devel
+  panda_moveit_config:
+    type: git
+    url: https://github.com/moveit/panda_moveit_config.git
+    version: noetic-devel
   pcl_msgs:
     type: git
     url: https://github.com/ros-perception/pcl_msgs.git
@@ -496,14 +539,18 @@ repositories:
     type: git
     url: https://github.com/stack-of-tasks/pinocchio.git
     version: master
-  plotjuggler-ros-plugins:
+  plotjuggler:
     type: git
-    url: https://github.com/PlotJuggler/plotjuggler-ros-plugins.git
+    url: https://github.com/facontidavide/PlotJuggler.git
     version: main
   plotjuggler_msgs:
     type: git
-    url: https://github.com/facontidavide/plotjuggler_msgs.git
-    version: ros1
+    url: https://github.com/facontidavide/plotjuggler_msgs
+    version: 0.2.1
+  plotjuggler_ros:
+    type: git
+    url: https://github.com/PlotJuggler/plotjuggler-ros-plugins.git
+    version: main
   pluginlib:
     type: git
     url: https://github.com/ros-o/pluginlib.git
@@ -520,6 +567,10 @@ repositories:
     type: git
     url: https://github.com/pr2/pr2_ethercat_drivers.git
     version: kinetic-devel
+  pr2_kinematics:
+    type: git
+    url: https://github.com/PR2/pr2_kinematics.git
+    version: noetic-devel
   pr2_mechanism:
     type: git
     url: https://github.com/pr2/pr2_mechanism.git
@@ -550,7 +601,7 @@ repositories:
     version: main
   pybind11_catkin:
     type: git
-    url: https://github.com/ipab-slmc/pybind11_catkin.git
+    url: https://github.com/wxmerkt/pybind11_catkin.git
     version: master
   python_qt_binding:
     type: git
@@ -568,6 +619,10 @@ repositories:
     type: git
     url: https://github.com/moveit/random_numbers.git
     version: master
+  realsense_ros:
+    type: git
+    url: https://github.com/IntelRealSense/realsense-ros.git
+    version: ros1-legacy
   realtime_tools:
     type: git
     url: https://github.com/ros-controls/realtime_tools.git
@@ -664,6 +719,10 @@ repositories:
     type: git
     url: https://github.com/ros/rosbag_migration_rule.git
     version: master
+  rosbag_snapshot:
+    type: git
+    url: https://github.com/ros/rosbag_snapshot.git
+    version: main
   rosbridge_suite:
     type: git
     url: https://github.com/RobotWebTools/rosbridge_suite.git
@@ -678,8 +737,8 @@ repositories:
     version: kinetic-devel
   roscpp_core:
     type: git
-    url: https://github.com/ros/roscpp_core.git
-    version: noetic-devel
+    url: https://github.com/ros-o/roscpp_core.git
+    version: obese-devel
   rosdoc_lite:
     type: git
     url: https://github.com/ros-infrastructure/rosdoc_lite.git
@@ -888,6 +947,10 @@ repositories:
     type: git
     url: https://github.com/ros-teleop/teleop_tools.git
     version: noetic-devel
+  teleop_twist_keyboard:
+    type: git
+    url: https://github.com/ros-teleop/teleop_twist_keyboard.git
+    version: master
   trac_ik:
     type: git
     url: https://github.com/ros-o/trac_ik.git
@@ -935,6 +998,10 @@ repositories:
   view_controller_msgs:
     type: git
     url: https://github.com/ros-visualization/view_controller_msgs.git
+    version: noetic-devel
+  vision_msgs:
+    type: git
+    url: https://github.com/Kukanani/vision_msgs
     version: noetic-devel
   vision_opencv:
     type: git
