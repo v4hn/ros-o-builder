@@ -20,12 +20,11 @@ runs:
       shell: bash
       if: steps.restore.outputs.cache-matched-key != ''
       run: |
-        cat ${{ env.REPO }}/pkg_build_status.csv >> ${{ env.AGG }}/pkg_build_status.csv
-        cat ${{ env.REPO }}/sources_exact.repos |
-          if [ -f ${{ env.AGG }}/sources_exact.repos ]; then
-            tail -n+2 # skip "repositories:"
-          else
-            cat
-          fi | tee -a ${{ env.AGG }}/sources_exact.repos
+        append_without_header() { if [ -f "$1" ]; then tail -n+2; else cat; fi | tee -a "$1"; }
+
+        cat ${{ env.REPO }}/pkg_build_status.csv | append_without_header ${{ env.AGG }}/pkg_build_status.csv
+        cat ${{ env.REPO }}/sources_exact.repos | append_without_header ${{ env.AGG }}/sources_exact.repos
+        # local.yaml was already generated during preparation stage
+
         rm -f ${{ env.REPO }}/pkg_build_status.csv ${{ env.REPO }}/sources_exact.repos ${{ env.REPO }}/local.yaml
         mv ${{ env.REPO }}/* ${{ env.AGG }}
