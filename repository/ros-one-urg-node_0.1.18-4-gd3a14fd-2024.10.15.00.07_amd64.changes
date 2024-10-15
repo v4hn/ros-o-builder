@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 29 Sep 2022 00:00:00 -0000
+Source: ros-one-urg-node
+Binary: ros-one-urg-node
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.18-4-gd3a14fd-2024.10.15.00.07
+Distribution: jammy
+Urgency: high
+Maintainer: Tony Baltovski <tony.baltovski@gmail.com>
+Changed-By: Tony Baltovski <tony.baltovski@gmail.com>
+Description:
+ ros-one-urg-node - urg_node
+Changes:
+ ros-one-urg-node (0.1.18-4-gd3a14fd-2024.10.15.00.07) jammy; urgency=high
+ .
+   * Encode sent msg to bytes object when comparing with returned msg bytes object from socket; ensures compatability with Python 2 and Python 3; add comments.
+   * Install Python helper script using catkin_install_python() so the correct Python version is selected automatically; ensure socket sends message as byte object for Python3, while ensuring backwards compatability with Python2.
+   * Contributors: Joey Yang
+Checksums-Sha1:
+ 3a33aae0cb1b76335d8508862d4fb1f3615fa991 2291400 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.ddeb
+ f8ed19feaf99588470585c12b35702940cc7669f 18991 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.buildinfo
+ dfe42a5191e8cf5fee947e554074e05ecd43bc12 221762 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.deb
+Checksums-Sha256:
+ 15186a871c40286d7ef750a5853981697142e6673c12611bd7e6f7cacce949a4 2291400 ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.ddeb
+ c2229ac3687c4794151cdd50eb9764b223ecb3f28088a7f6c2c7dc1515c90684 18991 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.buildinfo
+ 707b43015932da9d0a689fda4de3c78e17d2fc47d5303c64ea94694e54d7acab 221762 ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.deb
+Files:
+ 7c3cd75710359a81a374f4ac2977f629 2291400 debug optional ros-one-urg-node-dbgsym_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.ddeb
+ f843a67d5719cbd8812f4aee89d7669d 18991 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.buildinfo
+ 480261a74cc6d4babe58935711734a63 221762 misc optional ros-one-urg-node_0.1.18-4-gd3a14fd-2024.10.15.00.07_amd64.deb

@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.10.14.23.36
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.10.14.23.36) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 218d50dff1b9826f59e2a994c099fcc61dafc6c6 3658696 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.ddeb
+ c13d980415cef4102dceb5a28f5bbc650239b656 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.buildinfo
+ 6ebb2749566abb27ac6ca700025fbc360f3d3e57 188568 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.deb
+Checksums-Sha256:
+ 1ed13f6f85bb0bc52d08a0e1b34d7150f48abb32b11dd299dc9387ddcce1969c 3658696 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.ddeb
+ 87081b3564a355e430733dd84d9a165943887de133a81766ccc2483c297d137f 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.buildinfo
+ 7706f88157936fa4ccf69d03a3327e40d2b5740ced85af0e059cac96b7065b39 188568 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.deb
+Files:
+ 7d20e17392479c32270ed5dbf65174e8 3658696 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.ddeb
+ b8224049a3d2789e0cef46b8b3e80d51 38964 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.buildinfo
+ fef463b17f14a1f158fe18d1bfec1e56 188568 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.14.23.36_amd64.deb

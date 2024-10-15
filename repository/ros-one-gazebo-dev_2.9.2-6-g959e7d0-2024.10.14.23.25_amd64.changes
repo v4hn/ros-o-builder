@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Wed, 21 Apr 2021 00:00:00 -0000
+Source: ros-one-gazebo-dev
+Binary: ros-one-gazebo-dev
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.9.2-6-g959e7d0-2024.10.14.23.25
+Distribution: jammy
+Urgency: high
+Maintainer: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Changed-By: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Description:
+ ros-one-gazebo-dev - Provides a cmake config for the default version of Gazebo for the
+Changes:
+ ros-one-gazebo-dev (2.9.2-6-g959e7d0-2024.10.14.23.25) jammy; urgency=high
+ .
+   * colcon.pkg: build gazebo first in colcon workspace (#1135 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1135>)
+     Add a colcon.pkg file to gazebo_dev with gazebo's cmake project
+     name "Gazebo" listed as a dependency to support building
+     gazebo from source in a colcon workspace.
+     * Add colcon.pkg files for other packages
+     Copy colcon.pkg to gazebo_ros, gazebo_plugins, and
+     gazebo_ros_control so that --merge-install won't be required.
+   * Contributors: Steve Peters
+Checksums-Sha1:
+ 30437eb982c99739c8ae05ddd5243601331dc532 8165 ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.buildinfo
+ 90cdbf0ca36dcbb8334d0224223ccc56acd2fc1e 6484 ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.deb
+Checksums-Sha256:
+ 2afb0fb546d9833686f9953cc4a60a033f172dadd8389a2d10995546983e565a 8165 ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.buildinfo
+ d6d6350434b2af2413a8790e90589bf87c7e21f0773622a3941a1e73a44bd3aa 6484 ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.deb
+Files:
+ e227a6fd4e1e3c52db85864310157ee6 8165 misc optional ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.buildinfo
+ 64bbc146b28559338f79a41ddaf6a931 6484 misc optional ros-one-gazebo-dev_2.9.2-6-g959e7d0-2024.10.14.23.25_amd64.deb

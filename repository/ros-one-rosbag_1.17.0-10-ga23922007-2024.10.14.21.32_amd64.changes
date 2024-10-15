@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 13 Sep 2024 00:00:00 -0000
+Source: ros-one-rosbag
+Binary: ros-one-rosbag
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.17.0-10-ga23922007-2024.10.14.21.32
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-rosbag - This is a set of tools for recording from and playing back to ROS
+Changes:
+ ros-one-rosbag (1.17.0-10-ga23922007-2024.10.14.21.32) jammy; urgency=high
+ .
+   * Exposed record snapshot feature to command line. (#2254 <https://github.com/ros/ros_comm/issues/2254>)
+   * Fix rosbag calling uncallable signal handler object (#2236 <https://github.com/ros/ros_comm/issues/2236>)
+   * Add --min-space option to the python cli of rosbag record (#2298 <https://github.com/ros/ros_comm/issues/2298>)
+   * Fix latched topic not latched in splitted rosbags (#2351 <https://github.com/ros/ros_comm/issues/2351>)
+   * Enable building with boost 1.83.0 (#2354 <https://github.com/ros/ros_comm/issues/2354>)
+   * Contributors: Blake Anderson, Hugal31, Yannik Nager, Zijun Xu, daizhirui
+Checksums-Sha1:
+ 3e44d1599432cfd8e4650497657dc3f4a533178d 4205730 ros-one-rosbag-dbgsym_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.ddeb
+ 9d81b5fa5135d3f0053d1baa1a77278bcc271bbd 15579 ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.buildinfo
+ cefe389571aa689298fcad050ddcd617962172aa 350716 ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.deb
+Checksums-Sha256:
+ d97d60226eca04d45aa6bb248fca350d6eb582c2b064679cf08d8049cb7252ce 4205730 ros-one-rosbag-dbgsym_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.ddeb
+ 330cbd270e7011f686fc9ca82588c20c9ac779e55e16dd0f6a13baba0c63704c 15579 ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.buildinfo
+ 60e4a88f8edaf61f84a161db20aef7a3f95698210c5d1e49fa393d1440276a8d 350716 ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.deb
+Files:
+ b7bb55dae15daffb60b626da57128ef4 4205730 debug optional ros-one-rosbag-dbgsym_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.ddeb
+ 07c0eeb6f147fdd4e2f1272103731f12 15579 misc optional ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.buildinfo
+ 525636bf82d784fa77d9a4cb4de5ecd3 350716 misc optional ros-one-rosbag_1.17.0-10-ga23922007-2024.10.14.21.32_amd64.deb

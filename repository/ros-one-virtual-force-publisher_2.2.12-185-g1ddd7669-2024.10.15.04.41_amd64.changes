@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 07 Jun 2022 00:00:00 -0000
+Source: ros-one-virtual-force-publisher
+Binary: ros-one-virtual-force-publisher
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.2.12-185-g1ddd7669-2024.10.15.04.41
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-virtual-force-publisher - publish end effector's force, which is estmated from joint torque
+Changes:
+ ros-one-virtual-force-publisher (2.2.12-185-g1ddd7669-2024.10.15.04.41) jammy; urgency=high
+ .
+   * Calcualte sr-inverse (#1731 <https://github.com/jsk-ros-pkg/jsk_common/issues/1731>)
+   * use ROS_DEBUG to suppress log output (#1674 <https://github.com/jsk-ros-pkg/jsk_common/issues/1674>)
+   * add left and right force launch (#1656 <https://github.com/jsk-ros-pkg/jsk_common/issues/1656>)
+   * Contributors: Naoaki Kanazawa, Shingo Kitagawa, Iori Yanokura
+Checksums-Sha1:
+ 31760fcf101884fb0d3b0e48f2a9278e48371846 2665466 ros-one-virtual-force-publisher-dbgsym_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.ddeb
+ 06e1470a374b4366218347f373582bc39c74667d 19412 ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.buildinfo
+ 238d74a085a12ee04176d802a0dfa2dec40da128 75896 ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.deb
+Checksums-Sha256:
+ 72eee4273903a706775473b5fec4c201114efdbda82e517fa1058e8b361615b2 2665466 ros-one-virtual-force-publisher-dbgsym_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.ddeb
+ 6689d9ad67b971374978aeace867f9d652b089ad494772ed6fe4db01b1fcefc7 19412 ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.buildinfo
+ a2f0a7f70d7dbadeffae3c06fce3b12c55e68f3dbd3bb8f7ee8e684d0271f3bd 75896 ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.deb
+Files:
+ 299f141f8daf0060a447fe40a526708d 2665466 debug optional ros-one-virtual-force-publisher-dbgsym_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.ddeb
+ fb7b47d8f335a17461536c10cf9aa6a1 19412 misc optional ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.buildinfo
+ 546a4a69e4d3b668eb93fb2e84d6aaff 75896 misc optional ros-one-virtual-force-publisher_2.2.12-185-g1ddd7669-2024.10.15.04.41_amd64.deb

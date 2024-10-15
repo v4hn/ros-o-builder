@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sat, 09 Apr 2022 00:00:00 -0000
+Source: ros-one-vision-msgs
+Binary: ros-one-vision-msgs
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.0.2-2024.10.14.21.54
+Distribution: jammy
+Urgency: high
+Maintainer: Adam Allevato <adam.d.allevato@gmail.com>
+Changed-By: Adam Allevato <adam.d.allevato@gmail.com>
+Description:
+ ros-one-vision-msgs - Messages for interfacing with various computer vision pipelines,
+Changes:
+ ros-one-vision-msgs (0.0.2-2024.10.14.21.54) jammy; urgency=high
+ .
+   * Added BoundingBox2DArray message #60 <https://github.com/ros-perception/vision_msgs/issues/60> from Fruchtzwerg94/array_for_2d_bounding_box
+   * Upgrade CMake version to avoid CMP0048 warning
+   * add BoundingBox3DArray message (#30 <https://github.com/ros-perception/vision_msgs/issues/30>)
+     * add BoundingBoxArray message
+   * Make message_generation and message_runtime use more specific depend tags (#24 <https://github.com/ros-perception/vision_msgs/issues/24>)
+   * Fix dependency of unit test. (#14 <https://github.com/ros-perception/vision_msgs/issues/14>)
+   * Minor bugfixes and code style updates
+   * Contributors: Adam Allevato, Fruchtzwerg94, Leroy Rügemer, Masaya Kataoka, Ronald Ensing, mistermult
+Checksums-Sha1:
+ f19246e33b1ab3e9440f738d739c2fed1223b171 9834 ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.buildinfo
+ 2a954ce92bdc810cb99296c623394a3fd2c8d9cb 54132 ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.deb
+Checksums-Sha256:
+ cd83623c6f9cf6c7dce050771d12c19395fe32cbafa35316b8ae61a8969de389 9834 ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.buildinfo
+ c28b3eb7b9c8ee66048c9a55f2eeac3d8d90101b261d44db3d540a1d618484a0 54132 ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.deb
+Files:
+ 922a699e60b806769293e1f2c2c3c312 9834 misc optional ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.buildinfo
+ ecf13e0b536ed9dc2e1334d7a6bd965b 54132 misc optional ros-one-vision-msgs_0.0.2-2024.10.14.21.54_amd64.deb

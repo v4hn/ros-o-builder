@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-move-base
+Binary: ros-one-move-base
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2024.10.15.00.02
+Distribution: jammy
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-move-base - The move_base package provides an implementation of an action (se
+Changes:
+ ros-one-move-base (1.17.3-3-g9ad64419-2024.10.15.00.02) jammy; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 43c2aeec7fb216c15d794001e5954176ab04aff6 2944524 ros-one-move-base-dbgsym_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.ddeb
+ 7b85715a4d44687e9317ef88cf595267eef56688 19629 ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.buildinfo
+ 095e4ef5d3991721496b38c5b76565373b2119a4 239346 ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.deb
+Checksums-Sha256:
+ a325a55ce48a19d6a3846f85b9575fb8a2f1aab86ebd6b8167e54e390662f562 2944524 ros-one-move-base-dbgsym_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.ddeb
+ 49f64fa5ab22f1fd1f4ed96d444c532a84e8f15614e9fd343b68892614451684 19629 ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.buildinfo
+ e319b78af753073ede631ff9c7f7001bfc597ba6a22bc893cae6a22f738f4f70 239346 ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.deb
+Files:
+ 675df74ac7b76e94cf2935902592be67 2944524 debug optional ros-one-move-base-dbgsym_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.ddeb
+ f07bb18a56e35bea96e02adf5b1ce70f 19629 misc optional ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.buildinfo
+ 8e9e6b1455158cf65b4723ccf7a7a654 239346 misc optional ros-one-move-base_1.17.3-3-g9ad64419-2024.10.15.00.02_amd64.deb

@@ -1,0 +1,74 @@
+Format: 1.8
+Date: Tue, 07 Jun 2022 00:00:00 -0000
+Source: ros-one-jsk-tools
+Binary: ros-one-jsk-tools
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.2.12-185-g1ddd7669-2024.10.15.04.15
+Distribution: jammy
+Urgency: high
+Maintainer: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Changed-By: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-tools - Includes emacs scripts, ros tool alias generator, and launch doc
+Changes:
+ ros-one-jsk-tools (2.2.12-185-g1ddd7669-2024.10.15.04.15) jammy; urgency=high
+ .
+   * [jsk_tools] change default ROS_MASTER_URI of rossetmaster to localhost (#1729 <https://github.com/jsk-ros-pkg/jsk_common/issues/1729>)
+   * Add test for topic connection test after killing nodes (#1725 <https://github.com/jsk-ros-pkg/jsk_common/issues/1725>)
+ .
+       * [jsk_tools] Add comment for avoiding rospy.exceptions.ROSTimeMovedBackwardsException
+       * [jsk_tools] Fixed E713 error for membership should be "not in"
+       * Add not received topic infos
+       * [jsk_tools] Add test for namespace
+       * [jsk_tools] Add test for topic connection test after killing nodes
+       * [jsk_tools] Add check_after_kill_node option for checking topic connection after killing nodes
+ .
+   * [jsk_tools] Add node to publish diagnostics based on topic and node status (#1727 <https://github.com/jsk-ros-pkg/jsk_common/issues/1727>)
+ .
+       * [jsk_tools] Set longer timeout for sanity_diagnostics test
+       * [jsk_tools] Fix test name for sanity_diagnostics
+       * [jsk_tools] Install sample directory
+       * [jsk_tools] Set longer timeout for low frequency topics
+       * [jsk_tools] Unregister subscriber at the end of checkTopicIsPublished to reduce CPU load
+       * [jsk_tools] Do not check topic type until the first topic comes in
+       * [jsk_tools] Use topic name as default value
+       * [jsk_tools] Fix typo
+       * [jsk_tools] Add test for sanity_diagnostics
+       * [jsk_tools] Add sample for sanity_diagnostics
+       * [jsk_tools] Add diagnostic dependency
+       * [jsk_tools] Add node to publish /diagnostics based on topic and node status
+       * [jsk_tools] Return value of checkNodeState
+ .
+   * [jsk_tools] use python3-progressbar and python3-rosdep for noetic (#1722 <https://github.com/jsk-ros-pkg/jsk_common/issues/1722>)
+   * jsk_tools: add python3-tabulate to exec_depends (#1721 <https://github.com/jsk-ros-pkg/jsk_common/issues/1721>)
+   * add test code to check #1715 <https://github.com/jsk-ros-pkg/jsk_common/issues/1715> (#1717 <https://github.com/jsk-ros-pkg/jsk_common/issues/1717>)
+ .
+       * kinetic rostopic._rostopic_list_groyp_by_host did not work correctly
+       * use rostopic.get_topic_list instead of master.getSystemState
+     https://github.com/ros/ros_comm/commit/e96c407c64e1c17b0dd2bb85b67f388380527097#diff-21f05efee85a56a5b34825bb4fcfb53db99e38304206ddad7d50d6d4881696b2L1207
+     changes
+     ```
+     -        state = master.getSystemState()
+     +        pubs, subs, _ = state
+     +        pubs, subs = get_topic_list(master=master)
+     ```
+     * add test to check rostopic_host_sanity
+   * use raw_input for python2 c.f. (#1695 <https://github.com/jsk-ros-pkg/jsk_common/issues/1695>)
+ .
+       * run 2to3 -w -f has_key for python3 compatibility
+ .
+   * [jsk_topic_tools/master_util.py] add default args to isMasterAlivef( #1684 <https://github.com/jsk-ros-pkg/jsk_common/issues/1684>)
+ .
+       * [jsk_tools, jsk_topic_tools] fix urlparse import for python3
+ .
+   * Contributors: Shimpei Sato, Iori Yanokura, Kei Okada, Koki Shinjo, Naoki Hiraoka, Naoya Yamaguchi, Shingo Kitagawa
+Checksums-Sha1:
+ eec60de3ce6a5f8a96727e99e27d1a8ff521e273 9739 ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.buildinfo
+ aa0748c17d68bf46c9f90cd77df28c46f52cacb5 78272 ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.deb
+Checksums-Sha256:
+ 76f8e94f10fc562f36e603379128f941badc92bef2048832773fcb5a12ef1c24 9739 ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.buildinfo
+ 45fe31ac28b8558070a9c31bc2e4afff867e8c378419e6c2287163c3312fcc0d 78272 ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.deb
+Files:
+ 759b5877789a4fe0f92f1702a8743975 9739 misc optional ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.buildinfo
+ 7a2babc137f9f688896b413b986fa1ad 78272 misc optional ros-one-jsk-tools_2.2.12-185-g1ddd7669-2024.10.15.04.15_amd64.deb
