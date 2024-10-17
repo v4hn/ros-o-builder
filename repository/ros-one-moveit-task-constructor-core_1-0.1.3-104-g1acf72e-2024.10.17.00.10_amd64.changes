@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 06 Mar 2023 00:00:00 -0000
+Source: ros-one-moveit-task-constructor-core
+Binary: ros-one-moveit-task-constructor-core
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1-0.1.3-104-g1acf72e-2024.10.17.00.10
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Goerner <me@v4hn.de>
+Changed-By: Michael Goerner <me@v4hn.de>
+Description:
+ ros-one-moveit-task-constructor-core - MoveIt Task Pipeline
+Changes:
+ ros-one-moveit-task-constructor-core (1-0.1.3-104-g1acf72e-2024.10.17.00.10) jammy; urgency=high
+ .
+   * MoveRelative: Allow backwards operation for joint-space delta (#436 <https://github.com/ros-planning/moveit_task_constructor/issues/436>)
+   * ComputeIK: Limit collision checking to JMG (#428 <https://github.com/ros-planning/moveit_task_constructor/issues/428>)
+   * Fix: Fetch pybind11 submodule if not yet present
+   * Contributors: Robert Haschke
+Checksums-Sha1:
+ b7e96352492b5764ce1ac5d858c239e2f27333d7 36186314 ros-one-moveit-task-constructor-core-dbgsym_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.ddeb
+ 160f0492102e0d1a7e1b9aa295b2c585325732b5 27140 ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.buildinfo
+ 30d9b72aab7156a743e1012a01cc64bcfea20d9b 923352 ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.deb
+Checksums-Sha256:
+ 0788c3dd67b3a379d9a7b9eb49563970b9bbb961bd67c9086d7d55a039d9bb4a 36186314 ros-one-moveit-task-constructor-core-dbgsym_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.ddeb
+ 550ac9545438907c80d795f82567f708455d9b949e6a279d7c97196612502834 27140 ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.buildinfo
+ 42b3b52b2acbbadddad6d5b954ba432c5bbd7e6d0680480b74399eb339c90533 923352 ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.deb
+Files:
+ 5d0b21da97345ff48c5364df89741779 36186314 debug optional ros-one-moveit-task-constructor-core-dbgsym_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.ddeb
+ 6eaf84e84f3498961f979ecfc759fc8a 27140 misc optional ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.buildinfo
+ 4b56eacbe5fa2b8bdfd7f31d650be772 923352 misc optional ros-one-moveit-task-constructor-core_1-0.1.3-104-g1acf72e-2024.10.17.00.10_amd64.deb

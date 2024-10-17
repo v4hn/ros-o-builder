@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 23 Feb 2021 00:00:00 -0000
+Source: ros-one-ros-control-boilerplate
+Binary: ros-one-ros-control-boilerplate
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0-2024.10.16.20.25
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <davetcoleman@gmail.com>
+Changed-By: Dave Coleman <davetcoleman@gmail.com>
+Description:
+ ros-one-ros-control-boilerplate - Simple simulation interface and template for setting up a hardwar
+Changes:
+ ros-one-ros-control-boilerplate (0-2024.10.16.20.25) jammy; urgency=high
+ .
+   * Increase required cmake version to fix CMake CMP0048 warning
+   * Replaced boost with std shared_ptr
+   * Make NodeHandle a const reference
+   * test_trajectory:  Read joints list from trajectory controller params
+   * Increase num AsyncSpinners where control loops are instantiated
+   * Contributors: AndyZe, Dave Coleman, John Morris, Ramon Wijnands, Robert Wilbrandt, Tim Übelhör
+Checksums-Sha1:
+ 77b0cffba3e65faa2c9ac8186f118b35ce984960 7698226 ros-one-ros-control-boilerplate-dbgsym_0-2024.10.16.20.25_amd64.ddeb
+ ee654b125790b35d89896d08c5946b331bcd4bd0 17816 ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.buildinfo
+ 4f2c4f1da2221731a480ac3de3443200a4647059 323916 ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.deb
+Checksums-Sha256:
+ 8293d1023f5ac4444226a03674c42940de546da5345bc2fea2de81072d44e59c 7698226 ros-one-ros-control-boilerplate-dbgsym_0-2024.10.16.20.25_amd64.ddeb
+ b872accbf78556f81e0f0ac0c160e899c219cb3ff02c4ef943022d6616318cff 17816 ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.buildinfo
+ b4c44732411a488f7f5ba55b7c0810a2548824370f20c26655c269a56e807a43 323916 ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.deb
+Files:
+ e3148d8b41ced6a601cb0cf9268fc8ad 7698226 debug optional ros-one-ros-control-boilerplate-dbgsym_0-2024.10.16.20.25_amd64.ddeb
+ 1d48490a354a302ea6cfdca185e99532 17816 misc optional ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.buildinfo
+ b65af18ccb5142171ed609491549f973 323916 misc optional ros-one-ros-control-boilerplate_0-2024.10.16.20.25_amd64.deb

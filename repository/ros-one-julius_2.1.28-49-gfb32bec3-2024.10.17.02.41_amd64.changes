@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 24 Jul 2023 00:00:00 -0000
+Source: ros-one-julius
+Binary: ros-one-julius
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.1.28-49-gfb32bec3-2024.10.17.02.41
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-julius - julius: Open-Source Large Vocabulary CSR Engine (http://julius.so
+Changes:
+ ros-one-julius (2.1.28-49-gfb32bec3-2024.10.17.02.41) jammy; urgency=high
+ .
+   * fix build farm (#487 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/487>)
+     * julius: fix location URLs, because osdn is too slow
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 389939f1ae701adcfdfbeb6a21b8a7bf1396472d 4465616 ros-one-julius-dbgsym_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.ddeb
+ 9cb1e9b93631795b7f97890c676d4e754447e1dc 11608 ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.buildinfo
+ efd2a0daae5a3818877c6fa32a184275c0893b9c 366130924 ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.deb
+Checksums-Sha256:
+ dbaa2bff12a95fe3da1e7a72045aa3c08cd097398f1360a1965371776f36f12d 4465616 ros-one-julius-dbgsym_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.ddeb
+ 6b672a3646a603f317a37a7efc97ca747b9a57191f112085a81872ad24c2f7d3 11608 ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.buildinfo
+ 6ecbe640b0812c709e29cf8d86efa42b3a82a4d6386e9bf314c135b4d8f886e9 366130924 ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.deb
+Files:
+ 909c5e49d9aac3627d1c0bbf2c7ea239 4465616 debug optional ros-one-julius-dbgsym_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.ddeb
+ 19dceaf5e53059fc6af3bb669a4f3e32 11608 misc optional ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.buildinfo
+ 33407df6dbcf013b664045e17ce560e1 366130924 misc optional ros-one-julius_2.1.28-49-gfb32bec3-2024.10.17.02.41_amd64.deb

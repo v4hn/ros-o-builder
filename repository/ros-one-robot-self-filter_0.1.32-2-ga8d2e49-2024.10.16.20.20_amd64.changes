@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.10.16.20.20
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.10.16.20.20) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 52b294f893116a17fe7976620c7f017e20d29282 3659108 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.ddeb
+ af820a61e38db943b0dff44bcca0505fcf889102 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.buildinfo
+ 7bef7c981ca260ab780df1a1212cd8c967814ffb 188554 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.deb
+Checksums-Sha256:
+ aecc18be30f73fc9c903e47c13a7ac3b00d0806f278bff812e27d960c6543657 3659108 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.ddeb
+ 8c6400712695be7a2bd29053c771240c2832acefd82ef4d81cc6631a146125b3 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.buildinfo
+ 0ffb221433b342af35834b3bc437e98533f1d1c586094a68b36f19e06b226466 188554 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.deb
+Files:
+ 8f1244188c2cb9a037c0a216233fcbcb 3659108 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.ddeb
+ bd369512ba28546e4d4975d286de6b87 38964 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.buildinfo
+ ae0632ff838e4739e0ffe9a6934ef69f 188554 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.16.20.20_amd64.deb

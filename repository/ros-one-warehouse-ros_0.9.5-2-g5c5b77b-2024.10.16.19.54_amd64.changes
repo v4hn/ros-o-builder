@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 10 May 2022 00:00:00 -0000
+Source: ros-one-warehouse-ros
+Binary: ros-one-warehouse-ros
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.9.5-2-g5c5b77b-2024.10.16.19.54
+Distribution: jammy
+Urgency: high
+Maintainer: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt Release Team <moveit_releasers@googlegroups.com>
+Description:
+ ros-one-warehouse-ros - Persistent storage of ROS messages
+Changes:
+ ros-one-warehouse-ros (0.9.5-2-g5c5b77b-2024.10.16.19.54) jammy; urgency=high
+ .
+   * Drop compile option -std=c++11 (C++11 or later is default anyway) (#92 <https://github.com/ros-planning/warehouse_ros/issues/92>)
+   * Remove user-provided constructors and destructors (#51 <https://github.com/ros-planning/warehouse_ros/issues/51>)
+     ``ResultIterator::metadata_only_`` is now non-const to allow moving and assigning
+   * Add virtual destructor to ``MessageCollectionHelper`` and ``ResultIteratorHelper`` (#50 <https://github.com/ros-planning/warehouse_ros/issues/50>)
+   * Contributors: Bjar Ne, Jochen Sprickerhof
+Checksums-Sha1:
+ 56dd105b51a3821ee51354b36561633b0d14c7d7 1068014 ros-one-warehouse-ros-dbgsym_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.ddeb
+ e01630e2c14327b65fe4337ddf28c509d5cfae2c 18500 ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.buildinfo
+ cfbaad4d33fc76c747094b51ef814beb09f77694 86538 ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.deb
+Checksums-Sha256:
+ 8739eb237106152d7c51d9f00514c6bfb030d9540ecf43f16a6cf28dd41fc6e8 1068014 ros-one-warehouse-ros-dbgsym_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.ddeb
+ 0f2348ccac63cf2e5383fccad35a777bd6cf087672ca0d37204f69312ba2ad89 18500 ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.buildinfo
+ 721e30540cebd2e3b2ddfce27a4f601eb4dd6416d001c39e619aabb8a21a9313 86538 ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.deb
+Files:
+ 113e7409274ee54eb851165236ab004f 1068014 debug optional ros-one-warehouse-ros-dbgsym_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.ddeb
+ be2c4451dfa0783ea6dfbf4f4117ddb7 18500 misc optional ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.buildinfo
+ b642b43b7854dc14e3a327468abe0d00 86538 misc optional ros-one-warehouse-ros_0.9.5-2-g5c5b77b-2024.10.16.19.54_amd64.deb
