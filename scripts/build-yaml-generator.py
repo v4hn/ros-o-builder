@@ -107,7 +107,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       ROS_DISTRO: one
-      DEB_DISTRO: sid
+      DEB_DISTRO: bookworm
     steps:
       - name: get apt packages from last job
         uses: actions/cache/restore@@v4
