@@ -42,7 +42,9 @@ To add additional packages, you simply need to add new entries to this file. Sti
 
 ## Compatibility with OpenRobotics' ROS2 packages
 
-The packages built here rely on Debian packages of ROS core infrastructure [[0](https://packages.debian.org/source/sid/ros-rosdep), [1](https://packages.debian.org/source/sid/ros-catkin)]. For multiple reasons -partly technical, partly political- these packages are not compatible with OpenRobotics' ROS2 packages which build very similar packages themselves in incompatible ways. It is possible to set up a builder based on individual OpenRobotics' deb repositories though.
+The packages built here rely on Debian packages of ROS core infrastructure [[0](https://packages.debian.org/source/sid/ros-rosdep), [1](https://packages.debian.org/source/sid/ros-catkin)]. For multiple reasons -partly technical, partly political- these packages are not compatible with OpenRobotics' ROS2 packages which build very similar packages themselves in incompatible ways. It is possible to set up the builder based on individual OpenRobotics' deb repositories though.
+
+The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action) provides a deb builder with a different featureset that builds packages mostly based on OpenRobotics' ROS2 packages.
 
 ## TODOs
 
@@ -59,7 +61,6 @@ The packages built here rely on Debian packages of ROS core infrastructure [[0](
 - https://github.com/stack-of-tasks
 - https://github.com/ipab-slmc/exotica
 
-- https://github.com/frankaemika/franka_ros
 - https://github.com/TAMS-Group/robotiq
 - https://github.com/hanruihua/Turtlebot2_on_Noetic
 
@@ -70,7 +71,7 @@ The packages built here rely on Debian packages of ROS core infrastructure [[0](
 ### Internals
 
 - optionally only build packages and downstream when they have changed upstream since the last build
-  Debian sid needs to be rebuild in full every time, but stable distributions keep API/ABI compatibility.
+  Debian sid needs to be rebuild in full every time, but stable distributions keep API/ABI compatible.
 
 - record build times 
   - use them in task-to-worker assignment
