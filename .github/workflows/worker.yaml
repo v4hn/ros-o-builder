@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       ROS_DISTRO: one
-      DEB_DISTRO: sid
+      DEB_DISTRO: trixie
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
       JOBS_YAML: /home/runner/jobs.yaml
     steps:

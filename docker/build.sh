@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-docker build -t sid-ros-one --no-cache "$@" .
+docker build -t trixie-ros-one --no-cache "$@" .
