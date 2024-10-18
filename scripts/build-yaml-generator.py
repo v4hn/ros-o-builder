@@ -35,8 +35,8 @@ concurrency:
 
 env:
   DISTRIBUTION: ubuntu
-  DEB_DISTRO: sid
-  BRANCH: sid-one-experimental
+  DEB_DISTRO: trixie
+  BRANCH: trixie-one-experimental
   JOBS_YAML: /home/runner/jobs.yaml
   AGG: /home/runner/apt_repo_dependencies
 

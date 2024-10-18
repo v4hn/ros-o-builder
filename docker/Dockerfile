@@ -1,4 +1,4 @@
-# debian sid docker with (some) preinstalled ros-one packages
+# debian trixie docker with (some) preinstalled ros-one packages
 FROM debian:sid
 
 RUN apt update
@@ -7,10 +7,10 @@ RUN apt install -y vim less ca-certificates sudo bash-completion python3-pip git
 RUN apt install -y python3-bloom
 RUN pip3 install catkin-tools
 
-RUN echo "deb [trusted=yes] https://raw.githubusercontent.com/v4hn/ros-o-builder/sid-one-unstable/repository ./" | sudo tee /etc/apt/sources.list.d/v4hn_ros-o-builder.list
+RUN echo "deb [trusted=yes] https://raw.githubusercontent.com/v4hn/ros-o-builder/trixie-one-unstable/repository ./" | sudo tee /etc/apt/sources.list.d/v4hn_ros-o-builder.list
 RUN sudo apt update
 RUN sudo apt install -y python3-rosdep2
-RUN echo "yaml https://raw.githubusercontent.com/v4hn/ros-o-builder/sid-one-unstable/repository/local.yaml debian" | sudo tee /etc/ros/rosdep/sources.list.d/1-v4hn_ros-o-builder.list
+RUN echo "yaml https://raw.githubusercontent.com/v4hn/ros-o-builder/trixie-one-unstable/repository/local.yaml debian" | sudo tee /etc/ros/rosdep/sources.list.d/1-v4hn_ros-o-builder.list
 RUN rosdep update
 
 RUN apt install -y ros-one-desktop-full
