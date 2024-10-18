@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Tue, 24 Sep 2019 00:00:00 -0000
+Source: ros-one-rosparam-shortcuts
+Binary: ros-one-rosparam-shortcuts
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.3.3-4-g69cd4d4-2024.10.17.14.36
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <davetcoleman@gmail.com>
+Changed-By: Dave Coleman <davetcoleman@gmail.com>
+Description:
+ ros-one-rosparam-shortcuts - Quickly load variables from rosparam with good command line error
+Changes:
+ ros-one-rosparam-shortcuts (0.3.3-4-g69cd4d4-2024.10.17.14.36) jammy; urgency=high
+ .
+   * Switch run_depend to eigen_conversions. (#12 <https://github.com/PickNikRobotics/rosparam_shortcuts/issues/12>)
+     Eigen is header-only (so no run_depend needed), but eigen_conversions
+     has a library that needs to be pulled in at runtime.
+     Signed-off-by: Chris Lalancette <mailto:clalancette@openrobotics.org>
+   * Contributors: Chris Lalancette
+Checksums-Sha1:
+ a68495036c8515d153ba8a173834cfa3618367ea 907944 ros-one-rosparam-shortcuts-dbgsym_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.ddeb
+ 8a41db073dfda599297dcedb708a92c58017ab51 11727 ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.buildinfo
+ eb7af01cecf89f0b8c10ce53ef247b08f58d3698 42950 ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.deb
+Checksums-Sha256:
+ 04d3aac20cfefadd6790609e6bb44148935ca60d8540d4fd50daa4230ff14064 907944 ros-one-rosparam-shortcuts-dbgsym_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.ddeb
+ f8a5db8c44ae3d6444e6f2f9476b844133d21533aa549d76227fd1ec7d8edf87 11727 ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.buildinfo
+ c4a56adfe25d2b988b705e387d40d0d2d35709f23c8621268b3bf4bc780d4c2a 42950 ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.deb
+Files:
+ 9dcc2153f47e61ad3fef8111b2863231 907944 debug optional ros-one-rosparam-shortcuts-dbgsym_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.ddeb
+ e378462d7530d41b2e38b23052ba86af 11727 misc optional ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.buildinfo
+ 4b41e1d8dca8d9ed26d4e55c758d7af9 42950 misc optional ros-one-rosparam-shortcuts_0.3.3-4-g69cd4d4-2024.10.17.14.36_amd64.deb

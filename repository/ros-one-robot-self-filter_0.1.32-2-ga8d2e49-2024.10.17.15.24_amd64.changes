@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.10.17.15.24
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.10.17.15.24) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 9d1a62eeb0678571977b39c5479b7e68cd14c8f9 3659608 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.ddeb
+ d5818e7852668f7da693cabf73b8c62d3a397bb2 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.buildinfo
+ 616babe6312db8d77a2a2188d0402b7f5ea58160 188548 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.deb
+Checksums-Sha256:
+ 72bebb5e9074c43c3e950e02ebf01924963948a9335e47dbd1ba90eb01746f84 3659608 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.ddeb
+ d9cb55003ce7905c65edf1aa36519a6139470ba954b866a3cf3fe1cfdad32569 38964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.buildinfo
+ d07da1bb863e8bb64e18655f78fbef69cd29d45943a517d3ad18819438872bcc 188548 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.deb
+Files:
+ 82bb2ac4218d218d61dd872d2a68fa0e 3659608 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.ddeb
+ e4cedde8c08ce1f84114191ad89ff7e1 38964 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.buildinfo
+ 8af75089f271c690358f391923841a1d 188548 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.17.15.24_amd64.deb

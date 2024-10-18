@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Sat, 07 Mar 2020 00:00:00 -0000
+Source: ros-one-rqt-joint-trajectory-plot
+Binary: ros-one-rqt-joint-trajectory-plot
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0-2024.10.17.14.38
+Distribution: jammy
+Urgency: high
+Maintainer: Tokyo Opensource Robotics Kyokai (TORK) Developer Team <dev@opensource-robotics.tokyo.jp>
+Changed-By: Tokyo Opensource Robotics Kyokai (TORK) Developer Team <dev@opensource-robotics.tokyo.jp>
+Description:
+ ros-one-rqt-joint-trajectory-plot - The rqt_joint_trajectory_plot package
+Changes:
+ ros-one-rqt-joint-trajectory-plot (0-2024.10.17.14.38) jammy; urgency=high
+ .
+   * Add melodic release(#13 <https://github.com/tork-a/rqt_joint_trajectory_plot/issues/13>)
+     - Set CI python version to 3.6
+     - Merge pull request
+   * added ability to plot planned_path from moveit and made rqt launch file(#10 <https://github.com/tork-a/rqt_joint_trajectory_plot/issues/10>)
+     - updated package.xml to include moveit_msgs for plotting display_trajectory messages
+   * fixed example PVA image size
+   * added empty display trajectory check and updated readme with instrucitons to launch PVA perspective
+   * added ability to plot planned_path from moveit and made rqt launch file with custom perspective
+   * Fix workspace name for CI (#11 <https://github.com/tork-a/rqt_joint_trajectory_plot/issues/11>)
+     - Fix workspace name as https://github.com/tork-a/jog_control/pull/37/files
+   * added empty display trajectory check and updated readme with instrucitons to launch PVA perspective
+   * added ability to plot planned_path from moveit and made rqt launch file with custom perspective
+   * Add travis.yml
+   * Contributors: Ryosuke Tajima, marqrazz
+Checksums-Sha1:
+ 21432ff49e420a78788cb32e07207f44843c2cb9 17544 ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.buildinfo
+ 68bddb8cd133338d59af860d6188485582b4066f 15032 ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.deb
+Checksums-Sha256:
+ 623ceebefec41bb14d432a085e051d8e47620ebef654cd9c4abe1d203bd0aecf 17544 ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.buildinfo
+ f98393d5846fa187854ca3b22381e50e4a81733d68cd3418a657a3a342d98a3b 15032 ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.deb
+Files:
+ feea8cf8464280935f6642f5e652c6e1 17544 misc optional ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.buildinfo
+ c9a9a9bebf8a8a18e5e4f46b56dc551d 15032 misc optional ros-one-rqt-joint-trajectory-plot_0-2024.10.17.14.38_amd64.deb
