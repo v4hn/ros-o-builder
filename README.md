@@ -2,4 +2,4 @@
 
 - See the [main branch](https://github.com/v4hn/ros-o-builder/tree/main) for more information.
 
-- See the [package branch](https://github.com/v4hn/ros-o-builder/tree/sid-one-unstable) for install information and build details.
+- See the [built package branch](https://github.com/v4hn/ros-o-builder/tree/sid-one-unstable) for install information and build details.

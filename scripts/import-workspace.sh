@@ -11,5 +11,5 @@ fi
 
 for f in $REPOS; do
   echo importing $f
-  vcs import --shallow --recursive $WORKSPACE --input "$f" >/dev/null
+  vcs import -w 5 --shallow --recursive $WORKSPACE --input "$f" >/dev/null
 done
