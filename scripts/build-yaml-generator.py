@@ -35,8 +35,8 @@ concurrency:
 
 env:
   DISTRIBUTION: ubuntu
-  DEB_DISTRO: trixie
-  BRANCH: trixie-one-experimental
+  DEB_DISTRO: bookworm
+  BRANCH: bookworm-one-experimental
   JOBS_YAML: /home/runner/jobs.yaml
   AGG: /home/runner/apt_repo_dependencies
 
