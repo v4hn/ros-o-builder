@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2024.10.19.10.48
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2024.10.19.10.48) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ f921822b36c9e40655500bccbfce6cb0157f0e85 670856 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb
+ 2278d12f17f7819ae52ba607a249041077cb1ca7 15570 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.buildinfo
+ 937d113e4c6a59db30fcf8d3a16137155222f8dc 61652 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb
+Checksums-Sha256:
+ 37e96b25d12b00b3ab4e2e7b4daf976bd94e26495c05c281482e2cef8bbe6241 670856 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb
+ a4ece917911d16673bd482321f62383189ec8e9951f9c2b9e79b00eef675564b 15570 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.buildinfo
+ 3e83b40a4a7f9b6cdee6030a14ef81edfa6928a10acb574f1945a2dc59efbc5f 61652 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb
+Files:
+ d68dc73c2fa65cfea1bdbc1e49400446 670856 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb
+ d995584c41f104da13a71a17c38cb59d 15570 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.buildinfo
+ 83a05017fa034712b6c100a361b12178 61652 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.48_amd64.deb

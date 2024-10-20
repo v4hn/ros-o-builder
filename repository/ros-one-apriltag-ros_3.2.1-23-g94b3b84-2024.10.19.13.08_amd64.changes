@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 05 Apr 2022 00:00:00 -0000
+Source: ros-one-apriltag-ros
+Binary: ros-one-apriltag-ros ros-one-apriltag-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.2.1-23-g94b3b84-2024.10.19.13.08
+Distribution: bookworm
+Urgency: high
+Maintainer: Danylo Malyuta <danylo.malyuta@gmail.com>
+Changed-By: Danylo Malyuta <danylo.malyuta@gmail.com>
+Description:
+ ros-one-apriltag-ros - A ROS wrapper of the AprilTag 3 visual fiducial detection algorit
+Changes:
+ ros-one-apriltag-ros (3.2.1-23-g94b3b84-2024.10.19.13.08) bookworm; urgency=high
+ .
+   * Fixed propagation of apriltag and Eigen headers and libraries (#124 <https://github.com/AprilRobotics/apriltag_ros/issues/124>)
+   * Drop old C++11 as it breaks with new log4cxx.
+   * Contributors: Jochen Sprickerhof, Remo Diethelm, Wolfgang Merkt
+Checksums-Sha1:
+ 55776b0a891114c2deaa5505d01f038202421c74 3065200 ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb
+ a950035af0c2109e94b7e79fed5ed767050a6233 29955 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.buildinfo
+ 088d86fae2be8df2c9ffc408391694ac66d9965b 159532 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb
+Checksums-Sha256:
+ 3d807cb25138d2eceaaaf8908a5ff9e461990d6c1cab2759e95b28d6e42b04e6 3065200 ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb
+ 40106615c7345043c5ab62e24aa6cdd9ea326f052ed6a5b79b192571244627bc 29955 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.buildinfo
+ 7869795ee13b6030dfae82ebaa3b5d5c719c5ccb64f67ae233352503cb099f8e 159532 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb
+Files:
+ 3351fc1f3bae8aa52a7b9976891cfcef 3065200 debug optional ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb
+ 419893c65f4f89d65241289c740dc54d 29955 misc optional ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.buildinfo
+ ab833bdf18815451d35e425209cf16ed 159532 misc optional ros-one-apriltag-ros_3.2.1-23-g94b3b84-2024.10.19.13.08_amd64.deb

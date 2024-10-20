@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter ros-one-robot-self-filter-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.10.19.14.12
+Distribution: bookworm
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.10.19.14.12) bookworm; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 301281c4ae20c0a138dae0501ec9effd17df15c1 3691820 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
+ 898a6b0b06e32593c10e1f7368cf5baf7c04b8cd 36263 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.buildinfo
+ 7d3cf960d2a8d7bc3d4880335c87964146f9cd12 187368 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
+Checksums-Sha256:
+ 7ad17590488109a05253141051bbc03732483e7336902690b339c25812f3cbd9 3691820 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
+ b25b8fcd85624d69e394fc8eea26e50e8be232d4ef3661096cb57fe580dce72e 36263 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.buildinfo
+ 48d05f78c48b36013b56df44f77fdc68f40fa050e92a2e20f1ab2ffa94f660ca 187368 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
+Files:
+ 7ee1aeb48e0adf3c86405f39bed6a064 3691820 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
+ b67f672ab6bd1d3c53d24c68bb822a85 36263 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.buildinfo
+ caaea30d8d99a16c35f07828eb0d8e4d 187368 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.10.19.14.12_amd64.deb
