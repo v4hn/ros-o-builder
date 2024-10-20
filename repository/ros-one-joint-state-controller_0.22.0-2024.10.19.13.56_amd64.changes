@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller ros-one-joint-state-controller-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.22.0-2024.10.19.13.56
+Distribution: sid
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2024.10.19.13.56) sid; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ 090fb258f4e6ffe4d4e3e869e4d7a368dc690b5e 590848 ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.19.13.56_amd64.deb
+ d7da64fac3b2bb3df2a4105c45d9e5f4075a562c 13528 ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.buildinfo
+ 7d30ba4da130d1c579a972cbce814089e93c5f2f 50652 ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.deb
+Checksums-Sha256:
+ afc68c5717617e30b02636f2893208a1561c46df002d0a882b3c8cc6f1020128 590848 ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.19.13.56_amd64.deb
+ ac82b06d4a5603a29fbda78a64f9a574325cf96b415a1f2d55ece4eb9d756337 13528 ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.buildinfo
+ 16342928d8a912218180237f3bdcd605db8bb823a636c931046adf31162420f3 50652 ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.deb
+Files:
+ 5397e9def298f03c2eca6208f3c41ef1 590848 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2024.10.19.13.56_amd64.deb
+ 9558b0a916c693f98ce772f0ee0ec5fe 13528 misc optional ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.buildinfo
+ 772e7a2e6e22d8d91b986423a7b83074 50652 misc optional ros-one-joint-state-controller_0.22.0-2024.10.19.13.56_amd64.deb
