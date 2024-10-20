@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2024.10.19.10.40
+Distribution: trixie
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2024.10.19.10.40) trixie; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ 723e38c0e1bf9286ab93b9db46a22b706cc63671 686948 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb
+ c1391bf8af8866d249e75f59d50f999d777a1d04 16678 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.buildinfo
+ e66b1f569f22997d080c22727ef49adf2784de2a 63808 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb
+Checksums-Sha256:
+ bb627a30a314a8685bbad8562fef530c4d4748475670379744464b1d547cb29f 686948 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb
+ 4b90e95f7dd04d761bf56076f93ef430ddd7132b42a34cb0cee3f7441b3ba0b7 16678 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.buildinfo
+ eb215b7785b824085e63369e6c6811295edcad02080d5665c79575efa42ea95b 63808 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb
+Files:
+ 69a8db6ae0e4b260db8a12f165ef4aea 686948 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb
+ 7b77879eb3c9f213cb8b02e5621b4829 16678 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.buildinfo
+ 402e0b881f5920eea569cd202a8d2292 63808 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.10.19.10.40_amd64.deb

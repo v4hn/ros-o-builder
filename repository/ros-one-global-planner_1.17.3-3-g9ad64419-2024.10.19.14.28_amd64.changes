@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-global-planner
+Binary: ros-one-global-planner ros-one-global-planner-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2024.10.19.14.28
+Distribution: trixie
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-global-planner - A path planner library and node.
+Changes:
+ ros-one-global-planner (1.17.3-3-g9ad64419-2024.10.19.14.28) trixie; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ acdfe3c996d299a6d135ca264df886f0bdfc7b27 2839444 ros-one-global-planner-dbgsym_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
+ 6e6c68df26839f6999c5ea6f2985d343d064e0ed 17714 ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.buildinfo
+ 98ce78ccda9ceb47cd753d470127456b2146ec13 137296 ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
+Checksums-Sha256:
+ 60216c4d520b13445d2965f08ecd3e7d2812d6cff60011a1ff25971047aeea01 2839444 ros-one-global-planner-dbgsym_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
+ e0b14860e27667885ff640aad4e2d09b092e0ec6d25992ec999eb0d9d6458ff4 17714 ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.buildinfo
+ eae1b56f1646c8f92d0c43acc6bdc288cae8f34608fd174a49c29503c9802b96 137296 ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
+Files:
+ ac2857721262cb2af2f8459a52aac383 2839444 debug optional ros-one-global-planner-dbgsym_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
+ 93b73b8c875747a00b28886e98320c4f 17714 misc optional ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.buildinfo
+ 641325e9dc4e2ec540736df7e391d726 137296 misc optional ros-one-global-planner_1.17.3-3-g9ad64419-2024.10.19.14.28_amd64.deb
