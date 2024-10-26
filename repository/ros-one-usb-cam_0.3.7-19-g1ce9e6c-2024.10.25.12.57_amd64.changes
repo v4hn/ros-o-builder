@@ -1,0 +1,104 @@
+Format: 1.8
+Date: Fri, 03 Mar 2023 00:00:00 -0000
+Source: ros-one-usb-cam
+Binary: ros-one-usb-cam ros-one-usb-cam-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.3.7-19-g1ce9e6c-2024.10.25.12.57
+Distribution: trixie
+Urgency: high
+Maintainer: Andrey Vukolov <andrey.vukolov@elettra.eu>
+Changed-By: Andrey Vukolov <andrey.vukolov@elettra.eu>
+Description:
+ ros-one-usb-cam - A ROS Driver for V4L USB Cameras
+Changes:
+ ros-one-usb-cam (0.3.7-19-g1ce9e6c-2024.10.25.12.57) trixie; urgency=high
+ .
+   * Merge pull request #234 <https://github.com/ros-drivers/usb_cam/issues/234> from knorth55/add-maintainer
+     Add Shingo Kitagawa as maintainer
+   * add shingo kitagawa as maintainer
+   * Merge pull request #233 <https://github.com/ros-drivers/usb_cam/issues/233> from knorth55/fix-memory-leak
+     fix memory leak in usb_cam.cpp
+   * fix memory leak in usb_cam.cpp
+   * Merge pull request #229 <https://github.com/ros-drivers/usb_cam/issues/229> from knorth55/update-readme
+     update readme
+   * update readme
+     update budges
+     format md
+     add ros2 branch info
+   * Merge pull request #227 <https://github.com/ros-drivers/usb_cam/issues/227> from knorth55/develop-ci
+     Adds CI protocols
+   * Merge pull request #228 <https://github.com/ros-drivers/usb_cam/issues/228> from knorth55/fix-typo
+     not use LINK libraries
+   * change workflows name
+   * change workflows name
+   * not use LINK libraries
+   * add github actions
+   * add github actions
+   * AUTHORS.md - typo fix
+   * Added contributors information
+   * Workaround for CMake deprecation warning
+   * Fixed library names for pkg-config
+     - Fixed library names in the pkg-config section of CMakeLists.txt
+     - Closes #202 <https://github.com/ros-drivers/usb_cam/issues/202>
+   * Added maintainer address
+   * Added maintainer address
+   * Added proper CMake OpenCV package handler
+   * Merge pull request #126 <https://github.com/ros-drivers/usb_cam/issues/126> from benmaidel/feature/unsupported_set_format_options
+     allow cameras that do not support setting format options via VIDIOC_S_FMT
+   * Added support for BGR24 pixel format
+     - Added support for OpenCV BRG24 pixel format
+     (supported by Raspberry Pi camera V4L2 kernel drivers)
+     Solution by @romainreignier manually merged by @twdragon
+     - Untested. Merged in favour of the tests made by @flynneva
+     - Closes #97 <https://github.com/ros-drivers/usb_cam/issues/97>
+   * Deprecation message workaround for native H.264
+     - Added MJPEG pixel format deprecation reset
+     (solution by @at-wat)
+     - Added native H.264 pixel format deprecation
+     workaround.
+     TODO: Find a way to start H.264 decoding from the keyframe
+     - Added frame parser context for future development
+     - Removed possible memory leak in context allocation
+     (all libav contexts and packets are now released properly)
+     - Closes #72 <https://github.com/ros-drivers/usb_cam/issues/72>
+   * Merge branch 'develop' of github.com:ros-drivers/usb_cam into develop
+   * Merge pull request #110 <https://github.com/ros-drivers/usb_cam/issues/110> from rmukhia/develop
+     Add support for cameras with hardware 'h264' encoding.
+   * Merge branch 'develop-h264' into develop
+   * Cosmetic fix for old repository URLS
+   * Merge branch 'develop' into develop
+   * Merge pull request #115 <https://github.com/ros-drivers/usb_cam/issues/115> from lukehutch/develop
+     Suppress libav "deprecated pixel format used" mjpeg warnings
+   * Merge pull request #125 <https://github.com/ros-drivers/usb_cam/issues/125> from benmaidel/feature/YUV420
+     add support for YUV420 (yu12) pixel format
+   * Merge pull request #197 <https://github.com/ros-drivers/usb_cam/issues/197> from twdragon/develop
+     Full support for last FFMPEG
+   * Name mismatch fix
+   * Full support for last FFMPEG release
+     - Removed deprecated AVPicture API calls
+     - Implemented correct instantiation for
+     AVFrame structures
+     - Minor build fixes
+   * Merge branch 'ros-drivers:develop' into develop
+   * allow cameras that do not support setting format options via VIDIOC_S_FMT
+   * add support for YUV420 (yu12) pixel format
+   * Merge pull request #124 <https://github.com/ros-drivers/usb_cam/issues/124> from k-okada/add_noetic
+     add noetic .travis.yml
+   * add noetic .travis.yml
+   * Suppress libav "deprecated pixel format used" mjpeg warnings
+   * Updated sample launch file. h264 supported in 'pixel_format' params. A new parameter 'color_format' supports 'yuv422p' and 'yuv420p'
+   * Enable h264 encoding to work with cams which supports hardware h264 encoding like Mobius Maxi.
+   * Contributors: Andrei Vukolov, Andrey Vukolov, Benjamin Maidel, Evan Flynn, Kei Okada, Luke Hutchison, Raunak Mukhia, Shingo Kitagawa
+Checksums-Sha1:
+ 5cfe7d962de1363a676bee29bcdbe00e5b0927ec 529288 ros-one-usb-cam-dbgsym_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb
+ 6080e380ed34cae469721defbf41c3dbbf707773 29338 ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.buildinfo
+ e3ab76eb279767951ea2fafcfafff252bbd1c2d8 52384 ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb
+Checksums-Sha256:
+ 16543d5d72e603922387db039a3c1f61d77c7c2e30d631e99634102c07e8dedf 529288 ros-one-usb-cam-dbgsym_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb
+ 613839f784fd0d9c9f77281fa7b6eec81283f2e3240e7852c8330d52ea2430b3 29338 ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.buildinfo
+ 4d04eef6d51ac7e806c7459c5adb730cdb38052bbeee5825aad2b57aed498019 52384 ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb
+Files:
+ 39574b273bc8174ca426bf51bd8900a1 529288 debug optional ros-one-usb-cam-dbgsym_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb
+ 397f1aaac67dcd696bbf2ea21fd65844 29338 misc optional ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.buildinfo
+ 9e0171125617f403ad1ae3bc71667d1f 52384 misc optional ros-one-usb-cam_0.3.7-19-g1ce9e6c-2024.10.25.12.57_amd64.deb

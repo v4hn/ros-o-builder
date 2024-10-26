@@ -1,0 +1,1533 @@
+sbuild (Debian sbuild) 0.85.7 (12 April 2024) on fv-az1326-277.q24xlyjkq0ierjpodwkgenz4vd.ex.internal.cloudapp.net
+
++==============================================================================================+
+| ros-one-rosbuild 1.15.8-3-g136e18e9-2024.10.25.11.01 (amd64) Fri, 25 Oct 2024 11:01:37 +0000 |
++==============================================================================================+
+
+Package: ros-one-rosbuild
+Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Source Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Distribution: trixie
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/trixie-amd64.tar to /tmp/tmp.sbuild.qkQf9d957b...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-genmsg_0.5.16-1-g7d8b6ce-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-pinocchio_3.2.0-2024.10.25.10.34_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-openslam-gmapping_0.2.1-17-g5105476-2024.10.25.10.09_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-apriltag_3.4.2-28-g4dfd338-2024.10.25.10.03_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ur-client-library-dbgsym_1.4.0-3-g85fbc55-2024.10.25.10.09_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-eigenpy_3.10.0-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-soem_1.4.1003-1-g988013c-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-stage-dbgsym_4.3.0-17-g2d2e0724-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-random-numbers-dbgsym_0.3.3-1-g51f6043-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rostime_0.7.3-3-gcae00b4-2024.10.25.10.05_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rostime-dbgsym_0.7.3-3-gcae00b4-2024.10.25.10.05_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-genlisp_0.4.18-2024.10.25.10.24_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-convex-decomposition-dbgsym_0.1.12-3-gb722eb5-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-roscpp-serialization_0.7.3-3-gcae00b4-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-opw-kinematics_0.5.0-2-g37d5ea5-2024.10.25.10.24_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-random-numbers_0.3.3-1-g51f6043-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ompl_1.6.0-78-g18a5f5be-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-class-loader-dbgsym_0.5.0-6-g9f3288d-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-industrial-cmake-boilerplate_0.6.2-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-webkit-dependency_1.1.2-2024.10.25.10.07_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-cmake-modules_0.5.0-3-g05347c1-2024.10.25.10.07_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2024.10.25.10.09_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-geneus_3.0.0-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ruckig-dbgsym_0.14.0-1-g0c467ad-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ivcon-dbgsym_0.1.7-2-g5c97b19-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-g2686e94-2024.10.25.10.01_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-apriltag-dbgsym_3.4.2-28-g4dfd338-2024.10.25.10.03_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ivcon_0.1.7-2-g5c97b19-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-roscpp-traits_0.7.3-3-gcae00b4-2024.10.25.10.05_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-genpy_0.6.16-6-gf70658f-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-cpp-common_0.7.3-3-gcae00b4-2024.10.25.10.03_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-cpp-common-dbgsym_0.7.3-3-gcae00b4-2024.10.25.10.03_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-urg-c_1.0.405-1-gbbe007f-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ruckig_0.14.0-1-g0c467ad-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-hpp-fcl_2.4.5-791-g3224f2ba-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-code-coverage_0.4.4-5-g7c273b3-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-hpp-fcl-dbgsym_2.4.5-791-g3224f2ba-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-gl-dependency_1.1.2-1-g337fcfc-2024.10.25.10.05_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-qwt-dependency_1.1.1-2-g91d8aee-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-gencpp_0-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-roscpp-serialization-dbgsym_0.7.3-3-gcae00b4-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-message-generation_0.4.1-2024.10.25.10.34_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-pinocchio-dbgsym_3.2.0-2024.10.25.10.34_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-baldor_0.1.3-3-g10fabc5-2024.10.25.10.07_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2024.10.25.10.01_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-eml_0-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-media-export_0.3.0-2024.10.25.10.03_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-class-loader_0.5.0-6-g9f3288d-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-roslint_0.12.0-4-gac02636-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-roscpp-core_0.7.3-3-gcae00b4-2024.10.25.10.04_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-convex-decomposition_0.1.12-3-gb722eb5-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rosbag-migration-rule_1.0.1-1-g2269b62-2024.10.25.10.10_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rosdoc-lite_0.2.11-2-gddd0835-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-soem-dbgsym_1.4.1003-1-g988013c-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-urg-c-dbgsym_1.0.405-1-gbbe007f-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-gennodejs_2.0.1-8-g19d224c-2024.10.25.10.24_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rospack_2.6.2-2-gad85a87-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-pybind11-catkin_2.10.3-4-gd21b4ff-2024.10.25.10.05_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ur-client-library_1.4.0-3-g85fbc55-2024.10.25.10.09_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-prosilica-gige-sdk_1.26.3-2024.10.25.10.07_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-eigenpy-dbgsym_3.10.0-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-message-runtime_0.4.13-2024.10.25.10.34_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ompl-dbgsym_1.6.0-78-g18a5f5be-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-eigen-stl-containers_0.1.8-2-gd2a41f0-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-eml-dbgsym_0-2024.10.25.10.08_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-stage_4.3.0-17-g2d2e0724-2024.10.25.10.06_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-rospack-dbgsym_2.6.2-2-gad85a87-2024.10.25.10.25_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-rosboost-cfg_1.15.8-3-g136e18e9-2024.10.25.11.00_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-rosbash_1.15.8-3-g136e18e9-2024.10.25.10.59_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-ros_1.15.8-3-g136e18e9-2024.10.25.10.58_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-mk_1.15.8-3-g136e18e9-2024.10.25.10.57_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-TYmCHE' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-mQThIV/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-mQThIV/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-mQThIV/apt_archive ./ Release [609 B]
+Get:2 file:/build/package//resolver-mQThIV/apt_archive ./ Release [609 B]
+Get:3 http://security.debian.org/debian-security trixie-security InRelease [43.5 kB]
+Get:4 file:/build/package//resolver-mQThIV/apt_archive ./ Release.gpg
+Ign:4 file:/build/package//resolver-mQThIV/apt_archive ./ Release.gpg
+Get:5 file:/build/package//resolver-mQThIV/apt_archive ./ Packages [51.3 kB]
+Get:6 http://deb.debian.org/debian trixie InRelease [172 kB]
+Get:7 http://deb.debian.org/debian trixie-updates InRelease [49.6 kB]
+Get:8 http://deb.debian.org/debian trixie/main amd64 Packages [9343 kB]
+Fetched 9608 kB in 1s (9554 kB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://security.debian.org/debian-security trixie-security InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian trixie InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian trixie-updates InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros/core/ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src/ros/core; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), catkin (>= 0.5.78), libgmock-dev (>= 0.5.78), libgtest-dev (>= 0.5.78), pkg-config, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), catkin (>= 0.5.78), libgmock-dev (>= 0.5.78), libgtest-dev (>= 0.5.78), pkg-config, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [755 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [787 B]
+Fetched 2151 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ Release [609 B]
+Get:2 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ Release [609 B]
+Get:3 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils catkin cmake
+  cmake-data cmake-extras debhelper dh-autoreconf dh-strip-nondeterminism
+  docutils-common dumb-init dwz fakeroot file gettext gettext-base googletest
+  groff-base intltool-debian libarchive-zip-perl libarchive13t64 libbrotli1
+  libcom-err2 libcurl4t64 libdebhelper-perl libelf1t64 libexpat1 libexpat1-dev
+  libfakeroot libfile-stripnondeterminism-perl libgmock-dev libgssapi-krb5-2
+  libgtest-dev libicu72 libjs-jquery libjs-sphinxdoc libjs-underscore
+  libjsoncpp26 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.5-0 libmagic-mgc libmagic1t64 libncursesw6 libnghttp2-14 libnsl2
+  libpipeline1 libpkgconf3 libproc2-0 libpsl5t64 libpython3-dev
+  libpython3-stdlib libpython3.12-dev libpython3.12-minimal
+  libpython3.12-stdlib libpython3.12t64 libreadline8t64 librhash1 librtmp1
+  libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh2-1t64 libtirpc-common
+  libtirpc3t64 libtool libuchardet0 libuv1t64 libxml2 m4 man-db media-types
+  netbase pkg-config pkgconf pkgconf-bin po-debconf procps python3
+  python3-autocommand python3-catkin python3-catkin-pkg python3-dateutil
+  python3-dev python3-docutils python3-empy python3-inflect
+  python3-jaraco.context python3-jaraco.functools python3-minimal
+  python3-more-itertools python3-pkg-resources python3-pyparsing python3-roman
+  python3-setuptools python3-typeguard python3-typing-extensions python3-zipp
+  python3.12 python3.12-dev python3.12-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sensible-utils sgml-base tzdata
+  xml-core zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev groff lrzip krb5-doc krb5-user libtool-doc gfortran
+  | fortran95-compiler gcj-jdk m4-doc apparmor less www-browser
+  libmail-box-perl python3-doc python3-tk python3-venv docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-pyparsing-doc
+  python-setuptools-doc python3.12-venv python3.12-doc binfmt-support
+  readline-doc sgml-base-doc
+Recommended packages:
+  bash-completion ros-environment curl | wget | lynx libarchive-cpio-perl
+  javascript-common krb5-locales libldap-common libgpm2 publicsuffix
+  libsasl2-modules libltdl-dev libmail-sendmail-perl psmisc
+  linux-sysctl-defaults libpaper-utils python3-pil python3-pygments
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils catkin cmake
+  cmake-data cmake-extras debhelper dh-autoreconf dh-strip-nondeterminism
+  docutils-common dumb-init dwz fakeroot file gettext gettext-base googletest
+  groff-base intltool-debian libarchive-zip-perl libarchive13t64 libbrotli1
+  libcom-err2 libcurl4t64 libdebhelper-perl libelf1t64 libexpat1 libexpat1-dev
+  libfakeroot libfile-stripnondeterminism-perl libgmock-dev libgssapi-krb5-2
+  libgtest-dev libicu72 libjs-jquery libjs-sphinxdoc libjs-underscore
+  libjsoncpp26 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.5-0 libmagic-mgc libmagic1t64 libncursesw6 libnghttp2-14 libnsl2
+  libpipeline1 libpkgconf3 libproc2-0 libpsl5t64 libpython3-dev
+  libpython3-stdlib libpython3.12-dev libpython3.12-minimal
+  libpython3.12-stdlib libpython3.12t64 libreadline8t64 librhash1 librtmp1
+  libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh2-1t64 libtirpc-common
+  libtirpc3t64 libtool libuchardet0 libuv1t64 libxml2 m4 man-db media-types
+  netbase pkg-config pkgconf pkgconf-bin po-debconf procps python3
+  python3-autocommand python3-catkin python3-catkin-pkg python3-dateutil
+  python3-dev python3-docutils python3-empy python3-inflect
+  python3-jaraco.context python3-jaraco.functools python3-minimal
+  python3-more-itertools python3-pkg-resources python3-pyparsing python3-roman
+  python3-setuptools python3-typeguard python3-typing-extensions python3-zipp
+  python3.12 python3.12-dev python3.12-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sbuild-build-depends-main-dummy
+  sensible-utils sgml-base tzdata xml-core zlib1g-dev
+0 upgraded, 115 newly installed, 0 to remove and 0 not upgraded.
+Need to get 57.4 MB/57.5 MB of archives.
+After this operation, 227 MB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [948 B]
+Get:2 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ ros-one-setup-files 0-2024.10.25.10.01 [10.9 kB]
+Get:3 file:/<<BUILDDIR>>/resolver-mQThIV/apt_archive ./ ros-one-ros-environment 1.3.2-5-g2686e94-2024.10.25.10.01 [6060 B]
+Get:4 http://deb.debian.org/debian trixie/main amd64 libpython3.12-minimal amd64 3.12.6-1 [814 kB]
+Get:5 http://deb.debian.org/debian trixie/main amd64 libexpat1 amd64 2.6.3-1 [105 kB]
+Get:6 http://deb.debian.org/debian trixie/main amd64 python3.12-minimal amd64 3.12.6-1 [2168 kB]
+Get:7 http://deb.debian.org/debian trixie/main amd64 python3-minimal amd64 3.12.6-1 [26.7 kB]
+Get:8 http://deb.debian.org/debian trixie/main amd64 media-types all 10.1.0 [26.9 kB]
+Get:9 http://deb.debian.org/debian trixie/main amd64 netbase all 6.4 [12.8 kB]
+Get:10 http://deb.debian.org/debian trixie/main amd64 tzdata all 2024a-4 [255 kB]
+Get:11 http://deb.debian.org/debian trixie/main amd64 libncursesw6 amd64 6.5-2 [135 kB]
+Get:12 http://deb.debian.org/debian trixie/main amd64 libkrb5support0 amd64 1.21.3-3 [32.5 kB]
+Get:13 http://deb.debian.org/debian trixie/main amd64 libcom-err2 amd64 1.47.1-1 [22.9 kB]
+Get:14 http://deb.debian.org/debian trixie/main amd64 libk5crypto3 amd64 1.21.3-3 [79.9 kB]
+Get:15 http://deb.debian.org/debian trixie/main amd64 libkeyutils1 amd64 1.6.3-3 [8952 B]
+Get:16 http://deb.debian.org/debian trixie/main amd64 libkrb5-3 amd64 1.21.3-3 [324 kB]
+Get:17 http://deb.debian.org/debian trixie/main amd64 libgssapi-krb5-2 amd64 1.21.3-3 [136 kB]
+Get:18 http://deb.debian.org/debian trixie/main amd64 libtirpc-common all 1.3.4+ds-1.3 [10.9 kB]
+Get:19 http://deb.debian.org/debian trixie/main amd64 libtirpc3t64 amd64 1.3.4+ds-1.3 [82.7 kB]
+Get:20 http://deb.debian.org/debian trixie/main amd64 libnsl2 amd64 1.3.0-3+b2 [40.3 kB]
+Get:21 http://deb.debian.org/debian trixie/main amd64 readline-common all 8.2-5 [69.3 kB]
+Get:22 http://deb.debian.org/debian trixie/main amd64 libreadline8t64 amd64 8.2-5 [169 kB]
+Get:23 http://deb.debian.org/debian trixie/main amd64 libsqlite3-0 amd64 3.46.1-1 [913 kB]
+Get:24 http://deb.debian.org/debian trixie/main amd64 libpython3.12-stdlib amd64 3.12.6-1 [1963 kB]
+Get:25 http://deb.debian.org/debian trixie/main amd64 python3.12 amd64 3.12.6-1 [669 kB]
+Get:26 http://deb.debian.org/debian trixie/main amd64 libpython3-stdlib amd64 3.12.6-1 [9692 B]
+Get:27 http://deb.debian.org/debian trixie/main amd64 python3 amd64 3.12.6-1 [27.8 kB]
+Get:28 http://deb.debian.org/debian trixie/main amd64 sgml-base all 1.31 [15.4 kB]
+Get:29 http://deb.debian.org/debian trixie/main amd64 libproc2-0 amd64 2:4.0.4-6 [64.8 kB]
+Get:30 http://deb.debian.org/debian trixie/main amd64 procps amd64 2:4.0.4-6 [879 kB]
+Get:31 http://deb.debian.org/debian trixie/main amd64 sensible-utils all 0.0.24 [24.8 kB]
+Get:32 http://deb.debian.org/debian trixie/main amd64 libmagic-mgc amd64 1:5.45-3 [314 kB]
+Get:33 http://deb.debian.org/debian trixie/main amd64 libmagic1t64 amd64 1:5.45-3 [105 kB]
+Get:34 http://deb.debian.org/debian trixie/main amd64 file amd64 1:5.45-3 [42.9 kB]
+Get:35 http://deb.debian.org/debian trixie/main amd64 gettext-base amd64 0.22.5-2 [200 kB]
+Get:36 http://deb.debian.org/debian trixie/main amd64 libuchardet0 amd64 0.0.8-1+b1 [68.8 kB]
+Get:37 http://deb.debian.org/debian trixie/main amd64 groff-base amd64 1.23.0-5 [1181 kB]
+Get:38 http://deb.debian.org/debian trixie/main amd64 bsdextrautils amd64 2.40.2-9 [97.2 kB]
+Get:39 http://deb.debian.org/debian trixie/main amd64 libpipeline1 amd64 1.5.8-1 [42.0 kB]
+Get:40 http://deb.debian.org/debian trixie/main amd64 man-db amd64 2.13.0-1 [1420 kB]
+Get:41 http://deb.debian.org/debian trixie/main amd64 m4 amd64 1.4.19-4 [287 kB]
+Get:42 http://deb.debian.org/debian trixie/main amd64 autoconf all 2.72-3 [493 kB]
+Get:43 http://deb.debian.org/debian trixie/main amd64 autotools-dev all 20220109.1 [51.6 kB]
+Get:44 http://deb.debian.org/debian trixie/main amd64 automake all 1:1.16.5-1.3 [823 kB]
+Get:45 http://deb.debian.org/debian trixie/main amd64 autopoint all 0.22.5-2 [723 kB]
+Get:46 http://deb.debian.org/debian trixie/main amd64 cmake-data all 3.30.5-1 [2223 kB]
+Get:47 http://deb.debian.org/debian trixie/main amd64 libicu72 amd64 72.1-5 [9396 kB]
+Get:48 http://deb.debian.org/debian trixie/main amd64 libxml2 amd64 2.12.7+dfsg+really2.9.14-0.1 [699 kB]
+Get:49 http://deb.debian.org/debian trixie/main amd64 libarchive13t64 amd64 3.7.4-1 [349 kB]
+Get:50 http://deb.debian.org/debian trixie/main amd64 libbrotli1 amd64 1.1.0-2+b4 [300 kB]
+Get:51 http://deb.debian.org/debian trixie/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-8 [19.6 kB]
+Get:52 http://deb.debian.org/debian trixie/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-8 [57.3 kB]
+Get:53 http://deb.debian.org/debian trixie/main amd64 libldap-2.5-0 amd64 2.5.18+dfsg-3+b1 [188 kB]
+Get:54 http://deb.debian.org/debian trixie/main amd64 libnghttp2-14 amd64 1.63.0-1 [74.8 kB]
+Get:55 http://deb.debian.org/debian trixie/main amd64 libpsl5t64 amd64 0.21.2-1.1 [56.8 kB]
+Get:56 http://deb.debian.org/debian trixie/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b4 [58.5 kB]
+Get:57 http://deb.debian.org/debian trixie/main amd64 libssh2-1t64 amd64 1.11.1-1 [245 kB]
+Get:58 http://deb.debian.org/debian trixie/main amd64 libcurl4t64 amd64 8.10.1-2 [352 kB]
+Get:59 http://deb.debian.org/debian trixie/main amd64 libjsoncpp26 amd64 1.9.6-2 [81.6 kB]
+Get:60 http://deb.debian.org/debian trixie/main amd64 librhash1 amd64 1.4.5-1 [132 kB]
+Get:61 http://deb.debian.org/debian trixie/main amd64 libuv1t64 amd64 1.48.0-6 [148 kB]
+Get:62 http://deb.debian.org/debian trixie/main amd64 cmake amd64 3.30.5-1 [11.4 MB]
+Get:63 http://deb.debian.org/debian trixie/main amd64 libpkgconf3 amd64 1.8.1-4 [36.4 kB]
+Get:64 http://deb.debian.org/debian trixie/main amd64 pkgconf-bin amd64 1.8.1-4 [30.2 kB]
+Get:65 http://deb.debian.org/debian trixie/main amd64 pkgconf amd64 1.8.1-4 [26.2 kB]
+Get:66 http://deb.debian.org/debian trixie/main amd64 pkg-config amd64 1.8.1-4 [14.0 kB]
+Get:67 http://deb.debian.org/debian trixie/main amd64 cmake-extras all 1.7-3 [64.8 kB]
+Get:68 http://deb.debian.org/debian trixie/main amd64 python3-catkin all 0.8.10-16 [35.5 kB]
+Get:69 http://deb.debian.org/debian trixie/main amd64 python3-dateutil all 2.9.0-3 [79.3 kB]
+Get:70 http://deb.debian.org/debian trixie/main amd64 xml-core all 0.19 [20.1 kB]
+Get:71 http://deb.debian.org/debian trixie/main amd64 docutils-common all 0.21.2+dfsg-2 [128 kB]
+Get:72 http://deb.debian.org/debian trixie/main amd64 python3-roman all 4.2-1 [10.4 kB]
+Get:73 http://deb.debian.org/debian trixie/main amd64 python3-docutils all 0.21.2+dfsg-2 [403 kB]
+Get:74 http://deb.debian.org/debian trixie/main amd64 python3-autocommand all 2.2.2-3 [13.6 kB]
+Get:75 http://deb.debian.org/debian trixie/main amd64 python3-more-itertools all 10.5.0-1 [63.8 kB]
+Get:76 http://deb.debian.org/debian trixie/main amd64 python3-typing-extensions all 4.12.2-2 [73.0 kB]
+Get:77 http://deb.debian.org/debian trixie/main amd64 python3-typeguard all 4.3.0-1 [36.5 kB]
+Get:78 http://deb.debian.org/debian trixie/main amd64 python3-inflect all 7.3.1-2 [32.4 kB]
+Get:79 http://deb.debian.org/debian trixie/main amd64 python3-jaraco.context all 6.0.0-1 [7984 B]
+Get:80 http://deb.debian.org/debian trixie/main amd64 python3-jaraco.functools all 4.1.0-1 [12.0 kB]
+Get:81 http://deb.debian.org/debian trixie/main amd64 python3-pkg-resources all 74.1.2-2 [213 kB]
+Get:82 http://deb.debian.org/debian trixie/main amd64 python3-pyparsing all 3.1.2-1 [146 kB]
+Get:83 http://deb.debian.org/debian trixie/main amd64 python3-catkin-pkg all 1.0.0-2 [48.6 kB]
+Get:84 http://deb.debian.org/debian trixie/main amd64 python3-empy all 3.3.4-2 [66.1 kB]
+Get:85 http://deb.debian.org/debian trixie/main amd64 python3-zipp all 3.20.2-1 [10.3 kB]
+Get:86 http://deb.debian.org/debian trixie/main amd64 python3-setuptools all 74.1.2-2 [736 kB]
+Get:87 http://deb.debian.org/debian trixie/main amd64 catkin all 0.8.10-16 [93.9 kB]
+Get:88 http://deb.debian.org/debian trixie/main amd64 libdebhelper-perl all 13.20 [89.7 kB]
+Get:89 http://deb.debian.org/debian trixie/main amd64 libtool all 2.4.7-7 [517 kB]
+Get:90 http://deb.debian.org/debian trixie/main amd64 dh-autoreconf all 20 [17.1 kB]
+Get:91 http://deb.debian.org/debian trixie/main amd64 libarchive-zip-perl all 1.68-1 [104 kB]
+Get:92 http://deb.debian.org/debian trixie/main amd64 libfile-stripnondeterminism-perl all 1.14.0-1 [19.5 kB]
+Get:93 http://deb.debian.org/debian trixie/main amd64 dh-strip-nondeterminism all 1.14.0-1 [8448 B]
+Get:94 http://deb.debian.org/debian trixie/main amd64 libelf1t64 amd64 0.191-2 [188 kB]
+Get:95 http://deb.debian.org/debian trixie/main amd64 dwz amd64 0.15-1+b1 [110 kB]
+Get:96 http://deb.debian.org/debian trixie/main amd64 gettext amd64 0.22.5-2 [1601 kB]
+Get:97 http://deb.debian.org/debian trixie/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB]
+Get:98 http://deb.debian.org/debian trixie/main amd64 po-debconf all 1.0.21+nmu1 [248 kB]
+Get:99 http://deb.debian.org/debian trixie/main amd64 debhelper all 13.20 [915 kB]
+Get:100 http://deb.debian.org/debian trixie/main amd64 dumb-init amd64 1.2.5-3 [13.4 kB]
+Get:101 http://deb.debian.org/debian trixie/main amd64 libfakeroot amd64 1.36-1 [29.1 kB]
+Get:102 http://deb.debian.org/debian trixie/main amd64 fakeroot amd64 1.36-1 [75.1 kB]
+Get:103 http://deb.debian.org/debian trixie/main amd64 googletest all 1.15.2-1 [514 kB]
+Get:104 http://deb.debian.org/debian trixie/main amd64 libexpat1-dev amd64 2.6.3-1 [157 kB]
+Get:105 http://deb.debian.org/debian trixie/main amd64 libgtest-dev amd64 1.15.2-1 [259 kB]
+Get:106 http://deb.debian.org/debian trixie/main amd64 libgmock-dev amd64 1.15.2-1 [132 kB]
+Get:107 http://deb.debian.org/debian trixie/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [326 kB]
+Get:108 http://deb.debian.org/debian trixie/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [116 kB]
+Get:109 http://deb.debian.org/debian trixie/main amd64 libjs-sphinxdoc all 7.4.7-3 [158 kB]
+Get:110 http://deb.debian.org/debian trixie/main amd64 libpython3.12t64 amd64 3.12.6-1 [2147 kB]
+Get:111 http://deb.debian.org/debian trixie/main amd64 zlib1g-dev amd64 1:1.3.dfsg+really1.3.1-1 [919 kB]
+Get:112 http://deb.debian.org/debian trixie/main amd64 libpython3.12-dev amd64 3.12.6-1 [5127 kB]
+Get:113 http://deb.debian.org/debian trixie/main amd64 libpython3-dev amd64 3.12.6-1 [9952 B]
+Get:114 http://deb.debian.org/debian trixie/main amd64 python3.12-dev amd64 3.12.6-1 [506 kB]
+Get:115 http://deb.debian.org/debian trixie/main amd64 python3-dev amd64 3.12.6-1 [26.1 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 57.4 MB in 2s (36.8 MB/s)
+Selecting previously unselected package libpython3.12-minimal:amd64.
+(Reading database ... 12422 files and directories currently installed.)
+Preparing to unpack .../libpython3.12-minimal_3.12.6-1_amd64.deb ...
+Unpacking libpython3.12-minimal:amd64 (3.12.6-1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.6.3-1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.6.3-1) ...
+Selecting previously unselected package python3.12-minimal.
+Preparing to unpack .../python3.12-minimal_3.12.6-1_amd64.deb ...
+Unpacking python3.12-minimal (3.12.6-1) ...
+Setting up libpython3.12-minimal:amd64 (3.12.6-1) ...
+Setting up libexpat1:amd64 (2.6.3-1) ...
+Setting up python3.12-minimal (3.12.6-1) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 12742 files and directories currently installed.)
+Preparing to unpack .../00-python3-minimal_3.12.6-1_amd64.deb ...
+Unpacking python3-minimal (3.12.6-1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../01-media-types_10.1.0_all.deb ...
+Unpacking media-types (10.1.0) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../02-netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package tzdata.
+Preparing to unpack .../03-tzdata_2024a-4_all.deb ...
+Unpacking tzdata (2024a-4) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../04-libncursesw6_6.5-2_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.5-2) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../05-libkrb5support0_1.21.3-3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.21.3-3) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../06-libcom-err2_1.47.1-1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.47.1-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../07-libk5crypto3_1.21.3-3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.21.3-3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../08-libkeyutils1_1.6.3-3_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-3) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../09-libkrb5-3_1.21.3-3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.21.3-3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../10-libgssapi-krb5-2_1.21.3-3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.21.3-3) ...
+Selecting previously unselected package libtirpc-common.
+Preparing to unpack .../11-libtirpc-common_1.3.4+ds-1.3_all.deb ...
+Unpacking libtirpc-common (1.3.4+ds-1.3) ...
+Selecting previously unselected package libtirpc3t64:amd64.
+Preparing to unpack .../12-libtirpc3t64_1.3.4+ds-1.3_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3 to /lib/x86_64-linux-gnu/libtirpc.so.3.usr-is-merged by libtirpc3t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libtirpc.so.3.0.0 to /lib/x86_64-linux-gnu/libtirpc.so.3.0.0.usr-is-merged by libtirpc3t64'
+Unpacking libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Selecting previously unselected package libnsl2:amd64.
+Preparing to unpack .../13-libnsl2_1.3.0-3+b2_amd64.deb ...
+Unpacking libnsl2:amd64 (1.3.0-3+b2) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../14-readline-common_8.2-5_all.deb ...
+Unpacking readline-common (8.2-5) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../15-libreadline8t64_8.2-5_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:amd64 (8.2-5) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../16-libsqlite3-0_3.46.1-1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.46.1-1) ...
+Selecting previously unselected package libpython3.12-stdlib:amd64.
+Preparing to unpack .../17-libpython3.12-stdlib_3.12.6-1_amd64.deb ...
+Unpacking libpython3.12-stdlib:amd64 (3.12.6-1) ...
+Selecting previously unselected package python3.12.
+Preparing to unpack .../18-python3.12_3.12.6-1_amd64.deb ...
+Unpacking python3.12 (3.12.6-1) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../19-libpython3-stdlib_3.12.6-1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.12.6-1) ...
+Setting up python3-minimal (3.12.6-1) ...
+Selecting previously unselected package python3.
+(Reading database ... 13831 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.12.6-1_amd64.deb ...
+Unpacking python3 (3.12.6-1) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.31_all.deb ...
+Unpacking sgml-base (1.31) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../02-libproc2-0_2%3a4.0.4-6_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-6) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../03-procps_2%3a4.0.4-6_amd64.deb ...
+Unpacking procps (2:4.0.4-6) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../04-sensible-utils_0.0.24_all.deb ...
+Unpacking sensible-utils (0.0.24) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../05-libmagic-mgc_1%3a5.45-3_amd64.deb ...
+Unpacking libmagic-mgc (1:5.45-3) ...
+Selecting previously unselected package libmagic1t64:amd64.
+Preparing to unpack .../06-libmagic1t64_1%3a5.45-3_amd64.deb ...
+Unpacking libmagic1t64:amd64 (1:5.45-3) ...
+Selecting previously unselected package file.
+Preparing to unpack .../07-file_1%3a5.45-3_amd64.deb ...
+Unpacking file (1:5.45-3) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../08-gettext-base_0.22.5-2_amd64.deb ...
+Unpacking gettext-base (0.22.5-2) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../09-libuchardet0_0.0.8-1+b1_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.8-1+b1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../10-groff-base_1.23.0-5_amd64.deb ...
+Unpacking groff-base (1.23.0-5) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../11-bsdextrautils_2.40.2-9_amd64.deb ...
+Unpacking bsdextrautils (2.40.2-9) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../12-libpipeline1_1.5.8-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.8-1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../13-man-db_2.13.0-1_amd64.deb ...
+Unpacking man-db (2.13.0-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../14-m4_1.4.19-4_amd64.deb ...
+Unpacking m4 (1.4.19-4) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../15-autoconf_2.72-3_all.deb ...
+Unpacking autoconf (2.72-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../16-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../17-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../18-autopoint_0.22.5-2_all.deb ...
+Unpacking autopoint (0.22.5-2) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../19-cmake-data_3.30.5-1_all.deb ...
+Unpacking cmake-data (3.30.5-1) ...
+Selecting previously unselected package libicu72:amd64.
+Preparing to unpack .../20-libicu72_72.1-5_amd64.deb ...
+Unpacking libicu72:amd64 (72.1-5) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../21-libxml2_2.12.7+dfsg+really2.9.14-0.1_amd64.deb ...
+Unpacking libxml2:amd64 (2.12.7+dfsg+really2.9.14-0.1) ...
+Selecting previously unselected package libarchive13t64:amd64.
+Preparing to unpack .../22-libarchive13t64_3.7.4-1_amd64.deb ...
+Unpacking libarchive13t64:amd64 (3.7.4-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../23-libbrotli1_1.1.0-2+b4_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.1.0-2+b4) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../24-libsasl2-modules-db_2.1.28+dfsg1-8_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-8) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../25-libsasl2-2_2.1.28+dfsg1-8_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-8) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../26-libldap-2.5-0_2.5.18+dfsg-3+b1_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.18+dfsg-3+b1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../27-libnghttp2-14_1.63.0-1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.63.0-1) ...
+Selecting previously unselected package libpsl5t64:amd64.
+Preparing to unpack .../28-libpsl5t64_0.21.2-1.1_amd64.deb ...
+Unpacking libpsl5t64:amd64 (0.21.2-1.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../29-librtmp1_2.4+20151223.gitfa8646d.1-2+b4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b4) ...
+Selecting previously unselected package libssh2-1t64:amd64.
+Preparing to unpack .../30-libssh2-1t64_1.11.1-1_amd64.deb ...
+Unpacking libssh2-1t64:amd64 (1.11.1-1) ...
+Selecting previously unselected package libcurl4t64:amd64.
+Preparing to unpack .../31-libcurl4t64_8.10.1-2_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.10.1-2) ...
+Selecting previously unselected package libjsoncpp26:amd64.
+Preparing to unpack .../32-libjsoncpp26_1.9.6-2_amd64.deb ...
+Unpacking libjsoncpp26:amd64 (1.9.6-2) ...
+Selecting previously unselected package librhash1:amd64.
+Preparing to unpack .../33-librhash1_1.4.5-1_amd64.deb ...
+Unpacking librhash1:amd64 (1.4.5-1) ...
+Selecting previously unselected package libuv1t64:amd64.
+Preparing to unpack .../34-libuv1t64_1.48.0-6_amd64.deb ...
+Unpacking libuv1t64:amd64 (1.48.0-6) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../35-cmake_3.30.5-1_amd64.deb ...
+Unpacking cmake (3.30.5-1) ...
+Selecting previously unselected package libpkgconf3:amd64.
+Preparing to unpack .../36-libpkgconf3_1.8.1-4_amd64.deb ...
+Unpacking libpkgconf3:amd64 (1.8.1-4) ...
+Selecting previously unselected package pkgconf-bin.
+Preparing to unpack .../37-pkgconf-bin_1.8.1-4_amd64.deb ...
+Unpacking pkgconf-bin (1.8.1-4) ...
+Selecting previously unselected package pkgconf:amd64.
+Preparing to unpack .../38-pkgconf_1.8.1-4_amd64.deb ...
+Unpacking pkgconf:amd64 (1.8.1-4) ...
+Selecting previously unselected package pkg-config:amd64.
+Preparing to unpack .../39-pkg-config_1.8.1-4_amd64.deb ...
+Unpacking pkg-config:amd64 (1.8.1-4) ...
+Selecting previously unselected package cmake-extras.
+Preparing to unpack .../40-cmake-extras_1.7-3_all.deb ...
+Unpacking cmake-extras (1.7-3) ...
+Selecting previously unselected package python3-catkin.
+Preparing to unpack .../41-python3-catkin_0.8.10-16_all.deb ...
+Unpacking python3-catkin (0.8.10-16) ...
+Selecting previously unselected package python3-dateutil.
+Preparing to unpack .../42-python3-dateutil_2.9.0-3_all.deb ...
+Unpacking python3-dateutil (2.9.0-3) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../43-xml-core_0.19_all.deb ...
+Unpacking xml-core (0.19) ...
+Selecting previously unselected package docutils-common.
+Preparing to unpack .../44-docutils-common_0.21.2+dfsg-2_all.deb ...
+Unpacking docutils-common (0.21.2+dfsg-2) ...
+Selecting previously unselected package python3-roman.
+Preparing to unpack .../45-python3-roman_4.2-1_all.deb ...
+Unpacking python3-roman (4.2-1) ...
+Selecting previously unselected package python3-docutils.
+Preparing to unpack .../46-python3-docutils_0.21.2+dfsg-2_all.deb ...
+Unpacking python3-docutils (0.21.2+dfsg-2) ...
+Selecting previously unselected package python3-autocommand.
+Preparing to unpack .../47-python3-autocommand_2.2.2-3_all.deb ...
+Unpacking python3-autocommand (2.2.2-3) ...
+Selecting previously unselected package python3-more-itertools.
+Preparing to unpack .../48-python3-more-itertools_10.5.0-1_all.deb ...
+Unpacking python3-more-itertools (10.5.0-1) ...
+Selecting previously unselected package python3-typing-extensions.
+Preparing to unpack .../49-python3-typing-extensions_4.12.2-2_all.deb ...
+Unpacking python3-typing-extensions (4.12.2-2) ...
+Selecting previously unselected package python3-typeguard.
+Preparing to unpack .../50-python3-typeguard_4.3.0-1_all.deb ...
+Unpacking python3-typeguard (4.3.0-1) ...
+Selecting previously unselected package python3-inflect.
+Preparing to unpack .../51-python3-inflect_7.3.1-2_all.deb ...
+Unpacking python3-inflect (7.3.1-2) ...
+Selecting previously unselected package python3-jaraco.context.
+Preparing to unpack .../52-python3-jaraco.context_6.0.0-1_all.deb ...
+Unpacking python3-jaraco.context (6.0.0-1) ...
+Selecting previously unselected package python3-jaraco.functools.
+Preparing to unpack .../53-python3-jaraco.functools_4.1.0-1_all.deb ...
+Unpacking python3-jaraco.functools (4.1.0-1) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../54-python3-pkg-resources_74.1.2-2_all.deb ...
+Unpacking python3-pkg-resources (74.1.2-2) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../55-python3-pyparsing_3.1.2-1_all.deb ...
+Unpacking python3-pyparsing (3.1.2-1) ...
+Selecting previously unselected package python3-catkin-pkg.
+Preparing to unpack .../56-python3-catkin-pkg_1.0.0-2_all.deb ...
+Unpacking python3-catkin-pkg (1.0.0-2) ...
+Selecting previously unselected package python3-empy.
+Preparing to unpack .../57-python3-empy_3.3.4-2_all.deb ...
+Unpacking python3-empy (3.3.4-2) ...
+Selecting previously unselected package python3-zipp.
+Preparing to unpack .../58-python3-zipp_3.20.2-1_all.deb ...
+Unpacking python3-zipp (3.20.2-1) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../59-python3-setuptools_74.1.2-2_all.deb ...
+Unpacking python3-setuptools (74.1.2-2) ...
+Selecting previously unselected package catkin.
+Preparing to unpack .../60-catkin_0.8.10-16_all.deb ...
+Unpacking catkin (0.8.10-16) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../61-libdebhelper-perl_13.20_all.deb ...
+Unpacking libdebhelper-perl (13.20) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../62-libtool_2.4.7-7_all.deb ...
+Unpacking libtool (2.4.7-7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../63-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../64-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../65-libfile-stripnondeterminism-perl_1.14.0-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.14.0-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../66-dh-strip-nondeterminism_1.14.0-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.14.0-1) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../67-libelf1t64_0.191-2_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.191-2) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../68-dwz_0.15-1+b1_amd64.deb ...
+Unpacking dwz (0.15-1+b1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../69-gettext_0.22.5-2_amd64.deb ...
+Unpacking gettext (0.22.5-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../70-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../71-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../72-debhelper_13.20_all.deb ...
+Unpacking debhelper (13.20) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../73-dumb-init_1.2.5-3_amd64.deb ...
+Unpacking dumb-init (1.2.5-3) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../74-libfakeroot_1.36-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.36-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../75-fakeroot_1.36-1_amd64.deb ...
+Unpacking fakeroot (1.36-1) ...
+Selecting previously unselected package googletest.
+Preparing to unpack .../76-googletest_1.15.2-1_all.deb ...
+Unpacking googletest (1.15.2-1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../77-libexpat1-dev_2.6.3-1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.6.3-1) ...
+Selecting previously unselected package libgtest-dev:amd64.
+Preparing to unpack .../78-libgtest-dev_1.15.2-1_amd64.deb ...
+Unpacking libgtest-dev:amd64 (1.15.2-1) ...
+Selecting previously unselected package libgmock-dev:amd64.
+Preparing to unpack .../79-libgmock-dev_1.15.2-1_amd64.deb ...
+Unpacking libgmock-dev:amd64 (1.15.2-1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../80-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../81-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../82-libjs-sphinxdoc_7.4.7-3_all.deb ...
+Unpacking libjs-sphinxdoc (7.4.7-3) ...
+Selecting previously unselected package libpython3.12t64:amd64.
+Preparing to unpack .../83-libpython3.12t64_3.12.6-1_amd64.deb ...
+Unpacking libpython3.12t64:amd64 (3.12.6-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../84-zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1) ...
+Selecting previously unselected package libpython3.12-dev:amd64.
+Preparing to unpack .../85-libpython3.12-dev_3.12.6-1_amd64.deb ...
+Unpacking libpython3.12-dev:amd64 (3.12.6-1) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../86-libpython3-dev_3.12.6-1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.12.6-1) ...
+Selecting previously unselected package python3.12-dev.
+Preparing to unpack .../87-python3.12-dev_3.12.6-1_amd64.deb ...
+Unpacking python3.12-dev (3.12.6-1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../88-python3-dev_3.12.6-1_amd64.deb ...
+Unpacking python3-dev (3.12.6-1) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../89-ros-one-setup-files_0-2024.10.25.10.01_amd64.deb ...
+Unpacking ros-one-setup-files (0-2024.10.25.10.01) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../90-ros-one-ros-environment_1.3.2-5-g2686e94-2024.10.25.10.01_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-g2686e94-2024.10.25.10.01) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../91-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (10.1.0) ...
+Setting up dumb-init (1.2.5-3) ...
+Setting up libpipeline1:amd64 (1.5.8-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-3) ...
+Setting up libicu72:amd64 (72.1-5) ...
+Setting up bsdextrautils (2.40.2-9) ...
+Setting up libmagic-mgc (1:5.45-3) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libtirpc-common (1.3.4+ds-1.3) ...
+Setting up libdebhelper-perl (13.20) ...
+Setting up libbrotli1:amd64 (1.1.0-2+b4) ...
+Setting up libsqlite3-0:amd64 (3.46.1-1) ...
+Setting up libuv1t64:amd64 (1.48.0-6) ...
+Setting up libmagic1t64:amd64 (1:5.45-3) ...
+Setting up libpsl5t64:amd64 (0.21.2-1.1) ...
+Setting up libnghttp2-14:amd64 (1.63.0-1) ...
+Setting up gettext-base (0.22.5-2) ...
+Setting up m4 (1.4.19-4) ...
+Setting up libcom-err2:amd64 (1.47.1-1) ...
+Setting up file (1:5.45-3) ...
+Setting up googletest (1.15.2-1) ...
+Setting up libfakeroot:amd64 (1.36-1) ...
+Setting up libelf1t64:amd64 (0.191-2) ...
+Setting up libkrb5support0:amd64 (1.21.3-3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-8) ...
+Setting up tzdata (2024a-4) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Fri Oct 25 11:02:17 UTC 2024.
+Universal Time is now:  Fri Oct 25 11:02:17 UTC 2024.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up fakeroot (1.36-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20220109.1) ...
+Setting up libpkgconf3:amd64 (1.8.1-4) ...
+Setting up libexpat1-dev:amd64 (2.6.3-1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b4) ...
+Setting up libjsoncpp26:amd64 (1.9.6-2) ...
+Setting up libproc2-0:amd64 (2:4.0.4-6) ...
+Setting up autopoint (0.22.5-2) ...
+Setting up pkgconf-bin (1.8.1-4) ...
+Setting up libncursesw6:amd64 (6.5-2) ...
+Setting up libk5crypto3:amd64 (1.21.3-3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-8) ...
+Setting up autoconf (2.72-3) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1) ...
+Setting up dwz (0.15-1+b1) ...
+Setting up sensible-utils (0.0.24) ...
+Setting up libuchardet0:amd64 (0.0.8-1+b1) ...
+Setting up procps (2:4.0.4-6) ...
+Setting up netbase (6.4) ...
+Setting up sgml-base (1.31) ...
+Setting up cmake-data (3.30.5-1) ...
+Setting up librhash1:amd64 (1.4.5-1) ...
+Setting up libkrb5-3:amd64 (1.21.3-3) ...
+Setting up libssh2-1t64:amd64 (1.11.1-1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up readline-common (8.2-5) ...
+Setting up libxml2:amd64 (2.12.7+dfsg+really2.9.14-0.1) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.14.0-1) ...
+Setting up gettext (0.22.5-2) ...
+Setting up libgtest-dev:amd64 (1.15.2-1) ...
+Setting up libtool (2.4.7-7) ...
+Setting up libldap-2.5-0:amd64 (2.5.18+dfsg-3+b1) ...
+Setting up pkgconf:amd64 (1.8.1-4) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up libgssapi-krb5-2:amd64 (1.21.3-3) ...
+Setting up pkg-config:amd64 (1.8.1-4) ...
+Setting up libgmock-dev:amd64 (1.15.2-1) ...
+Setting up libjs-sphinxdoc (7.4.7-3) ...
+Setting up libreadline8t64:amd64 (8.2-5) ...
+Setting up dh-strip-nondeterminism (1.14.0-1) ...
+Setting up groff-base (1.23.0-5) ...
+Setting up xml-core (0.19) ...
+Setting up libarchive13t64:amd64 (3.7.4-1) ...
+Setting up libcurl4t64:amd64 (8.10.1-2) ...
+Setting up libtirpc3t64:amd64 (1.3.4+ds-1.3) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up man-db (2.13.0-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libnsl2:amd64 (1.3.0-3+b2) ...
+Setting up cmake (3.30.5-1) ...
+Setting up libpython3.12-stdlib:amd64 (3.12.6-1) ...
+Setting up python3.12 (3.12.6-1) ...
+Setting up debhelper (13.20) ...
+Setting up libpython3.12t64:amd64 (3.12.6-1) ...
+Setting up libpython3-stdlib:amd64 (3.12.6-1) ...
+Setting up python3 (3.12.6-1) ...
+Setting up libpython3.12-dev:amd64 (3.12.6-1) ...
+Setting up python3-zipp (3.20.2-1) ...
+Setting up python3-autocommand (2.2.2-3) ...
+Setting up python3-empy (3.3.4-2) ...
+Setting up python3-roman (4.2-1) ...
+Setting up python3-pyparsing (3.1.2-1) ...
+Setting up cmake-extras (1.7-3) ...
+Setting up python3.12-dev (3.12.6-1) ...
+Setting up python3-typing-extensions (4.12.2-2) ...
+Setting up python3-dateutil (2.9.0-3) ...
+Setting up python3-catkin (0.8.10-16) ...
+Setting up python3-more-itertools (10.5.0-1) ...
+Setting up libpython3-dev:amd64 (3.12.6-1) ...
+Setting up python3-jaraco.functools (4.1.0-1) ...
+Setting up python3-jaraco.context (6.0.0-1) ...
+Setting up python3-typeguard (4.3.0-1) ...
+Setting up python3-inflect (7.3.1-2) ...
+Setting up python3-dev (3.12.6-1) ...
+Setting up python3-pkg-resources (74.1.2-2) ...
+Setting up python3-setuptools (74.1.2-2) ...
+Setting up ros-one-setup-files (0-2024.10.25.10.01) ...
+Setting up ros-one-ros-environment (1.3.2-5-g2686e94-2024.10.25.10.01) ...
+Processing triggers for libc-bin (2.40-3) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up docutils-common (0.21.2+dfsg-2) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up python3-docutils (0.21.2+dfsg-2) ...
+Setting up python3-catkin-pkg (1.0.0-2) ...
+/usr/lib/python3/dist-packages/catkin_pkg/cli/prepare_release.py:234: SyntaxWarning: invalid escape sequence '\.'
+  if args.version and not re.match('^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$', args.version):
+Setting up catkin (0.8.10-16) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                                                          |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                                                            |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.8.0-1015-azure #17-Ubuntu SMP Mon Sep  2 14:54:06 UTC 2024 amd64 (x86_64)
+Toolchain package versions: binutils_2.43.1-5 dpkg-dev_1.22.11 g++-14_14.2.0-6 gcc-14_14.2.0-6 libc6-dev_2.40-3 libstdc++-14-dev_14.2.0-6 libstdc++6_14.2.0-6 linux-libc-dev_6.11.4-1
+Package versions: apt_2.9.8 autoconf_2.72-3 automake_1:1.16.5-1.3 autopoint_0.22.5-2 autotools-dev_20220109.1 base-files_13.5 base-passwd_3.6.4 bash_5.2.32-1+b2 binutils_2.43.1-5 binutils-common_2.43.1-5 binutils-x86-64-linux-gnu_2.43.1-5 bsdextrautils_2.40.2-9 bsdutils_1:2.40.2-9 build-essential_12.12 bzip2_1.0.8-6 ca-certificates_20240203 catkin_0.8.10-16 ccache_4.10.2-1 cmake_3.30.5-1 cmake-data_3.30.5-1 cmake-extras_1.7-3 coreutils_9.4-3.1 cpp_4:14.2.0-1 cpp-14_14.2.0-6 cpp-14-x86-64-linux-gnu_14.2.0-6 cpp-x86-64-linux-gnu_4:14.2.0-1 dash_0.5.12-9 debconf_1.5.87 debhelper_13.20 debian-archive-keyring_2023.4 debianutils_5.20 dh-autoreconf_20 dh-strip-nondeterminism_1.14.0-1 diffutils_1:3.10-1 docutils-common_0.21.2+dfsg-2 dpkg_1.22.11 dpkg-dev_1.22.11 dumb-init_1.2.5-3 dwz_0.15-1+b1 fakeroot_1.36-1 file_1:5.45-3 findutils_4.10.0-3 g++_4:14.2.0-1 g++-14_14.2.0-6 g++-14-x86-64-linux-gnu_14.2.0-6 g++-x86-64-linux-gnu_4:14.2.0-1 gcc_4:14.2.0-1 gcc-14_14.2.0-6 gcc-14-base_14.2.0-6 gcc-14-x86-64-linux-gnu_14.2.0-6 gcc-x86-64-linux-gnu_4:14.2.0-1 gettext_0.22.5-2 gettext-base_0.22.5-2 googletest_1.15.2-1 gpgv_2.2.44-1 grep_3.11-4 groff-base_1.23.0-5 gzip_1.12-1.1 hostname_3.25 init-system-helpers_1.67 intltool-debian_0.35.0+20060710.6 libacl1_2.3.2-2 libapt-pkg6.0t64_2.9.8 libarchive-zip-perl_1.68-1 libarchive13t64_3.7.4-1 libasan8_14.2.0-6 libatomic1_14.2.0-6 libattr1_1:2.5.2-2 libaudit-common_1:3.1.2-4 libaudit1_1:3.1.2-4+b1 libbinutils_2.43.1-5 libblkid1_2.40.2-9 libbrotli1_1.1.0-2+b4 libbz2-1.0_1.0.8-6 libc-bin_2.40-3 libc-dev-bin_2.40-3 libc6_2.40-3 libc6-dev_2.40-3 libcap-ng0_0.8.5-3 libcap2_1:2.66-5 libcc1-0_14.2.0-6 libcom-err2_1.47.1-1 libcrypt-dev_1:4.4.36-5 libcrypt1_1:4.4.36-5 libctf-nobfd0_2.43.1-5 libctf0_2.43.1-5 libcurl4t64_8.10.1-2 libdb5.3t64_5.3.28+dfsg2-9 libdebconfclient0_0.272 libdebhelper-perl_13.20 libdpkg-perl_1.22.11 libelf1t64_0.191-2 libexpat1_2.6.3-1 libexpat1-dev_2.6.3-1 libfakeroot_1.36-1 libffi8_3.4.6-1 libfile-stripnondeterminism-perl_1.14.0-1 libfmt9_9.1.0+ds1-2 libgcc-14-dev_14.2.0-6 libgcc-s1_14.2.0-6 libgcrypt20_1.11.0-6 libgdbm-compat4t64_1.24-2 libgdbm6t64_1.24-2 libgmock-dev_1.15.2-1 libgmp10_2:6.3.0+dfsg-2+b1 libgnutls30t64_3.8.6-2 libgomp1_14.2.0-6 libgpg-error0_1.50-4 libgprofng0_2.43.1-5 libgssapi-krb5-2_1.21.3-3 libgtest-dev_1.15.2-1 libhiredis1.1.0_1.2.0-6+b2 libhogweed6t64_3.10-1 libhwasan0_14.2.0-6 libicu72_72.1-5 libidn2-0_2.3.7-2 libisl23_0.27-1 libitm1_14.2.0-6 libjansson4_2.14-2+b2 libjs-jquery_3.6.1+dfsg+~3.5.14-1 libjs-sphinxdoc_7.4.7-3 libjs-underscore_1.13.4~dfsg+~1.11.4-3 libjsoncpp26_1.9.6-2 libk5crypto3_1.21.3-3 libkeyutils1_1.6.3-3 libkrb5-3_1.21.3-3 libkrb5support0_1.21.3-3 libldap-2.5-0_2.5.18+dfsg-3+b1 liblsan0_14.2.0-6 liblz4-1_1.9.4-3 liblzma5_5.6.2-2 libmagic-mgc_1:5.45-3 libmagic1t64_1:5.45-3 libmd0_1.1.0-2 libmount1_2.40.2-9 libmpc3_1.3.1-1+b2 libmpfr6_4.2.1-1+b1 libncursesw6_6.5-2 libnettle8t64_3.10-1 libnghttp2-14_1.63.0-1 libnsl2_1.3.0-3+b2 libp11-kit0_0.25.5-2 libpam-modules_1.5.3-7 libpam-modules-bin_1.5.3-7 libpam-runtime_1.5.3-7 libpam0g_1.5.3-7 libpcre2-8-0_10.42-4+b1 libperl5.40_5.40.0-6 libpipeline1_1.5.8-1 libpkgconf3_1.8.1-4 libproc2-0_2:4.0.4-6 libpsl5t64_0.21.2-1.1 libpython3-dev_3.12.6-1 libpython3-stdlib_3.12.6-1 libpython3.12-dev_3.12.6-1 libpython3.12-minimal_3.12.6-1 libpython3.12-stdlib_3.12.6-1 libpython3.12t64_3.12.6-1 libquadmath0_14.2.0-6 libreadline8t64_8.2-5 librhash1_1.4.5-1 librtmp1_2.4+20151223.gitfa8646d.1-2+b4 libsasl2-2_2.1.28+dfsg1-8 libsasl2-modules-db_2.1.28+dfsg1-8 libseccomp2_2.5.5-1+b1 libselinux1_3.7-3 libsframe1_2.43.1-5 libsmartcols1_2.40.2-9 libsqlite3-0_3.46.1-1 libssh2-1t64_1.11.1-1 libssl3t64_3.3.2-1 libstdc++-14-dev_14.2.0-6 libstdc++6_14.2.0-6 libsystemd0_256.7-2 libtasn1-6_4.19.0-3+b2 libtinfo6_6.5-2 libtirpc-common_1.3.4+ds-1.3 libtirpc3t64_1.3.4+ds-1.3 libtool_2.4.7-7 libtsan2_14.2.0-6 libubsan1_14.2.0-6 libuchardet0_0.0.8-1+b1 libudev1_256.7-2 libunistring5_1.2-1 libuuid1_2.40.2-9 libuv1t64_1.48.0-6 libxml2_2.12.7+dfsg+really2.9.14-0.1 libxxhash0_0.8.2-2+b1 libzstd1_1.5.6+dfsg-1 linux-libc-dev_6.11.4-1 m4_1.4.19-4 make_4.3-4.1 man-db_2.13.0-1 mawk_1.3.4.20240905-1 media-types_10.1.0 ncurses-base_6.5-2 ncurses-bin_6.5-2 netbase_6.4 openssl_3.3.2-1 openssl-provider-legacy_3.3.2-1 patch_2.7.6-7 perl_5.40.0-6 perl-base_5.40.0-6 perl-modules-5.40_5.40.0-6 pkg-config_1.8.1-4 pkgconf_1.8.1-4 pkgconf-bin_1.8.1-4 po-debconf_1.0.21+nmu1 procps_2:4.0.4-6 python3_3.12.6-1 python3-autocommand_2.2.2-3 python3-catkin_0.8.10-16 python3-catkin-pkg_1.0.0-2 python3-dateutil_2.9.0-3 python3-dev_3.12.6-1 python3-docutils_0.21.2+dfsg-2 python3-empy_3.3.4-2 python3-inflect_7.3.1-2 python3-jaraco.context_6.0.0-1 python3-jaraco.functools_4.1.0-1 python3-minimal_3.12.6-1 python3-more-itertools_10.5.0-1 python3-pkg-resources_74.1.2-2 python3-pyparsing_3.1.2-1 python3-roman_4.2-1 python3-setuptools_74.1.2-2 python3-typeguard_4.3.0-1 python3-typing-extensions_4.12.2-2 python3-zipp_3.20.2-1 python3.12_3.12.6-1 python3.12-dev_3.12.6-1 python3.12-minimal_3.12.6-1 readline-common_8.2-5 ros-one-ros-environment_1.3.2-5-g2686e94-2024.10.25.10.01 ros-one-setup-files_0-2024.10.25.10.01 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-2 sensible-utils_0.0.24 sgml-base_1.31 sysvinit-utils_3.10-3 tar_1.35+dfsg-3 tzdata_2024a-4 util-linux_2.40.2-9 xml-core_0.19 xz-utils_5.6.2-2 zlib1g_1:1.3.dfsg+really1.3.1-1 zlib1g-dev_1:1.3.dfsg+really1.3.1-1
+
++------------------------------------------------------------------------------+
+| Build                                                                        |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-rosbuild
+Binary: ros-one-rosbuild
+Architecture: any
+Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Homepage: http://ros.org/wiki/rosbuild
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), catkin (>= 0.5.78), libgmock-dev (>= 0.5.78), libgtest-dev (>= 0.5.78), pkg-config
+Package-List:
+ ros-one-rosbuild deb misc optional arch=any
+Checksums-Sha1:
+ f879f3502e9398fd0f8a7db66dde1d0a373937ff 38366 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.tar.gz
+Checksums-Sha256:
+ 1fed046c4759ee1d3170ad158d04b9236951ef11c09351b4f3b92caeacfa3bfd 38366 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.tar.gz
+Files:
+ fb3bef84524d71e081d3c0b0431f4a23 38366 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.dsc)
+dpkg-source: info: extracting ros-one-rosbuild in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/var/lib/sbuild
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-rosbuild
+dpkg-buildpackage: info: source version 1.15.8-3-g136e18e9-2024.10.25.11.01
+dpkg-buildpackage: info: source distribution trixie
+dpkg-buildpackage: info: source changed by Michel Hidalgo <michel@ekumenlabs.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-rosbuild.substvars debian/files
+	rm -fr -- debian/ros-one-rosbuild/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a \( -name autom4te.cache -o -name __pycache__ \) -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCATKIN_BUILD_BINARY_PACKAGE="1" \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF -DCATKIN_ENABLE_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && DEB_PYTHON_INSTALL_LAYOUT=deb PKG_CONFIG=/usr/bin/pkg-config cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DBUILD_TESTING:BOOL=OFF -DCATKIN_BUILD_BINARY_PACKAGE=1 -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF -DCATKIN_ENABLE_TESTING=OFF ..
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/one
+-- This workspace overlays: /opt/ros/one
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.12.6", minimum required is "3")
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using BUILD_TESTING: OFF (implying CATKIN_ENABLE_TESTING=OFF)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Installing devel-space wrapper /<<BUILDDIR>>package/tests/count_cores.py to /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/share/ros/core/rosbuild/tests
+-- Installing devel-space wrapper /<<BUILDDIR>>package/core/rosbuild/bin/check_same_directories.py to /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/share/ros/core/rosbuild/bin
+-- Installing devel-space wrapper /<<BUILDDIR>>package/core/rosbuild/bin/download_checkmd5.py to /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/share/ros/core/rosbuild/bin
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LOCALSTATEDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    FETCHCONTENT_FULLY_DISCONNECTED
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-rosbuild.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-rosbuild.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-one-rosbuild.substvars
+	rm -fr -- debian/.debhelper/generated/ros-one-rosbuild/ debian/ros-one-rosbuild/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-one-rosbuild
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-one-rosbuild AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/lib/pkgconfig/rosbuild.pc
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/rosbuild/cmake/rosbuildConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/rosbuild/cmake/rosbuildConfig-version.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/rosbuild/package.xml
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/etc/catkin/profile.d/10.rosbuild.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/rosbuild/catkin_env_hook/10.rosbuild.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/FindPkgConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/private.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/ProcessorCount.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/public.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/rosbuild.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/rosconfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/rostoolchain.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/tests/count_cores.py
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/bin/check_same_directories.py
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-rosbuild/opt/ros/one/share/ros/core/rosbuild/bin/download_checkmd5.py
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-rosbuild/usr/share/doc/ros-one-rosbuild
+	install -p -m0644 debian/copyright debian/ros-one-rosbuild/usr/share/doc/ros-one-rosbuild/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-rosbuild/usr/share/doc/ros-one-rosbuild
+	install -p -m0644 debian/.debhelper/generated/ros-one-rosbuild/dh_installchangelogs.dch.trimmed debian/ros-one-rosbuild/usr/share/doc/ros-one-rosbuild/changelog.Debian
+	install -p -m0644 ./CHANGELOG.rst debian/ros-one-rosbuild/usr/share/doc/ros-one-rosbuild/changelog
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-rosbuild
+	chmod a-x usr/share/doc/ros-one-rosbuild/changelog usr/share/doc/ros-one-rosbuild/changelog.Debian
+	gzip -9nf usr/share/doc/ros-one-rosbuild/changelog usr/share/doc/ros-one-rosbuild/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-one-rosbuild -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-one-rosbuild ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-one-rosbuild/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-one-rosbuild/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-one-rosbuild/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-one-rosbuild -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-rosbuild/DEBIAN/shlibs
+	rm -f debian/ros-one-rosbuild.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-one-rosbuild//opt/ros/one/lib/
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-rosbuild/DEBIAN
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-rosbuild/DEBIAN
+	echo misc:Depends= >> debian/ros-one-rosbuild.substvars
+	echo misc:Pre-Depends= >> debian/ros-one-rosbuild.substvars
+	dpkg-gencontrol -pros-one-rosbuild -ldebian/changelog -Tdebian/ros-one-rosbuild.substvars -cdebian/control -Pdebian/ros-one-rosbuild
+dpkg-gencontrol: warning: Depends field of package ros-one-rosbuild: substitution variable ${shlibs:Depends} used, but is not defined
+	chmod 0644 -- debian/ros-one-rosbuild/DEBIAN/control
+	chown 0:0 -- debian/ros-one-rosbuild/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-rosbuild/DEBIAN
+	cd debian/ros-one-rosbuild >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-one-rosbuild/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-one-rosbuild/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --build debian/ros-one-rosbuild ..
+dpkg-deb: building package 'ros-one-rosbuild' in '../ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.buildinfo
+dpkg-genbuildinfo: warning:     debian/changelog(l13): found trailer where expected start of change data
+LINE:  -- Michel Hidalgo <michel@ekumenlabs.com>  Mon, 28 Sep 2020 00:00:00 -0000
+ dpkg-genchanges --build=binary -O../ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.changes
+dpkg-genchanges: warning:     debian/changelog(l13): found trailer where expected start of change data
+LINE:  -- Michel Hidalgo <michel@ekumenlabs.com>  Mon, 28 Sep 2020 00:00:00 -0000
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2024-10-25T11:02:29Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                                                      |
++------------------------------------------------------------------------------+
+
+
+ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.changes:
+-------------------------------------------------------------------
+
+Format: 1.8
+Date: Wed, 21 Jul 2021 00:00:00 -0000
+Source: ros-one-rosbuild
+Binary: ros-one-rosbuild
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Distribution: trixie
+Urgency: high
+Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+Changed-By: Michel Hidalgo <michel@ekumenlabs.com>
+Description:
+ ros-one-rosbuild - rosbuild contains scripts for managing the CMake-based build syst
+Changes:
+ ros-one-rosbuild (1.15.8-3-g136e18e9-2024.10.25.11.01) trixie; urgency=high
+ .
+   * Fix spelling (#277 <https://github.com/ros/ros/issues/277>)
+   * Update maintainers (#272 <https://github.com/ros/ros/issues/272>)
+   * Contributors: Jacob Perron, freddii
+Checksums-Sha1:
+ b14aca58c5914841d68c0baad601322a954641c9 7021 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.buildinfo
+ ca68ea9c52ba31f0566eb5f3fcb9fa3177605ff3 28768 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+Checksums-Sha256:
+ ea278f1596ed00918ed0b54e1cd9e119c1efb7b934b46079ee104f8bc3717f03 7021 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.buildinfo
+ d24539235176408cfb0fef28fce76052c80b8babd4b9cec5c16c1e4fe69d34a9 28768 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+Files:
+ dbe135cd9c4d83d9783c161daf1de477 7021 misc optional ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.buildinfo
+ 86328228da199d50ccd8780d54217740 28768 misc optional ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                                                    |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-one-rosbuild
+Binary: ros-one-rosbuild
+Architecture: amd64
+Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Checksums-Md5:
+ 86328228da199d50ccd8780d54217740 28768 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+Checksums-Sha1:
+ ca68ea9c52ba31f0566eb5f3fcb9fa3177605ff3 28768 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+Checksums-Sha256:
+ d24539235176408cfb0fef28fce76052c80b8babd4b9cec5c16c1e4fe69d34a9 28768 ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Fri, 25 Oct 2024 11:02:29 +0000
+Build-Path: /<<BUILDDIR>>package
+Build-Tainted-By:
+ merged-usr-via-aliased-dirs
+Installed-Build-Depends:
+ autoconf (= 2.72-3),
+ automake (= 1:1.16.5-1.3),
+ autopoint (= 0.22.5-2),
+ autotools-dev (= 20220109.1),
+ base-files (= 13.5),
+ base-passwd (= 3.6.4),
+ bash (= 5.2.32-1+b2),
+ binutils (= 2.43.1-5),
+ binutils-common (= 2.43.1-5),
+ binutils-x86-64-linux-gnu (= 2.43.1-5),
+ bsdextrautils (= 2.40.2-9),
+ bsdutils (= 1:2.40.2-9),
+ build-essential (= 12.12),
+ bzip2 (= 1.0.8-6),
+ catkin (= 0.8.10-16),
+ cmake (= 3.30.5-1),
+ cmake-data (= 3.30.5-1),
+ cmake-extras (= 1.7-3),
+ coreutils (= 9.4-3.1),
+ cpp (= 4:14.2.0-1),
+ cpp-14 (= 14.2.0-6),
+ cpp-14-x86-64-linux-gnu (= 14.2.0-6),
+ cpp-x86-64-linux-gnu (= 4:14.2.0-1),
+ dash (= 0.5.12-9),
+ debconf (= 1.5.87),
+ debhelper (= 13.20),
+ debianutils (= 5.20),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.14.0-1),
+ diffutils (= 1:3.10-1),
+ docutils-common (= 0.21.2+dfsg-2),
+ dpkg (= 1.22.11),
+ dpkg-dev (= 1.22.11),
+ dwz (= 0.15-1+b1),
+ file (= 1:5.45-3),
+ findutils (= 4.10.0-3),
+ g++ (= 4:14.2.0-1),
+ g++-14 (= 14.2.0-6),
+ g++-14-x86-64-linux-gnu (= 14.2.0-6),
+ g++-x86-64-linux-gnu (= 4:14.2.0-1),
+ gcc (= 4:14.2.0-1),
+ gcc-14 (= 14.2.0-6),
+ gcc-14-base (= 14.2.0-6),
+ gcc-14-x86-64-linux-gnu (= 14.2.0-6),
+ gcc-x86-64-linux-gnu (= 4:14.2.0-1),
+ gettext (= 0.22.5-2),
+ gettext-base (= 0.22.5-2),
+ googletest (= 1.15.2-1),
+ grep (= 3.11-4),
+ groff-base (= 1.23.0-5),
+ gzip (= 1.12-1.1),
+ hostname (= 3.25),
+ init-system-helpers (= 1.67),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.2-2),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13t64 (= 3.7.4-1),
+ libasan8 (= 14.2.0-6),
+ libatomic1 (= 14.2.0-6),
+ libattr1 (= 1:2.5.2-2),
+ libaudit-common (= 1:3.1.2-4),
+ libaudit1 (= 1:3.1.2-4+b1),
+ libbinutils (= 2.43.1-5),
+ libblkid1 (= 2.40.2-9),
+ libbrotli1 (= 1.1.0-2+b4),
+ libbz2-1.0 (= 1.0.8-6),
+ libc-bin (= 2.40-3),
+ libc-dev-bin (= 2.40-3),
+ libc6 (= 2.40-3),
+ libc6-dev (= 2.40-3),
+ libcap-ng0 (= 0.8.5-3),
+ libcap2 (= 1:2.66-5),
+ libcc1-0 (= 14.2.0-6),
+ libcom-err2 (= 1.47.1-1),
+ libcrypt-dev (= 1:4.4.36-5),
+ libcrypt1 (= 1:4.4.36-5),
+ libctf-nobfd0 (= 2.43.1-5),
+ libctf0 (= 2.43.1-5),
+ libcurl4t64 (= 8.10.1-2),
+ libdb5.3t64 (= 5.3.28+dfsg2-9),
+ libdebconfclient0 (= 0.272),
+ libdebhelper-perl (= 13.20),
+ libdpkg-perl (= 1.22.11),
+ libelf1t64 (= 0.191-2),
+ libexpat1 (= 2.6.3-1),
+ libffi8 (= 3.4.6-1),
+ libfile-stripnondeterminism-perl (= 1.14.0-1),
+ libgcc-14-dev (= 14.2.0-6),
+ libgcc-s1 (= 14.2.0-6),
+ libgdbm-compat4t64 (= 1.24-2),
+ libgdbm6t64 (= 1.24-2),
+ libgmock-dev (= 1.15.2-1),
+ libgmp10 (= 2:6.3.0+dfsg-2+b1),
+ libgnutls30t64 (= 3.8.6-2),
+ libgomp1 (= 14.2.0-6),
+ libgprofng0 (= 2.43.1-5),
+ libgssapi-krb5-2 (= 1.21.3-3),
+ libgtest-dev (= 1.15.2-1),
+ libhogweed6t64 (= 3.10-1),
+ libhwasan0 (= 14.2.0-6),
+ libicu72 (= 72.1-5),
+ libidn2-0 (= 2.3.7-2),
+ libisl23 (= 0.27-1),
+ libitm1 (= 14.2.0-6),
+ libjansson4 (= 2.14-2+b2),
+ libjsoncpp26 (= 1.9.6-2),
+ libk5crypto3 (= 1.21.3-3),
+ libkeyutils1 (= 1.6.3-3),
+ libkrb5-3 (= 1.21.3-3),
+ libkrb5support0 (= 1.21.3-3),
+ libldap-2.5-0 (= 2.5.18+dfsg-3+b1),
+ liblsan0 (= 14.2.0-6),
+ liblz4-1 (= 1.9.4-3),
+ liblzma5 (= 5.6.2-2),
+ libmagic-mgc (= 1:5.45-3),
+ libmagic1t64 (= 1:5.45-3),
+ libmd0 (= 1.1.0-2),
+ libmount1 (= 2.40.2-9),
+ libmpc3 (= 1.3.1-1+b2),
+ libmpfr6 (= 4.2.1-1+b1),
+ libncursesw6 (= 6.5-2),
+ libnettle8t64 (= 3.10-1),
+ libnghttp2-14 (= 1.63.0-1),
+ libnsl2 (= 1.3.0-3+b2),
+ libp11-kit0 (= 0.25.5-2),
+ libpam-modules (= 1.5.3-7),
+ libpam-modules-bin (= 1.5.3-7),
+ libpam-runtime (= 1.5.3-7),
+ libpam0g (= 1.5.3-7),
+ libpcre2-8-0 (= 10.42-4+b1),
+ libperl5.40 (= 5.40.0-6),
+ libpipeline1 (= 1.5.8-1),
+ libpkgconf3 (= 1.8.1-4),
+ libproc2-0 (= 2:4.0.4-6),
+ libpsl5t64 (= 0.21.2-1.1),
+ libpython3-stdlib (= 3.12.6-1),
+ libpython3.12-minimal (= 3.12.6-1),
+ libpython3.12-stdlib (= 3.12.6-1),
+ libquadmath0 (= 14.2.0-6),
+ libreadline8t64 (= 8.2-5),
+ librhash1 (= 1.4.5-1),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2+b4),
+ libsasl2-2 (= 2.1.28+dfsg1-8),
+ libsasl2-modules-db (= 2.1.28+dfsg1-8),
+ libseccomp2 (= 2.5.5-1+b1),
+ libselinux1 (= 3.7-3),
+ libsframe1 (= 2.43.1-5),
+ libsmartcols1 (= 2.40.2-9),
+ libsqlite3-0 (= 3.46.1-1),
+ libssh2-1t64 (= 1.11.1-1),
+ libssl3t64 (= 3.3.2-1),
+ libstdc++-14-dev (= 14.2.0-6),
+ libstdc++6 (= 14.2.0-6),
+ libsystemd0 (= 256.7-2),
+ libtasn1-6 (= 4.19.0-3+b2),
+ libtinfo6 (= 6.5-2),
+ libtirpc-common (= 1.3.4+ds-1.3),
+ libtirpc3t64 (= 1.3.4+ds-1.3),
+ libtool (= 2.4.7-7),
+ libtsan2 (= 14.2.0-6),
+ libubsan1 (= 14.2.0-6),
+ libuchardet0 (= 0.0.8-1+b1),
+ libudev1 (= 256.7-2),
+ libunistring5 (= 1.2-1),
+ libuuid1 (= 2.40.2-9),
+ libuv1t64 (= 1.48.0-6),
+ libxml2 (= 2.12.7+dfsg+really2.9.14-0.1),
+ libxxhash0 (= 0.8.2-2+b1),
+ libzstd1 (= 1.5.6+dfsg-1),
+ linux-libc-dev (= 6.11.4-1),
+ m4 (= 1.4.19-4),
+ make (= 4.3-4.1),
+ man-db (= 2.13.0-1),
+ mawk (= 1.3.4.20240905-1),
+ media-types (= 10.1.0),
+ ncurses-base (= 6.5-2),
+ ncurses-bin (= 6.5-2),
+ netbase (= 6.4),
+ openssl-provider-legacy (= 3.3.2-1),
+ patch (= 2.7.6-7),
+ perl (= 5.40.0-6),
+ perl-base (= 5.40.0-6),
+ perl-modules-5.40 (= 5.40.0-6),
+ pkg-config (= 1.8.1-4),
+ pkgconf (= 1.8.1-4),
+ pkgconf-bin (= 1.8.1-4),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.4-6),
+ python3 (= 3.12.6-1),
+ python3-autocommand (= 2.2.2-3),
+ python3-catkin (= 0.8.10-16),
+ python3-catkin-pkg (= 1.0.0-2),
+ python3-dateutil (= 2.9.0-3),
+ python3-docutils (= 0.21.2+dfsg-2),
+ python3-empy (= 3.3.4-2),
+ python3-inflect (= 7.3.1-2),
+ python3-jaraco.context (= 6.0.0-1),
+ python3-jaraco.functools (= 4.1.0-1),
+ python3-minimal (= 3.12.6-1),
+ python3-more-itertools (= 10.5.0-1),
+ python3-pkg-resources (= 74.1.2-2),
+ python3-pyparsing (= 3.1.2-1),
+ python3-roman (= 4.2-1),
+ python3-setuptools (= 74.1.2-2),
+ python3-typeguard (= 4.3.0-1),
+ python3-typing-extensions (= 4.12.2-2),
+ python3-zipp (= 3.20.2-1),
+ python3.12 (= 3.12.6-1),
+ python3.12-minimal (= 3.12.6-1),
+ readline-common (= 8.2-5),
+ rpcsvc-proto (= 1.4.3-1),
+ sed (= 4.9-2),
+ sensible-utils (= 0.0.24),
+ sgml-base (= 1.31),
+ sysvinit-utils (= 3.10-3),
+ tar (= 1.35+dfsg-3),
+ tzdata (= 2024a-4),
+ util-linux (= 2.40.2-9),
+ xml-core (= 0.19),
+ xz-utils (= 5.6.2-2),
+ zlib1g (= 1:1.3.dfsg+really1.3.1-1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="nocheck"
+ LANG="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LC_CTYPE="C.UTF-8"
+ LD_LIBRARY_PATH="/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu"
+ SOURCE_DATE_EPOCH="1626825600"
+
+
++------------------------------------------------------------------------------+
+| Package contents                                                             |
++------------------------------------------------------------------------------+
+
+
+ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01_amd64.deb
+--------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 28768 bytes: control archive=1172 bytes.
+     421 bytes,    10 lines      control
+    1635 bytes,    19 lines      md5sums
+ Package: ros-one-rosbuild
+ Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+ Architecture: amd64
+ Maintainer: Michel Hidalgo <michel@ekumenlabs.com>
+ Installed-Size: 149
+ Depends: catkin, libgmock-dev, libgtest-dev, ros-one-message-generation, ros-one-message-runtime
+ Section: misc
+ Priority: optional
+ Homepage: http://ros.org/wiki/rosbuild
+ Description: rosbuild contains scripts for managing the CMake-based build system for ROS.
+
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/etc/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/etc/catkin/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/etc/catkin/profile.d/
+-rw-r--r-- root/root       233 2021-07-21 00:00 ./opt/ros/one/etc/catkin/profile.d/10.rosbuild.sh
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/lib/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/lib/pkgconfig/
+-rw-r--r-- root/root       122 2021-07-21 00:00 ./opt/ros/one/lib/pkgconfig/rosbuild.pc
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/ros/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/ros/core/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/
+-rw-r--r-- root/root     15432 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/FindPkgConfig.cmake
+-rw-r--r-- root/root      2615 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/ProcessorCount.cmake
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/bin/
+-rwxr-xr-x root/root      2176 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/bin/check_same_directories.py
+-rwxr-xr-x root/root      3207 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/bin/download_checkmd5.py
+-rw-r--r-- root/root     18531 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/private.cmake
+-rw-r--r-- root/root     52882 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/public.cmake
+-rw-r--r-- root/root      1415 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/rosbuild.cmake
+-rw-r--r-- root/root      4127 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/rosconfig.cmake
+-rw-r--r-- root/root      1301 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/rostoolchain.cmake
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/tests/
+-rwxr-xr-x root/root        93 2021-07-21 00:00 ./opt/ros/one/share/ros/core/rosbuild/tests/count_cores.py
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/catkin_env_hook/
+-rw-r--r-- root/root       233 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/catkin_env_hook/10.rosbuild.sh
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/cmake/
+-rw-r--r-- root/root       427 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/cmake/rosbuildConfig-version.cmake
+-rw-r--r-- root/root      9245 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/cmake/rosbuildConfig.cmake
+-rw-r--r-- root/root       874 2021-07-21 00:00 ./opt/ros/one/share/rosbuild/package.xml
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./usr/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./usr/share/doc/
+drwxr-xr-x root/root         0 2021-07-21 00:00 ./usr/share/doc/ros-one-rosbuild/
+-rw-r--r-- root/root       549 2021-07-21 00:00 ./usr/share/doc/ros-one-rosbuild/changelog.Debian.gz
+-rw-r--r-- root/root      1325 2021-07-21 00:00 ./usr/share/doc/ros-one-rosbuild/changelog.gz
+-rw-r--r-- root/root       277 2021-07-21 00:00 ./usr/share/doc/ros-one-rosbuild/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                                                   |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 1360
+Build-Time: 4
+Distribution: trixie
+Host Architecture: amd64
+Install-Time: 16
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros/core/ros-one-rosbuild_1.15.8-3-g136e18e9-2024.10.25.11.01.dsc
+Machine Architecture: amd64
+Package: ros-one-rosbuild
+Package-Time: 52
+Source-Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+Space: 1360
+Status: successful
+Version: 1.15.8-3-g136e18e9-2024.10.25.11.01
+--------------------------------------------------------------------------------
+Finished at 2024-10-25T11:02:29Z
+Build needed 00:00:52, 1360k disk space

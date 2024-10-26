@@ -1,0 +1,149 @@
+Format: 1.8
+Date: Tue, 07 Jun 2022 00:00:00 -0000
+Source: ros-one-jsk-topic-tools
+Binary: ros-one-jsk-topic-tools ros-one-jsk-topic-tools-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.2.12-185-g1ddd7669-2024.10.25.19.53
+Distribution: trixie
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-topic-tools - jsk_topic_tools
+Changes:
+ ros-one-jsk-topic-tools (2.2.12-185-g1ddd7669-2024.10.25.19.53) trixie; urgency=high
+ .
+   * [jsk_topic_tools] add non static_tf mode to static_tf_republisher (#1709 <https://github.com/jsk-ros-pkg/jsk_common/issues/1709>)
+ .
+       * [jsk_topic_tools] add USE_SOURCE_PERMISSIONS
+       * [jsk_topic_tools] remove install_sample_data.py
+       * [jsk_topic_tools] remove jsk_data from dependencies
+       * [jsk_topic_tools] download sample tf data with catkin_download()
+       * [jsk_topic_tools] add jsk_data to package.xml
+       * [jsk_topic_tools] update static_tf_republisher to add param
+       * [jsk_topic_tools] add test for static_tf_republisher
+       * [jsk_topic_tools] add sample_static_tf_republisher.launch
+       * [jsk_topic_tools] add sample data
+       * [jsk_topic_tools] add non static_tf mode
+ .
+   * [jsk_topic_tools/connection_based_transport] Update the time of last_published_time (#1740 <https://github.com/jsk-ros-pkg/jsk_common/issues/1740>)
+ .
+       * [jsk_topic_tools/connection_based_transport] Make poke function
+ .
+   * [jsk_topic_tools] add rostopic_connection_list #1699 <https://github.com/jsk-ros-pkg/jsk_common/issues/1699> from knorth55/rostopic-connect-list
+ .
+       * add -s and -p arguments
+       * add rostopic_connection_list
+ .
+   * [jsk_topic_tools/connection_based_transport] Update the time of last_published_time to make it possible to take the difference time between the time of start subscribing and the current time.
+   * [jsk_topic_tools] Add transform wrench stamped node (#1724 <https://github.com/jsk-ros-pkg/jsk_common/issues/1724>)
+ .
+       * Add re-calculate transformed wrench
+       * Fixed torque calculation
+       * [jsk_tools/SynchronizedThrottle] Add test for topic connection test after killing nodes
+       * [jsk_tools/SynchronizedThrottle] Add test for topic connection test after killing nodes
+       * [jsk_topic_tools] Use np.dot instead of np.matmul for lower numpy
+       * [jsk_topic_tools] Add test for transform wrench
+       * [jsk_topic_tools] Add sample for transform wrench
+       * [jsk_topic_tools] Add transform_wrench.py node
+       * [jsk_topic_tools] Add wrench stamped sampled data
+ .
+   * Add test for topic connection test after killing nodes (#1725 <https://github.com/jsk-ros-pkg/jsk_common/issues/1725>)
+ .
+       * [jsk_tools/SynchronizedThrottle] Add test for topic connection test after killing nodes
+ .
+   * [jsk_topic_tools/diagnostics_nodelet] Poke when start subscribing. (#1735 <https://github.com/jsk-ros-pkg/jsk_common/issues/1735>)
+   * Loose test failed (#1734 <https://github.com/jsk-ros-pkg/jsk_common/issues/1734>)
+ .
+       * [jsk_topic_tools/test_topic_buffer_update_rate] Extend duration time for chatter_update for low latency
+       * [jsk_topic_tools/test_connection_based] Add wait_for_disconnection param
+       * [jsk_topic_tools/test_stealth_relay] Increased stealth relay time and retry count
+       * [jsk_topic_tools/test_stealth_relay] Fix test by waiting topic connection istead of rospy.sleep
+ .
+   * [jsk_topic_tools] Add diagnostic transport to ConnectionBasedTransport (#1711 <https://github.com/jsk-ros-pkg/jsk_common/issues/1711>)
+ .
+       * [jsk_topic_tools/relay_nodelet] Poke when start subscribing
+       * [jsk_topic_tools/diagnostics_nodelet] Poke when start subscribing.
+       * [jsk_topic_tools] Add checking subscribed topics are published
+       * [jsk_topic_tools] Add diagnostics_aggregator to dpendencies
+       * [jsk_topic_tools] Delete duplicated test
+       * [jsk_topic_tools] Add diagnostics sample and split test
+       * [jsk_topic_tools] Fixed diagnositc message
+       * [jsk_topic_tools] Add Diagnostic function to  ConnectionBasedTransport
+       * Remove vital_checker.py Add _Publisher class to check last published time.
+       * [jsk_topic_tools] Add diagnostic transport test
+       * [jsk_topic_tools] Add diagnostic transport
+       * [jsk_topic_tools] Add timered diagnostic updater for python
+       * [jsk_topic_tools] Add vital checker for python
+ .
+   * jsk_topic_tools/CMakeLists.txt: add diagnostic_updater to find_package(catkin (#1718 <https://github.com/jsk-ros-pkg/jsk_common/issues/1718>)
+ .
+       * jsk_topic_tools/CMakeLists.txt: add diagnostic_updater to find_package(catkin
+         jsk_topic_tools fails if we install diagnostic_udpate only within workspace
+     ```
+     In file included from /home/pi/jsk_catkin_ws/src/jsk_topic_tools-release/include/jsk_topic_tools/relay_nodelet.h:45,
+     from /home/pi/jsk_catkin_ws/src/jsk_topic_tools-release/src/relay_nodelet.cpp:35:
+     /home/pi/jsk_catkin_ws/src/jsk_topic_tools-release/include/jsk_topic_tools/timered_diagnostic_updater.h:41:10: fatal error: diagnostic_updater/diagnostic_updater.h: No such file or directory
+     #include <diagnostic_updater/diagnostic_updater.h>
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     ```
+   * run 2to3 -w -f has_key for python3 compatibilityf (#1695 <https://github.com/jsk-ros-pkg/jsk_common/issues/1695>)
+   * [jsk_topic_tools] add static_tf_republisher.py and documentation (#1667 <https://github.com/jsk-ros-pkg/jsk_common/issues/1667>)
+ .
+       * [jsk_topic_tools] add static_tf_republisher.py and documentation
+ .
+   * Set ccache prefix only for cmake <= 3.4 (#1694 <https://github.com/jsk-ros-pkg/jsk_common/issues/1694>)
+   * test_topic_buffer_fixed_rate_and_update_rate.te: increase retry to 5 (#1693 <https://github.com/jsk-ros-pkg/jsk_common/issues/1693>)
+   *
+ .
+       * [jsk_topic_tools/master_util.py] add default args to isMasterAlive (#1684 <https://github.com/jsk-ros-pkg/jsk_common/issues/1684>)
+       * jsk_tools, jsk_topic_tools] fix urlparse import for python3
+       * [jsk_topic_tools] add iputils-ping to package.xml
+       * [jsk_topic_tools] fix test_python_master_util
+       * [jsk_topic_tools] add test_python_master_util
+ .
+   * jsk_topic_tools/test/test_connection_based_transport.test: increase wait_for_connection from 3 to 10 (#1692 <https://github.com/jsk-ros-pkg/jsk_common/issues/1692>)
+   * Update jsk_travis to 0.5.21 (#1691 <https://github.com/jsk-ros-pkg/jsk_common/issues/1691>)
+ .
+       * jsk_topic_tools/test/test_topic_buffer_fixed_rate.test jsk_topic_tools/test/test_topic_buffer.test increase test_duration
+       * jsk_topic_tools/test/test_topic_buffer_fixed_rate.test increase test_duration
+       * jsk_topic_tools/test/test_topic_buffer_fixed_rate_and_update_rate.test increase test_duration and herror
+       * jsk_topic_tools/test/test_topic_buffer_update_rate.test: relax test for GA
+       * jsk_topic_tools/test/test_topic_buffer_update_rate.test: relax test for GA
+       * jsk_topic_tools/test/test_topic_buffer_fixed_rate.test, jsk_topic_tools/test/test_topic_buffer_update_rate.teste: relax test for GA
+       * test_topic_buffer_fixed_rate.test: relax test for GA
+ .
+   * Add latch mode to jsk_topic_tools/Relay (#1675 <https://github.com/jsk-ros-pkg/jsk_common/issues/1675>)
+   * Add latch argument to advetiseImage and advertiseCamera (#1673 <https://github.com/jsk-ros-pkg/jsk_common/issues/1673>)
+ .
+       * Add new advertise method which expose latch parameter as an argument
+       * Remove duplicated latch variable in advertiseCamera method
+       * Add latch argument to advetiseImage and advertiseCamera
+         * Add latch argument to advetiseImage and advertiseCamera instead of
+         reading latch parameter from ros server in order to set different latch
+         parameter for each publisher in one nodelet.
+ .
+   * Add passthrough_nodelet documentation (#1657 <https://github.com/jsk-ros-pkg/jsk_common/issues/1657>)
+   * add parameters queue_size and slop (#1658 <https://github.com/jsk-ros-pkg/jsk_common/issues/1658>)
+   * check nodelet version with NODELET_VERSION_MINIMUM (#1665 <https://github.com/jsk-ros-pkg/jsk_common/issues/1665>)
+ .
+       * return true for warnNoRemap if nodelet<1.9.11
+       * add warnNoRemap function
+       * remove version_gte for nodelet
+       * just do not load nodelet getRemappings
+       * add nodelet_version.h
+ .
+   * Contributors: Iori Yanokura, Kei Okada, Kentaro Wada, Koki Shinjo, Miyabi Tanemoto, Naoki Hiraoka, Naoya Yamaguchi, Ryohei Ueda, Shingo Kitagawa, Yuki Furuta
+Checksums-Sha1:
+ 21405b2142e5814531d8ac667bf22e2c4ccf6b9c 15215900 ros-one-jsk-topic-tools-dbgsym_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb
+ fd46accbb0710ef25e317e33d09910a50b0c39c8 17713 ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.buildinfo
+ cad27e320658347510eca18cc6650ae186a953cd 1955676 ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb
+Checksums-Sha256:
+ 063e86b1913818ddcdec8295e2bac165a080948cc3bea8d1b2652c22ff5fe4fe 15215900 ros-one-jsk-topic-tools-dbgsym_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb
+ 6ec9eac9e6b3b7cb2bec3be264eb44fa8e5e702d5c62282c5b3f7fe8a284198a 17713 ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.buildinfo
+ 7a5e6f5ac7c9f153c85988c0bbbd60c7c6da4396f2f0c9913e030270d443b845 1955676 ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb
+Files:
+ e93e9a823be7404ea11d7918ccae55d6 15215900 debug optional ros-one-jsk-topic-tools-dbgsym_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb
+ 3417df90800097ae55a44bc0e205130e 17713 misc optional ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.buildinfo
+ c31ea3fb622dca04a3ca2e05eb864496 1955676 misc optional ros-one-jsk-topic-tools_2.2.12-185-g1ddd7669-2024.10.25.19.53_amd64.deb

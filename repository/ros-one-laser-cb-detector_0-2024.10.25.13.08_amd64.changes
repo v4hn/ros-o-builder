@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Tue, 11 May 2021 00:00:00 -0000
+Source: ros-one-laser-cb-detector
+Binary: ros-one-laser-cb-detector ros-one-laser-cb-detector-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2024.10.25.13.08
+Distribution: trixie
+Urgency: high
+Maintainer: David Feil-Seifer <david.feilseifer@gmail.com>
+Changed-By: David Feil-Seifer <david.feilseifer@gmail.com>
+Description:
+ ros-one-laser-cb-detector - Extracts checkerboard corners from a dense laser snapshot.
+Changes:
+ ros-one-laser-cb-detector (0-2024.10.25.13.08) trixie; urgency=high
+ .
+   * Merge pull request #47 <https://github.com/ros-perception/calibration/issues/47> from PR2-prime/noetic-devel
+     Noetic devel
+   * fixes for compiler warnings CMP0048 and CMP0046
+   * update maintainer for most packages; first try at setup for travis testing (#46 <https://github.com/ros-perception/calibration/issues/46>)
+   * fixed opencv issue with laser_cb test
+   * fixed unit tests for compile/testing in focal/noetic/opencv4
+   * Contributors: Dave Feil-Seifer
+Checksums-Sha1:
+ ad39152aec890c2c1f46c906010512cf89ddbed6 1935404 ros-one-laser-cb-detector-dbgsym_0-2024.10.25.13.08_amd64.deb
+ c4edb3cf175c169086d0db75a22b36017bedc1da 28514 ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.buildinfo
+ 8769e3608547747473fbb930e88d7cf87f27f218 161992 ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.deb
+Checksums-Sha256:
+ be547f932810c97bcb9fc224c6fadf43e10e6115b7cd19d34ef0576ff5edf26f 1935404 ros-one-laser-cb-detector-dbgsym_0-2024.10.25.13.08_amd64.deb
+ 9233f9b2680ffe6b4027e0050d4cf78751d38f19052476fc962b6585d86ecbeb 28514 ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.buildinfo
+ 8a25f975fed69fec6de4e949c2d264b752544f8e16c1c34f78b2ace9309cb865 161992 ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.deb
+Files:
+ 01cdbdf227c08ec36f3992907c165b3a 1935404 debug optional ros-one-laser-cb-detector-dbgsym_0-2024.10.25.13.08_amd64.deb
+ 3a86b775cdb62f0d770a5bd439e706b8 28514 misc optional ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.buildinfo
+ 843161648d3c69c48f2e79a60bc56504 161992 misc optional ros-one-laser-cb-detector_0-2024.10.25.13.08_amd64.deb
