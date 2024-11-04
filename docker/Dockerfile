@@ -15,5 +15,5 @@ RUN sudo apt install -y python3-rosdep2
 RUN echo "yaml https://raw.githubusercontent.com/v4hn/ros-o-builder/bookworm-one-unstable/repository/local.yaml debian" | sudo tee /etc/ros/rosdep/sources.list.d/1-v4hn_ros-o-builder.list
 RUN rosdep update
 
-RUN apt install -y ros-one-desktop-full
+#RUN apt install -y ros-one-desktop-full
 RUN echo "source /opt/ros/one/setup.bash" | tee -a /root/.bashrc
