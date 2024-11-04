@@ -18,6 +18,18 @@ collada_urdf:
   debian:
     - libcollada-urdf-dev
 
+gazebo11:
+  debian:
+    - gazebo
+
+libogre-dev:
+  debian:
+    - libogre-1.12-dev
+
+# ignored in upstream rosdep too
+python-argparse:
+  debian: []
+
 # pre-noetic keys for the library used in package.xmls
 libuvc:
   debian:
