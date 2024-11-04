@@ -4,6 +4,7 @@ python:
 libfltk-dev:
   debian:
     - libfltk1.3-dev
+    - fluid # needed because libfltk1.3-dev is broken without it in bookworm
 log4cxx:
   debian:
     - liblog4cxx-dev
