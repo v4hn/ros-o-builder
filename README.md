@@ -50,6 +50,7 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 
 ### Explicitly Planned Packages to Add
 
+- https://github.com/HoangGiang93/mujoco_sim
 - https://github.com/cra-ros-pkg/robot_localization
 - https://github.com/locusrobotics/fuse
 - https://github.com/avidbots/flatland
