@@ -1,0 +1,58 @@
+Format: 1.8
+Date: Tue, 07 Jun 2022 00:00:00 -0000
+Source: ros-one-jsk-data
+Binary: ros-one-jsk-data
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.2.12-185-g1ddd7669-2024.11.13.19.41
+Distribution: jammy
+Urgency: high
+Maintainer: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Changed-By: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-data - The jsk_data package
+Changes:
+ ros-one-jsk-data (2.2.12-185-g1ddd7669-2024.11.13.19.41) jammy; urgency=high
+ .
+   * [jsk_data/tess_data_collection_server] Check if text and yaml or text and image are saved in the subdirectory of save_dir. (#1734 <https://github.com/jsk-ros-pkg/jsk_common/issues/1734>)
+   * [test/data_collection_server] Wait until data saved for test. (#1728 <https://github.com/jsk-ros-pkg/jsk_common/issues/1728>)
+   * [jsk_data] Strip newline at test code. (#1726 <https://github.com/jsk-ros-pkg/jsk_common/issues/1726>)
+   * [data_collection_server] Add rosbag to data collection server (#1708 <https://github.com/jsk-ros-pkg/jsk_common/issues/1708>)
+ .
+       * add rosbag_options param
+       * delete sample launch file
+       * remove rosbag param
+       * add rosbag_prefix param
+       * remove print and avoid error if end is called before start
+       * add minimal functions about rosbag record in data_collection_server
+ .
+   * [jsk_data] add wait_timer for timer method (#1697 <https://github.com/jsk-ros-pkg/jsk_common/issues/1697>)
+ .
+       * rename to wait_msgs_update
+       * add wait_timer rosparam for timer waiting
+       * remove wait in sync_sub_and_save_cb
+       * check all msg stamp in self.msgs for wait_msgs_update
+       * add wait_service_request for timer and all method
+ .
+   * use raw_input for python2 c.f. (#1695 <https://github.com/jsk-ros-pkg/jsk_common/issues/1695>)
+   * [jsk_data] add wait_save_request in data_collection_server (#1669 <https://github.com/jsk-ros-pkg/jsk_common/issues/1669>)
+   * fix TOPICS arg (#1689 <https://github.com/jsk-ros-pkg/jsk_common/issues/1689>)
+   * Update jsk_data/src/jsk_data/download_data.py (#1685 <https://github.com/jsk-ros-pkg/jsk_common/issues/1685>)
+ .
+       * [jsk_data] fix bugs in download_data.py
+       * [jsk_data] update download_data.py to remove front './' from extracted file names
+ .
+   * check if openni_launch exits to run roslaunch-check pr2_play.launch (#1662 <https://github.com/jsk-ros-pkg/jsk_common/issues/1662>)
+ .
+       * use xacro instead of xacro.py
+ .
+   * Contributors: Iori Yanokura, Naoaki Kanazawa, Koki Shinjo, Shingo Kitagawa, Shumpei Wakabayashi, Shun Hasegawa, Iori Yanokura, Ren Kunita
+Checksums-Sha1:
+ 8e1f4705d19d36a956eac60ea3bcad0765548532 15000 ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.buildinfo
+ 589b68940a4dd923a6a9bd8a59fa8d0013d52db5 1452996 ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.deb
+Checksums-Sha256:
+ 1b724ef16c63249b4a3844e24b537258364accf8b7c85f1252556391946e96a7 15000 ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.buildinfo
+ 094ff022daf176d6b5fd712b246c2cc736ed8d9e96cacc2fdfe3e7473a2e26a4 1452996 ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.deb
+Files:
+ bbf63847c48503ac093194b5c9306448 15000 misc optional ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.buildinfo
+ a9cf5f32f78059d1e8e85f6b80d85fe6 1452996 misc optional ros-one-jsk-data_2.2.12-185-g1ddd7669-2024.11.13.19.41_amd64.deb

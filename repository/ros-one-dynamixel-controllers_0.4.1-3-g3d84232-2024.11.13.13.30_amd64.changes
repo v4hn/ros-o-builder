@@ -1,0 +1,53 @@
+Format: 1.8
+Date: Thu, 19 Jan 2017 00:00:00 -0000
+Source: ros-one-dynamixel-controllers
+Binary: ros-one-dynamixel-controllers
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.4.1-3-g3d84232-2024.11.13.13.30
+Distribution: jammy
+Urgency: high
+Maintainer: Antons Rebguns <arebgun@gmail.com>
+Changed-By: Antons Rebguns <arebgun@gmail.com>
+Description:
+ ros-one-dynamixel-controllers - This package contains a configurable node, services and a spawner
+Changes:
+ ros-one-dynamixel-controllers (0.4.1-3-g3d84232-2024.11.13.13.30) jammy; urgency=high
+ .
+   * bug fixes for issue #33 <https://github.com/arebgun/dynamixel_motor/issues/33> and warnnings on queue_size
+   * Fixed syntax error due to missing parentheses
+   * add error message when joint names did not match
+   * added in a queue size as none to remove warning messages
+   * Readback echo for simple one-wire (TTL) converters
+   * Support for reading current, setting acceleration, torque control mode (mainly MX series). Available features specified for each model.
+   * Always release lock on return
+   * Do not modify a controllers list we are iterating over.
+     It's probably a bad idea to modify a list we are looping over as is the case with meta controller dependencies. List copies everywhere!
+   * Acquire lock before manipulating controllers.
+     Make sure that no two threads can manipulate (start, stop or restart) controllers simultaneously.
+   * Allow negative speed values.
+     There was a copy paste error where we were checking to make sure the speed wasn't set to 0 (meaning maximum speed), even though speed has different meaning when in wheel mode (0 is for stop, negative values for counterclockwise rotation and positive - for clockwise rotation). The slave motor should rotate in the opposite direction (assumes motors are mounted back to back with horns facing in opposite directions).
+   * fixed multi_packet[port] indentation
+   * added test to fix process_motor_states bug
+   * got action controller working with dual motor controller, still get an occasional key error with dual motor controller process_motor_states
+   * patch so action controller works with dual motor controllers
+   * Merge pull request #3 <https://github.com/arebgun/dynamixel_motor/issues/3> from arebgun/groovy
+     Velocity bug fix
+   * Fix bug for velocity raw to radsec conversion in all remaining controllers
+   * Fix bug in velocity conversion
+     The factor for the velocity conversion from raw to radsec and the other way
+     round is model-specific and does not depend on the maximum motor speed.
+     Therefore, a conversion factor is added to the motor data and employed
+     for all velocity conversions. The set motor velocity and the motor velocity
+     in the servo state does now correspond with the real servo speed in
+     radians per second.
+   * Contributors: Andreas Wachaja, Antons Rebguns, Kei Okada, Nicolas, Nicolas Alt, Richard-Lab, Russell Toris, Tyler Slabinski, Yam Geva, richard-virtualros
+Checksums-Sha1:
+ 36ffd52fd110dc530388bcadb8a00553f6dc2aaa 8644 ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.buildinfo
+ 9383207f289b4e766b13da28fe9c0827a532e2f7 55254 ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.deb
+Checksums-Sha256:
+ e66c9ec465c5f9b743c63a348e40f2d9d77928a73df037a4910831aeccecc4f1 8644 ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.buildinfo
+ 9e2c0d260e5ce09dd18bd6f63b83a5b4d6488a4ccb1431d8e52c493e3a0dc66b 55254 ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.deb
+Files:
+ 08fe3802ae03f2c4001fa5b8310a21fc 8644 misc optional ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.buildinfo
+ 34c37abc53a5a504d8f00a6ab0236384 55254 misc optional ros-one-dynamixel-controllers_0.4.1-3-g3d84232-2024.11.13.13.30_amd64.deb

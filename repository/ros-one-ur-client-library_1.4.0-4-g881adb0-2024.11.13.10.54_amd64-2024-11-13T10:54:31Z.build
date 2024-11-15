@@ -1,0 +1,1598 @@
+sbuild (Debian sbuild) 0.85.7 (12 April 2024) on fv-az1938-510
+
++=====================================================================================================+
+| ros-one-ur-client-library 1.4.0-4-g881adb0-2024.11.13.10.54 (amd64) Wed, 13 Nov 2024 10:54:31 +0000 |
++=====================================================================================================+
+
+Package: ros-one-ur-client-library
+Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Source Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Distribution: jammy
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/jammy-amd64.tar to /tmp/tmp.sbuild.jKKASV4DzW...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2024.11.13.10.47_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-g2686e94-2024.11.13.10.48_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-openslam-gmapping_0.2.1-17-g5105476-2024.11.13.10.51_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-baldor_0.1.3-3-g10fabc5-2024.11.13.10.50_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-ruckig_0.14.0-1-g0c467ad-2024.11.13.10.52_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-convex-decomposition_0.1.12-3-gb722eb5-2024.11.13.10.51_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-v07gjD' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-PbUk35/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-PbUk35/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-PbUk35/apt_archive ./ Release [606 B]
+Get:2 file:/build/package//resolver-PbUk35/apt_archive ./ Release [606 B]
+Get:3 file:/build/package//resolver-PbUk35/apt_archive ./ Release.gpg
+Ign:3 file:/build/package//resolver-PbUk35/apt_archive ./ Release.gpg
+Get:4 file:/build/package//resolver-PbUk35/apt_archive ./ Packages [3750 B]
+Get:5 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1932 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [913 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1395 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1134 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2149 kB]
+Fetched 22.1 MB in 3s (7695 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), cmake, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), cmake, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [678 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [710 B]
+Fetched 1997 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ Release [606 B]
+Get:2 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ Release [606 B]
+Get:3 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-elpa-helper dh-strip-nondeterminism
+  dumb-init dwz emacsen-common fakeroot file gettext gettext-base groff-base
+  intltool-debian libarchive-zip-perl libarchive13 libbrotli1 libcurl4
+  libdebhelper-perl libdw1 libelf1 libexpat1 libfakeroot
+  libfile-stripnondeterminism-perl libicu70 libjsoncpp25 libldap-2.5-0
+  libmagic-mgc libmagic1 libmpdec3 libncurses6 libncursesw6 libnghttp2-14
+  libpipeline1 libprocps8 libpsl5 libpython3-stdlib libpython3.10-minimal
+  libpython3.10-stdlib libreadline8 librhash0 librtmp1 libsasl2-2
+  libsasl2-modules-db libsigsegv2 libsqlite3-0 libssh-4 libsub-override-perl
+  libtool libuchardet0 libuv1 libxml2 m4 man-db media-types po-debconf procps
+  python3 python3-minimal python3.10 python3.10-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sensible-utils
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc ninja-build
+  cmake-format dh-make gettext-doc libasprintf-dev libgettextpo-dev groff
+  lrzip libtool-doc gfortran | fortran95-compiler gcj-jdk m4-doc apparmor less
+  www-browser libmail-box-perl python3-doc python3-tk python3-venv
+  python3.10-venv python3.10-doc binfmt-support readline-doc
+Recommended packages:
+  curl | wget | lynx libarchive-cpio-perl libldap-common libgpm2 publicsuffix
+  libsasl2-modules libltdl-dev libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-elpa-helper dh-strip-nondeterminism
+  dumb-init dwz emacsen-common fakeroot file gettext gettext-base groff-base
+  intltool-debian libarchive-zip-perl libarchive13 libbrotli1 libcurl4
+  libdebhelper-perl libdw1 libelf1 libexpat1 libfakeroot
+  libfile-stripnondeterminism-perl libicu70 libjsoncpp25 libldap-2.5-0
+  libmagic-mgc libmagic1 libmpdec3 libncurses6 libncursesw6 libnghttp2-14
+  libpipeline1 libprocps8 libpsl5 libpython3-stdlib libpython3.10-minimal
+  libpython3.10-stdlib libreadline8 librhash0 librtmp1 libsasl2-2
+  libsasl2-modules-db libsigsegv2 libsqlite3-0 libssh-4 libsub-override-perl
+  libtool libuchardet0 libuv1 libxml2 m4 man-db media-types po-debconf procps
+  python3 python3-minimal python3.10 python3.10-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sbuild-build-depends-main-dummy
+  sensible-utils
+0 upgraded, 73 newly installed, 0 to remove and 0 not upgraded.
+Need to get 34.7 MB/34.7 MB of archives.
+After this operation, 128 MB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [710 B]
+Get:2 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ ros-one-setup-files 0-2024.11.13.10.47 [10.8 kB]
+Get:3 file:/<<BUILDDIR>>/resolver-PbUk35/apt_archive ./ ros-one-ros-environment 1.3.2-5-g2686e94-2024.11.13.10.48 [5840 B]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-minimal amd64 3.10.12-1~22.04.6 [814 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1 amd64 2.4.7-1ubuntu0.4 [91.2 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-minimal amd64 3.10.12-1~22.04.6 [2258 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-minimal amd64 3.10.6-1~22.04.1 [24.3 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 media-types all 7.0.0 [25.5 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpdec3 amd64 2.5.1-2build2 [86.8 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncursesw6 amd64 6.3-2ubuntu0.1 [147 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 readline-common all 8.1.2-1 [53.5 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 libreadline8 amd64 8.1.2-1 [153 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsqlite3-0 amd64 3.37.2-2ubuntu0.3 [641 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-stdlib amd64 3.10.12-1~22.04.6 [1850 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10 amd64 3.10.12-1~22.04.6 [509 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-stdlib amd64 3.10.6-1~22.04.1 [6812 B]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3 amd64 3.10.6-1~22.04.1 [22.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncurses6 amd64 6.3-2ubuntu0.1 [111 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libprocps8 amd64 2:3.3.17-6ubuntu2.1 [36.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 procps amd64 2:3.3.17-6ubuntu2.1 [378 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy/main amd64 sensible-utils all 0.0.17 [20.1 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy/main amd64 libelf1 amd64 0.186-1build1 [51.0 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxml2 amd64 2.9.13+dfsg-1ubuntu0.4 [763 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 bsdextrautils amd64 2.37.2-4ubuntu3.4 [71.4 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmagic-mgc amd64 1:5.41-3ubuntu0.1 [257 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmagic1 amd64 1:5.41-3ubuntu0.1 [87.2 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 file amd64 1:5.41-3ubuntu0.1 [21.5 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy/main amd64 gettext-base amd64 0.21-4ubuntu4 [37.8 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuchardet0 amd64 0.0.7-1build2 [76.9 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy/main amd64 groff-base amd64 1.22.4-8build1 [955 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnghttp2-14 amd64 1.43.0-1ubuntu0.2 [76.9 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpipeline1 amd64 1.5.5-1 [23.5 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+Get:35 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libuv1 amd64 1.43.0-1ubuntu0.1 [92.7 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy/main amd64 man-db amd64 2.10.2-1 [1187 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsigsegv2 amd64 2.13-1ubuntu3 [14.6 kB]
+Get:38 http://archive.ubuntu.com/ubuntu jammy/main amd64 m4 amd64 1.4.18-5ubuntu2 [199 kB]
+Get:39 http://archive.ubuntu.com/ubuntu jammy/main amd64 autoconf all 2.71-2 [338 kB]
+Get:40 http://archive.ubuntu.com/ubuntu jammy/main amd64 autotools-dev all 20220109.1 [44.9 kB]
+Get:41 http://archive.ubuntu.com/ubuntu jammy/main amd64 automake all 1:1.16.5-1.3 [558 kB]
+Get:42 http://archive.ubuntu.com/ubuntu jammy/main amd64 autopoint all 0.21-4ubuntu4 [422 kB]
+Get:43 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libarchive13 amd64 3.6.0-1ubuntu1.3 [369 kB]
+Get:44 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+Get:45 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1.2 [20.5 kB]
+Get:46 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1.2 [53.8 kB]
+Get:47 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.18+dfsg-0ubuntu0.22.04.2 [183 kB]
+Get:48 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+Get:49 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssh-4 amd64 0.9.6-2ubuntu0.22.04.3 [186 kB]
+Get:50 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.18 [289 kB]
+Get:51 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+Get:52 http://archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+Get:53 http://archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7610 B]
+Get:54 http://archive.ubuntu.com/ubuntu jammy/main amd64 emacsen-common all 3.0.4 [14.9 kB]
+Get:55 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.2 [1913 kB]
+Get:56 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.2 [5010 kB]
+Get:57 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdebhelper-perl all 13.6ubuntu1 [67.2 kB]
+Get:58 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtool all 2.4.6-15build2 [164 kB]
+Get:59 http://archive.ubuntu.com/ubuntu jammy/main amd64 dh-autoreconf all 20 [16.1 kB]
+Get:60 http://archive.ubuntu.com/ubuntu jammy/main amd64 libarchive-zip-perl all 1.68-1 [90.2 kB]
+Get:61 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsub-override-perl all 0.09-2 [9532 B]
+Get:62 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfile-stripnondeterminism-perl all 1.13.0-1 [18.1 kB]
+Get:63 http://archive.ubuntu.com/ubuntu jammy/main amd64 dh-strip-nondeterminism all 1.13.0-1 [5344 B]
+Get:64 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdw1 amd64 0.186-1build1 [250 kB]
+Get:65 http://archive.ubuntu.com/ubuntu jammy/main amd64 debugedit amd64 1:5.0-4build1 [47.2 kB]
+Get:66 http://archive.ubuntu.com/ubuntu jammy/main amd64 dwz amd64 0.14-1build2 [105 kB]
+Get:67 http://archive.ubuntu.com/ubuntu jammy/main amd64 gettext amd64 0.21-4ubuntu4 [868 kB]
+Get:68 http://archive.ubuntu.com/ubuntu jammy/main amd64 intltool-debian all 0.35.0+20060710.5 [24.9 kB]
+Get:69 http://archive.ubuntu.com/ubuntu jammy/main amd64 po-debconf all 1.0.21+nmu1 [233 kB]
+Get:70 http://archive.ubuntu.com/ubuntu jammy/main amd64 debhelper all 13.6ubuntu1 [923 kB]
+Get:71 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfakeroot amd64 1.28-1ubuntu1 [31.5 kB]
+Get:72 http://archive.ubuntu.com/ubuntu jammy/main amd64 fakeroot amd64 1.28-1ubuntu1 [60.4 kB]
+Get:73 http://archive.ubuntu.com/ubuntu jammy/universe amd64 dumb-init amd64 1.2.5-2 [14.1 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 34.7 MB in 0s (71.9 MB/s)
+Selecting previously unselected package libpython3.10-minimal:amd64.
+(Reading database ... 10212 files and directories currently installed.)
+Preparing to unpack .../libpython3.10-minimal_3.10.12-1~22.04.6_amd64.deb ...
+Unpacking libpython3.10-minimal:amd64 (3.10.12-1~22.04.6) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.4.7-1ubuntu0.4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.4.7-1ubuntu0.4) ...
+Selecting previously unselected package python3.10-minimal.
+Preparing to unpack .../python3.10-minimal_3.10.12-1~22.04.6_amd64.deb ...
+Unpacking python3.10-minimal (3.10.12-1~22.04.6) ...
+Setting up libpython3.10-minimal:amd64 (3.10.12-1~22.04.6) ...
+Setting up libexpat1:amd64 (2.4.7-1ubuntu0.4) ...
+Setting up python3.10-minimal (3.10.12-1~22.04.6) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 10516 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking python3-minimal (3.10.6-1~22.04.1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_7.0.0_all.deb ...
+Unpacking media-types (7.0.0) ...
+Selecting previously unselected package libmpdec3:amd64.
+Preparing to unpack .../2-libmpdec3_2.5.1-2build2_amd64.deb ...
+Unpacking libmpdec3:amd64 (2.5.1-2build2) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../3-libncursesw6_6.3-2ubuntu0.1_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.3-2ubuntu0.1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../4-readline-common_8.1.2-1_all.deb ...
+Unpacking readline-common (8.1.2-1) ...
+Selecting previously unselected package libreadline8:amd64.
+Preparing to unpack .../5-libreadline8_8.1.2-1_amd64.deb ...
+Unpacking libreadline8:amd64 (8.1.2-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../6-libsqlite3-0_3.37.2-2ubuntu0.3_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.37.2-2ubuntu0.3) ...
+Selecting previously unselected package libpython3.10-stdlib:amd64.
+Preparing to unpack .../7-libpython3.10-stdlib_3.10.12-1~22.04.6_amd64.deb ...
+Unpacking libpython3.10-stdlib:amd64 (3.10.12-1~22.04.6) ...
+Selecting previously unselected package python3.10.
+Preparing to unpack .../8-python3.10_3.10.12-1~22.04.6_amd64.deb ...
+Unpacking python3.10 (3.10.12-1~22.04.6) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../9-libpython3-stdlib_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.10.6-1~22.04.1) ...
+Setting up python3-minimal (3.10.6-1~22.04.1) ...
+Selecting previously unselected package python3.
+(Reading database ... 10955 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking python3 (3.10.6-1~22.04.1) ...
+Selecting previously unselected package libncurses6:amd64.
+Preparing to unpack .../01-libncurses6_6.3-2ubuntu0.1_amd64.deb ...
+Unpacking libncurses6:amd64 (6.3-2ubuntu0.1) ...
+Selecting previously unselected package libprocps8:amd64.
+Preparing to unpack .../02-libprocps8_2%3a3.3.17-6ubuntu2.1_amd64.deb ...
+Unpacking libprocps8:amd64 (2:3.3.17-6ubuntu2.1) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../03-procps_2%3a3.3.17-6ubuntu2.1_amd64.deb ...
+Unpacking procps (2:3.3.17-6ubuntu2.1) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../04-sensible-utils_0.0.17_all.deb ...
+Unpacking sensible-utils (0.0.17) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../05-libelf1_0.186-1build1_amd64.deb ...
+Unpacking libelf1:amd64 (0.186-1build1) ...
+Selecting previously unselected package libicu70:amd64.
+Preparing to unpack .../06-libicu70_70.1-2_amd64.deb ...
+Unpacking libicu70:amd64 (70.1-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../07-libxml2_2.9.13+dfsg-1ubuntu0.4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.13+dfsg-1ubuntu0.4) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../08-bsdextrautils_2.37.2-4ubuntu3.4_amd64.deb ...
+Unpacking bsdextrautils (2.37.2-4ubuntu3.4) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../09-libmagic-mgc_1%3a5.41-3ubuntu0.1_amd64.deb ...
+Unpacking libmagic-mgc (1:5.41-3ubuntu0.1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../10-libmagic1_1%3a5.41-3ubuntu0.1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.41-3ubuntu0.1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../11-file_1%3a5.41-3ubuntu0.1_amd64.deb ...
+Unpacking file (1:5.41-3ubuntu0.1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../12-gettext-base_0.21-4ubuntu4_amd64.deb ...
+Unpacking gettext-base (0.21-4ubuntu4) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../13-libuchardet0_0.0.7-1build2_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.7-1build2) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../14-groff-base_1.22.4-8build1_amd64.deb ...
+Unpacking groff-base (1.22.4-8build1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../15-libnghttp2-14_1.43.0-1ubuntu0.2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.43.0-1ubuntu0.2) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../16-libpipeline1_1.5.5-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.5-1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../17-libpsl5_0.21.0-1.2build2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../18-libuv1_1.43.0-1ubuntu0.1_amd64.deb ...
+Unpacking libuv1:amd64 (1.43.0-1ubuntu0.1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../19-man-db_2.10.2-1_amd64.deb ...
+Unpacking man-db (2.10.2-1) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../20-libsigsegv2_2.13-1ubuntu3_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.13-1ubuntu3) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../21-m4_1.4.18-5ubuntu2_amd64.deb ...
+Unpacking m4 (1.4.18-5ubuntu2) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../22-autoconf_2.71-2_all.deb ...
+Unpacking autoconf (2.71-2) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../23-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../24-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../25-autopoint_0.21-4ubuntu4_all.deb ...
+Unpacking autopoint (0.21-4ubuntu4) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../26-libarchive13_3.6.0-1ubuntu1.3_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.0-1ubuntu1.3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../27-libbrotli1_1.0.9-2build6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../28-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../29-libsasl2-2_2.1.27+dfsg2-3ubuntu1.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../30-libldap-2.5-0_2.5.18+dfsg-0ubuntu0.22.04.2_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.18+dfsg-0ubuntu0.22.04.2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../31-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../32-libssh-4_0.9.6-2ubuntu0.22.04.3_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.6-2ubuntu0.22.04.3) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../33-libcurl4_7.81.0-1ubuntu1.18_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.18) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../34-libjsoncpp25_1.9.5-3_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../35-librhash0_1.4.2-1ubuntu1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+Selecting previously unselected package dh-elpa-helper.
+Preparing to unpack .../36-dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+Selecting previously unselected package emacsen-common.
+Preparing to unpack .../37-emacsen-common_3.0.4_all.deb ...
+Unpacking emacsen-common (3.0.4) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../38-cmake-data_3.22.1-1ubuntu1.22.04.2_all.deb ...
+Unpacking cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../39-cmake_3.22.1-1ubuntu1.22.04.2_amd64.deb ...
+Unpacking cmake (3.22.1-1ubuntu1.22.04.2) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../40-libdebhelper-perl_13.6ubuntu1_all.deb ...
+Unpacking libdebhelper-perl (13.6ubuntu1) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../41-libtool_2.4.6-15build2_all.deb ...
+Unpacking libtool (2.4.6-15build2) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../42-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../43-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../44-libsub-override-perl_0.09-2_all.deb ...
+Unpacking libsub-override-perl (0.09-2) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../45-libfile-stripnondeterminism-perl_1.13.0-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.0-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../46-dh-strip-nondeterminism_1.13.0-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.0-1) ...
+Selecting previously unselected package libdw1:amd64.
+Preparing to unpack .../47-libdw1_0.186-1build1_amd64.deb ...
+Unpacking libdw1:amd64 (0.186-1build1) ...
+Selecting previously unselected package debugedit.
+Preparing to unpack .../48-debugedit_1%3a5.0-4build1_amd64.deb ...
+Unpacking debugedit (1:5.0-4build1) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../49-dwz_0.14-1build2_amd64.deb ...
+Unpacking dwz (0.14-1build2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../50-gettext_0.21-4ubuntu4_amd64.deb ...
+Unpacking gettext (0.21-4ubuntu4) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../51-intltool-debian_0.35.0+20060710.5_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.5) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../52-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../53-debhelper_13.6ubuntu1_all.deb ...
+Unpacking debhelper (13.6ubuntu1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../54-libfakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.28-1ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../55-fakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.28-1ubuntu1) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../56-ros-one-setup-files_0-2024.11.13.10.47_amd64.deb ...
+Unpacking ros-one-setup-files (0-2024.11.13.10.47) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../57-ros-one-ros-environment_1.3.2-5-g2686e94-2024.11.13.10.48_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-g2686e94-2024.11.13.10.48) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../58-dumb-init_1.2.5-2_amd64.deb ...
+Unpacking dumb-init (1.2.5-2) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../59-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (7.0.0) ...
+Setting up dumb-init (1.2.5-2) ...
+Setting up libpipeline1:amd64 (1.5.5-1) ...
+Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+Setting up bsdextrautils (2.37.2-4ubuntu3.4) ...
+update-alternatives: using /usr/bin/write.ul to provide /usr/bin/write (write) in auto mode
+Setting up libmagic-mgc (1:5.41-3ubuntu0.1) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.6ubuntu1) ...
+Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+Setting up libsqlite3-0:amd64 (3.37.2-2ubuntu0.3) ...
+Setting up libnghttp2-14:amd64 (1.43.0-1ubuntu0.2) ...
+Setting up libmagic1:amd64 (1:5.41-3ubuntu0.1) ...
+Setting up gettext-base (0.21-4ubuntu4) ...
+Setting up file (1:5.41-3ubuntu0.1) ...
+Setting up libfakeroot:amd64 (1.28-1ubuntu1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up fakeroot (1.28-1ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20220109.1) ...
+Setting up libuv1:amd64 (1.43.0-1ubuntu0.1) ...
+Setting up emacsen-common (3.0.4) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+Setting up libncurses6:amd64 (6.3-2ubuntu0.1) ...
+Setting up libsigsegv2:amd64 (2.13-1ubuntu3) ...
+Setting up autopoint (0.21-4ubuntu4) ...
+Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+Setting up libncursesw6:amd64 (6.3-2ubuntu0.1) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1.2) ...
+Setting up libssh-4:amd64 (0.9.6-2ubuntu0.22.04.3) ...
+Setting up sensible-utils (0.0.17) ...
+Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+Setting up libuchardet0:amd64 (0.0.7-1build2) ...
+Setting up libmpdec3:amd64 (2.5.1-2build2) ...
+Setting up libsub-override-perl (0.09-2) ...
+Setting up cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Setting up libelf1:amd64 (0.186-1build1) ...
+Setting up readline-common (8.1.2-1) ...
+Setting up libprocps8:amd64 (2:3.3.17-6ubuntu2.1) ...
+Setting up libicu70:amd64 (70.1-2) ...
+Setting up libfile-stripnondeterminism-perl (1.13.0-1) ...
+Setting up libdw1:amd64 (0.186-1build1) ...
+Setting up libtool (2.4.6-15build2) ...
+Setting up libreadline8:amd64 (8.1.2-1) ...
+Setting up m4 (1.4.18-5ubuntu2) ...
+Setting up libldap-2.5-0:amd64 (2.5.18+dfsg-0ubuntu0.22.04.2) ...
+Setting up libpython3.10-stdlib:amd64 (3.10.12-1~22.04.6) ...
+Setting up autoconf (2.71-2) ...
+Setting up dh-strip-nondeterminism (1.13.0-1) ...
+Setting up dwz (0.14-1build2) ...
+Setting up groff-base (1.22.4-8build1) ...
+Setting up procps (2:3.3.17-6ubuntu2.1) ...
+Setting up debugedit (1:5.0-4build1) ...
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.18) ...
+Setting up libxml2:amd64 (2.9.13+dfsg-1ubuntu0.4) ...
+Setting up libpython3-stdlib:amd64 (3.10.6-1~22.04.1) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up gettext (0.21-4ubuntu4) ...
+Setting up python3.10 (3.10.12-1~22.04.6) ...
+Setting up libarchive13:amd64 (3.6.0-1ubuntu1.3) ...
+Setting up python3 (3.10.6-1~22.04.1) ...
+Setting up man-db (2.10.2-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up ros-one-setup-files (0-2024.11.13.10.47) ...
+Setting up intltool-debian (0.35.0+20060710.5) ...
+Setting up ros-one-ros-environment (1.3.2-5-g2686e94-2024.11.13.10.48) ...
+Setting up dh-autoreconf (20) ...
+Setting up cmake (3.22.1-1ubuntu1.22.04.2) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up debhelper (13.6ubuntu1) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                                                          |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                                                            |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.8.0-1016-azure #18-Ubuntu SMP Fri Oct  4 19:12:19 UTC 2024 amd64 (x86_64)
+Toolchain package versions: binutils_2.38-4ubuntu2.6 dpkg-dev_1.21.1ubuntu2.3 g++-11_11.4.0-1ubuntu1~22.04 gcc-11_11.4.0-1ubuntu1~22.04 libc6-dev_2.35-0ubuntu3.8 libstdc++-11-dev_11.4.0-1ubuntu1~22.04 libstdc++6_12.3.0-1ubuntu1~22.04 linux-libc-dev_5.15.0-125.135
+Package versions: adduser_3.118ubuntu5 apt_2.4.13 autoconf_2.71-2 automake_1:1.16.5-1.3 autopoint_0.21-4ubuntu4 autotools-dev_20220109.1 base-files_12ubuntu4.7 base-passwd_3.5.52build1 bash_5.1-6ubuntu1.1 binutils_2.38-4ubuntu2.6 binutils-common_2.38-4ubuntu2.6 binutils-x86-64-linux-gnu_2.38-4ubuntu2.6 bsdextrautils_2.37.2-4ubuntu3.4 bsdutils_1:2.37.2-4ubuntu3.4 build-essential_12.9ubuntu3 bzip2_1.0.8-5build1 ca-certificates_20240203~22.04.1 ccache_4.5.1-1 cmake_3.22.1-1ubuntu1.22.04.2 cmake-data_3.22.1-1ubuntu1.22.04.2 coreutils_8.32-4.1ubuntu1.2 cpp_4:11.2.0-1ubuntu1 cpp-11_11.4.0-1ubuntu1~22.04 dash_0.5.11+git20210903+057cd650a4ed-3build1 debconf_1.5.79ubuntu1 debhelper_13.6ubuntu1 debianutils_5.5-1ubuntu2 debugedit_1:5.0-4build1 dh-autoreconf_20 dh-elpa-helper_2.0.9ubuntu1 dh-strip-nondeterminism_1.13.0-1 diffutils_1:3.8-0ubuntu2 dpkg_1.21.1ubuntu2.3 dpkg-dev_1.21.1ubuntu2.3 dumb-init_1.2.5-2 dwz_0.14-1build2 emacsen-common_3.0.4 fakeroot_1.28-1ubuntu1 file_1:5.41-3ubuntu0.1 findutils_4.8.0-1ubuntu3 g++_4:11.2.0-1ubuntu1 g++-11_11.4.0-1ubuntu1~22.04 gcc_4:11.2.0-1ubuntu1 gcc-11_11.4.0-1ubuntu1~22.04 gcc-11-base_11.4.0-1ubuntu1~22.04 gcc-12-base_12.3.0-1ubuntu1~22.04 gettext_0.21-4ubuntu4 gettext-base_0.21-4ubuntu4 gpgv_2.2.27-3ubuntu2.1 grep_3.7-1build1 groff-base_1.22.4-8build1 gzip_1.10-4ubuntu4.1 hostname_3.23ubuntu2 init-system-helpers_1.62 intltool-debian_0.35.0+20060710.5 libacl1_2.3.1-1 libapt-pkg6.0_2.4.13 libarchive-zip-perl_1.68-1 libarchive13_3.6.0-1ubuntu1.3 libasan6_11.4.0-1ubuntu1~22.04 libatomic1_12.3.0-1ubuntu1~22.04 libattr1_1:2.5.1-1build1 libaudit-common_1:3.0.7-1build1 libaudit1_1:3.0.7-1build1 libbinutils_2.38-4ubuntu2.6 libblkid1_2.37.2-4ubuntu3.4 libbrotli1_1.0.9-2build6 libbz2-1.0_1.0.8-5build1 libc-bin_2.35-0ubuntu3.8 libc-dev-bin_2.35-0ubuntu3.8 libc6_2.35-0ubuntu3.8 libc6-dev_2.35-0ubuntu3.8 libcap-ng0_0.7.9-2.2build3 libcap2_1:2.44-1ubuntu0.22.04.1 libcc1-0_12.3.0-1ubuntu1~22.04 libcom-err2_1.46.5-2ubuntu1.2 libcrypt-dev_1:4.4.27-1 libcrypt1_1:4.4.27-1 libctf-nobfd0_2.38-4ubuntu2.6 libctf0_2.38-4ubuntu2.6 libcurl4_7.81.0-1ubuntu1.18 libdb5.3_5.3.28+dfsg1-0.8ubuntu3 libdebconfclient0_0.261ubuntu1 libdebhelper-perl_13.6ubuntu1 libdpkg-perl_1.21.1ubuntu2.3 libdw1_0.186-1build1 libelf1_0.186-1build1 libexpat1_2.4.7-1ubuntu0.4 libfakeroot_1.28-1ubuntu1 libffi8_3.4.2-4 libfile-stripnondeterminism-perl_1.13.0-1 libgcc-11-dev_11.4.0-1ubuntu1~22.04 libgcc-s1_12.3.0-1ubuntu1~22.04 libgcrypt20_1.9.4-3ubuntu3 libgdbm-compat4_1.23-1 libgdbm6_1.23-1 libgmp10_2:6.2.1+dfsg-3ubuntu1 libgnutls30_3.7.3-4ubuntu1.5 libgomp1_12.3.0-1ubuntu1~22.04 libgpg-error0_1.43-3 libgssapi-krb5-2_1.19.2-2ubuntu0.4 libhiredis0.14_0.14.1-2 libhogweed6_3.7.3-1build2 libicu70_70.1-2 libidn2-0_2.3.2-2build1 libisl23_0.24-2build1 libitm1_12.3.0-1ubuntu1~22.04 libjsoncpp25_1.9.5-3 libk5crypto3_1.19.2-2ubuntu0.4 libkeyutils1_1.6.1-2ubuntu3 libkrb5-3_1.19.2-2ubuntu0.4 libkrb5support0_1.19.2-2ubuntu0.4 libldap-2.5-0_2.5.18+dfsg-0ubuntu0.22.04.2 liblsan0_12.3.0-1ubuntu1~22.04 liblz4-1_1.9.3-2build2 liblzma5_5.2.5-2ubuntu1 libmagic-mgc_1:5.41-3ubuntu0.1 libmagic1_1:5.41-3ubuntu0.1 libmount1_2.37.2-4ubuntu3.4 libmpc3_1.2.1-2build1 libmpdec3_2.5.1-2build2 libmpfr6_4.1.0-3build3 libncurses6_6.3-2ubuntu0.1 libncursesw6_6.3-2ubuntu0.1 libnettle8_3.7.3-1build2 libnghttp2-14_1.43.0-1ubuntu0.2 libnsl-dev_1.3.0-2build2 libnsl2_1.3.0-2build2 libp11-kit0_0.24.0-6build1 libpam-modules_1.4.0-11ubuntu2.4 libpam-modules-bin_1.4.0-11ubuntu2.4 libpam-runtime_1.4.0-11ubuntu2.4 libpam0g_1.4.0-11ubuntu2.4 libpcre2-8-0_10.39-3ubuntu0.1 libpcre3_2:8.39-13ubuntu0.22.04.1 libperl5.34_5.34.0-3ubuntu1.3 libpipeline1_1.5.5-1 libprocps8_2:3.3.17-6ubuntu2.1 libpsl5_0.21.0-1.2build2 libpython3-stdlib_3.10.6-1~22.04.1 libpython3.10-minimal_3.10.12-1~22.04.6 libpython3.10-stdlib_3.10.12-1~22.04.6 libquadmath0_12.3.0-1ubuntu1~22.04 libreadline8_8.1.2-1 librhash0_1.4.2-1ubuntu1 librtmp1_2.4+20151223.gitfa8646d.1-2build4 libsasl2-2_2.1.27+dfsg2-3ubuntu1.2 libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1.2 libseccomp2_2.5.3-2ubuntu2 libselinux1_3.3-1build2 libsemanage-common_3.3-1build2 libsemanage2_3.3-1build2 libsepol2_3.3-1build1 libsigsegv2_2.13-1ubuntu3 libsmartcols1_2.37.2-4ubuntu3.4 libsqlite3-0_3.37.2-2ubuntu0.3 libssh-4_0.9.6-2ubuntu0.22.04.3 libssl3_3.0.2-0ubuntu1.18 libstdc++-11-dev_11.4.0-1ubuntu1~22.04 libstdc++6_12.3.0-1ubuntu1~22.04 libsub-override-perl_0.09-2 libsystemd0_249.11-0ubuntu3.12 libtasn1-6_4.18.0-4build1 libtinfo6_6.3-2ubuntu0.1 libtirpc-common_1.3.2-2ubuntu0.1 libtirpc-dev_1.3.2-2ubuntu0.1 libtirpc3_1.3.2-2ubuntu0.1 libtool_2.4.6-15build2 libtsan0_11.4.0-1ubuntu1~22.04 libubsan1_12.3.0-1ubuntu1~22.04 libuchardet0_0.0.7-1build2 libudev1_249.11-0ubuntu3.12 libunistring2_1.0-1 libuuid1_2.37.2-4ubuntu3.4 libuv1_1.43.0-1ubuntu0.1 libxml2_2.9.13+dfsg-1ubuntu0.4 libxxhash0_0.8.1-1 libzstd1_1.4.8+dfsg-3build1 linux-libc-dev_5.15.0-125.135 login_1:4.8.1-2ubuntu2.2 lsb-base_11.1.0ubuntu4 lto-disabled-list_24 m4_1.4.18-5ubuntu2 make_4.3-4.1build1 man-db_2.10.2-1 mawk_1.3.4.20200120-3 media-types_7.0.0 ncurses-base_6.3-2ubuntu0.1 ncurses-bin_6.3-2ubuntu0.1 openssl_3.0.2-0ubuntu1.18 passwd_1:4.8.1-2ubuntu2.2 patch_2.7.6-7build2 perl_5.34.0-3ubuntu1.3 perl-base_5.34.0-3ubuntu1.3 perl-modules-5.34_5.34.0-3ubuntu1.3 po-debconf_1.0.21+nmu1 procps_2:3.3.17-6ubuntu2.1 python3_3.10.6-1~22.04.1 python3-minimal_3.10.6-1~22.04.1 python3.10_3.10.12-1~22.04.6 python3.10-minimal_3.10.12-1~22.04.6 readline-common_8.1.2-1 ros-one-ros-environment_1.3.2-5-g2686e94-2024.11.13.10.48 ros-one-setup-files_0-2024.11.13.10.47 rpcsvc-proto_1.4.2-0ubuntu6 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.8-1ubuntu2 sensible-utils_0.0.17 sysvinit-utils_3.01-1ubuntu1 tar_1.34+dfsg-1ubuntu0.1.22.04.2 ubuntu-keyring_2021.03.26 util-linux_2.37.2-4ubuntu3.4 xz-utils_5.2.5-2ubuntu1 zlib1g_1:1.2.11.dfsg-2ubuntu9.2
+
++------------------------------------------------------------------------------+
+| Build                                                                        |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library
+Architecture: any
+Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Maintainer: Felix Exner <exner@fzi.de>
+Homepage: http://wiki.ros.org/ur_client_library
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), cmake
+Package-List:
+ ros-one-ur-client-library deb misc optional arch=any
+Checksums-Sha1:
+ bdbc5ef6255ae0ceb2ae9b4675e389b1fcff31a2 4228722 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.tar.gz
+Checksums-Sha256:
+ ac935227ac6b4def7a488a220562c277c57274fdf0de5dfb6d5dbfb77c4208ae 4228722 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.tar.gz
+Files:
+ 6efd52a762951927487e560db1559d4e 4228722 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.dsc)
+dpkg-source: info: extracting ros-one-ur-client-library in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/var/lib/sbuild
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-ur-client-library
+dpkg-buildpackage: info: source version 1.4.0-4-g881adb0-2024.11.13.10.54
+dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source changed by Felix Exner <exner@fzi.de>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-ur-client-library.substvars debian/files
+	rm -fr -- debian/ros-one-ur-client-library/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF
+	install -d .obj-x86_64-linux-gnu
+	cd .obj-x86_64-linux-gnu && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF ..
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing C++17 Test
+-- Performing Test COMPILER_SUPPORTS_CXX17
+-- Performing Test COMPILER_SUPPORTS_CXX17 - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Building tests disabled.
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-ur-client-library.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/urcl.dir/build.make CMakeFiles/urcl.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/urcl.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/urcl.dir/build.make CMakeFiles/urcl.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  2%] Building CXX object CMakeFiles/urcl.dir/src/comm/tcp_socket.cpp.o
+[  4%] Building CXX object CMakeFiles/urcl.dir/src/comm/tcp_server.cpp.o
+[  6%] Building CXX object CMakeFiles/urcl.dir/src/control/script_sender.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/comm/tcp_server.cpp.o -MF CMakeFiles/urcl.dir/src/comm/tcp_server.cpp.o.d -o CMakeFiles/urcl.dir/src/comm/tcp_server.cpp.o -c /<<BUILDDIR>>package/src/comm/tcp_server.cpp
+[  8%] Building CXX object CMakeFiles/urcl.dir/src/control/reverse_interface.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/comm/tcp_socket.cpp.o -MF CMakeFiles/urcl.dir/src/comm/tcp_socket.cpp.o.d -o CMakeFiles/urcl.dir/src/comm/tcp_socket.cpp.o -c /<<BUILDDIR>>package/src/comm/tcp_socket.cpp
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/control/reverse_interface.cpp.o -MF CMakeFiles/urcl.dir/src/control/reverse_interface.cpp.o.d -o CMakeFiles/urcl.dir/src/control/reverse_interface.cpp.o -c /<<BUILDDIR>>package/src/control/reverse_interface.cpp
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/control/script_sender.cpp.o -MF CMakeFiles/urcl.dir/src/control/script_sender.cpp.o.d -o CMakeFiles/urcl.dir/src/control/script_sender.cpp.o -c /<<BUILDDIR>>package/src/control/script_sender.cpp
+[ 10%] Building CXX object CMakeFiles/urcl.dir/src/control/trajectory_point_interface.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/control/trajectory_point_interface.cpp.o -MF CMakeFiles/urcl.dir/src/control/trajectory_point_interface.cpp.o.d -o CMakeFiles/urcl.dir/src/control/trajectory_point_interface.cpp.o -c /<<BUILDDIR>>package/src/control/trajectory_point_interface.cpp
+[ 12%] Building CXX object CMakeFiles/urcl.dir/src/control/script_command_interface.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/control/script_command_interface.cpp.o -MF CMakeFiles/urcl.dir/src/control/script_command_interface.cpp.o.d -o CMakeFiles/urcl.dir/src/control/script_command_interface.cpp.o -c /<<BUILDDIR>>package/src/control/script_command_interface.cpp
+[ 14%] Building CXX object CMakeFiles/urcl.dir/src/primary/primary_package.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/primary/primary_package.cpp.o -MF CMakeFiles/urcl.dir/src/primary/primary_package.cpp.o.d -o CMakeFiles/urcl.dir/src/primary/primary_package.cpp.o -c /<<BUILDDIR>>package/src/primary/primary_package.cpp
+[ 16%] Building CXX object CMakeFiles/urcl.dir/src/primary/robot_message.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/primary/robot_message.cpp.o -MF CMakeFiles/urcl.dir/src/primary/robot_message.cpp.o.d -o CMakeFiles/urcl.dir/src/primary/robot_message.cpp.o -c /<<BUILDDIR>>package/src/primary/robot_message.cpp
+[ 18%] Building CXX object CMakeFiles/urcl.dir/src/primary/robot_state.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/primary/robot_state.cpp.o -MF CMakeFiles/urcl.dir/src/primary/robot_state.cpp.o.d -o CMakeFiles/urcl.dir/src/primary/robot_state.cpp.o -c /<<BUILDDIR>>package/src/primary/robot_state.cpp
+[ 20%] Building CXX object CMakeFiles/urcl.dir/src/primary/robot_message/version_message.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/primary/robot_message/version_message.cpp.o -MF CMakeFiles/urcl.dir/src/primary/robot_message/version_message.cpp.o.d -o CMakeFiles/urcl.dir/src/primary/robot_message/version_message.cpp.o -c /<<BUILDDIR>>package/src/primary/robot_message/version_message.cpp
+[ 22%] Building CXX object CMakeFiles/urcl.dir/src/primary/robot_state/kinematics_info.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/primary/robot_state/kinematics_info.cpp.o -MF CMakeFiles/urcl.dir/src/primary/robot_state/kinematics_info.cpp.o.d -o CMakeFiles/urcl.dir/src/primary/robot_state/kinematics_info.cpp.o -c /<<BUILDDIR>>package/src/primary/robot_state/kinematics_info.cpp
+[ 24%] Building CXX object CMakeFiles/urcl.dir/src/rtde/control_package_pause.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/control_package_pause.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/control_package_pause.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/control_package_pause.cpp.o -c /<<BUILDDIR>>package/src/rtde/control_package_pause.cpp
+[ 26%] Building CXX object CMakeFiles/urcl.dir/src/rtde/control_package_setup_inputs.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/control_package_setup_inputs.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/control_package_setup_inputs.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/control_package_setup_inputs.cpp.o -c /<<BUILDDIR>>package/src/rtde/control_package_setup_inputs.cpp
+[ 28%] Building CXX object CMakeFiles/urcl.dir/src/rtde/control_package_setup_outputs.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/control_package_setup_outputs.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/control_package_setup_outputs.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/control_package_setup_outputs.cpp.o -c /<<BUILDDIR>>package/src/rtde/control_package_setup_outputs.cpp
+[ 30%] Building CXX object CMakeFiles/urcl.dir/src/rtde/control_package_start.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/control_package_start.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/control_package_start.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/control_package_start.cpp.o -c /<<BUILDDIR>>package/src/rtde/control_package_start.cpp
+[ 32%] Building CXX object CMakeFiles/urcl.dir/src/rtde/data_package.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/data_package.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/data_package.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/data_package.cpp.o -c /<<BUILDDIR>>package/src/rtde/data_package.cpp
+[ 34%] Building CXX object CMakeFiles/urcl.dir/src/rtde/get_urcontrol_version.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/get_urcontrol_version.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/get_urcontrol_version.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/get_urcontrol_version.cpp.o -c /<<BUILDDIR>>package/src/rtde/get_urcontrol_version.cpp
+[ 36%] Building CXX object CMakeFiles/urcl.dir/src/rtde/request_protocol_version.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/request_protocol_version.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/request_protocol_version.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/request_protocol_version.cpp.o -c /<<BUILDDIR>>package/src/rtde/request_protocol_version.cpp
+[ 38%] Building CXX object CMakeFiles/urcl.dir/src/rtde/rtde_package.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/rtde_package.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/rtde_package.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/rtde_package.cpp.o -c /<<BUILDDIR>>package/src/rtde/rtde_package.cpp
+[ 40%] Building CXX object CMakeFiles/urcl.dir/src/rtde/text_message.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/text_message.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/text_message.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/text_message.cpp.o -c /<<BUILDDIR>>package/src/rtde/text_message.cpp
+[ 42%] Building CXX object CMakeFiles/urcl.dir/src/rtde/rtde_client.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/rtde_client.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/rtde_client.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/rtde_client.cpp.o -c /<<BUILDDIR>>package/src/rtde/rtde_client.cpp
+[ 44%] Building CXX object CMakeFiles/urcl.dir/src/ur/ur_driver.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/ur_driver.cpp.o -MF CMakeFiles/urcl.dir/src/ur/ur_driver.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/ur_driver.cpp.o -c /<<BUILDDIR>>package/src/ur/ur_driver.cpp
+[ 46%] Building CXX object CMakeFiles/urcl.dir/src/ur/calibration_checker.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/calibration_checker.cpp.o -MF CMakeFiles/urcl.dir/src/ur/calibration_checker.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/calibration_checker.cpp.o -c /<<BUILDDIR>>package/src/ur/calibration_checker.cpp
+[ 48%] Building CXX object CMakeFiles/urcl.dir/src/ur/dashboard_client.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/dashboard_client.cpp.o -MF CMakeFiles/urcl.dir/src/ur/dashboard_client.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/dashboard_client.cpp.o -c /<<BUILDDIR>>package/src/ur/dashboard_client.cpp
+[ 50%] Building CXX object CMakeFiles/urcl.dir/src/ur/tool_communication.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/tool_communication.cpp.o -MF CMakeFiles/urcl.dir/src/ur/tool_communication.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/tool_communication.cpp.o -c /<<BUILDDIR>>package/src/ur/tool_communication.cpp
+[ 52%] Building CXX object CMakeFiles/urcl.dir/src/ur/robot_receive_timeout.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/robot_receive_timeout.cpp.o -MF CMakeFiles/urcl.dir/src/ur/robot_receive_timeout.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/robot_receive_timeout.cpp.o -c /<<BUILDDIR>>package/src/ur/robot_receive_timeout.cpp
+[ 54%] Building CXX object CMakeFiles/urcl.dir/src/ur/version_information.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/ur/version_information.cpp.o -MF CMakeFiles/urcl.dir/src/ur/version_information.cpp.o.d -o CMakeFiles/urcl.dir/src/ur/version_information.cpp.o -c /<<BUILDDIR>>package/src/ur/version_information.cpp
+/<<BUILDDIR>>package/src/ur/ur_driver.cpp: In member function ‘void urcl::UrDriver::setKeepaliveCount(uint32_t)’:
+/<<BUILDDIR>>package/src/ur/ur_driver.cpp:621:40: warning: ‘virtual void urcl::control::ReverseInterface::setKeepaliveCount(uint32_t)’ is deprecated: Set keepaliveCount is deprecated, instead use the robot receive timeout directly in the write commands. [-Wdeprecated-declarations]
+  621 |   reverse_interface_->setKeepaliveCount(count);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /<<BUILDDIR>>package/include/ur_client_library/ur/ur_driver.h:34,
+                 from /<<BUILDDIR>>package/src/ur/ur_driver.cpp:34:
+/<<BUILDDIR>>package/include/ur_client_library/control/reverse_interface.h:142:3: note: declared here
+  142 |   setKeepaliveCount(const uint32_t count);
+      |   ^~~~~~~~~~~~~~~~~
+[ 56%] Building CXX object CMakeFiles/urcl.dir/src/rtde/rtde_writer.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/rtde/rtde_writer.cpp.o -MF CMakeFiles/urcl.dir/src/rtde/rtde_writer.cpp.o.d -o CMakeFiles/urcl.dir/src/rtde/rtde_writer.cpp.o -c /<<BUILDDIR>>package/src/rtde/rtde_writer.cpp
+[ 58%] Building CXX object CMakeFiles/urcl.dir/src/default_log_handler.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/default_log_handler.cpp.o -MF CMakeFiles/urcl.dir/src/default_log_handler.cpp.o.d -o CMakeFiles/urcl.dir/src/default_log_handler.cpp.o -c /<<BUILDDIR>>package/src/default_log_handler.cpp
+[ 60%] Building CXX object CMakeFiles/urcl.dir/src/log.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/log.cpp.o -MF CMakeFiles/urcl.dir/src/log.cpp.o.d -o CMakeFiles/urcl.dir/src/log.cpp.o -c /<<BUILDDIR>>package/src/log.cpp
+[ 62%] Building CXX object CMakeFiles/urcl.dir/src/helpers.cpp.o
+/usr/lib/ccache/c++ -Durcl_EXPORTS -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -fPIC -Wall -Wextra -Wno-unused-parameter -std=c++17 -MD -MT CMakeFiles/urcl.dir/src/helpers.cpp.o -MF CMakeFiles/urcl.dir/src/helpers.cpp.o.d -o CMakeFiles/urcl.dir/src/helpers.cpp.o -c /<<BUILDDIR>>package/src/helpers.cpp
+[ 64%] Linking CXX shared library liburcl.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/urcl.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -shared -Wl,-soname,liburcl.so -o liburcl.so CMakeFiles/urcl.dir/src/comm/tcp_socket.cpp.o CMakeFiles/urcl.dir/src/comm/tcp_server.cpp.o CMakeFiles/urcl.dir/src/control/reverse_interface.cpp.o CMakeFiles/urcl.dir/src/control/script_sender.cpp.o CMakeFiles/urcl.dir/src/control/trajectory_point_interface.cpp.o CMakeFiles/urcl.dir/src/control/script_command_interface.cpp.o CMakeFiles/urcl.dir/src/primary/primary_package.cpp.o CMakeFiles/urcl.dir/src/primary/robot_message.cpp.o CMakeFiles/urcl.dir/src/primary/robot_state.cpp.o CMakeFiles/urcl.dir/src/primary/robot_message/version_message.cpp.o CMakeFiles/urcl.dir/src/primary/robot_state/kinematics_info.cpp.o CMakeFiles/urcl.dir/src/rtde/control_package_pause.cpp.o CMakeFiles/urcl.dir/src/rtde/control_package_setup_inputs.cpp.o CMakeFiles/urcl.dir/src/rtde/control_package_setup_outputs.cpp.o CMakeFiles/urcl.dir/src/rtde/control_package_start.cpp.o CMakeFiles/urcl.dir/src/rtde/data_package.cpp.o CMakeFiles/urcl.dir/src/rtde/get_urcontrol_version.cpp.o CMakeFiles/urcl.dir/src/rtde/request_protocol_version.cpp.o CMakeFiles/urcl.dir/src/rtde/rtde_package.cpp.o CMakeFiles/urcl.dir/src/rtde/text_message.cpp.o CMakeFiles/urcl.dir/src/rtde/rtde_client.cpp.o CMakeFiles/urcl.dir/src/ur/ur_driver.cpp.o CMakeFiles/urcl.dir/src/ur/calibration_checker.cpp.o CMakeFiles/urcl.dir/src/ur/dashboard_client.cpp.o CMakeFiles/urcl.dir/src/ur/tool_communication.cpp.o CMakeFiles/urcl.dir/src/ur/robot_receive_timeout.cpp.o CMakeFiles/urcl.dir/src/ur/version_information.cpp.o CMakeFiles/urcl.dir/src/rtde/rtde_writer.cpp.o CMakeFiles/urcl.dir/src/default_log_handler.cpp.o CMakeFiles/urcl.dir/src/log.cpp.o CMakeFiles/urcl.dir/src/helpers.cpp.o 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 64%] Built target urcl
+make  -f examples/CMakeFiles/driver_example.dir/build.make examples/CMakeFiles/driver_example.dir/depend
+make  -f examples/CMakeFiles/primary_pipeline_example.dir/build.make examples/CMakeFiles/primary_pipeline_example.dir/depend
+make  -f examples/CMakeFiles/primary_pipeline_calibration_example.dir/build.make examples/CMakeFiles/primary_pipeline_calibration_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/driver_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/primary_pipeline_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/primary_pipeline_calibration_example.dir/DependInfo.cmake --color=
+make  -f examples/CMakeFiles/rtde_client_example.dir/build.make examples/CMakeFiles/rtde_client_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/rtde_client_example.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/driver_example.dir/build.make examples/CMakeFiles/driver_example.dir/build
+make  -f examples/CMakeFiles/primary_pipeline_example.dir/build.make examples/CMakeFiles/primary_pipeline_example.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/rtde_client_example.dir/build.make examples/CMakeFiles/rtde_client_example.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/primary_pipeline_calibration_example.dir/build.make examples/CMakeFiles/primary_pipeline_calibration_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 66%] Building CXX object examples/CMakeFiles/driver_example.dir/full_driver.cpp.o
+[ 68%] Building CXX object examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o -MF CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o.d -o CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o -c /<<BUILDDIR>>package/examples/primary_pipeline.cpp
+[ 70%] Building CXX object examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/driver_example.dir/full_driver.cpp.o -MF CMakeFiles/driver_example.dir/full_driver.cpp.o.d -o CMakeFiles/driver_example.dir/full_driver.cpp.o -c /<<BUILDDIR>>package/examples/full_driver.cpp
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o -MF CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o.d -o CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o -c /<<BUILDDIR>>package/examples/rtde_client.cpp
+[ 72%] Building CXX object examples/CMakeFiles/primary_pipeline_calibration_example.dir/primary_pipeline_calibration.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/primary_pipeline_calibration_example.dir/primary_pipeline_calibration.cpp.o -MF CMakeFiles/primary_pipeline_calibration_example.dir/primary_pipeline_calibration.cpp.o.d -o CMakeFiles/primary_pipeline_calibration_example.dir/primary_pipeline_calibration.cpp.o -c /<<BUILDDIR>>package/examples/primary_pipeline_calibration.cpp
+[ 74%] Linking CXX executable rtde_client_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/rtde_client_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/rtde_client_example.dir/rtde_client.cpp.o -o rtde_client_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+[ 76%] Linking CXX executable primary_pipeline_calibration_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/primary_pipeline_calibration_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/primary_pipeline_calibration_example.dir/primary_pipeline_calibration.cpp.o -o primary_pipeline_calibration_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+[ 78%] Linking CXX executable primary_pipeline_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/primary_pipeline_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/primary_pipeline_example.dir/primary_pipeline.cpp.o -o primary_pipeline_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 78%] Built target rtde_client_example
+make  -f examples/CMakeFiles/dashboard_example.dir/build.make examples/CMakeFiles/dashboard_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/dashboard_example.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/dashboard_example.dir/build.make examples/CMakeFiles/dashboard_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 80%] Building CXX object examples/CMakeFiles/dashboard_example.dir/dashboard_example.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/dashboard_example.dir/dashboard_example.cpp.o -MF CMakeFiles/dashboard_example.dir/dashboard_example.cpp.o.d -o CMakeFiles/dashboard_example.dir/dashboard_example.cpp.o -c /<<BUILDDIR>>package/examples/dashboard_example.cpp
+[ 82%] Linking CXX executable driver_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/driver_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/driver_example.dir/full_driver.cpp.o -o driver_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 82%] Built target primary_pipeline_calibration_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/spline_example.dir/build.make examples/CMakeFiles/spline_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/spline_example.dir/DependInfo.cmake --color=
+[ 82%] Built target primary_pipeline_example
+make  -f examples/CMakeFiles/tool_contact_example.dir/build.make examples/CMakeFiles/tool_contact_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/spline_example.dir/build.make examples/CMakeFiles/spline_example.dir/build
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/tool_contact_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 84%] Building CXX object examples/CMakeFiles/spline_example.dir/spline_example.cpp.o
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/tool_contact_example.dir/build.make examples/CMakeFiles/tool_contact_example.dir/build
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/spline_example.dir/spline_example.cpp.o -MF CMakeFiles/spline_example.dir/spline_example.cpp.o.d -o CMakeFiles/spline_example.dir/spline_example.cpp.o -c /<<BUILDDIR>>package/examples/spline_example.cpp
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 86%] Building CXX object examples/CMakeFiles/tool_contact_example.dir/tool_contact_example.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/tool_contact_example.dir/tool_contact_example.cpp.o -MF CMakeFiles/tool_contact_example.dir/tool_contact_example.cpp.o.d -o CMakeFiles/tool_contact_example.dir/tool_contact_example.cpp.o -c /<<BUILDDIR>>package/examples/tool_contact_example.cpp
+[ 88%] Linking CXX executable dashboard_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/dashboard_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/dashboard_example.dir/dashboard_example.cpp.o -o dashboard_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 88%] Built target driver_example
+make  -f examples/CMakeFiles/freedrive_example.dir/build.make examples/CMakeFiles/freedrive_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/freedrive_example.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/freedrive_example.dir/build.make examples/CMakeFiles/freedrive_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 90%] Building CXX object examples/CMakeFiles/freedrive_example.dir/freedrive_example.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/freedrive_example.dir/freedrive_example.cpp.o -MF CMakeFiles/freedrive_example.dir/freedrive_example.cpp.o.d -o CMakeFiles/freedrive_example.dir/freedrive_example.cpp.o -c /<<BUILDDIR>>package/examples/freedrive_example.cpp
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 90%] Built target dashboard_example
+make  -f examples/CMakeFiles/force_mode_example.dir/build.make examples/CMakeFiles/force_mode_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/force_mode_example.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/force_mode_example.dir/build.make examples/CMakeFiles/force_mode_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 92%] Building CXX object examples/CMakeFiles/force_mode_example.dir/force_mode_example.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -std=c++17 -MD -MT examples/CMakeFiles/force_mode_example.dir/force_mode_example.cpp.o -MF CMakeFiles/force_mode_example.dir/force_mode_example.cpp.o.d -o CMakeFiles/force_mode_example.dir/force_mode_example.cpp.o -c /<<BUILDDIR>>package/examples/force_mode_example.cpp
+[ 94%] Linking CXX executable tool_contact_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/tool_contact_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/tool_contact_example.dir/tool_contact_example.cpp.o -o tool_contact_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+[ 96%] Linking CXX executable freedrive_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/freedrive_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/freedrive_example.dir/freedrive_example.cpp.o -o freedrive_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+[ 98%] Linking CXX executable spline_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/spline_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/spline_example.dir/spline_example.cpp.o -o spline_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 98%] Built target tool_contact_example
+[100%] Linking CXX executable force_mode_example
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/force_mode_example.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -pedantic -Wall -pedantic -rdynamic CMakeFiles/force_mode_example.dir/force_mode_example.cpp.o -o force_mode_example  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu ../liburcl.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target freedrive_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target force_mode_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target spline_example
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-ur-client-library.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-one-ur-client-library.substvars
+	rm -fr -- debian/.debhelper/generated/ros-one-ur-client-library/ debian/ros-one-ur-client-library/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_install
+	install -d /<<BUILDDIR>>package/debian/ros-one-ur-client-library
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-one-ur-client-library AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/urcl.dir/build.make CMakeFiles/urcl.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/urcl.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target urcl
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/urcl.dir/build.make CMakeFiles/urcl.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/urcl.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 64%] Built target urcl
+make  -f examples/CMakeFiles/driver_example.dir/build.make examples/CMakeFiles/driver_example.dir/depend
+make  -f examples/CMakeFiles/primary_pipeline_example.dir/build.make examples/CMakeFiles/primary_pipeline_example.dir/depend
+make  -f examples/CMakeFiles/primary_pipeline_calibration_example.dir/build.make examples/CMakeFiles/primary_pipeline_calibration_example.dir/depend
+make  -f examples/CMakeFiles/rtde_client_example.dir/build.make examples/CMakeFiles/rtde_client_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/driver_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/primary_pipeline_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/primary_pipeline_calibration_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/rtde_client_example.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target driver_example
+Consolidate compiler generated dependencies of target primary_pipeline_calibration_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/driver_example.dir/build.make examples/CMakeFiles/driver_example.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Consolidate compiler generated dependencies of target primary_pipeline_example
+make  -f examples/CMakeFiles/primary_pipeline_calibration_example.dir/build.make examples/CMakeFiles/primary_pipeline_calibration_example.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/primary_pipeline_example.dir/build.make examples/CMakeFiles/primary_pipeline_example.dir/build
+Consolidate compiler generated dependencies of target rtde_client_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/rtde_client_example.dir/build.make examples/CMakeFiles/rtde_client_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/primary_pipeline_calibration_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/primary_pipeline_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/driver_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/rtde_client_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 68%] Built target primary_pipeline_calibration_example
+make  -f examples/CMakeFiles/dashboard_example.dir/build.make examples/CMakeFiles/dashboard_example.dir/depend
+[ 72%] Built target primary_pipeline_example
+make  -f examples/CMakeFiles/spline_example.dir/build.make examples/CMakeFiles/spline_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/dashboard_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/spline_example.dir/DependInfo.cmake --color=
+[ 76%] Built target rtde_client_example
+[ 80%] Built target driver_example
+make  -f examples/CMakeFiles/tool_contact_example.dir/build.make examples/CMakeFiles/tool_contact_example.dir/depend
+make  -f examples/CMakeFiles/freedrive_example.dir/build.make examples/CMakeFiles/freedrive_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/tool_contact_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/freedrive_example.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target dashboard_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/dashboard_example.dir/build.make examples/CMakeFiles/dashboard_example.dir/build
+Consolidate compiler generated dependencies of target spline_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/spline_example.dir/build.make examples/CMakeFiles/spline_example.dir/build
+Consolidate compiler generated dependencies of target tool_contact_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/tool_contact_example.dir/build.make examples/CMakeFiles/tool_contact_example.dir/build
+Consolidate compiler generated dependencies of target freedrive_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/freedrive_example.dir/build.make examples/CMakeFiles/freedrive_example.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/dashboard_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 84%] Built target dashboard_example
+make  -f examples/CMakeFiles/force_mode_example.dir/build.make examples/CMakeFiles/force_mode_example.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/force_mode_example.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/spline_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/tool_contact_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/freedrive_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Consolidate compiler generated dependencies of target force_mode_example
+[ 88%] Built target spline_example
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/force_mode_example.dir/build.make examples/CMakeFiles/force_mode_example.dir/build
+[ 92%] Built target tool_contact_example
+[ 96%] Built target freedrive_example
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/force_mode_example.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target force_mode_example
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_state
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_state/kinematics_info.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/primary_parser.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/primary_package.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/abstract_primary_consumer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_message.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/package_header.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_state.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_message
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/primary/robot_message/version_message.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/text_message.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/control_package_setup_outputs.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/rtde_writer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/data_package.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/control_package_setup_inputs.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/rtde_package.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/rtde_client.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/rtde_parser.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/get_urcontrol_version.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/control_package_pause.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/control_package_start.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/request_protocol_version.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/rtde/package_header.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/control
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/control/script_command_interface.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/control/script_sender.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/control/reverse_interface.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/control/trajectory_point_interface.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/default_log_handler.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/datatypes.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/calibration_checker.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/robot_receive_timeout.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/version_information.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/ur_driver.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/dashboard_client.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/ur/tool_communication.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/log.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/package.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/pipeline.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/package_serializer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/control_mode.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/tcp_server.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/stream.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/bin_parser.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/parser.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/shell_consumer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/producer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/comm/tcp_socket.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/exceptions.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/queue
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/queue/LICENSE.md
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/queue/atomicops.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/queue/readerwriterqueue.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/include/ur_client_library/helpers.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/lib/cmake/ur_client_library/urclTargets.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/lib/cmake/ur_client_library/urclTargets-none.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/lib/ur_client_library/start_ursim.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/lib/cmake/ur_client_library/ur_client_libraryConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ur_client_library/package.xml
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ament_index/resource_index/packages/ur_client_library
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ur_client_library/hook/ament_prefix_path.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ur_client_library/hook/ros_package_path.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ur_client_library/resources
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-ur-client-library/opt/ros/one/share/ur_client_library/resources/external_control.urscript
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -d debian/ros-one-ur-client-library/usr/share/doc/ros-one-ur-client-library
+	install -d debian/.debhelper/generated/ros-one-ur-client-library
+	install -p -m0644 debian/copyright debian/ros-one-ur-client-library/usr/share/doc/ros-one-ur-client-library/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -p -m0644 debian/changelog debian/ros-one-ur-client-library/usr/share/doc/ros-one-ur-client-library/changelog.Debian
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-ur-client-library
+	chmod a-x usr/share/doc/ros-one-ur-client-library/changelog.Debian
+	gzip -9nf usr/share/doc/ros-one-ur-client-library/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-one-ur-client-library -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-one-ur-client-library ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-one-ur-client-library/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-one-ur-client-library/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-one-ur-client-library/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-one-ur-client-library -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	debugedit --build-id --build-id-seed=ros-one-ur-client-library/1.4.0-4-g881adb0-2024.11.13.10.54 debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+8fcaf0f63ac64dddb649f335895821f44d11858a
+	install -d debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/lib/debug/.build-id/8f
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/lib/debug/.build-id/8f/caf0f63ac64dddb649f335895821f44d11858a.debug
+	chmod 0644 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/lib/debug/.build-id/8f/caf0f63ac64dddb649f335895821f44d11858a.debug
+	chown 0:0 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/lib/debug/.build-id/8f/caf0f63ac64dddb649f335895821f44d11858a.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded -o /tmp/Jl4j9EHsUw/stripw3qIkZ debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+	chmod --reference debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so /tmp/Jl4j9EHsUw/stripw3qIkZ
+	cat '/tmp/Jl4j9EHsUw/stripw3qIkZ' > 'debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so'
+	chmod --reference /tmp/Jl4j9EHsUw/stripw3qIkZ debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/lib/debug/.build-id/8f/caf0f63ac64dddb649f335895821f44d11858a.debug debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so /tmp/Jl4j9EHsUw/objcopy_uliCl
+	chmod --reference debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so /tmp/Jl4j9EHsUw/objcopy_uliCl
+	cat '/tmp/Jl4j9EHsUw/objcopy_uliCl' > 'debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so'
+	chmod --reference /tmp/Jl4j9EHsUw/objcopy_uliCl debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+	install -d debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/share/doc
+	ln -s ros-one-ur-client-library debian/.debhelper/ros-one-ur-client-library/dbgsym-root/usr/share/doc/ros-one-ur-client-library-dbgsym
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-ur-client-library/DEBIAN/shlibs
+	rm -f debian/ros-one-ur-client-library.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-one-ur-client-library//opt/ros/one/lib/:/<<BUILDDIR>>package/debian/ros-debian-ur-client-library//opt/ros/one/lib/x86_64-linux-gnu
+	install -d debian/ros-one-ur-client-library/DEBIAN
+	dpkg-shlibdeps -Tdebian/ros-one-ur-client-library.substvars -l/<<BUILDDIR>>package/debian/ros-one-ur-client-library//opt/ros/one/lib/ -l/<<BUILDDIR>>package/debian/ros-debian-ur-client-library//opt/ros/one/lib/x86_64-linux-gnu debian/ros-one-ur-client-library/opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	echo misc:Depends= >> debian/ros-one-ur-client-library.substvars
+	echo misc:Pre-Depends= >> debian/ros-one-ur-client-library.substvars
+	install -d debian/.debhelper/ros-one-ur-client-library/dbgsym-root/DEBIAN
+	dpkg-gencontrol -pros-one-ur-client-library -ldebian/changelog -Tdebian/ros-one-ur-client-library.substvars -Pdebian/.debhelper/ros-one-ur-client-library/dbgsym-root -UPre-Depends -URecommends -USuggests -UEnhances -UProvides -UEssential -UConflicts -DPriority=optional -UHomepage -UImportant -UBuilt-Using -DAuto-Built-Package=debug-symbols -UProtected -DPackage=ros-one-ur-client-library-dbgsym "-DDepends=ros-one-ur-client-library (= \${binary:Version})" "-DDescription=debug symbols for ros-one-ur-client-library" -DBuild-Ids=8fcaf0f63ac64dddb649f335895821f44d11858a -DSection=debug -DPackage-Type=ddeb -UMulti-Arch -UReplaces -UBreaks
+	chmod 0644 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/DEBIAN/control
+	chown 0:0 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/DEBIAN/control
+	dpkg-gencontrol -pros-one-ur-client-library -ldebian/changelog -Tdebian/ros-one-ur-client-library.substvars -Pdebian/ros-one-ur-client-library
+	chmod 0644 -- debian/ros-one-ur-client-library/DEBIAN/control
+	chown 0:0 -- debian/ros-one-ur-client-library/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-ur-client-library >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-one-ur-client-library/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-one-ur-client-library/DEBIAN/md5sums
+	cd debian/.debhelper/ros-one-ur-client-library/dbgsym-root >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/DEBIAN/md5sums
+	chown 0:0 -- debian/.debhelper/ros-one-ur-client-library/dbgsym-root/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --build debian/ros-one-ur-client-library ..
+dpkg-deb: building package 'ros-one-ur-client-library' in '../ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb'.
+	install -d debian/.debhelper/scratch-space/build-ros-one-ur-client-library
+	dpkg-deb --build debian/.debhelper/ros-one-ur-client-library/dbgsym-root debian/.debhelper/scratch-space/build-ros-one-ur-client-library
+dpkg-deb: building package 'ros-one-ur-client-library-dbgsym' in 'debian/.debhelper/scratch-space/build-ros-one-ur-client-library/ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb'.
+	Renaming ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb to ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+	mv debian/.debhelper/scratch-space/build-ros-one-ur-client-library/ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb ../ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ dpkg-genbuildinfo --build=binary -O../ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2024-11-13T10:55:18Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                                                      |
++------------------------------------------------------------------------------+
+
+
+ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.changes:
+--------------------------------------------------------------------------
+
+Format: 1.8
+Date: Tue, 10 Sep 2024 00:00:00 -0000
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Distribution: jammy
+Urgency: high
+Maintainer: Felix Exner <exner@fzi.de>
+Changed-By: Felix Exner <exner@fzi.de>
+Description:
+ ros-one-ur-client-library - Standalone C++ library for accessing Universal Robots interfaces.
+Changes:
+ ros-one-ur-client-library (1.4.0-4-g881adb0-2024.11.13.10.54) jammy; urgency=high
+ .
+   * Ensure that the targets are reachable within the robots limits (#184 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/184>)
+   * Analog domain (#211 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/211>)
+   * Fix clang compilation error (#210 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/210>)
+   * Moved reset of speed slider to correct teardown function, so that it … (#206 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/206>)
+     …resets between each test.
+   * [doc] Fix syntax in example.rst (#207 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/207>)
+   * [doc] Migrate documentation to sphinx (#95 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/95>)
+   * Contributors: Felix Exner, Mads Holm Peters, Remi Siffert, URJala
+Checksums-Sha1:
+ a24dd819ceefe486c45e780ed1f2c111f0f390fa 2395644 ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ 4c1256acdf716f5d751a29073e278a78af2ed1b6 7432 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.buildinfo
+ a7242491e71a469165969dc9aca23a499f197481 215160 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+Checksums-Sha256:
+ c832d5d98a452d95b45d0aeb9e223451402508c4ff679f29b3681e605108c2c7 2395644 ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ fb06cdda32a9eefcb845d5b9996d8b0f7140ab5b4d4d1cae274bd03106ca8017 7432 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.buildinfo
+ 1883fdba87b078adc8ebdd6f5d51d1dde17609fad3a1afe9dc44b8e93970d7db 215160 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+Files:
+ 6e2cd829cd4a65f99cc83edf851a33a8 2395644 debug optional ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ 63c546c4c04666bc5492f163d1b8bbac 7432 misc optional ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.buildinfo
+ bdd891bdefd7a8c9b9d010d3cc12289c 215160 misc optional ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                                                    |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library ros-one-ur-client-library-dbgsym
+Architecture: amd64
+Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Checksums-Md5:
+ 6e2cd829cd4a65f99cc83edf851a33a8 2395644 ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ bdd891bdefd7a8c9b9d010d3cc12289c 215160 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+Checksums-Sha1:
+ a24dd819ceefe486c45e780ed1f2c111f0f390fa 2395644 ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ a7242491e71a469165969dc9aca23a499f197481 215160 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+Checksums-Sha256:
+ c832d5d98a452d95b45d0aeb9e223451402508c4ff679f29b3681e605108c2c7 2395644 ros-one-ur-client-library-dbgsym_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.ddeb
+ 1883fdba87b078adc8ebdd6f5d51d1dde17609fad3a1afe9dc44b8e93970d7db 215160 ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+Build-Origin: Ubuntu
+Build-Architecture: amd64
+Build-Date: Wed, 13 Nov 2024 10:55:18 +0000
+Build-Path: /<<BUILDDIR>>package
+Installed-Build-Depends:
+ autoconf (= 2.71-2),
+ automake (= 1:1.16.5-1.3),
+ autopoint (= 0.21-4ubuntu4),
+ autotools-dev (= 20220109.1),
+ base-files (= 12ubuntu4.7),
+ base-passwd (= 3.5.52build1),
+ bash (= 5.1-6ubuntu1.1),
+ binutils (= 2.38-4ubuntu2.6),
+ binutils-common (= 2.38-4ubuntu2.6),
+ binutils-x86-64-linux-gnu (= 2.38-4ubuntu2.6),
+ bsdextrautils (= 2.37.2-4ubuntu3.4),
+ bsdutils (= 1:2.37.2-4ubuntu3.4),
+ build-essential (= 12.9ubuntu3),
+ bzip2 (= 1.0.8-5build1),
+ cmake (= 3.22.1-1ubuntu1.22.04.2),
+ cmake-data (= 3.22.1-1ubuntu1.22.04.2),
+ coreutils (= 8.32-4.1ubuntu1.2),
+ cpp (= 4:11.2.0-1ubuntu1),
+ cpp-11 (= 11.4.0-1ubuntu1~22.04),
+ dash (= 0.5.11+git20210903+057cd650a4ed-3build1),
+ debconf (= 1.5.79ubuntu1),
+ debhelper (= 13.6ubuntu1),
+ debianutils (= 5.5-1ubuntu2),
+ debugedit (= 1:5.0-4build1),
+ dh-autoreconf (= 20),
+ dh-elpa-helper (= 2.0.9ubuntu1),
+ dh-strip-nondeterminism (= 1.13.0-1),
+ diffutils (= 1:3.8-0ubuntu2),
+ dpkg (= 1.21.1ubuntu2.3),
+ dpkg-dev (= 1.21.1ubuntu2.3),
+ dwz (= 0.14-1build2),
+ emacsen-common (= 3.0.4),
+ file (= 1:5.41-3ubuntu0.1),
+ findutils (= 4.8.0-1ubuntu3),
+ g++ (= 4:11.2.0-1ubuntu1),
+ g++-11 (= 11.4.0-1ubuntu1~22.04),
+ gcc (= 4:11.2.0-1ubuntu1),
+ gcc-11 (= 11.4.0-1ubuntu1~22.04),
+ gcc-11-base (= 11.4.0-1ubuntu1~22.04),
+ gcc-12-base (= 12.3.0-1ubuntu1~22.04),
+ gettext (= 0.21-4ubuntu4),
+ gettext-base (= 0.21-4ubuntu4),
+ grep (= 3.7-1build1),
+ groff-base (= 1.22.4-8build1),
+ gzip (= 1.10-4ubuntu4.1),
+ hostname (= 3.23ubuntu2),
+ init-system-helpers (= 1.62),
+ intltool-debian (= 0.35.0+20060710.5),
+ libacl1 (= 2.3.1-1),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13 (= 3.6.0-1ubuntu1.3),
+ libasan6 (= 11.4.0-1ubuntu1~22.04),
+ libatomic1 (= 12.3.0-1ubuntu1~22.04),
+ libattr1 (= 1:2.5.1-1build1),
+ libaudit-common (= 1:3.0.7-1build1),
+ libaudit1 (= 1:3.0.7-1build1),
+ libbinutils (= 2.38-4ubuntu2.6),
+ libblkid1 (= 2.37.2-4ubuntu3.4),
+ libbrotli1 (= 1.0.9-2build6),
+ libbz2-1.0 (= 1.0.8-5build1),
+ libc-bin (= 2.35-0ubuntu3.8),
+ libc-dev-bin (= 2.35-0ubuntu3.8),
+ libc6 (= 2.35-0ubuntu3.8),
+ libc6-dev (= 2.35-0ubuntu3.8),
+ libcap-ng0 (= 0.7.9-2.2build3),
+ libcap2 (= 1:2.44-1ubuntu0.22.04.1),
+ libcc1-0 (= 12.3.0-1ubuntu1~22.04),
+ libcom-err2 (= 1.46.5-2ubuntu1.2),
+ libcrypt-dev (= 1:4.4.27-1),
+ libcrypt1 (= 1:4.4.27-1),
+ libctf-nobfd0 (= 2.38-4ubuntu2.6),
+ libctf0 (= 2.38-4ubuntu2.6),
+ libcurl4 (= 7.81.0-1ubuntu1.18),
+ libdb5.3 (= 5.3.28+dfsg1-0.8ubuntu3),
+ libdebconfclient0 (= 0.261ubuntu1),
+ libdebhelper-perl (= 13.6ubuntu1),
+ libdpkg-perl (= 1.21.1ubuntu2.3),
+ libdw1 (= 0.186-1build1),
+ libelf1 (= 0.186-1build1),
+ libexpat1 (= 2.4.7-1ubuntu0.4),
+ libffi8 (= 3.4.2-4),
+ libfile-stripnondeterminism-perl (= 1.13.0-1),
+ libgcc-11-dev (= 11.4.0-1ubuntu1~22.04),
+ libgcc-s1 (= 12.3.0-1ubuntu1~22.04),
+ libgcrypt20 (= 1.9.4-3ubuntu3),
+ libgdbm-compat4 (= 1.23-1),
+ libgdbm6 (= 1.23-1),
+ libgmp10 (= 2:6.2.1+dfsg-3ubuntu1),
+ libgnutls30 (= 3.7.3-4ubuntu1.5),
+ libgomp1 (= 12.3.0-1ubuntu1~22.04),
+ libgpg-error0 (= 1.43-3),
+ libgssapi-krb5-2 (= 1.19.2-2ubuntu0.4),
+ libhogweed6 (= 3.7.3-1build2),
+ libicu70 (= 70.1-2),
+ libidn2-0 (= 2.3.2-2build1),
+ libisl23 (= 0.24-2build1),
+ libitm1 (= 12.3.0-1ubuntu1~22.04),
+ libjsoncpp25 (= 1.9.5-3),
+ libk5crypto3 (= 1.19.2-2ubuntu0.4),
+ libkeyutils1 (= 1.6.1-2ubuntu3),
+ libkrb5-3 (= 1.19.2-2ubuntu0.4),
+ libkrb5support0 (= 1.19.2-2ubuntu0.4),
+ libldap-2.5-0 (= 2.5.18+dfsg-0ubuntu0.22.04.2),
+ liblsan0 (= 12.3.0-1ubuntu1~22.04),
+ liblz4-1 (= 1.9.3-2build2),
+ liblzma5 (= 5.2.5-2ubuntu1),
+ libmagic-mgc (= 1:5.41-3ubuntu0.1),
+ libmagic1 (= 1:5.41-3ubuntu0.1),
+ libmount1 (= 2.37.2-4ubuntu3.4),
+ libmpc3 (= 1.2.1-2build1),
+ libmpfr6 (= 4.1.0-3build3),
+ libncurses6 (= 6.3-2ubuntu0.1),
+ libncursesw6 (= 6.3-2ubuntu0.1),
+ libnettle8 (= 3.7.3-1build2),
+ libnghttp2-14 (= 1.43.0-1ubuntu0.2),
+ libnsl-dev (= 1.3.0-2build2),
+ libnsl2 (= 1.3.0-2build2),
+ libp11-kit0 (= 0.24.0-6build1),
+ libpam-modules (= 1.4.0-11ubuntu2.4),
+ libpam-modules-bin (= 1.4.0-11ubuntu2.4),
+ libpam-runtime (= 1.4.0-11ubuntu2.4),
+ libpam0g (= 1.4.0-11ubuntu2.4),
+ libpcre2-8-0 (= 10.39-3ubuntu0.1),
+ libpcre3 (= 2:8.39-13ubuntu0.22.04.1),
+ libperl5.34 (= 5.34.0-3ubuntu1.3),
+ libpipeline1 (= 1.5.5-1),
+ libprocps8 (= 2:3.3.17-6ubuntu2.1),
+ libpsl5 (= 0.21.0-1.2build2),
+ libquadmath0 (= 12.3.0-1ubuntu1~22.04),
+ librhash0 (= 1.4.2-1ubuntu1),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2build4),
+ libsasl2-2 (= 2.1.27+dfsg2-3ubuntu1.2),
+ libsasl2-modules-db (= 2.1.27+dfsg2-3ubuntu1.2),
+ libseccomp2 (= 2.5.3-2ubuntu2),
+ libselinux1 (= 3.3-1build2),
+ libsigsegv2 (= 2.13-1ubuntu3),
+ libsmartcols1 (= 2.37.2-4ubuntu3.4),
+ libssh-4 (= 0.9.6-2ubuntu0.22.04.3),
+ libssl3 (= 3.0.2-0ubuntu1.18),
+ libstdc++-11-dev (= 11.4.0-1ubuntu1~22.04),
+ libstdc++6 (= 12.3.0-1ubuntu1~22.04),
+ libsub-override-perl (= 0.09-2),
+ libsystemd0 (= 249.11-0ubuntu3.12),
+ libtasn1-6 (= 4.18.0-4build1),
+ libtinfo6 (= 6.3-2ubuntu0.1),
+ libtirpc-common (= 1.3.2-2ubuntu0.1),
+ libtirpc-dev (= 1.3.2-2ubuntu0.1),
+ libtirpc3 (= 1.3.2-2ubuntu0.1),
+ libtool (= 2.4.6-15build2),
+ libtsan0 (= 11.4.0-1ubuntu1~22.04),
+ libubsan1 (= 12.3.0-1ubuntu1~22.04),
+ libuchardet0 (= 0.0.7-1build2),
+ libudev1 (= 249.11-0ubuntu3.12),
+ libunistring2 (= 1.0-1),
+ libuuid1 (= 2.37.2-4ubuntu3.4),
+ libuv1 (= 1.43.0-1ubuntu0.1),
+ libxml2 (= 2.9.13+dfsg-1ubuntu0.4),
+ libzstd1 (= 1.4.8+dfsg-3build1),
+ linux-libc-dev (= 5.15.0-125.135),
+ login (= 1:4.8.1-2ubuntu2.2),
+ lsb-base (= 11.1.0ubuntu4),
+ lto-disabled-list (= 24),
+ m4 (= 1.4.18-5ubuntu2),
+ make (= 4.3-4.1build1),
+ man-db (= 2.10.2-1),
+ mawk (= 1.3.4.20200120-3),
+ ncurses-base (= 6.3-2ubuntu0.1),
+ ncurses-bin (= 6.3-2ubuntu0.1),
+ patch (= 2.7.6-7build2),
+ perl (= 5.34.0-3ubuntu1.3),
+ perl-base (= 5.34.0-3ubuntu1.3),
+ perl-modules-5.34 (= 5.34.0-3ubuntu1.3),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:3.3.17-6ubuntu2.1),
+ rpcsvc-proto (= 1.4.2-0ubuntu6),
+ sed (= 4.8-1ubuntu2),
+ sensible-utils (= 0.0.17),
+ sysvinit-utils (= 3.01-1ubuntu1),
+ tar (= 1.34+dfsg-1ubuntu0.1.22.04.2),
+ util-linux (= 2.37.2-4ubuntu3.4),
+ xz-utils (= 5.2.5-2ubuntu1),
+ zlib1g (= 1:1.2.11.dfsg-2ubuntu9.2)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="noudeb nocheck"
+ LANG="C.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LD_LIBRARY_PATH="/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu"
+ SOURCE_DATE_EPOCH="1725926400"
+
+
++------------------------------------------------------------------------------+
+| Package contents                                                             |
++------------------------------------------------------------------------------+
+
+
+ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54_amd64.deb
+---------------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 215160 bytes: control archive=2407 bytes.
+     467 bytes,    11 lines      control              
+    5952 bytes,    63 lines      md5sums              
+ Package: ros-one-ur-client-library
+ Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+ Architecture: amd64
+ Maintainer: Felix Exner <exner@fzi.de>
+ Installed-Size: 890
+ Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), catkin, libgmock-dev, libgtest-dev
+ Section: misc
+ Priority: optional
+ Homepage: http://wiki.ros.org/ur_client_library
+ Description: Standalone C++ library for accessing Universal Robots interfaces.
+  This has been forked off the ur_robot_driver.
+
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/
+-rw-r--r-- root/root      8921 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/bin_parser.h
+-rw-r--r-- root/root      4618 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/control_mode.h
+-rw-r--r-- root/root      2375 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/package.h
+-rw-r--r-- root/root      3471 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/package_serializer.h
+-rw-r--r-- root/root      1606 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/parser.h
+-rw-r--r-- root/root     11336 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/pipeline.h
+-rw-r--r-- root/root      4079 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/producer.h
+-rw-r--r-- root/root      2165 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/shell_consumer.h
+-rw-r--r-- root/root      4971 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/stream.h
+-rw-r--r-- root/root      6455 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/tcp_server.h
+-rw-r--r-- root/root      4230 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/comm/tcp_socket.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/control/
+-rw-r--r-- root/root      6888 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/control/reverse_interface.h
+-rw-r--r-- root/root      6865 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/control/script_command_interface.h
+-rw-r--r-- root/root      2362 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/control/script_sender.h
+-rw-r--r-- root/root      4880 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/control/trajectory_point_interface.h
+-rw-r--r-- root/root      2434 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/default_log_handler.h
+-rw-r--r-- root/root      3663 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/exceptions.h
+-rw-r--r-- root/root      1351 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/helpers.h
+-rw-r--r-- root/root      2731 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/log.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/
+-rw-r--r-- root/root      2807 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/abstract_primary_consumer.h
+-rw-r--r-- root/root      2493 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/package_header.h
+-rw-r--r-- root/root      2803 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/primary_package.h
+-rw-r--r-- root/root      5445 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/primary_parser.h
+-rw-r--r-- root/root      3134 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_message.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_message/
+-rw-r--r-- root/root      2870 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_message/version_message.h
+-rw-r--r-- root/root      2978 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_state.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_state/
+-rw-r--r-- root/root      3207 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/primary/robot_state/kinematics_info.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/queue/
+-rw-r--r-- root/root      1546 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/queue/LICENSE.md
+-rw-r--r-- root/root     18861 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/queue/atomicops.h
+-rw-r--r-- root/root     29403 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/queue/readerwriterqueue.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/
+-rw-r--r-- root/root      3007 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/control_package_pause.h
+-rw-r--r-- root/root      3306 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/control_package_setup_inputs.h
+-rw-r--r-- root/root      4061 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/control_package_setup_outputs.h
+-rw-r--r-- root/root      3008 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/control_package_start.h
+-rw-r--r-- root/root      6158 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/data_package.h
+-rw-r--r-- root/root      3068 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/get_urcontrol_version.h
+-rw-r--r-- root/root      3262 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/package_header.h
+-rw-r--r-- root/root      3245 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/request_protocol_version.h
+-rw-r--r-- root/root      9312 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/rtde_client.h
+-rw-r--r-- root/root      2464 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/rtde_package.h
+-rw-r--r-- root/root      4832 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/rtde_parser.h
+-rw-r--r-- root/root      6109 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/rtde_writer.h
+-rw-r--r-- root/root      2536 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/rtde/text_message.h
+-rw-r--r-- root/root      1672 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/types.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/
+-rw-r--r-- root/root      3368 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/calibration_checker.h
+-rw-r--r-- root/root     13246 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/dashboard_client.h
+-rw-r--r-- root/root      5319 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/datatypes.h
+-rw-r--r-- root/root      3838 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/robot_receive_timeout.h
+-rw-r--r-- root/root      6798 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/tool_communication.h
+-rw-r--r-- root/root     26159 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/ur_driver.h
+-rw-r--r-- root/root      2880 2024-09-10 00:00 ./opt/ros/one/include/ur_client_library/ur/version_information.h
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/lib/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/lib/cmake/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/lib/cmake/ur_client_library/
+-rw-r--r-- root/root       423 2024-09-10 00:00 ./opt/ros/one/lib/cmake/ur_client_library/ur_client_libraryConfig.cmake
+-rw-r--r-- root/root       882 2024-09-10 00:00 ./opt/ros/one/lib/cmake/ur_client_library/urclTargets-none.cmake
+-rw-r--r-- root/root      3333 2024-09-10 00:00 ./opt/ros/one/lib/cmake/ur_client_library/urclTargets.cmake
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/lib/ur_client_library/
+-rwxr-xr-x root/root      7242 2024-09-10 00:00 ./opt/ros/one/lib/ur_client_library/start_ursim.sh
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    488760 2024-09-10 00:00 ./opt/ros/one/lib/x86_64-linux-gnu/liburcl.so
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ament_index/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ament_index/resource_index/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ament_index/resource_index/packages/
+-rw-r--r-- root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ament_index/resource_index/packages/ur_client_library
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/hook/
+-rw-r--r-- root/root        40 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/hook/ament_prefix_path.dsv
+-rw-r--r-- root/root        39 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/hook/ros_package_path.dsv
+-rw-r--r-- root/root      1375 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/package.xml
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/resources/
+-rw-r--r-- root/root     30746 2024-09-10 00:00 ./opt/ros/one/share/ur_client_library/resources/external_control.urscript
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./usr/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./usr/share/doc/
+drwxr-xr-x root/root         0 2024-09-10 00:00 ./usr/share/doc/ros-one-ur-client-library/
+-rw-r--r-- root/root      3579 2024-09-10 00:00 ./usr/share/doc/ros-one-ur-client-library/changelog.Debian.gz
+-rw-r--r-- root/root     32359 2024-09-10 00:00 ./usr/share/doc/ros-one-ur-client-library/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                                                   |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 86700
+Build-Time: 27
+Distribution: jammy
+Host Architecture: amd64
+Install-Time: 9
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-ur-client-library_1.4.0-4-g881adb0-2024.11.13.10.54.dsc
+Machine Architecture: amd64
+Package: ros-one-ur-client-library
+Package-Time: 47
+Source-Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+Space: 86700
+Status: successful
+Version: 1.4.0-4-g881adb0-2024.11.13.10.54
+--------------------------------------------------------------------------------
+Finished at 2024-11-13T10:55:18Z
+Build needed 00:00:47, 86700k disk space
