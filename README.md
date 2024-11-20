@@ -2,7 +2,7 @@
 
 This repository builds an extended ROS ecosystem for Debian-based distributions in `ros-one-*.deb` packages on GitHub's free GitHub Action.
 
-**Target Distribution**: At the moment packages are build for [Debian sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be setup as well.
+**Target Distribution**: At the moment build environments are set up for Debian [bookworm](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm), [sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be setup as well.
 
 **Build Time**: Build times vary on the amount of packages selected. An extended system of around 1000 packages takes around 13 hours to build using the provided parallelized build jobs.
 
