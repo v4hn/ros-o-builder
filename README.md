@@ -17,7 +17,7 @@ You can either rely on this repository, e.g., [jammy-one](https://github.com/v4h
 **Step 2:** Adjust Permissions.
 To push built debs in this repository yourself, you need [to change github's default permissions](https://github.com/ad-m/github-push-action/?tab=readme-ov-file#requirements-and-prerequisites) for the actions of your forked repository.
 
-**Step 3:** Revise `on.scheduled:` triggers in each `build-for-<distro>` branches `.github/workflows/build.yaml` to only build when necessary.
+**Step 3:** Revise `on.scheduled:` triggers in each `build-for-<distro>` branches `.github/workflows/build.yaml` to only build when necessary. *Note that only the default branch on github will actually be scheduled based on these triggers.*
 
 **Step 4 [optional]:** Navigate to Settings -> Pages -> Deploy from a branch and select the `<distro>-one` or `<distro>-one-unstable` branch to deploy a clean github page based on the generated `README.md`.
 
