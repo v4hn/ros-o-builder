@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Tue, 11 Jan 2022 00:00:00 -0000
+Source: ros-one-jsk-interactive-marker
+Binary: ros-one-jsk-interactive-marker
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.1.8-68-g73fb2b3-2024.11.22.02.09
+Distribution: jammy
+Urgency: high
+Maintainer: furuta <furuta@jsk.t.u-tokyo.ac.jp>
+Changed-By: furuta <furuta@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-interactive-marker - jsk interactive markers
+Changes:
+ ros-one-jsk-interactive-marker (2.1.8-68-g73fb2b3-2024.11.22.02.09) jammy; urgency=high
+ .
+   * Resolve fixed frame of rviz (#842 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/842>)
+ .
+       * frame_id_ is std::string, so we need to use c_str() or ROS_ERROR_STREAM
+       * Resolve fixed frame of rviz
+         * The pose in callback function of interactive marker is represented
+         respect to fixed frame of rviz.
+         * In order to publish consistent tf transformation, the pose should be
+         transformed respect to the frame_id which is specified as ros
+         parameter.
+ .
+   * Fix sample display robot state demo (#838 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/838>)
+ .
+       * [jsk_interactive_marker] fix bugs
+       * [jsk_interactive_marker] change the robot of
+         sample_display_robot_state from JAXON to PR2
+ .
+   * [jsk_interactive_markers][jsk_rqt_plugins] fix yaml load (#818 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/818>)
+   * Enable to publish camera info from yaml file (#793 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/793>)
+   * Contributors: Adi Vardi, Kei Okada, Koki Shinjo, Naoya Yamaguchi, Ryohei Ueda
+Checksums-Sha1:
+ 612b2b04e72fea6f0469edad874ba6e7eb8dc784 33250674 ros-one-jsk-interactive-marker-dbgsym_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.ddeb
+ dbd30b61ee4475c3e6080d121e9cc91e36dacd87 50480 ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.buildinfo
+ 8d509bdbc7b524b2cb6643264ce82e5ad282eee6 1188632 ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.deb
+Checksums-Sha256:
+ 3e753562cbf2c845d741a9a5c4d0802c683eded09df65d95bf31bf2085310b9b 33250674 ros-one-jsk-interactive-marker-dbgsym_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.ddeb
+ ab316073b9132de2eed364f9c4846b6e1480aa70c1b309a0dbaca23998d1ec4a 50480 ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.buildinfo
+ 83ffa9b8dc6e2fc1afa156495cca6c9cef5f77e2190fb67805e0e5522b2fe192 1188632 ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.deb
+Files:
+ 550145d1a7dd593acdea2b9dff7ee753 33250674 debug optional ros-one-jsk-interactive-marker-dbgsym_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.ddeb
+ 2fc0f7eb8be4982c8ee58fc69c58ee4f 50480 misc optional ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.buildinfo
+ f4396ed58a6013dece3610ec855b8934 1188632 misc optional ros-one-jsk-interactive-marker_2.1.8-68-g73fb2b3-2024.11.22.02.09_amd64.deb

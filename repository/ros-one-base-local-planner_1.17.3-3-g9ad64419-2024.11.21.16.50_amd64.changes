@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-base-local-planner
+Binary: ros-one-base-local-planner
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2024.11.21.16.50
+Distribution: jammy
+Urgency: high
+Maintainer: Michael Ferguson <mfergs7@gmail.com>
+Changed-By: Michael Ferguson <mfergs7@gmail.com>
+Description:
+ ros-one-base-local-planner - This package provides implementations of the Trajectory Rollout a
+Changes:
+ ros-one-base-local-planner (1.17.3-3-g9ad64419-2024.11.21.16.50) jammy; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 33e1511b6b8eb61e53e87f24c02737970c80ca8d 4435146 ros-one-base-local-planner-dbgsym_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.ddeb
+ b9cadf9e768f5ba28d448fe0ffb785bf43b8e810 19395 ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.buildinfo
+ 15c1b03b84659f7f11df310056446df2d973a654 229312 ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.deb
+Checksums-Sha256:
+ be72839a193a2e3db13902d81ed8ac002b5156ae83b4b2442719171f1100335f 4435146 ros-one-base-local-planner-dbgsym_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.ddeb
+ bdda87c9fc3f4af3842abf19097ce5b3d8df63807f4f844407eab84db37ed067 19395 ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.buildinfo
+ 70a78f98a405328eca342288885bc2f0a651d1a0036db569e854b198cf0a27bc 229312 ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.deb
+Files:
+ e7e1f27298e6bc7d165d3670d121b0ad 4435146 debug optional ros-one-base-local-planner-dbgsym_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.ddeb
+ bc9e2b81de85629ad9456ef7221da8f9 19395 misc optional ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.buildinfo
+ 2fc820f8b8b07cf02d011ebb8293f539 229312 misc optional ros-one-base-local-planner_1.17.3-3-g9ad64419-2024.11.21.16.50_amd64.deb

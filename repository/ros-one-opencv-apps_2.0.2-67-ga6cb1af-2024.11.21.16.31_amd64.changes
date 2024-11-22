@@ -1,0 +1,56 @@
+Format: 1.8
+Date: Wed, 19 Aug 2020 00:00:00 -0000
+Source: ros-one-opencv-apps
+Binary: ros-one-opencv-apps
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.0.2-67-ga6cb1af-2024.11.21.16.31
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <kei.okada@gmail.com>
+Changed-By: Kei Okada <kei.okada@gmail.com>
+Description:
+ ros-one-opencv-apps - opencv_apps provides various nodes that run internally OpenCV's f
+Changes:
+ ros-one-opencv-apps (2.0.2-67-ga6cb1af-2024.11.21.16.31) jammy; urgency=high
+ .
+   * .travis.yml: add noetic test (#108 <https://github.com/ros-perception/opencv_apps/issues/108>)
+ .
+       * support oepncv4 for face detection launch/test files
+       * convert img_gray every loop, this fixes
+         [ERROR] [1597757072.115502734]: Image processing error: Matrix operand is an empty matrix. checkOperandsExist ../modules/core/src/matrix_expressions.cpp 23
+         errors
+       * check CV_VERSION_VERSION > 4
+       * add g++ static to package.xml
+       * use python3 for noetic
+       * .travis.yml : add CHECK_PYTHON3_COMPILE
+       * .travis.yml: add noetic test
+ .
+   * fix travis (#106 <https://github.com/ros-perception/opencv_apps/issues/106>)
+ .
+       * add more package to CATKIN_DEPENDS
+       * add image_view to run_depends
+ .
+   * add hot fix for hydro test (#98 <https://github.com/ros-perception/opencv_apps/issues/98>)
+ .
+       * add doublequote arount $TEST
+       * add hot fix for hydro test
+ .
+   * Improved variable names and comments (#95 <https://github.com/ros-perception/opencv_apps/issues/95>)
+ .
+       * Improved variable names and comments: The comments and variable names were the opposite of what was functionally happening in the code. No functional change to this commit, just better readability and maintainability.
+ .
+   * setup EoL repository (#96 <https://github.com/ros-perception/opencv_apps/issues/96>)
+   * Contributors: Gus Crowards, Kei Okada
+Checksums-Sha1:
+ b78a7307bfc059f7841ad53047cecd624ad237d9 19713948 ros-one-opencv-apps-dbgsym_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.ddeb
+ 1298480cd62f06409d279bdf7366e27f1a04b9ba 31106 ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.buildinfo
+ 63c613174209149cc5b148b716b312c2f33e6903 797620 ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.deb
+Checksums-Sha256:
+ f9701c10dc83a65753ce3330fe1ae1a8946e4aa43f76fea560fede1a044ce0f1 19713948 ros-one-opencv-apps-dbgsym_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.ddeb
+ 1b2f674036aae4f8fb2ca648a52cc76db33033468638acdcc275e938ff33d003 31106 ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.buildinfo
+ d228b35a083cbe03dfe716e083b04786986d1b9161abbaf89e0134abfece0fe2 797620 ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.deb
+Files:
+ 558bbf0b322d5aee855663fe161a459c 19713948 debug optional ros-one-opencv-apps-dbgsym_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.ddeb
+ 929e67ffc03e65fa229439ee16384bc7 31106 misc optional ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.buildinfo
+ ffc43b48db77d3ec8ed9a6085f7eaa8a 797620 misc optional ros-one-opencv-apps_2.0.2-67-ga6cb1af-2024.11.21.16.31_amd64.deb

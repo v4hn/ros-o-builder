@@ -1,0 +1,59 @@
+Format: 1.8
+Date: Wed, 21 Apr 2021 00:00:00 -0000
+Source: ros-one-gazebo-ros
+Binary: ros-one-gazebo-ros
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.9.2-6-g959e7d0-2024.11.21.16.39
+Distribution: jammy
+Urgency: high
+Maintainer: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Changed-By: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Description:
+ ros-one-gazebo-ros - Provides ROS plugins that offer message and service publishers fo
+Changes:
+ ros-one-gazebo-ros (2.9.2-6-g959e7d0-2024.11.21.16.39) jammy; urgency=high
+ .
+   * Only subscribe to /gazebo/performance_metrics when necessary (#1202 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1202>)
+     We are currently subscribing to the /gazebo/performance_metrics topic
+     even if there are no subscribers to the ROS topic forwarding this data.
+     The link_states and model_states topics currently use an advertise
+     mechanism with callbacks when a subscriber connects or disconnects,
+     so I've used that same pattern for the performance_metrics topic.
+     This also helps workaround the deadlock documented in #1175 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1175> and
+     osrf/gazebo#2902 <https://github.com/osrf/gazebo/issues/2902>.
+     This also adds a GAZEBO_ROS_HAS_PERFORMANCE_METRICS
+     macro that reduces duplication of the version checking logic for
+     performance metrics in gazebo and adds fixes some doc-string and
+     typos in existing code
+   * [Noetic] Bridge to republish PerformanceMetrics in ROS (#1145 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1145>)
+     Co-authored-by: Ian Chen <mailto:ichen@osrfoundation.org>
+   * delete request msgs (#1160 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1160>)
+   * gazebo_ros_api_plugin cleanup (#1137 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1137>)
+     Remove an unused overload of publishSimTime and add doxygen
+     for the remaining publishSimTime function.
+     * Remove duplicate code for /clock advertisement
+     The /clock topic is advertised in both loadGazeboRosApiPlugin
+     and advertiseServices. This removes the code from advertiseServices
+     and moves it earlier in loadGazeboRosApiPlugin.
+     Co-authored-by: Alejandro Hernández Cordero <mailto:ahcorde@gmail.com>
+   * colcon.pkg: build gazebo first in colcon workspace (#1135 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1135>)
+     Add a colcon.pkg file to gazebo_dev with gazebo's cmake project
+     name "Gazebo" listed as a dependency to support building
+     gazebo from source in a colcon workspace.
+     * Add colcon.pkg files for other packages
+     Copy colcon.pkg to gazebo_ros, gazebo_plugins, and
+     gazebo_ros_control so that --merge-install won't be required.
+   * Contributors: Alejandro Hernández Cordero, Ian Chen, Steve Peters
+Checksums-Sha1:
+ 4d4053cf3f953edcd227d783942cd026c04539ab 4514004 ros-one-gazebo-ros-dbgsym_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.ddeb
+ 71bc1a1f3d890a448aa9cc5fd7f46a822969772b 38604 ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.buildinfo
+ d23c38c6cedb53807e30872eb94943604194e6b7 310262 ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.deb
+Checksums-Sha256:
+ 930e015c9d41755188fbef4972cc81feb9b2ca60f2cfbcb662a9598a7801a875 4514004 ros-one-gazebo-ros-dbgsym_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.ddeb
+ 41765ea9264aa1dbc0186a3f19cbef7fc0842f03ae5041833d0bd38ec082c1e7 38604 ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.buildinfo
+ 101f51875398ed03a92ff3384bbe2ca58aa0e205e7ae78311a3aa5494d31e9cb 310262 ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.deb
+Files:
+ 6962fbef7c6198dbb523189905fa83e4 4514004 debug optional ros-one-gazebo-ros-dbgsym_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.ddeb
+ 97bd246b0311c6514998cfad89b81f98 38604 misc optional ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.buildinfo
+ 5a52b62f980f74f867c27f12c579b157 310262 misc optional ros-one-gazebo-ros_2.9.2-6-g959e7d0-2024.11.21.16.39_amd64.deb
