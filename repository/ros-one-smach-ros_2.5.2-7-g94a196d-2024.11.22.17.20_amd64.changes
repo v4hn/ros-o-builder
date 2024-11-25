@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 13 Jun 2023 00:00:00 -0000
+Source: ros-one-smach-ros
+Binary: ros-one-smach-ros
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.5.2-7-g94a196d-2024.11.22.17.20
+Distribution: bookworm
+Urgency: high
+Maintainer: Isaac I. Y. Saito <gm130s@gmail.com>
+Changed-By: Isaac I. Y. Saito <gm130s@gmail.com>
+Description:
+ ros-one-smach-ros - The smach_ros package contains extensions for the SMACH library t
+Changes:
+ ros-one-smach-ros (2.5.2-7-g94a196d-2024.11.22.17.20) bookworm; urgency=high
+ .
+   * Fix is_running behaviour in case of exception in the state #50 <https://github.com/ros/executive_smach/issues/50>
+   * Executing an empty Concurrence container hangs forever #51 <https://github.com/ros/executive_smach/issues/51>
+Checksums-Sha1:
+ acf5064245b572c996e76e1bbba718f76aa24626 11593 ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.buildinfo
+ e525171acad1a5996f5cc5dbd6ddd91f08285820 39260 ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.deb
+Checksums-Sha256:
+ 78f7e7acd9980342f8b38ebeeb8741518686c5ad4727b5cc555a6bfd64c624fb 11593 ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.buildinfo
+ 7aa8f74d6063e4891dcd4e1ecfa5af48f35419d6943a82c62e63a1d0462ea638 39260 ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.deb
+Files:
+ 02a7c61bc78e33f07cccd8d7a5995bd8 11593 misc optional ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.buildinfo
+ 22e4ad653cd5b65504cf02bd0f059bd5 39260 misc optional ros-one-smach-ros_2.5.2-7-g94a196d-2024.11.22.17.20_amd64.deb

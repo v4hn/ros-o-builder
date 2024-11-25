@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Tue, 10 Sep 2024 00:00:00 -0000
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library ros-one-ur-client-library-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.4.0-8-gbbac0b2-2024.11.22.14.08
+Distribution: bookworm
+Urgency: high
+Maintainer: Felix Exner <exner@fzi.de>
+Changed-By: Felix Exner <exner@fzi.de>
+Description:
+ ros-one-ur-client-library - Standalone C++ library for accessing Universal Robots interfaces.
+Changes:
+ ros-one-ur-client-library (1.4.0-8-gbbac0b2-2024.11.22.14.08) bookworm; urgency=high
+ .
+   * Ensure that the targets are reachable within the robots limits (#184 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/184>)
+   * Analog domain (#211 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/211>)
+   * Fix clang compilation error (#210 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/210>)
+   * Moved reset of speed slider to correct teardown function, so that it … (#206 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/206>)
+     …resets between each test.
+   * [doc] Fix syntax in example.rst (#207 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/207>)
+   * [doc] Migrate documentation to sphinx (#95 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/95>)
+   * Contributors: Felix Exner, Mads Holm Peters, Remi Siffert, URJala
+Checksums-Sha1:
+ 1aab5df650d68633e9fbe040f329fdccb4cd121f 2883588 ros-one-ur-client-library-dbgsym_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb
+ 0ac66a11742982770af64e1d4aec21e24b0a0a2e 6489 ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.buildinfo
+ 0cb19c654a711080f097c5628c021677c51c35aa 234248 ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb
+Checksums-Sha256:
+ 61a89e377b2b4b46b05286c158389ff0292284a80fd7573f05b4c344fca604f3 2883588 ros-one-ur-client-library-dbgsym_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb
+ 4d16f0acf5f959146123e0e7ce7e08d7a7ce52a5b6153f3ce073812ab4676c81 6489 ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.buildinfo
+ 5fa0f0041c1a66fb5a3a18dfa685344c8330b779264f6ed37fac3030376e48bc 234248 ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb
+Files:
+ be8bca82b5e48641761c501af094c3e8 2883588 debug optional ros-one-ur-client-library-dbgsym_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb
+ 3b51f9daf3861eeb1936aac92360f26b 6489 misc optional ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.buildinfo
+ 74b4e3281e4976b837715750171d0b58 234248 misc optional ros-one-ur-client-library_1.4.0-8-gbbac0b2-2024.11.22.14.08_amd64.deb

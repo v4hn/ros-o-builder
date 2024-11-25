@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2024.11.22.15.27
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2024.11.22.15.27) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ e24a8c5b722bb51ecc3e00327246a825e6e8eab4 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
+ 59b9db9611ef8b8e2666f21ca7be60b7086fb023 15594 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.buildinfo
+ 0c625ec00bbddb2f22a86ca2bac1d614956545a1 61656 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
+Checksums-Sha256:
+ 44dd648ea828089e479daef8ecc9e328c764ed982aefbcf4efe5d80448c037b3 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
+ 3ec9d78a816d98ab4419c1150b58c224623ec174157987185dc2cafdbf18c923 15594 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.buildinfo
+ 2d817bf848339fe95f4f2d633634ff001c7a835d53c77519dfc87f8521068a57 61656 ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
+Files:
+ e464c32fa1b0a0cc041255765e6d7570 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
+ 6a6b94d34143f3d4cf838802272203ac 15594 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.buildinfo
+ a5d05ad4dff68c8541df1379348762e3 61656 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2024.11.22.15.27_amd64.deb
