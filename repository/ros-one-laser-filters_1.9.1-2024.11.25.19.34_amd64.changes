@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Wed, 17 Jul 2024 00:00:00 -0000
+Source: ros-one-laser-filters
+Binary: ros-one-laser-filters ros-one-laser-filters-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.9.1-2024.11.25.19.34
+Distribution: sid
+Urgency: high
+Maintainer: Jon Binney <jon.binney@gmail.com>
+Changed-By: Jon Binney <jon.binney@gmail.com>
+Description:
+ ros-one-laser-filters - Assorted filters designed to operate on 2D planar laser scanners,
+Changes:
+ ros-one-laser-filters (1.9.1-2024.11.25.19.34) sid; urgency=high
+ .
+   * Fix polygon padding on filter load
+   * Added nodelet for scan filtering pipeline
+   * Pass in public node handle from nodelet to allow for correct topic remapping
+   * Do not force obsolete C++11 standard
+   * Boxfilter dynamic reconfigure for noetic devel
+   * Make transform time-out configurable
+   * Do not look for specific time in static filter
+   * Added examples for InterpolationFilter and LaserScanAngularBoundsFilter
+   * Added example config and launch file for scan blob filter
+   * Add static polygon filter
+   * Improve shadov filter and detector performance
+   * Speed up speckle filter implementation
+   * Contributors: Bohdan Yarema, Erwin Bonsma, Giorgos Tsamis, Jon Binney, Lars, Lucas Walter, Michael Ripperger, johntgz, rickvanosch, v4hn
+Checksums-Sha1:
+ 57562dfe84da78c522687ab34a45537072423f18 13981288 ros-one-laser-filters-dbgsym_1.9.1-2024.11.25.19.34_amd64.deb
+ 01563ed8bf2f29fe22583f714d3b94efa7f2e299 17797 ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.buildinfo
+ db677df391dced92b8a99c2faf010cc78edb60d0 557168 ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.deb
+Checksums-Sha256:
+ 70277e5588662a1efe4e0c3364d5ea656b5f990c2b906996222efd4a6850bb76 13981288 ros-one-laser-filters-dbgsym_1.9.1-2024.11.25.19.34_amd64.deb
+ 99e2b9af3ce2c96c60b1a7696d5742a6440f8872ff2076d9f85a86602a0a5f13 17797 ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.buildinfo
+ 6721f43a3f195961aca57195d47772e646abcf2595b231e94fd984d8ed190198 557168 ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.deb
+Files:
+ 397cea594a105d5f61846ee1d59b613e 13981288 debug optional ros-one-laser-filters-dbgsym_1.9.1-2024.11.25.19.34_amd64.deb
+ c0dfd96897f9216f8da2f7c769cfe200 17797 misc optional ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.buildinfo
+ 04d78fdbd08ea1921f81d305edc40687 557168 misc optional ros-one-laser-filters_1.9.1-2024.11.25.19.34_amd64.deb

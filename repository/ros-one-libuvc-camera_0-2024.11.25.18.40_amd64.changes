@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Sat, 20 Feb 2021 00:00:00 -0000
+Source: ros-one-libuvc-camera
+Binary: ros-one-libuvc-camera ros-one-libuvc-camera-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2024.11.25.18.40
+Distribution: sid
+Urgency: high
+Maintainer: Ken Tossell <ken@tossell.net>
+Changed-By: Ken Tossell <ken@tossell.net>
+Description:
+ ros-one-libuvc-camera - USB Video Class camera driver
+Changes:
+ ros-one-libuvc-camera (0-2024.11.25.18.40) sid; urgency=high
+ .
+   * use libuvc-dev for noetic (#70 <https://github.com/ros-drivers/libuvc_ros/issues/70>)
+     * update to package format=3
+   * Add monochrome format support (#54 <https://github.com/ros-drivers/libuvc_ros/issues/54>)
+   * use libuvc timestamp correctly (#53 <https://github.com/ros-drivers/libuvc_ros/issues/53>)
+   * Fix ROS image output for uyvy uvc frame format input (#51 <https://github.com/ros-drivers/libuvc_ros/issues/51>)
+   * Fixed locks so they stay in scope until end of method. (#36 <https://github.com/ros-drivers/libuvc_ros/issues/36>)
+   * Contributors: Jason Mercer, Johann Freymuth, Kei Okada, Ryosuke Tajima, Stefan Kohlbrecher
+Checksums-Sha1:
+ 6497ca16df348f033fc993d96694847267cce2cb 2214180 ros-one-libuvc-camera-dbgsym_0-2024.11.25.18.40_amd64.deb
+ c5f56d890bf8aaa3631a9c470ca40cf2984864fe 20473 ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.buildinfo
+ c7ff8e6f10cb6f2ce3cc2db28ed6d64d5ee0f1d6 137928 ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.deb
+Checksums-Sha256:
+ 58f708fe09fa7a09950b876882e583ffa19eb32cd272d042d61719a025d5f017 2214180 ros-one-libuvc-camera-dbgsym_0-2024.11.25.18.40_amd64.deb
+ 36788b55773d8e1240b03d0dd7473686c09c2f1b697045cc5e722cd794dadfdc 20473 ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.buildinfo
+ a420e138d80dc2bc81db4eee136d6330eddf9b68cddf0d6214c4f71d921b22d1 137928 ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.deb
+Files:
+ abcf07de550eb0a6f44ac40609817984 2214180 debug optional ros-one-libuvc-camera-dbgsym_0-2024.11.25.18.40_amd64.deb
+ e5b7b9bf7e2c3c73ed606d243e3e2795 20473 misc optional ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.buildinfo
+ b1d428bf2f524631c34ca5371701427c 137928 misc optional ros-one-libuvc-camera_0-2024.11.25.18.40_amd64.deb
