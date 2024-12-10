@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter ros-one-robot-self-filter-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.12.10.00.00
+Distribution: sid
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.12.10.00.00) sid; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 0ec2d1632f42e47c010c91a378ec38f233aa7a35 3858204 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb
+ 885f7b15c9d47579c320e7c38f20d091c44709ab 38543 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.buildinfo
+ 69e4bc586a5f6ce81e16963d7be119278a788831 188964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb
+Checksums-Sha256:
+ 042abd11d28502e3a52afcfb9b0a8ab244b688c4ec147f3319b9233fc8c68873 3858204 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb
+ b321885dd821af16700219128e8a3dd2569a0d467f2e8848120f863de0002c4f 38543 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.buildinfo
+ fd722028650a7b8e07e2b5e76538c1ae1096982ab3b2e31e9fd03ee366b4d450 188964 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb
+Files:
+ a5723c3e65f516896df67bb5549776d8 3858204 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb
+ f92d59dceb4c7e14ebf8e30292f35c7b 38543 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.buildinfo
+ 09f8c49123a85893fa81a8af3332462c 188964 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.10.00.00_amd64.deb

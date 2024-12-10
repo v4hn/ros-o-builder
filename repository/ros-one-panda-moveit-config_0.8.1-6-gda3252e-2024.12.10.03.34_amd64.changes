@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 11 Sep 2022 00:00:00 -0000
+Source: ros-one-panda-moveit-config
+Binary: ros-one-panda-moveit-config
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.8.1-6-gda3252e-2024.12.10.03.34
+Distribution: sid
+Urgency: high
+Maintainer: MoveIt maintainer team <moveit_releasers@googlegroups.com>
+Changed-By: MoveIt maintainer team <moveit_releasers@googlegroups.com>
+Description:
+ ros-one-panda-moveit-config - An automatically generated package with all the configuration and
+Changes:
+ ros-one-panda-moveit-config (0.8.1-6-gda3252e-2024.12.10.03.34) sid; urgency=high
+ .
+   * Update to franka_description 0.10.0 (#119 <https://github.com/ros-planning/panda_moveit_config/issues/119>)
+   * Example use of ns parameter in sensors.yaml (#88 <https://github.com/ros-planning/panda_moveit_config/issues/88>)
+   * Drop link8 from ACM as this link doesn't have any collision model anymore
+   * srdf: Use loop macros to reduce code redundancy
+   * Unify calls to xacro
+   * Contributors: Matt Droter, Robert Haschke, Tim Redick
+Checksums-Sha1:
+ a794356a0b942452f49981f1ad134f583bedf5a8 7263 ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.buildinfo
+ 937821dfc7eeb5cdf6b2d60891b9f51697c81988 22792 ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.deb
+Checksums-Sha256:
+ 23e7d3a92b1e2618d4b4646ce9d1c5929e7b6980720fc63bb1d3c2b5dbacc868 7263 ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.buildinfo
+ fe7d7657a573a07d7ef7b706b6d53884c4d749a265f5eee2a53d662f623e5056 22792 ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.deb
+Files:
+ f2706aec75e17a9fa8e8eef38918bcd0 7263 misc optional ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.buildinfo
+ 9f5cd6e617cd459d13c0f3f11d96e39d 22792 misc optional ros-one-panda-moveit-config_0.8.1-6-gda3252e-2024.12.10.03.34_amd64.deb

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 13 Jun 2023 00:00:00 -0000
+Source: ros-one-smach
+Binary: ros-one-smach
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.5.2-7-g94a196d-2024.12.09.22.11
+Distribution: sid
+Urgency: high
+Maintainer: Isaac I. Y. Saito <gm130s@gmail.com>
+Changed-By: Isaac I. Y. Saito <gm130s@gmail.com>
+Description:
+ ros-one-smach - SMACH is a task-level architecture for rapidly creating complex r
+Changes:
+ ros-one-smach (2.5.2-7-g94a196d-2024.12.09.22.11) sid; urgency=high
+ .
+   * Fix outcome_map disambiguation for Concurrence #80 <https://github.com/ros/executive_smach/issues/80>
+   * Fix is_running behaviour in case of exception in the state #50 <https://github.com/ros/executive_smach/issues/50>
+   * Executing an empty Concurrence container hangs forever #51 <https://github.com/ros/executive_smach/issues/51>
+Checksums-Sha1:
+ edf996c61dd734f839f6d5a060b095f7cc5caf0d 7193 ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.buildinfo
+ a9cfa3e101734d5e4ead7e72e340198c6dc35076 47792 ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.deb
+Checksums-Sha256:
+ 3ecd03d31aeb07bc0e881a22f56b3226d7df71eb57cb0284a6f962024f349824 7193 ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.buildinfo
+ 6627cf8fef3735fe37eaf7d0711bb02dbac10ce880ad5cc1e6abac7c0ec1140f 47792 ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.deb
+Files:
+ 3052a8a1b964040ea86b5a1fd2ee86d4 7193 misc optional ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.buildinfo
+ deea635b35fbe68f21db14d755d6176c 47792 misc optional ros-one-smach_2.5.2-7-g94a196d-2024.12.09.22.11_amd64.deb
