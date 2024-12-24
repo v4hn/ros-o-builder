@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 16 May 2024 00:00:00 -0000
+Source: ros-one-pal-statistics
+Binary: ros-one-pal-statistics ros-one-pal-statistics-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.5.2-2-ga5b028b-2024.12.23.18.51
+Distribution: bookworm
+Urgency: high
+Maintainer: victor <victor.lopez@pal-robotics.com>
+Changed-By: victor <victor.lopez@pal-robotics.com>
+Description:
+ ros-one-pal-statistics - The pal_statistics package
+Changes:
+ ros-one-pal-statistics (1.5.2-2-ga5b028b-2024.12.23.18.51) bookworm; urgency=high
+ .
+   * do not rely on extension for std::vector<bool>
+     The standard does not define std::swap() for the bit proxy objects,
+     but defines a static method instead. This broke with clang++ 14.0.6 over
+     here.
+     See here for more details:
+     https://stackoverflow.com/a/58660208/21260084
+   * Contributors: v4hn
+Checksums-Sha1:
+ ab2af157c2790b96c894e8712ec2cd920fdf9677 1910224 ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb
+ dbcbfbb68b4c1cd2a12e122a96b8219a13b1c2c6 18284 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.buildinfo
+ cdf7a96fe800f47c453e9d470eb91471775cd7e5 122000 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb
+Checksums-Sha256:
+ 5ac72f33909d9e5fa29845962178bcd69ae2228e062e3a26477f861a5b4ec264 1910224 ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb
+ 3004622ec38dbe4b0f86e1e8c9f0b31561a8c70fb30bd5e09430be235c79511c 18284 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.buildinfo
+ 9a34f69219dccc4c906f80c3e7e915f7e717089672fe5d9a7cc851b9c1a90d27 122000 ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb
+Files:
+ 3b75f518a12a2cbd4a64fd751305aa98 1910224 debug optional ros-one-pal-statistics-dbgsym_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb
+ 7cc3e74bd909ef7f58f58c23a02fefea 18284 misc optional ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.buildinfo
+ 3b6bce23fe4738b9ba5c05ee63c83fda 122000 misc optional ros-one-pal-statistics_1.5.2-2-ga5b028b-2024.12.23.18.51_amd64.deb

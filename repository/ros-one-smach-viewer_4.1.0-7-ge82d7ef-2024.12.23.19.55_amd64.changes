@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Fri, 24 Feb 2023 00:00:00 -0000
+Source: ros-one-smach-viewer
+Binary: ros-one-smach-viewer
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 4.1.0-7-ge82d7ef-2024.12.23.19.55
+Distribution: bookworm
+Urgency: high
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Changed-By: Jonathan Bohren <jbo@jhu.edu>
+Description:
+ ros-one-smach-viewer - The smach viewer is a GUI that shows the state of hierarchical SM
+Changes:
+ ros-one-smach-viewer (4.1.0-7-ge82d7ef-2024.12.23.19.55) bookworm; urgency=high
+ .
+   * add timestamp in published image (#50 <https://github.com/ros-visualization/executive_smach_visualization/issues/50>)
+ .
+       * some tools, for example jsk_rosbag_tools requries all message have time stamp
+ .
+   * [smach_viewer] remove smach image in /tmp when the node is killed (#48 <https://github.com/ros-visualization/executive_smach_visualization/issues/48>)
+ .
+       * remove smach image in /tmp when the node is killed
+ .
+   * [smach_viewer] add smach_image_publisher.py for headless environment (#46 <https://github.com/ros-visualization/executive_smach_visualization/issues/46>)
+ .
+       * add time stamp in image topics
+       * add compressed image publisher
+       * change file name and set constant image size
+       * check if file is proper
+       * change color in active states
+       * import not local file
+       * add smach_image_publisher.py
+       * split and make SmachViewerBase, utils and text_wrapper
+ .
+   * Contributors: Kei Okada, Shingo Kitagawa
+Checksums-Sha1:
+ 441431e623a22f9f994edaf46978334f6461a738 11611 ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.buildinfo
+ 5b16610de4289e1715abcff386db219f86bc2da5 127804 ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.deb
+Checksums-Sha256:
+ 4a60585d381984a017a12176420482f750d8b135ba7527e9768f69210dfc5a87 11611 ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.buildinfo
+ 94704d64ef9dd66e6290bb913190b40a5240389676c36a862fb1e0324e323a47 127804 ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.deb
+Files:
+ e8d0e29a9b124a4d1ed950e916ace5fb 11611 misc optional ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.buildinfo
+ b8850435d5aca6c218ad92da680321e6 127804 misc optional ros-one-smach-viewer_4.1.0-7-ge82d7ef-2024.12.23.19.55_amd64.deb

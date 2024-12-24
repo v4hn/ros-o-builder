@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 10 Nov 2020 00:00:00 -0000
+Source: ros-one-open-karto
+Binary: ros-one-open-karto ros-one-open-karto-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.2.3-2-g922db50-2024.12.23.19.15
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael Ferguson <mfergs7@gmail.com>
+Changed-By: Michael Ferguson <mfergs7@gmail.com>
+Description:
+ ros-one-open-karto - Catkinized ROS packaging of the OpenKarto library
+Changes:
+ ros-one-open-karto (1.2.3-2-g922db50-2024.12.23.19.15) bookworm; urgency=high
+ .
+   * update destructor to not use c11 feature (#26 <https://github.com/ros-perception/open_karto/issues/26>)
+   * fix parameter passing bug of first link to other robots (#23 <https://github.com/ros-perception/open_karto/issues/23>)
+   * Fix -Wdelete-non-virtual-dtor and -Wreorder warnings (#24 <https://github.com/ros-perception/open_karto/issues/24>)
+   * Contributors: Michael Ferguson, Survy Vaish, Zezhou.Sun
+Checksums-Sha1:
+ 3c4e2a177d8640934df2e123c83521c461fb5fe9 1189400 ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb
+ 8571a1f77c9733005cb48fc855ab0b7c9c7d23b3 15977 ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.buildinfo
+ 2cf9d2ae38068ebd593e5c7bbe386a58bb7ec280 125024 ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb
+Checksums-Sha256:
+ 55c24929034184ea1cbf3de8251b16c3947f58758da37e1bdac3f9cc773fa765 1189400 ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb
+ 434c469ce6e68bea5185ecd3a579117e3286aff9744d47166a2ad493b8f23bca 15977 ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.buildinfo
+ 1e318de89e38a12725f4b2ca379b6e7df426189f63b0be5d8d699302577ca00b 125024 ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb
+Files:
+ 2d60300a39b5f7f8d6a738bde10cdede 1189400 debug optional ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb
+ af19f7506af871e12a9094343cca6c1c 15977 misc optional ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.buildinfo
+ 267cd54b3c3cbfa7639b4e35669191bf 125024 misc optional ros-one-open-karto_1.2.3-2-g922db50-2024.12.23.19.15_amd64.deb

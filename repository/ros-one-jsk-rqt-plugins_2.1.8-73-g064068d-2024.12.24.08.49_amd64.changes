@@ -1,0 +1,51 @@
+Format: 1.8
+Date: Tue, 11 Jan 2022 00:00:00 -0000
+Source: ros-one-jsk-rqt-plugins
+Binary: ros-one-jsk-rqt-plugins
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.1.8-73-g064068d-2024.12.24.08.49
+Distribution: bookworm
+Urgency: high
+Maintainer: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Changed-By: Ryohei Ueda <ueda@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-rqt-plugins - The jsk_rqt_plugins package
+Changes:
+ ros-one-jsk-rqt-plugins (2.1.8-73-g064068d-2024.12.24.08.49) bookworm; urgency=high
+ .
+   * [jsk_interactive_markers][jsk_rqt_plugins] fix yaml load (#818 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/818>)
+   * fix with '2to3 -w -f zip .' (#817 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/817>)
+ .
+       * In python3, sys.maxint changed to sys.maxsize
+       * fix "TypeError: 'dict_keys' object is not subscriptable" error
+         we can fix this by '2to3 -w -f dict', but it will change too many lines, so we do not use this for now....
+       * fix with '2to3 -w -f import .'
+       * fix cStringIO.StringIO -> io.BytesIO, see https://stackoverflow.com/questions/11914472/stringio-in-python3 / https://stackoverflow.com/questions/50797043/string-argument-expected-got-bytes-in-buffer-write
+       * [jsk_rqt_plugins][jsk_rviz_plugins] Fix has_key
+ .
+   * add tabbed_buttuns to rqt_plugin (#813 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/813>)
+   * update .travis to 0.5.21 (#814 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/814>)
+   * Updating the URLs of the jsk_rviz_plugins and jsk_rqt_plugins so the generated README points to working links (closes #805 ). (#806 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/806>)
+   * Support single button setup in ServiceButtons plugin (#798 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/798>)
+ .
+       * *column_indices expects to be an array of integers and the length
+     should be equal or longer than 2.
+     * If column_indices is just an array of a single integer (length is
+     1), do not apply sum with expanding a list argument.
+   * fix for using button_general.py without perspective file (#796 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/796>)
+   * [jsk_rqt_plugins/button_general.py] reset button if SetBool fail (#794 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/794>)
+   * sample_service_button.py support SetBool (#792 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/792>)
+   * add sample_service_radio_buttons script (#789 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/789>)
+   * add sample_service_buttons scriptf (#790 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/790>)
+   * add sample_service_buttons.launch (#791 <https://github.com/jsk-ros-pkg/jsk_visualization/issues/791>)
+   * Contributors: Adi Vardi, Kei Okada, Naoki Hiraoka, Ryohei Ueda, Sam Pfeiffer, Shingo Kitagawa, Yohei Kakiuchi
+Checksums-Sha1:
+ 596d5aaeaac447c101846fbb8b42c5d5ff2922c1 37816 ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.buildinfo
+ 6382243e86a7f4790b11f7571aa44117e1f79bf5 623768 ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.deb
+Checksums-Sha256:
+ 1fa172c0a129c28f636f9d0ffcffad1c02f58d78447ffe4e27bbd28f56e2d013 37816 ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.buildinfo
+ 0d14335b9c4a02c931b55242b9145c7d46212cec58c9db4a8e7c8f0c932c0953 623768 ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.deb
+Files:
+ 6e3ff55d85d550799b5103fd3cb404ce 37816 misc optional ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.buildinfo
+ ca2ac9004cace3d5f110a7fce0fd3f0f 623768 misc optional ros-one-jsk-rqt-plugins_2.1.8-73-g064068d-2024.12.24.08.49_amd64.deb
