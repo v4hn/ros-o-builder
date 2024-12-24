@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Wed, 08 May 2024 00:00:00 -0000
+Source: ros-one-plotjuggler
+Binary: ros-one-plotjuggler ros-one-plotjuggler-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.9.3-1-gb1ad0896-2024.12.23.18.49
+Distribution: sid
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-plotjuggler - PlotJuggler: juggle with data
+Changes:
+ ros-one-plotjuggler (3.9.3-1-gb1ad0896-2024.12.23.18.49) sid; urgency=high
+ .
+   * Save NlohmannParser (JSON) settings (#971 <https://github.com/facontidavide/PlotJuggler/issues/971>)
+   * Fix infinite streaming buffer regression (#953 <https://github.com/facontidavide/PlotJuggler/issues/953>)
+     Co-authored-by: paul <mailto:paul@WorkLaptop>
+   * fix warning and includes
+   * updated fastcdr
+   * Added support for empty messages (#960 <https://github.com/facontidavide/PlotJuggler/issues/960>)
+   * add a parser for the Line Protocol (InfluxDB)
+   * Fixed the value dereference for ULog information messages (#946 <https://github.com/facontidavide/PlotJuggler/issues/946>)
+   * adding pre-commit check in CI
+   * fmt updated to 10.2.1
+   * apply clang format and move PlotJuggler/fmt
+   * moved KissFFT
+   * pre-commit
+   * Contributors: Davide Faconti, Declan Mullen, Jonathan, Michel Jansson, Paul, ubaldot
+Checksums-Sha1:
+ 304fcde66e86f0534a45589081c348ab7033c2df 94292832 ros-one-plotjuggler-dbgsym_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
+ d8d35b1b02d20625985695d404ccf1305701bc0f 21370 ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.buildinfo
+ 625ba77cddec575d4b7295c6ed584697aa9ba5b5 8983264 ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
+Checksums-Sha256:
+ a37bf3dbf03f4da2a485b27a820b1067ebca3119b4b01e56d495bab6882b09c9 94292832 ros-one-plotjuggler-dbgsym_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
+ 186d8611c646ec88481c3b2c70e75131fff83d4ee9612d5964e15d515e3ef080 21370 ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.buildinfo
+ d58e3b4168212bd34bdee1e3e2b1995a001245eb5bed4954392536de3351ab5b 8983264 ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
+Files:
+ e043c1f65dbcfa18fcaa2eb8ef74cb97 94292832 debug optional ros-one-plotjuggler-dbgsym_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
+ f9553d1f3187cb7dae81fda75fa98656 21370 misc optional ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.buildinfo
+ 8d0a4bf97c0b1aeea209bb378b356765 8983264 misc optional ros-one-plotjuggler_3.9.3-1-gb1ad0896-2024.12.23.18.49_amd64.deb
