@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 27 Oct 2023 00:00:00 -0000
+Source: ros-one-controller-manager
+Binary: ros-one-controller-manager
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.20.0-1-g633c374-2024.12.23.19.47
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-controller-manager - The controller manager.
+Changes:
+ ros-one-controller-manager (0.20.0-1-g633c374-2024.12.23.19.47) jammy; urgency=high
+ .
+   * Reorder waiting for services and ros time to speed up controller start (#508 <https://github.com/ros-controls/ros_control/issues/508>)
+   * duplicate controller name in start and stop list will throw error (#506 <https://github.com/ros-controls/ros_control/issues/506>)
+   * Contributors: Bence Magyar, Captain Yoshi, Martin Oehler
+   * Reorder waiting for services and ros time to speed up controller start (#508 <https://github.com/ros-controls/ros_control/issues/508>)
+   * duplicate controller name in start and stop list will throw error (#506 <https://github.com/ros-controls/ros_control/issues/506>)
+   * Contributors: Captain Yoshi, Martin Oehler
+Checksums-Sha1:
+ 565a3bd1b4b8ed8cb2522856967ad1b23c5982b6 1304718 ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2024.12.23.19.47_amd64.ddeb
+ f1138e5e08de0da4a0cf1daf9c56d523d1071bc4 15618 ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.buildinfo
+ 72ff2f8166ee9be2894e0a9ddc413a1d89e47b7d 121254 ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.deb
+Checksums-Sha256:
+ 313d134bc25affb67d1dea1f0a99700b590e8aee9507bcadb8dce7e0581f3269 1304718 ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2024.12.23.19.47_amd64.ddeb
+ 3b8a43eb6b5cba08c1b3584e548837a96d29d293ff300f51e9a1256c65664062 15618 ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.buildinfo
+ f97e4feb090ce4dd33a95bf9119398e1cae0798de2785d514663be5c36a1569c 121254 ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.deb
+Files:
+ 567de4d3bab21c06541a771dfb4f2644 1304718 debug optional ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2024.12.23.19.47_amd64.ddeb
+ dc71739c7bca61c00a707c0d5d32251c 15618 misc optional ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.buildinfo
+ 786ffea644826f0c54be1481927e2d39 121254 misc optional ros-one-controller-manager_0.20.0-1-g633c374-2024.12.23.19.47_amd64.deb

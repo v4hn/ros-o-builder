@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Thu, 17 Feb 2022 00:00:00 -0000
+Source: ros-one-joint-state-publisher
+Binary: ros-one-joint-state-publisher
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.15.1-2-g7cb7069-2024.12.23.18.37
+Distribution: jammy
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-joint-state-publisher - This package contains a tool for setting and publishing joint sta
+Changes:
+ ros-one-joint-state-publisher (1.15.1-2-g7cb7069-2024.12.23.18.37) jammy; urgency=high
+ .
+   * The jsp can now use the zeros parameter when joint names have slashes. (#60 <https://github.com/ros/joint_state_publisher/issues/60>)
+   * Removed reference to removed use_gui parameter (#69 <https://github.com/ros/joint_state_publisher/issues/69>)
+   * Use setuptools instead of distutils (#45 <https://github.com/ros/joint_state_publisher/issues/45>)
+   * Contributors: Lucas Walter, Matthew Elwin, Shane Loretz
+Checksums-Sha1:
+ 545a23df2d1df893b713a16643bb5a78a0330279 8227 ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.buildinfo
+ 09c6cb887c9e8c8e55d24baf32ef405abfbbf03e 14098 ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.deb
+Checksums-Sha256:
+ 0eacf62904d392835c700e9377cb748ae4cbc0470da2a6ce9139c27e0bb35374 8227 ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.buildinfo
+ f590d0c7a66986349466d54946620c693e77c555faa080e88a70b34a2bf0e0c8 14098 ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.deb
+Files:
+ d23336a223d476c07d5b7a7a1bb33e2d 8227 misc optional ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.buildinfo
+ 40185e55c4698dceae45906a3304663a 14098 misc optional ros-one-joint-state-publisher_1.15.1-2-g7cb7069-2024.12.23.18.37_amd64.deb

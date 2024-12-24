@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.12.23.20.28
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.12.23.20.28) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 4a2f56a8b499b1fe4629b5b14091d4b2f69b3e1e 3659976 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.ddeb
+ 101ea9ac0584c19c5c642549af78d23d7ae199d5 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.buildinfo
+ 1c544d72aea997c200313cbb36143758be5ffff5 188544 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.deb
+Checksums-Sha256:
+ 6feadfe877a3052930fe027acda7f1727aa82e2e071df0592a9788a7bc165b60 3659976 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.ddeb
+ 92aba3dc24b62be0c5930d17b02d3f3912654b653042d729be8598005018503d 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.buildinfo
+ 271fa4c9ea341f93533ab9d4108ad04eeca980ed9ebb52e7e65c38b75212be85 188544 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.deb
+Files:
+ d62ff784126692a72caf93818fdbae2e 3659976 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.ddeb
+ 77ca794ddcc0aef27754b462722a03db 38949 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.buildinfo
+ 5eeb00615b22ef75b14964e928de5eb9 188544 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.23.20.28_amd64.deb
