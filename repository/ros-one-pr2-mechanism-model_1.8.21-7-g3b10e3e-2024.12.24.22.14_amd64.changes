@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Wed, 22 Jun 2022 00:00:00 -0000
+Source: ros-one-pr2-mechanism-model
+Binary: ros-one-pr2-mechanism-model
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.8.21-7-g3b10e3e-2024.12.24.22.14
+Distribution: jammy
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-pr2-mechanism-model - This package contains the robot model that is used by the realtim
+Changes:
+ ros-one-pr2-mechanism-model (1.8.21-7-g3b10e3e-2024.12.24.22.14) jammy; urgency=high
+ .
+   * set catkin_add_gtest within CATKIN_ENABLE_TESTING (#346 <https://github.com/pr2/pr2_mechanism/issues/346>)
+     fix with CATKIN_ENABLE_TESTING=OFF
+   * Parse old & new transmission style (#345 <https://github.com/pr2/pr2_mechanism/issues/345>)
+     The transmission style changed in ros_control, to make them compatible
+     we adjusted them in the pr2_description
+     This came up when we integrated the shadow-hand- and the PR2-model
+   * Contributors: Kei Okada, Michael Görner
+Checksums-Sha1:
+ bf7cb926d64cc7c3491dff787f2bb185e00bdfe8 2543860 ros-one-pr2-mechanism-model-dbgsym_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.ddeb
+ 9492d3950f6dce9de245ad65e062044b809664b4 15635 ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.buildinfo
+ fa3e4edae5ecf215d220af03a043a9e69b2daafd 126400 ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.deb
+Checksums-Sha256:
+ 5c2f8448c4cb2de669fef511dac464590154a5272eb39af7bebeb536eff62be1 2543860 ros-one-pr2-mechanism-model-dbgsym_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.ddeb
+ 57fbf3f2bcd41ffdb7be52c15d048728adbd3435318d41184fd8820903daaebb 15635 ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.buildinfo
+ 845bc1aa5e269404918ebd08251ecee42dc04a97c3f639ce1482f8795efb15e3 126400 ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.deb
+Files:
+ 93805a463a11b70e4cd5f79d3bc68b57 2543860 debug optional ros-one-pr2-mechanism-model-dbgsym_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.ddeb
+ 48fc6e8b60b2aaf9c9450c14756f95d1 15635 misc optional ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.buildinfo
+ 5a0471e57a00434bf271e1a98b02c374 126400 misc optional ros-one-pr2-mechanism-model_1.8.21-7-g3b10e3e-2024.12.24.22.14_amd64.deb

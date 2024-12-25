@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 11 May 2021 00:00:00 -0000
+Source: ros-one-image-cb-detector
+Binary: ros-one-image-cb-detector
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0-2024.12.24.20.30
+Distribution: jammy
+Urgency: high
+Maintainer: David Feil-Seifer <david.feilseifer@gmail.com>
+Changed-By: David Feil-Seifer <david.feilseifer@gmail.com>
+Description:
+ ros-one-image-cb-detector - Provide a node that extracts checkerboard corners from ROS images
+Changes:
+ ros-one-image-cb-detector (0-2024.12.24.20.30) jammy; urgency=high
+ .
+   * Merge pull request #47 <https://github.com/ros-perception/calibration/issues/47> from PR2-prime/noetic-devel
+     Noetic devel
+   * fixes for compiler warnings CMP0048 and CMP0046
+   * update maintainer for most packages; first try at setup for travis testing (#46 <https://github.com/ros-perception/calibration/issues/46>)
+   * fixed unit tests for compile/testing in focal/noetic/opencv4
+   * Contributors: Dave Feil-Seifer
+Checksums-Sha1:
+ 0c04c4b7a092c30f2b196a516700b7023102e1f7 3490582 ros-one-image-cb-detector-dbgsym_0-2024.12.24.20.30_amd64.ddeb
+ 0e1afaefc084200f09085bd6ad9bcc07cebd946a 30372 ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.buildinfo
+ 952d479be1742b6c7d799c7a2071ea39123c3392 252074 ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.deb
+Checksums-Sha256:
+ cce25a939ee2e716eec9bdd4777479dec25a0ddf71f162a56ce9cb2a23bfc036 3490582 ros-one-image-cb-detector-dbgsym_0-2024.12.24.20.30_amd64.ddeb
+ c08cd1358bc68c3ec90c91e13a7d827a4ac8a059cc243fc7b23d240e224f19d2 30372 ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.buildinfo
+ a86a6e9e297f072c21066a451b88422b83d4c6f1d44ed3707cdf0597da66d1e9 252074 ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.deb
+Files:
+ f0a2cd8e0eac80cc128b00e708efd9bb 3490582 debug optional ros-one-image-cb-detector-dbgsym_0-2024.12.24.20.30_amd64.ddeb
+ 835ed1a72d8e5db208b5bcc56bd40576 30372 misc optional ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.buildinfo
+ cda5587e640b1790f329fb75aff34b7b 252074 misc optional ros-one-image-cb-detector_0-2024.12.24.20.30_amd64.deb

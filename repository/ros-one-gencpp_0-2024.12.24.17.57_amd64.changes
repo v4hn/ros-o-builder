@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 26 Sep 2022 00:00:00 -0000
+Source: ros-one-gencpp
+Binary: ros-one-gencpp
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0-2024.12.24.17.57
+Distribution: jammy
+Urgency: high
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Changed-By: Dirk Thomas <dthomas@osrfoundation.org>
+Description:
+ ros-one-gencpp - C++ ROS message and service generators.
+Changes:
+ ros-one-gencpp (0-2024.12.24.17.57) jammy; urgency=high
+ .
+   * Fix usage of deprecated std::allocator::rebind (#51 <https://github.com/ros/gencpp/issues/51>)
+   * Remove unnecessary map include (#48 <https://github.com/ros/gencpp/issues/48>)
+   * Contributors: Markus Vieth, poggenhans
+Checksums-Sha1:
+ 8a51a58ea55d7361363a739c6fb530ce83a0e729 8144 ros-one-gencpp_0-2024.12.24.17.57_amd64.buildinfo
+ bf575b019ee95048d564006287b6f8976440d098 15988 ros-one-gencpp_0-2024.12.24.17.57_amd64.deb
+Checksums-Sha256:
+ 1b70c1383944734b036a4d28bc5e22577f3a1046a04ed00ba09d14c40c63c47f 8144 ros-one-gencpp_0-2024.12.24.17.57_amd64.buildinfo
+ 1a6bf6541332c8f1a733ab6398b23d91132008f66fdca5baee5c9e07c7f57607 15988 ros-one-gencpp_0-2024.12.24.17.57_amd64.deb
+Files:
+ f32702a7454d763bfa33fc135def47f2 8144 misc optional ros-one-gencpp_0-2024.12.24.17.57_amd64.buildinfo
+ 429b3e5e304b6c3b7d23b3a84a47bca5 15988 misc optional ros-one-gencpp_0-2024.12.24.17.57_amd64.deb

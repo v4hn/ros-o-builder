@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Tue, 23 Mar 2021 00:00:00 -0000
+Source: ros-one-prosilica-camera
+Binary: ros-one-prosilica-camera
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.9.5-2-g14080aa-2024.12.24.21.45
+Distribution: jammy
+Urgency: high
+Maintainer: Austin Hendrix <namniart@gmail.com>
+Changed-By: Austin Hendrix <namniart@gmail.com>
+Description:
+ ros-one-prosilica-camera - A ROS driver node for AVT/Prosilica Gigabit Ethernet (GigE) camer
+Changes:
+ ros-one-prosilica-camera (1.9.5-2-g14080aa-2024.12.24.21.45) jammy; urgency=high
+ .
+   * Merge pull request #19 <https://github.com/ros-drivers/prosilica_driver/issues/19> from PR2-prime/noetic-devel
+     updated settings for noetic compile
+   * updated settings for noetic compile
+   * Merge pull request #15 <https://github.com/ros-drivers/prosilica_driver/issues/15> from jnmacdnld/kinetic-devel
+     Remove driver_base dependency as this package is deprecated
+   * Remove driver_base dependency as this package is deprecated
+     Only the SensorLevels message is needed from this package, which is now
+     provided by dynamic_reconfigure
+   * Merge pull request #11 <https://github.com/ros-drivers/prosilica_driver/issues/11> from athackst/nodelet
+     updated prosilica driver to be a nodelet
+   * returned guard on frameDone in prosilica.cpp
+   * fixed install in CMakeLists.txt
+   * Update prosilica_nodelet.cpp
+     updated comments
+   * updated prosilica driver to be a nodelet, added diagnostic messages, and autoadjust streambytespersecond when multiple cameras are connected (can be overwritten by reconfigure)
+   * Contributors: Allison Thackston, Austin, Dave Feil-Seifer, John Macdonald, athackst
+Checksums-Sha1:
+ ec6404400a321a2ee4d40cdd00cbd90e6201bc8b 3182216 ros-one-prosilica-camera-dbgsym_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.ddeb
+ 10d031dcf0d841c2d0758bf45b5670d78bed78fa 21323 ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.buildinfo
+ c0379b912ae5aabef29860a09fd1aebc6515f04a 209528 ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.deb
+Checksums-Sha256:
+ 6e32e3e91ff758d760738977e2ceee04026f1b21132d1a6f5d014bef69e3940c 3182216 ros-one-prosilica-camera-dbgsym_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.ddeb
+ 6a20d8b065f22bb68e10e8da4b1167bcb6a85537eef59cba82d11da3cccc4b87 21323 ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.buildinfo
+ e609e7f1151eedebb96fbfb6ae71a80cc7469b98332c92d387bda888efa43b4a 209528 ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.deb
+Files:
+ 7ed880f84def1f66d699d130a27fb141 3182216 debug optional ros-one-prosilica-camera-dbgsym_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.ddeb
+ f2470c3ba7a03db3cbe7dfb1437eff2e 21323 misc optional ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.buildinfo
+ 28b03010a50314f11e33b3ac4610cc4b 209528 misc optional ros-one-prosilica-camera_1.9.5-2-g14080aa-2024.12.24.21.45_amd64.deb

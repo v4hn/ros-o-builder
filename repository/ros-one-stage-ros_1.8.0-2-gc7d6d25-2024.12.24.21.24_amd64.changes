@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sun, 30 Apr 2017 00:00:00 -0000
+Source: ros-one-stage-ros
+Binary: ros-one-stage-ros
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.8.0-2-gc7d6d25-2024.12.24.21.24
+Distribution: jammy
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-stage-ros - This package provides ROS specific hooks for stage
+Changes:
+ ros-one-stage-ros (1.8.0-2-gc7d6d25-2024.12.24.21.24) jammy; urgency=high
+ .
+   * Now uses Stage's native event loop properly and added reassuring startup output.
+   * Added a GUI section so that the world starts in a good place.
+   * Fixed issue such that ranger intensity values are no longer clipped to 256
+     See: #31 <https://github.com/ros-simulation/stage_ros/issues/31>
+   * Contributors: Richard Vaughan, Shane Loretz, William Woodall, gerkey
+Checksums-Sha1:
+ d7137b1a82da4cae1ced67b802f7b5a5fe651289 726820 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.ddeb
+ af5d751fecb374787e219f9d127bdbf863792323 28663 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.buildinfo
+ cefcd4fc9c5fca8ade964ad826b1bef5e854b229 102070 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.deb
+Checksums-Sha256:
+ fe7be1784bb2bf11f83d36f4af942ba242055f5c6d1f204b5accfc5da723801e 726820 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.ddeb
+ 1bebf178dc65778d0b2306e372a42bd3a25e5cb955238e2116cc3fd65efafcc7 28663 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.buildinfo
+ bea8f19cf31f671b94f27e797fda9fc6c07a3de829d9382a59e4cf77de626742 102070 ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.deb
+Files:
+ 489eb22400bd81b6d57a98a230949e82 726820 debug optional ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.ddeb
+ 7e21f9edcb14c88ca82f97eb7fe48deb 28663 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.buildinfo
+ 733f088a1b164aa7da1d274940978bee 102070 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2024.12.24.21.24_amd64.deb

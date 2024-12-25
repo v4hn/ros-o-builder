@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.22.0-2024.12.24.22.01
+Distribution: jammy
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2024.12.24.22.01) jammy; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ d65d512ad4a2e342df7a21a6c5220bdd6b50c9bd 583798 ros-one-joint-state-controller-dbgsym_0.22.0-2024.12.24.22.01_amd64.ddeb
+ d1046f3f104b96737a5d2601126e5e3e65ea43f9 15095 ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.buildinfo
+ 1d6c746bcb01c76cd3738c62788506c303ca7cb2 51786 ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.deb
+Checksums-Sha256:
+ 8c24bc3fb1a94e8a3292dc7a8eeabb9e8a51a1b7dfac480a7e3fc62c4e811ad1 583798 ros-one-joint-state-controller-dbgsym_0.22.0-2024.12.24.22.01_amd64.ddeb
+ 6226af1fa362283e986b100b47ba01235e11e331809ee08d56f522bf7d553787 15095 ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.buildinfo
+ 58e05c36ad4b91faf17649e81ecd94643ab252eca811c058e48ecce7520f601e 51786 ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.deb
+Files:
+ e26b6953f2b08ef72629b4e957a0f43f 583798 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2024.12.24.22.01_amd64.ddeb
+ 4f77f04c7e29a0660ce45ce4e399c04e 15095 misc optional ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.buildinfo
+ b818fa202012641b3ac01dff5b615c8d 51786 misc optional ros-one-joint-state-controller_0.22.0-2024.12.24.22.01_amd64.deb

@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2024.12.24.22.06
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2024.12.24.22.06) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ e8477eab1ad6f81b4a9990dc36d8261dadfedc0c 3659692 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.ddeb
+ 3b0f1810f19fbe97c1d6cbba55447e6755efae53 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.buildinfo
+ a986313d952349ed9a41c02aa7497ff863925b8e 188550 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.deb
+Checksums-Sha256:
+ fa5744c425662855bb532d62081bac7ab3c8333718befd796e3be98ebe8615be 3659692 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.ddeb
+ a6e5bfe9f35a6e0134788109ad36b7ddf125c52d97081acae981c394c04569cf 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.buildinfo
+ 0cf4725d589620f3269ee3d0893f7a32c5735d03713e7fca8e993947da580881 188550 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.deb
+Files:
+ f5c16f37175fe4a93a1a9ba5a857a4e2 3659692 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.ddeb
+ bac95a059b2e59f93c2f204010da2f98 38949 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.buildinfo
+ 185824f3d348e6055fb341ebcca53caa 188550 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2024.12.24.22.06_amd64.deb
