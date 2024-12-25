@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 05 Mar 2021 00:00:00 -0000
+Source: ros-one-fetch-depth-layer
+Binary: ros-one-fetch-depth-layer ros-one-fetch-depth-layer-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.9.1-5-g11f8df9-2024.12.25.01.52
+Distribution: sid
+Urgency: high
+Maintainer: Carl Saldanha <csaldanha@fetchrobotics.com>
+Changed-By: Carl Saldanha <csaldanha@fetchrobotics.com>
+Description:
+ ros-one-fetch-depth-layer - The fetch_depth_layer package
+Changes:
+ ros-one-fetch-depth-layer (0.9.1-5-g11f8df9-2024.12.25.01.52) sid; urgency=high
+ .
+   * Fixup: Remove version specification for OpenCV
+     Debian Buster only has 3.x available, while Ubuntu 20.04 has 4.x available.
+     This package works with either.
+   * Contributors: Eric Relson
+Checksums-Sha1:
+ 1449806c7c0c9b3a14c4218d12f2bc25d4d43e42 1471112 ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb
+ 7f3457140aa33cd0eb19d3872370bea12515acce 31743 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.buildinfo
+ bf220cbbe8bda82cb7c1f7b675e90db47bd83032 95044 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb
+Checksums-Sha256:
+ 63fa7c7db9e0d60a91f4474f8f8c28fea5bd0d862a3bb3a0454b8c3eab0fe6a9 1471112 ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb
+ 0f41cb7d081302560095e5863841eb5a4c2aaf04dd384ca1b5fefe2b185fb8cc 31743 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.buildinfo
+ 9dd42ce0d28846c9f33c6b4a280016c86402b9f20132196a31684443f7400c05 95044 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb
+Files:
+ 7d0faa7f971ce6baa4ecc779fb9e43ae 1471112 debug optional ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb
+ c1a372d7b49f3a33f29c432588863b54 31743 misc optional ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.buildinfo
+ 6dc420b401452fc9f703bc1b60408be8 95044 misc optional ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2024.12.25.01.52_amd64.deb

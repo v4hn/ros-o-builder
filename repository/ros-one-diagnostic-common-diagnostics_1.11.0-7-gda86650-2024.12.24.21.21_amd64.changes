@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 31 Dec 2021 00:00:00 -0000
+Source: ros-one-diagnostic-common-diagnostics
+Binary: ros-one-diagnostic-common-diagnostics
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.11.0-7-gda86650-2024.12.24.21.21
+Distribution: sid
+Urgency: high
+Maintainer: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Changed-By: Guglielmo Gemignani <guglielmo.gemignani@gmail.com>
+Description:
+ ros-one-diagnostic-common-diagnostics - diagnostic_common_diagnostics
+Changes:
+ ros-one-diagnostic-common-diagnostics (1.11.0-7-gda86650-2024.12.24.21.21) sid; urgency=high
+ .
+   * Added ram monitor (#222 <https://github.com/ros/diagnostics/issues/222>)
+   * Improve sensor output processing in sensors_monitor.py (#223 <https://github.com/ros/diagnostics/issues/223>)
+   * Decode bytes into string in ntp_monitor (#220 <https://github.com/ros/diagnostics/issues/220>)
+     Co-authored-by: Maxime Noizet <mailto:maxime.noizet@etu.utc.fr>
+   * Add missing lm-sensors dependency for sensors_monitor.py (#198 <https://github.com/ros/diagnostics/issues/198>)
+     Co-authored-by: Vincent Rousseau <mailto:vincent.rousseau@sabi-agri.com>
+   * Contributors: Noizet Maxime, Rousseau Vincent, chrisflesher
+Checksums-Sha1:
+ 2a1555d6e96246842b9363034a51eba98f6ad7a7 11824 ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.buildinfo
+ f09c93900abb28c0a804fd06f917011806b19481 33440 ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.deb
+Checksums-Sha256:
+ 20f051ce021a68b8c5826e4c1e2a7ff9eb98882fe1ea52b3b436811c97f0f419 11824 ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.buildinfo
+ 3377e283513103d1dea626421d9fe7c5730291f1e814ff1d6a3567eee0bcb034 33440 ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.deb
+Files:
+ 0ab9243dd7f09d44b1b473e2372df2ab 11824 misc optional ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.buildinfo
+ 6b34ee23c7384abe0053dd7cbf9c0c53 33440 misc optional ros-one-diagnostic-common-diagnostics_1.11.0-7-gda86650-2024.12.24.21.21_amd64.deb
