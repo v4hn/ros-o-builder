@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Wed, 13 Nov 2024 00:00:00 -0000
+Source: ros-one-nodelet
+Binary: ros-one-nodelet ros-one-nodelet-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.11.1-2024.12.24.20.35
+Distribution: bookworm
+Urgency: high
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Changed-By: Geoffrey Biggs <geoff@openrobotics.org>
+Description:
+ ros-one-nodelet - The nodelet package is designed to provide a way to run multiple
+Changes:
+ ros-one-nodelet (1.11.1-2024.12.24.20.35) bookworm; urgency=high
+ .
+   * Do not subscribe to /clock` from nodelet load (#120 <https://github.com/ros/nodelet_core/issues/120>)
+   * Contributors: Martin Pecka
+Checksums-Sha1:
+ 61d4e153d8de1e3ea4de17a44f6882e2acff5781 2107276 ros-one-nodelet-dbgsym_1.11.1-2024.12.24.20.35_amd64.deb
+ 1ec6077052201e36635bdf3ac8e0fbd0374a0012 12549 ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.buildinfo
+ 57fb153739363667ed7fce072b9b78b2606ceb9d 159900 ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.deb
+Checksums-Sha256:
+ b7a4ffb12d128f468bd8de014aca94d94e3e66c92800b6a809309a061ba4e7ab 2107276 ros-one-nodelet-dbgsym_1.11.1-2024.12.24.20.35_amd64.deb
+ 79ad86da6de48c7507a389e44f2a27290bc363118d55b0a445aa8d78fc6d9ff9 12549 ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.buildinfo
+ fe594b1b6c786cf9a41591d6884f04d662c931995ca10938e686d6768c7247fb 159900 ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.deb
+Files:
+ 7d923db27abab5202bc68ea6467640a1 2107276 debug optional ros-one-nodelet-dbgsym_1.11.1-2024.12.24.20.35_amd64.deb
+ 6da2fc79a8e74548ba3a84c4201046e8 12549 misc optional ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.buildinfo
+ 74e64689998e473fc7dfa3adfad25a4f 159900 misc optional ros-one-nodelet_1.11.1-2024.12.24.20.35_amd64.deb
