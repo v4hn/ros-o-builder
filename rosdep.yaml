@@ -93,10 +93,10 @@ python-tabulate-pip:
 #  ubuntu:
 #    - catkin-tools
 
-# these break in roseus in ubuntu jammy, so we have to rely on TORK's released catkin packages
-#euslisp:
-#  ubuntu:
-#    - euslisp-dev
-#jskeus:
-#  ubuntu:
-#    - jskeus-dev
+# use system packages
+euslisp:
+  ubuntu:
+    - euslisp-dev
+jskeus:
+  ubuntu:
+    - jskeus-dev
