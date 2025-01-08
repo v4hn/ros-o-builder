@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-rosping
+Binary: ros-one-rosping
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.01.23
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-rosping - rosping is the tool to send ICMP ECHO_REQUEST to network hosts wh
+Changes:
+ ros-one-rosping (2.1.29-2025.01.08.01.23) jammy; urgency=high
+ .
+   * Adding CMAKE_EXE_LINKER_FLAGS in CMakeLists.txt to fix missing library issue while executing rosping. (#380 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/380>)
+   * Contributors: Jules Berhault
+Checksums-Sha1:
+ 2b1f2a281e7537f4af55b2a039c092c411f19df1 741712 ros-one-rosping-dbgsym_2.1.29-2025.01.08.01.23_amd64.ddeb
+ bcc29478fae0416ac00b4bc64e3cd652f6ea05cb 13360 ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.buildinfo
+ f2e657b4d6ef1ac1f3d11d1423729b131740ef27 64622 ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.deb
+Checksums-Sha256:
+ 5fab440910931150cfeaf729b599257243594ff9e0765e0084ad6a9aa958272b 741712 ros-one-rosping-dbgsym_2.1.29-2025.01.08.01.23_amd64.ddeb
+ d8e5468de490d6176e472eb35b9e1f0476f2a3044fee5a85021d1526342a5741 13360 ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.buildinfo
+ ee077170d7e282fa3688da8a754510ccd0f6853cf79a7df1689b6b678b55174c 64622 ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.deb
+Files:
+ 4a8b52c9fcbab342bdae00fb0c35a6fd 741712 debug optional ros-one-rosping-dbgsym_2.1.29-2025.01.08.01.23_amd64.ddeb
+ e46538228fef35853459593faadd722b 13360 misc optional ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.buildinfo
+ 7edbfbe14c656969fc28f9c5c2609acf 64622 misc optional ros-one-rosping_2.1.29-2025.01.08.01.23_amd64.deb

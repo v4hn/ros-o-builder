@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-zdepth
+Binary: ros-one-zdepth
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.01.56
+Distribution: jammy
+Urgency: high
+Maintainer: Shingo Kitagawa <shingogo.5511@gmail.com>
+Changed-By: Shingo Kitagawa <shingogo.5511@gmail.com>
+Description:
+ ros-one-zdepth - The zdepth package
+Changes:
+ ros-one-zdepth (2.1.29-2025.01.08.01.56) jammy; urgency=high
+ .
+   * Support ros-o / Ubuntu 22.04 (#512 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/512>)
+ .
+       * [zdepth] [ros-o] only use STREQUAL to compare ROS_DISTRO in cmake
+       * [zdepth][sesame_ros] specify ROS_DISTRO for ros-obese
+       * [zdepth] add comment
+       * [zdepth] fix build hunging issue 2nd+ time
+ .
+   * Contributors: Yoshiki Obinata
+Checksums-Sha1:
+ a3f3a7ace4127ad84d08843c88c7ed6b3a23dee4 1079520 ros-one-zdepth-dbgsym_2.1.29-2025.01.08.01.56_amd64.ddeb
+ 52abb8253e64768d72128beb96fc70cc52f8f87f 8579 ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.buildinfo
+ 225a05248e50d0e7354484e77898713f3f3896b1 593524 ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.deb
+Checksums-Sha256:
+ 994e09cd8508d79e967ec63f663f739623a29736539db759871228bb0301b83a 1079520 ros-one-zdepth-dbgsym_2.1.29-2025.01.08.01.56_amd64.ddeb
+ 18cffc28dd9e10d8a1bcd8a337e384f30935c4a20a199c361af55d8431613620 8579 ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.buildinfo
+ 82a184f5d2afc694445cbfa95c799e260a61f2c661f312f3143a58fe9ccc9012 593524 ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.deb
+Files:
+ e9eaf7a9a9b3ea7a5062765c7bc5541d 1079520 debug optional ros-one-zdepth-dbgsym_2.1.29-2025.01.08.01.56_amd64.ddeb
+ 3eae728b5e7dd39111a64261a50348c4 8579 misc optional ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.buildinfo
+ 1a8b700906ae429a28d6533ed348963c 593524 misc optional ros-one-zdepth_2.1.29-2025.01.08.01.56_amd64.deb

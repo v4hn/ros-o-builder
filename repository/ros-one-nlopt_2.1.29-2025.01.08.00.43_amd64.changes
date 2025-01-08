@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-nlopt
+Binary: ros-one-nlopt
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.00.43
+Distribution: jammy
+Urgency: high
+Maintainer: Noda Shintaro <s-noda@jsk.t.u-tokyo.ac.jp>
+Changed-By: Noda Shintaro <s-noda@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-nlopt - nlopt
+Changes:
+ ros-one-nlopt (2.1.29-2025.01.08.00.43) jammy; urgency=high
+ .
+   * nlopt: use nlopt-2.3.tar.gz in 3rdparty/nlopt/build, instead of downloading from mit.edu (#514 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/514>)
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 05dae67ef24bb952fb8d78fb75edee5067823932 19682 ros-one-nlopt-dbgsym_2.1.29-2025.01.08.00.43_amd64.ddeb
+ e6e0d5c8182153d46795ca088e23572eead463f7 11449 ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.buildinfo
+ b7fa4082dac220d03fa92e4f5dfa599ab1481c53 178618 ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.deb
+Checksums-Sha256:
+ b19dd16d73e0546412f50e77c53b33f747bf843cfadbc3da1620fc779ad47902 19682 ros-one-nlopt-dbgsym_2.1.29-2025.01.08.00.43_amd64.ddeb
+ 41efd7aeaf300c5eb15b477b5ea8d3fb803a878224b8140ddef6e31aca90fca9 11449 ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.buildinfo
+ f8768782f9895574fcb8dc443a9fc264e8932f083421cadd49f67d785a130a68 178618 ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.deb
+Files:
+ 8dc0a387320a8323727a5ad563799dc0 19682 debug optional ros-one-nlopt-dbgsym_2.1.29-2025.01.08.00.43_amd64.ddeb
+ da20b1ffefd39c756482ed6f9e0d96ba 11449 misc optional ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.buildinfo
+ 3fd0239555f81c8db9ebb0080b638c8b 178618 misc optional ros-one-nlopt_2.1.29-2025.01.08.00.43_amd64.deb

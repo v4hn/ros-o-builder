@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 23 Feb 2021 00:00:00 -0000
+Source: ros-one-ros-control-boilerplate
+Binary: ros-one-ros-control-boilerplate
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0-2025.01.07.17.36
+Distribution: jammy
+Urgency: high
+Maintainer: Dave Coleman <davetcoleman@gmail.com>
+Changed-By: Dave Coleman <davetcoleman@gmail.com>
+Description:
+ ros-one-ros-control-boilerplate - Simple simulation interface and template for setting up a hardwar
+Changes:
+ ros-one-ros-control-boilerplate (0-2025.01.07.17.36) jammy; urgency=high
+ .
+   * Increase required cmake version to fix CMake CMP0048 warning
+   * Replaced boost with std shared_ptr
+   * Make NodeHandle a const reference
+   * test_trajectory:  Read joints list from trajectory controller params
+   * Increase num AsyncSpinners where control loops are instantiated
+   * Contributors: AndyZe, Dave Coleman, John Morris, Ramon Wijnands, Robert Wilbrandt, Tim Übelhör
+Checksums-Sha1:
+ 7c3db4cc21a85b747cdd6019c56cd0c28a00a93e 7693990 ros-one-ros-control-boilerplate-dbgsym_0-2025.01.07.17.36_amd64.ddeb
+ ad05b48915cde284dddd763243f54aa01b13f352 17816 ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.buildinfo
+ 0973ec0a0effa53731978dfd3bb29a3ba9d37a55 323932 ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.deb
+Checksums-Sha256:
+ b5f6292a31f2bf7013b6c3abde92b153d35e0d0bfd7bba175fda33282f216019 7693990 ros-one-ros-control-boilerplate-dbgsym_0-2025.01.07.17.36_amd64.ddeb
+ c0a459524427ed153bc5328c01abc1c7c8438b1e3591237cff5b22d4f30e6238 17816 ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.buildinfo
+ e76e10a337220f96519b4744a1ea484a40c135aad3234ba841edce677b561b77 323932 ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.deb
+Files:
+ 8ed388e2e1ac73d17524f5007701b59e 7693990 debug optional ros-one-ros-control-boilerplate-dbgsym_0-2025.01.07.17.36_amd64.ddeb
+ c2970b14fe0f89573daf80ad16b67903 17816 misc optional ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.buildinfo
+ a4066667778e46eda65138d833091ea8 323932 misc optional ros-one-ros-control-boilerplate_0-2025.01.07.17.36_amd64.deb

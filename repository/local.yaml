@@ -1,0 +1,2362 @@
+catkin:
+  ubuntu:
+    - catkin
+    - libgtest-dev
+    - libgmock-dev
+collada_parser:
+  ubuntu:
+    - libcollada-parser-dev
+collada_urdf:
+  ubuntu:
+    - libcollada-urdf-dev
+octomap:
+  ubuntu:
+    - liboctomap-dev
+python3-catkin-pkg-modules:
+  ubuntu:
+    - python3-catkin-pkg
+python3-rosdep:
+  ubuntu:
+    - python3-rosdep2
+python3-rosdep-modules:
+  ubuntu:
+    - python3-rosdep2
+python3-rospkg-modules:
+  ubuntu:
+    - python3-rospkg
+orocos_kdl:
+  ubuntu:
+    - liborocos-kdl-dev
+libdlib:
+  ubuntu:
+    - libdlib-dev
+libuvc:
+  ubuntu:
+    - libuvc-dev
+python-imaging:
+  ubuntu:
+    - python3-pil
+python:
+  ubuntu:
+    - python3
+python_orocos_kdl:
+  ubuntu:
+    - python3-pykdl
+python-freezegun-pip:
+  ubuntu:
+    - python3-freezegun
+freezegun:
+  ubuntu:
+    - python3-freezegun
+python-serial:
+  ubuntu:
+    - python3-serial
+python-sphinx:
+  ubuntu:
+    - python3-sphinx
+python-statsd:
+  ubuntu:
+    - python3-statsd
+cython:
+  ubuntu:
+    - cython3
+bfl:
+  ubuntu:
+    - liborocos-bfl-dev
+# this package does not exist (and shouldn't, because it was moved to moveit-resources)
+# but it's still referenced as conflicting with moveit_resources
+prbt_ikfast_manipulator_plugin:
+  ubuntu:
+    - ros-one-prbt-ikfast-manipulator-plugin
+# this package is not available in the default ubuntu repositories due to licensing issues
+# rosdep still needs to resolve it when building warehouse_ros_mongo
+mongodb:
+  ubuntu: []
+
+# The deb builder does not resolve pip dependencies, so we have to ignore them where there is no apt package
+python-chainer-pip:
+  ubuntu: []
+python-fcn-pip:
+  ubuntu: []
+python-gdown-pip:
+  ubuntu: []
+python-pygithub3:
+  ubuntu: []
+python-slacker-cli:
+  ubuntu: []
+python-tabulate-pip:
+  ubuntu:
+    - python3-tabulate
+
+# does not exist in ubuntu jammy yet, only added there in noble
+#python3-catkin-tools:
+#  ubuntu:
+#    - catkin-tools
+
+# these break in roseus in ubuntu jammy, so we have to rely on TORK's released catkin packages
+#euslisp:
+#  ubuntu:
+#    - euslisp-dev
+#jskeus:
+#  ubuntu:
+#    - jskeus-dev
+
+genmsg:
+  ubuntu:
+  - ros-one-genmsg
+gencpp:
+  ubuntu:
+  - ros-one-gencpp
+geneus:
+  ubuntu:
+  - ros-one-geneus
+genlisp:
+  ubuntu:
+  - ros-one-genlisp
+gennodejs:
+  ubuntu:
+  - ros-one-gennodejs
+genpy:
+  ubuntu:
+  - ros-one-genpy
+actionlib_tools:
+  ubuntu:
+  - ros-one-actionlib-tools
+allocators:
+  ubuntu:
+  - ros-one-allocators
+apriltag:
+  ubuntu:
+  - ros-one-apriltag
+audio_common:
+  ubuntu:
+  - ros-one-audio-common
+axis_description:
+  ubuntu:
+  - ros-one-axis-description
+baldor:
+  ubuntu:
+  - ros-one-baldor
+baxter_common:
+  ubuntu:
+  - ros-one-baxter-common
+baxter_description:
+  ubuntu:
+  - ros-one-baxter-description
+bond_core:
+  ubuntu:
+  - ros-one-bond-core
+calibration:
+  ubuntu:
+  - ros-one-calibration
+calibration_launch:
+  ubuntu:
+  - ros-one-calibration-launch
+calibration_setup_helper:
+  ubuntu:
+  - ros-one-calibration-setup-helper
+chaplus_ros:
+  ubuntu:
+  - ros-one-chaplus-ros
+cmake_modules:
+  ubuntu:
+  - ros-one-cmake-modules
+class_loader:
+  ubuntu:
+  - ros-one-class-loader
+code_coverage:
+  ubuntu:
+  - ros-one-code-coverage
+common_msgs:
+  ubuntu:
+  - ros-one-common-msgs
+common_tutorials:
+  ubuntu:
+  - ros-one-common-tutorials
+convex_decomposition:
+  ubuntu:
+  - ros-one-convex-decomposition
+cpp_common:
+  ubuntu:
+  - ros-one-cpp-common
+criutils:
+  ubuntu:
+  - ros-one-criutils
+desktop:
+  ubuntu:
+  - ros-one-desktop
+desktop_full:
+  ubuntu:
+  - ros-one-desktop-full
+diagnostics:
+  ubuntu:
+  - ros-one-diagnostics
+driver_common:
+  ubuntu:
+  - ros-one-driver-common
+dynamixel_driver:
+  ubuntu:
+  - ros-one-dynamixel-driver
+dynamixel_motor:
+  ubuntu:
+  - ros-one-dynamixel-motor
+dynamixel_tutorials:
+  ubuntu:
+  - ros-one-dynamixel-tutorials
+eigen_stl_containers:
+  ubuntu:
+  - ros-one-eigen-stl-containers
+eigenpy:
+  ubuntu:
+  - ros-one-eigenpy
+eml:
+  ubuntu:
+  - ros-one-eml
+executive_smach:
+  ubuntu:
+  - ros-one-executive-smach
+executive_smach_visualization:
+  ubuntu:
+  - ros-one-executive-smach-visualization
+fake_joint:
+  ubuntu:
+  - ros-one-fake-joint
+fetch_calibration:
+  ubuntu:
+  - ros-one-fetch-calibration
+fetch_description:
+  ubuntu:
+  - ros-one-fetch-description
+fetch_maps:
+  ubuntu:
+  - ros-one-fetch-maps
+fetch_ros:
+  ubuntu:
+  - ros-one-fetch-ros
+franka_ros:
+  ubuntu:
+  - ros-one-franka-ros
+freenect_launch:
+  ubuntu:
+  - ros-one-freenect-launch
+freenect_stack:
+  ubuntu:
+  - ros-one-freenect-stack
+gazebo_dev:
+  ubuntu:
+  - ros-one-gazebo-dev
+gazebo_ros_pkgs:
+  ubuntu:
+  - ros-one-gazebo-ros-pkgs
+geographic_info:
+  ubuntu:
+  - ros-one-geographic-info
+geometry:
+  ubuntu:
+  - ros-one-geometry
+geometry2:
+  ubuntu:
+  - ros-one-geometry2
+geometry_tutorials:
+  ubuntu:
+  - ros-one-geometry-tutorials
+gl_dependency:
+  ubuntu:
+  - ros-one-gl-dependency
+google_cloud_texttospeech:
+  ubuntu:
+  - ros-one-google-cloud-texttospeech
+hpp-fcl:
+  ubuntu:
+  - ros-one-hpp-fcl
+image_common:
+  ubuntu:
+  - ros-one-image-common
+image_pipeline:
+  ubuntu:
+  - ros-one-image-pipeline
+image_transport_plugins:
+  ubuntu:
+  - ros-one-image-transport-plugins
+imu_monitor:
+  ubuntu:
+  - ros-one-imu-monitor
+industrial_core:
+  ubuntu:
+  - ros-one-industrial-core
+industrial_deprecated:
+  ubuntu:
+  - ros-one-industrial-deprecated
+influxdb_store:
+  ubuntu:
+  - ros-one-influxdb-store
+ivcon:
+  ubuntu:
+  - ros-one-ivcon
+joint_state_publisher_gui:
+  ubuntu:
+  - ros-one-joint-state-publisher-gui
+joy_teleop:
+  ubuntu:
+  - ros-one-joy-teleop
+joystick_drivers:
+  ubuntu:
+  - ros-one-joystick-drivers
+jsk_3rdparty:
+  ubuntu:
+  - ros-one-jsk-3rdparty
+jsk_common:
+  ubuntu:
+  - ros-one-jsk-common
+jsk_common_msgs:
+  ubuntu:
+  - ros-one-jsk-common-msgs
+jsk_recognition:
+  ubuntu:
+  - ros-one-jsk-recognition
+jsk_roseus:
+  ubuntu:
+  - ros-one-jsk-roseus
+jsk_visualization:
+  ubuntu:
+  - ros-one-jsk-visualization
+key_teleop:
+  ubuntu:
+  - ros-one-key-teleop
+laser_filtering:
+  ubuntu:
+  - ros-one-laser-filtering
+laser_pipeline:
+  ubuntu:
+  - ros-one-laser-pipeline
+librealsense2:
+  ubuntu:
+  - ros-one-librealsense2
+libuvc_ros:
+  ubuntu:
+  - ros-one-libuvc-ros
+mavlink:
+  ubuntu:
+  - ros-one-mavlink
+media_export:
+  ubuntu:
+  - ros-one-media-export
+message_generation:
+  ubuntu:
+  - ros-one-message-generation
+dynamixel_controllers:
+  ubuntu:
+  - ros-one-dynamixel-controllers
+message_runtime:
+  ubuntu:
+  - ros-one-message-runtime
+mk:
+  ubuntu:
+  - ros-one-mk
+mouse_teleop:
+  ubuntu:
+  - ros-one-mouse-teleop
+moveit:
+  ubuntu:
+  - ros-one-moveit
+moveit_planners:
+  ubuntu:
+  - ros-one-moveit-planners
+moveit_plugins:
+  ubuntu:
+  - ros-one-moveit-plugins
+moveit_python:
+  ubuntu:
+  - ros-one-moveit-python
+moveit_resources:
+  ubuntu:
+  - ros-one-moveit-resources
+moveit_resources_dual_panda_moveit_config:
+  ubuntu:
+  - ros-one-moveit-resources-dual-panda-moveit-config
+moveit_resources_fanuc_description:
+  ubuntu:
+  - ros-one-moveit-resources-fanuc-description
+moveit_resources_fanuc_moveit_config:
+  ubuntu:
+  - ros-one-moveit-resources-fanuc-moveit-config
+moveit_resources_panda_moveit_config:
+  ubuntu:
+  - ros-one-moveit-resources-panda-moveit-config
+moveit_resources_pr2_description:
+  ubuntu:
+  - ros-one-moveit-resources-pr2-description
+moveit_resources_prbt_moveit_config:
+  ubuntu:
+  - ros-one-moveit-resources-prbt-moveit-config
+moveit_resources_prbt_pg70_support:
+  ubuntu:
+  - ros-one-moveit-resources-prbt-pg70-support
+moveit_resources_prbt_support:
+  ubuntu:
+  - ros-one-moveit-resources-prbt-support
+moveit_ros:
+  ubuntu:
+  - ros-one-moveit-ros
+moveit_runtime:
+  ubuntu:
+  - ros-one-moveit-runtime
+multisense:
+  ubuntu:
+  - ros-one-multisense
+multisense_description:
+  ubuntu:
+  - ros-one-multisense-description
+navigation:
+  ubuntu:
+  - ros-one-navigation
+nodelet_core:
+  ubuntu:
+  - ros-one-nodelet-core
+octomap_mapping:
+  ubuntu:
+  - ros-one-octomap-mapping
+ompl:
+  ubuntu:
+  - ros-one-ompl
+opencv_tests:
+  ubuntu:
+  - ros-one-opencv-tests
+openslam_gmapping:
+  ubuntu:
+  - ros-one-openslam-gmapping
+osqp:
+  ubuntu:
+  - ros-one-osqp
+panda_moveit_config:
+  ubuntu:
+  - ros-one-panda-moveit-config
+people:
+  ubuntu:
+  - ros-one-people
+perception:
+  ubuntu:
+  - ros-one-perception
+perception_pcl:
+  ubuntu:
+  - ros-one-perception-pcl
+plotjuggler:
+  ubuntu:
+  - ros-one-plotjuggler
+pr2_common:
+  ubuntu:
+  - ros-one-pr2-common
+pr2_controllers:
+  ubuntu:
+  - ros-one-pr2-controllers
+pr2_dashboard_aggregator:
+  ubuntu:
+  - ros-one-pr2-dashboard-aggregator
+pr2_ethercat_drivers:
+  ubuntu:
+  - ros-one-pr2-ethercat-drivers
+pr2_kinematics:
+  ubuntu:
+  - ros-one-pr2-kinematics
+pr2_machine:
+  ubuntu:
+  - ros-one-pr2-machine
+pr2_mechanism:
+  ubuntu:
+  - ros-one-pr2-mechanism
+pr2_power_drivers:
+  ubuntu:
+  - ros-one-pr2-power-drivers
+pr2_robot:
+  ubuntu:
+  - ros-one-pr2-robot
+prosilica_gige_sdk:
+  ubuntu:
+  - ros-one-prosilica-gige-sdk
+pybind11_catkin:
+  ubuntu:
+  - ros-one-pybind11-catkin
+qb_device:
+  ubuntu:
+  - ros-one-qb-device
+qb_device_bringup:
+  ubuntu:
+  - ros-one-qb-device-bringup
+qb_device_description:
+  ubuntu:
+  - ros-one-qb-device-description
+qb_hand:
+  ubuntu:
+  - ros-one-qb-hand
+qb_hand_control:
+  ubuntu:
+  - ros-one-qb-hand-control
+qb_hand_description:
+  ubuntu:
+  - ros-one-qb-hand-description
+qt_dotgraph:
+  ubuntu:
+  - ros-one-qt-dotgraph
+qt_gui:
+  ubuntu:
+  - ros-one-qt-gui
+qt_gui_app:
+  ubuntu:
+  - ros-one-qt-gui-app
+qt_gui_core:
+  ubuntu:
+  - ros-one-qt-gui-core
+qt_gui_py_common:
+  ubuntu:
+  - ros-one-qt-gui-py-common
+qwt_dependency:
+  ubuntu:
+  - ros-one-qwt-dependency
+random_numbers:
+  ubuntu:
+  - ros-one-random-numbers
+rethink_ee_description:
+  ubuntu:
+  - ros-one-rethink-ee-description
+robot:
+  ubuntu:
+  - ros-one-robot
+ros:
+  ubuntu:
+  - ros-one-ros
+ros_base:
+  ubuntu:
+  - ros-one-ros-base
+ros_comm:
+  ubuntu:
+  - ros-one-ros-comm
+ros_control:
+  ubuntu:
+  - ros-one-ros-control
+ros_controllers:
+  ubuntu:
+  - ros-one-ros-controllers
+ros_controllers_cartesian:
+  ubuntu:
+  - ros-one-ros-controllers-cartesian
+ros_core:
+  ubuntu:
+  - ros-one-ros-core
+ros_emacs_utils:
+  ubuntu:
+  - ros-one-ros-emacs-utils
+ros_environment:
+  ubuntu:
+  - ros-one-ros-environment
+ros_industrial_cmake_boilerplate:
+  ubuntu:
+  - ros-one-ros-industrial-cmake-boilerplate
+opw_kinematics:
+  ubuntu:
+  - ros-one-opw-kinematics
+ros_numpy:
+  ubuntu:
+  - ros-one-ros-numpy
+ros_realtime:
+  ubuntu:
+  - ros-one-ros-realtime
+ros_tutorials:
+  ubuntu:
+  - ros-one-ros-tutorials
+rosapi:
+  ubuntu:
+  - ros-one-rosapi
+rosatomic:
+  ubuntu:
+  - ros-one-rosatomic
+rosbag_migration_rule:
+  ubuntu:
+  - ros-one-rosbag-migration-rule
+rosbash:
+  ubuntu:
+  - ros-one-rosbash
+rosboost_cfg:
+  ubuntu:
+  - ros-one-rosboost-cfg
+rosbridge_suite:
+  ubuntu:
+  - ros-one-rosbridge-suite
+rosbuild:
+  ubuntu:
+  - ros-one-rosbuild
+rosclean:
+  ubuntu:
+  - ros-one-rosclean
+roscpp_core:
+  ubuntu:
+  - ros-one-roscpp-core
+roscpp_traits:
+  ubuntu:
+  - ros-one-roscpp-traits
+roscreate:
+  ubuntu:
+  - ros-one-roscreate
+rosdiagnostic:
+  ubuntu:
+  - ros-one-rosdiagnostic
+rosdoc_lite:
+  ubuntu:
+  - ros-one-rosdoc-lite
+rosemacs:
+  ubuntu:
+  - ros-one-rosemacs
+rosgraph:
+  ubuntu:
+  - ros-one-rosgraph
+roslang:
+  ubuntu:
+  - ros-one-roslang
+roslint:
+  ubuntu:
+  - ros-one-roslint
+catkin_virtualenv:
+  ubuntu:
+  - ros-one-catkin-virtualenv
+roslisp:
+  ubuntu:
+  - ros-one-roslisp
+roslisp_repl:
+  ubuntu:
+  - ros-one-roslisp-repl
+rosmake:
+  ubuntu:
+  - ros-one-rosmake
+rosmaster:
+  ubuntu:
+  - ros-one-rosmaster
+rospack:
+  ubuntu:
+  - ros-one-rospack
+rosparam:
+  ubuntu:
+  - ros-one-rosparam
+rospy:
+  ubuntu:
+  - ros-one-rospy
+rosservice:
+  ubuntu:
+  - ros-one-rosservice
+rostime:
+  ubuntu:
+  - ros-one-rostime
+roscpp_serialization:
+  ubuntu:
+  - ros-one-roscpp-serialization
+python_qt_binding:
+  ubuntu:
+  - ros-one-python-qt-binding
+roslaunch:
+  ubuntu:
+  - ros-one-roslaunch
+rosunit:
+  ubuntu:
+  - ros-one-rosunit
+rqt:
+  ubuntu:
+  - ros-one-rqt
+rqt_action:
+  ubuntu:
+  - ros-one-rqt-action
+rqt_bag:
+  ubuntu:
+  - ros-one-rqt-bag
+rqt_bag_plugins:
+  ubuntu:
+  - ros-one-rqt-bag-plugins
+rqt_common_plugins:
+  ubuntu:
+  - ros-one-rqt-common-plugins
+rqt_console:
+  ubuntu:
+  - ros-one-rqt-console
+rqt_controller_manager:
+  ubuntu:
+  - ros-one-rqt-controller-manager
+rqt_dep:
+  ubuntu:
+  - ros-one-rqt-dep
+rqt_graph:
+  ubuntu:
+  - ros-one-rqt-graph
+rqt_gui:
+  ubuntu:
+  - ros-one-rqt-gui
+rqt_joint_trajectory_controller:
+  ubuntu:
+  - ros-one-rqt-joint-trajectory-controller
+rqt_logger_level:
+  ubuntu:
+  - ros-one-rqt-logger-level
+rqt_moveit:
+  ubuntu:
+  - ros-one-rqt-moveit
+rqt_msg:
+  ubuntu:
+  - ros-one-rqt-msg
+rqt_nav_view:
+  ubuntu:
+  - ros-one-rqt-nav-view
+rqt_plot:
+  ubuntu:
+  - ros-one-rqt-plot
+rqt_pose_view:
+  ubuntu:
+  - ros-one-rqt-pose-view
+rqt_publisher:
+  ubuntu:
+  - ros-one-rqt-publisher
+rqt_py_console:
+  ubuntu:
+  - ros-one-rqt-py-console
+rqt_robot_dashboard:
+  ubuntu:
+  - ros-one-rqt-robot-dashboard
+rqt_robot_monitor:
+  ubuntu:
+  - ros-one-rqt-robot-monitor
+rqt_robot_plugins:
+  ubuntu:
+  - ros-one-rqt-robot-plugins
+rqt_robot_steering:
+  ubuntu:
+  - ros-one-rqt-robot-steering
+rqt_runtime_monitor:
+  ubuntu:
+  - ros-one-rqt-runtime-monitor
+rqt_service_caller:
+  ubuntu:
+  - ros-one-rqt-service-caller
+rqt_shell:
+  ubuntu:
+  - ros-one-rqt-shell
+rqt_srv:
+  ubuntu:
+  - ros-one-rqt-srv
+rqt_tf_tree:
+  ubuntu:
+  - ros-one-rqt-tf-tree
+rqt_top:
+  ubuntu:
+  - ros-one-rqt-top
+rqt_topic:
+  ubuntu:
+  - ros-one-rqt-topic
+rqt_web:
+  ubuntu:
+  - ros-one-rqt-web
+ruckig:
+  ubuntu:
+  - ros-one-ruckig
+scaled_controllers:
+  ubuntu:
+  - ros-one-scaled-controllers
+setup_files:
+  ubuntu:
+  - ros-one-setup-files
+assimp_devel:
+  ubuntu:
+  - ros-one-assimp-devel
+behaviortree_cpp:
+  ubuntu:
+  - ros-one-behaviortree-cpp
+euslisp:
+  ubuntu:
+  - ros-one-euslisp
+jskeus:
+  ubuntu:
+  - ros-one-jskeus
+lpg_planner:
+  ubuntu:
+  - ros-one-lpg-planner
+nlopt:
+  ubuntu:
+  - ros-one-nlopt
+pinocchio:
+  ubuntu:
+  - ros-one-pinocchio
+libfranka:
+  ubuntu:
+  - ros-one-libfranka
+pr2_description:
+  ubuntu:
+  - ros-one-pr2-description
+roslib:
+  ubuntu:
+  - ros-one-roslib
+angles:
+  ubuntu:
+  - ros-one-angles
+ff:
+  ubuntu:
+  - ros-one-ff
+ffha:
+  ubuntu:
+  - ros-one-ffha
+franka_description:
+  ubuntu:
+  - ros-one-franka-description
+julius:
+  ubuntu:
+  - ros-one-julius
+libmavconn:
+  ubuntu:
+  - ros-one-libmavconn
+libsiftfast:
+  ubuntu:
+  - ros-one-libsiftfast
+realsense2_description:
+  ubuntu:
+  - ros-one-realsense2-description
+rosconsole:
+  ubuntu:
+  - ros-one-rosconsole
+lockfree:
+  ubuntu:
+  - ros-one-lockfree
+pluginlib:
+  ubuntu:
+  - ros-one-pluginlib
+qt_gui_cpp:
+  ubuntu:
+  - ros-one-qt-gui-cpp
+resource_retriever:
+  ubuntu:
+  - ros-one-resource-retriever
+rosconsole_bridge:
+  ubuntu:
+  - ros-one-rosconsole-bridge
+roslz4:
+  ubuntu:
+  - ros-one-roslz4
+rostest:
+  ubuntu:
+  - ros-one-rostest
+simulators:
+  ubuntu:
+  - ros-one-simulators
+slam_gmapping:
+  ubuntu:
+  - ros-one-slam-gmapping
+slic:
+  ubuntu:
+  - ros-one-slic
+slime_ros:
+  ubuntu:
+  - ros-one-slime-ros
+slime_wrapper:
+  ubuntu:
+  - ros-one-slime-wrapper
+smach:
+  ubuntu:
+  - ros-one-smach
+smclib:
+  ubuntu:
+  - ros-one-smclib
+soem:
+  ubuntu:
+  - ros-one-soem
+stage:
+  ubuntu:
+  - ros-one-stage
+std_msgs:
+  ubuntu:
+  - ros-one-std-msgs
+actionlib_msgs:
+  ubuntu:
+  - ros-one-actionlib-msgs
+audio_common_msgs:
+  ubuntu:
+  - ros-one-audio-common-msgs
+baxter_maintenance_msgs:
+  ubuntu:
+  - ros-one-baxter-maintenance-msgs
+bond:
+  ubuntu:
+  - ros-one-bond
+controller_manager_msgs:
+  ubuntu:
+  - ros-one-controller-manager-msgs
+diagnostic_msgs:
+  ubuntu:
+  - ros-one-diagnostic-msgs
+dynamixel_msgs:
+  ubuntu:
+  - ros-one-dynamixel-msgs
+four_wheel_steering_msgs:
+  ubuntu:
+  - ros-one-four-wheel-steering-msgs
+geometry_msgs:
+  ubuntu:
+  - ros-one-geometry-msgs
+cartesian_control_msgs:
+  ubuntu:
+  - ros-one-cartesian-control-msgs
+eigen_conversions:
+  ubuntu:
+  - ros-one-eigen-conversions
+graph_msgs:
+  ubuntu:
+  - ros-one-graph-msgs
+jsk_footstep_msgs:
+  ubuntu:
+  - ros-one-jsk-footstep-msgs
+jsk_hark_msgs:
+  ubuntu:
+  - ros-one-jsk-hark-msgs
+kdl_conversions:
+  ubuntu:
+  - ros-one-kdl-conversions
+move_base_msgs:
+  ubuntu:
+  - ros-one-move-base-msgs
+nav_msgs:
+  ubuntu:
+  - ros-one-nav-msgs
+octomap_msgs:
+  ubuntu:
+  - ros-one-octomap-msgs
+people_msgs:
+  ubuntu:
+  - ros-one-people-msgs
+plotjuggler_msgs:
+  ubuntu:
+  - ros-one-plotjuggler-msgs
+pr2_mechanism_msgs:
+  ubuntu:
+  - ros-one-pr2-mechanism-msgs
+pr2_msgs:
+  ubuntu:
+  - ros-one-pr2-msgs
+qb_device_msgs:
+  ubuntu:
+  - ros-one-qb-device-msgs
+rosbridge_msgs:
+  ubuntu:
+  - ros-one-rosbridge-msgs
+rosgraph_msgs:
+  ubuntu:
+  - ros-one-rosgraph-msgs
+rosbag_snapshot_msgs:
+  ubuntu:
+  - ros-one-rosbag-snapshot-msgs
+rqt_py_common:
+  ubuntu:
+  - ros-one-rqt-py-common
+shape_msgs:
+  ubuntu:
+  - ros-one-shape-msgs
+smach_msgs:
+  ubuntu:
+  - ros-one-smach-msgs
+speech_recognition_msgs:
+  ubuntu:
+  - ros-one-speech-recognition-msgs
+std_srvs:
+  ubuntu:
+  - ros-one-std-srvs
+qb_device_srvs:
+  ubuntu:
+  - ros-one-qb-device-srvs
+teleop_tools:
+  ubuntu:
+  - ros-one-teleop-tools
+teleop_twist_keyboard:
+  ubuntu:
+  - ros-one-teleop-twist-keyboard
+test_roslib_comm:
+  ubuntu:
+  - ros-one-test-roslib-comm
+tf2_msgs:
+  ubuntu:
+  - ros-one-tf2-msgs
+tf2:
+  ubuntu:
+  - ros-one-tf2
+tf2_bullet:
+  ubuntu:
+  - ros-one-tf2-bullet
+tf2_eigen:
+  ubuntu:
+  - ros-one-tf2-eigen
+trac_ik:
+  ubuntu:
+  - ros-one-trac-ik
+trajectory_msgs:
+  ubuntu:
+  - ros-one-trajectory-msgs
+control_msgs:
+  ubuntu:
+  - ros-one-control-msgs
+industrial_msgs:
+  ubuntu:
+  - ros-one-industrial-msgs
+pr2_controllers_msgs:
+  ubuntu:
+  - ros-one-pr2-controllers-msgs
+teleop_tools_msgs:
+  ubuntu:
+  - ros-one-teleop-tools-msgs
+unique_identifier:
+  ubuntu:
+  - ros-one-unique-identifier
+universal_robots:
+  ubuntu:
+  - ros-one-universal-robots
+ur_client_library:
+  ubuntu:
+  - ros-one-ur-client-library
+ur_dashboard_msgs:
+  ubuntu:
+  - ros-one-ur-dashboard-msgs
+ur_msgs:
+  ubuntu:
+  - ros-one-ur-msgs
+urdf_parser_plugin:
+  ubuntu:
+  - ros-one-urdf-parser-plugin
+urdf_sim_tutorial:
+  ubuntu:
+  - ros-one-urdf-sim-tutorial
+urdfdom_py:
+  ubuntu:
+  - ros-one-urdfdom-py
+urg_c:
+  ubuntu:
+  - ros-one-urg-c
+uuid_msgs:
+  ubuntu:
+  - ros-one-uuid-msgs
+geographic_msgs:
+  ubuntu:
+  - ros-one-geographic-msgs
+view_controller_msgs:
+  ubuntu:
+  - ros-one-view-controller-msgs
+vision_opencv:
+  ubuntu:
+  - ros-one-vision-opencv
+visualization_msgs:
+  ubuntu:
+  - ros-one-visualization-msgs
+geometric_shapes:
+  ubuntu:
+  - ros-one-geometric-shapes
+visualization_tutorials:
+  ubuntu:
+  - ros-one-visualization-tutorials
+viz:
+  ubuntu:
+  - ros-one-viz
+webkit_dependency:
+  ubuntu:
+  - ros-one-webkit-dependency
+webrtcvad_ros:
+  ubuntu:
+  - ros-one-webrtcvad-ros
+wge100_driver:
+  ubuntu:
+  - ros-one-wge100-driver
+wifi_ddwrt:
+  ubuntu:
+  - ros-one-wifi-ddwrt
+wu_ros_tools:
+  ubuntu:
+  - ros-one-wu-ros-tools
+xmlrpcpp:
+  ubuntu:
+  - ros-one-xmlrpcpp
+roscpp:
+  ubuntu:
+  - ros-one-roscpp
+audio_capture:
+  ubuntu:
+  - ros-one-audio-capture
+audio_play:
+  ubuntu:
+  - ros-one-audio-play
+backward_ros:
+  ubuntu:
+  - ros-one-backward-ros
+bayesian_belief_networks:
+  ubuntu:
+  - ros-one-bayesian-belief-networks
+bondcpp:
+  ubuntu:
+  - ros-one-bondcpp
+bondpy:
+  ubuntu:
+  - ros-one-bondpy
+ethercat_grant:
+  ubuntu:
+  - ros-one-ethercat-grant
+hardware_interface:
+  ubuntu:
+  - ros-one-hardware-interface
+cartesian_interface:
+  ubuntu:
+  - ros-one-cartesian-interface
+combined_robot_hw:
+  ubuntu:
+  - ros-one-combined-robot-hw
+controller_interface:
+  ubuntu:
+  - ros-one-controller-interface
+industrial_robot_status_interface:
+  ubuntu:
+  - ros-one-industrial-robot-status-interface
+kalman_filter:
+  ubuntu:
+  - ros-one-kalman-filter
+ml_classifiers:
+  ubuntu:
+  - ros-one-ml-classifiers
+nodelet:
+  ubuntu:
+  - ros-one-nodelet
+nodelet_tutorial_math:
+  ubuntu:
+  - ros-one-nodelet-tutorial-math
+pal_statistics_msgs:
+  ubuntu:
+  - ros-one-pal-statistics-msgs
+pluginlib_tutorials:
+  ubuntu:
+  - ros-one-pluginlib-tutorials
+pr2_computer_monitor:
+  ubuntu:
+  - ros-one-pr2-computer-monitor
+pr2_hardware_interface:
+  ubuntu:
+  - ros-one-pr2-hardware-interface
+qb_device_utils:
+  ubuntu:
+  - ros-one-qb-device-utils
+qb_device_driver:
+  ubuntu:
+  - ros-one-qb-device-driver
+ros_type_introspection:
+  ubuntu:
+  - ros-one-ros-type-introspection
+roscpp_tutorials:
+  ubuntu:
+  - ros-one-roscpp-tutorials
+rosout:
+  ubuntu:
+  - ros-one-rosout
+aques_talk:
+  ubuntu:
+  - ros-one-aques-talk
+boost_sml:
+  ubuntu:
+  - ros-one-boost-sml
+camera_calibration:
+  ubuntu:
+  - ros-one-camera-calibration
+diagnostic_aggregator:
+  ubuntu:
+  - ros-one-diagnostic-aggregator
+diagnostic_updater:
+  ubuntu:
+  - ros-one-diagnostic-updater
+diagnostic_common_diagnostics:
+  ubuntu:
+  - ros-one-diagnostic-common-diagnostics
+dialogflow_task_executive:
+  ubuntu:
+  - ros-one-dialogflow-task-executive
+downward:
+  ubuntu:
+  - ros-one-downward
+dynamic_reconfigure:
+  ubuntu:
+  - ros-one-dynamic-reconfigure
+fetch_navigation:
+  ubuntu:
+  - ros-one-fetch-navigation
+filters:
+  ubuntu:
+  - ros-one-filters
+fingertip_pressure:
+  ubuntu:
+  - ros-one-fingertip-pressure
+gdrive_ros:
+  ubuntu:
+  - ros-one-gdrive-ros
+google_chat_ros:
+  ubuntu:
+  - ros-one-google-chat-ros
+handeye:
+  ubuntu:
+  - ros-one-handeye
+industrial_robot_simulator:
+  ubuntu:
+  - ros-one-industrial-robot-simulator
+joint_state_publisher:
+  ubuntu:
+  - ros-one-joint-state-publisher
+jsk_tools:
+  ubuntu:
+  - ros-one-jsk-tools
+julius_ros:
+  ubuntu:
+  - ros-one-julius-ros
+kdl_parser_py:
+  ubuntu:
+  - ros-one-kdl-parser-py
+map_server:
+  ubuntu:
+  - ros-one-map-server
+message_filters:
+  ubuntu:
+  - ros-one-message-filters
+nfc_ros:
+  ubuntu:
+  - ros-one-nfc-ros
+ocean_battery_driver:
+  ubuntu:
+  - ros-one-ocean-battery-driver
+openni2_launch:
+  ubuntu:
+  - ros-one-openni2-launch
+openni_description:
+  ubuntu:
+  - ros-one-openni-description
+openni_launch:
+  ubuntu:
+  - ros-one-openni-launch
+pal_carbon_collector:
+  ubuntu:
+  - ros-one-pal-carbon-collector
+pgm_learner:
+  ubuntu:
+  - ros-one-pgm-learner
+pr2_bringup:
+  ubuntu:
+  - ros-one-pr2-bringup
+pr2_controller_configuration:
+  ubuntu:
+  - ros-one-pr2-controller-configuration
+pr2_power_board:
+  ubuntu:
+  - ros-one-pr2-power-board
+pr2_run_stop_auto_restart:
+  ubuntu:
+  - ros-one-pr2-run-stop-auto-restart
+ros_google_cloud_language:
+  ubuntu:
+  - ros-one-ros-google-cloud-language
+ros_pytest:
+  ubuntu:
+  - ros-one-ros-pytest
+py_binding_tools:
+  ubuntu:
+  - ros-one-py-binding-tools
+rosauth:
+  ubuntu:
+  - ros-one-rosauth
+rosbag_storage:
+  ubuntu:
+  - ros-one-rosbag-storage
+rosbridge_server:
+  ubuntu:
+  - ros-one-rosbridge-server
+rosmsg:
+  ubuntu:
+  - ros-one-rosmsg
+rosnode:
+  ubuntu:
+  - ros-one-rosnode
+rosparam_shortcuts:
+  ubuntu:
+  - ros-one-rosparam-shortcuts
+rospatlite:
+  ubuntu:
+  - ros-one-rospatlite
+rosping:
+  ubuntu:
+  - ros-one-rosping
+rospy_tutorials:
+  ubuntu:
+  - ros-one-rospy-tutorials
+rosrt:
+  ubuntu:
+  - ros-one-rosrt
+rostopic:
+  ubuntu:
+  - ros-one-rostopic
+rqt_gui_cpp:
+  ubuntu:
+  - ros-one-rqt-gui-cpp
+rqt_gui_py:
+  ubuntu:
+  - ros-one-rqt-gui-py
+rqt_reconfigure:
+  ubuntu:
+  - ros-one-rqt-reconfigure
+rviz_marker_tools:
+  ubuntu:
+  - ros-one-rviz-marker-tools
+self_test:
+  ubuntu:
+  - ros-one-self-test
+sesame_ros:
+  ubuntu:
+  - ros-one-sesame-ros
+simple_message:
+  ubuntu:
+  - ros-one-simple-message
+smach_ros:
+  ubuntu:
+  - ros-one-smach-ros
+smach_viewer:
+  ubuntu:
+  - ros-one-smach-viewer
+sound_classification:
+  ubuntu:
+  - ros-one-sound-classification
+sparse_bundle_adjustment:
+  ubuntu:
+  - ros-one-sparse-bundle-adjustment
+open_karto:
+  ubuntu:
+  - ros-one-open-karto
+speed_scaling_interface:
+  ubuntu:
+  - ros-one-speed-scaling-interface
+test_bond:
+  ubuntu:
+  - ros-one-test-bond
+test_catkin_virtualenv:
+  ubuntu:
+  - ros-one-test-catkin-virtualenv
+test_catkin_virtualenv_inherited:
+  ubuntu:
+  - ros-one-test-catkin-virtualenv-inherited
+test_diagnostic_aggregator:
+  ubuntu:
+  - ros-one-test-diagnostic-aggregator
+test_nodelet:
+  ubuntu:
+  - ros-one-test-nodelet
+test_rosbag_storage:
+  ubuntu:
+  - ros-one-test-rosbag-storage
+test_roscpp:
+  ubuntu:
+  - ros-one-test-roscpp
+test_rosgraph:
+  ubuntu:
+  - ros-one-test-rosgraph
+test_roslaunch:
+  ubuntu:
+  - ros-one-test-roslaunch
+test_rosmaster:
+  ubuntu:
+  - ros-one-test-rosmaster
+test_rosparam:
+  ubuntu:
+  - ros-one-test-rosparam
+tf2_py:
+  ubuntu:
+  - ros-one-tf2-py
+timestamp_tools:
+  ubuntu:
+  - ros-one-timestamp-tools
+topic_tools:
+  ubuntu:
+  - ros-one-topic-tools
+rosbag:
+  ubuntu:
+  - ros-one-rosbag
+actionlib:
+  ubuntu:
+  - ros-one-actionlib
+actionlib_tutorials:
+  ubuntu:
+  - ros-one-actionlib-tutorials
+app_manager:
+  ubuntu:
+  - ros-one-app-manager
+controller_manager:
+  ubuntu:
+  - ros-one-controller-manager
+controller_manager_tests:
+  ubuntu:
+  - ros-one-controller-manager-tests
+combined_robot_hw_tests:
+  ubuntu:
+  - ros-one-combined-robot-hw-tests
+ddynamic_reconfigure:
+  ubuntu:
+  - ros-one-ddynamic-reconfigure
+diagnostic_analysis:
+  ubuntu:
+  - ros-one-diagnostic-analysis
+driver_base:
+  ubuntu:
+  - ros-one-driver-base
+joint_trajectory_action:
+  ubuntu:
+  - ros-one-joint-trajectory-action
+jsk_data:
+  ubuntu:
+  - ros-one-jsk-data
+mini_maxwell:
+  ubuntu:
+  - ros-one-mini-maxwell
+mongodb_store_msgs:
+  ubuntu:
+  - ros-one-mongodb-store-msgs
+mongodb_store:
+  ubuntu:
+  - ros-one-mongodb-store
+nodelet_topic_tools:
+  ubuntu:
+  - ros-one-nodelet-topic-tools
+pal_statistics:
+  ubuntu:
+  - ros-one-pal-statistics
+power_monitor:
+  ubuntu:
+  - ros-one-power-monitor
+pr2_camera_synchronizer:
+  ubuntu:
+  - ros-one-pr2-camera-synchronizer
+realtime_tools:
+  ubuntu:
+  - ros-one-realtime-tools
+control_toolbox:
+  ubuntu:
+  - ros-one-control-toolbox
+ethercat_hardware:
+  ubuntu:
+  - ros-one-ethercat-hardware
+force_torque_sensor_controller:
+  ubuntu:
+  - ros-one-force-torque-sensor-controller
+forward_command_controller:
+  ubuntu:
+  - ros-one-forward-command-controller
+industrial_robot_status_controller:
+  ubuntu:
+  - ros-one-industrial-robot-status-controller
+position_controllers:
+  ubuntu:
+  - ros-one-position-controllers
+rosbag_snapshot:
+  ubuntu:
+  - ros-one-rosbag-snapshot
+rosbaglive:
+  ubuntu:
+  - ros-one-rosbaglive
+rostwitter:
+  ubuntu:
+  - ros-one-rostwitter
+roswtf:
+  ubuntu:
+  - ros-one-roswtf
+rqt_joint_trajectory_plot:
+  ubuntu:
+  - ros-one-rqt-joint-trajectory-plot
+rqt_launch:
+  ubuntu:
+  - ros-one-rqt-launch
+sensor_msgs:
+  ubuntu:
+  - ros-one-sensor-msgs
+audio_video_recorder:
+  ubuntu:
+  - ros-one-audio-video-recorder
+axis_msgs:
+  ubuntu:
+  - ros-one-axis-msgs
+baxter_core_msgs:
+  ubuntu:
+  - ros-one-baxter-core-msgs
+calibration_msgs:
+  ubuntu:
+  - ros-one-calibration-msgs
+calibration_estimation:
+  ubuntu:
+  - ros-one-calibration-estimation
+camera_calibration_parsers:
+  ubuntu:
+  - ros-one-camera-calibration-parsers
+cv_bridge:
+  ubuntu:
+  - ros-one-cv-bridge
+fetch_teleop:
+  ubuntu:
+  - ros-one-fetch-teleop
+franka_gripper:
+  ubuntu:
+  - ros-one-franka-gripper
+franka_msgs:
+  ubuntu:
+  - ros-one-franka-msgs
+franka_visualization:
+  ubuntu:
+  - ros-one-franka-visualization
+gazebo_msgs:
+  ubuntu:
+  - ros-one-gazebo-msgs
+image_geometry:
+  ubuntu:
+  - ros-one-image-geometry
+image_transport:
+  ubuntu:
+  - ros-one-image-transport
+camera_info_manager:
+  ubuntu:
+  - ros-one-camera-info-manager
+camera_info_manager_py:
+  ubuntu:
+  - ros-one-camera-info-manager-py
+compressed_depth_image_transport:
+  ubuntu:
+  - ros-one-compressed-depth-image-transport
+compressed_image_transport:
+  ubuntu:
+  - ros-one-compressed-image-transport
+freenect_camera:
+  ubuntu:
+  - ros-one-freenect-camera
+image_cb_detector:
+  ubuntu:
+  - ros-one-image-cb-detector
+image_proc:
+  ubuntu:
+  - ros-one-image-proc
+image_publisher:
+  ubuntu:
+  - ros-one-image-publisher
+imu_sensor_controller:
+  ubuntu:
+  - ros-one-imu-sensor-controller
+interval_intersection:
+  ubuntu:
+  - ros-one-interval-intersection
+joint_state_controller:
+  ubuntu:
+  - ros-one-joint-state-controller
+joy:
+  ubuntu:
+  - ros-one-joy
+joy_listener:
+  ubuntu:
+  - ros-one-joy-listener
+jsk_gui_msgs:
+  ubuntu:
+  - ros-one-jsk-gui-msgs
+jsk_network_tools:
+  ubuntu:
+  - ros-one-jsk-network-tools
+laser_proc:
+  ubuntu:
+  - ros-one-laser-proc
+libcmt:
+  ubuntu:
+  - ros-one-libcmt
+libuvc_camera:
+  ubuntu:
+  - ros-one-libuvc-camera
+map_msgs:
+  ubuntu:
+  - ros-one-map-msgs
+mavros_msgs:
+  ubuntu:
+  - ros-one-mavros-msgs
+multisense_lib:
+  ubuntu:
+  - ros-one-multisense-lib
+object_recognition_msgs:
+  ubuntu:
+  - ros-one-object-recognition-msgs
+moveit_msgs:
+  ubuntu:
+  - ros-one-moveit-msgs
+moveit_task_constructor_msgs:
+  ubuntu:
+  - ros-one-moveit-task-constructor-msgs
+opencv_apps:
+  ubuntu:
+  - ros-one-opencv-apps
+openni2_camera:
+  ubuntu:
+  - ros-one-openni2-camera
+openni_camera:
+  ubuntu:
+  - ros-one-openni-camera
+opt_camera:
+  ubuntu:
+  - ros-one-opt-camera
+pcl_msgs:
+  ubuntu:
+  - ros-one-pcl-msgs
+jsk_recognition_msgs:
+  ubuntu:
+  - ros-one-jsk-recognition-msgs
+pcl_conversions:
+  ubuntu:
+  - ros-one-pcl-conversions
+polled_camera:
+  ubuntu:
+  - ros-one-polled-camera
+posedetection_msgs:
+  ubuntu:
+  - ros-one-posedetection-msgs
+prosilica_camera:
+  ubuntu:
+  - ros-one-prosilica-camera
+robot_calibration_msgs:
+  ubuntu:
+  - ros-one-robot-calibration-msgs
+rqt_ez_publisher:
+  ubuntu:
+  - ros-one-rqt-ez-publisher
+rqt_image_view:
+  ubuntu:
+  - ros-one-rqt-image-view
+settlerlib:
+  ubuntu:
+  - ros-one-settlerlib
+joint_states_settler:
+  ubuntu:
+  - ros-one-joint-states-settler
+laser_cb_detector:
+  ubuntu:
+  - ros-one-laser-cb-detector
+monocam_settler:
+  ubuntu:
+  - ros-one-monocam-settler
+single_joint_position_action:
+  ubuntu:
+  - ros-one-single-joint-position-action
+sound_play:
+  ubuntu:
+  - ros-one-sound-play
+spacenav_node:
+  ubuntu:
+  - ros-one-spacenav-node
+speed_scaling_state_controller:
+  ubuntu:
+  - ros-one-speed-scaling-state-controller
+stereo_msgs:
+  ubuntu:
+  - ros-one-stereo-msgs
+image_view:
+  ubuntu:
+  - ros-one-image-view
+rosbridge_library:
+  ubuntu:
+  - ros-one-rosbridge-library
+stereo_image_proc:
+  ubuntu:
+  - ros-one-stereo-image-proc
+switchbot_ros:
+  ubuntu:
+  - ros-one-switchbot-ros
+test_nodelet_topic_tools:
+  ubuntu:
+  - ros-one-test-nodelet-topic-tools
+test_rosbag:
+  ubuntu:
+  - ros-one-test-rosbag
+test_rospy:
+  ubuntu:
+  - ros-one-test-rospy
+test_rosservice:
+  ubuntu:
+  - ros-one-test-rosservice
+test_rostest:
+  ubuntu:
+  - ros-one-test-rostest
+test_rostopic:
+  ubuntu:
+  - ros-one-test-rostopic
+tf2_ros:
+  ubuntu:
+  - ros-one-tf2-ros
+depth_image_proc:
+  ubuntu:
+  - ros-one-depth-image-proc
+mavros:
+  ubuntu:
+  - ros-one-mavros
+plotjuggler_ros:
+  ubuntu:
+  - ros-one-plotjuggler-ros
+rgbd_launch:
+  ubuntu:
+  - ros-one-rgbd-launch
+tf:
+  ubuntu:
+  - ros-one-tf
+apriltag_ros:
+  ubuntu:
+  - ros-one-apriltag-ros
+axis_camera:
+  ubuntu:
+  - ros-one-axis-camera
+dynamic_tf_publisher:
+  ubuntu:
+  - ros-one-dynamic-tf-publisher
+face_detector:
+  ubuntu:
+  - ros-one-face-detector
+gazebo_ros:
+  ubuntu:
+  - ros-one-gazebo-ros
+gmapping:
+  ubuntu:
+  - ros-one-gmapping
+jsk_topic_tools:
+  ubuntu:
+  - ros-one-jsk-topic-tools
+audio_to_spectrogram:
+  ubuntu:
+  - ros-one-audio-to-spectrogram
+checkerboard_detector:
+  ubuntu:
+  - ros-one-checkerboard-detector
+map_laser:
+  ubuntu:
+  - ros-one-map-laser
+microstrain_3dmgx2_imu:
+  ubuntu:
+  - ros-one-microstrain-3dmgx2-imu
+mocap_optitrack:
+  ubuntu:
+  - ros-one-mocap-optitrack
+mongodb_log:
+  ubuntu:
+  - ros-one-mongodb-log
+multi_map_server:
+  ubuntu:
+  - ros-one-multi-map-server
+octomap_ros:
+  ubuntu:
+  - ros-one-octomap-ros
+pcl_ros:
+  ubuntu:
+  - ros-one-pcl-ros
+image_view2:
+  ubuntu:
+  - ros-one-image-view2
+jsk_rqt_plugins:
+  ubuntu:
+  - ros-one-jsk-rqt-plugins
+octomap_server:
+  ubuntu:
+  - ros-one-octomap-server
+people_tracking_filter:
+  ubuntu:
+  - ros-one-people-tracking-filter
+realsense2_camera:
+  ubuntu:
+  - ros-one-realsense2-camera
+respeaker_ros:
+  ubuntu:
+  - ros-one-respeaker-ros
+robot_pose_ekf:
+  ubuntu:
+  - ros-one-robot-pose-ekf
+roseus:
+  ubuntu:
+  - ros-one-roseus
+roseus_mongo:
+  ubuntu:
+  - ros-one-roseus-mongo
+roseus_smach:
+  ubuntu:
+  - ros-one-roseus-smach
+slam_karto:
+  ubuntu:
+  - ros-one-slam-karto
+stage_ros:
+  ubuntu:
+  - ros-one-stage-ros
+tf2_geometry_msgs:
+  ubuntu:
+  - ros-one-tf2-geometry-msgs
+amcl:
+  ubuntu:
+  - ros-one-amcl
+fake_localization:
+  ubuntu:
+  - ros-one-fake-localization
+image_rotate:
+  ubuntu:
+  - ros-one-image-rotate
+interactive_markers:
+  ubuntu:
+  - ros-one-interactive-markers
+easy_markers:
+  ubuntu:
+  - ros-one-easy-markers
+interactive_marker_tutorials:
+  ubuntu:
+  - ros-one-interactive-marker-tutorials
+laser_geometry:
+  ubuntu:
+  - ros-one-laser-geometry
+laser_assembler:
+  ubuntu:
+  - ros-one-laser-assembler
+laser_filters:
+  ubuntu:
+  - ros-one-laser-filters
+laser_filters_jsk_patch:
+  ubuntu:
+  - ros-one-laser-filters-jsk-patch
+leg_detector:
+  ubuntu:
+  - ros-one-leg-detector
+multisense_ros:
+  ubuntu:
+  - ros-one-multisense-ros
+multisense_cal_check:
+  ubuntu:
+  - ros-one-multisense-cal-check
+tf2_kdl:
+  ubuntu:
+  - ros-one-tf2-kdl
+test_tf2:
+  ubuntu:
+  - ros-one-test-tf2
+tf2_sensor_msgs:
+  ubuntu:
+  - ros-one-tf2-sensor-msgs
+tf2_tools:
+  ubuntu:
+  - ros-one-tf2-tools
+tf_conversions:
+  ubuntu:
+  - ros-one-tf-conversions
+jsk_tilt_laser:
+  ubuntu:
+  - ros-one-jsk-tilt-laser
+theora_image_transport:
+  ubuntu:
+  - ros-one-theora-image-transport
+transmission_interface:
+  ubuntu:
+  - ros-one-transmission-interface
+turtlesim:
+  ubuntu:
+  - ros-one-turtlesim
+turtle_actionlib:
+  ubuntu:
+  - ros-one-turtle-actionlib
+turtle_tf:
+  ubuntu:
+  - ros-one-turtle-tf
+turtle_tf2:
+  ubuntu:
+  - ros-one-turtle-tf2
+twist_controller:
+  ubuntu:
+  - ros-one-twist-controller
+unique_id:
+  ubuntu:
+  - ros-one-unique-id
+geodesy:
+  ubuntu:
+  - ros-one-geodesy
+ur10_moveit_config:
+  ubuntu:
+  - ros-one-ur10-moveit-config
+ur10e_moveit_config:
+  ubuntu:
+  - ros-one-ur10e-moveit-config
+ur16e_moveit_config:
+  ubuntu:
+  - ros-one-ur16e-moveit-config
+ur20_moveit_config:
+  ubuntu:
+  - ros-one-ur20-moveit-config
+ur30_moveit_config:
+  ubuntu:
+  - ros-one-ur30-moveit-config
+ur3_moveit_config:
+  ubuntu:
+  - ros-one-ur3-moveit-config
+ur3e_moveit_config:
+  ubuntu:
+  - ros-one-ur3e-moveit-config
+ur5_moveit_config:
+  ubuntu:
+  - ros-one-ur5-moveit-config
+ur5e_moveit_config:
+  ubuntu:
+  - ros-one-ur5e-moveit-config
+ur_description:
+  ubuntu:
+  - ros-one-ur-description
+ur_gazebo:
+  ubuntu:
+  - ros-one-ur-gazebo
+urdf:
+  ubuntu:
+  - ros-one-urdf
+collada_parser:
+  ubuntu:
+  - ros-one-collada-parser
+collada_urdf:
+  ubuntu:
+  - ros-one-collada-urdf
+gazebo_plugins:
+  ubuntu:
+  - ros-one-gazebo-plugins
+gripper_action_controller:
+  ubuntu:
+  - ros-one-gripper-action-controller
+industrial_utils:
+  ubuntu:
+  - ros-one-industrial-utils
+industrial_robot_client:
+  ubuntu:
+  - ros-one-industrial-robot-client
+joint_limits_interface:
+  ubuntu:
+  - ros-one-joint-limits-interface
+gazebo_ros_control:
+  ubuntu:
+  - ros-one-gazebo-ros-control
+kdl_parser:
+  ubuntu:
+  - ros-one-kdl-parser
+collada_urdf_jsk_patch:
+  ubuntu:
+  - ros-one-collada-urdf-jsk-patch
+mavros_extras:
+  ubuntu:
+  - ros-one-mavros-extras
+pr2_head_action:
+  ubuntu:
+  - ros-one-pr2-head-action
+pr2_mechanism_model:
+  ubuntu:
+  - ros-one-pr2-mechanism-model
+pr2_controller_interface:
+  ubuntu:
+  - ros-one-pr2-controller-interface
+ethercat_trigger_controllers:
+  ubuntu:
+  - ros-one-ethercat-trigger-controllers
+pr2_mechanism_diagnostics:
+  ubuntu:
+  - ros-one-pr2-mechanism-diagnostics
+qb_device_gazebo:
+  ubuntu:
+  - ros-one-qb-device-gazebo
+qb_device_hardware_interface:
+  ubuntu:
+  - ros-one-qb-device-hardware-interface
+qb_device_control:
+  ubuntu:
+  - ros-one-qb-device-control
+qb_hand_gazebo:
+  ubuntu:
+  - ros-one-qb-hand-gazebo
+qb_hand_hardware_interface:
+  ubuntu:
+  - ros-one-qb-hand-hardware-interface
+realtime_urdf_filter:
+  ubuntu:
+  - ros-one-realtime-urdf-filter
+robot_calibration:
+  ubuntu:
+  - ros-one-robot-calibration
+robot_self_filter:
+  ubuntu:
+  - ros-one-robot-self-filter
+robot_state_publisher:
+  ubuntu:
+  - ros-one-robot-state-publisher
+multisense_bringup:
+  ubuntu:
+  - ros-one-multisense-bringup
+ros_control_boilerplate:
+  ubuntu:
+  - ros-one-ros-control-boilerplate
+rviz:
+  ubuntu:
+  - ros-one-rviz
+agni_tf_tools:
+  ubuntu:
+  - ros-one-agni-tf-tools
+librviz_tutorial:
+  ubuntu:
+  - ros-one-librviz-tutorial
+people_velocity_tracker:
+  ubuntu:
+  - ros-one-people-velocity-tracker
+rqt_rviz:
+  ubuntu:
+  - ros-one-rqt-rviz
+rviz_plugin_tutorials:
+  ubuntu:
+  - ros-one-rviz-plugin-tutorials
+rviz_python_tutorial:
+  ubuntu:
+  - ros-one-rviz-python-tutorial
+rviz_visual_tools:
+  ubuntu:
+  - ros-one-rviz-visual-tools
+srdfdom:
+  ubuntu:
+  - ros-one-srdfdom
+test_mavros:
+  ubuntu:
+  - ros-one-test-mavros
+trac_ik_lib:
+  ubuntu:
+  - ros-one-trac-ik-lib
+trac_ik_examples:
+  ubuntu:
+  - ros-one-trac-ik-examples
+trac_ik_python:
+  ubuntu:
+  - ros-one-trac-ik-python
+urdf_tutorial:
+  ubuntu:
+  - ros-one-urdf-tutorial
+urg_node:
+  ubuntu:
+  - ros-one-urg-node
+usb_cam:
+  ubuntu:
+  - ros-one-usb-cam
+velocity_controllers:
+  ubuntu:
+  - ros-one-velocity-controllers
+virtual_force_publisher:
+  ubuntu:
+  - ros-one-virtual-force-publisher
+vision_msgs:
+  ubuntu:
+  - ros-one-vision-msgs
+visualization_marker_tutorials:
+  ubuntu:
+  - ros-one-visualization-marker-tutorials
+voice_text:
+  ubuntu:
+  - ros-one-voice-text
+voxel_grid:
+  ubuntu:
+  - ros-one-voxel-grid
+costmap_2d:
+  ubuntu:
+  - ros-one-costmap-2d
+fetch_depth_layer:
+  ubuntu:
+  - ros-one-fetch-depth-layer
+nav_core:
+  ubuntu:
+  - ros-one-nav-core
+base_local_planner:
+  ubuntu:
+  - ros-one-base-local-planner
+carrot_planner:
+  ubuntu:
+  - ros-one-carrot-planner
+clear_costmap_recovery:
+  ubuntu:
+  - ros-one-clear-costmap-recovery
+dwa_local_planner:
+  ubuntu:
+  - ros-one-dwa-local-planner
+move_slow_and_clear:
+  ubuntu:
+  - ros-one-move-slow-and-clear
+navfn:
+  ubuntu:
+  - ros-one-navfn
+global_planner:
+  ubuntu:
+  - ros-one-global-planner
+rotate_recovery:
+  ubuntu:
+  - ros-one-rotate-recovery
+move_base:
+  ubuntu:
+  - ros-one-move-base
+warehouse_ros:
+  ubuntu:
+  - ros-one-warehouse-ros
+warehouse_ros_mongo:
+  ubuntu:
+  - ros-one-warehouse-ros-mongo
+warehouse_ros_sqlite:
+  ubuntu:
+  - ros-one-warehouse-ros-sqlite
+wge100_camera:
+  ubuntu:
+  - ros-one-wge100-camera
+wge100_camera_firmware:
+  ubuntu:
+  - ros-one-wge100-camera-firmware
+wiimote:
+  ubuntu:
+  - ros-one-wiimote
+xacro:
+  ubuntu:
+  - ros-one-xacro
+diff_drive_controller:
+  ubuntu:
+  - ros-one-diff-drive-controller
+ackermann_steering_controller:
+  ubuntu:
+  - ros-one-ackermann-steering-controller
+effort_controllers:
+  ubuntu:
+  - ros-one-effort-controllers
+fake_joint_driver:
+  ubuntu:
+  - ros-one-fake-joint-driver
+fetch_moveit_config:
+  ubuntu:
+  - ros-one-fetch-moveit-config
+franka_hw:
+  ubuntu:
+  - ros-one-franka-hw
+franka_control:
+  ubuntu:
+  - ros-one-franka-control
+franka_example_controllers:
+  ubuntu:
+  - ros-one-franka-example-controllers
+joint_trajectory_controller:
+  ubuntu:
+  - ros-one-joint-trajectory-controller
+cartesian_trajectory_interpolation:
+  ubuntu:
+  - ros-one-cartesian-trajectory-interpolation
+cartesian_trajectory_controller:
+  ubuntu:
+  - ros-one-cartesian-trajectory-controller
+fake_joint_launch:
+  ubuntu:
+  - ros-one-fake-joint-launch
+franka_gazebo:
+  ubuntu:
+  - ros-one-franka-gazebo
+jsk_recognition_utils:
+  ubuntu:
+  - ros-one-jsk-recognition-utils
+imagesift:
+  ubuntu:
+  - ros-one-imagesift
+jsk_perception:
+  ubuntu:
+  - ros-one-jsk-perception
+jsk_rviz_plugins:
+  ubuntu:
+  - ros-one-jsk-rviz-plugins
+jsk_interactive_marker:
+  ubuntu:
+  - ros-one-jsk-interactive-marker
+jsk_interactive:
+  ubuntu:
+  - ros-one-jsk-interactive
+jsk_interactive_test:
+  ubuntu:
+  - ros-one-jsk-interactive-test
+moveit_commander:
+  ubuntu:
+  - ros-one-moveit-commander
+moveit_resources_panda_description:
+  ubuntu:
+  - ros-one-moveit-resources-panda-description
+moveit_core:
+  ubuntu:
+  - ros-one-moveit-core
+chomp_motion_planner:
+  ubuntu:
+  - ros-one-chomp-motion-planner
+fetch_ikfast_plugin:
+  ubuntu:
+  - ros-one-fetch-ikfast-plugin
+moveit_calibration_plugins:
+  ubuntu:
+  - ros-one-moveit-calibration-plugins
+moveit_chomp_optimizer_adapter:
+  ubuntu:
+  - ros-one-moveit-chomp-optimizer-adapter
+moveit_resources_prbt_ikfast_manipulator_plugin:
+  ubuntu:
+  - ros-one-moveit-resources-prbt-ikfast-manipulator-plugin
+moveit_ros_occupancy_map_monitor:
+  ubuntu:
+  - ros-one-moveit-ros-occupancy-map-monitor
+moveit_ros_planning:
+  ubuntu:
+  - ros-one-moveit-ros-planning
+bio_ik:
+  ubuntu:
+  - ros-one-bio-ik
+industrial_trajectory_filters:
+  ubuntu:
+  - ros-one-industrial-trajectory-filters
+moveit_fake_controller_manager:
+  ubuntu:
+  - ros-one-moveit-fake-controller-manager
+moveit_kinematics:
+  ubuntu:
+  - ros-one-moveit-kinematics
+moveit_opw_kinematics_plugin:
+  ubuntu:
+  - ros-one-moveit-opw-kinematics-plugin
+moveit_planners_ompl:
+  ubuntu:
+  - ros-one-moveit-planners-ompl
+moveit_ros_move_group:
+  ubuntu:
+  - ros-one-moveit-ros-move-group
+moveit_monitoring:
+  ubuntu:
+  - ros-one-moveit-monitoring
+moveit_ros_manipulation:
+  ubuntu:
+  - ros-one-moveit-ros-manipulation
+moveit_ros_perception:
+  ubuntu:
+  - ros-one-moveit-ros-perception
+jsk_pcl_ros_utils:
+  ubuntu:
+  - ros-one-jsk-pcl-ros-utils
+jsk_pcl_ros:
+  ubuntu:
+  - ros-one-jsk-pcl-ros
+moveit_ros_robot_interaction:
+  ubuntu:
+  - ros-one-moveit-ros-robot-interaction
+moveit_ros_warehouse:
+  ubuntu:
+  - ros-one-moveit-ros-warehouse
+moveit_ros_benchmarks:
+  ubuntu:
+  - ros-one-moveit-ros-benchmarks
+moveit_ros_planning_interface:
+  ubuntu:
+  - ros-one-moveit-ros-planning-interface
+moveit_by_name:
+  ubuntu:
+  - ros-one-moveit-by-name
+moveit_planners_chomp:
+  ubuntu:
+  - ros-one-moveit-planners-chomp
+moveit_ros_visualization:
+  ubuntu:
+  - ros-one-moveit-ros-visualization
+moveit_servo:
+  ubuntu:
+  - ros-one-moveit-servo
+moveit_setup_assistant:
+  ubuntu:
+  - ros-one-moveit-setup-assistant
+moveit_simple_controller_manager:
+  ubuntu:
+  - ros-one-moveit-simple-controller-manager
+moveit_ros_control_interface:
+  ubuntu:
+  - ros-one-moveit-ros-control-interface
+moveit_visual_tools:
+  ubuntu:
+  - ros-one-moveit-visual-tools
+moveit_calibration_gui:
+  ubuntu:
+  - ros-one-moveit-calibration-gui
+moveit_tutorials:
+  ubuntu:
+  - ros-one-moveit-tutorials
+pass_through_controllers:
+  ubuntu:
+  - ros-one-pass-through-controllers
+pilz_industrial_motion_planner_testutils:
+  ubuntu:
+  - ros-one-pilz-industrial-motion-planner-testutils
+pilz_industrial_motion_planner:
+  ubuntu:
+  - ros-one-pilz-industrial-motion-planner
+moveit_task_constructor_core:
+  ubuntu:
+  - ros-one-moveit-task-constructor-core
+moveit_task_constructor_capabilities:
+  ubuntu:
+  - ros-one-moveit-task-constructor-capabilities
+moveit_task_constructor_demo:
+  ubuntu:
+  - ros-one-moveit-task-constructor-demo
+moveit_task_constructor_visualization:
+  ubuntu:
+  - ros-one-moveit-task-constructor-visualization
+mtc_pour:
+  ubuntu:
+  - ros-one-mtc-pour
+pr2_arm_kinematics:
+  ubuntu:
+  - ros-one-pr2-arm-kinematics
+pr2_controller_manager:
+  ubuntu:
+  - ros-one-pr2-controller-manager
+pr2_ethercat:
+  ubuntu:
+  - ros-one-pr2-ethercat
+resized_image_transport:
+  ubuntu:
+  - ros-one-resized-image-transport
+robot_body_filter:
+  ubuntu:
+  - ros-one-robot-body-filter
+robot_mechanism_controllers:
+  ubuntu:
+  - ros-one-robot-mechanism-controllers
+pr2_mechanism_controllers:
+  ubuntu:
+  - ros-one-pr2-mechanism-controllers
+pr2_calibration_controllers:
+  ubuntu:
+  - ros-one-pr2-calibration-controllers
+pr2_gripper_action:
+  ubuntu:
+  - ros-one-pr2-gripper-action
+ros_speech_recognition:
+  ubuntu:
+  - ros-one-ros-speech-recognition
+roseus_tutorials:
+  ubuntu:
+  - ros-one-roseus-tutorials
+scaled_joint_trajectory_controller:
+  ubuntu:
+  - ros-one-scaled-joint-trajectory-controller
+trac_ik_kinematics_plugin:
+  ubuntu:
+  - ros-one-trac-ik-kinematics-plugin
+ur_kinematics:
+  ubuntu:
+  - ros-one-ur-kinematics
+ur_robot_driver:
+  ubuntu:
+  - ros-one-ur-robot-driver
+ur_calibration:
+  ubuntu:
+  - ros-one-ur-calibration
+urdf_geometry_parser:
+  ubuntu:
+  - ros-one-urdf-geometry-parser
+four_wheel_steering_controller:
+  ubuntu:
+  - ros-one-four-wheel-steering-controller
+zdepth:
+  ubuntu:
+  - ros-one-zdepth
+zdepth_image_transport:
+  ubuntu:
+  - ros-one-zdepth-image-transport

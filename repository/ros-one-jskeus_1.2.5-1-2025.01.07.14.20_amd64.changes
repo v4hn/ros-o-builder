@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Wed, 01 Dec 2021 00:00:00 -0000
+Source: ros-one-jskeus
+Binary: ros-one-jskeus
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 1.2.5-1-2025.01.07.14.20
+Distribution: jammy
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jskeus - EusLisp software developed and used by JSK at The University of T
+Changes:
+ ros-one-jskeus (1.2.5-1-2025.01.07.14.20) jammy; urgency=high
+ .
+   * copy gnuplotlib from euslib/jsk.l (#261 <https://github.com/euslisp/jskeus/issues/261>)
+   * [irtgeo.l] fix triangulation (#585 <https://github.com/euslisp/jskeus/issues/585>)
+   * [irtsensor.l] add :no-window arg in camera-model (#588 <https://github.com/euslisp/jskeus/issues/588>)
+   * [irtviewer.l] add irtviewer-no-window, irtviewer without xwindow (#574 <https://github.com/euslisp/jskeus/issues/574>)
+   * [irtgraph.l] do not set cost when arc is not costed-arc (#603 <https://github.com/euslisp/jskeus/issues/603>)
+   * .travise-osx.sh : osx 10.14-: fix for new libX11.dylib location (/opt/X11/lib:/opt/local/lib -> /usr/local/lib) (#607 <https://github.com/euslisp/jskeus/issues/607>)
+   * [irtutil.l] fix minjerk interpolation sometimes returns large acceleration (#596 <https://github.com/euslisp/jskeus/issues/596>)
+   * [demo/sample-robot-camera.l] add sample-robot-camera.l : demo to manipulatie camera model (:ray, :screen-point) (#597 <https://github.com/euslisp/jskeus/issues/597>)
+   * [irtcollada.l] fix irtcollada problem that mesh poses are incorrect if root link is moved from origin (#600 <https://github.com/euslisp/jskeus/issues/600>)
+   * [irtmath.l] add comment to quaternion (#589 <https://github.com/euslisp/jskeus/issues/589>)
+   * doc/conf.py: download deb archive.ubuntu.com manually (#581 <https://github.com/euslisp/jskeus/issues/581>)
+   * Contributors: Kei Okada, Naoki Hiraoka, Naoya Yamaguchi, Shingo Kitagawa, Yohei Kakiuchi
+Checksums-Sha1:
+ b56f9047768491f3651d3498f2ce879a1db5c9e5 2374484 ros-one-jskeus-dbgsym_1.2.5-1-2025.01.07.14.20_amd64.ddeb
+ 145b4f7f9c2b0212a0c484aafc5f9c56945e7592 11324 ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.buildinfo
+ 834ddce716a7d1afd9d61247de0ac7d952aa2fac 4803342 ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.deb
+Checksums-Sha256:
+ b5f29bbc4249e2f31cb18b0aa0f8f6deb291f27aee2e273b303d0e3c10bb54e3 2374484 ros-one-jskeus-dbgsym_1.2.5-1-2025.01.07.14.20_amd64.ddeb
+ 105d61f33182e9ac27beeb321cd809150245c29ee57645864cefd32db76696da 11324 ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.buildinfo
+ a7429c163106fa499d09ac37ac91b2d82fc2cce27cf359e1ea0143c96313d9b0 4803342 ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.deb
+Files:
+ d2cd080eb17857dcd8d57bd572b5422f 2374484 debug optional ros-one-jskeus-dbgsym_1.2.5-1-2025.01.07.14.20_amd64.ddeb
+ 94cafb8470a60110046ed10e3c446003 11324 misc optional ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.buildinfo
+ eb32d3668a56e1bd955c07f615586dc8 4803342 misc optional ros-one-jskeus_1.2.5-1-2025.01.07.14.20_amd64.deb

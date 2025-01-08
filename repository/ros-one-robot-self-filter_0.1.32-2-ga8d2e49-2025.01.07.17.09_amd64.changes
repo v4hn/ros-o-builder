@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 07 Aug 2020 00:00:00 -0000
+Source: ros-one-robot-self-filter
+Binary: ros-one-robot-self-filter
+Built-For-Profiles: noudeb nocheck
+Architecture: amd64
+Version: 0.1.32-2-ga8d2e49-2025.01.07.17.09
+Distribution: jammy
+Urgency: high
+Maintainer: Devon Ash <dash@clearpathrobotics.com>
+Changed-By: Devon Ash <dash@clearpathrobotics.com>
+Description:
+ ros-one-robot-self-filter - Filters the robot's body out of point clouds.
+Changes:
+ ros-one-robot-self-filter (0.1.32-2-ga8d2e49-2025.01.07.17.09) jammy; urgency=high
+ .
+   * PCL > 1.10 uses c++ 14
+   * find_package(Boost signals) no longer required for noetic, use find_package(Boost)
+   * remove indigo/lunar from .travis.yml
+   * add noetic and fix .travs.yml
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ c053ec349e78769521271c0ba04445ec299aa6e9 3659610 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.ddeb
+ 78bf64c1b59014dbdf415f29ea462540a70eed5e 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.buildinfo
+ e0044bd7e9bbb14e25c9c724fbef342ae92d995d 188546 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.deb
+Checksums-Sha256:
+ 294a2bcb28bf003276ea41402b51a210c1d32803507eba2e7f93c735d6743ead 3659610 ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.ddeb
+ 54ac8647d306aa1460427c645eacae43bf4b4b94f21baead52e60a53385f3091 38949 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.buildinfo
+ 15a00e4ef948b9f9ae89ee4f3b5bebde9e4c031de05e5395c095d53578037520 188546 ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.deb
+Files:
+ af59a44f8fd54040632a26335c6c79e9 3659610 debug optional ros-one-robot-self-filter-dbgsym_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.ddeb
+ 9242ee0f3291f1d5a11353b072ddda05 38949 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.buildinfo
+ 4ffd34e68be563cbac13396835100506 188546 misc optional ros-one-robot-self-filter_0.1.32-2-ga8d2e49-2025.01.07.17.09_amd64.deb
