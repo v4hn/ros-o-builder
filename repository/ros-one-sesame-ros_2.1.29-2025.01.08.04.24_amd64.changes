@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-sesame-ros
+Binary: ros-one-sesame-ros ros-one-sesame-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.04.24
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-sesame-ros - ROS API for Sesame smart lock
+Changes:
+ ros-one-sesame-ros (2.1.29-2025.01.08.04.24) bookworm; urgency=high
+ .
+   * Support ros-o / Ubuntu 22.04 (#512 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/512>)
+ .
+       * [sesame_ros] relax venv check
+       * [sesame_ros] remove cffi which cannot be installed in Ubuntu 22.04 env & not used in sesame_ros
+ .
+   * Contributors: Yoshiki Obinata
+Checksums-Sha1:
+ abc432336adc319c2cbabadc32bf1d6244187e29 756984 ros-one-sesame-ros-dbgsym_2.1.29-2025.01.08.04.24_amd64.deb
+ 470716dfe926e8b20f5f88b96889c5f853863e30 9789 ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.buildinfo
+ bb42b3603c2797fc05f68c2ffb816ae7a2eadd16 3704688 ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.deb
+Checksums-Sha256:
+ 7cf8a933b261aa113378d0f981a26b1a5477405afd195c79f756b01c98a27107 756984 ros-one-sesame-ros-dbgsym_2.1.29-2025.01.08.04.24_amd64.deb
+ dcff3c9e0f7a8c78ca06a3fca670d29836d1d197e140e384666aa7daa588fd79 9789 ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.buildinfo
+ 04f3bc99aeb364566f5ba4b864c9a31b9a8a505642ced3c08c56cbed90270437 3704688 ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.deb
+Files:
+ 41223fc3f0ac8fe85b782aaf28a6af91 756984 debug optional ros-one-sesame-ros-dbgsym_2.1.29-2025.01.08.04.24_amd64.deb
+ bf166079417d9c1d1b2e499624eea670 9789 misc optional ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.buildinfo
+ 13417872240bfdfd599cd54391880c40 3704688 misc optional ros-one-sesame-ros_2.1.29-2025.01.08.04.24_amd64.deb

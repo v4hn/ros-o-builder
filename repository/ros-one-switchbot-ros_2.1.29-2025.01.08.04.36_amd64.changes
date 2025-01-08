@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-switchbot-ros
+Binary: ros-one-switchbot-ros ros-one-switchbot-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.04.36
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-switchbot-ros - use switchbot with ros
+Changes:
+ ros-one-switchbot-ros (2.1.29-2025.01.08.04.36) bookworm; urgency=high
+ .
+   * add codes for publishing switchbot CO2 meter status. (#513 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/513>)
+   * switchbot_ros: use --cert for catkin_virtualenv for indigo (#507 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/507>)
+   * Add switchbot status publisher. (#505 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/505>)
+   * Mod for switchbot api 1.1 (#491 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/491>)
+   * [switchbot_ros] force to use python3 for lambda string sort (#495 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/495>)
+   * Contributors: Yoshiki Obinata, Yosuke Yamamoto
+Checksums-Sha1:
+ 05829dc2a60cce569b3c1716e837691fe376395e 20084 ros-one-switchbot-ros-dbgsym_2.1.29-2025.01.08.04.36_amd64.deb
+ f2951343932cbc3b6e577933e80dab621e8329d2 12590 ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.buildinfo
+ 64cc3efc376ddfa079f219e32af1f0740a337237 1974248 ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.deb
+Checksums-Sha256:
+ c9c040a8ab4f319f20b70f5649d07db2710315dc534fd38468b909902f9cbfa9 20084 ros-one-switchbot-ros-dbgsym_2.1.29-2025.01.08.04.36_amd64.deb
+ b3fca40ed707e06a4bd99a5ab3cc2ca435e653362944e63c2efbb6fa23d196ca 12590 ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.buildinfo
+ f03537d0dda1003c719dfb0887f7edbcf5401bdaa025e99167fa45bbe7d92610 1974248 ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.deb
+Files:
+ 10e43f7942ec52f3ab75899b825ae5b3 20084 debug optional ros-one-switchbot-ros-dbgsym_2.1.29-2025.01.08.04.36_amd64.deb
+ fc5cd84affd4b1fd352bd539659007f5 12590 misc optional ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.buildinfo
+ 0a37fec3e58e7176268f5e96d74b9c81 1974248 misc optional ros-one-switchbot-ros_2.1.29-2025.01.08.04.36_amd64.deb

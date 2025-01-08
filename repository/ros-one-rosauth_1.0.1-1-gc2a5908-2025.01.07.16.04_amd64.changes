@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 02 Sep 2019 00:00:00 -0000
+Source: ros-one-rosauth
+Binary: ros-one-rosauth ros-one-rosauth-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.0.1-1-gc2a5908-2025.01.07.16.04
+Distribution: bookworm
+Urgency: high
+Maintainer: Rein Appeldoorn <rein@eurotec.com>
+Changed-By: Rein Appeldoorn <rein@eurotec.com>
+Description:
+ ros-one-rosauth - Server Side tools for Authorization and Authentication of ROS Cli
+Changes:
+ ros-one-rosauth (1.0.1-1-gc2a5908-2025.01.07.16.04) bookworm; urgency=high
+ .
+   * Fix buffer overrun (#19 <https://github.com/GT-RAIL/rosauth/issues/19>)
+   * enable Windows build (#25 <https://github.com/GT-RAIL/rosauth/issues/25>)
+   * Contributors: Atsushi Watanabe, James Xu
+Checksums-Sha1:
+ a21669f7499d204ab925e27a297bd06b76628674 286288 ros-one-rosauth-dbgsym_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
+ 0c3859a57ded6d874b8be6ea57b477a349378cb4 10102 ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.buildinfo
+ b4ccad633127a15d436ec5dfd8f62258a1c825ff 39904 ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
+Checksums-Sha256:
+ 4154b85fe3069f3e8a4f1b6e5a999da44c2892866ef38e7898311298c0ddfca7 286288 ros-one-rosauth-dbgsym_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
+ 2a0b332abe35c2c81e5de05ce2c0fa636bf16f0ada01c2f8c5186db837841566 10102 ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.buildinfo
+ 011bc2f2bde1dfdb7f816fad97cdd6f7f3a599f2a9ad5160e5fa09c86b844233 39904 ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
+Files:
+ 9083c804e880eb987a17928cf387257e 286288 debug optional ros-one-rosauth-dbgsym_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
+ 62cecb14d84f7177e6e57abb5c66747b 10102 misc optional ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.buildinfo
+ 8475a341007bdb87335a71163011343c 39904 misc optional ros-one-rosauth_1.0.1-1-gc2a5908-2025.01.07.16.04_amd64.deb
