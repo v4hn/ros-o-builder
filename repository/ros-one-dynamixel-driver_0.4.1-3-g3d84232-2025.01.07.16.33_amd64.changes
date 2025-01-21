@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Thu, 19 Jan 2017 00:00:00 -0000
+Source: ros-one-dynamixel-driver
+Binary: ros-one-dynamixel-driver
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.4.1-3-g3d84232-2025.01.07.16.33
+Distribution: bookworm
+Urgency: high
+Maintainer: Antons Rebguns <arebgun@gmail.com>
+Changed-By: Antons Rebguns <arebgun@gmail.com>
+Description:
+ ros-one-dynamixel-driver - This package provides low level IO for Robotis Dynamixel servos.
+Changes:
+ ros-one-dynamixel-driver (0.4.1-3-g3d84232-2025.01.07.16.33) bookworm; urgency=high
+ .
+   * Don't set return delay time if value is invalid
+   * Fix typo valie -> valid
+   * Add EX-106, rename EX-106+ accordingly (Fixes #60 <https://github.com/arebgun/dynamixel_motor/issues/60>)
+   * Merge pull request #49 <https://github.com/arebgun/dynamixel_motor/issues/49> from anuragmakineni/master
+     remove Serial set/get functions from dynamixel_io
+   * Update dynamixel_io.py
+     In set_p_gain, set_i_gain, set_d_gain, small spelling mistake. Instead of 'slope', it should be p/i/d_gain, since slope is not defined for the given function.
+   * remove deprecated functions from dynamixel_io
+   * bug fixes for issue #33 <https://github.com/arebgun/dynamixel_motor/issues/33> and warnnings on queue_size
+   * Adds couple of methods for LED status fetching and changing.
+   * Catch occurancies when error_code is parsed as float
+   * added in a queue size as none to remove warning messages
+   * Readback echo for simple one-wire (TTL) converters
+   * Support for reading current, setting acceleration, torque control mode (mainly MX series). Available features specified for each model.
+   * New model MX-12W
+   * fix typo ;; min -> max
+   * Fix bug in velocity conversion
+     The factor for the velocity conversion from raw to radsec and the other way
+     round is model-specific and does not depend on the maximum motor speed.
+     Therefore, a conversion factor is added to the motor data and employed
+     for all velocity conversions. The set motor velocity and the motor velocity
+     in the servo state does now correspond with the real servo speed in
+     radians per second.
+   * Contributors: Andreas Wachaja, Antons Rebguns, Anurag Makineni, Gabrielius Mickevicius, Nicolas Alt, Russell Toris, Stefan Kohlbrecher, Yam Geva, Zilvinas, nozawa, parijat10, pazeshun
+Checksums-Sha1:
+ 6becf745c05c773337e0849f2a79255c9fc53d63 7179 ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.buildinfo
+ 505b761a255d87a37e1a642f167a3642dd526b8d 23064 ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.deb
+Checksums-Sha256:
+ 5ae0b5ae53186a56d70329d0c23be7db1cebc764524aa167c7957fbd25db6ae6 7179 ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.buildinfo
+ fd5887230503f0fca0554a22cdaba642b4e8102daa14f4665011f55bd39eff32 23064 ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.deb
+Files:
+ c8149156a38df50b907883f4fe6c00e1 7179 misc optional ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.buildinfo
+ fc8566824c608c907b521bcb75a74fa2 23064 misc optional ros-one-dynamixel-driver_0.4.1-3-g3d84232-2025.01.07.16.33_amd64.deb

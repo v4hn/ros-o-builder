@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2025.01.07.14.49
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2025.01.07.14.49) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ a749d7ff8c32c9a9695f2ee4c4b109ab73c202d1 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb
+ e58c2d3f5e26764dd0f48907901af7440df286ca 15594 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.buildinfo
+ add6ff39c79726d62e105c34d2bfa9734ad6d598 61656 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb
+Checksums-Sha256:
+ 6a1de262b01bcb6671784ed602688431c737a99c07eedf30c629499accaafe30 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb
+ 449bcb773392b49e3d6cbdebd09799c81de52b13e384a578163fc10f5de17b82 15594 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.buildinfo
+ f08c7a70be3193c57318feb6be24d714aecc25de01351901ddc2c49cce45e5f5 61656 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb
+Files:
+ a98e09349267691e5f19220c41f6bcf6 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb
+ ca30b2380d00ba55addc285b9fd899ac 15594 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.buildinfo
+ 7d5dfe184f0fba03f26bae146520be65 61656 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.01.07.14.49_amd64.deb

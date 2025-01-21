@@ -1,0 +1,2171 @@
+sbuild (Debian sbuild) 0.85.10ubuntu0.1 (15 December 2024) on fv-az1046-605.sncc4k5voanupjygstqehzthfh.dx.internal.cloudapp.net
+
++======================================================================================================+
+| ros-one-openslam-gmapping 0.2.1-17-g5105476-2025.01.07.13.03 (amd64) Tue, 07 Jan 2025 13:03:11 +0000 |
++======================================================================================================+
+
+Package: ros-one-openslam-gmapping
+Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Source Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Distribution: bookworm
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/bookworm-amd64.tar to /tmp/tmp.sbuild.RW9cOAmchx...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2025.01.07.12.58_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-baldor_0.1.3-3-g10fabc5-2025.01.07.13.02_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-convex-decomposition-dbgsym_0.1.12-3-gb722eb5-2025.01.07.13.02_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-convex-decomposition_0.1.12-3-gb722eb5-2025.01.07.13.02_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-VFhYTM' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                Tue, 07 Jan 2025 13:03:17 +0000 |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-fO82nb/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-fO82nb/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-fO82nb/apt_archive ./ Release [606 B]
+Get:3 http://security.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:2 file:/build/package//resolver-fO82nb/apt_archive ./ Release [606 B]
+Get:4 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:5 file:/build/package//resolver-fO82nb/apt_archive ./ Release.gpg
+Ign:5 file:/build/package//resolver-fO82nb/apt_archive ./ Release.gpg
+Get:6 file:/build/package//resolver-fO82nb/apt_archive ./ Packages [3183 B]
+Get:7 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:8 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [240 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 Packages [8789 kB]
+Get:10 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [8856 B]
+Fetched 9292 kB in 1s (10.9 MB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://security.debian.org/debian-security bookworm-security InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm-updates InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                           Tue, 07 Jan 2025 13:03:19 +0000 |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies           Tue, 07 Jan 2025 13:03:20 +0000 |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), catkin, libgmock-dev, libgtest-dev, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), catkin, libgmock-dev, libgtest-dev, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [707 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [739 B]
+Fetched 2055 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ Release [606 B]
+Get:2 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ Release [606 B]
+Get:3 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils catkin cmake
+  cmake-data cmake-extras debhelper dh-autoreconf dh-strip-nondeterminism
+  docutils-common dumb-init dwz fakeroot file gettext gettext-base googletest
+  groff-base intltool-debian libarchive-zip-perl libarchive13 libcurl4
+  libdebhelper-perl libelf1 libexpat1-dev libfakeroot
+  libfile-stripnondeterminism-perl libgmock-dev libgtest-dev libicu72
+  libjs-jquery libjs-sphinxdoc libjs-underscore libjsoncpp25 libmagic-mgc
+  libmagic1 libncursesw6 libpipeline1 libpkgconf3 libproc2-0 libpython3-dev
+  libpython3-stdlib libpython3.11 libpython3.11-dev libpython3.11-minimal
+  libpython3.11-stdlib libreadline8 librhash0 libsqlite3-0
+  libsub-override-perl libtool libuchardet0 libuv1 libxml2 m4 man-db
+  media-types pkg-config pkgconf pkgconf-bin po-debconf procps python3
+  python3-catkin python3-catkin-pkg python3-dateutil python3-dev
+  python3-distutils python3-docutils python3-empy python3-lib2to3
+  python3-minimal python3-pkg-resources python3-pyparsing python3-roman
+  python3-setuptools python3-six python3.11 python3.11-dev python3.11-minimal
+  readline-common ros-environment ros-one-ros-environment ros-one-setup-files
+  sensible-utils sgml-base tzdata xml-core zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev groff lrzip libtool-doc gfortran | fortran95-compiler
+  gcj-jdk m4-doc apparmor less www-browser libmail-box-perl python3-doc
+  python3-tk python3-venv docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-pyparsing-doc python-setuptools-doc
+  python3.11-venv python3.11-doc binfmt-support readline-doc sgml-base-doc
+Recommended packages:
+  bash-completion curl | wget | lynx libarchive-cpio-perl javascript-common
+  libgpm2 libltdl-dev libmail-sendmail-perl psmisc libpaper-utils python3-pil
+  python3-pygments
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils catkin cmake
+  cmake-data cmake-extras debhelper dh-autoreconf dh-strip-nondeterminism
+  docutils-common dumb-init dwz fakeroot file gettext gettext-base googletest
+  groff-base intltool-debian libarchive-zip-perl libarchive13 libcurl4
+  libdebhelper-perl libelf1 libexpat1-dev libfakeroot
+  libfile-stripnondeterminism-perl libgmock-dev libgtest-dev libicu72
+  libjs-jquery libjs-sphinxdoc libjs-underscore libjsoncpp25 libmagic-mgc
+  libmagic1 libncursesw6 libpipeline1 libpkgconf3 libproc2-0 libpython3-dev
+  libpython3-stdlib libpython3.11 libpython3.11-dev libpython3.11-minimal
+  libpython3.11-stdlib libreadline8 librhash0 libsqlite3-0
+  libsub-override-perl libtool libuchardet0 libuv1 libxml2 m4 man-db
+  media-types pkg-config pkgconf pkgconf-bin po-debconf procps python3
+  python3-catkin python3-catkin-pkg python3-dateutil python3-dev
+  python3-distutils python3-docutils python3-empy python3-lib2to3
+  python3-minimal python3-pkg-resources python3-pyparsing python3-roman
+  python3-setuptools python3-six python3.11 python3.11-dev python3.11-minimal
+  readline-common ros-environment ros-one-ros-environment ros-one-setup-files
+  sbuild-build-depends-main-dummy sensible-utils sgml-base tzdata xml-core
+  zlib1g-dev
+0 upgraded, 93 newly installed, 0 to remove and 0 not upgraded.
+Need to get 50.4 MB/50.4 MB of archives.
+After this operation, 200 MB of additional disk space will be used.
+Get:1 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ ros-one-setup-files 0-2025.01.07.12.58 [10.7 kB]
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [928 B]
+Get:3 file:/<<BUILDDIR>>/resolver-fO82nb/apt_archive ./ ros-one-ros-environment 1.3.2-5-g2686e94-2025.01.07.12.59 [5884 B]
+Get:4 http://security.debian.org/debian-security bookworm-security/main amd64 libarchive13 amd64 3.6.2-1+deb12u2 [343 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-minimal amd64 3.11.2-6+deb12u4 [815 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 python3.11-minimal amd64 3.11.2-6+deb12u4 [2066 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 python3-minimal amd64 3.11.2-1+b1 [26.3 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 media-types all 10.0.0 [26.1 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-common all 8.2-1.3 [69.0 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libreadline8 amd64 8.2-1.3 [166 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2+deb12u1 [839 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-stdlib amd64 3.11.2-6+deb12u4 [1797 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 python3.11 amd64 3.11.2-6+deb12u4 [573 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libpython3-stdlib amd64 3.11.2-1+b1 [9312 B]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 python3 amd64 3.11.2-1+b1 [26.3 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 sgml-base all 1.31 [15.4 kB]
+Get:18 http://deb.debian.org/debian bookworm-updates/main amd64 tzdata all 2024b-0+deb12u1 [298 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 libproc2-0 amd64 2:4.0.2-3 [62.8 kB]
+Get:20 http://deb.debian.org/debian bookworm/main amd64 procps amd64 2:4.0.2-3 [709 kB]
+Get:21 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+Get:22 http://deb.debian.org/debian bookworm/main amd64 libmagic-mgc amd64 1:5.44-3 [305 kB]
+Get:23 http://deb.debian.org/debian bookworm/main amd64 libmagic1 amd64 1:5.44-3 [104 kB]
+Get:24 http://deb.debian.org/debian bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB]
+Get:25 http://deb.debian.org/debian bookworm/main amd64 gettext-base amd64 0.21-12 [160 kB]
+Get:26 http://deb.debian.org/debian bookworm/main amd64 libuchardet0 amd64 0.0.7-1 [67.8 kB]
+Get:27 http://deb.debian.org/debian bookworm/main amd64 groff-base amd64 1.22.4-10 [916 kB]
+Get:28 http://deb.debian.org/debian bookworm/main amd64 bsdextrautils amd64 2.38.1-5+deb12u2 [86.8 kB]
+Get:29 http://deb.debian.org/debian bookworm/main amd64 libpipeline1 amd64 1.5.7-1 [38.5 kB]
+Get:30 http://deb.debian.org/debian bookworm/main amd64 man-db amd64 2.11.2-2 [1386 kB]
+Get:31 http://deb.debian.org/debian bookworm/main amd64 m4 amd64 1.4.19-3 [287 kB]
+Get:32 http://deb.debian.org/debian bookworm/main amd64 autoconf all 2.71-3 [332 kB]
+Get:33 http://deb.debian.org/debian bookworm/main amd64 autotools-dev all 20220109.1 [51.6 kB]
+Get:34 http://deb.debian.org/debian bookworm/main amd64 automake all 1:1.16.5-1.3 [823 kB]
+Get:35 http://deb.debian.org/debian bookworm/main amd64 autopoint all 0.21-12 [495 kB]
+Get:36 http://deb.debian.org/debian bookworm/main amd64 python3-six all 1.16.0-4 [17.5 kB]
+Get:37 http://deb.debian.org/debian bookworm/main amd64 python3-dateutil all 2.8.2-2 [78.3 kB]
+Get:38 http://deb.debian.org/debian bookworm/main amd64 xml-core all 0.18+nmu1 [23.8 kB]
+Get:39 http://deb.debian.org/debian bookworm/main amd64 docutils-common all 0.19+dfsg-6 [127 kB]
+Get:40 http://deb.debian.org/debian bookworm/main amd64 python3-roman all 3.3-3 [9880 B]
+Get:41 http://deb.debian.org/debian bookworm/main amd64 python3-docutils all 0.19+dfsg-6 [382 kB]
+Get:42 http://deb.debian.org/debian bookworm/main amd64 python3-pkg-resources all 66.1.1-1 [296 kB]
+Get:43 http://deb.debian.org/debian bookworm/main amd64 python3-pyparsing all 3.0.9-1 [138 kB]
+Get:44 http://deb.debian.org/debian bookworm/main amd64 python3-catkin-pkg all 0.5.2-5 [48.4 kB]
+Get:45 http://deb.debian.org/debian bookworm/main amd64 python3-catkin all 0.8.10-9 [36.3 kB]
+Get:46 http://deb.debian.org/debian bookworm/main amd64 python3-empy all 3.3.4-2 [66.1 kB]
+Get:47 http://deb.debian.org/debian bookworm/main amd64 python3-lib2to3 all 3.11.2-3 [76.3 kB]
+Get:48 http://deb.debian.org/debian bookworm/main amd64 python3-distutils all 3.11.2-3 [131 kB]
+Get:49 http://deb.debian.org/debian bookworm/main amd64 python3-setuptools all 66.1.1-1 [521 kB]
+Get:50 http://deb.debian.org/debian bookworm/main amd64 libicu72 amd64 72.1-3 [9376 kB]
+Get:51 http://deb.debian.org/debian bookworm/main amd64 libxml2 amd64 2.9.14+dfsg-1.3~deb12u1 [687 kB]
+Get:52 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u8 [390 kB]
+Get:53 http://deb.debian.org/debian bookworm/main amd64 libjsoncpp25 amd64 1.9.5-4 [78.6 kB]
+Get:54 http://deb.debian.org/debian bookworm/main amd64 librhash0 amd64 1.4.3-3 [134 kB]
+Get:55 http://deb.debian.org/debian bookworm/main amd64 libuv1 amd64 1.44.2-1+deb12u1 [136 kB]
+Get:56 http://deb.debian.org/debian bookworm/main amd64 cmake-data all 3.25.1-1 [2026 kB]
+Get:57 http://deb.debian.org/debian bookworm/main amd64 cmake amd64 3.25.1-1 [8692 kB]
+Get:58 http://deb.debian.org/debian bookworm/main amd64 libpkgconf3 amd64 1.8.1-1 [36.1 kB]
+Get:59 http://deb.debian.org/debian bookworm/main amd64 pkgconf-bin amd64 1.8.1-1 [29.5 kB]
+Get:60 http://deb.debian.org/debian bookworm/main amd64 pkgconf amd64 1.8.1-1 [25.9 kB]
+Get:61 http://deb.debian.org/debian bookworm/main amd64 pkg-config amd64 1.8.1-1 [13.7 kB]
+Get:62 http://deb.debian.org/debian bookworm/main amd64 cmake-extras all 1.6-1 [58.1 kB]
+Get:63 http://deb.debian.org/debian bookworm/main amd64 ros-environment all 1.3.2-2 [6156 B]
+Get:64 http://deb.debian.org/debian bookworm/main amd64 catkin all 0.8.10-9 [94.4 kB]
+Get:65 http://deb.debian.org/debian bookworm/main amd64 libdebhelper-perl all 13.11.4 [81.2 kB]
+Get:66 http://deb.debian.org/debian bookworm/main amd64 libtool all 2.4.7-7~deb12u1 [517 kB]
+Get:67 http://deb.debian.org/debian bookworm/main amd64 dh-autoreconf all 20 [17.1 kB]
+Get:68 http://deb.debian.org/debian bookworm/main amd64 libarchive-zip-perl all 1.68-1 [104 kB]
+Get:69 http://deb.debian.org/debian bookworm/main amd64 libsub-override-perl all 0.09-4 [9304 B]
+Get:70 http://deb.debian.org/debian bookworm/main amd64 libfile-stripnondeterminism-perl all 1.13.1-1 [19.4 kB]
+Get:71 http://deb.debian.org/debian bookworm/main amd64 dh-strip-nondeterminism all 1.13.1-1 [8620 B]
+Get:72 http://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB]
+Get:73 http://deb.debian.org/debian bookworm/main amd64 dwz amd64 0.15-1 [109 kB]
+Get:74 http://deb.debian.org/debian bookworm/main amd64 gettext amd64 0.21-12 [1300 kB]
+Get:75 http://deb.debian.org/debian bookworm/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB]
+Get:76 http://deb.debian.org/debian bookworm/main amd64 po-debconf all 1.0.21+nmu1 [248 kB]
+Get:77 http://deb.debian.org/debian bookworm/main amd64 debhelper all 13.11.4 [942 kB]
+Get:78 http://deb.debian.org/debian bookworm/main amd64 dumb-init amd64 1.2.5-2 [14.1 kB]
+Get:79 http://deb.debian.org/debian bookworm/main amd64 libfakeroot amd64 1.31-1.2 [28.3 kB]
+Get:80 http://deb.debian.org/debian bookworm/main amd64 fakeroot amd64 1.31-1.2 [66.9 kB]
+Get:81 http://deb.debian.org/debian bookworm/main amd64 googletest all 1.12.1-0.2 [506 kB]
+Get:82 http://deb.debian.org/debian bookworm/main amd64 libexpat1-dev amd64 2.5.0-1+deb12u1 [150 kB]
+Get:83 http://deb.debian.org/debian bookworm/main amd64 libgtest-dev amd64 1.12.1-0.2 [240 kB]
+Get:84 http://deb.debian.org/debian bookworm/main amd64 libgmock-dev amd64 1.12.1-0.2 [131 kB]
+Get:85 http://deb.debian.org/debian bookworm/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [326 kB]
+Get:86 http://deb.debian.org/debian bookworm/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [116 kB]
+Get:87 http://deb.debian.org/debian bookworm/main amd64 libjs-sphinxdoc all 5.3.0-4 [130 kB]
+Get:88 http://deb.debian.org/debian bookworm/main amd64 libpython3.11 amd64 3.11.2-6+deb12u4 [1989 kB]
+Get:89 http://deb.debian.org/debian bookworm/main amd64 zlib1g-dev amd64 1:1.2.13.dfsg-1 [916 kB]
+Get:90 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-dev amd64 3.11.2-6+deb12u4 [4738 kB]
+Get:91 http://deb.debian.org/debian bookworm/main amd64 libpython3-dev amd64 3.11.2-1+b1 [9572 B]
+Get:92 http://deb.debian.org/debian bookworm/main amd64 python3.11-dev amd64 3.11.2-6+deb12u4 [616 kB]
+Get:93 http://deb.debian.org/debian bookworm/main amd64 python3-dev amd64 3.11.2-1+b1 [26.2 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 50.4 MB in 1s (73.3 MB/s)
+Selecting previously unselected package libpython3.11-minimal:amd64.
+(Reading database ... 12470 files and directories currently installed.)
+Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-minimal:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3.11-minimal.
+Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11-minimal (3.11.2-6+deb12u4) ...
+Setting up libpython3.11-minimal:amd64 (3.11.2-6+deb12u4) ...
+Setting up python3.11-minimal (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 12777 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.0.0_all.deb ...
+Unpacking media-types (10.0.0) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../2-libncursesw6_6.4-4_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.4-4) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../3-readline-common_8.2-1.3_all.deb ...
+Unpacking readline-common (8.2-1.3) ...
+Selecting previously unselected package libreadline8:amd64.
+Preparing to unpack .../4-libreadline8_8.2-1.3_amd64.deb ...
+Unpacking libreadline8:amd64 (8.2-1.3) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../5-libsqlite3-0_3.40.1-2+deb12u1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.40.1-2+deb12u1) ...
+Selecting previously unselected package libpython3.11-stdlib:amd64.
+Preparing to unpack .../6-libpython3.11-stdlib_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-stdlib:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3.11.
+Preparing to unpack .../7-python3.11_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../8-libpython3-stdlib_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package python3.
+(Reading database ... 13228 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.11.2-1+b1_amd64.deb ...
+Unpacking python3 (3.11.2-1+b1) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.31_all.deb ...
+Unpacking sgml-base (1.31) ...
+Selecting previously unselected package tzdata.
+Preparing to unpack .../02-tzdata_2024b-0+deb12u1_all.deb ...
+Unpacking tzdata (2024b-0+deb12u1) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../03-libproc2-0_2%3a4.0.2-3_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.2-3) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../04-procps_2%3a4.0.2-3_amd64.deb ...
+Unpacking procps (2:4.0.2-3) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../05-sensible-utils_0.0.17+nmu1_all.deb ...
+Unpacking sensible-utils (0.0.17+nmu1) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../06-libmagic-mgc_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic-mgc (1:5.44-3) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../07-libmagic1_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.44-3) ...
+Selecting previously unselected package file.
+Preparing to unpack .../08-file_1%3a5.44-3_amd64.deb ...
+Unpacking file (1:5.44-3) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../09-gettext-base_0.21-12_amd64.deb ...
+Unpacking gettext-base (0.21-12) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../10-libuchardet0_0.0.7-1_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.7-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../11-groff-base_1.22.4-10_amd64.deb ...
+Unpacking groff-base (1.22.4-10) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../12-bsdextrautils_2.38.1-5+deb12u2_amd64.deb ...
+Unpacking bsdextrautils (2.38.1-5+deb12u2) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../13-libpipeline1_1.5.7-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../14-man-db_2.11.2-2_amd64.deb ...
+Unpacking man-db (2.11.2-2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../15-m4_1.4.19-3_amd64.deb ...
+Unpacking m4 (1.4.19-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../16-autoconf_2.71-3_all.deb ...
+Unpacking autoconf (2.71-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../17-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../18-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../19-autopoint_0.21-12_all.deb ...
+Unpacking autopoint (0.21-12) ...
+Selecting previously unselected package python3-six.
+Preparing to unpack .../20-python3-six_1.16.0-4_all.deb ...
+Unpacking python3-six (1.16.0-4) ...
+Selecting previously unselected package python3-dateutil.
+Preparing to unpack .../21-python3-dateutil_2.8.2-2_all.deb ...
+Unpacking python3-dateutil (2.8.2-2) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../22-xml-core_0.18+nmu1_all.deb ...
+Unpacking xml-core (0.18+nmu1) ...
+Selecting previously unselected package docutils-common.
+Preparing to unpack .../23-docutils-common_0.19+dfsg-6_all.deb ...
+Unpacking docutils-common (0.19+dfsg-6) ...
+Selecting previously unselected package python3-roman.
+Preparing to unpack .../24-python3-roman_3.3-3_all.deb ...
+Unpacking python3-roman (3.3-3) ...
+Selecting previously unselected package python3-docutils.
+Preparing to unpack .../25-python3-docutils_0.19+dfsg-6_all.deb ...
+Unpacking python3-docutils (0.19+dfsg-6) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../26-python3-pkg-resources_66.1.1-1_all.deb ...
+Unpacking python3-pkg-resources (66.1.1-1) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../27-python3-pyparsing_3.0.9-1_all.deb ...
+Unpacking python3-pyparsing (3.0.9-1) ...
+Selecting previously unselected package python3-catkin-pkg.
+Preparing to unpack .../28-python3-catkin-pkg_0.5.2-5_all.deb ...
+Unpacking python3-catkin-pkg (0.5.2-5) ...
+Selecting previously unselected package python3-catkin.
+Preparing to unpack .../29-python3-catkin_0.8.10-9_all.deb ...
+Unpacking python3-catkin (0.8.10-9) ...
+Selecting previously unselected package python3-empy.
+Preparing to unpack .../30-python3-empy_3.3.4-2_all.deb ...
+Unpacking python3-empy (3.3.4-2) ...
+Selecting previously unselected package python3-lib2to3.
+Preparing to unpack .../31-python3-lib2to3_3.11.2-3_all.deb ...
+Unpacking python3-lib2to3 (3.11.2-3) ...
+Selecting previously unselected package python3-distutils.
+Preparing to unpack .../32-python3-distutils_3.11.2-3_all.deb ...
+Unpacking python3-distutils (3.11.2-3) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../33-python3-setuptools_66.1.1-1_all.deb ...
+Unpacking python3-setuptools (66.1.1-1) ...
+Selecting previously unselected package libicu72:amd64.
+Preparing to unpack .../34-libicu72_72.1-3_amd64.deb ...
+Unpacking libicu72:amd64 (72.1-3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../35-libxml2_2.9.14+dfsg-1.3~deb12u1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3~deb12u1) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../36-libarchive13_3.6.2-1+deb12u2_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.2-1+deb12u2) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../37-libcurl4_7.88.1-10+deb12u8_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u8) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../38-libjsoncpp25_1.9.5-4_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-4) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../39-librhash0_1.4.3-3_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.3-3) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../40-libuv1_1.44.2-1+deb12u1_amd64.deb ...
+Unpacking libuv1:amd64 (1.44.2-1+deb12u1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../41-cmake-data_3.25.1-1_all.deb ...
+Unpacking cmake-data (3.25.1-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../42-cmake_3.25.1-1_amd64.deb ...
+Unpacking cmake (3.25.1-1) ...
+Selecting previously unselected package libpkgconf3:amd64.
+Preparing to unpack .../43-libpkgconf3_1.8.1-1_amd64.deb ...
+Unpacking libpkgconf3:amd64 (1.8.1-1) ...
+Selecting previously unselected package pkgconf-bin.
+Preparing to unpack .../44-pkgconf-bin_1.8.1-1_amd64.deb ...
+Unpacking pkgconf-bin (1.8.1-1) ...
+Selecting previously unselected package pkgconf:amd64.
+Preparing to unpack .../45-pkgconf_1.8.1-1_amd64.deb ...
+Unpacking pkgconf:amd64 (1.8.1-1) ...
+Selecting previously unselected package pkg-config:amd64.
+Preparing to unpack .../46-pkg-config_1.8.1-1_amd64.deb ...
+Unpacking pkg-config:amd64 (1.8.1-1) ...
+Selecting previously unselected package cmake-extras.
+Preparing to unpack .../47-cmake-extras_1.6-1_all.deb ...
+Unpacking cmake-extras (1.6-1) ...
+Selecting previously unselected package ros-environment.
+Preparing to unpack .../48-ros-environment_1.3.2-2_all.deb ...
+Unpacking ros-environment (1.3.2-2) ...
+Selecting previously unselected package catkin.
+Preparing to unpack .../49-catkin_0.8.10-9_all.deb ...
+Unpacking catkin (0.8.10-9) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../50-libdebhelper-perl_13.11.4_all.deb ...
+Unpacking libdebhelper-perl (13.11.4) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../51-libtool_2.4.7-7~deb12u1_all.deb ...
+Unpacking libtool (2.4.7-7~deb12u1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../52-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../53-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../54-libsub-override-perl_0.09-4_all.deb ...
+Unpacking libsub-override-perl (0.09-4) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../55-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.1-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../56-dh-strip-nondeterminism_1.13.1-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.1-1) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../57-libelf1_0.188-2.1_amd64.deb ...
+Unpacking libelf1:amd64 (0.188-2.1) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../58-dwz_0.15-1_amd64.deb ...
+Unpacking dwz (0.15-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../59-gettext_0.21-12_amd64.deb ...
+Unpacking gettext (0.21-12) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../60-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../61-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../62-debhelper_13.11.4_all.deb ...
+Unpacking debhelper (13.11.4) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../63-dumb-init_1.2.5-2_amd64.deb ...
+Unpacking dumb-init (1.2.5-2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../64-libfakeroot_1.31-1.2_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.31-1.2) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../65-fakeroot_1.31-1.2_amd64.deb ...
+Unpacking fakeroot (1.31-1.2) ...
+Selecting previously unselected package googletest.
+Preparing to unpack .../66-googletest_1.12.1-0.2_all.deb ...
+Unpacking googletest (1.12.1-0.2) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../67-libexpat1-dev_2.5.0-1+deb12u1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.5.0-1+deb12u1) ...
+Selecting previously unselected package libgtest-dev:amd64.
+Preparing to unpack .../68-libgtest-dev_1.12.1-0.2_amd64.deb ...
+Unpacking libgtest-dev:amd64 (1.12.1-0.2) ...
+Selecting previously unselected package libgmock-dev:amd64.
+Preparing to unpack .../69-libgmock-dev_1.12.1-0.2_amd64.deb ...
+Unpacking libgmock-dev:amd64 (1.12.1-0.2) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../70-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../71-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../72-libjs-sphinxdoc_5.3.0-4_all.deb ...
+Unpacking libjs-sphinxdoc (5.3.0-4) ...
+Selecting previously unselected package libpython3.11:amd64.
+Preparing to unpack .../73-libpython3.11_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../74-zlib1g-dev_1%3a1.2.13.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Selecting previously unselected package libpython3.11-dev:amd64.
+Preparing to unpack .../75-libpython3.11-dev_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-dev:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../76-libpython3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.11.2-1+b1) ...
+Selecting previously unselected package python3.11-dev.
+Preparing to unpack .../77-python3.11-dev_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11-dev (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../78-python3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-dev (3.11.2-1+b1) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../79-ros-one-setup-files_0-2025.01.07.12.58_amd64.deb ...
+Unpacking ros-one-setup-files (0-2025.01.07.12.58) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../80-ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-g2686e94-2025.01.07.12.59) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../81-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (10.0.0) ...
+Setting up dumb-init (1.2.5-2) ...
+Setting up libpipeline1:amd64 (1.5.7-1) ...
+Setting up libicu72:amd64 (72.1-3) ...
+Setting up bsdextrautils (2.38.1-5+deb12u2) ...
+Setting up libmagic-mgc (1:5.44-3) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.11.4) ...
+Setting up libsqlite3-0:amd64 (3.40.1-2+deb12u1) ...
+Setting up libmagic1:amd64 (1:5.44-3) ...
+Setting up gettext-base (0.21-12) ...
+Setting up m4 (1.4.19-3) ...
+Setting up file (1:5.44-3) ...
+Setting up googletest (1.12.1-0.2) ...
+Setting up libfakeroot:amd64 (1.31-1.2) ...
+Setting up tzdata (2024b-0+deb12u1) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Tue Jan  7 13:03:30 UTC 2025.
+Universal Time is now:  Tue Jan  7 13:03:30 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up fakeroot (1.31-1.2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20220109.1) ...
+Setting up libpkgconf3:amd64 (1.8.1-1) ...
+Setting up libuv1:amd64 (1.44.2-1+deb12u1) ...
+Setting up libexpat1-dev:amd64 (2.5.0-1+deb12u1) ...
+Setting up libproc2-0:amd64 (2:4.0.2-3) ...
+Setting up autopoint (0.21-12) ...
+Setting up libjsoncpp25:amd64 (1.9.5-4) ...
+Setting up pkgconf-bin (1.8.1-1) ...
+Setting up libncursesw6:amd64 (6.4-4) ...
+Setting up autoconf (2.71-3) ...
+Setting up zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Setting up sensible-utils (0.0.17+nmu1) ...
+Setting up librhash0:amd64 (1.4.3-3) ...
+Setting up libuchardet0:amd64 (0.0.7-1) ...
+Setting up procps (2:4.0.2-3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u8) ...
+Setting up libsub-override-perl (0.09-4) ...
+Setting up sgml-base (1.31) ...
+Setting up cmake-data (3.25.1-1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up libelf1:amd64 (0.188-2.1) ...
+Setting up readline-common (8.2-1.3) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3~deb12u1) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up ros-environment (1.3.2-2) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.13.1-1) ...
+Setting up gettext (0.21-12) ...
+Setting up libgtest-dev:amd64 (1.12.1-0.2) ...
+Setting up libtool (2.4.7-7~deb12u1) ...
+Setting up libarchive13:amd64 (3.6.2-1+deb12u2) ...
+Setting up libreadline8:amd64 (8.2-1.3) ...
+Setting up pkgconf:amd64 (1.8.1-1) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up pkg-config:amd64 (1.8.1-1) ...
+Setting up libgmock-dev:amd64 (1.12.1-0.2) ...
+Setting up libjs-sphinxdoc (5.3.0-4) ...
+Setting up dh-strip-nondeterminism (1.13.1-1) ...
+Setting up dwz (0.15-1) ...
+Setting up groff-base (1.22.4-10) ...
+Setting up xml-core (0.18+nmu1) ...
+Setting up cmake (3.25.1-1) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up libpython3.11-stdlib:amd64 (3.11.2-6+deb12u4) ...
+Setting up man-db (2.11.2-2) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up python3.11 (3.11.2-6+deb12u4) ...
+Setting up libpython3.11:amd64 (3.11.2-6+deb12u4) ...
+Setting up debhelper (13.11.4) ...
+Setting up python3 (3.11.2-1+b1) ...
+Setting up python3-empy (3.3.4-2) ...
+Setting up python3-six (1.16.0-4) ...
+Setting up python3-roman (3.3-3) ...
+Setting up python3-pyparsing (3.0.9-1) ...
+Setting up cmake-extras (1.6-1) ...
+Setting up libpython3.11-dev:amd64 (3.11.2-6+deb12u4) ...
+Setting up python3-dateutil (2.8.2-2) ...
+Setting up python3-lib2to3 (3.11.2-3) ...
+Setting up python3-catkin (0.8.10-9) ...
+Setting up python3-pkg-resources (66.1.1-1) ...
+Setting up python3-distutils (3.11.2-3) ...
+Setting up libpython3-dev:amd64 (3.11.2-1+b1) ...
+Setting up python3-setuptools (66.1.1-1) ...
+Setting up python3.11-dev (3.11.2-6+deb12u4) ...
+Setting up python3-dev (3.11.2-1+b1) ...
+Setting up ros-one-setup-files (0-2025.01.07.12.58) ...
+Setting up ros-one-ros-environment (1.3.2-5-g2686e94-2025.01.07.12.59) ...
+Processing triggers for libc-bin (2.36-9+deb12u9) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up docutils-common (0.19+dfsg-6) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up python3-docutils (0.19+dfsg-6) ...
+Setting up python3-catkin-pkg (0.5.2-5) ...
+Setting up catkin (0.8.10-9) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                          Tue, 07 Jan 2025 13:03:34 +0000 |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                            Tue, 07 Jan 2025 13:03:34 +0000 |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.8.0-1017-azure #20-Ubuntu SMP Tue Oct 22 03:43:13 UTC 2024 amd64 (x86_64)
+Toolchain package versions: binutils_2.40-2 dpkg-dev_1.21.22 g++-12_12.2.0-14 gcc-12_12.2.0-14 libc6-dev_2.36-9+deb12u9 libstdc++-12-dev_12.2.0-14 libstdc++6_12.2.0-14 linux-libc-dev_6.1.119-1
+Package versions: adduser_3.134 apt_2.6.1 autoconf_2.71-3 automake_1:1.16.5-1.3 autopoint_0.21-12 autotools-dev_20220109.1 base-files_12.4+deb12u8 base-passwd_3.6.1 bash_5.2.15-2+b7 binutils_2.40-2 binutils-common_2.40-2 binutils-x86-64-linux-gnu_2.40-2 bsdextrautils_2.38.1-5+deb12u2 bsdutils_1:2.38.1-5+deb12u2 build-essential_12.9 bzip2_1.0.8-5+b1 ca-certificates_20230311 catkin_0.8.10-9 ccache_4.8+really4.7.5-1 cmake_3.25.1-1 cmake-data_3.25.1-1 cmake-extras_1.6-1 coreutils_9.1-1 cpp_4:12.2.0-3 cpp-12_12.2.0-14 dash_0.5.12-2 debconf_1.5.82 debhelper_13.11.4 debian-archive-keyring_2023.3+deb12u1 debianutils_5.7-0.5~deb12u1 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.8-4 docutils-common_0.19+dfsg-6 dpkg_1.21.22 dpkg-dev_1.21.22 dumb-init_1.2.5-2 dwz_0.15-1 fakeroot_1.31-1.2 file_1:5.44-3 findutils_4.9.0-4 g++_4:12.2.0-3 g++-12_12.2.0-14 gcc_4:12.2.0-3 gcc-12_12.2.0-14 gcc-12-base_12.2.0-14 gettext_0.21-12 gettext-base_0.21-12 git_1:2.39.5-0+deb12u1 git-man_1:2.39.5-0+deb12u1 googletest_1.12.1-0.2 gpgv_2.2.40-1.1 grep_3.8-5 groff-base_1.22.4-10 gzip_1.12-1 hostname_3.23+nmu1 init-system-helpers_1.65.2 intltool-debian_0.35.0+20060710.6 libacl1_2.3.1-3 libapt-pkg6.0_2.6.1 libarchive-zip-perl_1.68-1 libarchive13_3.6.2-1+deb12u2 libasan8_12.2.0-14 libatomic1_12.2.0-14 libattr1_1:2.5.1-4 libaudit-common_1:3.0.9-1 libaudit1_1:3.0.9-1 libbinutils_2.40-2 libblkid1_2.38.1-5+deb12u2 libbrotli1_1.0.9-2+b6 libbz2-1.0_1.0.8-5+b1 libc-bin_2.36-9+deb12u9 libc-dev-bin_2.36-9+deb12u9 libc6_2.36-9+deb12u9 libc6-dev_2.36-9+deb12u9 libcap-ng0_0.8.3-1+b3 libcap2_1:2.66-4 libcc1-0_12.2.0-14 libcom-err2_1.47.0-2 libcrypt-dev_1:4.4.33-2 libcrypt1_1:4.4.33-2 libctf-nobfd0_2.40-2 libctf0_2.40-2 libcurl3-gnutls_7.88.1-10+deb12u8 libcurl4_7.88.1-10+deb12u8 libdb5.3_5.3.28+dfsg2-1 libdebconfclient0_0.270 libdebhelper-perl_13.11.4 libdpkg-perl_1.21.22 libelf1_0.188-2.1 liberror-perl_0.17029-2 libexpat1_2.5.0-1+deb12u1 libexpat1-dev_2.5.0-1+deb12u1 libfakeroot_1.31-1.2 libffi8_3.4.4-1 libfile-find-rule-perl_0.34-3 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-12-dev_12.2.0-14 libgcc-s1_12.2.0-14 libgcrypt20_1.10.1-3 libgdbm-compat4_1.23-3 libgdbm6_1.23-3 libgmock-dev_1.12.1-0.2 libgmp10_2:6.2.1+dfsg1-1.1 libgnutls30_3.7.9-2+deb12u3 libgomp1_12.2.0-14 libgpg-error0_1.46-1 libgprofng0_2.40-2 libgssapi-krb5-2_1.20.1-2+deb12u2 libgtest-dev_1.12.1-0.2 libhiredis0.14_0.14.1-3 libhogweed6_3.8.1-2 libicu72_72.1-3 libidn2-0_2.3.3-1+b1 libisl23_0.25-1.1 libitm1_12.2.0-14 libjansson4_2.14-2 libjs-jquery_3.6.1+dfsg+~3.5.14-1 libjs-sphinxdoc_5.3.0-4 libjs-underscore_1.13.4~dfsg+~1.11.4-3 libjsoncpp25_1.9.5-4 libk5crypto3_1.20.1-2+deb12u2 libkeyutils1_1.6.3-2 libkrb5-3_1.20.1-2+deb12u2 libkrb5support0_1.20.1-2+deb12u2 libldap-2.5-0_2.5.13+dfsg-5 liblsan0_12.2.0-14 liblz4-1_1.9.4-1 liblzma5_5.4.1-0.2 libmagic-mgc_1:5.44-3 libmagic1_1:5.44-3 libmd0_1.0.4-2 libmount1_2.38.1-5+deb12u2 libmpc3_1.3.1-1 libmpfr6_4.2.0-1 libncursesw6_6.4-4 libnettle8_3.8.1-2 libnghttp2-14_1.52.0-1+deb12u2 libnsl-dev_1.3.0-2 libnsl2_1.3.0-2 libnumber-compare-perl_0.03-3 libp11-kit0_0.24.1-2 libpam-modules_1.5.2-6+deb12u1 libpam-modules-bin_1.5.2-6+deb12u1 libpam-runtime_1.5.2-6+deb12u1 libpam0g_1.5.2-6+deb12u1 libpcre2-8-0_10.42-1 libperl5.36_5.36.0-7+deb12u1 libpipeline1_1.5.7-1 libpkgconf3_1.8.1-1 libproc2-0_2:4.0.2-3 libpsl5_0.21.2-1 libpython3-dev_3.11.2-1+b1 libpython3-stdlib_3.11.2-1+b1 libpython3.11_3.11.2-6+deb12u4 libpython3.11-dev_3.11.2-6+deb12u4 libpython3.11-minimal_3.11.2-6+deb12u4 libpython3.11-stdlib_3.11.2-6+deb12u4 libquadmath0_12.2.0-14 libreadline8_8.2-1.3 librhash0_1.4.3-3 librtmp1_2.4+20151223.gitfa8646d.1-2+b2 libsasl2-2_2.1.28+dfsg-10 libsasl2-modules-db_2.1.28+dfsg-10 libseccomp2_2.5.4-1+deb12u1 libselinux1_3.4-1+b6 libsemanage-common_3.4-1 libsemanage2_3.4-1+b5 libsepol2_3.4-2.1 libsmartcols1_2.38.1-5+deb12u2 libsqlite3-0_3.40.1-2+deb12u1 libssh2-1_1.10.0-3+b1 libssl3_3.0.15-1~deb12u1 libstdc++-12-dev_12.2.0-14 libstdc++6_12.2.0-14 libsub-override-perl_0.09-4 libsystemd0_252.31-1~deb12u1 libtasn1-6_4.19.0-2 libtext-glob-perl_0.11-3 libtinfo6_6.4-4 libtirpc-common_1.3.3+ds-1 libtirpc-dev_1.3.3+ds-1 libtirpc3_1.3.3+ds-1 libtool_2.4.7-7~deb12u1 libtsan2_12.2.0-14 libubsan1_12.2.0-14 libuchardet0_0.0.7-1 libudev1_252.31-1~deb12u1 libunistring2_1.0-2 libuuid1_2.38.1-5+deb12u2 libuv1_1.44.2-1+deb12u1 libxml2_2.9.14+dfsg-1.3~deb12u1 libxxhash0_0.8.1-1 libzstd1_1.5.4+dfsg2-5 linux-libc-dev_6.1.119-1 login_1:4.13+dfsg1-1+b1 m4_1.4.19-3 make_4.3-4.1 man-db_2.11.2-2 mawk_1.3.4.20200120-3.1 media-types_10.0.0 ncurses-base_6.4-4 ncurses-bin_6.4-4 openssl_3.0.15-1~deb12u1 passwd_1:4.13+dfsg1-1+b1 patch_2.7.6-7 perl_5.36.0-7+deb12u1 perl-base_5.36.0-7+deb12u1 perl-modules-5.36_5.36.0-7+deb12u1 pkg-config_1.8.1-1 pkgconf_1.8.1-1 pkgconf-bin_1.8.1-1 po-debconf_1.0.21+nmu1 procps_2:4.0.2-3 python3_3.11.2-1+b1 python3-catkin_0.8.10-9 python3-catkin-pkg_0.5.2-5 python3-dateutil_2.8.2-2 python3-dev_3.11.2-1+b1 python3-distutils_3.11.2-3 python3-docutils_0.19+dfsg-6 python3-empy_3.3.4-2 python3-lib2to3_3.11.2-3 python3-minimal_3.11.2-1+b1 python3-pkg-resources_66.1.1-1 python3-pyparsing_3.0.9-1 python3-roman_3.3-3 python3-setuptools_66.1.1-1 python3-six_1.16.0-4 python3.11_3.11.2-6+deb12u4 python3.11-dev_3.11.2-6+deb12u4 python3.11-minimal_3.11.2-6+deb12u4 readline-common_8.2-1.3 ros-environment_1.3.2-2 ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59 ros-one-setup-files_0-2025.01.07.12.58 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-1 sensible-utils_0.0.17+nmu1 sgml-base_1.31 sysvinit-utils_3.06-4 tar_1.34+dfsg-1.2+deb12u1 tzdata_2024b-0+deb12u1 usrmerge_37~deb12u1 util-linux_2.38.1-5+deb12u2 util-linux-extra_2.38.1-5+deb12u2 xml-core_0.18+nmu1 xz-utils_5.4.1-0.2 zlib1g_1:1.2.13.dfsg-1 zlib1g-dev_1:1.2.13.dfsg-1
+
++------------------------------------------------------------------------------+
+| Build                                        Tue, 07 Jan 2025 13:03:34 +0000 |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-openslam-gmapping
+Binary: ros-one-openslam-gmapping
+Architecture: any
+Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Homepage: http://openslam.org/gmapping
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), catkin, libgmock-dev, libgtest-dev
+Package-List:
+ ros-one-openslam-gmapping deb misc optional arch=any
+Checksums-Sha1:
+ b2a8b2259f24f3bba29abf23a2e3d50e7ef0e47a 476839 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.tar.gz
+Checksums-Sha256:
+ 93ea18c6ed0f6bbbdab9f21f5a44edf5458bfb559aa4015257b7274e15da8d98 476839 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.tar.gz
+Files:
+ 5e45efcdbe71df0323f97f20022b358d 476839 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.dsc)
+dpkg-source: info: extracting ros-one-openslam-gmapping in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/sbuild-nonexistent
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-openslam-gmapping
+dpkg-buildpackage: info: source version 0.2.1-17-g5105476-2025.01.07.13.03
+dpkg-buildpackage: info: source distribution bookworm
+dpkg-buildpackage: info: source changed by ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-openslam-gmapping.substvars debian/files
+	rm -fr -- debian/ros-one-openslam-gmapping/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCATKIN_BUILD_BINARY_PACKAGE="1" \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF -DCATKIN_ENABLE_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DCATKIN_BUILD_BINARY_PACKAGE=1 -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF -DCATKIN_ENABLE_TESTING=OFF ..
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/one
+-- This workspace overlays: /opt/ros/one
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.11.2", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: OFF
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LOCALSTATEDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    FETCHCONTENT_FULLY_DISCONNECTED
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-openslam-gmapping.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
+make  -f CMakeFiles/autoptr_test.dir/build.make CMakeFiles/autoptr_test.dir/depend
+make  -f CMakeFiles/sensor_base.dir/build.make CMakeFiles/sensor_base.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/utils.dir/DependInfo.cmake --color=
+make  -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/autoptr_test.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_base.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/configfile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+make  -f CMakeFiles/autoptr_test.dir/build.make CMakeFiles/autoptr_test.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/sensor_base.dir/build.make CMakeFiles/sensor_base.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  1%] Building CXX object CMakeFiles/utils.dir/utils/stat.cpp.o
+[  3%] Building CXX object CMakeFiles/autoptr_test.dir/utils/autoptr_test.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/autoptr_test.dir/utils/autoptr_test.cpp.o -MF CMakeFiles/autoptr_test.dir/utils/autoptr_test.cpp.o.d -o CMakeFiles/autoptr_test.dir/utils/autoptr_test.cpp.o -c /<<BUILDDIR>>package/utils/autoptr_test.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dutils_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/utils.dir/utils/stat.cpp.o -MF CMakeFiles/utils.dir/utils/stat.cpp.o.d -o CMakeFiles/utils.dir/utils/stat.cpp.o -c /<<BUILDDIR>>package/utils/stat.cpp
+[  5%] Building CXX object CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_base_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o -MF CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o.d -o CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_base/sensor.cpp
+[  7%] Building CXX object CMakeFiles/configfile.dir/configfile/configfile.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dconfigfile_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/configfile.dir/configfile/configfile.cpp.o -MF CMakeFiles/configfile.dir/configfile/configfile.cpp.o.d -o CMakeFiles/configfile.dir/configfile/configfile.cpp.o -c /<<BUILDDIR>>package/configfile/configfile.cpp
+[  9%] Building CXX object CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_base_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o -MF CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o.d -o CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_base/sensorreading.cpp
+[ 11%] Linking CXX executable devel/lib/openslam_gmapping/autoptr_test
+/usr/bin/cmake -E cmake_link_script CMakeFiles/autoptr_test.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/autoptr_test.dir/utils/autoptr_test.cpp.o -o devel/lib/openslam_gmapping/autoptr_test 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 11%] Built target autoptr_test
+[ 13%] Building CXX object CMakeFiles/utils.dir/utils/movement.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dutils_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/utils.dir/utils/movement.cpp.o -MF CMakeFiles/utils.dir/utils/movement.cpp.o.d -o CMakeFiles/utils.dir/utils/movement.cpp.o -c /<<BUILDDIR>>package/utils/movement.cpp
+[ 15%] Linking CXX shared library devel/lib/libsensor_base.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/sensor_base.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libsensor_base.so -o devel/lib/libsensor_base.so CMakeFiles/sensor_base.dir/sensor/sensor_base/sensor.cpp.o CMakeFiles/sensor_base.dir/sensor/sensor_base/sensorreading.cpp.o 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 15%] Built target sensor_base
+make  -f CMakeFiles/sensor_odometry.dir/build.make CMakeFiles/sensor_odometry.dir/depend
+make  -f CMakeFiles/sensor_range.dir/build.make CMakeFiles/sensor_range.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_odometry.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_range.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/sensor_odometry.dir/build.make CMakeFiles/sensor_odometry.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/sensor_range.dir/build.make CMakeFiles/sensor_range.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 17%] Building CXX object CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_odometry_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o -MF CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o.d -o CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_odometry/odometrysensor.cpp
+[ 19%] Building CXX object CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_range_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o -MF CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o.d -o CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_range/rangesensor.cpp
+[ 21%] Linking CXX shared library devel/lib/libutils.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libutils.so -o devel/lib/libutils.so CMakeFiles/utils.dir/utils/stat.cpp.o CMakeFiles/utils.dir/utils/movement.cpp.o 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 21%] Built target utils
+[ 23%] Building CXX object CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_range_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o -MF CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o.d -o CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_range/rangereading.cpp
+[ 25%] Building CXX object CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dsensor_odometry_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o -MF CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o.d -o CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o -c /<<BUILDDIR>>package/sensor/sensor_odometry/odometryreading.cpp
+[ 27%] Linking CXX shared library devel/lib/libconfigfile.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/configfile.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libconfigfile.so -o devel/lib/libconfigfile.so CMakeFiles/configfile.dir/configfile/configfile.cpp.o 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 27%] Built target configfile
+make  -f CMakeFiles/configfile_test.dir/build.make CMakeFiles/configfile_test.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/configfile_test.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/configfile_test.dir/build.make CMakeFiles/configfile_test.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 29%] Building CXX object CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o -MF CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o.d -o CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o -c /<<BUILDDIR>>package/configfile/configfile_test.cpp
+[ 31%] Linking CXX shared library devel/lib/libsensor_odometry.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/sensor_odometry.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libsensor_odometry.so -o devel/lib/libsensor_odometry.so CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometrysensor.cpp.o CMakeFiles/sensor_odometry.dir/sensor/sensor_odometry/odometryreading.cpp.o  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libsensor_base.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 31%] Built target sensor_odometry
+[ 33%] Linking CXX shared library devel/lib/libsensor_range.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/sensor_range.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libsensor_range.so -o devel/lib/libsensor_range.so CMakeFiles/sensor_range.dir/sensor/sensor_range/rangesensor.cpp.o CMakeFiles/sensor_range.dir/sensor/sensor_range/rangereading.cpp.o  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libsensor_base.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 33%] Built target sensor_range
+make  -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 37%] Building CXX object CMakeFiles/log.dir/log/sensorlog.cpp.o
+[ 37%] Building CXX object CMakeFiles/log.dir/log/carmenconfiguration.cpp.o
+[ 39%] Building CXX object CMakeFiles/log.dir/log/configuration.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dlog_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/log.dir/log/sensorlog.cpp.o -MF CMakeFiles/log.dir/log/sensorlog.cpp.o.d -o CMakeFiles/log.dir/log/sensorlog.cpp.o -c /<<BUILDDIR>>package/log/sensorlog.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dlog_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/log.dir/log/configuration.cpp.o -MF CMakeFiles/log.dir/log/configuration.cpp.o.d -o CMakeFiles/log.dir/log/configuration.cpp.o -c /<<BUILDDIR>>package/log/configuration.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dlog_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/log.dir/log/carmenconfiguration.cpp.o -MF CMakeFiles/log.dir/log/carmenconfiguration.cpp.o.d -o CMakeFiles/log.dir/log/carmenconfiguration.cpp.o -c /<<BUILDDIR>>package/log/carmenconfiguration.cpp
+[ 41%] Linking CXX executable devel/lib/openslam_gmapping/configfile_test
+/usr/bin/cmake -E cmake_link_script CMakeFiles/configfile_test.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/configfile_test.dir/configfile/configfile_test.cpp.o -o devel/lib/openslam_gmapping/configfile_test  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libconfigfile.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 41%] Built target configfile_test
+[ 43%] Building CXX object CMakeFiles/log.dir/log/sensorstream.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dlog_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/log.dir/log/sensorstream.cpp.o -MF CMakeFiles/log.dir/log/sensorstream.cpp.o.d -o CMakeFiles/log.dir/log/sensorstream.cpp.o -c /<<BUILDDIR>>package/log/sensorstream.cpp
+[ 45%] Linking CXX shared library devel/lib/liblog.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/log.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,liblog.so -o devel/lib/liblog.so CMakeFiles/log.dir/log/configuration.cpp.o CMakeFiles/log.dir/log/carmenconfiguration.cpp.o CMakeFiles/log.dir/log/sensorlog.cpp.o CMakeFiles/log.dir/log/sensorstream.cpp.o  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 45%] Built target log
+make  -f CMakeFiles/log_test.dir/build.make CMakeFiles/log_test.dir/depend
+make  -f CMakeFiles/log_plot.dir/build.make CMakeFiles/log_plot.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log_test.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log_plot.dir/DependInfo.cmake --color=
+make  -f CMakeFiles/scanstudio2carmen.dir/build.make CMakeFiles/scanstudio2carmen.dir/depend
+make  -f CMakeFiles/rdk2carmen.dir/build.make CMakeFiles/rdk2carmen.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanstudio2carmen.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/rdk2carmen.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log_test.dir/build.make CMakeFiles/log_test.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/scanstudio2carmen.dir/build.make CMakeFiles/scanstudio2carmen.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log_plot.dir/build.make CMakeFiles/log_plot.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/rdk2carmen.dir/build.make CMakeFiles/rdk2carmen.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 47%] Building CXX object CMakeFiles/log_test.dir/log/log_test.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/log_test.dir/log/log_test.cpp.o -MF CMakeFiles/log_test.dir/log/log_test.cpp.o.d -o CMakeFiles/log_test.dir/log/log_test.cpp.o -c /<<BUILDDIR>>package/log/log_test.cpp
+[ 49%] Building CXX object CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o -MF CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o.d -o CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o -c /<<BUILDDIR>>package/log/scanstudio2carmen.cpp
+[ 50%] Building CXX object CMakeFiles/rdk2carmen.dir/log/rdk2carmen.cpp.o
+[ 52%] Building CXX object CMakeFiles/log_plot.dir/log/log_plot.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/rdk2carmen.dir/log/rdk2carmen.cpp.o -MF CMakeFiles/rdk2carmen.dir/log/rdk2carmen.cpp.o.d -o CMakeFiles/rdk2carmen.dir/log/rdk2carmen.cpp.o -c /<<BUILDDIR>>package/log/rdk2carmen.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/log_plot.dir/log/log_plot.cpp.o -MF CMakeFiles/log_plot.dir/log/log_plot.cpp.o.d -o CMakeFiles/log_plot.dir/log/log_plot.cpp.o -c /<<BUILDDIR>>package/log/log_plot.cpp
+[ 54%] Linking CXX executable devel/lib/openslam_gmapping/scanstudio2carmen
+/usr/bin/cmake -E cmake_link_script CMakeFiles/scanstudio2carmen.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/scanstudio2carmen.dir/log/scanstudio2carmen.cpp.o -o devel/lib/openslam_gmapping/scanstudio2carmen  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 54%] Built target scanstudio2carmen
+make  -f CMakeFiles/scanmatcher.dir/build.make CMakeFiles/scanmatcher.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanmatcher.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/scanmatcher.dir/build.make CMakeFiles/scanmatcher.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 56%] Building CXX object CMakeFiles/scanmatcher.dir/scanmatcher/smmap.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dscanmatcher_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/scanmatcher.dir/scanmatcher/smmap.cpp.o -MF CMakeFiles/scanmatcher.dir/scanmatcher/smmap.cpp.o.d -o CMakeFiles/scanmatcher.dir/scanmatcher/smmap.cpp.o -c /<<BUILDDIR>>package/scanmatcher/smmap.cpp
+[ 58%] Linking CXX executable devel/lib/openslam_gmapping/log_test
+/usr/bin/cmake -E cmake_link_script CMakeFiles/log_test.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/log_test.dir/log/log_test.cpp.o -o devel/lib/openslam_gmapping/log_test  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so 
+[ 60%] Linking CXX executable devel/lib/openslam_gmapping/rdk2carmen
+/usr/bin/cmake -E cmake_link_script CMakeFiles/rdk2carmen.dir/link.txt --verbose=1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/rdk2carmen.dir/log/rdk2carmen.cpp.o -o devel/lib/openslam_gmapping/rdk2carmen  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so 
+[ 60%] Built target log_test
+[ 62%] Building CXX object CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcher.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dscanmatcher_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcher.cpp.o -MF CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcher.cpp.o.d -o CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcher.cpp.o -c /<<BUILDDIR>>package/scanmatcher/scanmatcher.cpp
+[ 64%] Linking CXX executable devel/lib/openslam_gmapping/log_plot
+/usr/bin/cmake -E cmake_link_script CMakeFiles/log_plot.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/log_plot.dir/log/log_plot.cpp.o -o devel/lib/openslam_gmapping/log_plot  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 64%] Built target rdk2carmen
+[ 66%] Building CXX object CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcherprocessor.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dscanmatcher_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcherprocessor.cpp.o -MF CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcherprocessor.cpp.o.d -o CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcherprocessor.cpp.o -c /<<BUILDDIR>>package/scanmatcher/scanmatcherprocessor.cpp
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 66%] Built target log_plot
+[ 68%] Building CXX object CMakeFiles/scanmatcher.dir/scanmatcher/eig3.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dscanmatcher_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/scanmatcher.dir/scanmatcher/eig3.cpp.o -MF CMakeFiles/scanmatcher.dir/scanmatcher/eig3.cpp.o.d -o CMakeFiles/scanmatcher.dir/scanmatcher/eig3.cpp.o -c /<<BUILDDIR>>package/scanmatcher/eig3.cpp
+[ 70%] Linking CXX shared library devel/lib/libscanmatcher.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/scanmatcher.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libscanmatcher.so -o devel/lib/libscanmatcher.so CMakeFiles/scanmatcher.dir/scanmatcher/smmap.cpp.o CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcher.cpp.o CMakeFiles/scanmatcher.dir/scanmatcher/scanmatcherprocessor.cpp.o CMakeFiles/scanmatcher.dir/scanmatcher/eig3.cpp.o  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 70%] Built target scanmatcher
+make  -f CMakeFiles/scanmatch_test.dir/build.make CMakeFiles/scanmatch_test.dir/depend
+make  -f CMakeFiles/icptest.dir/build.make CMakeFiles/icptest.dir/depend
+make  -f CMakeFiles/gridfastslam.dir/build.make CMakeFiles/gridfastslam.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanmatch_test.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/icptest.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gridfastslam.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gridfastslam.dir/build.make CMakeFiles/gridfastslam.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/icptest.dir/build.make CMakeFiles/icptest.dir/build
+make  -f CMakeFiles/scanmatch_test.dir/build.make CMakeFiles/scanmatch_test.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 72%] Building CXX object CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor_tree.cpp.o
+[ 74%] Building CXX object CMakeFiles/gridfastslam.dir/gridfastslam/motionmodel.cpp.o
+[ 76%] Building CXX object CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dgridfastslam_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor_tree.cpp.o -MF CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor_tree.cpp.o.d -o CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor_tree.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gridslamprocessor_tree.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dgridfastslam_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/gridfastslam.dir/gridfastslam/motionmodel.cpp.o -MF CMakeFiles/gridfastslam.dir/gridfastslam/motionmodel.cpp.o.d -o CMakeFiles/gridfastslam.dir/gridfastslam/motionmodel.cpp.o -c /<<BUILDDIR>>package/gridfastslam/motionmodel.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o -MF CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o.d -o CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o -c /<<BUILDDIR>>package/scanmatcher/icptest.cpp
+[ 78%] Building CXX object CMakeFiles/scanmatch_test.dir/scanmatcher/scanmatch_test.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/scanmatch_test.dir/scanmatcher/scanmatch_test.cpp.o -MF CMakeFiles/scanmatch_test.dir/scanmatcher/scanmatch_test.cpp.o.d -o CMakeFiles/scanmatch_test.dir/scanmatcher/scanmatch_test.cpp.o -c /<<BUILDDIR>>package/scanmatcher/scanmatch_test.cpp
+[ 80%] Building CXX object CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dgridfastslam_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor.cpp.o -MF CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor.cpp.o.d -o CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gridslamprocessor.cpp
+[ 82%] Linking CXX executable devel/lib/openslam_gmapping/icptest
+/usr/bin/cmake -E cmake_link_script CMakeFiles/icptest.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/icptest.dir/scanmatcher/icptest.cpp.o -o devel/lib/openslam_gmapping/icptest  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 82%] Built target icptest
+[ 84%] Building CXX object CMakeFiles/gridfastslam.dir/gridfastslam/gfsreader.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -Dgridfastslam_EXPORTS -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -MD -MT CMakeFiles/gridfastslam.dir/gridfastslam/gfsreader.cpp.o -MF CMakeFiles/gridfastslam.dir/gridfastslam/gfsreader.cpp.o.d -o CMakeFiles/gridfastslam.dir/gridfastslam/gfsreader.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gfsreader.cpp
+[ 86%] Linking CXX executable devel/lib/openslam_gmapping/scanmatch_test
+/usr/bin/cmake -E cmake_link_script CMakeFiles/scanmatch_test.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/scanmatch_test.dir/scanmatcher/scanmatch_test.cpp.o -o devel/lib/openslam_gmapping/scanmatch_test  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 86%] Built target scanmatch_test
+[ 88%] Linking CXX shared library devel/lib/libgridfastslam.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gridfastslam.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -fPIC -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -shared -Wl,-soname,libgridfastslam.so -o devel/lib/libgridfastslam.so CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor_tree.cpp.o CMakeFiles/gridfastslam.dir/gridfastslam/motionmodel.cpp.o CMakeFiles/gridfastslam.dir/gridfastslam/gridslamprocessor.cpp.o CMakeFiles/gridfastslam.dir/gridfastslam/gfsreader.cpp.o  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 88%] Built target gridfastslam
+make  -f CMakeFiles/gfs2log.dir/build.make CMakeFiles/gfs2log.dir/depend
+make  -f CMakeFiles/gfs2rec.dir/build.make CMakeFiles/gfs2rec.dir/depend
+make  -f CMakeFiles/gfs2neff.dir/build.make CMakeFiles/gfs2neff.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2log.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2rec.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2neff.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gfs2neff.dir/build.make CMakeFiles/gfs2neff.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gfs2rec.dir/build.make CMakeFiles/gfs2rec.dir/build
+make  -f CMakeFiles/gfs2log.dir/build.make CMakeFiles/gfs2log.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 90%] Building CXX object CMakeFiles/gfs2neff.dir/gridfastslam/gfs2neff.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/gfs2neff.dir/gridfastslam/gfs2neff.cpp.o -MF CMakeFiles/gfs2neff.dir/gridfastslam/gfs2neff.cpp.o.d -o CMakeFiles/gfs2neff.dir/gridfastslam/gfs2neff.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gfs2neff.cpp
+[ 92%] Building CXX object CMakeFiles/gfs2rec.dir/gridfastslam/gfs2rec.cpp.o
+[ 94%] Building CXX object CMakeFiles/gfs2log.dir/gridfastslam/gfs2log.cpp.o
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/gfs2rec.dir/gridfastslam/gfs2rec.cpp.o -MF CMakeFiles/gfs2rec.dir/gridfastslam/gfs2rec.cpp.o.d -o CMakeFiles/gfs2rec.dir/gridfastslam/gfs2rec.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gfs2rec.cpp
+/usr/lib/ccache/c++ -DROS_BUILD_SHARED_LIBS=1 -I/<<BUILDDIR>>package/include -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/include -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -MD -MT CMakeFiles/gfs2log.dir/gridfastslam/gfs2log.cpp.o -MF CMakeFiles/gfs2log.dir/gridfastslam/gfs2log.cpp.o.d -o CMakeFiles/gfs2log.dir/gridfastslam/gfs2log.cpp.o -c /<<BUILDDIR>>package/gridfastslam/gfs2log.cpp
+[ 96%] Linking CXX executable devel/lib/openslam_gmapping/gfs2log
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gfs2log.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/gfs2log.dir/gridfastslam/gfs2log.cpp.o -o devel/lib/openslam_gmapping/gfs2log  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libgridfastslam.so devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 96%] Built target gfs2log
+[ 98%] Linking CXX executable devel/lib/openslam_gmapping/gfs2neff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gfs2neff.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/gfs2neff.dir/gridfastslam/gfs2neff.cpp.o -o devel/lib/openslam_gmapping/gfs2neff  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libgridfastslam.so devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 98%] Built target gfs2neff
+[100%] Linking CXX executable devel/lib/openslam_gmapping/gfs2rec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/gfs2rec.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -rdynamic CMakeFiles/gfs2rec.dir/gridfastslam/gfs2rec.cpp.o -o devel/lib/openslam_gmapping/gfs2rec  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu/devel/lib: devel/lib/libgridfastslam.so devel/lib/libscanmatcher.so devel/lib/liblog.so devel/lib/libsensor_range.so devel/lib/libsensor_odometry.so devel/lib/libsensor_base.so devel/lib/libutils.so 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target gfs2rec
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-openslam-gmapping.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-one-openslam-gmapping.substvars
+	rm -fr -- debian/.debhelper/generated/ros-one-openslam-gmapping/ debian/ros-one-openslam-gmapping/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
+make  -f CMakeFiles/autoptr_test.dir/build.make CMakeFiles/autoptr_test.dir/depend
+make  -f CMakeFiles/sensor_base.dir/build.make CMakeFiles/sensor_base.dir/depend
+make  -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/autoptr_test.dir/DependInfo.cmake --color=
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/utils.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_base.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/configfile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/autoptr_test.dir/build.make CMakeFiles/autoptr_test.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/configfile.dir/build.make CMakeFiles/configfile.dir/build
+make  -f CMakeFiles/sensor_base.dir/build.make CMakeFiles/sensor_base.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/autoptr_test.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/sensor_base.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/configfile.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/utils.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  3%] Built target autoptr_test
+[  9%] Built target sensor_base
+make  -f CMakeFiles/sensor_odometry.dir/build.make CMakeFiles/sensor_odometry.dir/depend
+make  -f CMakeFiles/sensor_range.dir/build.make CMakeFiles/sensor_range.dir/depend
+[ 13%] Built target configfile
+make  -f CMakeFiles/configfile_test.dir/build.make CMakeFiles/configfile_test.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_range.dir/DependInfo.cmake --color=
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/sensor_odometry.dir/DependInfo.cmake --color=
+[ 19%] Built target utils
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/configfile_test.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/configfile_test.dir/build.make CMakeFiles/configfile_test.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/sensor_odometry.dir/build.make CMakeFiles/sensor_odometry.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/sensor_range.dir/build.make CMakeFiles/sensor_range.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/configfile_test.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/sensor_odometry.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/sensor_range.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 23%] Built target configfile_test
+[ 29%] Built target sensor_odometry
+[ 35%] Built target sensor_range
+make  -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log.dir/build.make CMakeFiles/log.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/log.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 45%] Built target log
+make  -f CMakeFiles/log_test.dir/build.make CMakeFiles/log_test.dir/depend
+make  -f CMakeFiles/log_plot.dir/build.make CMakeFiles/log_plot.dir/depend
+make  -f CMakeFiles/scanstudio2carmen.dir/build.make CMakeFiles/scanstudio2carmen.dir/depend
+make  -f CMakeFiles/rdk2carmen.dir/build.make CMakeFiles/rdk2carmen.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log_test.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/log_plot.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanstudio2carmen.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/rdk2carmen.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log_plot.dir/build.make CMakeFiles/log_plot.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/rdk2carmen.dir/build.make CMakeFiles/rdk2carmen.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/log_test.dir/build.make CMakeFiles/log_test.dir/build
+make  -f CMakeFiles/scanstudio2carmen.dir/build.make CMakeFiles/scanstudio2carmen.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/log_plot.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/scanstudio2carmen.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/rdk2carmen.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/log_test.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 49%] Built target log_plot
+make  -f CMakeFiles/scanmatcher.dir/build.make CMakeFiles/scanmatcher.dir/depend
+[ 52%] Built target scanstudio2carmen
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanmatcher.dir/DependInfo.cmake --color=
+[ 58%] Built target rdk2carmen
+[ 60%] Built target log_test
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/scanmatcher.dir/build.make CMakeFiles/scanmatcher.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/scanmatcher.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 70%] Built target scanmatcher
+make  -f CMakeFiles/scanmatch_test.dir/build.make CMakeFiles/scanmatch_test.dir/depend
+make  -f CMakeFiles/icptest.dir/build.make CMakeFiles/icptest.dir/depend
+make  -f CMakeFiles/gridfastslam.dir/build.make CMakeFiles/gridfastslam.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/icptest.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/scanmatch_test.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gridfastslam.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/scanmatch_test.dir/build.make CMakeFiles/scanmatch_test.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/icptest.dir/build.make CMakeFiles/icptest.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gridfastslam.dir/build.make CMakeFiles/gridfastslam.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/scanmatch_test.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/icptest.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/gridfastslam.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 74%] Built target scanmatch_test
+[ 78%] Built target icptest
+[ 88%] Built target gridfastslam
+make  -f CMakeFiles/gfs2log.dir/build.make CMakeFiles/gfs2log.dir/depend
+make  -f CMakeFiles/gfs2rec.dir/build.make CMakeFiles/gfs2rec.dir/depend
+make  -f CMakeFiles/gfs2neff.dir/build.make CMakeFiles/gfs2neff.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2log.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2rec.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/gfs2neff.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gfs2neff.dir/build.make CMakeFiles/gfs2neff.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gfs2log.dir/build.make CMakeFiles/gfs2log.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/gfs2rec.dir/build.make CMakeFiles/gfs2rec.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/gfs2neff.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/gfs2log.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/gfs2rec.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 92%] Built target gfs2neff
+[ 96%] Built target gfs2log
+[100%] Built target gfs2rec
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/pkgconfig/openslam_gmapping.pc
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/share/openslam_gmapping/package.xml
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libutils.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_base.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libconfigfile.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/autoptr_test
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff
+-- Set runtime path of "/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qparticleviewer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qslamandnavwidget.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qpixmapdumper.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qmappainter.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/gsp_thread.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qnavigatorwidget.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gui/qgraphpainter.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/configfile
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/configfile/configfile.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/lumiles.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/scanmatcher.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/icp.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/scanmatcherprocessor.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/smmap.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/eig3.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/gridlinetraversal.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/carmenwrapper
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/carmenwrapper/carmenwrapper.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam/gridslamprocessor.hxx
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam/gridslamprocessor.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam/motionmodel.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam/gfsreader.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/particlefilter
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/particlefilter/pf.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/particlefilter/particlefilter.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/autoptr.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/gvalues.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/point.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/stat.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/optimizer.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/dmatrix.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/datasmoother.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/orientedboundingbox.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/orientedboundingbox.hxx
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/macro_params.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/movement.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/commandline.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/printpgm.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/printmemusage.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log/carmenconfiguration.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log/sensorstream.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log/sensorlog.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log/configuration.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/grid
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/grid/array2d.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/grid/harray2d.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/grid/map.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/grid/accessstate.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_range
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_range/rangereading.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_range/rangesensor.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_odometry
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_odometry/odometrysensor.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_odometry/odometryreading.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base/sensorreading.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base/sensor.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base/sensoreading.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/configfile
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/configfile/configfile_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/scanmatcher/scanmatcher_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/gridfastslam/gridfastslam_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/utils/utils_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/log/log_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_range
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_range/sensor_range_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_odometry
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_odometry/sensor_odometry_export.h
+-- Up-to-date: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-openslam-gmapping/opt/ros/one/include/gmapping/sensor/sensor_base/sensor_base_export.h
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-openslam-gmapping/usr/share/doc/ros-one-openslam-gmapping
+	install -p -m0644 debian/copyright debian/ros-one-openslam-gmapping/usr/share/doc/ros-one-openslam-gmapping/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-openslam-gmapping/usr/share/doc/ros-one-openslam-gmapping
+	install -p -m0644 debian/.debhelper/generated/ros-one-openslam-gmapping/dh_installchangelogs.dch.trimmed debian/ros-one-openslam-gmapping/usr/share/doc/ros-one-openslam-gmapping/changelog.Debian
+	install -p -m0644 ./CHANGELOG.rst debian/ros-one-openslam-gmapping/usr/share/doc/ros-one-openslam-gmapping/changelog
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-openslam-gmapping
+	chmod a-x usr/share/doc/ros-one-openslam-gmapping/changelog usr/share/doc/ros-one-openslam-gmapping/changelog.Debian
+	gzip -9nf usr/share/doc/ros-one-openslam-gmapping/changelog usr/share/doc/ros-one-openslam-gmapping/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-one-openslam-gmapping -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-one-openslam-gmapping ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-one-openslam-gmapping/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-one-openslam-gmapping/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-one-openslam-gmapping/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-one-openslam-gmapping -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_base.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/f7bac36c7907a0726f30ffac2bde21a39db925.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/f7bac36c7907a0726f30ffac2bde21a39db925.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/f7bac36c7907a0726f30ffac2bde21a39db925.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_base.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/f7bac36c7907a0726f30ffac2bde21a39db925.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_base.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libutils.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/c735faa676576dfa16fa303e83211e0712c5b6.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/c735faa676576dfa16fa303e83211e0712c5b6.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/c735faa676576dfa16fa303e83211e0712c5b6.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libutils.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/c735faa676576dfa16fa303e83211e0712c5b6.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libutils.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/3d
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/3d/1828f22967a2e2a5d58c92bddb8c82da9eccff.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/3d/1828f22967a2e2a5d58c92bddb8c82da9eccff.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/3d/1828f22967a2e2a5d58c92bddb8c82da9eccff.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/3d/1828f22967a2e2a5d58c92bddb8c82da9eccff.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/dd
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/dd/48422ac58f6390b538ec57847694a5d085ad63.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/dd/48422ac58f6390b538ec57847694a5d085ad63.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/dd/48422ac58f6390b538ec57847694a5d085ad63.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/dd/48422ac58f6390b538ec57847694a5d085ad63.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/80
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/80/018850a9fa587f76a796a578138285aae05bcd.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/80/018850a9fa587f76a796a578138285aae05bcd.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/80/018850a9fa587f76a796a578138285aae05bcd.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/80/018850a9fa587f76a796a578138285aae05bcd.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/91
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/91/42ccc8b9baff842ad9b01460807903b3fb012b.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/91/42ccc8b9baff842ad9b01460807903b3fb012b.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/91/42ccc8b9baff842ad9b01460807903b3fb012b.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/91/42ccc8b9baff842ad9b01460807903b3fb012b.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/37
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/37/b5da143372b1f9f77aa9cc5c0ae4c95e34455a.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/37/b5da143372b1f9f77aa9cc5c0ae4c95e34455a.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/37/b5da143372b1f9f77aa9cc5c0ae4c95e34455a.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/37/b5da143372b1f9f77aa9cc5c0ae4c95e34455a.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/81
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/libconfigfile.so debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/81/dd18188090caf6fa604a439933d68667281bd3.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/81/dd18188090caf6fa604a439933d68667281bd3.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/81/dd18188090caf6fa604a439933d68667281bd3.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-openslam-gmapping/opt/ros/one/lib/libconfigfile.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/81/dd18188090caf6fa604a439933d68667281bd3.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/libconfigfile.so
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a6
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a6/5a5ecf9f85a9ec5b72e950886e965043b7eb89.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a6/5a5ecf9f85a9ec5b72e950886e965043b7eb89.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a6/5a5ecf9f85a9ec5b72e950886e965043b7eb89.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a6/5a5ecf9f85a9ec5b72e950886e965043b7eb89.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/25
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/25/7dac6e242eb6c75aee6c44c21c75fc9efa3d8d.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/25/7dac6e242eb6c75aee6c44c21c75fc9efa3d8d.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/25/7dac6e242eb6c75aee6c44c21c75fc9efa3d8d.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/25/7dac6e242eb6c75aee6c44c21c75fc9efa3d8d.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a5
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a5/bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a5/bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a5/bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/a5/bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/0f2448e9542c85488b4be4b86b846e3d4f791b.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/0f2448e9542c85488b4be4b86b846e3d4f791b.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/0f2448e9542c85488b4be4b86b846e3d4f791b.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/ee/0f2448e9542c85488b4be4b86b846e3d4f791b.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/autoptr_test debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/5274c44f880dd298a683feb389cec55a90cca7.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/5274c44f880dd298a683feb389cec55a90cca7.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/5274c44f880dd298a683feb389cec55a90cca7.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/autoptr_test
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/5274c44f880dd298a683feb389cec55a90cca7.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/autoptr_test
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/bb29cf7fd90e7ad70ee743e3e13820f8bc076c.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/bb29cf7fd90e7ad70ee743e3e13820f8bc076c.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/bb29cf7fd90e7ad70ee743e3e13820f8bc076c.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2f/bb29cf7fd90e7ad70ee743e3e13820f8bc076c.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/4f
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/4f/4cff995fbecbed3f16087657b551663b239f28.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/4f/4cff995fbecbed3f16087657b551663b239f28.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/4f/4cff995fbecbed3f16087657b551663b239f28.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/4f/4cff995fbecbed3f16087657b551663b239f28.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/b2
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/b2/72772b333b7be63cfbc81dd3f466fb0a320cad.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/b2/72772b333b7be63cfbc81dd3f466fb0a320cad.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/b2/72772b333b7be63cfbc81dd3f466fb0a320cad.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/b2/72772b333b7be63cfbc81dd3f466fb0a320cad.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/94
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/94/77a966066b19d44571dcd83d562b6e74c51328.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/94/77a966066b19d44571dcd83d562b6e74c51328.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/94/77a966066b19d44571dcd83d562b6e74c51328.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/94/77a966066b19d44571dcd83d562b6e74c51328.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/122fbb2cbf7b0d2f6341769c4408ae42f56d77.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/122fbb2cbf7b0d2f6341769c4408ae42f56d77.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/122fbb2cbf7b0d2f6341769c4408ae42f56d77.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/65/122fbb2cbf7b0d2f6341769c4408ae42f56d77.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2a
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2a/25ea89f3debcf905fd8af53ea87d540784d4be.debug
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2a/25ea89f3debcf905fd8af53ea87d540784d4be.debug
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2a/25ea89f3debcf905fd8af53ea87d540784d4be.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/lib/debug/.build-id/2a/25ea89f3debcf905fd8af53ea87d540784d4be.debug debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/share/doc
+	ln -s ros-one-openslam-gmapping debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/usr/share/doc/ros-one-openslam-gmapping-dbgsym
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-openslam-gmapping/DEBIAN/shlibs
+	rm -f debian/ros-one-openslam-gmapping.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree that was dropped by catkin, and source it.  It will
+# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping//opt/ros/one/lib/
+	install -m0755 -d debian/ros-one-openslam-gmapping/DEBIAN
+	dpkg-shlibdeps -Tdebian/ros-one-openslam-gmapping.substvars -l/<<BUILDDIR>>package/debian/ros-one-openslam-gmapping//opt/ros/one/lib/ debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_base.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libutils.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libgridfastslam.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_odometry.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libscanmatcher.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/liblog.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libsensor_range.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/libconfigfile.so debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/icptest debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2rec debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanstudio2carmen debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2log debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/autoptr_test debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_plot debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/rdk2carmen debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/scanmatch_test debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/log_test debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/gfs2neff debian/ros-one-openslam-gmapping/opt/ros/one/lib/openslam_gmapping/configfile_test
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_range.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_range.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_base.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_base.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libutils.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libutils.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libgridfastslam.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libgridfastslam.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'liblog.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'liblog.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_odometry.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libsensor_odometry.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libconfigfile.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libconfigfile.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libscanmatcher.so'
+dpkg-shlibdeps: warning: can't extract name and version from library name 'libscanmatcher.so'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-openslam-gmapping/DEBIAN
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-openslam-gmapping/DEBIAN
+	echo misc:Depends= >> debian/ros-one-openslam-gmapping.substvars
+	echo misc:Pre-Depends= >> debian/ros-one-openslam-gmapping.substvars
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN
+	dpkg-gencontrol -pros-one-openslam-gmapping -ldebian/changelog -Tdebian/ros-one-openslam-gmapping.substvars -Pdebian/.debhelper/ros-one-openslam-gmapping/dbgsym-root -UPre-Depends -URecommends -USuggests -UEnhances -UProvides -UEssential -UConflicts -DPriority=optional -UHomepage -UImportant -UBuilt-Using -DAuto-Built-Package=debug-symbols -UProtected -DPackage=ros-one-openslam-gmapping-dbgsym "-DDepends=ros-one-openslam-gmapping (= \${binary:Version})" "-DDescription=debug symbols for ros-one-openslam-gmapping" "-DBuild-Ids=257dac6e242eb6c75aee6c44c21c75fc9efa3d8d 2a25ea89f3debcf905fd8af53ea87d540784d4be 2f5274c44f880dd298a683feb389cec55a90cca7 2fbb29cf7fd90e7ad70ee743e3e13820f8bc076c 37b5da143372b1f9f77aa9cc5c0ae4c95e34455a 3d1828f22967a2e2a5d58c92bddb8c82da9eccff 4f4cff995fbecbed3f16087657b551663b239f28 65122fbb2cbf7b0d2f6341769c4408ae42f56d77 65c735faa676576dfa16fa303e83211e0712c5b6 80018850a9fa587f76a796a578138285aae05bcd 81dd18188090caf6fa604a439933d68667281bd3 9142ccc8b9baff842ad9b01460807903b3fb012b 9477a966066b19d44571dcd83d562b6e74c51328 a5bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa a65a5ecf9f85a9ec5b72e950886e965043b7eb89 b272772b333b7be63cfbc81dd3f466fb0a320cad dd48422ac58f6390b538ec57847694a5d085ad63 ee0f2448e9542c85488b4be4b86b846e3d4f791b eef7bac36c7907a0726f30ffac2bde21a39db925" -DSection=debug -UMulti-Arch -UReplaces -UBreaks
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN/control
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN/control
+	dpkg-gencontrol -pros-one-openslam-gmapping -ldebian/changelog -Tdebian/ros-one-openslam-gmapping.substvars -Pdebian/ros-one-openslam-gmapping
+	chmod 0644 -- debian/ros-one-openslam-gmapping/DEBIAN/control
+	chown 0:0 -- debian/ros-one-openslam-gmapping/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-openslam-gmapping/DEBIAN
+	cd debian/ros-one-openslam-gmapping >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-one-openslam-gmapping/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-one-openslam-gmapping/DEBIAN/md5sums
+	install -m0755 -d debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN
+	cd debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN/md5sums
+	chown 0:0 -- debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --build debian/ros-one-openslam-gmapping ..
+	dpkg-deb --root-owner-group --build debian/.debhelper/ros-one-openslam-gmapping/dbgsym-root ..
+dpkg-deb: building package 'ros-one-openslam-gmapping' in '../ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb'.
+dpkg-deb: building package 'ros-one-openslam-gmapping-dbgsym' in '../ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2025-01-07T13:03:55Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                      Tue, 07 Jan 2025 13:03:55 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.changes:
+---------------------------------------------------------------------------
+
+Format: 1.8
+Date: Wed, 10 Jul 2019 00:00:00 -0000
+Source: ros-one-openslam-gmapping
+Binary: ros-one-openslam-gmapping ros-one-openslam-gmapping-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Distribution: bookworm
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-openslam-gmapping - The catkinized verseion of openslam_gmapping package (https://git
+Changes:
+ ros-one-openslam-gmapping (0.2.1-17-g5105476-2025.01.07.13.03) bookworm; urgency=high
+ .
+   * CMakeLists.txt: fix install command (install libs, install includes to corrrect position as well as hxx (#30 <https://github.com/ros-perception/openslam_gmapping/issues/30>)
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 97dab4541b51eebf7ee1df5a9bc1158ac5016819 1960116 ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ d01b0eb8a78ba3c5a38113ef2a0041e3febdee61 7624 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.buildinfo
+ 28fd88b8b78522093fd7002a0206e97f88e20c20 161544 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+Checksums-Sha256:
+ ebb1279687b96b6b9224fd57b1cf0ac05e2aa9e47be04ec673436881c65e39ae 1960116 ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ 22677ff66df11b74f87ab7bae71ebfb3bc396f5a6a0a5dab28cb8a1abc636482 7624 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.buildinfo
+ e61fabd5a2e4f53e36e53a53d23ffc2102698f8a0bd77f350cf3333cbc323462 161544 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+Files:
+ 9ad73abcc7a9db80c14d6c67931ff6ee 1960116 debug optional ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ 6c97dbcf5513c8305cce9d18995491d3 7624 misc optional ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.buildinfo
+ a872ef094afd5da9d5d67e2d6fe0a4f2 161544 misc optional ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                    Tue, 07 Jan 2025 13:03:56 +0000 |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-one-openslam-gmapping
+Binary: ros-one-openslam-gmapping ros-one-openslam-gmapping-dbgsym
+Architecture: amd64
+Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Checksums-Md5:
+ 9ad73abcc7a9db80c14d6c67931ff6ee 1960116 ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ a872ef094afd5da9d5d67e2d6fe0a4f2 161544 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+Checksums-Sha1:
+ 97dab4541b51eebf7ee1df5a9bc1158ac5016819 1960116 ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ 28fd88b8b78522093fd7002a0206e97f88e20c20 161544 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+Checksums-Sha256:
+ ebb1279687b96b6b9224fd57b1cf0ac05e2aa9e47be04ec673436881c65e39ae 1960116 ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+ e61fabd5a2e4f53e36e53a53d23ffc2102698f8a0bd77f350cf3333cbc323462 161544 ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Tue, 07 Jan 2025 13:03:54 +0000
+Build-Path: /<<BUILDDIR>>package
+Build-Tainted-By:
+ merged-usr-via-aliased-dirs
+Installed-Build-Depends:
+ autoconf (= 2.71-3),
+ automake (= 1:1.16.5-1.3),
+ autopoint (= 0.21-12),
+ autotools-dev (= 20220109.1),
+ base-files (= 12.4+deb12u8),
+ base-passwd (= 3.6.1),
+ bash (= 5.2.15-2+b7),
+ binutils (= 2.40-2),
+ binutils-common (= 2.40-2),
+ binutils-x86-64-linux-gnu (= 2.40-2),
+ bsdextrautils (= 2.38.1-5+deb12u2),
+ bsdutils (= 1:2.38.1-5+deb12u2),
+ build-essential (= 12.9),
+ bzip2 (= 1.0.8-5+b1),
+ catkin (= 0.8.10-9),
+ cmake (= 3.25.1-1),
+ cmake-data (= 3.25.1-1),
+ cmake-extras (= 1.6-1),
+ coreutils (= 9.1-1),
+ cpp (= 4:12.2.0-3),
+ cpp-12 (= 12.2.0-14),
+ dash (= 0.5.12-2),
+ debconf (= 1.5.82),
+ debhelper (= 13.11.4),
+ debianutils (= 5.7-0.5~deb12u1),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.13.1-1),
+ diffutils (= 1:3.8-4),
+ docutils-common (= 0.19+dfsg-6),
+ dpkg (= 1.21.22),
+ dpkg-dev (= 1.21.22),
+ dwz (= 0.15-1),
+ file (= 1:5.44-3),
+ findutils (= 4.9.0-4),
+ g++ (= 4:12.2.0-3),
+ g++-12 (= 12.2.0-14),
+ gcc (= 4:12.2.0-3),
+ gcc-12 (= 12.2.0-14),
+ gcc-12-base (= 12.2.0-14),
+ gettext (= 0.21-12),
+ gettext-base (= 0.21-12),
+ googletest (= 1.12.1-0.2),
+ grep (= 3.8-5),
+ groff-base (= 1.22.4-10),
+ gzip (= 1.12-1),
+ hostname (= 3.23+nmu1),
+ init-system-helpers (= 1.65.2),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.1-3),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13 (= 3.6.2-1+deb12u2),
+ libasan8 (= 12.2.0-14),
+ libatomic1 (= 12.2.0-14),
+ libattr1 (= 1:2.5.1-4),
+ libaudit-common (= 1:3.0.9-1),
+ libaudit1 (= 1:3.0.9-1),
+ libbinutils (= 2.40-2),
+ libblkid1 (= 2.38.1-5+deb12u2),
+ libbrotli1 (= 1.0.9-2+b6),
+ libbz2-1.0 (= 1.0.8-5+b1),
+ libc-bin (= 2.36-9+deb12u9),
+ libc-dev-bin (= 2.36-9+deb12u9),
+ libc6 (= 2.36-9+deb12u9),
+ libc6-dev (= 2.36-9+deb12u9),
+ libcap-ng0 (= 0.8.3-1+b3),
+ libcap2 (= 1:2.66-4),
+ libcc1-0 (= 12.2.0-14),
+ libcom-err2 (= 1.47.0-2),
+ libcrypt-dev (= 1:4.4.33-2),
+ libcrypt1 (= 1:4.4.33-2),
+ libctf-nobfd0 (= 2.40-2),
+ libctf0 (= 2.40-2),
+ libcurl4 (= 7.88.1-10+deb12u8),
+ libdb5.3 (= 5.3.28+dfsg2-1),
+ libdebconfclient0 (= 0.270),
+ libdebhelper-perl (= 13.11.4),
+ libdpkg-perl (= 1.21.22),
+ libelf1 (= 0.188-2.1),
+ libexpat1 (= 2.5.0-1+deb12u1),
+ libffi8 (= 3.4.4-1),
+ libfile-find-rule-perl (= 0.34-3),
+ libfile-stripnondeterminism-perl (= 1.13.1-1),
+ libgcc-12-dev (= 12.2.0-14),
+ libgcc-s1 (= 12.2.0-14),
+ libgcrypt20 (= 1.10.1-3),
+ libgdbm-compat4 (= 1.23-3),
+ libgdbm6 (= 1.23-3),
+ libgmock-dev (= 1.12.1-0.2),
+ libgmp10 (= 2:6.2.1+dfsg1-1.1),
+ libgnutls30 (= 3.7.9-2+deb12u3),
+ libgomp1 (= 12.2.0-14),
+ libgpg-error0 (= 1.46-1),
+ libgprofng0 (= 2.40-2),
+ libgssapi-krb5-2 (= 1.20.1-2+deb12u2),
+ libgtest-dev (= 1.12.1-0.2),
+ libhogweed6 (= 3.8.1-2),
+ libicu72 (= 72.1-3),
+ libidn2-0 (= 2.3.3-1+b1),
+ libisl23 (= 0.25-1.1),
+ libitm1 (= 12.2.0-14),
+ libjansson4 (= 2.14-2),
+ libjsoncpp25 (= 1.9.5-4),
+ libk5crypto3 (= 1.20.1-2+deb12u2),
+ libkeyutils1 (= 1.6.3-2),
+ libkrb5-3 (= 1.20.1-2+deb12u2),
+ libkrb5support0 (= 1.20.1-2+deb12u2),
+ libldap-2.5-0 (= 2.5.13+dfsg-5),
+ liblsan0 (= 12.2.0-14),
+ liblz4-1 (= 1.9.4-1),
+ liblzma5 (= 5.4.1-0.2),
+ libmagic-mgc (= 1:5.44-3),
+ libmagic1 (= 1:5.44-3),
+ libmd0 (= 1.0.4-2),
+ libmount1 (= 2.38.1-5+deb12u2),
+ libmpc3 (= 1.3.1-1),
+ libmpfr6 (= 4.2.0-1),
+ libncursesw6 (= 6.4-4),
+ libnettle8 (= 3.8.1-2),
+ libnghttp2-14 (= 1.52.0-1+deb12u2),
+ libnsl-dev (= 1.3.0-2),
+ libnsl2 (= 1.3.0-2),
+ libnumber-compare-perl (= 0.03-3),
+ libp11-kit0 (= 0.24.1-2),
+ libpam-modules (= 1.5.2-6+deb12u1),
+ libpam-modules-bin (= 1.5.2-6+deb12u1),
+ libpam-runtime (= 1.5.2-6+deb12u1),
+ libpam0g (= 1.5.2-6+deb12u1),
+ libpcre2-8-0 (= 10.42-1),
+ libperl5.36 (= 5.36.0-7+deb12u1),
+ libpipeline1 (= 1.5.7-1),
+ libpkgconf3 (= 1.8.1-1),
+ libproc2-0 (= 2:4.0.2-3),
+ libpsl5 (= 0.21.2-1),
+ libpython3-stdlib (= 3.11.2-1+b1),
+ libpython3.11-minimal (= 3.11.2-6+deb12u4),
+ libpython3.11-stdlib (= 3.11.2-6+deb12u4),
+ libquadmath0 (= 12.2.0-14),
+ libreadline8 (= 8.2-1.3),
+ librhash0 (= 1.4.3-3),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2+b2),
+ libsasl2-2 (= 2.1.28+dfsg-10),
+ libsasl2-modules-db (= 2.1.28+dfsg-10),
+ libseccomp2 (= 2.5.4-1+deb12u1),
+ libselinux1 (= 3.4-1+b6),
+ libsmartcols1 (= 2.38.1-5+deb12u2),
+ libsqlite3-0 (= 3.40.1-2+deb12u1),
+ libssh2-1 (= 1.10.0-3+b1),
+ libssl3 (= 3.0.15-1~deb12u1),
+ libstdc++-12-dev (= 12.2.0-14),
+ libstdc++6 (= 12.2.0-14),
+ libsub-override-perl (= 0.09-4),
+ libsystemd0 (= 252.31-1~deb12u1),
+ libtasn1-6 (= 4.19.0-2),
+ libtext-glob-perl (= 0.11-3),
+ libtinfo6 (= 6.4-4),
+ libtirpc-common (= 1.3.3+ds-1),
+ libtirpc-dev (= 1.3.3+ds-1),
+ libtirpc3 (= 1.3.3+ds-1),
+ libtool (= 2.4.7-7~deb12u1),
+ libtsan2 (= 12.2.0-14),
+ libubsan1 (= 12.2.0-14),
+ libuchardet0 (= 0.0.7-1),
+ libudev1 (= 252.31-1~deb12u1),
+ libunistring2 (= 1.0-2),
+ libuuid1 (= 2.38.1-5+deb12u2),
+ libuv1 (= 1.44.2-1+deb12u1),
+ libxml2 (= 2.9.14+dfsg-1.3~deb12u1),
+ libzstd1 (= 1.5.4+dfsg2-5),
+ linux-libc-dev (= 6.1.119-1),
+ login (= 1:4.13+dfsg1-1+b1),
+ m4 (= 1.4.19-3),
+ make (= 4.3-4.1),
+ man-db (= 2.11.2-2),
+ mawk (= 1.3.4.20200120-3.1),
+ media-types (= 10.0.0),
+ ncurses-base (= 6.4-4),
+ ncurses-bin (= 6.4-4),
+ patch (= 2.7.6-7),
+ perl (= 5.36.0-7+deb12u1),
+ perl-base (= 5.36.0-7+deb12u1),
+ perl-modules-5.36 (= 5.36.0-7+deb12u1),
+ pkg-config (= 1.8.1-1),
+ pkgconf (= 1.8.1-1),
+ pkgconf-bin (= 1.8.1-1),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.2-3),
+ python3 (= 3.11.2-1+b1),
+ python3-catkin (= 0.8.10-9),
+ python3-catkin-pkg (= 0.5.2-5),
+ python3-dateutil (= 2.8.2-2),
+ python3-distutils (= 3.11.2-3),
+ python3-docutils (= 0.19+dfsg-6),
+ python3-empy (= 3.3.4-2),
+ python3-lib2to3 (= 3.11.2-3),
+ python3-minimal (= 3.11.2-1+b1),
+ python3-pkg-resources (= 66.1.1-1),
+ python3-pyparsing (= 3.0.9-1),
+ python3-roman (= 3.3-3),
+ python3-setuptools (= 66.1.1-1),
+ python3-six (= 1.16.0-4),
+ python3.11 (= 3.11.2-6+deb12u4),
+ python3.11-minimal (= 3.11.2-6+deb12u4),
+ readline-common (= 8.2-1.3),
+ ros-environment (= 1.3.2-2),
+ rpcsvc-proto (= 1.4.3-1),
+ sed (= 4.9-1),
+ sensible-utils (= 0.0.17+nmu1),
+ sgml-base (= 1.31),
+ sysvinit-utils (= 3.06-4),
+ tar (= 1.34+dfsg-1.2+deb12u1),
+ tzdata (= 2024b-0+deb12u1),
+ usrmerge (= 37~deb12u1),
+ util-linux (= 2.38.1-5+deb12u2),
+ util-linux-extra (= 2.38.1-5+deb12u2),
+ xml-core (= 0.18+nmu1),
+ xz-utils (= 5.4.1-0.2),
+ zlib1g (= 1:1.2.13.dfsg-1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="nocheck"
+ LANG="C.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LD_LIBRARY_PATH="/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu"
+ SOURCE_DATE_EPOCH="1562716800"
+
+
++------------------------------------------------------------------------------+
+| Package contents                             Tue, 07 Jan 2025 13:03:56 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-openslam-gmapping-dbgsym_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+-----------------------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 1960116 bytes: control archive=1436 bytes.
+    1236 bytes,    12 lines      control              
+    2014 bytes,    19 lines      md5sums              
+ Package: ros-one-openslam-gmapping-dbgsym
+ Source: ros-one-openslam-gmapping
+ Version: 0.2.1-17-g5105476-2025.01.07.13.03
+ Auto-Built-Package: debug-symbols
+ Architecture: amd64
+ Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+ Installed-Size: 2120
+ Depends: ros-one-openslam-gmapping (= 0.2.1-17-g5105476-2025.01.07.13.03)
+ Section: debug
+ Priority: optional
+ Description: debug symbols for ros-one-openslam-gmapping
+ Build-Ids: 257dac6e242eb6c75aee6c44c21c75fc9efa3d8d 2a25ea89f3debcf905fd8af53ea87d540784d4be 2f5274c44f880dd298a683feb389cec55a90cca7 2fbb29cf7fd90e7ad70ee743e3e13820f8bc076c 37b5da143372b1f9f77aa9cc5c0ae4c95e34455a 3d1828f22967a2e2a5d58c92bddb8c82da9eccff 4f4cff995fbecbed3f16087657b551663b239f28 65122fbb2cbf7b0d2f6341769c4408ae42f56d77 65c735faa676576dfa16fa303e83211e0712c5b6 80018850a9fa587f76a796a578138285aae05bcd 81dd18188090caf6fa604a439933d68667281bd3 9142ccc8b9baff842ad9b01460807903b3fb012b 9477a966066b19d44571dcd83d562b6e74c51328 a5bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa a65a5ecf9f85a9ec5b72e950886e965043b7eb89 b272772b333b7be63cfbc81dd3f466fb0a320cad dd48422ac58f6390b538ec57847694a5d085ad63 ee0f2448e9542c85488b4be4b86b846e3d4f791b eef7bac36c7907a0726f30ffac2bde21a39db925
+
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/25/
+-rw-r--r-- root/root    131272 2019-07-10 00:00 ./usr/lib/debug/.build-id/25/7dac6e242eb6c75aee6c44c21c75fc9efa3d8d.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/2a/
+-rw-r--r-- root/root     46168 2019-07-10 00:00 ./usr/lib/debug/.build-id/2a/25ea89f3debcf905fd8af53ea87d540784d4be.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/2f/
+-rw-r--r-- root/root     20376 2019-07-10 00:00 ./usr/lib/debug/.build-id/2f/5274c44f880dd298a683feb389cec55a90cca7.debug
+-rw-r--r-- root/root     94008 2019-07-10 00:00 ./usr/lib/debug/.build-id/2f/bb29cf7fd90e7ad70ee743e3e13820f8bc076c.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/37/
+-rw-r--r-- root/root     70872 2019-07-10 00:00 ./usr/lib/debug/.build-id/37/b5da143372b1f9f77aa9cc5c0ae4c95e34455a.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/3d/
+-rw-r--r-- root/root    426120 2019-07-10 00:00 ./usr/lib/debug/.build-id/3d/1828f22967a2e2a5d58c92bddb8c82da9eccff.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/4f/
+-rw-r--r-- root/root     87832 2019-07-10 00:00 ./usr/lib/debug/.build-id/4f/4cff995fbecbed3f16087657b551663b239f28.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/65/
+-rw-r--r-- root/root     46520 2019-07-10 00:00 ./usr/lib/debug/.build-id/65/122fbb2cbf7b0d2f6341769c4408ae42f56d77.debug
+-rw-r--r-- root/root     29912 2019-07-10 00:00 ./usr/lib/debug/.build-id/65/c735faa676576dfa16fa303e83211e0712c5b6.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/80/
+-rw-r--r-- root/root    239096 2019-07-10 00:00 ./usr/lib/debug/.build-id/80/018850a9fa587f76a796a578138285aae05bcd.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/81/
+-rw-r--r-- root/root    173600 2019-07-10 00:00 ./usr/lib/debug/.build-id/81/dd18188090caf6fa604a439933d68667281bd3.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/91/
+-rw-r--r-- root/root    380072 2019-07-10 00:00 ./usr/lib/debug/.build-id/91/42ccc8b9baff842ad9b01460807903b3fb012b.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/94/
+-rw-r--r-- root/root     77896 2019-07-10 00:00 ./usr/lib/debug/.build-id/94/77a966066b19d44571dcd83d562b6e74c51328.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/a5/
+-rw-r--r-- root/root     50320 2019-07-10 00:00 ./usr/lib/debug/.build-id/a5/bc5dbbfe65f828fe56c6b30fa5e0744ca4c9fa.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/a6/
+-rw-r--r-- root/root     48880 2019-07-10 00:00 ./usr/lib/debug/.build-id/a6/5a5ecf9f85a9ec5b72e950886e965043b7eb89.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/b2/
+-rw-r--r-- root/root    106232 2019-07-10 00:00 ./usr/lib/debug/.build-id/b2/72772b333b7be63cfbc81dd3f466fb0a320cad.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/dd/
+-rw-r--r-- root/root     32576 2019-07-10 00:00 ./usr/lib/debug/.build-id/dd/48422ac58f6390b538ec57847694a5d085ad63.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/lib/debug/.build-id/ee/
+-rw-r--r-- root/root     44544 2019-07-10 00:00 ./usr/lib/debug/.build-id/ee/0f2448e9542c85488b4be4b86b846e3d4f791b.debug
+-rw-r--r-- root/root     28552 2019-07-10 00:00 ./usr/lib/debug/.build-id/ee/f7bac36c7907a0726f30ffac2bde21a39db925.debug
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/share/doc/
+lrwxrwxrwx root/root         0 2019-07-10 00:00 ./usr/share/doc/ros-one-openslam-gmapping-dbgsym -> ros-one-openslam-gmapping
+
+
+ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03_amd64.deb
+----------------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 161544 bytes: control archive=2952 bytes.
+     506 bytes,    10 lines      control              
+    7239 bytes,    85 lines      md5sums              
+ Package: ros-one-openslam-gmapping
+ Version: 0.2.1-17-g5105476-2025.01.07.13.03
+ Architecture: amd64
+ Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+ Installed-Size: 849
+ Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11)
+ Section: misc
+ Priority: optional
+ Homepage: http://openslam.org/gmapping
+ Description: The catkinized verseion of openslam_gmapping package (https://github.com/OpenSLAM-org/openslam_gmapping/tree/79ef0b0e6d9a12d6390ae64c4c00d37d776abefb)
+
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/carmenwrapper/
+-rw-r--r-- root/root      3281 2019-07-10 00:00 ./opt/ros/one/include/gmapping/carmenwrapper/carmenwrapper.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/configfile/
+-rw-r--r-- root/root      3077 2019-07-10 00:00 ./opt/ros/one/include/gmapping/configfile/configfile.h
+-rw-r--r-- root/root      1103 2019-07-10 00:00 ./opt/ros/one/include/gmapping/configfile/configfile_export.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/grid/
+-rw-r--r-- root/root       141 2019-07-10 00:00 ./opt/ros/one/include/gmapping/grid/accessstate.h
+-rw-r--r-- root/root      4796 2019-07-10 00:00 ./opt/ros/one/include/gmapping/grid/array2d.h
+-rw-r--r-- root/root      6637 2019-07-10 00:00 ./opt/ros/one/include/gmapping/grid/harray2d.h
+-rw-r--r-- root/root      9427 2019-07-10 00:00 ./opt/ros/one/include/gmapping/grid/map.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/
+-rw-r--r-- root/root      2425 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/gfsreader.h
+-rw-r--r-- root/root      1151 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/gridfastslam_export.h
+-rw-r--r-- root/root     13367 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/gridslamprocessor.h
+-rw-r--r-- root/root      5766 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/gridslamprocessor.hxx
+-rw-r--r-- root/root       552 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gridfastslam/motionmodel.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/
+-rw-r--r-- root/root      4178 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/gsp_thread.h
+-rw-r--r-- root/root      1784 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qgraphpainter.h
+-rw-r--r-- root/root      1786 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qmappainter.h
+-rw-r--r-- root/root       883 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qnavigatorwidget.h
+-rw-r--r-- root/root      4086 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qparticleviewer.h
+-rw-r--r-- root/root       326 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qpixmapdumper.h
+-rw-r--r-- root/root       890 2019-07-10 00:00 ./opt/ros/one/include/gmapping/gui/qslamandnavwidget.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/
+-rw-r--r-- root/root       515 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/carmenconfiguration.h
+-rw-r--r-- root/root       308 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/configuration.h
+-rw-r--r-- root/root       935 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/log_export.h
+-rw-r--r-- root/root       925 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/sensorlog.h
+-rw-r--r-- root/root      1453 2019-07-10 00:00 ./opt/ros/one/include/gmapping/log/sensorstream.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/particlefilter/
+-rw-r--r-- root/root      9456 2019-07-10 00:00 ./opt/ros/one/include/gmapping/particlefilter/particlefilter.h
+-rw-r--r-- root/root      4267 2019-07-10 00:00 ./opt/ros/one/include/gmapping/particlefilter/pf.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/
+-rw-r--r-- root/root       316 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/eig3.h
+-rw-r--r-- root/root      2562 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/gridlinetraversal.h
+-rw-r--r-- root/root      2778 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/icp.h
+-rw-r--r-- root/root      1139 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/lumiles.h
+-rw-r--r-- root/root      9897 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/scanmatcher.h
+-rw-r--r-- root/root      1127 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/scanmatcher_export.h
+-rw-r--r-- root/root      1559 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/scanmatcherprocessor.h
+-rw-r--r-- root/root      1422 2019-07-10 00:00 ./opt/ros/one/include/gmapping/scanmatcher/smmap.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_base/
+-rw-r--r-- root/root       484 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_base/sensor.h
+-rw-r--r-- root/root      1127 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_base/sensor_base_export.h
+-rw-r--r-- root/root       473 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_base/sensoreading.h
+-rw-r--r-- root/root       548 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_base/sensorreading.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_odometry/
+-rw-r--r-- root/root       996 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_odometry/odometryreading.h
+-rw-r--r-- root/root       432 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_odometry/odometrysensor.h
+-rw-r--r-- root/root      1223 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_odometry/sensor_odometry_export.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_range/
+-rw-r--r-- root/root       989 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_range/rangereading.h
+-rw-r--r-- root/root      1128 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_range/rangesensor.h
+-rw-r--r-- root/root      1151 2019-07-10 00:00 ./opt/ros/one/include/gmapping/sensor/sensor_range/sensor_range_export.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/
+-rw-r--r-- root/root      1843 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/autoptr.h
+-rw-r--r-- root/root      2288 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/commandline.h
+-rw-r--r-- root/root     10317 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/datasmoother.h
+-rw-r--r-- root/root      5399 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/dmatrix.h
+-rw-r--r-- root/root       624 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/gvalues.h
+-rw-r--r-- root/root      1740 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/macro_params.h
+-rw-r--r-- root/root      1212 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/movement.h
+-rw-r--r-- root/root      4567 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/optimizer.h
+-rw-r--r-- root/root       443 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/orientedboundingbox.h
+-rw-r--r-- root/root      3256 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/orientedboundingbox.hxx
+-rw-r--r-- root/root      5414 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/point.h
+-rw-r--r-- root/root       281 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/printmemusage.h
+-rw-r--r-- root/root       492 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/printpgm.h
+-rw-r--r-- root/root      3719 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/stat.h
+-rw-r--r-- root/root       983 2019-07-10 00:00 ./opt/ros/one/include/gmapping/utils/utils_export.h
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/lib/
+-rw-r--r-- root/root     56008 2019-07-10 00:00 ./opt/ros/one/lib/libconfigfile.so
+-rw-r--r-- root/root    105424 2019-07-10 00:00 ./opt/ros/one/lib/libgridfastslam.so
+-rw-r--r-- root/root     76480 2019-07-10 00:00 ./opt/ros/one/lib/liblog.so
+-rw-r--r-- root/root     80440 2019-07-10 00:00 ./opt/ros/one/lib/libscanmatcher.so
+-rw-r--r-- root/root     14464 2019-07-10 00:00 ./opt/ros/one/lib/libsensor_base.so
+-rw-r--r-- root/root     14376 2019-07-10 00:00 ./opt/ros/one/lib/libsensor_odometry.so
+-rw-r--r-- root/root     18656 2019-07-10 00:00 ./opt/ros/one/lib/libsensor_range.so
+-rw-r--r-- root/root     14408 2019-07-10 00:00 ./opt/ros/one/lib/libutils.so
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/
+-rwxr-xr-x root/root     14688 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/autoptr_test
+-rwxr-xr-x root/root     18848 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/configfile_test
+-rwxr-xr-x root/root     14720 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/gfs2log
+-rwxr-xr-x root/root     19032 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/gfs2neff
+-rwxr-xr-x root/root     43712 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/gfs2rec
+-rwxr-xr-x root/root     22920 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/icptest
+-rwxr-xr-x root/root     18968 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/log_plot
+-rwxr-xr-x root/root     18944 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/log_test
+-rwxr-xr-x root/root     18984 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/rdk2carmen
+-rwxr-xr-x root/root     31440 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/scanmatch_test
+-rwxr-xr-x root/root     19040 2019-07-10 00:00 ./opt/ros/one/lib/openslam_gmapping/scanstudio2carmen
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/lib/pkgconfig/
+-rw-r--r-- root/root       270 2019-07-10 00:00 ./opt/ros/one/lib/pkgconfig/openslam_gmapping.pc
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/share/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/share/openslam_gmapping/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./opt/ros/one/share/openslam_gmapping/cmake/
+-rw-r--r-- root/root       426 2019-07-10 00:00 ./opt/ros/one/share/openslam_gmapping/cmake/openslam_gmappingConfig-version.cmake
+-rw-r--r-- root/root      9437 2019-07-10 00:00 ./opt/ros/one/share/openslam_gmapping/cmake/openslam_gmappingConfig.cmake
+-rw-r--r-- root/root       843 2019-07-10 00:00 ./opt/ros/one/share/openslam_gmapping/package.xml
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/share/doc/
+drwxr-xr-x root/root         0 2019-07-10 00:00 ./usr/share/doc/ros-one-openslam-gmapping/
+-rw-r--r-- root/root      1097 2019-07-10 00:00 ./usr/share/doc/ros-one-openslam-gmapping/changelog.Debian.gz
+-rw-r--r-- root/root      1024 2019-07-10 00:00 ./usr/share/doc/ros-one-openslam-gmapping/changelog.gz
+-rw-r--r-- root/root       423 2019-07-10 00:00 ./usr/share/doc/ros-one-openslam-gmapping/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                   Tue, 07 Jan 2025 13:03:57 +0000 |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                      Tue, 07 Jan 2025 13:03:57 +0000 |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                      Tue, 07 Jan 2025 13:03:58 +0000 |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 29000
+Build-Time: 20
+Distribution: bookworm
+Host Architecture: amd64
+Install-Time: 14
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-openslam-gmapping_0.2.1-17-g5105476-2025.01.07.13.03.dsc
+Machine Architecture: amd64
+Package: ros-one-openslam-gmapping
+Package-Time: 44
+Source-Version: 0.2.1-17-g5105476-2025.01.07.13.03
+Space: 29000
+Status: successful
+Version: 0.2.1-17-g5105476-2025.01.07.13.03
+--------------------------------------------------------------------------------
+Finished at 2025-01-07T13:03:55Z
+Build needed 00:00:44, 29000k disk space

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-move-slow-and-clear
+Binary: ros-one-move-slow-and-clear ros-one-move-slow-and-clear-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.3-3-g9ad64419-2025.01.07.18.41
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-move-slow-and-clear - move_slow_and_clear
+Changes:
+ ros-one-move-slow-and-clear (1.17.3-3-g9ad64419-2025.01.07.18.41) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 676d1e31f91fec00e61a9f82fbc94f5c9ca6e04e 759696 ros-one-move-slow-and-clear-dbgsym_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb
+ 444212cce5c14a9e7d244026a482a846f67d0f9d 18053 ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.buildinfo
+ 801bae282141a7f299ff98546b6b9d15afc72929 47500 ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb
+Checksums-Sha256:
+ 786f3a656c10faec753d807cd0c3aeba426effd65cc2c69ceb8d04d82dbcbde8 759696 ros-one-move-slow-and-clear-dbgsym_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb
+ 38dc0ffb324081218c0262b82a43ab667f50bcd5ad55e7a8fead4723c392ab55 18053 ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.buildinfo
+ 26c7324f45df6024c1e2c88634ca1915ce9e1c5ac070e97bab1b576c71d4e3ab 47500 ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb
+Files:
+ 01eb41dc4f113e1e2a9d1d396c75f1dc 759696 debug optional ros-one-move-slow-and-clear-dbgsym_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb
+ 1f9a3650eb5dc0951a2a7c854dcd3499 18053 misc optional ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.buildinfo
+ 4c2a3e791258694cd8dc68eb5dcd4c26 47500 misc optional ros-one-move-slow-and-clear_1.17.3-3-g9ad64419-2025.01.07.18.41_amd64.deb

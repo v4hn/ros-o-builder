@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 18 May 2023 00:00:00 -0000
+Source: ros-one-moveit-visual-tools
+Binary: ros-one-moveit-visual-tools ros-one-moveit-visual-tools-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.6.1-4-g8899ab4-2025.01.07.22.51
+Distribution: bookworm
+Urgency: high
+Maintainer: Dave Coleman <dave@picknik.ai>
+Changed-By: Dave Coleman <dave@picknik.ai>
+Description:
+ ros-one-moveit-visual-tools - Helper functions for displaying and debugging MoveIt data in Rviz
+Changes:
+ ros-one-moveit-visual-tools (3.6.1-4-g8899ab4-2025.01.07.22.51) bookworm; urgency=high
+ .
+   * publishTrajectoryLine(): issue error when no end-effector tips are found (#129 <https://github.com/ros-planning/moveit_visual_tools/issues/129>)
+   * Fixed possible null-pointer segfault (#95 <https://github.com/ros-planning/moveit_visual_tools/issues/95>)
+   * Only set active joints (#84 <https://github.com/ros-planning/moveit_visual_tools/issues/84>)
+   * Use specified color for EndEffector marker (#96 <https://github.com/ros-planning/moveit_visual_tools/issues/96>)
+   * Contributors: Felix von Drigalski, Henning Kayser, Jochen Sprickerhof, Michael Görner, Robert Haschke, Simon Schmeisser, Stephanie Eng, Tyler Weaver, Vatan Aksoy Tezer, werner291
+Checksums-Sha1:
+ aa8953de0e3ba4edf2a9371e9cb6c028a45eb202 9081376 ros-one-moveit-visual-tools-dbgsym_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb
+ 7db502d7f8ef55e46c5359cc2f25d96f1628981d 29870 ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.buildinfo
+ a97b3494afe36694192893500f507ff310b5ccc9 294556 ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb
+Checksums-Sha256:
+ 4e09b3a165c970d913dfff5bcfd97564f60717cbc230f67b832992757dae785b 9081376 ros-one-moveit-visual-tools-dbgsym_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb
+ 16dd747ea3b4a74bda54ac47cefd21ff3ae5de9c1b9489abad76597551fbcd7a 29870 ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.buildinfo
+ 880d65cc12053902ee95b1aba8956fa317adf8b9f7b964ef9bb01753be377198 294556 ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb
+Files:
+ 4072021ef7964e5e7e9cfd1f4f507140 9081376 debug optional ros-one-moveit-visual-tools-dbgsym_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb
+ 4c95e3282ec7b369c9e4f10eb2dd5ab0 29870 misc optional ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.buildinfo
+ 62ced5d93bc54413feef39f842428da6 294556 misc optional ros-one-moveit-visual-tools_3.6.1-4-g8899ab4-2025.01.07.22.51_amd64.deb

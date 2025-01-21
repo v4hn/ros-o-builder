@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 15 Nov 2021 00:00:00 -0000
+Source: ros-one-realsense2-camera
+Binary: ros-one-realsense2-camera ros-one-realsense2-camera-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.3.2-24-g7402c40f-2025.01.07.18.14
+Distribution: bookworm
+Urgency: high
+Maintainer: Doron Hirshberg <doron.hirshberg@intel.com>
+Changed-By: Doron Hirshberg <doron.hirshberg@intel.com>
+Description:
+ ros-one-realsense2-camera - RealSense Camera package allowing access to Intel T265 Tracking m
+Changes:
+ ros-one-realsense2-camera (2.3.2-24-g7402c40f-2025.01.07.18.14) bookworm; urgency=high
+ .
+   * publish metadata
+   * Add service: device_info
+   * add wait_for_device_timeout parameter
+   * Add reconnect_timeout parameter
+   * show warning when requested profile cannot be selected.
+   * send only 4 distortion coeffs when using equidistant
+   * fixed missing std namespace
+   * Removing spaces when iterating filters
+   * Contributors: Collin Avidano, Gintaras, Jacco van der Spek, doronhi
+Checksums-Sha1:
+ 152d3df2b09cb9033f3ddd446b690bf438779f7f 4933068 ros-one-realsense2-camera-dbgsym_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb
+ bba7b1fe4ab006763b589ca2b0898491d66bca46 30879 ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.buildinfo
+ c1489299515a47a63e14160525162cbb57dc0b17 321304 ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb
+Checksums-Sha256:
+ ff8d70daf15eff9d4a753fcdddd016cd3366f21e88f2b7570848f27808b46c71 4933068 ros-one-realsense2-camera-dbgsym_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb
+ f0d514b6b89fd7d0cda3cedbfb6401d063fd304be656a58a696ad065fa09dc8b 30879 ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.buildinfo
+ 4f2e63064bd19877452fcff99ffd926bca4e7ad790751793edd514adc227af50 321304 ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb
+Files:
+ 816873f5246d27177b35c95939fcb634 4933068 debug optional ros-one-realsense2-camera-dbgsym_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb
+ ca73c00d7acece34184c0e1668298afe 30879 misc optional ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.buildinfo
+ 94cbc9657f4e9ec448857230ee3e7925 321304 misc optional ros-one-realsense2-camera_2.3.2-24-g7402c40f-2025.01.07.18.14_amd64.deb

@@ -1,0 +1,877 @@
+sbuild (Debian sbuild) 0.85.10ubuntu0.1 (15 December 2024) on fv-az1768-707.w2xi0hvcdnsubmynz45rro0mqh.dx.internal.cloudapp.net
+
++=======================================================================================+
+| ros-one-mavlink 2024.10.10-1-2025.01.07.13.02 (amd64) Tue, 07 Jan 2025 13:02:42 +0000 |
++=======================================================================================+
+
+Package: ros-one-mavlink
+Version: 2024.10.10-1-2025.01.07.13.02
+Source Version: 2024.10.10-1-2025.01.07.13.02
+Distribution: bookworm
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/bookworm-amd64.tar to /tmp/tmp.sbuild.NsIkN600eM...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2025.01.07.12.58_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-cmake-modules_0.5.0-3-g05347c1-2025.01.07.13.02_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-5MCKjk' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                Tue, 07 Jan 2025 13:02:48 +0000 |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-P1Gzv0/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-P1Gzv0/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-P1Gzv0/apt_archive ./ Release [606 B]
+Get:3 http://security.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 file:/build/package//resolver-P1Gzv0/apt_archive ./ Release [606 B]
+Get:5 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:6 file:/build/package//resolver-P1Gzv0/apt_archive ./ Release.gpg
+Ign:6 file:/build/package//resolver-P1Gzv0/apt_archive ./ Release.gpg
+Get:7 file:/build/package//resolver-P1Gzv0/apt_archive ./ Packages [1774 B]
+Get:8 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [240 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 Packages [8789 kB]
+Get:10 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [8856 B]
+Fetched 9292 kB in 1s (11.1 MB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://security.debian.org/debian-security bookworm-security InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm-updates InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                           Tue, 07 Jan 2025 13:02:49 +0000 |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies           Tue, 07 Jan 2025 13:02:50 +0000 |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), cmake, python3-dev, python3-lxml, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), cmake, python3-dev, python3-lxml, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [705 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [737 B]
+Fetched 2051 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ Release [606 B]
+Get:2 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ Release [606 B]
+Get:3 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base groff-base intltool-debian libarchive-zip-perl
+  libarchive13 libcurl4 libdebhelper-perl libelf1 libexpat1-dev libfakeroot
+  libfile-stripnondeterminism-perl libicu72 libjs-jquery libjs-sphinxdoc
+  libjs-underscore libjsoncpp25 libmagic-mgc libmagic1 libncursesw6
+  libpipeline1 libproc2-0 libpython3-dev libpython3-stdlib libpython3.11
+  libpython3.11-dev libpython3.11-minimal libpython3.11-stdlib libreadline8
+  librhash0 libsqlite3-0 libsub-override-perl libtool libuchardet0 libuv1
+  libxml2 libxslt1.1 m4 man-db media-types po-debconf procps python3
+  python3-dev python3-distutils python3-lib2to3 python3-lxml python3-minimal
+  python3.11 python3.11-dev python3.11-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sensible-utils zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev groff lrzip libtool-doc gfortran | fortran95-compiler
+  gcj-jdk m4-doc apparmor less www-browser libmail-box-perl python3-doc
+  python3-tk python3-venv python-lxml-doc python3.11-venv python3.11-doc
+  binfmt-support readline-doc
+Recommended packages:
+  curl | wget | lynx libarchive-cpio-perl javascript-common libgpm2
+  libltdl-dev libmail-sendmail-perl psmisc python3-bs4 python3-html5lib
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base groff-base intltool-debian libarchive-zip-perl
+  libarchive13 libcurl4 libdebhelper-perl libelf1 libexpat1-dev libfakeroot
+  libfile-stripnondeterminism-perl libicu72 libjs-jquery libjs-sphinxdoc
+  libjs-underscore libjsoncpp25 libmagic-mgc libmagic1 libncursesw6
+  libpipeline1 libproc2-0 libpython3-dev libpython3-stdlib libpython3.11
+  libpython3.11-dev libpython3.11-minimal libpython3.11-stdlib libreadline8
+  librhash0 libsqlite3-0 libsub-override-perl libtool libuchardet0 libuv1
+  libxml2 libxslt1.1 m4 man-db media-types po-debconf procps python3
+  python3-dev python3-distutils python3-lib2to3 python3-lxml python3-minimal
+  python3.11 python3.11-dev python3.11-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sbuild-build-depends-main-dummy
+  sensible-utils zlib1g-dev
+0 upgraded, 71 newly installed, 0 to remove and 0 not upgraded.
+Need to get 48.6 MB/48.6 MB of archives.
+After this operation, 187 MB of additional disk space will be used.
+Get:1 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ ros-one-setup-files 0-2025.01.07.12.58 [10.7 kB]
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [924 B]
+Get:3 file:/<<BUILDDIR>>/resolver-P1Gzv0/apt_archive ./ ros-one-ros-environment 1.3.2-5-g2686e94-2025.01.07.12.59 [5884 B]
+Get:4 http://security.debian.org/debian-security bookworm-security/main amd64 libarchive13 amd64 3.6.2-1+deb12u2 [343 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-minimal amd64 3.11.2-6+deb12u4 [815 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 python3.11-minimal amd64 3.11.2-6+deb12u4 [2066 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 python3-minimal amd64 3.11.2-1+b1 [26.3 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 media-types all 10.0.0 [26.1 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-common all 8.2-1.3 [69.0 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libreadline8 amd64 8.2-1.3 [166 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2+deb12u1 [839 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-stdlib amd64 3.11.2-6+deb12u4 [1797 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 python3.11 amd64 3.11.2-6+deb12u4 [573 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libpython3-stdlib amd64 3.11.2-1+b1 [9312 B]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 python3 amd64 3.11.2-1+b1 [26.3 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libproc2-0 amd64 2:4.0.2-3 [62.8 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 procps amd64 2:4.0.2-3 [709 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+Get:20 http://deb.debian.org/debian bookworm/main amd64 libmagic-mgc amd64 1:5.44-3 [305 kB]
+Get:21 http://deb.debian.org/debian bookworm/main amd64 libmagic1 amd64 1:5.44-3 [104 kB]
+Get:22 http://deb.debian.org/debian bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB]
+Get:23 http://deb.debian.org/debian bookworm/main amd64 gettext-base amd64 0.21-12 [160 kB]
+Get:24 http://deb.debian.org/debian bookworm/main amd64 libuchardet0 amd64 0.0.7-1 [67.8 kB]
+Get:25 http://deb.debian.org/debian bookworm/main amd64 groff-base amd64 1.22.4-10 [916 kB]
+Get:26 http://deb.debian.org/debian bookworm/main amd64 bsdextrautils amd64 2.38.1-5+deb12u2 [86.8 kB]
+Get:27 http://deb.debian.org/debian bookworm/main amd64 libpipeline1 amd64 1.5.7-1 [38.5 kB]
+Get:28 http://deb.debian.org/debian bookworm/main amd64 man-db amd64 2.11.2-2 [1386 kB]
+Get:29 http://deb.debian.org/debian bookworm/main amd64 m4 amd64 1.4.19-3 [287 kB]
+Get:30 http://deb.debian.org/debian bookworm/main amd64 autoconf all 2.71-3 [332 kB]
+Get:31 http://deb.debian.org/debian bookworm/main amd64 autotools-dev all 20220109.1 [51.6 kB]
+Get:32 http://deb.debian.org/debian bookworm/main amd64 automake all 1:1.16.5-1.3 [823 kB]
+Get:33 http://deb.debian.org/debian bookworm/main amd64 autopoint all 0.21-12 [495 kB]
+Get:34 http://deb.debian.org/debian bookworm/main amd64 libicu72 amd64 72.1-3 [9376 kB]
+Get:35 http://deb.debian.org/debian bookworm/main amd64 libxml2 amd64 2.9.14+dfsg-1.3~deb12u1 [687 kB]
+Get:36 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u8 [390 kB]
+Get:37 http://deb.debian.org/debian bookworm/main amd64 libjsoncpp25 amd64 1.9.5-4 [78.6 kB]
+Get:38 http://deb.debian.org/debian bookworm/main amd64 librhash0 amd64 1.4.3-3 [134 kB]
+Get:39 http://deb.debian.org/debian bookworm/main amd64 libuv1 amd64 1.44.2-1+deb12u1 [136 kB]
+Get:40 http://deb.debian.org/debian bookworm/main amd64 cmake-data all 3.25.1-1 [2026 kB]
+Get:41 http://deb.debian.org/debian bookworm/main amd64 cmake amd64 3.25.1-1 [8692 kB]
+Get:42 http://deb.debian.org/debian bookworm/main amd64 libdebhelper-perl all 13.11.4 [81.2 kB]
+Get:43 http://deb.debian.org/debian bookworm/main amd64 libtool all 2.4.7-7~deb12u1 [517 kB]
+Get:44 http://deb.debian.org/debian bookworm/main amd64 dh-autoreconf all 20 [17.1 kB]
+Get:45 http://deb.debian.org/debian bookworm/main amd64 libarchive-zip-perl all 1.68-1 [104 kB]
+Get:46 http://deb.debian.org/debian bookworm/main amd64 libsub-override-perl all 0.09-4 [9304 B]
+Get:47 http://deb.debian.org/debian bookworm/main amd64 libfile-stripnondeterminism-perl all 1.13.1-1 [19.4 kB]
+Get:48 http://deb.debian.org/debian bookworm/main amd64 dh-strip-nondeterminism all 1.13.1-1 [8620 B]
+Get:49 http://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB]
+Get:50 http://deb.debian.org/debian bookworm/main amd64 dwz amd64 0.15-1 [109 kB]
+Get:51 http://deb.debian.org/debian bookworm/main amd64 gettext amd64 0.21-12 [1300 kB]
+Get:52 http://deb.debian.org/debian bookworm/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB]
+Get:53 http://deb.debian.org/debian bookworm/main amd64 po-debconf all 1.0.21+nmu1 [248 kB]
+Get:54 http://deb.debian.org/debian bookworm/main amd64 debhelper all 13.11.4 [942 kB]
+Get:55 http://deb.debian.org/debian bookworm/main amd64 dumb-init amd64 1.2.5-2 [14.1 kB]
+Get:56 http://deb.debian.org/debian bookworm/main amd64 libfakeroot amd64 1.31-1.2 [28.3 kB]
+Get:57 http://deb.debian.org/debian bookworm/main amd64 fakeroot amd64 1.31-1.2 [66.9 kB]
+Get:58 http://deb.debian.org/debian bookworm/main amd64 libexpat1-dev amd64 2.5.0-1+deb12u1 [150 kB]
+Get:59 http://deb.debian.org/debian bookworm/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [326 kB]
+Get:60 http://deb.debian.org/debian bookworm/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [116 kB]
+Get:61 http://deb.debian.org/debian bookworm/main amd64 libjs-sphinxdoc all 5.3.0-4 [130 kB]
+Get:62 http://deb.debian.org/debian bookworm/main amd64 libpython3.11 amd64 3.11.2-6+deb12u4 [1989 kB]
+Get:63 http://deb.debian.org/debian bookworm/main amd64 zlib1g-dev amd64 1:1.2.13.dfsg-1 [916 kB]
+Get:64 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-dev amd64 3.11.2-6+deb12u4 [4738 kB]
+Get:65 http://deb.debian.org/debian bookworm/main amd64 libpython3-dev amd64 3.11.2-1+b1 [9572 B]
+Get:66 http://deb.debian.org/debian bookworm/main amd64 libxslt1.1 amd64 1.1.35-1 [242 kB]
+Get:67 http://deb.debian.org/debian bookworm/main amd64 python3.11-dev amd64 3.11.2-6+deb12u4 [616 kB]
+Get:68 http://deb.debian.org/debian bookworm/main amd64 python3-lib2to3 all 3.11.2-3 [76.3 kB]
+Get:69 http://deb.debian.org/debian bookworm/main amd64 python3-distutils all 3.11.2-3 [131 kB]
+Get:70 http://deb.debian.org/debian bookworm/main amd64 python3-dev amd64 3.11.2-1+b1 [26.2 kB]
+Get:71 http://deb.debian.org/debian bookworm/main amd64 python3-lxml amd64 4.9.2-1+b1 [1194 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 48.6 MB in 0s (172 MB/s)
+Selecting previously unselected package libpython3.11-minimal:amd64.
+(Reading database ... 12470 files and directories currently installed.)
+Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-minimal:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3.11-minimal.
+Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11-minimal (3.11.2-6+deb12u4) ...
+Setting up libpython3.11-minimal:amd64 (3.11.2-6+deb12u4) ...
+Setting up python3.11-minimal (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 12777 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.0.0_all.deb ...
+Unpacking media-types (10.0.0) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../2-libncursesw6_6.4-4_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.4-4) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../3-readline-common_8.2-1.3_all.deb ...
+Unpacking readline-common (8.2-1.3) ...
+Selecting previously unselected package libreadline8:amd64.
+Preparing to unpack .../4-libreadline8_8.2-1.3_amd64.deb ...
+Unpacking libreadline8:amd64 (8.2-1.3) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../5-libsqlite3-0_3.40.1-2+deb12u1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.40.1-2+deb12u1) ...
+Selecting previously unselected package libpython3.11-stdlib:amd64.
+Preparing to unpack .../6-libpython3.11-stdlib_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-stdlib:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3.11.
+Preparing to unpack .../7-python3.11_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../8-libpython3-stdlib_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package python3.
+(Reading database ... 13228 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.11.2-1+b1_amd64.deb ...
+Unpacking python3 (3.11.2-1+b1) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../01-libproc2-0_2%3a4.0.2-3_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.2-3) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../02-procps_2%3a4.0.2-3_amd64.deb ...
+Unpacking procps (2:4.0.2-3) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../03-sensible-utils_0.0.17+nmu1_all.deb ...
+Unpacking sensible-utils (0.0.17+nmu1) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../04-libmagic-mgc_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic-mgc (1:5.44-3) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../05-libmagic1_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.44-3) ...
+Selecting previously unselected package file.
+Preparing to unpack .../06-file_1%3a5.44-3_amd64.deb ...
+Unpacking file (1:5.44-3) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../07-gettext-base_0.21-12_amd64.deb ...
+Unpacking gettext-base (0.21-12) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../08-libuchardet0_0.0.7-1_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.7-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../09-groff-base_1.22.4-10_amd64.deb ...
+Unpacking groff-base (1.22.4-10) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../10-bsdextrautils_2.38.1-5+deb12u2_amd64.deb ...
+Unpacking bsdextrautils (2.38.1-5+deb12u2) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../11-libpipeline1_1.5.7-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../12-man-db_2.11.2-2_amd64.deb ...
+Unpacking man-db (2.11.2-2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../13-m4_1.4.19-3_amd64.deb ...
+Unpacking m4 (1.4.19-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../14-autoconf_2.71-3_all.deb ...
+Unpacking autoconf (2.71-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../15-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../16-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../17-autopoint_0.21-12_all.deb ...
+Unpacking autopoint (0.21-12) ...
+Selecting previously unselected package libicu72:amd64.
+Preparing to unpack .../18-libicu72_72.1-3_amd64.deb ...
+Unpacking libicu72:amd64 (72.1-3) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../19-libxml2_2.9.14+dfsg-1.3~deb12u1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3~deb12u1) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../20-libarchive13_3.6.2-1+deb12u2_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.2-1+deb12u2) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../21-libcurl4_7.88.1-10+deb12u8_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u8) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../22-libjsoncpp25_1.9.5-4_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-4) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../23-librhash0_1.4.3-3_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.3-3) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../24-libuv1_1.44.2-1+deb12u1_amd64.deb ...
+Unpacking libuv1:amd64 (1.44.2-1+deb12u1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../25-cmake-data_3.25.1-1_all.deb ...
+Unpacking cmake-data (3.25.1-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../26-cmake_3.25.1-1_amd64.deb ...
+Unpacking cmake (3.25.1-1) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../27-libdebhelper-perl_13.11.4_all.deb ...
+Unpacking libdebhelper-perl (13.11.4) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../28-libtool_2.4.7-7~deb12u1_all.deb ...
+Unpacking libtool (2.4.7-7~deb12u1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../29-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../30-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../31-libsub-override-perl_0.09-4_all.deb ...
+Unpacking libsub-override-perl (0.09-4) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../32-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.1-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../33-dh-strip-nondeterminism_1.13.1-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.1-1) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../34-libelf1_0.188-2.1_amd64.deb ...
+Unpacking libelf1:amd64 (0.188-2.1) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../35-dwz_0.15-1_amd64.deb ...
+Unpacking dwz (0.15-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../36-gettext_0.21-12_amd64.deb ...
+Unpacking gettext (0.21-12) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../37-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../38-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../39-debhelper_13.11.4_all.deb ...
+Unpacking debhelper (13.11.4) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../40-dumb-init_1.2.5-2_amd64.deb ...
+Unpacking dumb-init (1.2.5-2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../41-libfakeroot_1.31-1.2_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.31-1.2) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../42-fakeroot_1.31-1.2_amd64.deb ...
+Unpacking fakeroot (1.31-1.2) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../43-libexpat1-dev_2.5.0-1+deb12u1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.5.0-1+deb12u1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../44-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../45-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../46-libjs-sphinxdoc_5.3.0-4_all.deb ...
+Unpacking libjs-sphinxdoc (5.3.0-4) ...
+Selecting previously unselected package libpython3.11:amd64.
+Preparing to unpack .../47-libpython3.11_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../48-zlib1g-dev_1%3a1.2.13.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Selecting previously unselected package libpython3.11-dev:amd64.
+Preparing to unpack .../49-libpython3.11-dev_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking libpython3.11-dev:amd64 (3.11.2-6+deb12u4) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../50-libpython3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.11.2-1+b1) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../51-libxslt1.1_1.1.35-1_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.35-1) ...
+Selecting previously unselected package python3.11-dev.
+Preparing to unpack .../52-python3.11-dev_3.11.2-6+deb12u4_amd64.deb ...
+Unpacking python3.11-dev (3.11.2-6+deb12u4) ...
+Selecting previously unselected package python3-lib2to3.
+Preparing to unpack .../53-python3-lib2to3_3.11.2-3_all.deb ...
+Unpacking python3-lib2to3 (3.11.2-3) ...
+Selecting previously unselected package python3-distutils.
+Preparing to unpack .../54-python3-distutils_3.11.2-3_all.deb ...
+Unpacking python3-distutils (3.11.2-3) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../55-python3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-dev (3.11.2-1+b1) ...
+Selecting previously unselected package python3-lxml:amd64.
+Preparing to unpack .../56-python3-lxml_4.9.2-1+b1_amd64.deb ...
+Unpacking python3-lxml:amd64 (4.9.2-1+b1) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../57-ros-one-setup-files_0-2025.01.07.12.58_amd64.deb ...
+Unpacking ros-one-setup-files (0-2025.01.07.12.58) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../58-ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-g2686e94-2025.01.07.12.59) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../59-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (10.0.0) ...
+Setting up dumb-init (1.2.5-2) ...
+Setting up libpipeline1:amd64 (1.5.7-1) ...
+Setting up libicu72:amd64 (72.1-3) ...
+Setting up bsdextrautils (2.38.1-5+deb12u2) ...
+Setting up libmagic-mgc (1:5.44-3) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.11.4) ...
+Setting up libsqlite3-0:amd64 (3.40.1-2+deb12u1) ...
+Setting up libmagic1:amd64 (1:5.44-3) ...
+Setting up gettext-base (0.21-12) ...
+Setting up m4 (1.4.19-3) ...
+Setting up file (1:5.44-3) ...
+Setting up libfakeroot:amd64 (1.31-1.2) ...
+Setting up fakeroot (1.31-1.2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20220109.1) ...
+Setting up libuv1:amd64 (1.44.2-1+deb12u1) ...
+Setting up libexpat1-dev:amd64 (2.5.0-1+deb12u1) ...
+Setting up libproc2-0:amd64 (2:4.0.2-3) ...
+Setting up autopoint (0.21-12) ...
+Setting up libjsoncpp25:amd64 (1.9.5-4) ...
+Setting up libncursesw6:amd64 (6.4-4) ...
+Setting up autoconf (2.71-3) ...
+Setting up zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Setting up sensible-utils (0.0.17+nmu1) ...
+Setting up librhash0:amd64 (1.4.3-3) ...
+Setting up libuchardet0:amd64 (0.0.7-1) ...
+Setting up procps (2:4.0.2-3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u8) ...
+Setting up libsub-override-perl (0.09-4) ...
+Setting up cmake-data (3.25.1-1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up libelf1:amd64 (0.188-2.1) ...
+Setting up readline-common (8.2-1.3) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3~deb12u1) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.13.1-1) ...
+Setting up gettext (0.21-12) ...
+Setting up libtool (2.4.7-7~deb12u1) ...
+Setting up libarchive13:amd64 (3.6.2-1+deb12u2) ...
+Setting up libreadline8:amd64 (8.2-1.3) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up libjs-sphinxdoc (5.3.0-4) ...
+Setting up dh-strip-nondeterminism (1.13.1-1) ...
+Setting up dwz (0.15-1) ...
+Setting up groff-base (1.22.4-10) ...
+Setting up libxslt1.1:amd64 (1.1.35-1) ...
+Setting up cmake (3.25.1-1) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up libpython3.11-stdlib:amd64 (3.11.2-6+deb12u4) ...
+Setting up man-db (2.11.2-2) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up python3.11 (3.11.2-6+deb12u4) ...
+Setting up libpython3.11:amd64 (3.11.2-6+deb12u4) ...
+Setting up debhelper (13.11.4) ...
+Setting up python3 (3.11.2-1+b1) ...
+Setting up libpython3.11-dev:amd64 (3.11.2-6+deb12u4) ...
+Setting up python3-lxml:amd64 (4.9.2-1+b1) ...
+Setting up python3-lib2to3 (3.11.2-3) ...
+Setting up python3-distutils (3.11.2-3) ...
+Setting up libpython3-dev:amd64 (3.11.2-1+b1) ...
+Setting up python3.11-dev (3.11.2-6+deb12u4) ...
+Setting up python3-dev (3.11.2-1+b1) ...
+Setting up ros-one-setup-files (0-2025.01.07.12.58) ...
+Setting up ros-one-ros-environment (1.3.2-5-g2686e94-2025.01.07.12.59) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.36-9+deb12u9) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                          Tue, 07 Jan 2025 13:03:01 +0000 |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                            Tue, 07 Jan 2025 13:03:01 +0000 |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.8.0-1017-azure #20-Ubuntu SMP Tue Oct 22 03:43:13 UTC 2024 amd64 (x86_64)
+Toolchain package versions: binutils_2.40-2 dpkg-dev_1.21.22 g++-12_12.2.0-14 gcc-12_12.2.0-14 libc6-dev_2.36-9+deb12u9 libstdc++-12-dev_12.2.0-14 libstdc++6_12.2.0-14 linux-libc-dev_6.1.119-1
+Package versions: adduser_3.134 apt_2.6.1 autoconf_2.71-3 automake_1:1.16.5-1.3 autopoint_0.21-12 autotools-dev_20220109.1 base-files_12.4+deb12u8 base-passwd_3.6.1 bash_5.2.15-2+b7 binutils_2.40-2 binutils-common_2.40-2 binutils-x86-64-linux-gnu_2.40-2 bsdextrautils_2.38.1-5+deb12u2 bsdutils_1:2.38.1-5+deb12u2 build-essential_12.9 bzip2_1.0.8-5+b1 ca-certificates_20230311 ccache_4.8+really4.7.5-1 cmake_3.25.1-1 cmake-data_3.25.1-1 coreutils_9.1-1 cpp_4:12.2.0-3 cpp-12_12.2.0-14 dash_0.5.12-2 debconf_1.5.82 debhelper_13.11.4 debian-archive-keyring_2023.3+deb12u1 debianutils_5.7-0.5~deb12u1 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.8-4 dpkg_1.21.22 dpkg-dev_1.21.22 dumb-init_1.2.5-2 dwz_0.15-1 fakeroot_1.31-1.2 file_1:5.44-3 findutils_4.9.0-4 g++_4:12.2.0-3 g++-12_12.2.0-14 gcc_4:12.2.0-3 gcc-12_12.2.0-14 gcc-12-base_12.2.0-14 gettext_0.21-12 gettext-base_0.21-12 git_1:2.39.5-0+deb12u1 git-man_1:2.39.5-0+deb12u1 gpgv_2.2.40-1.1 grep_3.8-5 groff-base_1.22.4-10 gzip_1.12-1 hostname_3.23+nmu1 init-system-helpers_1.65.2 intltool-debian_0.35.0+20060710.6 libacl1_2.3.1-3 libapt-pkg6.0_2.6.1 libarchive-zip-perl_1.68-1 libarchive13_3.6.2-1+deb12u2 libasan8_12.2.0-14 libatomic1_12.2.0-14 libattr1_1:2.5.1-4 libaudit-common_1:3.0.9-1 libaudit1_1:3.0.9-1 libbinutils_2.40-2 libblkid1_2.38.1-5+deb12u2 libbrotli1_1.0.9-2+b6 libbz2-1.0_1.0.8-5+b1 libc-bin_2.36-9+deb12u9 libc-dev-bin_2.36-9+deb12u9 libc6_2.36-9+deb12u9 libc6-dev_2.36-9+deb12u9 libcap-ng0_0.8.3-1+b3 libcap2_1:2.66-4 libcc1-0_12.2.0-14 libcom-err2_1.47.0-2 libcrypt-dev_1:4.4.33-2 libcrypt1_1:4.4.33-2 libctf-nobfd0_2.40-2 libctf0_2.40-2 libcurl3-gnutls_7.88.1-10+deb12u8 libcurl4_7.88.1-10+deb12u8 libdb5.3_5.3.28+dfsg2-1 libdebconfclient0_0.270 libdebhelper-perl_13.11.4 libdpkg-perl_1.21.22 libelf1_0.188-2.1 liberror-perl_0.17029-2 libexpat1_2.5.0-1+deb12u1 libexpat1-dev_2.5.0-1+deb12u1 libfakeroot_1.31-1.2 libffi8_3.4.4-1 libfile-find-rule-perl_0.34-3 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-12-dev_12.2.0-14 libgcc-s1_12.2.0-14 libgcrypt20_1.10.1-3 libgdbm-compat4_1.23-3 libgdbm6_1.23-3 libgmp10_2:6.2.1+dfsg1-1.1 libgnutls30_3.7.9-2+deb12u3 libgomp1_12.2.0-14 libgpg-error0_1.46-1 libgprofng0_2.40-2 libgssapi-krb5-2_1.20.1-2+deb12u2 libhiredis0.14_0.14.1-3 libhogweed6_3.8.1-2 libicu72_72.1-3 libidn2-0_2.3.3-1+b1 libisl23_0.25-1.1 libitm1_12.2.0-14 libjansson4_2.14-2 libjs-jquery_3.6.1+dfsg+~3.5.14-1 libjs-sphinxdoc_5.3.0-4 libjs-underscore_1.13.4~dfsg+~1.11.4-3 libjsoncpp25_1.9.5-4 libk5crypto3_1.20.1-2+deb12u2 libkeyutils1_1.6.3-2 libkrb5-3_1.20.1-2+deb12u2 libkrb5support0_1.20.1-2+deb12u2 libldap-2.5-0_2.5.13+dfsg-5 liblsan0_12.2.0-14 liblz4-1_1.9.4-1 liblzma5_5.4.1-0.2 libmagic-mgc_1:5.44-3 libmagic1_1:5.44-3 libmd0_1.0.4-2 libmount1_2.38.1-5+deb12u2 libmpc3_1.3.1-1 libmpfr6_4.2.0-1 libncursesw6_6.4-4 libnettle8_3.8.1-2 libnghttp2-14_1.52.0-1+deb12u2 libnsl-dev_1.3.0-2 libnsl2_1.3.0-2 libnumber-compare-perl_0.03-3 libp11-kit0_0.24.1-2 libpam-modules_1.5.2-6+deb12u1 libpam-modules-bin_1.5.2-6+deb12u1 libpam-runtime_1.5.2-6+deb12u1 libpam0g_1.5.2-6+deb12u1 libpcre2-8-0_10.42-1 libperl5.36_5.36.0-7+deb12u1 libpipeline1_1.5.7-1 libproc2-0_2:4.0.2-3 libpsl5_0.21.2-1 libpython3-dev_3.11.2-1+b1 libpython3-stdlib_3.11.2-1+b1 libpython3.11_3.11.2-6+deb12u4 libpython3.11-dev_3.11.2-6+deb12u4 libpython3.11-minimal_3.11.2-6+deb12u4 libpython3.11-stdlib_3.11.2-6+deb12u4 libquadmath0_12.2.0-14 libreadline8_8.2-1.3 librhash0_1.4.3-3 librtmp1_2.4+20151223.gitfa8646d.1-2+b2 libsasl2-2_2.1.28+dfsg-10 libsasl2-modules-db_2.1.28+dfsg-10 libseccomp2_2.5.4-1+deb12u1 libselinux1_3.4-1+b6 libsemanage-common_3.4-1 libsemanage2_3.4-1+b5 libsepol2_3.4-2.1 libsmartcols1_2.38.1-5+deb12u2 libsqlite3-0_3.40.1-2+deb12u1 libssh2-1_1.10.0-3+b1 libssl3_3.0.15-1~deb12u1 libstdc++-12-dev_12.2.0-14 libstdc++6_12.2.0-14 libsub-override-perl_0.09-4 libsystemd0_252.31-1~deb12u1 libtasn1-6_4.19.0-2 libtext-glob-perl_0.11-3 libtinfo6_6.4-4 libtirpc-common_1.3.3+ds-1 libtirpc-dev_1.3.3+ds-1 libtirpc3_1.3.3+ds-1 libtool_2.4.7-7~deb12u1 libtsan2_12.2.0-14 libubsan1_12.2.0-14 libuchardet0_0.0.7-1 libudev1_252.31-1~deb12u1 libunistring2_1.0-2 libuuid1_2.38.1-5+deb12u2 libuv1_1.44.2-1+deb12u1 libxml2_2.9.14+dfsg-1.3~deb12u1 libxslt1.1_1.1.35-1 libxxhash0_0.8.1-1 libzstd1_1.5.4+dfsg2-5 linux-libc-dev_6.1.119-1 login_1:4.13+dfsg1-1+b1 m4_1.4.19-3 make_4.3-4.1 man-db_2.11.2-2 mawk_1.3.4.20200120-3.1 media-types_10.0.0 ncurses-base_6.4-4 ncurses-bin_6.4-4 openssl_3.0.15-1~deb12u1 passwd_1:4.13+dfsg1-1+b1 patch_2.7.6-7 perl_5.36.0-7+deb12u1 perl-base_5.36.0-7+deb12u1 perl-modules-5.36_5.36.0-7+deb12u1 po-debconf_1.0.21+nmu1 procps_2:4.0.2-3 python3_3.11.2-1+b1 python3-dev_3.11.2-1+b1 python3-distutils_3.11.2-3 python3-lib2to3_3.11.2-3 python3-lxml_4.9.2-1+b1 python3-minimal_3.11.2-1+b1 python3.11_3.11.2-6+deb12u4 python3.11-dev_3.11.2-6+deb12u4 python3.11-minimal_3.11.2-6+deb12u4 readline-common_8.2-1.3 ros-one-ros-environment_1.3.2-5-g2686e94-2025.01.07.12.59 ros-one-setup-files_0-2025.01.07.12.58 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-1 sensible-utils_0.0.17+nmu1 sysvinit-utils_3.06-4 tar_1.34+dfsg-1.2+deb12u1 usrmerge_37~deb12u1 util-linux_2.38.1-5+deb12u2 util-linux-extra_2.38.1-5+deb12u2 xz-utils_5.4.1-0.2 zlib1g_1:1.2.13.dfsg-1 zlib1g-dev_1:1.2.13.dfsg-1
+
++------------------------------------------------------------------------------+
+| Build                                        Tue, 07 Jan 2025 13:03:01 +0000 |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-mavlink
+Binary: ros-one-mavlink
+Architecture: any
+Version: 2024.10.10-1-2025.01.07.13.02
+Maintainer: Vladimir Ermakov <vooon341@gmail.com>
+Homepage: https://mavlink.io/en/
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), cmake, python3-dev, python3-lxml
+Package-List:
+ ros-one-mavlink deb misc optional arch=any
+Checksums-Sha1:
+ 43d17d8af1a175219d6d1dee006e600284e4d33f 16103405 ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.tar.gz
+Checksums-Sha256:
+ 3cc4d5a35a04ceeee64adee75f9d7c257d97d59cb548ea0c54a1b6e72f5b71d5 16103405 ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.tar.gz
+Files:
+ fc5bd107b9d1cef37761903c8d376a87 16103405 ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.dsc)
+dpkg-source: info: extracting ros-one-mavlink in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/sbuild-nonexistent
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-mavlink
+dpkg-buildpackage: info: source version 2024.10.10-1-2025.01.07.13.02
+dpkg-buildpackage: info: source distribution bookworm
+dpkg-buildpackage: info: source changed by Vladimir Ermakov <vooon341@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-mavlink.substvars debian/files
+	rm -fr -- debian/ros-one-mavlink/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF ..
+-- Found Python3: /usr/bin/python3 (found version "3.11.2") found components: Interpreter 
+-- Python 3 iterpretator: /usr/bin/python3
+-- Package version: 2024.10.10
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/all.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/development.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/matrixpilot.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/paparazzi.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/storm32.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+-- processing v1.0: /<<BUILDDIR>>package/message_definitions/v1.0/ualberta.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/all.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/development.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/matrixpilot.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/paparazzi.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/storm32.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+-- processing v2.0: /<<BUILDDIR>>package/message_definitions/v1.0/ualberta.xml
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    FETCHCONTENT_FULLY_DISCONNECTED
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-mavlink.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/ASLUAV.xml-v1.0.dir/build.make CMakeFiles/ASLUAV.xml-v1.0.dir/depend
+make  -f CMakeFiles/AVSSUAS.xml-v1.0.dir/build.make CMakeFiles/AVSSUAS.xml-v1.0.dir/depend
+make  -f CMakeFiles/all.xml-v1.0.dir/build.make CMakeFiles/all.xml-v1.0.dir/depend
+make  -f CMakeFiles/ardupilotmega.xml-v1.0.dir/build.make CMakeFiles/ardupilotmega.xml-v1.0.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/ASLUAV.xml-v1.0.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/AVSSUAS.xml-v1.0.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/all.xml-v1.0.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/ardupilotmega.xml-v1.0.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/ASLUAV.xml-v1.0.dir/build.make CMakeFiles/ASLUAV.xml-v1.0.dir/build
+make  -f CMakeFiles/AVSSUAS.xml-v1.0.dir/build.make CMakeFiles/AVSSUAS.xml-v1.0.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/all.xml-v1.0.dir/build.make CMakeFiles/all.xml-v1.0.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/ardupilotmega.xml-v1.0.dir/build.make CMakeFiles/ardupilotmega.xml-v1.0.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  3%] Generating include/v1.0/ASLUAV/ASLUAV.h
+[  6%] Generating include/v1.0/all/all.h
+[ 10%] Generating include/v1.0/ardupilotmega/ardupilotmega.h
+/usr/bin/env PYTHONPATH="/<<BUILDDIR>>package:/opt/ros/one/lib/python3/dist-packages" /usr/bin/python3 /<<BUILDDIR>>package/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+/usr/bin/env PYTHONPATH="/<<BUILDDIR>>package:/opt/ros/one/lib/python3/dist-packages" /usr/bin/python3 /<<BUILDDIR>>package/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /<<BUILDDIR>>package/message_definitions/v1.0/all.xml
+/usr/bin/env PYTHONPATH="/<<BUILDDIR>>package:/opt/ros/one/lib/python3/dist-packages" /usr/bin/python3 /<<BUILDDIR>>package/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+[ 13%] Generating include/v1.0/AVSSUAS/AVSSUAS.h
+/usr/bin/env PYTHONPATH="/<<BUILDDIR>>package:/opt/ros/one/lib/python3/dist-packages" /usr/bin/python3 /<<BUILDDIR>>package/pymavlink/tools/mavgen.py --lang=C --wire-protocol=1.0 --output=include/v1.0 /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Merged enum MAV_CMD
+Found 144 MAVLink message types in 4 XML files
+Traceback (most recent call last):
+  File "/<<BUILDDIR>>package/pymavlink/tools/mavgen.py", line 31, in <module>
+    ok = mavgen.mavgen(args, args.definitions)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen.py", line 268, in mavgen
+    from . import mavgen_c
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen_c.py", line 9, in <module>
+    from future.utils import iteritems
+ModuleNotFoundError: No module named 'future'
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Merged enum MAV_CMD
+Found 142 MAVLink message types in 4 XML files
+Traceback (most recent call last):
+  File "/<<BUILDDIR>>package/pymavlink/tools/mavgen.py", line 31, in <module>
+    ok = mavgen.mavgen(args, args.definitions)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen.py", line 268, in mavgen
+    from . import mavgen_c
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen_c.py", line 9, in <module>
+    from future.utils import iteritems
+ModuleNotFoundError: No module named 'future'
+make[4]: *** [CMakeFiles/ASLUAV.xml-v1.0.dir/build.make:78: include/v1.0/ASLUAV/ASLUAV.h] Error 1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: *** [CMakeFiles/Makefile2:144: CMakeFiles/ASLUAV.xml-v1.0.dir/all] Error 2
+make[3]: *** Waiting for unfinished jobs....
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Merged enum MAV_CMD
+Found 190 MAVLink message types in 8 XML files
+Traceback (most recent call last):
+  File "/<<BUILDDIR>>package/pymavlink/tools/mavgen.py", line 31, in <module>
+    ok = mavgen.mavgen(args, args.definitions)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen.py", line 268, in mavgen
+    from . import mavgen_c
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen_c.py", line 9, in <module>
+    from future.utils import iteritems
+ModuleNotFoundError: No module named 'future'
+make[4]: *** [CMakeFiles/AVSSUAS.xml-v1.0.dir/build.make:78: include/v1.0/AVSSUAS/AVSSUAS.h] Error 1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: *** [CMakeFiles/Makefile2:170: CMakeFiles/AVSSUAS.xml-v1.0.dir/all] Error 2
+make[4]: *** [CMakeFiles/ardupilotmega.xml-v1.0.dir/build.make:78: include/v1.0/ardupilotmega/ardupilotmega.h] Error 1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: *** [CMakeFiles/Makefile2:222: CMakeFiles/ardupilotmega.xml-v1.0.dir/all] Error 2
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/all.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/all.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/ardupilotmega.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/ASLUAV.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/common.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/development.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/development.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/icarous.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/minimal.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/python_array_test.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/python_array_test.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/standard.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/test.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/test.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/ualberta.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/ualberta.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/uAvionix.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/storm32.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/storm32.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/AVSSUAS.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/cubepilot.xml
+Validating /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+Parsing /<<BUILDDIR>>package/message_definitions/v1.0/csAirLink.xml
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Merged enum MAV_CMD
+Found 196 MAVLink message types in 16 XML files
+Traceback (most recent call last):
+  File "/<<BUILDDIR>>package/pymavlink/tools/mavgen.py", line 31, in <module>
+    ok = mavgen.mavgen(args, args.definitions)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen.py", line 268, in mavgen
+    from . import mavgen_c
+  File "/<<BUILDDIR>>package/pymavlink/generator/mavgen_c.py", line 9, in <module>
+    from future.utils import iteritems
+ModuleNotFoundError: No module named 'future'
+make[4]: *** [CMakeFiles/all.xml-v1.0.dir/build.make:78: include/v1.0/all/all.h] Error 1
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: *** [CMakeFiles/Makefile2:196: CMakeFiles/all.xml-v1.0.dir/all] Error 2
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[2]: *** [Makefile:127: all] Error 2
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+dh_auto_build: error: cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1 returned exit code 2
+make[1]: *** [debian/rules:46: override_dh_auto_build] Error 25
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+make: *** [debian/rules:30: build] Error 2
+dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2
+--------------------------------------------------------------------------------
+Build finished at 2025-01-07T13:03:04Z
+
+Finished
+--------
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                      Tue, 07 Jan 2025 13:03:05 +0000 |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+E: Build failure (dpkg-buildpackage died)
+
++------------------------------------------------------------------------------+
+| Summary                                      Tue, 07 Jan 2025 13:03:06 +0000 |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 25436
+Build-Time: 1
+Distribution: bookworm
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 11
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-mavlink_2024.10.10-1-2025.01.07.13.02.dsc
+Machine Architecture: amd64
+Package: ros-one-mavlink
+Package-Time: 22
+Source-Version: 2024.10.10-1-2025.01.07.13.02
+Space: 25436
+Status: attempted
+Version: 2024.10.10-1-2025.01.07.13.02
+--------------------------------------------------------------------------------
+Finished at 2025-01-07T13:03:04Z
+Build needed 00:00:22, 25436k disk space

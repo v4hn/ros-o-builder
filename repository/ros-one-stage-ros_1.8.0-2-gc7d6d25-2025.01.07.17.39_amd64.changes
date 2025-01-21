@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sun, 30 Apr 2017 00:00:00 -0000
+Source: ros-one-stage-ros
+Binary: ros-one-stage-ros ros-one-stage-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.8.0-2-gc7d6d25-2025.01.07.17.39
+Distribution: bookworm
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-stage-ros - This package provides ROS specific hooks for stage
+Changes:
+ ros-one-stage-ros (1.8.0-2-gc7d6d25-2025.01.07.17.39) bookworm; urgency=high
+ .
+   * Now uses Stage's native event loop properly and added reassuring startup output.
+   * Added a GUI section so that the world starts in a good place.
+   * Fixed issue such that ranger intensity values are no longer clipped to 256
+     See: #31 <https://github.com/ros-simulation/stage_ros/issues/31>
+   * Contributors: Richard Vaughan, Shane Loretz, William Woodall, gerkey
+Checksums-Sha1:
+ 01336ac0f698ecb5fcce804f97cf8bce289ea571 768820 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb
+ 58c64e0e1f2f83949525408f2b24c8970ecf9ace 26334 ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.buildinfo
+ d583ddfca034dd2b19dc8dbae608c48ce3ed8d91 99304 ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb
+Checksums-Sha256:
+ 40e1cd3dc0bd2d86ea5b81e3b6843955f935f0c6755879bd5a1662761c5cad72 768820 ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb
+ be0ed1edd80d50ca8fd28357bdc5517dd8b623dfa160931e4d3f3e38b5012bcb 26334 ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.buildinfo
+ 3413ffc8e631f36c2bec48d39878a3374aa774fb5dab5fbd4de5904af839406a 99304 ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb
+Files:
+ 1923406be43f76867e7c8e042e730731 768820 debug optional ros-one-stage-ros-dbgsym_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb
+ f00b0b246a175fa1c7651ebc99fc4f1d 26334 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.buildinfo
+ a5bb49c407058af6dd4b09fb4584506a 99304 misc optional ros-one-stage-ros_1.8.0-2-gc7d6d25-2025.01.07.17.39_amd64.deb

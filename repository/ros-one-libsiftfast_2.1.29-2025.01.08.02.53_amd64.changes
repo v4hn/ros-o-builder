@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 05 Jan 2025 00:00:00 -0000
+Source: ros-one-libsiftfast
+Binary: ros-one-libsiftfast ros-one-libsiftfast-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.1.29-2025.01.08.02.53
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-libsiftfast - Library to compute SIFT features
+Changes:
+ ros-one-libsiftfast (2.1.29-2025.01.08.02.53) bookworm; urgency=high
+ .
+   * Support ros-o / Ubuntu 22.04 (#512 <https://github.com/jsk-ros-pkg/jsk_3rdparty/issues/512>)
+ .
+       * [libsiftfast] [ros-o] only use != to compare ROS_DISTRO in Makefile
+       * [libsiftfast] support multiple python3 version
+ .
+   * Contributors: Yoshiki Obinata
+Checksums-Sha1:
+ f0153580e87c68d268a95ded4deea4a7c04d7f97 1001088 ros-one-libsiftfast-dbgsym_2.1.29-2025.01.08.02.53_amd64.deb
+ 6f1136793dcd8882bdf13df3bf2147a06f7e3358 15390 ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.buildinfo
+ a1b198f0a1e05ed3542f5a70dffb547a02ad1d02 566180 ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.deb
+Checksums-Sha256:
+ 27dce22ddc63a2b4776026bab57c85d96be5f8bd09b3a9954539be7d78077215 1001088 ros-one-libsiftfast-dbgsym_2.1.29-2025.01.08.02.53_amd64.deb
+ 8e64679278c71f8c92bc2881ec4ea0d14595a799ddd999a9639b62574da8db9b 15390 ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.buildinfo
+ 53063296976aa26a437796b50285d5a687a1f73766949a10638d567fec0b8189 566180 ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.deb
+Files:
+ 0ec84a56557e369ccf5ebd50cad47c0c 1001088 debug optional ros-one-libsiftfast-dbgsym_2.1.29-2025.01.08.02.53_amd64.deb
+ 5dfe60aca981ddf6b31f937a841c3825 15390 misc optional ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.buildinfo
+ cad5acba708f8c00576e751a4e92578a 566180 misc optional ros-one-libsiftfast_2.1.29-2025.01.08.02.53_amd64.deb
