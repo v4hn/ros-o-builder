@@ -62,6 +62,7 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 - https://github.com/stack-of-tasks
 - https://github.com/ipab-slmc/exotica
 
+- https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy - Intel might drop "legacy" branches at some point
 - https://github.com/TAMS-Group/robotiq
 - https://github.com/hanruihua/Turtlebot2_on_Noetic
 
