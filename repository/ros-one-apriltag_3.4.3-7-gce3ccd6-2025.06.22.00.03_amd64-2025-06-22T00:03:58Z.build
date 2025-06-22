@@ -1,0 +1,1450 @@
+sbuild (Debian sbuild) 0.85.10ubuntu0.2 (02 May 2025) on fv-az1065-163.i5t3moiiid2eje4eqaab2sokjh.bx.internal.cloudapp.net
+
++============================================================================================+
+| ros-one-apriltag 3.4.3-7-gce3ccd6-2025.06.22.00.03 (amd64) Sun, 22 Jun 2025 00:03:58 +0000 |
++============================================================================================+
+
+Package: ros-one-apriltag
+Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Source Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/sid-amd64.tar to /tmp/tmp.sbuild.3Kws7W03IX...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2025.06.22.00.01_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-g2686e94-2025.06.22.00.01_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-jIN28T' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                Sun, 22 Jun 2025 00:04:03 +0000 |
++------------------------------------------------------------------------------+
+
+Ign:1 file:/build/package//resolver-4114nX/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-4114nX/apt_archive ./ Release [606 B]
+Get:2 file:/build/package//resolver-4114nX/apt_archive ./ Release [606 B]
+Ign:3 file:/build/package//resolver-4114nX/apt_archive ./ Release.gpg
+Get:4 file:/build/package//resolver-4114nX/apt_archive ./ Packages [1200 B]
+Get:5 http://deb.debian.org/debian sid InRelease [208 kB]
+Get:6 http://deb.debian.org/debian sid/main amd64 Packages [10.1 MB]
+Fetched 10.3 MB in 1s (15.2 MB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian sid InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                           Sun, 22 Jun 2025 00:04:05 +0000 |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies           Sun, 22 Jun 2025 00:04:05 +0000 |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), cmake, python3-dev, python3-numpy, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), cmake, python3-dev, python3-numpy, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: warning: root directory /<<RESOLVERDIR>>/sbuild-build-depends-main-dummy has unusual owner or group 998:999
+dpkg-deb: hint: you might need to pass --root-owner-group, see <https://wiki.debian.org/Teams/Dpkg/RootlessBuilds> for further details
+dpkg-deb: warning: ignoring 1 warning about the control file(s)
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [732 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [738 B]
+Fetched 2079 B in 0s (0 B/s)
+Reading package lists...
+Ign:1 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ Release [606 B]
+Get:2 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ Release [606 B]
+Ign:3 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base groff-base intltool-debian libarchive-zip-perl
+  libarchive13t64 libblas3 libcurl4t64 libdebhelper-perl libelf1t64
+  libexpat1-dev libfakeroot libfile-stripnondeterminism-perl libgfortran5
+  libjs-jquery libjs-sphinxdoc libjs-underscore libjsoncpp26 liblapack3
+  libmagic-mgc libmagic1t64 libncursesw6 libpipeline1 libproc2-0
+  libpython3-dev libpython3-stdlib libpython3.13 libpython3.13-dev
+  libpython3.13-minimal libpython3.13-stdlib libreadline8t64 librhash1 libtool
+  libuchardet0 libuv1t64 libxml2 m4 man-db media-types netbase po-debconf
+  procps python3 python3-dev python3-minimal python3-numpy python3-numpy-dev
+  python3.13 python3.13-dev python3.13-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sensible-utils tzdata zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev gnulib-l10n groff lrzip libtool-doc gfortran
+  | fortran95-compiler gcj-jdk m4-doc apparmor less www-browser
+  libmail-box-perl python3-doc python3-tk python3-venv gfortran
+  python-numpy-doc python3-pytest python3.13-venv python3.13-doc
+  binfmt-support readline-doc
+Recommended packages:
+  curl | wget | lynx libarchive-cpio-perl javascript-common libgpm2
+  libltdl-dev libmail-sendmail-perl psmisc linux-sysctl-defaults
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base groff-base intltool-debian libarchive-zip-perl
+  libarchive13t64 libblas3 libcurl4t64 libdebhelper-perl libelf1t64
+  libexpat1-dev libfakeroot libfile-stripnondeterminism-perl libgfortran5
+  libjs-jquery libjs-sphinxdoc libjs-underscore libjsoncpp26 liblapack3
+  libmagic-mgc libmagic1t64 libncursesw6 libpipeline1 libproc2-0
+  libpython3-dev libpython3-stdlib libpython3.13 libpython3.13-dev
+  libpython3.13-minimal libpython3.13-stdlib libreadline8t64 librhash1 libtool
+  libuchardet0 libuv1t64 libxml2 m4 man-db media-types netbase po-debconf
+  procps python3 python3-dev python3-minimal python3-numpy python3-numpy-dev
+  python3.13 python3.13-dev python3.13-minimal readline-common
+  ros-one-ros-environment ros-one-setup-files sbuild-build-depends-main-dummy
+  sensible-utils tzdata zlib1g-dev
+0 upgraded, 71 newly installed, 0 to remove and 0 not upgraded.
+Need to get 51.9 MB/51.9 MB of archives.
+After this operation, 206 MB of additional disk space will be used.
+Get:1 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ ros-one-setup-files 0-2025.06.22.00.01 [10.9 kB]
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [924 B]
+Get:3 file:/<<BUILDDIR>>/resolver-4114nX/apt_archive ./ ros-one-ros-environment 1.3.2-5-g2686e94-2025.06.22.00.01 [6056 B]
+Get:4 http://deb.debian.org/debian sid/main amd64 libpython3.13-minimal amd64 3.13.5-1 [862 kB]
+Get:5 http://deb.debian.org/debian sid/main amd64 python3.13-minimal amd64 3.13.5-1 [2218 kB]
+Get:6 http://deb.debian.org/debian sid/main amd64 python3-minimal amd64 3.13.4-1 [27.3 kB]
+Get:7 http://deb.debian.org/debian sid/main amd64 media-types all 13.0.0 [29.3 kB]
+Get:8 http://deb.debian.org/debian sid/main amd64 netbase all 6.5 [12.4 kB]
+Get:9 http://deb.debian.org/debian sid/main amd64 tzdata all 2025b-3 [260 kB]
+Get:10 http://deb.debian.org/debian sid/main amd64 libncursesw6 amd64 6.5+20250216-2 [135 kB]
+Get:11 http://deb.debian.org/debian sid/main amd64 readline-common all 8.2-6 [69.4 kB]
+Get:12 http://deb.debian.org/debian sid/main amd64 libreadline8t64 amd64 8.2-6 [169 kB]
+Get:13 http://deb.debian.org/debian sid/main amd64 libpython3.13-stdlib amd64 3.13.5-1 [1957 kB]
+Get:14 http://deb.debian.org/debian sid/main amd64 python3.13 amd64 3.13.5-1 [757 kB]
+Get:15 http://deb.debian.org/debian sid/main amd64 libpython3-stdlib amd64 3.13.4-1 [10.2 kB]
+Get:16 http://deb.debian.org/debian sid/main amd64 python3 amd64 3.13.4-1 [28.3 kB]
+Get:17 http://deb.debian.org/debian sid/main amd64 python3-numpy-dev amd64 1:2.2.4+ds-1 [139 kB]
+Get:18 http://deb.debian.org/debian sid/main amd64 libblas3 amd64 3.12.1-2 [160 kB]
+Get:19 http://deb.debian.org/debian sid/main amd64 libgfortran5 amd64 14.2.0-19 [836 kB]
+Get:20 http://deb.debian.org/debian sid/main amd64 liblapack3 amd64 3.12.1-2 [2452 kB]
+Get:21 http://deb.debian.org/debian sid/main amd64 python3-numpy amd64 1:2.2.4+ds-1 [5096 kB]
+Get:22 http://deb.debian.org/debian sid/main amd64 libproc2-0 amd64 2:4.0.4-8 [65.4 kB]
+Get:23 http://deb.debian.org/debian sid/main amd64 procps amd64 2:4.0.4-8 [881 kB]
+Get:24 http://deb.debian.org/debian sid/main amd64 sensible-utils all 0.0.25 [25.0 kB]
+Get:25 http://deb.debian.org/debian sid/main amd64 libmagic-mgc amd64 1:5.46-5 [338 kB]
+Get:26 http://deb.debian.org/debian sid/main amd64 libmagic1t64 amd64 1:5.46-5 [109 kB]
+Get:27 http://deb.debian.org/debian sid/main amd64 file amd64 1:5.46-5 [43.6 kB]
+Get:28 http://deb.debian.org/debian sid/main amd64 gettext-base amd64 0.23.1-2 [243 kB]
+Get:29 http://deb.debian.org/debian sid/main amd64 libuchardet0 amd64 0.0.8-1+b2 [68.9 kB]
+Get:30 http://deb.debian.org/debian sid/main amd64 groff-base amd64 1.23.0-9 [1187 kB]
+Get:31 http://deb.debian.org/debian sid/main amd64 bsdextrautils amd64 2.41-5 [94.6 kB]
+Get:32 http://deb.debian.org/debian sid/main amd64 libpipeline1 amd64 1.5.8-1 [42.0 kB]
+Get:33 http://deb.debian.org/debian sid/main amd64 man-db amd64 2.13.1-1 [1469 kB]
+Get:34 http://deb.debian.org/debian sid/main amd64 m4 amd64 1.4.19-8 [294 kB]
+Get:35 http://deb.debian.org/debian sid/main amd64 autoconf all 2.72-3.1 [494 kB]
+Get:36 http://deb.debian.org/debian sid/main amd64 autotools-dev all 20240727.1 [60.2 kB]
+Get:37 http://deb.debian.org/debian sid/main amd64 automake all 1:1.17-4 [862 kB]
+Get:38 http://deb.debian.org/debian sid/main amd64 autopoint all 0.23.1-2 [770 kB]
+Get:39 http://deb.debian.org/debian sid/main amd64 cmake-data all 3.31.6-2 [2268 kB]
+Get:40 http://deb.debian.org/debian sid/main amd64 libxml2 amd64 2.12.7+dfsg+really2.9.14-1 [698 kB]
+Get:41 http://deb.debian.org/debian sid/main amd64 libarchive13t64 amd64 3.7.4-3 [349 kB]
+Get:42 http://deb.debian.org/debian sid/main amd64 libcurl4t64 amd64 8.14.1-2 [391 kB]
+Get:43 http://deb.debian.org/debian sid/main amd64 libjsoncpp26 amd64 1.9.6-3 [81.7 kB]
+Get:44 http://deb.debian.org/debian sid/main amd64 librhash1 amd64 1.4.6-1 [137 kB]
+Get:45 http://deb.debian.org/debian sid/main amd64 libuv1t64 amd64 1.50.0-2 [154 kB]
+Get:46 http://deb.debian.org/debian sid/main amd64 cmake amd64 3.31.6-2 [12.0 MB]
+Get:47 http://deb.debian.org/debian sid/main amd64 libdebhelper-perl all 13.24.2 [90.9 kB]
+Get:48 http://deb.debian.org/debian sid/main amd64 libtool all 2.5.4-4 [539 kB]
+Get:49 http://deb.debian.org/debian sid/main amd64 dh-autoreconf all 20 [17.1 kB]
+Get:50 http://deb.debian.org/debian sid/main amd64 libarchive-zip-perl all 1.68-1 [104 kB]
+Get:51 http://deb.debian.org/debian sid/main amd64 libfile-stripnondeterminism-perl all 1.14.1-2 [19.7 kB]
+Get:52 http://deb.debian.org/debian sid/main amd64 dh-strip-nondeterminism all 1.14.1-2 [8620 B]
+Get:53 http://deb.debian.org/debian sid/main amd64 libelf1t64 amd64 0.192-4 [189 kB]
+Get:54 http://deb.debian.org/debian sid/main amd64 dwz amd64 0.15-1+b1 [110 kB]
+Get:55 http://deb.debian.org/debian sid/main amd64 gettext amd64 0.23.1-2 [1680 kB]
+Get:56 http://deb.debian.org/debian sid/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB]
+Get:57 http://deb.debian.org/debian sid/main amd64 po-debconf all 1.0.21+nmu1 [248 kB]
+Get:58 http://deb.debian.org/debian sid/main amd64 debhelper all 13.24.2 [919 kB]
+Get:59 http://deb.debian.org/debian sid/main amd64 dumb-init amd64 1.2.5-3 [13.4 kB]
+Get:60 http://deb.debian.org/debian sid/main amd64 libfakeroot amd64 1.37.1.2-1 [29.7 kB]
+Get:61 http://deb.debian.org/debian sid/main amd64 fakeroot amd64 1.37.1.2-1 [76.0 kB]
+Get:62 http://deb.debian.org/debian sid/main amd64 libexpat1-dev amd64 2.7.1-1 [161 kB]
+Get:63 http://deb.debian.org/debian sid/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [326 kB]
+Get:64 http://deb.debian.org/debian sid/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [116 kB]
+Get:65 http://deb.debian.org/debian sid/main amd64 libjs-sphinxdoc all 8.1.3-5 [30.5 kB]
+Get:66 http://deb.debian.org/debian sid/main amd64 libpython3.13 amd64 3.13.5-1 [2160 kB]
+Get:67 http://deb.debian.org/debian sid/main amd64 zlib1g-dev amd64 1:1.3.dfsg+really1.3.1-1+b1 [920 kB]
+Get:68 http://deb.debian.org/debian sid/main amd64 libpython3.13-dev amd64 3.13.5-1 [5282 kB]
+Get:69 http://deb.debian.org/debian sid/main amd64 libpython3-dev amd64 3.13.4-1 [10.4 kB]
+Get:70 http://deb.debian.org/debian sid/main amd64 python3.13-dev amd64 3.13.5-1 [504 kB]
+Get:71 http://deb.debian.org/debian sid/main amd64 python3-dev amd64 3.13.4-1 [26.1 kB]
+Preconfiguring packages ...
+Fetched 51.9 MB in 0s (143 MB/s)
+Selecting previously unselected package libpython3.13-minimal:amd64.
+(Reading database ... 13797 files and directories currently installed.)
+Preparing to unpack .../libpython3.13-minimal_3.13.5-1_amd64.deb ...
+Unpacking libpython3.13-minimal:amd64 (3.13.5-1) ...
+Selecting previously unselected package python3.13-minimal.
+Preparing to unpack .../python3.13-minimal_3.13.5-1_amd64.deb ...
+Unpacking python3.13-minimal (3.13.5-1) ...
+Setting up libpython3.13-minimal:amd64 (3.13.5-1) ...
+Setting up python3.13-minimal (3.13.5-1) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 14122 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.13.4-1_amd64.deb ...
+Unpacking python3-minimal (3.13.4-1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_13.0.0_all.deb ...
+Unpacking media-types (13.0.0) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../2-netbase_6.5_all.deb ...
+Unpacking netbase (6.5) ...
+Selecting previously unselected package tzdata.
+Preparing to unpack .../3-tzdata_2025b-3_all.deb ...
+Unpacking tzdata (2025b-3) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../4-libncursesw6_6.5+20250216-2_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.5+20250216-2) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../5-readline-common_8.2-6_all.deb ...
+Unpacking readline-common (8.2-6) ...
+Selecting previously unselected package libreadline8t64:amd64.
+Preparing to unpack .../6-libreadline8t64_8.2-6_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:amd64 (8.2-6) ...
+Selecting previously unselected package libpython3.13-stdlib:amd64.
+Preparing to unpack .../7-libpython3.13-stdlib_3.13.5-1_amd64.deb ...
+Unpacking libpython3.13-stdlib:amd64 (3.13.5-1) ...
+Selecting previously unselected package python3.13.
+Preparing to unpack .../8-python3.13_3.13.5-1_amd64.deb ...
+Unpacking python3.13 (3.13.5-1) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../9-libpython3-stdlib_3.13.4-1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.13.4-1) ...
+Setting up python3-minimal (3.13.4-1) ...
+Selecting previously unselected package python3.
+(Reading database ... 15141 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.13.4-1_amd64.deb ...
+Unpacking python3 (3.13.4-1) ...
+Selecting previously unselected package python3-numpy-dev:amd64.
+Preparing to unpack .../01-python3-numpy-dev_1%3a2.2.4+ds-1_amd64.deb ...
+Unpacking python3-numpy-dev:amd64 (1:2.2.4+ds-1) ...
+Selecting previously unselected package libblas3:amd64.
+Preparing to unpack .../02-libblas3_3.12.1-2_amd64.deb ...
+Unpacking libblas3:amd64 (3.12.1-2) ...
+Selecting previously unselected package libgfortran5:amd64.
+Preparing to unpack .../03-libgfortran5_14.2.0-19_amd64.deb ...
+Unpacking libgfortran5:amd64 (14.2.0-19) ...
+Selecting previously unselected package liblapack3:amd64.
+Preparing to unpack .../04-liblapack3_3.12.1-2_amd64.deb ...
+Unpacking liblapack3:amd64 (3.12.1-2) ...
+Selecting previously unselected package python3-numpy.
+Preparing to unpack .../05-python3-numpy_1%3a2.2.4+ds-1_amd64.deb ...
+Unpacking python3-numpy (1:2.2.4+ds-1) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../06-libproc2-0_2%3a4.0.4-8_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-8) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../07-procps_2%3a4.0.4-8_amd64.deb ...
+Unpacking procps (2:4.0.4-8) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../08-sensible-utils_0.0.25_all.deb ...
+Unpacking sensible-utils (0.0.25) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../09-libmagic-mgc_1%3a5.46-5_amd64.deb ...
+Unpacking libmagic-mgc (1:5.46-5) ...
+Selecting previously unselected package libmagic1t64:amd64.
+Preparing to unpack .../10-libmagic1t64_1%3a5.46-5_amd64.deb ...
+Unpacking libmagic1t64:amd64 (1:5.46-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../11-file_1%3a5.46-5_amd64.deb ...
+Unpacking file (1:5.46-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../12-gettext-base_0.23.1-2_amd64.deb ...
+Unpacking gettext-base (0.23.1-2) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../13-libuchardet0_0.0.8-1+b2_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.8-1+b2) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../14-groff-base_1.23.0-9_amd64.deb ...
+Unpacking groff-base (1.23.0-9) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../15-bsdextrautils_2.41-5_amd64.deb ...
+Unpacking bsdextrautils (2.41-5) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../16-libpipeline1_1.5.8-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.8-1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../17-man-db_2.13.1-1_amd64.deb ...
+Unpacking man-db (2.13.1-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../18-m4_1.4.19-8_amd64.deb ...
+Unpacking m4 (1.4.19-8) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../19-autoconf_2.72-3.1_all.deb ...
+Unpacking autoconf (2.72-3.1) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../20-autotools-dev_20240727.1_all.deb ...
+Unpacking autotools-dev (20240727.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../21-automake_1%3a1.17-4_all.deb ...
+Unpacking automake (1:1.17-4) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../22-autopoint_0.23.1-2_all.deb ...
+Unpacking autopoint (0.23.1-2) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../23-cmake-data_3.31.6-2_all.deb ...
+Unpacking cmake-data (3.31.6-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../24-libxml2_2.12.7+dfsg+really2.9.14-1_amd64.deb ...
+Unpacking libxml2:amd64 (2.12.7+dfsg+really2.9.14-1) ...
+Selecting previously unselected package libarchive13t64:amd64.
+Preparing to unpack .../25-libarchive13t64_3.7.4-3_amd64.deb ...
+Unpacking libarchive13t64:amd64 (3.7.4-3) ...
+Selecting previously unselected package libcurl4t64:amd64.
+Preparing to unpack .../26-libcurl4t64_8.14.1-2_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.14.1-2) ...
+Selecting previously unselected package libjsoncpp26:amd64.
+Preparing to unpack .../27-libjsoncpp26_1.9.6-3_amd64.deb ...
+Unpacking libjsoncpp26:amd64 (1.9.6-3) ...
+Selecting previously unselected package librhash1:amd64.
+Preparing to unpack .../28-librhash1_1.4.6-1_amd64.deb ...
+Unpacking librhash1:amd64 (1.4.6-1) ...
+Selecting previously unselected package libuv1t64:amd64.
+Preparing to unpack .../29-libuv1t64_1.50.0-2_amd64.deb ...
+Unpacking libuv1t64:amd64 (1.50.0-2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../30-cmake_3.31.6-2_amd64.deb ...
+Unpacking cmake (3.31.6-2) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../31-libdebhelper-perl_13.24.2_all.deb ...
+Unpacking libdebhelper-perl (13.24.2) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../32-libtool_2.5.4-4_all.deb ...
+Unpacking libtool (2.5.4-4) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../33-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../34-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../35-libfile-stripnondeterminism-perl_1.14.1-2_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.14.1-2) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../36-dh-strip-nondeterminism_1.14.1-2_all.deb ...
+Unpacking dh-strip-nondeterminism (1.14.1-2) ...
+Selecting previously unselected package libelf1t64:amd64.
+Preparing to unpack .../37-libelf1t64_0.192-4_amd64.deb ...
+Unpacking libelf1t64:amd64 (0.192-4) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../38-dwz_0.15-1+b1_amd64.deb ...
+Unpacking dwz (0.15-1+b1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../39-gettext_0.23.1-2_amd64.deb ...
+Unpacking gettext (0.23.1-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../40-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../41-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../42-debhelper_13.24.2_all.deb ...
+Unpacking debhelper (13.24.2) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../43-dumb-init_1.2.5-3_amd64.deb ...
+Unpacking dumb-init (1.2.5-3) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../44-libfakeroot_1.37.1.2-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.37.1.2-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../45-fakeroot_1.37.1.2-1_amd64.deb ...
+Unpacking fakeroot (1.37.1.2-1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../46-libexpat1-dev_2.7.1-1_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.7.1-1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../47-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../48-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../49-libjs-sphinxdoc_8.1.3-5_all.deb ...
+Unpacking libjs-sphinxdoc (8.1.3-5) ...
+Selecting previously unselected package libpython3.13:amd64.
+Preparing to unpack .../50-libpython3.13_3.13.5-1_amd64.deb ...
+Unpacking libpython3.13:amd64 (3.13.5-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../51-zlib1g-dev_1%3a1.3.dfsg+really1.3.1-1+b1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Selecting previously unselected package libpython3.13-dev:amd64.
+Preparing to unpack .../52-libpython3.13-dev_3.13.5-1_amd64.deb ...
+Unpacking libpython3.13-dev:amd64 (3.13.5-1) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../53-libpython3-dev_3.13.4-1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.13.4-1) ...
+Selecting previously unselected package python3.13-dev.
+Preparing to unpack .../54-python3.13-dev_3.13.5-1_amd64.deb ...
+Unpacking python3.13-dev (3.13.5-1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../55-python3-dev_3.13.4-1_amd64.deb ...
+Unpacking python3-dev (3.13.4-1) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../56-ros-one-setup-files_0-2025.06.22.00.01_amd64.deb ...
+Unpacking ros-one-setup-files (0-2025.06.22.00.01) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../57-ros-one-ros-environment_1.3.2-5-g2686e94-2025.06.22.00.01_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-g2686e94-2025.06.22.00.01) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../58-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (13.0.0) ...
+Setting up dumb-init (1.2.5-3) ...
+Setting up libpipeline1:amd64 (1.5.8-1) ...
+Setting up bsdextrautils (2.41-5) ...
+Setting up libcurl4t64:amd64 (8.14.1-2) ...
+Setting up libmagic-mgc (1:5.46-5) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.24.2) ...
+Setting up libuv1t64:amd64 (1.50.0-2) ...
+Setting up libmagic1t64:amd64 (1:5.46-5) ...
+Setting up gettext-base (0.23.1-2) ...
+Setting up m4 (1.4.19-8) ...
+Setting up file (1:5.46-5) ...
+Setting up libfakeroot:amd64 (1.37.1.2-1) ...
+Setting up libelf1t64:amd64 (0.192-4) ...
+Setting up tzdata (2025b-3) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Sun Jun 22 00:04:14 UTC 2025.
+Universal Time is now:  Sun Jun 22 00:04:14 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up fakeroot (1.37.1.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20240727.1) ...
+Setting up libblas3:amd64 (3.12.1-2) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+Setting up libexpat1-dev:amd64 (2.7.1-1) ...
+Setting up libjsoncpp26:amd64 (1.9.6-3) ...
+Setting up libproc2-0:amd64 (2:4.0.4-8) ...
+Setting up python3-numpy-dev:amd64 (1:2.2.4+ds-1) ...
+Setting up autopoint (0.23.1-2) ...
+Setting up libncursesw6:amd64 (6.5+20250216-2) ...
+Setting up libgfortran5:amd64 (14.2.0-19) ...
+Setting up autoconf (2.72-3.1) ...
+Setting up zlib1g-dev:amd64 (1:1.3.dfsg+really1.3.1-1+b1) ...
+Setting up dwz (0.15-1+b1) ...
+Setting up sensible-utils (0.0.25) ...
+Setting up libuchardet0:amd64 (0.0.8-1+b2) ...
+Setting up procps (2:4.0.4-8) ...
+Setting up netbase (6.5) ...
+Setting up cmake-data (3.31.6-2) ...
+Setting up librhash1:amd64 (1.4.6-1) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up readline-common (8.2-6) ...
+Setting up libxml2:amd64 (2.12.7+dfsg+really2.9.14-1) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up automake (1:1.17-4) ...
+update-alternatives: using /usr/bin/automake-1.17 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.14.1-2) ...
+Setting up liblapack3:amd64 (3.12.1-2) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
+Setting up gettext (0.23.1-2) ...
+Setting up libtool (2.5.4-4) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up libjs-sphinxdoc (8.1.3-5) ...
+Setting up libreadline8t64:amd64 (8.2-6) ...
+Setting up dh-strip-nondeterminism (1.14.1-2) ...
+Setting up groff-base (1.23.0-9) ...
+Setting up libarchive13t64:amd64 (3.7.4-3) ...
+Setting up libpython3.13-stdlib:amd64 (3.13.5-1) ...
+Setting up libpython3-stdlib:amd64 (3.13.4-1) ...
+Setting up libpython3.13:amd64 (3.13.5-1) ...
+Setting up python3.13 (3.13.5-1) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up python3 (3.13.4-1) ...
+Setting up man-db (2.13.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libpython3.13-dev:amd64 (3.13.5-1) ...
+Setting up python3-numpy (1:2.2.4+ds-1) ...
+Setting up cmake (3.31.6-2) ...
+Setting up libpython3-dev:amd64 (3.13.4-1) ...
+Setting up python3.13-dev (3.13.5-1) ...
+Setting up debhelper (13.24.2) ...
+Setting up python3-dev (3.13.4-1) ...
+Setting up ros-one-setup-files (0-2025.06.22.00.01) ...
+Setting up ros-one-ros-environment (1.3.2-5-g2686e94-2025.06.22.00.01) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.41-9) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                          Sun, 22 Jun 2025 00:04:17 +0000 |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                            Sun, 22 Jun 2025 00:04:17 +0000 |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.11.0-1015-azure #15~24.04.1-Ubuntu SMP Thu May  1 02:52:08 UTC 2025 amd64 (x86_64)
+Toolchain package versions: binutils_2.44-3 dpkg-dev_1.22.20 g++-14_14.2.0-19 gcc-14_14.2.0-19 libc6-dev_2.41-9 libstdc++-14-dev_14.2.0-19 libstdc++6_14.2.0-19 linux-libc-dev_6.12.33-1
+Package versions: apt_3.0.2 autoconf_2.72-3.1 automake_1:1.17-4 autopoint_0.23.1-2 autotools-dev_20240727.1 base-files_13.8 base-passwd_3.6.7 bash_5.2.37-2+b2 binutils_2.44-3 binutils-common_2.44-3 binutils-x86-64-linux-gnu_2.44-3 bsdextrautils_2.41-5 bsdutils_1:2.41-5 build-essential_12.12 bzip2_1.0.8-6 ca-certificates_20250419 ccache_4.11.2-2 cmake_3.31.6-2 cmake-data_3.31.6-2 coreutils_9.7-3 cpp_4:14.2.0-1 cpp-14_14.2.0-19 cpp-14-x86-64-linux-gnu_14.2.0-19 cpp-x86-64-linux-gnu_4:14.2.0-1 dash_0.5.12-12 debconf_1.5.91 debhelper_13.24.2 debian-archive-keyring_2025.1 debianutils_5.23.1 dh-autoreconf_20 dh-strip-nondeterminism_1.14.1-2 diffutils_1:3.10-4 dpkg_1.22.20 dpkg-dev_1.22.20 dumb-init_1.2.5-3 dwz_0.15-1+b1 fakeroot_1.37.1.2-1 file_1:5.46-5 findutils_4.10.0-3 g++_4:14.2.0-1 g++-14_14.2.0-19 g++-14-x86-64-linux-gnu_14.2.0-19 g++-x86-64-linux-gnu_4:14.2.0-1 gcc_4:14.2.0-1 gcc-14_14.2.0-19 gcc-14-base_14.2.0-19 gcc-14-x86-64-linux-gnu_14.2.0-19 gcc-x86-64-linux-gnu_4:14.2.0-1 gettext_0.23.1-2 gettext-base_0.23.1-2 git_1:2.50.0-1 git-man_1:2.50.0-1 grep_3.11-4 groff-base_1.23.0-9 gzip_1.13-1 hostname_3.25 init-system-helpers_1.68 intltool-debian_0.35.0+20060710.6 libacl1_2.3.2-2+b1 libapt-pkg7.0_3.0.2 libarchive-zip-perl_1.68-1 libarchive13t64_3.7.4-3 libasan8_14.2.0-19 libatomic1_14.2.0-19 libattr1_1:2.5.2-3 libaudit-common_1:4.0.2-2 libaudit1_1:4.0.2-2+b2 libbinutils_2.44-3 libblas3_3.12.1-2 libblkid1_2.41-5 libbrotli1_1.1.0-2+b7 libbz2-1.0_1.0.8-6 libc-bin_2.41-9 libc-dev-bin_2.41-9 libc6_2.41-9 libc6-dev_2.41-9 libcap-ng0_0.8.5-4+b1 libcap2_1:2.75-8 libcc1-0_14.2.0-19 libcom-err2_1.47.2-3 libcrypt-dev_1:4.4.38-1 libcrypt1_1:4.4.38-1 libctf-nobfd0_2.44-3 libctf0_2.44-3 libcurl3t64-gnutls_8.14.1-2 libcurl4t64_8.14.1-2 libdb5.3t64_5.3.28+dfsg2-9 libdebconfclient0_0.278 libdebhelper-perl_13.24.2 libdpkg-perl_1.22.20 libelf1t64_0.192-4 liberror-perl_0.17030-1 libexpat1_2.7.1-1 libexpat1-dev_2.7.1-1 libfakeroot_1.37.1.2-1 libffi8_3.4.8-2 libfile-stripnondeterminism-perl_1.14.1-2 libfmt10_10.1.1+ds1-4 libgcc-14-dev_14.2.0-19 libgcc-s1_14.2.0-19 libgdbm-compat4t64_1.24-2 libgdbm6t64_1.24-2 libgfortran5_14.2.0-19 libgmp10_2:6.3.0+dfsg-3 libgnutls30t64_3.8.9-2 libgomp1_14.2.0-19 libgprofng0_2.44-3 libgssapi-krb5-2_1.21.3-5 libhiredis1.1.0_1.2.0-6+b3 libhogweed6t64_3.10.1-1 libhwasan0_14.2.0-19 libidn2-0_2.3.8-2 libisl23_0.27-1 libitm1_14.2.0-19 libjansson4_2.14-2+b3 libjs-jquery_3.6.1+dfsg+~3.5.14-1 libjs-sphinxdoc_8.1.3-5 libjs-underscore_1.13.4~dfsg+~1.11.4-3 libjsoncpp26_1.9.6-3 libk5crypto3_1.21.3-5 libkeyutils1_1.6.3-6 libkrb5-3_1.21.3-5 libkrb5support0_1.21.3-5 liblapack3_3.12.1-2 liblastlog2-2_2.41-5 libldap2_2.6.10+dfsg-1 liblsan0_14.2.0-19 liblz4-1_1.10.0-4 liblzma5_5.8.1-1 libmagic-mgc_1:5.46-5 libmagic1t64_1:5.46-5 libmd0_1.1.0-2+b1 libmount1_2.41-5 libmpc3_1.3.1-1+b3 libmpfr6_4.2.2-1 libncursesw6_6.5+20250216-2 libnettle8t64_3.10.1-1 libnghttp2-14_1.64.0-1.1 libnghttp3-9_1.8.0-1 libngtcp2-16_1.11.0-1 libngtcp2-crypto-gnutls8_1.11.0-1 libp11-kit0_0.25.5-3 libpam-modules_1.7.0-3 libpam-modules-bin_1.7.0-3 libpam-runtime_1.7.0-3 libpam0g_1.7.0-3 libpcre2-8-0_10.45-1 libperl5.40_5.40.1-3 libpipeline1_1.5.8-1 libproc2-0_2:4.0.4-8 libpsl5t64_0.21.2-1.1+b1 libpython3-dev_3.13.4-1 libpython3-stdlib_3.13.4-1 libpython3.13_3.13.5-1 libpython3.13-dev_3.13.5-1 libpython3.13-minimal_3.13.5-1 libpython3.13-stdlib_3.13.5-1 libquadmath0_14.2.0-19 libreadline8t64_8.2-6 librhash1_1.4.6-1 librtmp1_2.4+20151223.gitfa8646d.1-2+b5 libsasl2-2_2.1.28+dfsg1-9 libsasl2-modules-db_2.1.28+dfsg1-9 libseccomp2_2.6.0-2 libselinux1_3.8.1-1 libsframe1_2.44-3 libsmartcols1_2.41-5 libsqlite3-0_3.46.1-6 libssh2-1t64_1.11.1-1 libssl3t64_3.5.0-2 libstdc++-14-dev_14.2.0-19 libstdc++6_14.2.0-19 libsystemd0_257.6-1 libtasn1-6_4.20.0-2 libtinfo6_6.5+20250216-2 libtool_2.5.4-4 libtsan2_14.2.0-19 libubsan1_14.2.0-19 libuchardet0_0.0.8-1+b2 libudev1_257.6-1 libunistring5_1.3-2 libuuid1_2.41-5 libuv1t64_1.50.0-2 libxml2_2.12.7+dfsg+really2.9.14-1 libxxhash0_0.8.3-2 libzstd1_1.5.7+dfsg-1 linux-libc-dev_6.12.33-1 m4_1.4.19-8 make_4.4.1-2 man-db_2.13.1-1 mawk_1.3.4.20250131-1 media-types_13.0.0 ncurses-base_6.5+20250216-2 ncurses-bin_6.5+20250216-2 netbase_6.5 openssl_3.5.0-2 openssl-provider-legacy_3.5.0-2 patch_2.8-1 perl_5.40.1-3 perl-base_5.40.1-3 perl-modules-5.40_5.40.1-3 po-debconf_1.0.21+nmu1 procps_2:4.0.4-8 python3_3.13.4-1 python3-dev_3.13.4-1 python3-minimal_3.13.4-1 python3-numpy_1:2.2.4+ds-1 python3-numpy-dev_1:2.2.4+ds-1 python3.13_3.13.5-1 python3.13-dev_3.13.5-1 python3.13-minimal_3.13.5-1 readline-common_8.2-6 ros-one-ros-environment_1.3.2-5-g2686e94-2025.06.22.00.01 ros-one-setup-files_0-2025.06.22.00.01 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-2 sensible-utils_0.0.25 sqv_1.3.0-3 sysvinit-utils_3.14-4 tar_1.35+dfsg-3.1 tzdata_2025b-3 util-linux_2.41-5 xz-utils_5.8.1-1 zlib1g_1:1.3.dfsg+really1.3.1-1+b1 zlib1g-dev_1:1.3.dfsg+really1.3.1-1+b1
+
++------------------------------------------------------------------------------+
+| Build                                        Sun, 22 Jun 2025 00:04:17 +0000 |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-apriltag
+Binary: ros-one-apriltag
+Architecture: any
+Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Maintainer: Max Krogius <mkrogius@umich.edu>
+Homepage: https://april.eecs.umich.edu/software/apriltag.html
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), cmake, libopencv-dev <!nocheck>, python3-dev, python3-numpy
+Package-List:
+ ros-one-apriltag deb misc optional arch=any
+Checksums-Sha1:
+ 43e23717c95eedf48f2fb497fdaa2c579af4e11c 29271294 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.tar.gz
+Checksums-Sha256:
+ d0778bc356448ac9be80f38a2204663353c91c7f8a42a65507906e4a6774e812 29271294 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.tar.gz
+Files:
+ 00337f0226350f8db5501883584377e2 29271294 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.dsc)
+dpkg-source: info: extracting ros-one-apriltag in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/sbuild-nonexistent
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-apriltag
+dpkg-buildpackage: info: source version 3.4.3-7-gce3ccd6-2025.06.22.00.03
+dpkg-buildpackage: info: source distribution sid
+dpkg-buildpackage: info: source changed by Max Krogius <mkrogius@umich.edu>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-apriltag.substvars debian/files
+	rm -fr -- debian/ros-one-apriltag/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a \( -name autom4te.cache -o -name __pycache__ \) -prune -exec rm -rf {} + \) \)
+ debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && DEB_PYTHON_INSTALL_LAYOUT=deb PKG_CONFIG=/usr/bin/pkg-config cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DBUILD_TESTING:BOOL=OFF -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF ..
+-- The C compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- OpenCV not found: Not building demo
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    FETCHCONTENT_FULLY_DISCONNECTED
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-apriltag.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.dir/build.make CMakeFiles/apriltag.dir/depend
+make  -f CMakeFiles/apriltag_py_docstrings.dir/build.make CMakeFiles/apriltag_py_docstrings.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag_py_docstrings.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag_py_docstrings.dir/build.make CMakeFiles/apriltag_py_docstrings.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.dir/build.make CMakeFiles/apriltag.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  2%] Generating apriltag_detect_docstring.h, apriltag_detect_docstring.cxx
+[  5%] Generating apriltag_py_type_docstring.h, apriltag_py_type_docstring.cxx
+[  7%] Building C object CMakeFiles/apriltag.dir/apriltag.c.o
+/usr/bin/cmake -Dsource_dir=/<<BUILDDIR>>package -Dbinary_dir=/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -Dsource_file=/<<BUILDDIR>>package/apriltag_py_type.docstring -Doutput_name=apriltag_py_type_docstring -Dexport_symbol= -Dexport_header= -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P /<<BUILDDIR>>package/CMake/vtkEncodeString.cmake
+[ 10%] Building C object CMakeFiles/apriltag.dir/apriltag_pose.c.o
+/usr/bin/cmake -Dsource_dir=/<<BUILDDIR>>package -Dbinary_dir=/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -Dsource_file=/<<BUILDDIR>>package/apriltag_detect.docstring -Doutput_name=apriltag_detect_docstring -Dexport_symbol= -Dexport_header= -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P /<<BUILDDIR>>package/CMake/vtkEncodeString.cmake
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/apriltag_pose.c.o -MF CMakeFiles/apriltag.dir/apriltag_pose.c.o.d -o CMakeFiles/apriltag.dir/apriltag_pose.c.o -c /<<BUILDDIR>>package/apriltag_pose.c
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/apriltag.c.o -MF CMakeFiles/apriltag.dir/apriltag.c.o.d -o CMakeFiles/apriltag.dir/apriltag.c.o -c /<<BUILDDIR>>package/apriltag.c
+[ 12%] Building C object CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o -MF CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o.d -o CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o -c /<<BUILDDIR>>package/apriltag_quad_thresh.c
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 12%] Built target apriltag_py_docstrings
+[ 15%] Building C object CMakeFiles/apriltag.dir/common/g2d.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/g2d.c.o -MF CMakeFiles/apriltag.dir/common/g2d.c.o.d -o CMakeFiles/apriltag.dir/common/g2d.c.o -c /<<BUILDDIR>>package/common/g2d.c
+[ 17%] Building C object CMakeFiles/apriltag.dir/common/getopt.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/getopt.c.o -MF CMakeFiles/apriltag.dir/common/getopt.c.o.d -o CMakeFiles/apriltag.dir/common/getopt.c.o -c /<<BUILDDIR>>package/common/getopt.c
+[ 20%] Building C object CMakeFiles/apriltag.dir/common/homography.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/homography.c.o -MF CMakeFiles/apriltag.dir/common/homography.c.o.d -o CMakeFiles/apriltag.dir/common/homography.c.o -c /<<BUILDDIR>>package/common/homography.c
+[ 23%] Building C object CMakeFiles/apriltag.dir/common/image_u8.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/image_u8.c.o -MF CMakeFiles/apriltag.dir/common/image_u8.c.o.d -o CMakeFiles/apriltag.dir/common/image_u8.c.o -c /<<BUILDDIR>>package/common/image_u8.c
+[ 25%] Building C object CMakeFiles/apriltag.dir/common/image_u8x3.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/image_u8x3.c.o -MF CMakeFiles/apriltag.dir/common/image_u8x3.c.o.d -o CMakeFiles/apriltag.dir/common/image_u8x3.c.o -c /<<BUILDDIR>>package/common/image_u8x3.c
+[ 28%] Building C object CMakeFiles/apriltag.dir/common/image_u8x4.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/image_u8x4.c.o -MF CMakeFiles/apriltag.dir/common/image_u8x4.c.o.d -o CMakeFiles/apriltag.dir/common/image_u8x4.c.o -c /<<BUILDDIR>>package/common/image_u8x4.c
+[ 30%] Building C object CMakeFiles/apriltag.dir/common/matd.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/matd.c.o -MF CMakeFiles/apriltag.dir/common/matd.c.o.d -o CMakeFiles/apriltag.dir/common/matd.c.o -c /<<BUILDDIR>>package/common/matd.c
+[ 33%] Building C object CMakeFiles/apriltag.dir/common/pam.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/pam.c.o -MF CMakeFiles/apriltag.dir/common/pam.c.o.d -o CMakeFiles/apriltag.dir/common/pam.c.o -c /<<BUILDDIR>>package/common/pam.c
+[ 35%] Building C object CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o -MF CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o.d -o CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o -c /<<BUILDDIR>>package/common/pjpeg-idct.c
+[ 38%] Building C object CMakeFiles/apriltag.dir/common/pjpeg.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/pjpeg.c.o -MF CMakeFiles/apriltag.dir/common/pjpeg.c.o.d -o CMakeFiles/apriltag.dir/common/pjpeg.c.o -c /<<BUILDDIR>>package/common/pjpeg.c
+[ 41%] Building C object CMakeFiles/apriltag.dir/common/pnm.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/pnm.c.o -MF CMakeFiles/apriltag.dir/common/pnm.c.o.d -o CMakeFiles/apriltag.dir/common/pnm.c.o -c /<<BUILDDIR>>package/common/pnm.c
+[ 43%] Building C object CMakeFiles/apriltag.dir/common/pthreads_cross.c.o
+[ 46%] Building C object CMakeFiles/apriltag.dir/common/string_util.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/pthreads_cross.c.o -MF CMakeFiles/apriltag.dir/common/pthreads_cross.c.o.d -o CMakeFiles/apriltag.dir/common/pthreads_cross.c.o -c /<<BUILDDIR>>package/common/pthreads_cross.c
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/string_util.c.o -MF CMakeFiles/apriltag.dir/common/string_util.c.o.d -o CMakeFiles/apriltag.dir/common/string_util.c.o -c /<<BUILDDIR>>package/common/string_util.c
+[ 48%] Building C object CMakeFiles/apriltag.dir/common/svd22.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/svd22.c.o -MF CMakeFiles/apriltag.dir/common/svd22.c.o.d -o CMakeFiles/apriltag.dir/common/svd22.c.o -c /<<BUILDDIR>>package/common/svd22.c
+[ 51%] Building C object CMakeFiles/apriltag.dir/common/time_util.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/time_util.c.o -MF CMakeFiles/apriltag.dir/common/time_util.c.o.d -o CMakeFiles/apriltag.dir/common/time_util.c.o -c /<<BUILDDIR>>package/common/time_util.c
+[ 53%] Building C object CMakeFiles/apriltag.dir/common/unionfind.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/unionfind.c.o -MF CMakeFiles/apriltag.dir/common/unionfind.c.o.d -o CMakeFiles/apriltag.dir/common/unionfind.c.o -c /<<BUILDDIR>>package/common/unionfind.c
+[ 56%] Building C object CMakeFiles/apriltag.dir/common/workerpool.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/workerpool.c.o -MF CMakeFiles/apriltag.dir/common/workerpool.c.o.d -o CMakeFiles/apriltag.dir/common/workerpool.c.o -c /<<BUILDDIR>>package/common/workerpool.c
+[ 58%] Building C object CMakeFiles/apriltag.dir/common/zarray.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/zarray.c.o -MF CMakeFiles/apriltag.dir/common/zarray.c.o.d -o CMakeFiles/apriltag.dir/common/zarray.c.o -c /<<BUILDDIR>>package/common/zarray.c
+[ 61%] Building C object CMakeFiles/apriltag.dir/common/zhash.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/zhash.c.o -MF CMakeFiles/apriltag.dir/common/zhash.c.o.d -o CMakeFiles/apriltag.dir/common/zhash.c.o -c /<<BUILDDIR>>package/common/zhash.c
+[ 64%] Building C object CMakeFiles/apriltag.dir/common/zmaxheap.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/common/zmaxheap.c.o -MF CMakeFiles/apriltag.dir/common/zmaxheap.c.o.d -o CMakeFiles/apriltag.dir/common/zmaxheap.c.o -c /<<BUILDDIR>>package/common/zmaxheap.c
+[ 66%] Building C object CMakeFiles/apriltag.dir/tag16h5.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tag16h5.c.o -MF CMakeFiles/apriltag.dir/tag16h5.c.o.d -o CMakeFiles/apriltag.dir/tag16h5.c.o -c /<<BUILDDIR>>package/tag16h5.c
+[ 69%] Building C object CMakeFiles/apriltag.dir/tag25h9.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tag25h9.c.o -MF CMakeFiles/apriltag.dir/tag25h9.c.o.d -o CMakeFiles/apriltag.dir/tag25h9.c.o -c /<<BUILDDIR>>package/tag25h9.c
+[ 71%] Building C object CMakeFiles/apriltag.dir/tag36h10.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tag36h10.c.o -MF CMakeFiles/apriltag.dir/tag36h10.c.o.d -o CMakeFiles/apriltag.dir/tag36h10.c.o -c /<<BUILDDIR>>package/tag36h10.c
+[ 76%] Building C object CMakeFiles/apriltag.dir/tag36h11.c.o
+[ 76%] Building C object CMakeFiles/apriltag.dir/tagCircle21h7.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tagCircle21h7.c.o -MF CMakeFiles/apriltag.dir/tagCircle21h7.c.o.d -o CMakeFiles/apriltag.dir/tagCircle21h7.c.o -c /<<BUILDDIR>>package/tagCircle21h7.c
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tag36h11.c.o -MF CMakeFiles/apriltag.dir/tag36h11.c.o.d -o CMakeFiles/apriltag.dir/tag36h11.c.o -c /<<BUILDDIR>>package/tag36h11.c
+[ 79%] Building C object CMakeFiles/apriltag.dir/tagCircle49h12.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tagCircle49h12.c.o -MF CMakeFiles/apriltag.dir/tagCircle49h12.c.o.d -o CMakeFiles/apriltag.dir/tagCircle49h12.c.o -c /<<BUILDDIR>>package/tagCircle49h12.c
+[ 82%] Building C object CMakeFiles/apriltag.dir/tagCustom48h12.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tagCustom48h12.c.o -MF CMakeFiles/apriltag.dir/tagCustom48h12.c.o.d -o CMakeFiles/apriltag.dir/tagCustom48h12.c.o -c /<<BUILDDIR>>package/tagCustom48h12.c
+[ 84%] Building C object CMakeFiles/apriltag.dir/tagStandard41h12.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tagStandard41h12.c.o -MF CMakeFiles/apriltag.dir/tagStandard41h12.c.o.d -o CMakeFiles/apriltag.dir/tagStandard41h12.c.o -c /<<BUILDDIR>>package/tagStandard41h12.c
+[ 87%] Building C object CMakeFiles/apriltag.dir/tagStandard52h13.c.o
+/usr/lib/ccache/cc -Dapriltag_EXPORTS -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu99 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.dir/tagStandard52h13.c.o -MF CMakeFiles/apriltag.dir/tagStandard52h13.c.o.d -o CMakeFiles/apriltag.dir/tagStandard52h13.c.o -c /<<BUILDDIR>>package/tagStandard52h13.c
+[ 89%] Linking C shared library libapriltag.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/apriltag.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -fPIC -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,--dependency-file=CMakeFiles/apriltag.dir/link.d -shared -Wl,-soname,libapriltag.so.3 -o libapriltag.so.3.4.3 CMakeFiles/apriltag.dir/apriltag.c.o CMakeFiles/apriltag.dir/apriltag_pose.c.o CMakeFiles/apriltag.dir/apriltag_quad_thresh.c.o CMakeFiles/apriltag.dir/common/g2d.c.o CMakeFiles/apriltag.dir/common/getopt.c.o CMakeFiles/apriltag.dir/common/homography.c.o CMakeFiles/apriltag.dir/common/image_u8.c.o CMakeFiles/apriltag.dir/common/image_u8x3.c.o CMakeFiles/apriltag.dir/common/image_u8x4.c.o CMakeFiles/apriltag.dir/common/matd.c.o CMakeFiles/apriltag.dir/common/pam.c.o "CMakeFiles/apriltag.dir/common/pjpeg-idct.c.o" CMakeFiles/apriltag.dir/common/pjpeg.c.o CMakeFiles/apriltag.dir/common/pnm.c.o CMakeFiles/apriltag.dir/common/pthreads_cross.c.o CMakeFiles/apriltag.dir/common/string_util.c.o CMakeFiles/apriltag.dir/common/svd22.c.o CMakeFiles/apriltag.dir/common/time_util.c.o CMakeFiles/apriltag.dir/common/unionfind.c.o CMakeFiles/apriltag.dir/common/workerpool.c.o CMakeFiles/apriltag.dir/common/zarray.c.o CMakeFiles/apriltag.dir/common/zhash.c.o CMakeFiles/apriltag.dir/common/zmaxheap.c.o CMakeFiles/apriltag.dir/tag16h5.c.o CMakeFiles/apriltag.dir/tag25h9.c.o CMakeFiles/apriltag.dir/tag36h10.c.o CMakeFiles/apriltag.dir/tag36h11.c.o CMakeFiles/apriltag.dir/tagCircle21h7.c.o CMakeFiles/apriltag.dir/tagCircle49h12.c.o CMakeFiles/apriltag.dir/tagCustom48h12.c.o CMakeFiles/apriltag.dir/tagStandard41h12.c.o CMakeFiles/apriltag.dir/tagStandard52h13.c.o  -lm
+/usr/bin/cmake -E cmake_symlink_library libapriltag.so.3.4.3 libapriltag.so.3 libapriltag.so
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 89%] Built target apriltag
+make  -f CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build.make CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/depend
+make  -f CMakeFiles/apriltag_demo.dir/build.make CMakeFiles/apriltag_demo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag_demo.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build.make CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag_demo.dir/build.make CMakeFiles/apriltag_demo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 92%] Building C object CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o
+[ 94%] Building C object CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o
+/usr/lib/ccache/cc  -I/<<BUILDDIR>>package -I/apriltag -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o -MF CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o.d -o CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o -c /<<BUILDDIR>>package/example/apriltag_demo.c
+/usr/lib/ccache/cc -Dapriltag_cpython_313_x86_64_linux_gnu_EXPORTS -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -I/<<BUILDDIR>>package -I/apriltag -isystem /usr/include/python3.13 -isystem /usr/lib/x86_64-linux-gnu/python3-numpy/numpy/_core/include -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o -MF CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o.d -o CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o -c /<<BUILDDIR>>package/apriltag_pywrap.c
+[ 97%] Linking C executable apriltag_demo
+/usr/bin/cmake -E cmake_link_script CMakeFiles/apriltag_demo.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,--dependency-file=CMakeFiles/apriltag_demo.dir/link.d CMakeFiles/apriltag_demo.dir/example/apriltag_demo.c.o -o apriltag_demo  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu: libapriltag.so.3.4.3 -lm
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 97%] Built target apriltag_demo
+[100%] Linking C shared module apriltag.cpython-313-x86_64-linux-gnu.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -fPIC -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,--dependency-file=CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/link.d -shared  -o apriltag.cpython-313-x86_64-linux-gnu.so "CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o"  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu: libapriltag.so.3.4.3 -lm
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target apriltag.cpython-313-x86_64-linux-gnu
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-apriltag.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-one-apriltag.substvars
+	rm -fr -- debian/.debhelper/generated/ros-one-apriltag/ debian/ros-one-apriltag/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-one-apriltag
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-one-apriltag AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.dir/build.make CMakeFiles/apriltag.dir/depend
+make  -f CMakeFiles/apriltag_py_docstrings.dir/build.make CMakeFiles/apriltag_py_docstrings.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag_py_docstrings.dir/DependInfo.cmake "--color="
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag_py_docstrings.dir/build.make CMakeFiles/apriltag_py_docstrings.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  2%] Generating apriltag_detect_docstring.h, apriltag_detect_docstring.cxx
+/usr/bin/cmake -Dsource_dir=/<<BUILDDIR>>package -Dbinary_dir=/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -Dsource_file=/<<BUILDDIR>>package/apriltag_detect.docstring -Doutput_name=apriltag_detect_docstring -Dexport_symbol= -Dexport_header= -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P /<<BUILDDIR>>package/CMake/vtkEncodeString.cmake
+[  5%] Generating apriltag_py_type_docstring.h, apriltag_py_type_docstring.cxx
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.dir/build.make CMakeFiles/apriltag.dir/build
+/usr/bin/cmake -Dsource_dir=/<<BUILDDIR>>package -Dbinary_dir=/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -Dsource_file=/<<BUILDDIR>>package/apriltag_py_type.docstring -Doutput_name=apriltag_py_type_docstring -Dexport_symbol= -Dexport_header= -Dabi_mangle_symbol_begin= -Dabi_mangle_symbol_end= -Dabi_mangle_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_vtk_encode_string_run=ON -P /<<BUILDDIR>>package/CMake/vtkEncodeString.cmake
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/apriltag.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 89%] Built target apriltag
+make  -f CMakeFiles/apriltag_demo.dir/build.make CMakeFiles/apriltag_demo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag_demo.dir/DependInfo.cmake "--color="
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag_demo.dir/build.make CMakeFiles/apriltag_demo.dir/build
+[ 89%] Built target apriltag_py_docstrings
+make  -f CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build.make CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/apriltag_demo.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/DependInfo.cmake "--color="
+[ 94%] Built target apriltag_demo
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build.make CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 97%] Building C object CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o
+/usr/lib/ccache/cc -Dapriltag_cpython_313_x86_64_linux_gnu_EXPORTS -I/<<BUILDDIR>>package/.obj-x86_64-linux-gnu -I/<<BUILDDIR>>package -I/apriltag -isystem /usr/include/python3.13 -isystem /usr/lib/x86_64-linux-gnu/python3-numpy/numpy/_core/include -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Wall -Wextra -Werror -Wpedantic -Wno-shift-negative-value -MD -MT CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o -MF CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o.d -o CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o -c /<<BUILDDIR>>package/apriltag_pywrap.c
+[100%] Linking C shared module apriltag.cpython-313-x86_64-linux-gnu.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/link.txt --verbose=1
+/usr/lib/ccache/cc -fPIC -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wl,--dependency-file=CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/link.d -shared  -o apriltag.cpython-313-x86_64-linux-gnu.so "CMakeFiles/apriltag.cpython-313-x86_64-linux-gnu.dir/apriltag_pywrap.c.o"  -Wl,-rpath,/<<BUILDDIR>>package/.obj-x86_64-linux-gnu: libapriltag.so.3.4.3 -lm
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target apriltag.cpython-313-x86_64-linux-gnu
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/apriltag.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/apriltag_math.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/apriltag_pose.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/debug_print.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/doubles.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/doubles_floats_impl.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/floats.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/g2d.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/getopt.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/homography.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/image_types.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/image_u8.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/image_u8x3.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/image_u8x4.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/matd.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/math_util.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/pam.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/pjpeg.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/pnm.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/postscript_utils.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/pthreads_cross.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/string_util.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/svd22.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/time_util.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/timeprofile.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/unionfind.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/workerpool.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/zarray.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/zhash.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/common/zmaxheap.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tag16h5.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tag25h9.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tag36h10.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tag36h11.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tagCircle21h7.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tagCircle49h12.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tagCustom48h12.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tagStandard41h12.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/include/apriltag/tagStandard52h13.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagTargets.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagTargets-none.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagConfigVersion.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/pkgconfig/apriltag.pc
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so" to ""
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo
+-- Set non-toolchain portion of runtime path of "/<<BUILDDIR>>package/debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo" to ""
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/usr/share/doc/ros-one-apriltag
+	install -p -m0644 debian/copyright debian/ros-one-apriltag/usr/share/doc/ros-one-apriltag/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/usr/share/doc/ros-one-apriltag
+	install -p -m0644 debian/.debhelper/generated/ros-one-apriltag/dh_installchangelogs.dch.trimmed debian/ros-one-apriltag/usr/share/doc/ros-one-apriltag/changelog.Debian
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3
+	ln -s libapriltag.so.3.4.3 debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3
+	rm -f debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so
+	ln -s libapriltag.so.3 debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-apriltag
+	chmod a-x usr/share/doc/ros-one-apriltag/changelog.Debian
+	gzip -9nf usr/share/doc/ros-one-apriltag/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-one-apriltag ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-one-apriltag/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-one-apriltag/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-one-apriltag/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-one-apriltag -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/06
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3 debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/06/fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1.debug
+	chmod 0644 -- debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/06/fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/06/fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1.debug debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/05
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/05/c73d2c869b1770bc6b8ea307cbfb93548e9fdd.debug
+	chmod 0644 -- debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/05/c73d2c869b1770bc6b8ea307cbfb93548e9fdd.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/05/c73d2c869b1770bc6b8ea307cbfb93548e9fdd.debug debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/d3
+	objcopy --only-keep-debug --compress-debug-sections debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/d3/1dafaad2eb2698160e2fbc8f66cb702ccc8051.debug
+	chmod 0644 -- debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/d3/1dafaad2eb2698160e2fbc8f66cb702ccc8051.debug
+	strip --remove-section=.comment --remove-section=.note debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo
+	objcopy --add-gnu-debuglink debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/lib/debug/.build-id/d3/1dafaad2eb2698160e2fbc8f66cb702ccc8051.debug debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/share/doc
+	ln -s ros-one-apriltag debian/.debhelper/ros-one-apriltag/dbgsym-root/usr/share/doc/ros-one-apriltag-dbgsym
+	install -m0755 -d debian/.debhelper/ros-one-apriltag
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-apriltag/DEBIAN/shlibs
+	install -m0755 -d debian/ros-one-apriltag/DEBIAN
+	echo "libapriltag 3 ros-one-apriltag" >> debian/ros-one-apriltag/DEBIAN/shlibs
+	chmod 0644 -- debian/ros-one-apriltag/DEBIAN/shlibs
+	mv debian/.debhelper/generated/ros-one-apriltag/triggers.new debian/.debhelper/generated/ros-one-apriltag/triggers
+	rm -f debian/ros-one-apriltag.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-one-apriltag//opt/ros/one/lib/:/<<BUILDDIR>>package/debian/ros-debian-apriltag//opt/ros/one/lib/x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/DEBIAN
+	dpkg-shlibdeps -Tdebian/ros-one-apriltag.substvars -l/<<BUILDDIR>>package/debian/ros-one-apriltag//opt/ros/one/lib/ -l/<<BUILDDIR>>package/debian/ros-debian-apriltag//opt/ros/one/lib/x86_64-linux-gnu debian/ros-one-apriltag/opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3 debian/ros-one-apriltag/opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so debian/ros-one-apriltag/opt/ros/one/bin/apriltag_demo
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/DEBIAN
+	install -p -m0644 debian/.debhelper/generated/ros-one-apriltag/triggers debian/ros-one-apriltag/DEBIAN/triggers
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/DEBIAN
+	echo misc:Depends= >> debian/ros-one-apriltag.substvars
+	echo misc:Pre-Depends= >> debian/ros-one-apriltag.substvars
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/DEBIAN
+	dpkg-gencontrol -pros-one-apriltag -ldebian/changelog -Tdebian/ros-one-apriltag.substvars -cdebian/control -Pdebian/.debhelper/ros-one-apriltag/dbgsym-root -UPre-Depends -URecommends -USuggests -UEnhances -UProvides -UEssential -UConflicts -DPriority=optional -UHomepage -UImportant -DAuto-Built-Package=debug-symbols -UProtected -UBuilt-Using -UStatic-Built-Using -DPackage=ros-one-apriltag-dbgsym "-DDepends=ros-one-apriltag (= \${binary:Version})" "-DDescription=debug symbols for ros-one-apriltag" "-DBuild-Ids=05c73d2c869b1770bc6b8ea307cbfb93548e9fdd 06fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1 d31dafaad2eb2698160e2fbc8f66cb702ccc8051" -DSection=debug -UMulti-Arch -UReplaces -UBreaks
+	chmod 0644 -- debian/.debhelper/ros-one-apriltag/dbgsym-root/DEBIAN/control
+	dpkg-gencontrol -pros-one-apriltag -ldebian/changelog -Tdebian/ros-one-apriltag.substvars -cdebian/control -Pdebian/ros-one-apriltag
+	chmod 0644 -- debian/ros-one-apriltag/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-apriltag/DEBIAN
+	cd debian/ros-one-apriltag >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-one-apriltag/DEBIAN/md5sums
+	install -m0755 -d debian/.debhelper/ros-one-apriltag/dbgsym-root/DEBIAN
+	cd debian/.debhelper/ros-one-apriltag/dbgsym-root >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/.debhelper/ros-one-apriltag/dbgsym-root/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --root-owner-group --build debian/ros-one-apriltag ..
+	dpkg-deb --root-owner-group --build debian/.debhelper/ros-one-apriltag/dbgsym-root ..
+dpkg-deb: building package 'ros-one-apriltag-dbgsym' in '../ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb'.
+dpkg-deb: building package 'ros-one-apriltag' in '../ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2025-06-22T00:04:26Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                      Sun, 22 Jun 2025 00:04:27 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.changes:
+-----------------------------------------------------------------
+
+Format: 1.8
+Date: Sun, 22 Jun 2025 00:03:55 -0000
+Source: ros-one-apriltag
+Binary: ros-one-apriltag ros-one-apriltag-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Distribution: sid
+Urgency: high
+Maintainer: Max Krogius <mkrogius@umich.edu>
+Changed-By: Max Krogius <mkrogius@umich.edu>
+Description:
+ ros-one-apriltag - AprilTag detector library
+Changes:
+ ros-one-apriltag (3.4.3-7-gce3ccd6-2025.06.22.00.03) sid; urgency=high
+ .
+   * Autogenerated, no changelog for this version found in CHANGELOG.rst.
+Checksums-Sha1:
+ ff3b8f64ada93e4d479754e57f25a7b6c37813e6 325224 ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ f6cff6c9bd6a5e8d4fcdd8f66e23680c64ffe60c 6941 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.buildinfo
+ d534196f068d6d29cf74eb039cbf629f9da08456 1067536 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+Checksums-Sha256:
+ 7d4718aa99260b285f18f984639e6364c0d08681280bdc577fa17417bf5faa1f 325224 ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ 1a0db895b38540391fec9b36133a4e1da9a3e6c61d8ec9cb1cc2e9667e40b474 6941 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.buildinfo
+ 104aaf6cb87142bcc615f88752060896f10f00696400fd54f88ede4ac5a08e42 1067536 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+Files:
+ 9e51743d54bfa405bcfd715a48138284 325224 debug optional ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ c8a6bfe10914de09c31ba66795ff97f8 6941 misc optional ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.buildinfo
+ a2668250d008ac94c678f6c11d6f3dd8 1067536 misc optional ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                    Sun, 22 Jun 2025 00:04:27 +0000 |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-one-apriltag
+Binary: ros-one-apriltag ros-one-apriltag-dbgsym
+Architecture: amd64
+Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Checksums-Md5:
+ 9e51743d54bfa405bcfd715a48138284 325224 ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ a2668250d008ac94c678f6c11d6f3dd8 1067536 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+Checksums-Sha1:
+ ff3b8f64ada93e4d479754e57f25a7b6c37813e6 325224 ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ d534196f068d6d29cf74eb039cbf629f9da08456 1067536 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+Checksums-Sha256:
+ 7d4718aa99260b285f18f984639e6364c0d08681280bdc577fa17417bf5faa1f 325224 ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+ 104aaf6cb87142bcc615f88752060896f10f00696400fd54f88ede4ac5a08e42 1067536 ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Sun, 22 Jun 2025 00:04:26 +0000
+Build-Path: /<<BUILDDIR>>package
+Installed-Build-Depends:
+ autoconf (= 2.72-3.1),
+ automake (= 1:1.17-4),
+ autopoint (= 0.23.1-2),
+ autotools-dev (= 20240727.1),
+ base-files (= 13.8),
+ base-passwd (= 3.6.7),
+ bash (= 5.2.37-2+b2),
+ binutils (= 2.44-3),
+ binutils-common (= 2.44-3),
+ binutils-x86-64-linux-gnu (= 2.44-3),
+ bsdextrautils (= 2.41-5),
+ bsdutils (= 1:2.41-5),
+ build-essential (= 12.12),
+ bzip2 (= 1.0.8-6),
+ cmake (= 3.31.6-2),
+ cmake-data (= 3.31.6-2),
+ coreutils (= 9.7-3),
+ cpp (= 4:14.2.0-1),
+ cpp-14 (= 14.2.0-19),
+ cpp-14-x86-64-linux-gnu (= 14.2.0-19),
+ cpp-x86-64-linux-gnu (= 4:14.2.0-1),
+ dash (= 0.5.12-12),
+ debconf (= 1.5.91),
+ debhelper (= 13.24.2),
+ debianutils (= 5.23.1),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.14.1-2),
+ diffutils (= 1:3.10-4),
+ dpkg (= 1.22.20),
+ dpkg-dev (= 1.22.20),
+ dwz (= 0.15-1+b1),
+ file (= 1:5.46-5),
+ findutils (= 4.10.0-3),
+ g++ (= 4:14.2.0-1),
+ g++-14 (= 14.2.0-19),
+ g++-14-x86-64-linux-gnu (= 14.2.0-19),
+ g++-x86-64-linux-gnu (= 4:14.2.0-1),
+ gcc (= 4:14.2.0-1),
+ gcc-14 (= 14.2.0-19),
+ gcc-14-base (= 14.2.0-19),
+ gcc-14-x86-64-linux-gnu (= 14.2.0-19),
+ gcc-x86-64-linux-gnu (= 4:14.2.0-1),
+ gettext (= 0.23.1-2),
+ gettext-base (= 0.23.1-2),
+ grep (= 3.11-4),
+ groff-base (= 1.23.0-9),
+ gzip (= 1.13-1),
+ hostname (= 3.25),
+ init-system-helpers (= 1.68),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.2-2+b1),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13t64 (= 3.7.4-3),
+ libasan8 (= 14.2.0-19),
+ libatomic1 (= 14.2.0-19),
+ libattr1 (= 1:2.5.2-3),
+ libaudit-common (= 1:4.0.2-2),
+ libaudit1 (= 1:4.0.2-2+b2),
+ libbinutils (= 2.44-3),
+ libblas3 (= 3.12.1-2),
+ libblkid1 (= 2.41-5),
+ libbrotli1 (= 1.1.0-2+b7),
+ libbz2-1.0 (= 1.0.8-6),
+ libc-bin (= 2.41-9),
+ libc-dev-bin (= 2.41-9),
+ libc6 (= 2.41-9),
+ libc6-dev (= 2.41-9),
+ libcap-ng0 (= 0.8.5-4+b1),
+ libcap2 (= 1:2.75-8),
+ libcc1-0 (= 14.2.0-19),
+ libcom-err2 (= 1.47.2-3),
+ libcrypt-dev (= 1:4.4.38-1),
+ libcrypt1 (= 1:4.4.38-1),
+ libctf-nobfd0 (= 2.44-3),
+ libctf0 (= 2.44-3),
+ libcurl4t64 (= 8.14.1-2),
+ libdb5.3t64 (= 5.3.28+dfsg2-9),
+ libdebconfclient0 (= 0.278),
+ libdebhelper-perl (= 13.24.2),
+ libdpkg-perl (= 1.22.20),
+ libelf1t64 (= 0.192-4),
+ libexpat1 (= 2.7.1-1),
+ libexpat1-dev (= 2.7.1-1),
+ libffi8 (= 3.4.8-2),
+ libfile-stripnondeterminism-perl (= 1.14.1-2),
+ libgcc-14-dev (= 14.2.0-19),
+ libgcc-s1 (= 14.2.0-19),
+ libgdbm-compat4t64 (= 1.24-2),
+ libgdbm6t64 (= 1.24-2),
+ libgfortran5 (= 14.2.0-19),
+ libgmp10 (= 2:6.3.0+dfsg-3),
+ libgnutls30t64 (= 3.8.9-2),
+ libgomp1 (= 14.2.0-19),
+ libgprofng0 (= 2.44-3),
+ libgssapi-krb5-2 (= 1.21.3-5),
+ libhogweed6t64 (= 3.10.1-1),
+ libhwasan0 (= 14.2.0-19),
+ libidn2-0 (= 2.3.8-2),
+ libisl23 (= 0.27-1),
+ libitm1 (= 14.2.0-19),
+ libjansson4 (= 2.14-2+b3),
+ libjs-jquery (= 3.6.1+dfsg+~3.5.14-1),
+ libjs-sphinxdoc (= 8.1.3-5),
+ libjs-underscore (= 1.13.4~dfsg+~1.11.4-3),
+ libjsoncpp26 (= 1.9.6-3),
+ libk5crypto3 (= 1.21.3-5),
+ libkeyutils1 (= 1.6.3-6),
+ libkrb5-3 (= 1.21.3-5),
+ libkrb5support0 (= 1.21.3-5),
+ liblapack3 (= 3.12.1-2),
+ liblastlog2-2 (= 2.41-5),
+ libldap2 (= 2.6.10+dfsg-1),
+ liblsan0 (= 14.2.0-19),
+ liblz4-1 (= 1.10.0-4),
+ liblzma5 (= 5.8.1-1),
+ libmagic-mgc (= 1:5.46-5),
+ libmagic1t64 (= 1:5.46-5),
+ libmd0 (= 1.1.0-2+b1),
+ libmount1 (= 2.41-5),
+ libmpc3 (= 1.3.1-1+b3),
+ libmpfr6 (= 4.2.2-1),
+ libncursesw6 (= 6.5+20250216-2),
+ libnettle8t64 (= 3.10.1-1),
+ libnghttp2-14 (= 1.64.0-1.1),
+ libnghttp3-9 (= 1.8.0-1),
+ libp11-kit0 (= 0.25.5-3),
+ libpam-modules (= 1.7.0-3),
+ libpam-modules-bin (= 1.7.0-3),
+ libpam-runtime (= 1.7.0-3),
+ libpam0g (= 1.7.0-3),
+ libpcre2-8-0 (= 10.45-1),
+ libperl5.40 (= 5.40.1-3),
+ libpipeline1 (= 1.5.8-1),
+ libproc2-0 (= 2:4.0.4-8),
+ libpsl5t64 (= 0.21.2-1.1+b1),
+ libpython3-dev (= 3.13.4-1),
+ libpython3-stdlib (= 3.13.4-1),
+ libpython3.13 (= 3.13.5-1),
+ libpython3.13-dev (= 3.13.5-1),
+ libpython3.13-minimal (= 3.13.5-1),
+ libpython3.13-stdlib (= 3.13.5-1),
+ libquadmath0 (= 14.2.0-19),
+ libreadline8t64 (= 8.2-6),
+ librhash1 (= 1.4.6-1),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2+b5),
+ libsasl2-2 (= 2.1.28+dfsg1-9),
+ libsasl2-modules-db (= 2.1.28+dfsg1-9),
+ libseccomp2 (= 2.6.0-2),
+ libselinux1 (= 3.8.1-1),
+ libsframe1 (= 2.44-3),
+ libsmartcols1 (= 2.41-5),
+ libsqlite3-0 (= 3.46.1-6),
+ libssh2-1t64 (= 1.11.1-1),
+ libssl3t64 (= 3.5.0-2),
+ libstdc++-14-dev (= 14.2.0-19),
+ libstdc++6 (= 14.2.0-19),
+ libsystemd0 (= 257.6-1),
+ libtasn1-6 (= 4.20.0-2),
+ libtinfo6 (= 6.5+20250216-2),
+ libtool (= 2.5.4-4),
+ libtsan2 (= 14.2.0-19),
+ libubsan1 (= 14.2.0-19),
+ libuchardet0 (= 0.0.8-1+b2),
+ libudev1 (= 257.6-1),
+ libunistring5 (= 1.3-2),
+ libuuid1 (= 2.41-5),
+ libuv1t64 (= 1.50.0-2),
+ libxml2 (= 2.12.7+dfsg+really2.9.14-1),
+ libxxhash0 (= 0.8.3-2),
+ libzstd1 (= 1.5.7+dfsg-1),
+ linux-libc-dev (= 6.12.33-1),
+ m4 (= 1.4.19-8),
+ make (= 4.4.1-2),
+ man-db (= 2.13.1-1),
+ mawk (= 1.3.4.20250131-1),
+ media-types (= 13.0.0),
+ ncurses-base (= 6.5+20250216-2),
+ ncurses-bin (= 6.5+20250216-2),
+ netbase (= 6.5),
+ openssl-provider-legacy (= 3.5.0-2),
+ patch (= 2.8-1),
+ perl (= 5.40.1-3),
+ perl-base (= 5.40.1-3),
+ perl-modules-5.40 (= 5.40.1-3),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.4-8),
+ python3 (= 3.13.4-1),
+ python3-dev (= 3.13.4-1),
+ python3-minimal (= 3.13.4-1),
+ python3-numpy (= 1:2.2.4+ds-1),
+ python3-numpy-dev (= 1:2.2.4+ds-1),
+ python3.13 (= 3.13.5-1),
+ python3.13-dev (= 3.13.5-1),
+ python3.13-minimal (= 3.13.5-1),
+ readline-common (= 8.2-6),
+ rpcsvc-proto (= 1.4.3-1),
+ sed (= 4.9-2),
+ sensible-utils (= 0.0.25),
+ sysvinit-utils (= 3.14-4),
+ tar (= 1.35+dfsg-3.1),
+ tzdata (= 2025b-3),
+ util-linux (= 2.41-5),
+ xz-utils (= 5.8.1-1),
+ zlib1g (= 1:1.3.dfsg+really1.3.1-1+b1),
+ zlib1g-dev (= 1:1.3.dfsg+really1.3.1-1+b1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="nocheck"
+ LANG="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LC_CTYPE="C.UTF-8"
+ LD_LIBRARY_PATH="/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu"
+ SOURCE_DATE_EPOCH="1750550635"
+
+
++------------------------------------------------------------------------------+
+| Package contents                             Sun, 22 Jun 2025 00:04:28 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-apriltag-dbgsym_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+-------------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 325224 bytes: control archive=648 bytes.
+     500 bytes,    12 lines      control
+     318 bytes,     3 lines      md5sums
+ Package: ros-one-apriltag-dbgsym
+ Source: ros-one-apriltag
+ Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+ Auto-Built-Package: debug-symbols
+ Architecture: amd64
+ Maintainer: Max Krogius <mkrogius@umich.edu>
+ Installed-Size: 374
+ Depends: ros-one-apriltag (= 3.4.3-7-gce3ccd6-2025.06.22.00.03)
+ Section: debug
+ Priority: optional
+ Description: debug symbols for ros-one-apriltag
+ Build-Ids: 05c73d2c869b1770bc6b8ea307cbfb93548e9fdd 06fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1 d31dafaad2eb2698160e2fbc8f66cb702ccc8051
+
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/debug/.build-id/05/
+-rw-r--r-- root/root     24784 2025-06-22 00:03 ./usr/lib/debug/.build-id/05/c73d2c869b1770bc6b8ea307cbfb93548e9fdd.debug
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/debug/.build-id/06/
+-rw-r--r-- root/root    321384 2025-06-22 00:03 ./usr/lib/debug/.build-id/06/fffa577a36cdc4bd4d1f55c8daf0bad7f6e0d1.debug
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/lib/debug/.build-id/d3/
+-rw-r--r-- root/root     23176 2025-06-22 00:03 ./usr/lib/debug/.build-id/d3/1dafaad2eb2698160e2fbc8f66cb702ccc8051.debug
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/share/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/share/doc/
+lrwxrwxrwx root/root         0 2025-06-22 00:03 ./usr/share/doc/ros-one-apriltag-dbgsym -> ros-one-apriltag
+
+
+ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03_amd64.deb
+------------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 1067536 bytes: control archive=2028 bytes.
+     314 bytes,    10 lines      control
+    4072 bytes,    49 lines      md5sums
+      31 bytes,     1 lines      shlibs
+      68 bytes,     2 lines      triggers
+ Package: ros-one-apriltag
+ Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+ Architecture: amd64
+ Maintainer: Max Krogius <mkrogius@umich.edu>
+ Installed-Size: 1797
+ Depends: libc6 (>= 2.38)
+ Section: misc
+ Priority: optional
+ Homepage: https://april.eecs.umich.edu/software/apriltag.html
+ Description: AprilTag detector library
+
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/bin/
+-rwxr-xr-x root/root     23072 2025-06-22 00:03 ./opt/ros/one/bin/apriltag_demo
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/include/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/include/apriltag/
+-rw-r--r-- root/root     10188 2025-06-22 00:03 ./opt/ros/one/include/apriltag/apriltag.h
+-rw-r--r-- root/root      3368 2025-06-22 00:03 ./opt/ros/one/include/apriltag/apriltag_math.h
+-rw-r--r-- root/root      2510 2025-06-22 00:03 ./opt/ros/one/include/apriltag/apriltag_pose.h
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/
+-rw-r--r-- root/root      2131 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/debug_print.h
+-rw-r--r-- root/root      1855 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/doubles.h
+-rw-r--r-- root/root     29922 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/doubles_floats_impl.h
+-rw-r--r-- root/root      1854 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/floats.h
+-rw-r--r-- root/root      5222 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/g2d.h
+-rw-r--r-- root/root      3125 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/getopt.h
+-rw-r--r-- root/root      8363 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/homography.h
+-rw-r--r-- root/root      2941 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/image_types.h
+-rw-r--r-- root/root      4159 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/image_u8.h
+-rw-r--r-- root/root      2824 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/image_u8x3.h
+-rw-r--r-- root/root      2793 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/image_u8x4.h
+-rw-r--r-- root/root     16552 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/matd.h
+-rw-r--r-- root/root      4876 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/math_util.h
+-rw-r--r-- root/root      2410 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/pam.h
+-rw-r--r-- root/root      4118 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/pjpeg.h
+-rw-r--r-- root/root      2278 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/pnm.h
+-rw-r--r-- root/root      2611 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/postscript_utils.h
+-rw-r--r-- root/root      2674 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/pthreads_cross.h
+-rw-r--r-- root/root     16194 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/string_util.h
+-rw-r--r-- root/root      2011 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/svd22.h
+-rw-r--r-- root/root      3078 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/time_util.h
+-rw-r--r-- root/root      3715 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/timeprofile.h
+-rw-r--r-- root/root      5095 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/unionfind.h
+-rw-r--r-- root/root      2433 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/workerpool.h
+-rw-r--r-- root/root     14346 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/zarray.h
+-rw-r--r-- root/root     17176 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/zhash.h
+-rw-r--r-- root/root      3461 2025-06-22 00:03 ./opt/ros/one/include/apriltag/common/zmaxheap.h
+-rw-r--r-- root/root      1991 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tag16h5.h
+-rw-r--r-- root/root      1991 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tag25h9.h
+-rw-r--r-- root/root      1995 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tag36h10.h
+-rw-r--r-- root/root      1995 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tag36h11.h
+-rw-r--r-- root/root      2015 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tagCircle21h7.h
+-rw-r--r-- root/root      2019 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tagCircle49h12.h
+-rw-r--r-- root/root      2019 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tagCustom48h12.h
+-rw-r--r-- root/root      2027 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tagStandard41h12.h
+-rw-r--r-- root/root      2027 2025-06-22 00:03 ./opt/ros/one/include/apriltag/tagStandard52h13.h
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/python3.13/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/python3.13/site-packages/
+-rw-r--r-- root/root     31688 2025-06-22 00:03 ./opt/ros/one/lib/python3.13/site-packages/apriltag.cpython-313-x86_64-linux-gnu.so
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/
+-rw-r--r-- root/root      1534 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagConfig.cmake
+-rw-r--r-- root/root      2762 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagConfigVersion.cmake
+-rw-r--r-- root/root       895 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagTargets-none.cmake
+-rw-r--r-- root/root      4285 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/apriltag/cmake/apriltagTargets.cmake
+lrwxrwxrwx root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so -> libapriltag.so.3
+lrwxrwxrwx root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3 -> libapriltag.so.3.4.3
+-rw-r--r-- root/root   1526320 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/libapriltag.so.3.4.3
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       262 2025-06-22 00:03 ./opt/ros/one/lib/x86_64-linux-gnu/pkgconfig/apriltag.pc
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/share/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/share/doc/
+drwxr-xr-x root/root         0 2025-06-22 00:03 ./usr/share/doc/ros-one-apriltag/
+-rw-r--r-- root/root       199 2025-06-22 00:03 ./usr/share/doc/ros-one-apriltag/changelog.Debian.gz
+-rw-r--r-- root/root       277 2025-06-22 00:03 ./usr/share/doc/ros-one-apriltag/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                   Sun, 22 Jun 2025 00:04:28 +0000 |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                      Sun, 22 Jun 2025 00:04:28 +0000 |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                      Sun, 22 Jun 2025 00:04:30 +0000 |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 43588
+Build-Time: 7
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 12
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-apriltag_3.4.3-7-gce3ccd6-2025.06.22.00.03.dsc
+Machine Architecture: amd64
+Package: ros-one-apriltag
+Package-Time: 28
+Source-Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+Space: 43588
+Status: successful
+Version: 3.4.3-7-gce3ccd6-2025.06.22.00.03
+--------------------------------------------------------------------------------
+Finished at 2025-06-22T00:04:26Z
+Build needed 00:00:28, 43588k disk space

@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 25 Apr 2025 00:00:00 -0000
+Source: ros-one-class-loader
+Binary: ros-one-class-loader ros-one-class-loader-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.2-2025.06.22.00.19
+Distribution: sid
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-class-loader - The class_loader package is a ROS-independent package for loading
+Changes:
+ ros-one-class-loader (0.5.2-2025.06.22.00.19) sid; urgency=high
+ .
+   * Fix shebang line for python3 (#158 <https://github.com/ros/class_loader/issues/158>)
+   * Suppress sanitizer warning about (expected) leak (#220 <https://github.com/ros/class_loader/issues/220>)
+   * Fix shebang for class_loader_headers_update.py (#180 <https://github.com/ros/class_loader/issues/180>) (#219 <https://github.com/ros/class_loader/issues/219>)
+   * Contributors: Mikael Arguedas, Shane Loretz
+Checksums-Sha1:
+ b5c3f9d1e7f2fe8a90469a915d1b7fd657ef7a2d 714272 ros-one-class-loader-dbgsym_0.5.2-2025.06.22.00.19_amd64.deb
+ 954cdfba48605b9ba456fb93dbd9169768c482b3 9412 ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.buildinfo
+ 65b7528aa9208e4a82f646846410782966ef6f66 66808 ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.deb
+Checksums-Sha256:
+ 29f824202d3b704703fc25167edf439e1ab37b7d57d47052bdd6699b6f07404e 714272 ros-one-class-loader-dbgsym_0.5.2-2025.06.22.00.19_amd64.deb
+ e95c59c4dda87abd8b8693d91477370583ccefe1a70459d734adb791ff583758 9412 ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.buildinfo
+ 11a5878c7d35fa0d30564973e2e92557299900f2c5c7955283426c77dc39676d 66808 ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.deb
+Files:
+ 420ab9967eec74173abd00c28db2dad2 714272 debug optional ros-one-class-loader-dbgsym_0.5.2-2025.06.22.00.19_amd64.deb
+ 0b50cd272063cb01087a4b43f3bc5210 9412 misc optional ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.buildinfo
+ 3df0e8374a4308d58d2189b314f8012e 66808 misc optional ros-one-class-loader_0.5.2-2025.06.22.00.19_amd64.deb

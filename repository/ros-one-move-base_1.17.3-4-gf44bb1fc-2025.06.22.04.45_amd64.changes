@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-move-base
+Binary: ros-one-move-base ros-one-move-base-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.3-4-gf44bb1fc-2025.06.22.04.45
+Distribution: sid
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-move-base - The move_base package provides an implementation of an action (se
+Changes:
+ ros-one-move-base (1.17.3-4-gf44bb1fc-2025.06.22.04.45) sid; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 49bfc44f0dc6dd4e9b51af233196a5f0b6a3e57f 3126376 ros-one-move-base-dbgsym_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb
+ 92e589f2dde4be71964c42c72bd33973e0c203c1 18065 ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.buildinfo
+ 1e1aebbce0af078b1c52b958fdc9888cf0989695 240768 ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb
+Checksums-Sha256:
+ 7a69a73578ccada612de4695fda890b2b103daef3711f24a97551c19d028c889 3126376 ros-one-move-base-dbgsym_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb
+ 062beb6e9215ade5696524d904c1aea4273fcf848b756272baa89cd657c44aa7 18065 ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.buildinfo
+ 62445d253677d9c7b1d7c7d56264109873b3f53839b535afa3580218b56eb84b 240768 ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb
+Files:
+ 769cdc5e60e073cced9536cb337bbddb 3126376 debug optional ros-one-move-base-dbgsym_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb
+ 2b38cedc1ac42c05bbd087de4077050a 18065 misc optional ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.buildinfo
+ 965dd61fb38fd4f21e332e0edf512436 240768 misc optional ros-one-move-base_1.17.3-4-gf44bb1fc-2025.06.22.04.45_amd64.deb

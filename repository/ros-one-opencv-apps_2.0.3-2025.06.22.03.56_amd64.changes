@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Thu, 22 May 2025 00:00:00 -0000
+Source: ros-one-opencv-apps
+Binary: ros-one-opencv-apps ros-one-opencv-apps-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.0.3-2025.06.22.03.56
+Distribution: sid
+Urgency: high
+Maintainer: Kei Okada <kei.okada@gmail.com>
+Changed-By: Kei Okada <kei.okada@gmail.com>
+Description:
+ ros-one-opencv-apps - opencv_apps provides various nodes that run internally OpenCV's f
+Changes:
+ ros-one-opencv-apps (2.0.3-2025.06.22.03.56) sid; urgency=high
+ .
+   * [lk_flow] Keep matching information for sparse optical flow (#149 <https://github.com/ros-perception/opencv_apps/issues/149>)
+   * use bgr8 for output visualization (#145 <https://github.com/ros-perception/opencv_apps/issues/145>)
+   * add ROS-O test (#147 <https://github.com/ros-perception/opencv_apps/issues/147>)
+   * Suppress cmake warning (#146 <https://github.com/ros-perception/opencv_apps/issues/146>)
+   * [TEST] Fix catkin_lint version 1.6.18 to avoid cmake_minimum_required error (#143 <https://github.com/ros-perception/opencv_apps/issues/143>)
+   * Add sync_.reset/async_.reset to destructor in face_recognition (#139 <https://github.com/ros-perception/opencv_apps/issues/139>)
+   * fix github actions (#140 <https://github.com/ros-perception/opencv_apps/issues/140>)
+   * fix missing .git directory (#136 <https://github.com/ros-perception/opencv_apps/issues/136>)
+   * Add histogram equalization default and clahe (#126 <https://github.com/ros-perception/opencv_apps/issues/126>)
+   * check all output of test/test-pyramids.test (#127 <https://github.com/ros-perception/opencv_apps/issues/127>)
+   * tests: properly remap camera_info (#125 <https://github.com/ros-perception/opencv_apps/issues/125>)
+   * add Morphology Transformations nodelet (#122 <https://github.com/ros-perception/opencv_apps/issues/122>)
+   * add test to check when adding two images, whcih has different size. (#123 <https://github.com/ros-perception/opencv_apps/issues/123>)
+   * contour_moments_nodelet: don't publish empty image (#124 <https://github.com/ros-perception/opencv_apps/issues/124>)
+   * Add Lab color filter (#114 <https://github.com/ros-perception/opencv_apps/issues/114>)
+   * add test to check on debain_unstable (#121 <https://github.com/ros-perception/opencv_apps/issues/121>)
+   * Remove timestamp from face_data.tar.gz (#117 <https://github.com/ros-perception/opencv_apps/issues/117>)
+   * use snapshot of rosdep list (#120 <https://github.com/ros-perception/opencv_apps/issues/120>)
+   * fix travis, speed up GA tests (#116 <https://github.com/ros-perception/opencv_apps/issues/116>)
+   * add .github/workflows (#115 <https://github.com/ros-perception/opencv_apps/issues/115>)
+   * Contributors: Aoi Nakane, Jochen Sprickerhof, Kei Okada, Martin Günther, Naoto Tsukamoto, Shingo Kitagawa, Yuki Furuta, Iori Yanokura, Ivan Oliveira Tarifa
+Checksums-Sha1:
+ 5b2563a1eeece1785b409b5de0f5e219dce09569 27721236 ros-one-opencv-apps-dbgsym_2.0.3-2025.06.22.03.56_amd64.deb
+ 93aea255d1f25f4a11bf56df0bc9bccf31528421 28613 ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.buildinfo
+ 3c4621f19d186f5bee72a44b6983167120782872 904404 ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.deb
+Checksums-Sha256:
+ 58555b2da36408a3404f971968912cc95d1e418a782f988ea3fda8a2796f84ab 27721236 ros-one-opencv-apps-dbgsym_2.0.3-2025.06.22.03.56_amd64.deb
+ faa4c8641297d242449bf06cee9d07b8c22e3c4e9536112a83eb5026aed7fdf7 28613 ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.buildinfo
+ 4cc1ea8a8019911da2f46cd718dbf90038c07b37789eb0b8a7bb38f455d9f916 904404 ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.deb
+Files:
+ c1020c9cf73b5a01eeae9f182584d13a 27721236 debug optional ros-one-opencv-apps-dbgsym_2.0.3-2025.06.22.03.56_amd64.deb
+ d93d614b7ef183fb185014c356b593c6 28613 misc optional ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.buildinfo
+ e0cffb235e8a329e7cb9162875096a48 904404 misc optional ros-one-opencv-apps_2.0.3-2025.06.22.03.56_amd64.deb

@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 09 Apr 2025 00:00:00 -0000
+Source: ros-one-image-transport
+Binary: ros-one-image-transport ros-one-image-transport-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.1-2025.06.22.02.18
+Distribution: sid
+Urgency: high
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Changed-By: Jack O'Quin <jack.oquin@gmail.com>
+Description:
+ ros-one-image-transport - image_transport should always be used to subscribe to and publish
+Changes:
+ ros-one-image-transport (1.12.1-2025.06.22.02.18) sid; urgency=high
+ .
+   * Switch to (non deprecated) hpp headers of pluginlib (#244 <https://github.com/ros-perception/image_common/issues/244>)
+   * Switch to new boost/bind/bind.hpp (#227 <https://github.com/ros-perception/image_common/issues/227>)
+   * Specifically defined boost filesystem dependency (#223 <https://github.com/ros-perception/image_common/issues/223>)
+   * Contributors: Jochen Sprickerhof, fraxker
+Checksums-Sha1:
+ aa1b933a4a227b1a47e1c78d23c614df58d18832 4847876 ros-one-image-transport-dbgsym_1.12.1-2025.06.22.02.18_amd64.deb
+ d32a8595e1aabfc2472ff9407466d90870b98cbb 12331 ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.buildinfo
+ 2bfa1ba3c4466b09d79df4f6b5393c9efc085e99 247564 ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.deb
+Checksums-Sha256:
+ 20f2fe66368b7a419b7fea1f8eadf620021122788a6b9d135cd9d41b6e4e12bc 4847876 ros-one-image-transport-dbgsym_1.12.1-2025.06.22.02.18_amd64.deb
+ 835b1b892506889adacaa0ee11ea706e3485ab52c591e3f104f373ca6a608610 12331 ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.buildinfo
+ 35acd1c209ccea95c152d6a694c20a2da9306dc77aa67cee38cf94d7c987f77b 247564 ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.deb
+Files:
+ e5ba56089b58f98e908191b9980d0a53 4847876 debug optional ros-one-image-transport-dbgsym_1.12.1-2025.06.22.02.18_amd64.deb
+ 76ed9d56560e2793f7d4bb4dab2c2b90 12331 misc optional ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.buildinfo
+ 7db7a568e7a66b0121d03bbb109ad240 247564 misc optional ros-one-image-transport_1.12.1-2025.06.22.02.18_amd64.deb

@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Fri, 24 Feb 2023 00:00:00 -0000
+Source: ros-one-smach-viewer
+Binary: ros-one-smach-viewer
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 4.1.0-25-gf34810d-2025.06.22.03.08
+Distribution: sid
+Urgency: high
+Maintainer: Jonathan Bohren <jbo@jhu.edu>
+Changed-By: Jonathan Bohren <jbo@jhu.edu>
+Description:
+ ros-one-smach-viewer - The smach viewer is a GUI that shows the state of hierarchical SM
+Changes:
+ ros-one-smach-viewer (4.1.0-25-gf34810d-2025.06.22.03.08) sid; urgency=high
+ .
+   * add timestamp in published image (#50 <https://github.com/ros-visualization/executive_smach_visualization/issues/50>)
+ .
+       * some tools, for example jsk_rosbag_tools requries all message have time stamp
+ .
+   * [smach_viewer] remove smach image in /tmp when the node is killed (#48 <https://github.com/ros-visualization/executive_smach_visualization/issues/48>)
+ .
+       * remove smach image in /tmp when the node is killed
+ .
+   * [smach_viewer] add smach_image_publisher.py for headless environment (#46 <https://github.com/ros-visualization/executive_smach_visualization/issues/46>)
+ .
+       * add time stamp in image topics
+       * add compressed image publisher
+       * change file name and set constant image size
+       * check if file is proper
+       * change color in active states
+       * import not local file
+       * add smach_image_publisher.py
+       * split and make SmachViewerBase, utils and text_wrapper
+ .
+   * Contributors: Kei Okada, Shingo Kitagawa
+Checksums-Sha1:
+ 02660636d98eb36c25e8801b273396f57ce79118 6976 ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.buildinfo
+ 98f079bcd1174dcd7430466bd9b26dcc5bb3138c 127164 ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.deb
+Checksums-Sha256:
+ c8761bdc5009621962d2c5a81d58ff64e3c52f32cb8d3987021c83ca450701cc 6976 ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.buildinfo
+ 24c2498aa04ef79dd9276ba8ec62af23c183ade2da275008e7baa2e76f82fdf7 127164 ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.deb
+Files:
+ 543de3272d1647cd54139349a2584dbc 6976 misc optional ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.buildinfo
+ 3a23749da5cb5b9445b9f35e73d88749 127164 misc optional ros-one-smach-viewer_4.1.0-25-gf34810d-2025.06.22.03.08_amd64.deb

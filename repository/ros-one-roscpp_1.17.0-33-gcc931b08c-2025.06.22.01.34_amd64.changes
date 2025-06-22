@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 09 May 2025 00:00:00 -0000
+Source: ros-one-roscpp
+Binary: ros-one-roscpp ros-one-roscpp-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.0-33-gcc931b08c-2025.06.22.01.34
+Distribution: sid
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-roscpp - roscpp is a C++ implementation of ROS.
+Changes:
+ ros-one-roscpp (1.17.0-33-gcc931b08c-2025.06.22.01.34) sid; urgency=high
+ .
+   * adding boost/bind/bind.hpp includes to files missing them (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Fix "roscpp multithreaded spinners eat up CPU when callbacks take too long" (#2377 <https://github.com/ros/ros_comm/issues/2377>) (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Contributors: Johannes Meyer, Lucas Walter
+Checksums-Sha1:
+ ddf9da6a479a748e95e09c9cea3a63afb077256f 12514656 ros-one-roscpp-dbgsym_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb
+ cf8dd3054aafe72ae03c7407aefd22eca0c194bd 9920 ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.buildinfo
+ a8dc77b01246fe658ded4ec8ea5eda989614d741 529716 ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb
+Checksums-Sha256:
+ 42cf08993f3c39cd0909afaea60df01e2a4ffffd44309f94fd6d9139d2fa1c89 12514656 ros-one-roscpp-dbgsym_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb
+ a104dc90b1bd101c9c6a9868059d7ce75efcf22739996530bd2cdb75d1639a50 9920 ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.buildinfo
+ 8c91cdecee78287507d05bbdafc49fcd5bebf6593e7116b6751a7a51c886624e 529716 ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb
+Files:
+ 786800d7e6d584f73c24fa00e3bb6918 12514656 debug optional ros-one-roscpp-dbgsym_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb
+ cb65156f609b9c306e48a3e3c2f7726a 9920 misc optional ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.buildinfo
+ 99a3bcbbe7b34e0e0b9c6f4f0c5e067b 529716 misc optional ros-one-roscpp_1.17.0-33-gcc931b08c-2025.06.22.01.34_amd64.deb

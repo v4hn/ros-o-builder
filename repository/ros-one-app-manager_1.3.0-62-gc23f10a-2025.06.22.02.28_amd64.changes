@@ -1,0 +1,78 @@
+Format: 1.8
+Date: Mon, 08 Nov 2021 00:00:00 -0000
+Source: ros-one-app-manager
+Binary: ros-one-app-manager
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.3.0-62-gc23f10a-2025.06.22.02.28
+Distribution: sid
+Urgency: high
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Changed-By: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Description:
+ ros-one-app-manager - app_manager
+Changes:
+ ros-one-app-manager (1.3.0-62-gc23f10a-2025.06.22.02.28) sid; urgency=high
+ .
+   * update setuptools to follow noetic migration guide (#36 <https://github.com/pr2/app_manager/issues/36>)
+   * app_manager cannot start app after failing app #42  (#42 <https://github.com/pr2/app_manager/issues/42>)
+ .
+       * set current_app None when start failed
+       * add test_start_fail.test
+       * need catch error on _stop_current()
+       * add test_start_fail.test
+         test to check #42 <https://github.com/pr2/app_manager/issues/42>, app_manager cannot start app after failing app
+ .
+   * add test to check if we forget catkin_install_python (#44 <https://github.com/pr2/app_manager/issues/44>)
+ .
+       * call app_manager/appA with python2/python3 with ROS_PYTHON_VERSION
+       * use catkin_install_python for noetic
+       * add test to check if we forget to use catkin_install_python
+ .
+   * add_rostest(test/test_plugin.test) (#45 <https://github.com/pr2/app_manager/issues/45>)
+ .
+       * run rosdep install in devel_create_tasks.Dockerfile
+       * update to format3 and install python-rosdep
+       * use port 11313 for app_manager in test_plugin.test
+       * add_rostest(test/test_plugin.test)
+ .
+   * add more test code (#41 <https://github.com/pr2/app_manager/issues/41>
+ .
+       * show more error messages
+       * default return value of plugin_order must be list
+       * plugins: 'launch_args', 'plugin_args', 'start_plugin_args', 'stop_plugin_args' must be dict, not list
+       * test_plugin: add test to check plugins
+       * use list(self.subs.items()) instead of self.subs.items()
+       * Error processing request: '>' not supported between instances of 'NoneType' and 'int'
+       * python3: AttributeError: 'dict' object has no attribute 'iteritems'
+       * add test for list_apps/stop_app, add test_stop_app.py
+       * python3: AttributeError: 'dict' object has no attribute 'iterkeys'
+       * add 2to3 in CHECK_PYTHON3_COMPILE
+       * add test/test_app.test
+       * test/resources/example-moin.launch: use arg launch_prefox to select if we use xterm or not
+ .
+   * add arguments in StartAppRequest (#27 <https://github.com/pr2/app_manager/issues/27>)
+ .
+       * use req.args for launch args in app_manager.py
+       * add args in StartApp srv
+ .
+   * do not run stop_app when _stopping is true (#38 <https://github.com/pr2/app_manager/issues/38>)
+   * fix travis build (#39 <https://github.com/pr2/app_manager/issues/39>)
+ .
+       * fix typo in .travis.yml
+       * run with full path
+       * add CHECK_PYTHON2_COMPILE and CHECK_PYTHON3_COMPILE tests
+ .
+   * use plugins as instance / use normal method in app_manager_plugin (#37 <https://github.com/pr2/app_manager/issues/37>)
+   * set stopped true in app timeout (#31 <https://github.com/pr2/app_manager/issues/31>)
+   * use system python to check python3 compileall (#34 <https://github.com/pr2/app_manager/issues/34>)
+   * Contributors: Kei Okada, Shingo Kitagawa
+Checksums-Sha1:
+ 87f18220161950d004af27af5aeb406d01bf87c2 11379 ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.buildinfo
+ 35579c1b9bc1a1ad7c7dec89e0237edb20b6c143 128048 ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.deb
+Checksums-Sha256:
+ 7ad08a74d8f5209d07afef3ba931b0868075a917e9e1b724862ff5bb0e790765 11379 ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.buildinfo
+ c8462027c0230d9079b041d83f8718d5fe9d10981daf28f6826cb941fa501115 128048 ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.deb
+Files:
+ 512d4d3d8e75731cb2906c21397df862 11379 misc optional ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.buildinfo
+ 769be849a670cf10e399853975786562 128048 misc optional ros-one-app-manager_1.3.0-62-gc23f10a-2025.06.22.02.28_amd64.deb

@@ -1,0 +1,53 @@
+[31m[1mCould not resolve rosdep key 'python-argparse' for distro 'sid':[0m
+[31m[1mTry to resolve the problem with rosdep and then continue.[0m
+ROS Distro index file associate with commit 'ce4812381dcaf695dca2f3196b4ea59b065e2d90'[0m
+New ROS Distro index url: 'https://raw.githubusercontent.com/ros/rosdistro/ce4812381dcaf695dca2f3196b4ea59b065e2d90/index-v4.yaml'[0m
+[1m[32m==> [0m[0mGenerating debs for [36mdebian:sid[0m for package(s) ['gazebo_ros'][0m[0m
+No definition of [python-argparse] for OS version [sid]
+	rosdep key : python-argparse
+	OS name    : debian
+	OS version : sid
+	Data:
+alpine:
+		- py-argparse
+		arch:
+		- python2
+		debian:
+		  buster:
+		  - libpython2.7-stdlib
+		  squeeze:
+		  - python-argparse
+		  stretch:
+		  - libpython2.7-stdlib
+		  wheezy:
+		  - python-argparse
+		fedora:
+		- python
+		freebsd:
+		- py27-argparse
+		gentoo:
+		- dev-lang/python
+		macports:
+		- py27-argparse
+		nixos:
+		- python
+		openembedded: []
+		opensuse:
+		- python
+		osx:
+		  pip:
+		    packages:
+		    - argparse
+		rhel:
+		  '7':
+		  - python2
+		  '8':
+		  - python2
+		slackware:
+		  pip:
+		    packages:
+		    - argparse
+		ubuntu:
+		  '*': []
+		
+[31m[1merror: (25, 'Inappropriate ioctl for device')[0m
