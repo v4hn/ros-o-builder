@@ -64,6 +64,8 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 
 - https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy - Intel might drop "legacy" branches at some point
 - https://github.com/TAMS-Group/robotiq
+
+- CRTK https://crtk-robotics.readthedocs.io
 - https://github.com/hanruihua/Turtlebot2_on_Noetic
 
 ### Target Platforms
