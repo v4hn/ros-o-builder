@@ -1436,8 +1436,162 @@ jobs:
     with:
       stage: 18
 
-  deploy:
+  stage19-worker0:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker0' )
     needs: stage18
+    with:
+      worker: stage19-worker0
+      depends: stage18
+  stage19-worker1:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker1' )
+    needs: stage18
+    with:
+      worker: stage19-worker1
+      depends: stage18
+  stage19-worker2:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker2' )
+    needs: stage18
+    with:
+      worker: stage19-worker2
+      depends: stage18
+  stage19-worker3:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker3' )
+    needs: stage18
+    with:
+      worker: stage19-worker3
+      depends: stage18
+  stage19-worker4:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker4' )
+    needs: stage18
+    with:
+      worker: stage19-worker4
+      depends: stage18
+  stage19-worker5:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker5' )
+    needs: stage18
+    with:
+      worker: stage19-worker5
+      depends: stage18
+  stage19-worker6:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker6' )
+    needs: stage18
+    with:
+      worker: stage19-worker6
+      depends: stage18
+  stage19-worker7:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker7' )
+    needs: stage18
+    with:
+      worker: stage19-worker7
+      depends: stage18
+  stage19-worker8:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker8' )
+    needs: stage18
+    with:
+      worker: stage19-worker8
+      depends: stage18
+  stage19-worker9:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage19-worker9' )
+    needs: stage18
+    with:
+      worker: stage19-worker9
+      depends: stage18
+  stage19:
+    uses: ./.github/workflows/aggregate-debs.yaml
+    if: always() && !cancelled()
+    needs: [stage19-worker0, stage19-worker1, stage19-worker2, stage19-worker3, stage19-worker4, stage19-worker5, stage19-worker6, stage19-worker7, stage19-worker8, stage19-worker9, ]
+    with:
+      stage: 19
+
+  stage20-worker0:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker0' )
+    needs: stage19
+    with:
+      worker: stage20-worker0
+      depends: stage19
+  stage20-worker1:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker1' )
+    needs: stage19
+    with:
+      worker: stage20-worker1
+      depends: stage19
+  stage20-worker2:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker2' )
+    needs: stage19
+    with:
+      worker: stage20-worker2
+      depends: stage19
+  stage20-worker3:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker3' )
+    needs: stage19
+    with:
+      worker: stage20-worker3
+      depends: stage19
+  stage20-worker4:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker4' )
+    needs: stage19
+    with:
+      worker: stage20-worker4
+      depends: stage19
+  stage20-worker5:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker5' )
+    needs: stage19
+    with:
+      worker: stage20-worker5
+      depends: stage19
+  stage20-worker6:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker6' )
+    needs: stage19
+    with:
+      worker: stage20-worker6
+      depends: stage19
+  stage20-worker7:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker7' )
+    needs: stage19
+    with:
+      worker: stage20-worker7
+      depends: stage19
+  stage20-worker8:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker8' )
+    needs: stage19
+    with:
+      worker: stage20-worker8
+      depends: stage19
+  stage20-worker9:
+    uses: ./.github/workflows/worker.yaml
+    if: (always() && !cancelled()) && contains( needs.stage-1.outputs.workers, 'stage20-worker9' )
+    needs: stage19
+    with:
+      worker: stage20-worker9
+      depends: stage19
+  stage20:
+    uses: ./.github/workflows/aggregate-debs.yaml
+    if: always() && !cancelled()
+    needs: [stage20-worker0, stage20-worker1, stage20-worker2, stage20-worker3, stage20-worker4, stage20-worker5, stage20-worker6, stage20-worker7, stage20-worker8, stage20-worker9, ]
+    with:
+      stage: 20
+
+  deploy:
+    needs: stage20
     if: always() && !cancelled()
     runs-on: ubuntu-24.04
     steps:
@@ -1445,9 +1599,9 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ${{ env.AGG }}
-          key: apt-repo-stage18-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: apt-repo-stage20-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            apt-repo-stage18-${{ github.sha }}-${{ github.run_id }}
+            apt-repo-stage20-${{ github.sha }}-${{ github.run_id }}
       - name: move packages to repo
         run: |
           mv ${{ env.AGG }} /home/runner/apt_repo
