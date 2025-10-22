@@ -3,9 +3,9 @@ name: build
 on:
   workflow_dispatch:
   # disabled until initial testing passed
-  #schedule:
-  #  # build weekly to find breakage
-  #  - cron: '13 1 * * 7'
+  schedule:
+    # build weekly to find breakage
+    - cron: '13 1 * * 7'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
