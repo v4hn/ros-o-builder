@@ -5,7 +5,7 @@ on:
   # disabled until initial testing passed
   schedule:
     # build weekly to find breakage
-    - cron: '13 1 * * 7'
+    - cron: '13 1 * * 6'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
