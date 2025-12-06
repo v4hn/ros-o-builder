@@ -2,13 +2,13 @@
 
 This repository builds an extended ROS ecosystem for Debian-based distributions in `ros-one-*.deb` packages on GitHub's free GitHub Action.
 
-**Target Distribution**: At the moment build environments are set up for Debian [bookworm](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm), [sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be setup as well.
+**Target Distribution**: At the moment build environments are set up for Debian [bookworm](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm), [sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be configured as well. Of course version incompatibilities will arise when building with target distributions that are not explicitly maintained.
 
 **Build Time**: Build times vary on the amount of packages selected. An extended system of around 1000 packages takes around 13 hours to build using the provided parallelized build jobs.
 
 ## Usage
 
-You can either rely on this repository, e.g., [jammy-one](https://github.com/v4hn/ros-o-builder/blob/jammy-one/README.md#install-instructions), or fork it to control package versions, target distribution, and syncs yourself.
+You can either rely on this repository, e.g., [bookworm-one](https://github.com/v4hn/ros-o-builder/blob/bookworm-one/README.md#install-instructions), or fork it to control target distribution, package versions, and syncs yourself.
 
 ### Setup instructions for your own fork
 
@@ -70,20 +70,22 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 
 ### Target Platforms
 
-- Ubuntu noble
+- Debian trixi
 
 ### Internals
 
 - optionally only build packages and downstream when they have changed upstream since the last build
   Debian sid needs to be rebuild in full every time, but stable distributions keep API/ABI compatible.
+  The ubi-agni builder provides this already.
 
-- record build times 
-  - use them in task-to-worker assignment
+- If possible, drop worker assignment and generate job workflows for individual bonded repository groups on push. Needs experimentation.
 
-- ensure sources.repos contains at most N stages (as provided by the build.yaml)
-
-- constraint solver for graph partitioning by packages/build times
-  - likely still map to the same staged workers for predictable GH caching
+- alternatively:
+  - record build times 
+    - use them in task-to-worker assignment
+  - ensure sources.repos contains at most N stages (as provided by the build.yaml)
+  - constraint solver for graph partitioning by packages/build times
+    - likely still map to the same staged workers for predictable GH caching
 
 - reduce network load by caching debs
   - set up https://launchpad.net/squid-deb-proxy
