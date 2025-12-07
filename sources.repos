@@ -107,6 +107,10 @@ repositories:
     type: git
     url: https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers.git
     version: ros1
+  catkin:
+    type: git
+    url: https://github.com/ros-o/catkin.git
+    version: modernize-python
   catkin_virtualenv:
     type: git
     url: https://github.com/ros-o/catkin_virtualenv.git
@@ -394,7 +398,7 @@ repositories:
   jsk_recognition:
     type: git
     url: https://github.com/ros-o/jsk_recognition.git
-    version: obese-devel
+    version: modernize-python
   jsk_roseus:
     type: git
     url: https://github.com/jsk-ros-pkg/jsk_roseus.git
@@ -514,7 +518,7 @@ repositories:
   moveit_calibration:
     type: git
     url: https://github.com/moveit/moveit_calibration.git
-    version: master
+    version: master-modernize-python
   moveit_monitoring:
     type: git
     url: https://github.com/v4hn/moveit_monitoring.git
@@ -702,11 +706,11 @@ repositories:
   pybind11_catkin:
     type: git
     url: https://github.com/ros-o/pybind11_catkin.git
-    version: master
+    version: modernize-python
   python_qt_binding:
     type: git
     url: https://github.com/ros-o/python_qt_binding.git
-    version: obese-devel
+    version: pr-fix-python3.13
   qbdevice-ros:
     type: git
     url: https://github.com/ros-o/qbdevice-ros.git
@@ -802,7 +806,7 @@ repositories:
   ros_environment:
     type: git
     url: https://github.com/ros-o/ros_environment.git
-    version: debian
+    version: debian-standalone-catkin
   ros_industrial_cmake_boilerplate:
     type: git
     url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
@@ -1043,10 +1047,6 @@ repositories:
     type: git
     url: https://github.com/RethinkRobotics/sawyer_robot
     version: master
-  setup_files:
-    type: git
-    url: https://github.com/v4hn/setup_files.git
-    version: main
   slam_gmapping:
     type: git
     url: https://github.com/ros-perception/slam_gmapping.git
