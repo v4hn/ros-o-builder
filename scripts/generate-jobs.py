@@ -11,7 +11,8 @@ SBUILD_OPTIONS = {
     "eigenpy": "$dpkg_buildpackage_user_options = ['--jobs=3'];",
     # The repositories below should run in isolated jobs as the packages they contain take much longer to build than most
     "ompl": "",
-    "pinocchio": ""
+    "pinocchio": "",
+    "gtsam": "",
 }
 
 def stages(ws):
