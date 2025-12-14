@@ -2,10 +2,12 @@
 
 distro=$1
 if [ -z "$distro" ]; then
-   distro=trixie
+   default_distro=trixie-one-unstable
+   echo "assuming default distro $default_distro"
+   distro=$default_distro
 fi
 
-REPO=https://raw.githubusercontent.com/v4hn/ros-o-builder/refs/heads/$distro-one-unstable
+REPO=https://raw.githubusercontent.com/v4hn/ros-o-builder/refs/heads/$distro
 
 # csv header is
 # Package,Version,URL,Status,Bloom Log,Build Log,Deb File,Installed Files
