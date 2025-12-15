@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 22 May 2024 00:00:00 -0000
+Source: ros-one-joint-state-controller
+Binary: ros-one-joint-state-controller ros-one-joint-state-controller-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.22.0-2025.12.15.05.25
+Distribution: bookworm
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joint-state-controller - Controller to publish joint state
+Changes:
+ ros-one-joint-state-controller (0.22.0-2025.12.15.05.25) bookworm; urgency=high
+ .
+   * Fix uncaught exception in joint_state_controller (#630 <https://github.com/ros-controls/ros_controllers/issues/630>)
+   * add flag controlling init of last_publish_time_ (`#617 <https://github.com/ros-controls/ros_controllers/pull/617`_)
+   * Contributors: Bryan Stuurman, Robert Haschke, Dr Denis
+Checksums-Sha1:
+ b38e1db3911be09be020dc13cfb4b2da52dd6e3f 633652 ros-one-joint-state-controller-dbgsym_0.22.0-2025.12.15.05.25_amd64.deb
+ 0f609c757f16f05e52db02f3f91360dce49050e7 14448 ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.buildinfo
+ 5a0505a78817a6462c09d28974a3a13cc900a1c8 51868 ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.deb
+Checksums-Sha256:
+ 2b56020f10c62b5bc34003e6a3706436c79f8462bf24c07503f320a2bc91b876 633652 ros-one-joint-state-controller-dbgsym_0.22.0-2025.12.15.05.25_amd64.deb
+ c4da4282d7dc286484b65ba398eb387cfb0c4f6980df37db7bd744a941a2e034 14448 ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.buildinfo
+ b7899620dbf3330712fe789aded6ee3ba8534b34fef718642b20918e5569fbe9 51868 ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.deb
+Files:
+ deaa947ab907806b722a169fabe65fd9 633652 debug optional ros-one-joint-state-controller-dbgsym_0.22.0-2025.12.15.05.25_amd64.deb
+ 5974bcc254c1fdfecb71ed72252dbc11 14448 misc optional ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.buildinfo
+ 7d7f5474f11498eecf903708fb9ae33e 51868 misc optional ros-one-joint-state-controller_0.22.0-2025.12.15.05.25_amd64.deb

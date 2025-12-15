@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Sat, 09 Aug 2025 00:00:00 -0000
+Source: ros-one-pybind11-catkin
+Binary: ros-one-pybind11-catkin
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.0.0-1-gc59a5ba-2025.12.14.23.57
+Distribution: bookworm
+Urgency: high
+Maintainer: Wolfgang Merkt <wolfgang@robots.ox.ac.uk>
+Changed-By: Wolfgang Merkt <wolfgang@robots.ox.ac.uk>
+Description:
+ ros-one-pybind11-catkin - A package vendoring recent versions of pybind11 and providing ext
+Changes:
+ ros-one-pybind11-catkin (3.0.0-1-gc59a5ba-2025.12.14.23.57) bookworm; urgency=high
+ .
+   * Drop pybind11-dev from depends
+   * Bump to pybind11 version 3.0.0
+   * Fix dependency on python-dev
+   * Export pybind11_catkin_INCLUDE_DIRS
+   * Forward pybind11::pybind11 to pybind11_catkin_LIBRARIES
+   * Require pybind11 in pybind11_catkin.cmake
+   * Don't use pybind11 from parent catkin workspaces
+     This contradicts the idea of overlaying those workspaces with the current pybind11_catkin package.
+   * Fix cmake
+     - Ensure correct relative location of pybind11Config.cmake and includes
+     - Only perform install when NOT pybind11_FOUND
+   * Simplify pybind11_catkin.cmake
+   * Add message informing about existing pybind11 version
+   * Fix issues including Python.h
+     New FindPython module uses Python_INCLUDE_DIRS instead of PYTHON_INCLUDE_DIRS
+   * Increase cmake_minimum_required to 3.12
+     pybind11 relies on modern FindPython introduced in cmake 3.12 <https://cmake.org/cmake/help/latest/module/FindPython.html>
+   * Set PYBIND11_PYTHON_VERSION
+   * Use system pybind11 when available #23 <https://github.com/wxmerkt/pybind11_catkin/issues/23>
+   * Contributors: Robert Haschke, Simon Schmeisser, Wolfgang Merkt
+Checksums-Sha1:
+ 1a578b97db1f68301e4868cb4025b17f3f65a789 7687 ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.buildinfo
+ fe0fad5b6c97c30cb8e0775f569c1498d48495ec 196560 ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.deb
+Checksums-Sha256:
+ d7b1147c3ee6274fb6619e1d2c857f50699ba34fb75f2c3887e83bdde0403480 7687 ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.buildinfo
+ cb91c819fa0121c26803ef0fa1f8f7206710ec8bbe9821918d2ca80d2d766a88 196560 ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.deb
+Files:
+ ab5b503e106465ac55b0efc7ae803a13 7687 misc optional ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.buildinfo
+ 24efae8f91e684270472e2c3f3ede55e 196560 misc optional ros-one-pybind11-catkin_3.0.0-1-gc59a5ba-2025.12.14.23.57_amd64.deb

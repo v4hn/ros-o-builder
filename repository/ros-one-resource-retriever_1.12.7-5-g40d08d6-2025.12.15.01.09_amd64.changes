@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2025.12.15.01.09
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2025.12.15.01.09) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ a591507245869d53802eeadf39b80c2f023c4230 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb
+ 05439c749ffba6221122212c7af59c68dd9abce8 16108 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.buildinfo
+ 5d928b4619d421a0dba6cb9f53f589cf9196a922 62260 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb
+Checksums-Sha256:
+ 6a3e4f43bc7be99b1ac4f45425ab28c97feb7f275afd589eec5b1a66a7067399 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb
+ f53b907c5eaf0f1e9de68c7d359d3007843ccefc788c0be0a771de016e7a3772 16108 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.buildinfo
+ e7fcebb9651562f595b7bef838e209b9dea77983b9ad52acdc492360de56a217 62260 ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb
+Files:
+ 700ab72d0727e6f4f1507cf72a74aa9e 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb
+ 96bc0cbc3ac27945482921e88ddefc24 16108 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.buildinfo
+ c37ec3dc236643aab88fc800cfc342b6 62260 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2025.12.15.01.09_amd64.deb

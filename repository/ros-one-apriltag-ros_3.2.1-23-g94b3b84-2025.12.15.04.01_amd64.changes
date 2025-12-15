@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 05 Apr 2022 00:00:00 -0000
+Source: ros-one-apriltag-ros
+Binary: ros-one-apriltag-ros ros-one-apriltag-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.2.1-23-g94b3b84-2025.12.15.04.01
+Distribution: bookworm
+Urgency: high
+Maintainer: Danylo Malyuta <danylo.malyuta@gmail.com>
+Changed-By: Danylo Malyuta <danylo.malyuta@gmail.com>
+Description:
+ ros-one-apriltag-ros - A ROS wrapper of the AprilTag 3 visual fiducial detection algorit
+Changes:
+ ros-one-apriltag-ros (3.2.1-23-g94b3b84-2025.12.15.04.01) bookworm; urgency=high
+ .
+   * Fixed propagation of apriltag and Eigen headers and libraries (#124 <https://github.com/AprilRobotics/apriltag_ros/issues/124>)
+   * Drop old C++11 as it breaks with new log4cxx.
+   * Contributors: Jochen Sprickerhof, Remo Diethelm, Wolfgang Merkt
+Checksums-Sha1:
+ a4962133f76b178a0fa30989f0c72cdb954899e0 3063564 ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb
+ 35abbf7ecd252e4b6c853840008b909d529aeeff 30859 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.buildinfo
+ 0bb122db03034cb613994536fd786a646483eebc 159400 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb
+Checksums-Sha256:
+ 0e929de6e0ce4925ba094e13c6822e26074c236d7e50cb42e433e3aac650fe8f 3063564 ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb
+ 02d01e90c5b2def7bf203c05585fc5d57cd9c6197c3cf32cac6b3804a92e6c7e 30859 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.buildinfo
+ 28a94989db568d3413afcde8af314d50a9deb844de217f42b655ce6c274afe7e 159400 ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb
+Files:
+ cef66408cebf243b1c1215fd08283892 3063564 debug optional ros-one-apriltag-ros-dbgsym_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb
+ f8e19f8b0107ea59afc04a06b9e0ceb0 30859 misc optional ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.buildinfo
+ fa35d5a15070b3d70418053164750bde 159400 misc optional ros-one-apriltag-ros_3.2.1-23-g94b3b84-2025.12.15.04.01_amd64.deb

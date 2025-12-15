@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Fri, 08 Jul 2022 00:00:00 -0000
+Source: ros-one-velodyne-driver
+Binary: ros-one-velodyne-driver ros-one-velodyne-driver-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.7.0-4-g29abd0e-2025.12.15.05.48
+Distribution: bookworm
+Urgency: high
+Maintainer: Josh Whitley <josh.whitley@autoware.org>
+Changed-By: Josh Whitley <josh.whitley@autoware.org>
+Description:
+ ros-one-velodyne-driver - ROS device driver for Velodyne 3D LIDARs.
+Changes:
+ ros-one-velodyne-driver (1.7.0-4-g29abd0e-2025.12.15.05.48) bookworm; urgency=high
+ .
+   * Fix non-responsive node on packet timeout (#466 <https://github.com/ros-drivers/velodyne/issues/466>)
+     * No abort on packet timeout
+     Changed getPacket() to return 0 on timeout and 1 on success.
+     * Removed trailing whitespace
+   * reuse Velodyne UDP port (#427 <https://github.com/ros-drivers/velodyne/issues/427>)
+   * add missing include to pcap.h that prevents tests from being built (#406 <https://github.com/ros-drivers/velodyne/issues/406>)
+   * PCAP timestamps & PCAP+GPS timestamps (#384 <https://github.com/ros-drivers/velodyne/issues/384>)
+     * Add pcap_time param and implement gps_time with it
+     * If gps_time == true, ignore pcap_time
+   * Add support for the velodyne Alpha Prime (#370 <https://github.com/ros-drivers/velodyne/issues/370>)
+     * Add support for the velodyne Alpha Prime
+     * Change packet rate for the VLS128 according to the times specified in the manual
+     * Organize setup functions to avoid code duplication. Add a constant for the model ID of the VLS128.
+     * Use the defined constants to calculate the time offset of the points for the VLS128
+     Co-authored-by: jugo <mailto:juan.gonzalez@unibw.de>
+   * Contributors: HMellor, Institute for Autonomous Systems Technology, JKaniarz, Nagy Dániel Zoltán, Sebastian Scherer
+Checksums-Sha1:
+ 6f23e8f9bef2df1eac08fe81cb8a0857bc7156ec 3475256 ros-one-velodyne-driver-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb
+ 2e507414607cad260fbf8fd731bc5ccaafb6d345 18583 ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.buildinfo
+ 32ed0ce89e43ac6af7e5ddaf6363105ed679d3fa 168508 ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb
+Checksums-Sha256:
+ 59448fb21beea550b6f2cbef46749a1f6d8e039fcf84ed5fc44f6fbdbe0d1af5 3475256 ros-one-velodyne-driver-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb
+ bac98408425456193904e2cb1f94ce8670fe7df3c0d4aae05da98b84a47a60ef 18583 ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.buildinfo
+ 1cad41bf541a547ff09195614c89aaa37d09f0bf1f1cf9dde2e81af9a8b59377 168508 ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb
+Files:
+ c24af418ed6cdca401192c1f4792ed19 3475256 debug optional ros-one-velodyne-driver-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb
+ 3940c3de071b5c21e9badf597443a568 18583 misc optional ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.buildinfo
+ 2cb20c019f6134249ae4c8f7daf7af61 168508 misc optional ros-one-velodyne-driver_1.7.0-4-g29abd0e-2025.12.15.05.48_amd64.deb

@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 07 Oct 2024 00:00:00 -0000
+Source: ros-one-moveit-core
+Binary: ros-one-moveit-core ros-one-moveit-core-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.1.16-49-g4838449d7-2025.12.15.07.09
+Distribution: bookworm
+Urgency: high
+Maintainer: Dave Coleman <dave@picknik.ai>
+Changed-By: Dave Coleman <dave@picknik.ai>
+Description:
+ ros-one-moveit-core - Core libraries used by MoveIt
+Changes:
+ ros-one-moveit-core (1.1.16-49-g4838449d7-2025.12.15.07.09) bookworm; urgency=high
+ .
+   * Fix Cartesian interpolation: for multiple waypoints continue from latest RobotState (#3652 <https://github.com/ros-planning/moveit/issues/3652>)
+   * Contributors: Robert Haschke
+Checksums-Sha1:
+ a05a48607f8da57e6e6638f6fc1dca387a3c064a 79628920 ros-one-moveit-core-dbgsym_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb
+ 3e85b094896fdb18adc4bbc1c2511ba0669ed211 21462 ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.buildinfo
+ 1700de7e7ee54795b3094dc999a02e476336bbf8 1540812 ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb
+Checksums-Sha256:
+ 8e2895a0863801dc741c4128297565a682c461c213ad100b86d167d2d45cf00d 79628920 ros-one-moveit-core-dbgsym_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb
+ 2a02354f6fd47a4125f73be3cb3cea1d4b37ac8170b111fe80bd88412c085aea 21462 ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.buildinfo
+ 7bf1c919c21afdbd39b3b0b1973ac8322e52b3838c33ad47a4ca67da031599de 1540812 ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb
+Files:
+ 492a8b0d4b48f24fc28a2aa9e996dbe9 79628920 debug optional ros-one-moveit-core-dbgsym_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb
+ b416b4352ca51369518b3dea52a7e471 21462 misc optional ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.buildinfo
+ e3629c2985f5c0d2ef8ca8c9137c0eb4 1540812 misc optional ros-one-moveit-core_1.1.16-49-g4838449d7-2025.12.15.07.09_amd64.deb

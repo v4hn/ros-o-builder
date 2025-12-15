@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 25 Apr 2025 00:00:00 -0000
+Source: ros-one-class-loader
+Binary: ros-one-class-loader ros-one-class-loader-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.2-2025.12.15.00.09
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-class-loader - The class_loader package is a ROS-independent package for loading
+Changes:
+ ros-one-class-loader (0.5.2-2025.12.15.00.09) bookworm; urgency=high
+ .
+   * Fix shebang line for python3 (#158 <https://github.com/ros/class_loader/issues/158>)
+   * Suppress sanitizer warning about (expected) leak (#220 <https://github.com/ros/class_loader/issues/220>)
+   * Fix shebang for class_loader_headers_update.py (#180 <https://github.com/ros/class_loader/issues/180>) (#219 <https://github.com/ros/class_loader/issues/219>)
+   * Contributors: Mikael Arguedas, Shane Loretz
+Checksums-Sha1:
+ e1ff3f20426c2d96dc7465a390a6e436cb1d2c69 768280 ros-one-class-loader-dbgsym_0.5.2-2025.12.15.00.09_amd64.deb
+ 29e649b1c899f2439be288be0a42559a7c42a80a 10288 ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.buildinfo
+ 5a97f860a9a6514e3f3b0d157da5193606e23258 65428 ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.deb
+Checksums-Sha256:
+ 6cd749300fa28a36f40f4912fcfefaa9197e92aa138618d700debd800f6219fe 768280 ros-one-class-loader-dbgsym_0.5.2-2025.12.15.00.09_amd64.deb
+ 79d6ade163c5fbfcac37636a384a1ec86e12d47f1edfb58a2e4275e28ed4e4f0 10288 ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.buildinfo
+ 83d8bc483395c90af468c52f9320e0773270e90e131070cde4c80fe3966d1cdc 65428 ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.deb
+Files:
+ 0fbf82fa8349d3ddff945071b8779a98 768280 debug optional ros-one-class-loader-dbgsym_0.5.2-2025.12.15.00.09_amd64.deb
+ 8b08d8caf5e9bc0defdc60dc03e5cb69 10288 misc optional ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.buildinfo
+ 1ab0f308f8ff4935e32ef6ed7d36cb52 65428 misc optional ros-one-class-loader_0.5.2-2025.12.15.00.09_amd64.deb

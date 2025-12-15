@@ -1,0 +1,79 @@
+Format: 1.8
+Date: Mon, 13 Dec 2021 00:00:00 -0000
+Source: ros-one-roseus
+Binary: ros-one-roseus ros-one-roseus-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.7.5-102-g71bc6fd-2025.12.15.19.16
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-roseus - EusLisp client for ROS Robot Operating System.
+Changes:
+ ros-one-roseus (1.7.5-102-g71bc6fd-2025.12.15.19.16) bookworm; urgency=high
+ .
+   * add noetic test on travis (#700 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/700>)
+ .
+       * allow service-call to fail 3 times, see https://github.com/ros/ros_comm/issues/1976 for reason
+       * from noetic roslaunch set params https://github.com/ros/ros_comm/blob/07fb5469c71e10e4a05fa3a631897d9adece61c5/tools/roslaunch/src/roslaunch/launch.py#L448-L449
+ .
+   * [eustf.l] fix bug in ros::create-quaternion-from-rpy (#663 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/663>)
+ .
+       * ros::create-quaternion-from-rpy returns [x y z w] whcih is bug in euslisp. It should return [w x y z]
+       * [roseus/eustf.l] add comment in doc string.
+       * [roseus/test-tf.l] add test-rpy->quaternion-msg
+ .
+   * [roseus/eustf.cpp] convert [mm]->[m] in :set-transform (#649 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/649>)
+   * Fix check-func variable scope in ros::simple-action-server (#670 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/670>)
+   * Check for preemption request on test/fibonacci-server.l (#672 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/672>)
+   * Update advertise-service function documentation (#694 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/694>)
+   * Fixing a couple comment typos in roseus.l (#677 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/677>)
+   * fix typo: recieve -> receive (#687 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/687>)
+   * [roseus] add :groupname in create-timer (#688 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/688>)
+   * Fix unadvertise service (#680 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/680>)
+   * Add :groupname option to ros::advertise-service (#679 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/679>)
+   * [roseus] fix typo in subscribe documentation (#690 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/690>)
+   * [roseus] Remove duplicated dependency in package.xml (#642 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/642>)
+   * Fix typo: geoometry -> geometry (#645 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/645>)
+   * add more info on timeout parameter of wait-for-service (#646 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/646>)
+   * fix comment typo in actionlib.l (#643 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/643>)
+   * [eustf.l] add comment to :wait-for-transform (#648 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/648>)
+   * [eustf.l] fix comment :lookup-transform (#650 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/650>)
+   * add functions to convert shape_msgs/SolidPrimitive <-> euslisp object (#640 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/640>)
+   * fix warning message for load-ros-manifest (#638 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/638>)
+   * add SoundRequest.volume for kinetic (#620 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/620>)
+   * Return t after calling service in (call-empty-service service) (#621 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/621>)
+ .
+       * Return t after service call in call-empty-service function
+     Remove unmatched parenthesis
+ .
+     Return nil in call-empty-service if service is not ready
+ .
+     Add timeout in call-empty-service.
+   * add python like AnyMsg support (#631 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/631>)
+   * add list-param and search-param with test code (#629 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/629>)
+   * Add command line option to start roseus with gdb (#630 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/630>)
+ .
+       * Don't use suffixes on gdb config to avoid creating multiple files
+       * Print backtrace on every error break in gdb
+       * Enable command line option --gdb
+       * call ros::roseus on the top of the file
+ .
+   * Allow to load pathnames (#612 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/612>)
+   * Ignore _connection-header in 'print-ros-msg' (#606 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/606>)
+   * Remove unmatched parenthesis (#607 <https://github.com/jsk-ros-pkg/jsk_roseus/issues/607>)
+   * Contributors: Guilherme Affonso, Kei Okada, Naoki Hiraoka, Naoya Yamaguchi, Shingo Kitagawa, Yuto Uchimi
+Checksums-Sha1:
+ 44f0a2c639110508e5fd600c10ab8e4361758081 1558052 ros-one-roseus-dbgsym_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb
+ 734dd7f74f07a98db27ccc70e03ea054f0bc071d 20353 ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.buildinfo
+ 4e6771159f2075958c3fb7f61ef27e604459ef4b 221412 ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb
+Checksums-Sha256:
+ b3baf3669fe49611f9754d8ebc58a1fbdd1bd29dfa096e3871f1ef3f698d0547 1558052 ros-one-roseus-dbgsym_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb
+ d7d9ef030c0cc699b1eaee3d3b1bf3d9e076c15914872eccf689f2abf9bcd32a 20353 ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.buildinfo
+ 64acc36d30c19b6bd631afc08c2e5d09dc45ecc7c01789a5194b43009f47b124 221412 ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb
+Files:
+ 4d45f58ecf8a449fa50d0c467ccbe3e5 1558052 debug optional ros-one-roseus-dbgsym_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb
+ 207fc0ea12b10df402c95de32e25f86a 20353 misc optional ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.buildinfo
+ 081cfdf04c52adf9f4f5f83ab82f51ad 221412 misc optional ros-one-roseus_1.7.5-102-g71bc6fd-2025.12.15.19.16_amd64.deb

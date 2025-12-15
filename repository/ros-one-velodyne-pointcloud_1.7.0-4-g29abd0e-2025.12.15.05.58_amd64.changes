@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Fri, 08 Jul 2022 00:00:00 -0000
+Source: ros-one-velodyne-pointcloud
+Binary: ros-one-velodyne-pointcloud ros-one-velodyne-pointcloud-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.7.0-4-g29abd0e-2025.12.15.05.58
+Distribution: bookworm
+Urgency: high
+Maintainer: Josh Whitley <josh.whitley@autoware.org>
+Changed-By: Josh Whitley <josh.whitley@autoware.org>
+Description:
+ ros-one-velodyne-pointcloud - Point cloud conversions for Velodyne 3D LIDARs.
+Changes:
+ ros-one-velodyne-pointcloud (1.7.0-4-g29abd0e-2025.12.15.05.58) bookworm; urgency=high
+ .
+   * build timings in offline setup (#428 <https://github.com/ros-drivers/velodyne/issues/428>)
+     Currently when using the offline setup, it does not build the per-point timing offsets which means when unpacking the packets in the offline mode, you cannot timestamp each point with its packet time.
+     This commit does the following:
+     - call buildTimings from setupOffline function
+     - add model to setupOffline interface
+     - set config model param which is needed by buildTimings
+   * vls128: add line only once all four banks are processed (#413 <https://github.com/ros-drivers/velodyne/issues/413>)
+   * PCAP timestamps & PCAP+GPS timestamps (#384 <https://github.com/ros-drivers/velodyne/issues/384>)
+     * Add pcap_time param and implement gps_time with it
+     * If gps_time == true, ignore pcap_time
+   * Fixed row_step=0 when init_width=0 (dense cloud) (#404 <https://github.com/ros-drivers/velodyne/issues/404>)
+     The PointCloud2 msg will be then valid: http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/PointCloud2.html
+     Referred issues:
+     * https://answers.ros.org/question/377470/rtabmap-icp_odometrycpp453callbackcloud-fatal-error/
+     * http://official-rtab-map-forum.67519.x6.nabble.com/Condition-scan3dMsg-data-size-scan3dMsg-row-step-scan3dMsg-height-not-met-td7852.html
+   * Fix accidental integer division (#391 <https://github.com/ros-drivers/velodyne/issues/391>)
+     Intensity values for VLP-16 were being calculated incorrectly.
+   * Add VLS128 launch and calibration file (#382 <https://github.com/ros-drivers/velodyne/issues/382>)
+   * Fixing incorrect type in velodyne_pointcloud.
+   * Fixing typo.
+   * Add support for the velodyne Alpha Prime (#370 <https://github.com/ros-drivers/velodyne/issues/370>)
+     * Add support for the velodyne Alpha Prime
+     * Change packet rate for the VLS128 according to the times specified in the manual
+     * Organize setup functions to avoid code duplication. Add a constant for the model ID of the VLS128.
+     * Use the defined constants to calculate the time offset of the points for the VLS128
+     Co-authored-by: jugo <mailto:juan.gonzalez@unibw.de>
+   * Contributors: Daisuke Nishimatsu, HMellor, Institute for Autonomous Systems Technology, Joshua Whitley, Martin Valgur, Nick Charron, Sebastian Scherer, matlabbe
+Checksums-Sha1:
+ de905267cffc52b3279d1825bd2b77098c6fe832 7208628 ros-one-velodyne-pointcloud-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
+ 66e281c17f3dbceedcf0f237692c472379e0001b 18899 ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.buildinfo
+ 243701d7973f83797fcf0f600d63df0a82855f54 257248 ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
+Checksums-Sha256:
+ 1dec2697d507ad8de058243160366615c809d65d3d9042cb5f85ba4ed5b01c17 7208628 ros-one-velodyne-pointcloud-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
+ df31357271d0cca40edda2798099ccd40e4c143b99b954ac4798034cddf410b0 18899 ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.buildinfo
+ 11c194a0134899703dffdbe0ec4668a072ff75933461344884858d75aea1cbdd 257248 ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
+Files:
+ efc7926ec05f2c6db7bc520f94261f6d 7208628 debug optional ros-one-velodyne-pointcloud-dbgsym_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
+ 147ef1c113cabfd780522d9744c0f7d6 18899 misc optional ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.buildinfo
+ aaad6ae7068645b5f6ca7315a23474ae 257248 misc optional ros-one-velodyne-pointcloud_1.7.0-4-g29abd0e-2025.12.15.05.58_amd64.deb
