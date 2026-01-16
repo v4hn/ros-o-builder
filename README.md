@@ -2,13 +2,14 @@
 
 This repository builds an extended ROS ecosystem for Debian-based distributions in `ros-one-*.deb` packages on GitHub's free GitHub Action.
 
-**Target Distribution**: At the moment build environments are set up for Debian [bookworm](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm), [sid](https://github.com/v4hn/ros-o-builder/tree/build-for-sid) and [Ubuntu 22.04 jammy](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy). Other Debian-based target distributions can be configured as well. Of course version incompatibilities will arise when building with target distributions that are not explicitly maintained.
+**Target Distribution**: At the moment this repository has branches prepared for Debian bookworm, trixie, and sid, as well as Ubuntu jammy and regularly builds ROS-O for Debian [bookworm](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm), with the plan to migrate the default to trixie soon. Other Debian/Ubuntu-based target distributions can be setup similarly.
 
 **Build Time**: Build times vary on the amount of packages selected. An extended system of around 1000 packages takes around 13 hours to build using the provided parallelized build jobs.
 
 ## Usage
 
-You can either rely on this repository, e.g., [bookworm-one](https://github.com/v4hn/ros-o-builder/blob/bookworm-one/README.md#install-instructions), or fork it to control target distribution, package versions, and syncs yourself.
+You might rely on this repository's `*-one` branches.
+It is recommended you fork it though to control package versions, target distribution, and syncs yourself, optionally deploying to external servers.
 
 ### Setup instructions for your own fork
 
@@ -17,13 +18,13 @@ You can either rely on this repository, e.g., [bookworm-one](https://github.com/
 **Step 2:** Adjust Permissions.
 To push built debs in this repository yourself, you need [to change github's default permissions](https://github.com/ad-m/github-push-action/?tab=readme-ov-file#requirements-and-prerequisites) for the actions of your forked repository.
 
-**Step 3:** Revise `on.scheduled:` triggers in each `build-for-<distro>` branches `.github/workflows/build.yaml` to only build when necessary. *Note that only the default branch on github will actually be scheduled based on these triggers.*
+**Step 3:** Revise `on.scheduled:` triggers in the default `build-for-<distro>` branch in `.github/workflows/build.yaml` to only build when necessary. *Note that only the default branch on github will actually be scheduled based on these triggers.*
 
 **Step 4 [optional]:** Navigate to Settings -> Pages -> Deploy from a branch and select the `<distro>-one` or `<distro>-one-unstable` branch to deploy a clean github page based on the generated `README.md`.
 
 ## Branch Overview
 
-- `build-for-<distro>` contains the github workflow configurations in `.github`, e.g., [jammy-one/.github](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/.github), the [sources.repos](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/sources.repos) file specifying all repositories to be built, and custom [rosdep.yaml](https://github.com/v4hn/ros-o-builder/tree/build-for-jammy/rosdep.yaml) mapping for the target distribution.
+- `build-for-<distro>` contains the github workflow configurations in `.github`, e.g., [bookworm-one/.github](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm/.github), the [sources.repos](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm/sources.repos) file specifying all repositories to be built, and the [rosdep.yaml](https://github.com/v4hn/ros-o-builder/tree/build-for-bookworm/rosdep.yaml) mapping for the target distribution.
 
 - `<distro>-one-unstable` contains the generated results of each individual action run (either manually triggered or scheduled)
 
@@ -51,7 +52,6 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 ### Explicitly Planned Packages to Add
 
 - https://github.com/HoangGiang93/mujoco_sim
-- https://github.com/cra-ros-pkg/robot_localization
 - https://github.com/locusrobotics/fuse
 - https://github.com/avidbots/flatland
 - http://wiki.ros.org/stdr_simulator ([issue](https://github.com/stdr-simulator-ros-pkg/stdr_simulator/issues/210))
@@ -59,18 +59,12 @@ The [ubi-agni ros-builder-action](https://github.com/ubi-agni/ros-builder-action
 
 - https://github.com/loco-3d/crocoddyl
 - https://github.com/tesseract-robotics
-- https://github.com/stack-of-tasks
 - https://github.com/ipab-slmc/exotica
 
-- https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy - Intel might drop "legacy" branches at some point
 - https://github.com/TAMS-Group/robotiq
 
 - CRTK https://crtk-robotics.readthedocs.io
 - https://github.com/hanruihua/Turtlebot2_on_Noetic
-
-### Target Platforms
-
-- Debian trixi
 
 ### Internals
 
