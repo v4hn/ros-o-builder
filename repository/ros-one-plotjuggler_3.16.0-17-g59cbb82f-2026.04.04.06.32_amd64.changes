@@ -1,0 +1,60 @@
+Format: 1.8
+Date: Tue, 10 Mar 2026 00:00:00 -0000
+Source: ros-one-plotjuggler
+Binary: ros-one-plotjuggler ros-one-plotjuggler-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.16.0-17-g59cbb82f-2026.04.04.06.32
+Distribution: bookworm
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-plotjuggler - PlotJuggler: juggle with data
+Changes:
+ ros-one-plotjuggler (3.16.0-17-g59cbb82f-2026.04.04.06.32) bookworm; urgency=high
+ .
+   * add plotjuggler and foxglove bridge plugins
+   * fix Windows MSVC wasmer linking
+   * fix: timestamp detection with array fields (#1310 <https://github.com/facontidavide/PlotJuggler/issues/1310>)
+   * Add PlotGroup support to parsing plugins (topic/channel as group)
+   * WebSocket dialog: dedicated Connect button, sorting, and UI polish
+   * move to wasmer
+   * Fix: No buttons appears / Can't select any topics (#1306 <https://github.com/facontidavide/PlotJuggler/issues/1306>)
+   * much faster MCAP pre-loading and update to 2.1.2
+   * Replace StringRef with dictionary index in StringSeries. Fixes #1031 <https://github.com/facontidavide/PlotJuggler/issues/1031>
+   * Fix dangling StringRef pointers in StringSeries::clonePoints (#1279 <https://github.com/facontidavide/PlotJuggler/issues/1279>)
+   * Fix WebSocket plugin: use project's zstd target instead of find_path
+   * Fix Reset to Default Curve Style in PlotWidget (#1277 <https://github.com/facontidavide/PlotJuggler/issues/1277>)
+   * Fix multiple bugs in rosx_introspection (ported from upstream)
+   * WebSocket DataStreamer plugin integration (#1295 <https://github.com/facontidavide/PlotJuggler/issues/1295>)
+   * Fix: Save colorMaps section to layout XML (#1278 <https://github.com/facontidavide/PlotJuggler/issues/1278>)
+   * Add automatic detection and merging of separate date/time CSV columns (#1259 <https://github.com/facontidavide/PlotJuggler/issues/1259>)
+   * Support batched array messages in JSON/CBOR/BSON/MessagePack parsers (#1285 <https://github.com/facontidavide/PlotJuggler/issues/1285>)
+   * fix: quaternion-to-RPY toolbox streaming data loss (#1289 <https://github.com/facontidavide/PlotJuggler/issues/1289>)
+   * Topological sorting for nested dependencies in custom equations (#1300 <https://github.com/facontidavide/PlotJuggler/issues/1300>)
+   * Fix Parsing of DiagnosticArrays (#1297 <https://github.com/facontidavide/PlotJuggler/issues/1297>)
+   * fix: use first available parser instead of hardcoded fallback (#1015 <https://github.com/facontidavide/PlotJuggler/issues/1015>)
+   * fix DJS_PLUGINS_DIRECTORY in Docker build (#1281 <https://github.com/facontidavide/PlotJuggler/issues/1281>)
+   * fix: guard undo/redo from firing during active popups (#1287 <https://github.com/facontidavide/PlotJuggler/issues/1287>)
+   * fix merging of string series (#1298 <https://github.com/facontidavide/PlotJuggler/issues/1298>)
+   * fix: parsing of nested topics in ulogs (#1301 <https://github.com/facontidavide/PlotJuggler/issues/1301>)
+   * fix: Arrow 23.0.0 compatibility (#1282 <https://github.com/facontidavide/PlotJuggler/issues/1282>)
+   * fix placeholder text color (workaround to Qt5 bug)
+   * improve clarity of nlohmann parsers dialog
+   * Adjust dialog size based on protocol selection
+   * fix: inherit legend settings when splitting plot views (#1260 <https://github.com/facontidavide/PlotJuggler/issues/1260>)
+   * Fix Conan 2.x build instructions in COMPILE.md (#1256 <https://github.com/facontidavide/PlotJuggler/issues/1256>)
+   * Contributors: Alvvalencia, Copilot, Davide Faconti, Jeremy Elson, KIRAN, Luca Bonamini, Panav, Sachin Kumar, Simon Sagmeister, Timo Stienstra, Tobias Büchli, dependabot[bot], Øyvind Taksdal Stubhaug
+Checksums-Sha1:
+ dd47b81003c76664b1d7a9d5b37786e0792efed8 104789672 ros-one-plotjuggler-dbgsym_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb
+ 387f4e0b6f9d8305e4a2938c5a03aea82e120ff6 20893 ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.buildinfo
+ bf002312ae9b2356cd6230a55edb1fe090ed4664 20889668 ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb
+Checksums-Sha256:
+ d013e7239063b6dc34256a0096ba57986b64c7edd0e061097cd45fcd9acc3139 104789672 ros-one-plotjuggler-dbgsym_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb
+ 9ca1cfd9349d1da2260914843f602643dfbc624358dcedd8b74dd6d02e5114e6 20893 ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.buildinfo
+ ef9299a7d0c46a91045176f545ada7d60e842a9f23e79837a2662b67b3855df7 20889668 ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb
+Files:
+ bfa2e8e2bf187402b9452f0201bd3872 104789672 debug optional ros-one-plotjuggler-dbgsym_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb
+ f902fb7b3f866a9a6a94fe06444ca535 20893 misc optional ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.buildinfo
+ 78576fdca18aada659591077744963c4 20889668 misc optional ros-one-plotjuggler_3.16.0-17-g59cbb82f-2026.04.04.06.32_amd64.deb

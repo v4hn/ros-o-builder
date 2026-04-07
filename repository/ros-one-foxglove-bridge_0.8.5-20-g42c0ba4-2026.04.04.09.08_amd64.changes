@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Thu, 15 May 2025 00:00:00 -0000
+Source: ros-one-foxglove-bridge
+Binary: ros-one-foxglove-bridge ros-one-foxglove-bridge-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.8.5-20-g42c0ba4-2026.04.04.09.08
+Distribution: bookworm
+Urgency: high
+Maintainer: Foxglove <ros-tooling+foxglove_bridge@foxglove.dev>
+Changed-By: Foxglove <ros-tooling+foxglove_bridge@foxglove.dev>
+Description:
+ ros-one-foxglove-bridge - ROS Foxglove Bridge
+Changes:
+ ros-one-foxglove-bridge (0.8.5-20-g42c0ba4-2026.04.04.09.08) bookworm; urgency=high
+ .
+   * fix rolling/kilted builds due to resource_retriever API changes (#351 <https://github.com/foxglove/ros-foxglove-bridge/issues/351>)
+   * avoid requesting parameters from unresponsive nodes (#345 <https://github.com/foxglove/ros-foxglove-bridge/issues/345>)
+   * Update default asset_uri_allowlist parameter to allow dashes (#347 <https://github.com/foxglove/ros-foxglove-bridge/issues/347>)
+   * reorganize devcontainer dockerfile (#350 <https://github.com/foxglove/ros-foxglove-bridge/issues/350>)
+   * Use RCLCPP_VERSION_GTE from rclcpp/version.h in generic_client.cpp (#344 <https://github.com/foxglove/ros-foxglove-bridge/issues/344>)
+   * Fixed logging typo (#343 <https://github.com/foxglove/ros-foxglove-bridge/issues/343>)
+   * Contributors: Hans-Joachim Krauch, Meet Gandhi, johannesschrimpf
+Checksums-Sha1:
+ 2aa5a487b51096e36c462e74c7cb7a45f48b5d39 13091864 ros-one-foxglove-bridge-dbgsym_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb
+ 20440ac3eabd09780c040b90de2e1c1127988086 18906 ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.buildinfo
+ 80f12ba50366105da81a3f1d18e6a5adcb39ff01 636736 ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb
+Checksums-Sha256:
+ a0949e20e426bd9cb3c8d18751d3cb5b308bf928924dc42f26f8fd88563f68e0 13091864 ros-one-foxglove-bridge-dbgsym_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb
+ 4953ab1f536873a08555ab2c0c165b09513061d0973dce8c4f7c6167c95ac3b4 18906 ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.buildinfo
+ a3ff8ae6e258d6ed6ee5c89cbc95c4d6aebe7521e80d2fd0b15df2a4df856d17 636736 ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb
+Files:
+ d7057ea3da6c0b808e9370823f7650b7 13091864 debug optional ros-one-foxglove-bridge-dbgsym_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb
+ c87f772dae464d3fc7840d1d332f26d5 18906 misc optional ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.buildinfo
+ 5a1a811d3cbd420b9309a4b10cc83131 636736 misc optional ros-one-foxglove-bridge_0.8.5-20-g42c0ba4-2026.04.04.09.08_amd64.deb

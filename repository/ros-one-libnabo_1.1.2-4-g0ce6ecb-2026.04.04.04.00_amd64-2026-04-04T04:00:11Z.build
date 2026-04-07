@@ -1,0 +1,2362 @@
+sbuild (Debian sbuild) 0.85.10ubuntu0.2 (02 May 2025) on runnervm727z3.dyhkcuhrsjmenpthrdqriu5ubf.cx.internal.cloudapp.net
+
++===========================================================================================+
+| ros-one-libnabo 1.1.2-4-g0ce6ecb-2026.04.04.04.00 (amd64) Sat, 04 Apr 2026 04:00:11 +0000 |
++===========================================================================================+
+
+Package: ros-one-libnabo
+Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Source Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Distribution: bookworm
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/bookworm-amd64.tar to /tmp/tmp.sbuild.VreSeeJYkX...
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+Copying /home/runner/apt_repo_dependencies/ros-one-ros-environment_1.3.2-5-gee6d167-2026.04.04.03.46_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo_dependencies/ros-one-setup-files_0-2026.04.04.03.46_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-libg2o-dbgsym_2020.5.3-2026.04.04.03.49_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-libg2o_2020.5.3-2026.04.04.03.49_amd64.deb to /<<CHROOT>>...
+Copying /home/runner/apt_repo/ros-one-genmsg_0.5.16-1-g7d8b6ce-2026.04.04.03.49_amd64.deb to /<<CHROOT>>...
+I: NOTICE: Log filtering will replace 'build/package//resolver-uy7L72' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                Sat, 04 Apr 2026 04:00:18 +0000 |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-rj8Dm2/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-rj8Dm2/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-rj8Dm2/apt_archive ./ Release [606 B]
+Get:2 file:/build/package//resolver-rj8Dm2/apt_archive ./ Release [606 B]
+Get:3 file:/build/package//resolver-rj8Dm2/apt_archive ./ Release.gpg
+Ign:3 file:/build/package//resolver-rj8Dm2/apt_archive ./ Release.gpg
+Get:4 file:/build/package//resolver-rj8Dm2/apt_archive ./ Packages [4700 B]
+Get:5 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:6 http://security.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:7 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:8 http://security.debian.org/debian-security bookworm-security/main amd64 Packages [294 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 Packages [8792 kB]
+Get:10 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Fetched 9347 kB in 1s (10.8 MB/s)
+Reading package lists...
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://security.debian.org/debian-security bookworm-security InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+W: Skipping acquire of configured file 'universe/binary-amd64/Packages' as repository 'http://deb.debian.org/debian bookworm-updates InRelease' doesn't have the component 'universe' (component misspelt in sources.list?)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                           Sat, 04 Apr 2026 04:00:20 +0000 |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.dsc exists in /home/runner/work/ros-o-builder/ros-o-builder/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies           Sat, 04 Apr 2026 04:00:21 +0000 |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), cmake, libboost-all-dev, libeigen3-dev, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+Filtered Build-Depends: debhelper (>= 9.0.0), cmake, libboost-all-dev, libeigen3-dev, ros-one-setup-files, ros-one-ros-environment, build-essential, fakeroot, dumb-init
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [711 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [743 B]
+Fetched 2063 B in 0s (0 B/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ Release [606 B]
+Get:2 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ Release [606 B]
+Get:3 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ Release.gpg
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base gfortran-12 groff-base ibverbs-providers icu-devtools
+  intltool-debian libarchive-zip-perl libarchive13 libboost-all-dev
+  libboost-atomic-dev libboost-atomic1.74-dev libboost-atomic1.74.0
+  libboost-chrono-dev libboost-chrono1.74-dev libboost-chrono1.74.0
+  libboost-container-dev libboost-container1.74-dev libboost-container1.74.0
+  libboost-context-dev libboost-context1.74-dev libboost-context1.74.0
+  libboost-coroutine-dev libboost-coroutine1.74-dev libboost-coroutine1.74.0
+  libboost-date-time-dev libboost-date-time1.74-dev libboost-date-time1.74.0
+  libboost-dev libboost-exception-dev libboost-exception1.74-dev
+  libboost-fiber-dev libboost-fiber1.74-dev libboost-fiber1.74.0
+  libboost-filesystem-dev libboost-filesystem1.74-dev
+  libboost-filesystem1.74.0 libboost-graph-dev libboost-graph-parallel-dev
+  libboost-graph-parallel1.74-dev libboost-graph-parallel1.74.0
+  libboost-graph1.74-dev libboost-graph1.74.0 libboost-iostreams-dev
+  libboost-iostreams1.74-dev libboost-iostreams1.74.0 libboost-locale-dev
+  libboost-locale1.74-dev libboost-locale1.74.0 libboost-log-dev
+  libboost-log1.74-dev libboost-log1.74.0 libboost-math-dev
+  libboost-math1.74-dev libboost-math1.74.0 libboost-mpi-dev
+  libboost-mpi-python-dev libboost-mpi-python1.74-dev
+  libboost-mpi-python1.74.0 libboost-mpi1.74-dev libboost-mpi1.74.0
+  libboost-nowide-dev libboost-nowide1.74-dev libboost-nowide1.74.0
+  libboost-numpy-dev libboost-numpy1.74-dev libboost-numpy1.74.0
+  libboost-program-options-dev libboost-program-options1.74-dev
+  libboost-program-options1.74.0 libboost-python-dev libboost-python1.74-dev
+  libboost-python1.74.0 libboost-random-dev libboost-random1.74-dev
+  libboost-random1.74.0 libboost-regex-dev libboost-regex1.74-dev
+  libboost-regex1.74.0 libboost-serialization-dev
+  libboost-serialization1.74-dev libboost-serialization1.74.0
+  libboost-stacktrace-dev libboost-stacktrace1.74-dev
+  libboost-stacktrace1.74.0 libboost-system-dev libboost-system1.74-dev
+  libboost-system1.74.0 libboost-test-dev libboost-test1.74-dev
+  libboost-test1.74.0 libboost-thread-dev libboost-thread1.74-dev
+  libboost-thread1.74.0 libboost-timer-dev libboost-timer1.74-dev
+  libboost-timer1.74.0 libboost-tools-dev libboost-type-erasure-dev
+  libboost-type-erasure1.74-dev libboost-type-erasure1.74.0 libboost-wave-dev
+  libboost-wave1.74-dev libboost-wave1.74.0 libboost1.74-dev
+  libboost1.74-tools-dev libbsd0 libcbor0.8 libcurl4 libdebhelper-perl
+  libedit2 libeigen3-dev libelf1 libevent-2.1-7 libevent-core-2.1-7
+  libevent-dev libevent-extra-2.1-7 libevent-openssl-2.1-7
+  libevent-pthreads-2.1-7 libexpat1-dev libfabric1 libfakeroot libfido2-1
+  libfile-stripnondeterminism-perl libgfortran-12-dev libgfortran5
+  libhwloc-dev libhwloc-plugins libhwloc15 libibverbs-dev libibverbs1
+  libicu-dev libicu72 libjs-jquery libjs-jquery-ui libjs-sphinxdoc
+  libjs-underscore libjsoncpp25 libltdl-dev libltdl7 libmagic-mgc libmagic1
+  libmunge2 libncursesw6 libnl-3-200 libnl-3-dev libnl-route-3-200
+  libnl-route-3-dev libnuma-dev libnuma1 libopenmpi-dev libopenmpi3
+  libpciaccess0 libpipeline1 libpkgconf3 libpmix-dev libpmix2 libproc2-0
+  libpsm-infinipath1 libpsm2-2 libpython3-dev libpython3-stdlib libpython3.11
+  libpython3.11-dev libpython3.11-minimal libpython3.11-stdlib librdmacm1
+  libreadline8 librhash0 libsqlite3-0 libsub-override-perl libtool
+  libuchardet0 libucx0 libuv1 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6
+  libxext6 libxml2 libxnvctrl0 m4 man-db media-types mpi-default-bin
+  mpi-default-dev ocl-icd-libopencl1 openmpi-bin openmpi-common openssh-client
+  pkg-config pkgconf pkgconf-bin po-debconf procps python3 python3-dev
+  python3-distutils python3-lib2to3 python3-minimal python3.11 python3.11-dev
+  python3.11-minimal readline-common ros-one-ros-environment
+  ros-one-setup-files sensible-utils zlib1g-dev
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev gfortran-12-multilib gfortran-12-doc libcoarrays-dev groff
+  lrzip libboost-doc graphviz libboost1.74-doc gccxml
+  libboost-contract1.74-dev libmpfrc++-dev libntl-dev xsltproc doxygen
+  docbook-xml docbook-xsl default-jdk fop libeigen3-doc
+  libhwloc-contrib-plugins icu-doc libjs-jquery-ui-docs libtool-doc
+  openmpi-doc pciutils gcj-jdk m4-doc apparmor less www-browser opencl-icd
+  gfortran | fortran-compiler keychain libpam-ssh monkeysphere ssh-askpass
+  libmail-box-perl python3-doc python3-tk python3-venv python3.11-venv
+  python3.11-doc binfmt-support readline-doc
+Recommended packages:
+  curl | wget | lynx libarchive-cpio-perl javascript-common libgpm2
+  libcoarrays-openmpi-dev xauth libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper dh-autoreconf dh-strip-nondeterminism dumb-init dwz fakeroot file
+  gettext gettext-base gfortran-12 groff-base ibverbs-providers icu-devtools
+  intltool-debian libarchive-zip-perl libarchive13 libboost-all-dev
+  libboost-atomic-dev libboost-atomic1.74-dev libboost-atomic1.74.0
+  libboost-chrono-dev libboost-chrono1.74-dev libboost-chrono1.74.0
+  libboost-container-dev libboost-container1.74-dev libboost-container1.74.0
+  libboost-context-dev libboost-context1.74-dev libboost-context1.74.0
+  libboost-coroutine-dev libboost-coroutine1.74-dev libboost-coroutine1.74.0
+  libboost-date-time-dev libboost-date-time1.74-dev libboost-date-time1.74.0
+  libboost-dev libboost-exception-dev libboost-exception1.74-dev
+  libboost-fiber-dev libboost-fiber1.74-dev libboost-fiber1.74.0
+  libboost-filesystem-dev libboost-filesystem1.74-dev
+  libboost-filesystem1.74.0 libboost-graph-dev libboost-graph-parallel-dev
+  libboost-graph-parallel1.74-dev libboost-graph-parallel1.74.0
+  libboost-graph1.74-dev libboost-graph1.74.0 libboost-iostreams-dev
+  libboost-iostreams1.74-dev libboost-iostreams1.74.0 libboost-locale-dev
+  libboost-locale1.74-dev libboost-locale1.74.0 libboost-log-dev
+  libboost-log1.74-dev libboost-log1.74.0 libboost-math-dev
+  libboost-math1.74-dev libboost-math1.74.0 libboost-mpi-dev
+  libboost-mpi-python-dev libboost-mpi-python1.74-dev
+  libboost-mpi-python1.74.0 libboost-mpi1.74-dev libboost-mpi1.74.0
+  libboost-nowide-dev libboost-nowide1.74-dev libboost-nowide1.74.0
+  libboost-numpy-dev libboost-numpy1.74-dev libboost-numpy1.74.0
+  libboost-program-options-dev libboost-program-options1.74-dev
+  libboost-program-options1.74.0 libboost-python-dev libboost-python1.74-dev
+  libboost-python1.74.0 libboost-random-dev libboost-random1.74-dev
+  libboost-random1.74.0 libboost-regex-dev libboost-regex1.74-dev
+  libboost-regex1.74.0 libboost-serialization-dev
+  libboost-serialization1.74-dev libboost-serialization1.74.0
+  libboost-stacktrace-dev libboost-stacktrace1.74-dev
+  libboost-stacktrace1.74.0 libboost-system-dev libboost-system1.74-dev
+  libboost-system1.74.0 libboost-test-dev libboost-test1.74-dev
+  libboost-test1.74.0 libboost-thread-dev libboost-thread1.74-dev
+  libboost-thread1.74.0 libboost-timer-dev libboost-timer1.74-dev
+  libboost-timer1.74.0 libboost-tools-dev libboost-type-erasure-dev
+  libboost-type-erasure1.74-dev libboost-type-erasure1.74.0 libboost-wave-dev
+  libboost-wave1.74-dev libboost-wave1.74.0 libboost1.74-dev
+  libboost1.74-tools-dev libbsd0 libcbor0.8 libcurl4 libdebhelper-perl
+  libedit2 libeigen3-dev libelf1 libevent-2.1-7 libevent-core-2.1-7
+  libevent-dev libevent-extra-2.1-7 libevent-openssl-2.1-7
+  libevent-pthreads-2.1-7 libexpat1-dev libfabric1 libfakeroot libfido2-1
+  libfile-stripnondeterminism-perl libgfortran-12-dev libgfortran5
+  libhwloc-dev libhwloc-plugins libhwloc15 libibverbs-dev libibverbs1
+  libicu-dev libicu72 libjs-jquery libjs-jquery-ui libjs-sphinxdoc
+  libjs-underscore libjsoncpp25 libltdl-dev libltdl7 libmagic-mgc libmagic1
+  libmunge2 libncursesw6 libnl-3-200 libnl-3-dev libnl-route-3-200
+  libnl-route-3-dev libnuma-dev libnuma1 libopenmpi-dev libopenmpi3
+  libpciaccess0 libpipeline1 libpkgconf3 libpmix-dev libpmix2 libproc2-0
+  libpsm-infinipath1 libpsm2-2 libpython3-dev libpython3-stdlib libpython3.11
+  libpython3.11-dev libpython3.11-minimal libpython3.11-stdlib librdmacm1
+  libreadline8 librhash0 libsqlite3-0 libsub-override-perl libtool
+  libuchardet0 libucx0 libuv1 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6
+  libxext6 libxml2 libxnvctrl0 m4 man-db media-types mpi-default-bin
+  mpi-default-dev ocl-icd-libopencl1 openmpi-bin openmpi-common openssh-client
+  pkg-config pkgconf pkgconf-bin po-debconf procps python3 python3-dev
+  python3-distutils python3-lib2to3 python3-minimal python3.11 python3.11-dev
+  python3.11-minimal readline-common ros-one-ros-environment
+  ros-one-setup-files sbuild-build-depends-main-dummy sensible-utils
+  zlib1g-dev
+0 upgraded, 225 newly installed, 0 to remove and 0 not upgraded.
+Need to get 115 MB/115 MB of archives.
+After this operation, 675 MB of additional disk space will be used.
+Get:1 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ ros-one-setup-files 0-2026.04.04.03.46 [10.7 kB]
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [932 B]
+Get:3 file:/<<BUILDDIR>>/resolver-rj8Dm2/apt_archive ./ ros-one-ros-environment 1.3.2-5-gee6d167-2026.04.04.03.46 [5872 B]
+Get:4 http://security.debian.org/debian-security bookworm-security/main amd64 libmunge2 amd64 0.5.15-2+deb12u1 [19.7 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-minimal amd64 3.11.2-6+deb12u6 [817 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 python3.11-minimal amd64 3.11.2-6+deb12u6 [2064 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 python3-minimal amd64 3.11.2-1+b1 [26.3 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 media-types all 10.0.0 [26.1 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 readline-common all 8.2-1.3 [69.0 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libreadline8 amd64 8.2-1.3 [166 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2+deb12u2 [839 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-stdlib amd64 3.11.2-6+deb12u6 [1798 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 python3.11 amd64 3.11.2-6+deb12u6 [573 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libpython3-stdlib amd64 3.11.2-1+b1 [9312 B]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 python3 amd64 3.11.2-1+b1 [26.3 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libproc2-0 amd64 2:4.0.2-3 [62.8 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 procps amd64 2:4.0.2-3 [709 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+Get:20 http://deb.debian.org/debian bookworm/main amd64 libmagic-mgc amd64 1:5.44-3 [305 kB]
+Get:21 http://deb.debian.org/debian bookworm/main amd64 libmagic1 amd64 1:5.44-3 [104 kB]
+Get:22 http://deb.debian.org/debian bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB]
+Get:23 http://deb.debian.org/debian bookworm/main amd64 gettext-base amd64 0.21-12 [160 kB]
+Get:24 http://deb.debian.org/debian bookworm/main amd64 libuchardet0 amd64 0.0.7-1 [67.8 kB]
+Get:25 http://deb.debian.org/debian bookworm/main amd64 groff-base amd64 1.22.4-10 [916 kB]
+Get:26 http://deb.debian.org/debian bookworm/main amd64 bsdextrautils amd64 2.38.1-5+deb12u3 [87.0 kB]
+Get:27 http://deb.debian.org/debian bookworm/main amd64 libpipeline1 amd64 1.5.7-1 [38.5 kB]
+Get:28 http://deb.debian.org/debian bookworm/main amd64 man-db amd64 2.11.2-2 [1386 kB]
+Get:29 http://deb.debian.org/debian bookworm/main amd64 libbsd0 amd64 0.11.7-2 [117 kB]
+Get:30 http://deb.debian.org/debian bookworm/main amd64 libedit2 amd64 3.1-20221030-2 [93.0 kB]
+Get:31 http://deb.debian.org/debian bookworm/main amd64 libcbor0.8 amd64 0.8.0-2+b1 [27.4 kB]
+Get:32 http://deb.debian.org/debian bookworm/main amd64 libfido2-1 amd64 1.12.0-2+b1 [77.2 kB]
+Get:33 http://deb.debian.org/debian bookworm/main amd64 openssh-client amd64 1:9.2p1-2+deb12u7 [992 kB]
+Get:34 http://deb.debian.org/debian bookworm/main amd64 m4 amd64 1.4.19-3 [287 kB]
+Get:35 http://deb.debian.org/debian bookworm/main amd64 autoconf all 2.71-3 [332 kB]
+Get:36 http://deb.debian.org/debian bookworm/main amd64 autotools-dev all 20220109.1 [51.6 kB]
+Get:37 http://deb.debian.org/debian bookworm/main amd64 automake all 1:1.16.5-1.3 [823 kB]
+Get:38 http://deb.debian.org/debian bookworm/main amd64 autopoint all 0.21-12 [495 kB]
+Get:39 http://deb.debian.org/debian bookworm/main amd64 libicu72 amd64 72.1-3+deb12u1 [9376 kB]
+Get:40 http://deb.debian.org/debian bookworm/main amd64 libxml2 amd64 2.9.14+dfsg-1.3~deb12u5 [688 kB]
+Get:41 http://deb.debian.org/debian bookworm/main amd64 libarchive13 amd64 3.6.2-1+deb12u3 [343 kB]
+Get:42 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u14 [392 kB]
+Get:43 http://deb.debian.org/debian bookworm/main amd64 libjsoncpp25 amd64 1.9.5-4 [78.6 kB]
+Get:44 http://deb.debian.org/debian bookworm/main amd64 librhash0 amd64 1.4.3-3 [134 kB]
+Get:45 http://deb.debian.org/debian bookworm/main amd64 libuv1 amd64 1.44.2-1+deb12u1 [136 kB]
+Get:46 http://deb.debian.org/debian bookworm/main amd64 cmake-data all 3.25.1-1 [2026 kB]
+Get:47 http://deb.debian.org/debian bookworm/main amd64 cmake amd64 3.25.1-1 [8692 kB]
+Get:48 http://deb.debian.org/debian bookworm/main amd64 libdebhelper-perl all 13.11.4 [81.2 kB]
+Get:49 http://deb.debian.org/debian bookworm/main amd64 libtool all 2.4.7-7~deb12u1 [517 kB]
+Get:50 http://deb.debian.org/debian bookworm/main amd64 dh-autoreconf all 20 [17.1 kB]
+Get:51 http://deb.debian.org/debian bookworm/main amd64 libarchive-zip-perl all 1.68-1 [104 kB]
+Get:52 http://deb.debian.org/debian bookworm/main amd64 libsub-override-perl all 0.09-4 [9304 B]
+Get:53 http://deb.debian.org/debian bookworm/main amd64 libfile-stripnondeterminism-perl all 1.13.1-1 [19.4 kB]
+Get:54 http://deb.debian.org/debian bookworm/main amd64 dh-strip-nondeterminism all 1.13.1-1 [8620 B]
+Get:55 http://deb.debian.org/debian bookworm/main amd64 libelf1 amd64 0.188-2.1 [174 kB]
+Get:56 http://deb.debian.org/debian bookworm/main amd64 dwz amd64 0.15-1 [109 kB]
+Get:57 http://deb.debian.org/debian bookworm/main amd64 gettext amd64 0.21-12 [1300 kB]
+Get:58 http://deb.debian.org/debian bookworm/main amd64 intltool-debian all 0.35.0+20060710.6 [22.9 kB]
+Get:59 http://deb.debian.org/debian bookworm/main amd64 po-debconf all 1.0.21+nmu1 [248 kB]
+Get:60 http://deb.debian.org/debian bookworm/main amd64 debhelper all 13.11.4 [942 kB]
+Get:61 http://deb.debian.org/debian bookworm/main amd64 dumb-init amd64 1.2.5-2 [14.1 kB]
+Get:62 http://deb.debian.org/debian bookworm/main amd64 libfakeroot amd64 1.31-1.2 [28.3 kB]
+Get:63 http://deb.debian.org/debian bookworm/main amd64 fakeroot amd64 1.31-1.2 [66.9 kB]
+Get:64 http://deb.debian.org/debian bookworm/main amd64 libgfortran5 amd64 12.2.0-14+deb12u1 [793 kB]
+Get:65 http://deb.debian.org/debian bookworm/main amd64 libgfortran-12-dev amd64 12.2.0-14+deb12u1 [834 kB]
+Get:66 http://deb.debian.org/debian bookworm/main amd64 gfortran-12 amd64 12.2.0-14+deb12u1 [10.2 MB]
+Get:67 http://deb.debian.org/debian bookworm/main amd64 libnl-3-200 amd64 3.7.0-0.2+b1 [63.1 kB]
+Get:68 http://deb.debian.org/debian bookworm/main amd64 libnl-route-3-200 amd64 3.7.0-0.2+b1 [185 kB]
+Get:69 http://deb.debian.org/debian bookworm/main amd64 libibverbs1 amd64 44.0-2 [60.7 kB]
+Get:70 http://deb.debian.org/debian bookworm/main amd64 ibverbs-providers amd64 44.0-2 [335 kB]
+Get:71 http://deb.debian.org/debian bookworm/main amd64 icu-devtools amd64 72.1-3+deb12u1 [206 kB]
+Get:72 http://deb.debian.org/debian bookworm/main amd64 libboost1.74-dev amd64 1.74.0+ds1-21 [9508 kB]
+Get:73 http://deb.debian.org/debian bookworm/main amd64 libboost-dev amd64 1.74.0.3 [4548 B]
+Get:74 http://deb.debian.org/debian bookworm/main amd64 libboost1.74-tools-dev amd64 1.74.0+ds1-21 [1428 kB]
+Get:75 http://deb.debian.org/debian bookworm/main amd64 libboost-tools-dev amd64 1.74.0.3 [4508 B]
+Get:76 http://deb.debian.org/debian bookworm/main amd64 libboost-atomic1.74.0 amd64 1.74.0+ds1-21 [220 kB]
+Get:77 http://deb.debian.org/debian bookworm/main amd64 libboost-atomic1.74-dev amd64 1.74.0+ds1-21 [221 kB]
+Get:78 http://deb.debian.org/debian bookworm/main amd64 libboost-atomic-dev amd64 1.74.0.3 [4640 B]
+Get:79 http://deb.debian.org/debian bookworm/main amd64 libboost-chrono1.74.0 amd64 1.74.0+ds1-21 [228 kB]
+Get:80 http://deb.debian.org/debian bookworm/main amd64 libboost-chrono1.74-dev amd64 1.74.0+ds1-21 [235 kB]
+Get:81 http://deb.debian.org/debian bookworm/main amd64 libboost-chrono-dev amd64 1.74.0.3 [4960 B]
+Get:82 http://deb.debian.org/debian bookworm/main amd64 libboost-container1.74.0 amd64 1.74.0+ds1-21 [246 kB]
+Get:83 http://deb.debian.org/debian bookworm/main amd64 libboost-container1.74-dev amd64 1.74.0+ds1-21 [250 kB]
+Get:84 http://deb.debian.org/debian bookworm/main amd64 libboost-container-dev amd64 1.74.0.3 [4812 B]
+Get:85 http://deb.debian.org/debian bookworm/main amd64 libboost-date-time1.74.0 amd64 1.74.0+ds1-21 [217 kB]
+Get:86 http://deb.debian.org/debian bookworm/main amd64 libboost-serialization1.74.0 amd64 1.74.0+ds1-21 [317 kB]
+Get:87 http://deb.debian.org/debian bookworm/main amd64 libboost-serialization1.74-dev amd64 1.74.0+ds1-21 [359 kB]
+Get:88 http://deb.debian.org/debian bookworm/main amd64 libboost-date-time1.74-dev amd64 1.74.0+ds1-21 [226 kB]
+Get:89 http://deb.debian.org/debian bookworm/main amd64 libboost-system1.74.0 amd64 1.74.0+ds1-21 [218 kB]
+Get:90 http://deb.debian.org/debian bookworm/main amd64 libboost-system1.74-dev amd64 1.74.0+ds1-21 [219 kB]
+Get:91 http://deb.debian.org/debian bookworm/main amd64 libboost-thread1.74.0 amd64 1.74.0+ds1-21 [257 kB]
+Get:92 http://deb.debian.org/debian bookworm/main amd64 libboost-thread1.74-dev amd64 1.74.0+ds1-21 [267 kB]
+Get:93 http://deb.debian.org/debian bookworm/main amd64 libboost-context1.74.0 amd64 1.74.0+ds1-21 [219 kB]
+Get:94 http://deb.debian.org/debian bookworm/main amd64 libboost-context1.74-dev amd64 1.74.0+ds1-21 [220 kB]
+Get:95 http://deb.debian.org/debian bookworm/main amd64 libboost-context-dev amd64 1.74.0.3 [4540 B]
+Get:96 http://deb.debian.org/debian bookworm/main amd64 libboost-coroutine1.74.0 amd64 1.74.0+ds1-21 [234 kB]
+Get:97 http://deb.debian.org/debian bookworm/main amd64 libboost-coroutine1.74-dev amd64 1.74.0+ds1-21 [241 kB]
+Get:98 http://deb.debian.org/debian bookworm/main amd64 libboost-coroutine-dev amd64 1.74.0.3 [4608 B]
+Get:99 http://deb.debian.org/debian bookworm/main amd64 libboost-date-time-dev amd64 1.74.0.3 [4332 B]
+Get:100 http://deb.debian.org/debian bookworm/main amd64 libboost-exception1.74-dev amd64 1.74.0+ds1-21 [217 kB]
+Get:101 http://deb.debian.org/debian bookworm/main amd64 libboost-exception-dev amd64 1.74.0.3 [4320 B]
+Get:102 http://deb.debian.org/debian bookworm/main amd64 libboost-filesystem1.74.0 amd64 1.74.0+ds1-21 [258 kB]
+Get:103 http://deb.debian.org/debian bookworm/main amd64 libboost-filesystem1.74-dev amd64 1.74.0+ds1-21 [279 kB]
+Get:104 http://deb.debian.org/debian bookworm/main amd64 libboost-fiber1.74.0 amd64 1.74.0+ds1-21 [240 kB]
+Get:105 http://deb.debian.org/debian bookworm/main amd64 libboost-fiber1.74-dev amd64 1.74.0+ds1-21 [251 kB]
+Get:106 http://deb.debian.org/debian bookworm/main amd64 libboost-fiber-dev amd64 1.74.0.3 [4764 B]
+Get:107 http://deb.debian.org/debian bookworm/main amd64 libboost-filesystem-dev amd64 1.74.0.3 [4368 B]
+Get:108 http://deb.debian.org/debian bookworm/main amd64 libboost-regex1.74.0 amd64 1.74.0+ds1-21 [487 kB]
+Get:109 http://deb.debian.org/debian bookworm/main amd64 libboost-graph1.74.0 amd64 1.74.0+ds1-21 [301 kB]
+Get:110 http://deb.debian.org/debian bookworm/main amd64 libicu-dev amd64 72.1-3+deb12u1 [10.3 MB]
+Get:111 http://deb.debian.org/debian bookworm/main amd64 libboost-regex1.74-dev amd64 1.74.0+ds1-21 [557 kB]
+Get:112 http://deb.debian.org/debian bookworm/main amd64 libboost-test1.74.0 amd64 1.74.0+ds1-21 [453 kB]
+Get:113 http://deb.debian.org/debian bookworm/main amd64 libboost-test1.74-dev amd64 1.74.0+ds1-21 [526 kB]
+Get:114 http://deb.debian.org/debian bookworm/main amd64 libboost-graph1.74-dev amd64 1.74.0+ds1-21 [1480 kB]
+Get:115 http://deb.debian.org/debian bookworm/main amd64 libboost-graph-dev amd64 1.74.0.3 [4436 B]
+Get:116 http://deb.debian.org/debian bookworm/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-8 [131 kB]
+Get:117 http://deb.debian.org/debian bookworm/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-8 [53.6 kB]
+Get:118 http://deb.debian.org/debian bookworm/main amd64 libpsm-infinipath1 amd64 3.3+20.604758e7-6.2 [168 kB]
+Get:119 http://deb.debian.org/debian bookworm/main amd64 libnuma1 amd64 2.0.16-1 [21.0 kB]
+Get:120 http://deb.debian.org/debian bookworm/main amd64 libpsm2-2 amd64 11.2.185-2 [180 kB]
+Get:121 http://deb.debian.org/debian bookworm/main amd64 librdmacm1 amd64 44.0-2 [68.6 kB]
+Get:122 http://deb.debian.org/debian bookworm/main amd64 libfabric1 amd64 1.17.0-3 [627 kB]
+Get:123 http://deb.debian.org/debian bookworm/main amd64 libhwloc15 amd64 2.9.0-1 [154 kB]
+Get:124 http://deb.debian.org/debian bookworm/main amd64 libpciaccess0 amd64 0.17-2 [51.4 kB]
+Get:125 http://deb.debian.org/debian bookworm/main amd64 libxau6 amd64 1:1.0.9-1 [19.7 kB]
+Get:126 http://deb.debian.org/debian bookworm/main amd64 libxdmcp6 amd64 1:1.1.2-3 [26.3 kB]
+Get:127 http://deb.debian.org/debian bookworm/main amd64 libxcb1 amd64 1.15-1 [144 kB]
+Get:128 http://deb.debian.org/debian bookworm/main amd64 libx11-data all 2:1.8.4-2+deb12u2 [292 kB]
+Get:129 http://deb.debian.org/debian bookworm/main amd64 libx11-6 amd64 2:1.8.4-2+deb12u2 [760 kB]
+Get:130 http://deb.debian.org/debian bookworm/main amd64 libxext6 amd64 2:1.3.4-1+b1 [52.9 kB]
+Get:131 http://deb.debian.org/debian bookworm/main amd64 libxnvctrl0 amd64 525.85.05-3~deb12u1 [13.5 kB]
+Get:132 http://deb.debian.org/debian bookworm/main amd64 ocl-icd-libopencl1 amd64 2.3.1-1 [43.0 kB]
+Get:133 http://deb.debian.org/debian bookworm/main amd64 libhwloc-plugins amd64 2.9.0-1 [17.5 kB]
+Get:134 http://deb.debian.org/debian bookworm/main amd64 libpmix2 amd64 4.2.2-1+deb12u1 [622 kB]
+Get:135 http://deb.debian.org/debian bookworm/main amd64 libucx0 amd64 1.13.1-1 [860 kB]
+Get:136 http://deb.debian.org/debian bookworm/main amd64 libopenmpi3 amd64 4.1.4-3+b1 [2422 kB]
+Get:137 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi1.74.0 amd64 1.74.0+ds1-21 [258 kB]
+Get:138 http://deb.debian.org/debian bookworm/main amd64 libboost-graph-parallel1.74.0 amd64 1.74.0+ds1-21 [266 kB]
+Get:139 http://deb.debian.org/debian bookworm/main amd64 libboost-graph-parallel1.74-dev amd64 1.74.0+ds1-21 [271 kB]
+Get:140 http://deb.debian.org/debian bookworm/main amd64 libboost-graph-parallel-dev amd64 1.74.0.3 [4460 B]
+Get:141 http://deb.debian.org/debian bookworm/main amd64 libboost-iostreams1.74.0 amd64 1.74.0+ds1-21 [240 kB]
+Get:142 http://deb.debian.org/debian bookworm/main amd64 libboost-iostreams1.74-dev amd64 1.74.0+ds1-21 [248 kB]
+Get:143 http://deb.debian.org/debian bookworm/main amd64 libboost-iostreams-dev amd64 1.74.0.3 [4316 B]
+Get:144 http://deb.debian.org/debian bookworm/main amd64 libboost-locale1.74.0 amd64 1.74.0+ds1-21 [449 kB]
+Get:145 http://deb.debian.org/debian bookworm/main amd64 libboost-locale1.74-dev amd64 1.74.0+ds1-21 [551 kB]
+Get:146 http://deb.debian.org/debian bookworm/main amd64 libboost-locale-dev amd64 1.74.0.3 [4660 B]
+Get:147 http://deb.debian.org/debian bookworm/main amd64 libboost-log1.74.0 amd64 1.74.0+ds1-21 [599 kB]
+Get:148 http://deb.debian.org/debian bookworm/main amd64 libboost-log1.74-dev amd64 1.74.0+ds1-21 [784 kB]
+Get:149 http://deb.debian.org/debian bookworm/main amd64 libboost-log-dev amd64 1.74.0.3 [4540 B]
+Get:150 http://deb.debian.org/debian bookworm/main amd64 libboost-math1.74.0 amd64 1.74.0+ds1-21 [490 kB]
+Get:151 http://deb.debian.org/debian bookworm/main amd64 libboost-math1.74-dev amd64 1.74.0+ds1-21 [564 kB]
+Get:152 http://deb.debian.org/debian bookworm/main amd64 libboost-math-dev amd64 1.74.0.3 [4532 B]
+Get:153 http://deb.debian.org/debian bookworm/main amd64 openmpi-common all 4.1.4-3 [167 kB]
+Get:154 http://deb.debian.org/debian bookworm/main amd64 libnl-3-dev amd64 3.7.0-0.2+b1 [104 kB]
+Get:155 http://deb.debian.org/debian bookworm/main amd64 libnl-route-3-dev amd64 3.7.0-0.2+b1 [203 kB]
+Get:156 http://deb.debian.org/debian bookworm/main amd64 libibverbs-dev amd64 44.0-2 [633 kB]
+Get:157 http://deb.debian.org/debian bookworm/main amd64 libnuma-dev amd64 2.0.16-1 [35.0 kB]
+Get:158 http://deb.debian.org/debian bookworm/main amd64 libltdl7 amd64 2.4.7-7~deb12u1 [393 kB]
+Get:159 http://deb.debian.org/debian bookworm/main amd64 libltdl-dev amd64 2.4.7-7~deb12u1 [164 kB]
+Get:160 http://deb.debian.org/debian bookworm/main amd64 libhwloc-dev amd64 2.9.0-1 [241 kB]
+Get:161 http://deb.debian.org/debian bookworm/main amd64 libevent-2.1-7 amd64 2.1.12-stable-8 [180 kB]
+Get:162 http://deb.debian.org/debian bookworm/main amd64 libevent-extra-2.1-7 amd64 2.1.12-stable-8 [107 kB]
+Get:163 http://deb.debian.org/debian bookworm/main amd64 libevent-openssl-2.1-7 amd64 2.1.12-stable-8 [60.6 kB]
+Get:164 http://deb.debian.org/debian bookworm/main amd64 libevent-dev amd64 2.1.12-stable-8 [305 kB]
+Get:165 http://deb.debian.org/debian bookworm/main amd64 zlib1g-dev amd64 1:1.2.13.dfsg-1 [916 kB]
+Get:166 http://deb.debian.org/debian bookworm/main amd64 libpmix-dev amd64 4.2.2-1+deb12u1 [902 kB]
+Get:167 http://deb.debian.org/debian bookworm/main amd64 libjs-jquery all 3.6.1+dfsg+~3.5.14-1 [326 kB]
+Get:168 http://deb.debian.org/debian bookworm/main amd64 libjs-jquery-ui all 1.13.2+dfsg-1 [250 kB]
+Get:169 http://deb.debian.org/debian bookworm/main amd64 openmpi-bin amd64 4.1.4-3+b1 [226 kB]
+Get:170 http://deb.debian.org/debian bookworm/main amd64 libopenmpi-dev amd64 4.1.4-3+b1 [970 kB]
+Get:171 http://deb.debian.org/debian bookworm/main amd64 mpi-default-dev amd64 1.14 [5548 B]
+Get:172 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi1.74-dev amd64 1.74.0+ds1-21 [277 kB]
+Get:173 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi-dev amd64 1.74.0.3 [4420 B]
+Get:174 http://deb.debian.org/debian bookworm/main amd64 libboost-python1.74.0 amd64 1.74.0+ds1-21 [289 kB]
+Get:175 http://deb.debian.org/debian bookworm/main amd64 mpi-default-bin amd64 1.14 [4752 B]
+Get:176 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi-python1.74.0 amd64 1.74.0+ds1-21 [341 kB]
+Get:177 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi-python1.74-dev amd64 1.74.0+ds1-21 [224 kB]
+Get:178 http://deb.debian.org/debian bookworm/main amd64 libboost-mpi-python-dev amd64 1.74.0.3 [4456 B]
+Get:179 http://deb.debian.org/debian bookworm/main amd64 libboost-numpy1.74.0 amd64 1.74.0+ds1-21 [229 kB]
+Get:180 http://deb.debian.org/debian bookworm/main amd64 libboost-numpy1.74-dev amd64 1.74.0+ds1-21 [232 kB]
+Get:181 http://deb.debian.org/debian bookworm/main amd64 libboost-numpy-dev amd64 1.74.0.3 [4376 B]
+Get:182 http://deb.debian.org/debian bookworm/main amd64 libboost-program-options1.74.0 amd64 1.74.0+ds1-21 [329 kB]
+Get:183 http://deb.debian.org/debian bookworm/main amd64 libboost-program-options1.74-dev amd64 1.74.0+ds1-21 [357 kB]
+Get:184 http://deb.debian.org/debian bookworm/main amd64 libboost-program-options-dev amd64 1.74.0.3 [4340 B]
+Get:185 http://deb.debian.org/debian bookworm/main amd64 libpython3.11 amd64 3.11.2-6+deb12u6 [1987 kB]
+Get:186 http://deb.debian.org/debian bookworm/main amd64 libexpat1-dev amd64 2.5.0-1+deb12u2 [151 kB]
+Get:187 http://deb.debian.org/debian bookworm/main amd64 libpython3.11-dev amd64 3.11.2-6+deb12u6 [4742 kB]
+Get:188 http://deb.debian.org/debian bookworm/main amd64 libpython3-dev amd64 3.11.2-1+b1 [9572 B]
+Get:189 http://deb.debian.org/debian bookworm/main amd64 python3.11-dev amd64 3.11.2-6+deb12u6 [615 kB]
+Get:190 http://deb.debian.org/debian bookworm/main amd64 python3-lib2to3 all 3.11.2-3 [76.3 kB]
+Get:191 http://deb.debian.org/debian bookworm/main amd64 python3-distutils all 3.11.2-3 [131 kB]
+Get:192 http://deb.debian.org/debian bookworm/main amd64 libjs-underscore all 1.13.4~dfsg+~1.11.4-3 [116 kB]
+Get:193 http://deb.debian.org/debian bookworm/main amd64 libjs-sphinxdoc all 5.3.0-4 [130 kB]
+Get:194 http://deb.debian.org/debian bookworm/main amd64 python3-dev amd64 3.11.2-1+b1 [26.2 kB]
+Get:195 http://deb.debian.org/debian bookworm/main amd64 libboost-python1.74-dev amd64 1.74.0+ds1-21 [310 kB]
+Get:196 http://deb.debian.org/debian bookworm/main amd64 libboost-python-dev amd64 1.74.0.3 [4632 B]
+Get:197 http://deb.debian.org/debian bookworm/main amd64 libboost-random1.74.0 amd64 1.74.0+ds1-21 [226 kB]
+Get:198 http://deb.debian.org/debian bookworm/main amd64 libboost-random1.74-dev amd64 1.74.0+ds1-21 [229 kB]
+Get:199 http://deb.debian.org/debian bookworm/main amd64 libboost-random-dev amd64 1.74.0.3 [4336 B]
+Get:200 http://deb.debian.org/debian bookworm/main amd64 libboost-regex-dev amd64 1.74.0.3 [4600 B]
+Get:201 http://deb.debian.org/debian bookworm/main amd64 libboost-serialization-dev amd64 1.74.0.3 [4560 B]
+Get:202 http://deb.debian.org/debian bookworm/main amd64 libboost-stacktrace1.74.0 amd64 1.74.0+ds1-21 [260 kB]
+Get:203 http://deb.debian.org/debian bookworm/main amd64 libboost-stacktrace1.74-dev amd64 1.74.0+ds1-21 [232 kB]
+Get:204 http://deb.debian.org/debian bookworm/main amd64 libboost-stacktrace-dev amd64 1.74.0.3 [4328 B]
+Get:205 http://deb.debian.org/debian bookworm/main amd64 libboost-system-dev amd64 1.74.0.3 [4468 B]
+Get:206 http://deb.debian.org/debian bookworm/main amd64 libboost-test-dev amd64 1.74.0.3 [4368 B]
+Get:207 http://deb.debian.org/debian bookworm/main amd64 libboost-thread-dev amd64 1.74.0.3 [4356 B]
+Get:208 http://deb.debian.org/debian bookworm/main amd64 libboost-timer1.74.0 amd64 1.74.0+ds1-21 [226 kB]
+Get:209 http://deb.debian.org/debian bookworm/main amd64 libboost-timer1.74-dev amd64 1.74.0+ds1-21 [229 kB]
+Get:210 http://deb.debian.org/debian bookworm/main amd64 libboost-timer-dev amd64 1.74.0.3 [4456 B]
+Get:211 http://deb.debian.org/debian bookworm/main amd64 libboost-type-erasure1.74.0 amd64 1.74.0+ds1-21 [233 kB]
+Get:212 http://deb.debian.org/debian bookworm/main amd64 libboost-type-erasure1.74-dev amd64 1.74.0+ds1-21 [236 kB]
+Get:213 http://deb.debian.org/debian bookworm/main amd64 libboost-type-erasure-dev amd64 1.74.0.3 [4428 B]
+Get:214 http://deb.debian.org/debian bookworm/main amd64 libboost-wave1.74.0 amd64 1.74.0+ds1-21 [418 kB]
+Get:215 http://deb.debian.org/debian bookworm/main amd64 libboost-wave1.74-dev amd64 1.74.0+ds1-21 [473 kB]
+Get:216 http://deb.debian.org/debian bookworm/main amd64 libboost-wave-dev amd64 1.74.0.3 [4360 B]
+Get:217 http://deb.debian.org/debian bookworm/main amd64 libboost-nowide1.74.0 amd64 1.74.0+ds1-21 [219 kB]
+Get:218 http://deb.debian.org/debian bookworm/main amd64 libboost-nowide1.74-dev amd64 1.74.0+ds1-21 [220 kB]
+Get:219 http://deb.debian.org/debian bookworm/main amd64 libboost-nowide-dev amd64 1.74.0.3 [4392 B]
+Get:220 http://deb.debian.org/debian bookworm/main amd64 libboost-all-dev amd64 1.74.0.3 [4680 B]
+Get:221 http://deb.debian.org/debian bookworm/main amd64 libpkgconf3 amd64 1.8.1-1 [36.1 kB]
+Get:222 http://deb.debian.org/debian bookworm/main amd64 pkgconf-bin amd64 1.8.1-1 [29.5 kB]
+Get:223 http://deb.debian.org/debian bookworm/main amd64 pkgconf amd64 1.8.1-1 [25.9 kB]
+Get:224 http://deb.debian.org/debian bookworm/main amd64 pkg-config amd64 1.8.1-1 [13.7 kB]
+Get:225 http://deb.debian.org/debian bookworm/main amd64 libeigen3-dev all 3.4.0-4 [1041 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 115 MB in 1s (130 MB/s)
+Selecting previously unselected package libpython3.11-minimal:amd64.
+(Reading database ... 12473 files and directories currently installed.)
+Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking libpython3.11-minimal:amd64 (3.11.2-6+deb12u6) ...
+Selecting previously unselected package python3.11-minimal.
+Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking python3.11-minimal (3.11.2-6+deb12u6) ...
+Setting up libpython3.11-minimal:amd64 (3.11.2-6+deb12u6) ...
+Setting up python3.11-minimal (3.11.2-6+deb12u6) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 12780 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.0.0_all.deb ...
+Unpacking media-types (10.0.0) ...
+Selecting previously unselected package libncursesw6:amd64.
+Preparing to unpack .../2-libncursesw6_6.4-4_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.4-4) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../3-readline-common_8.2-1.3_all.deb ...
+Unpacking readline-common (8.2-1.3) ...
+Selecting previously unselected package libreadline8:amd64.
+Preparing to unpack .../4-libreadline8_8.2-1.3_amd64.deb ...
+Unpacking libreadline8:amd64 (8.2-1.3) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../5-libsqlite3-0_3.40.1-2+deb12u2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.40.1-2+deb12u2) ...
+Selecting previously unselected package libpython3.11-stdlib:amd64.
+Preparing to unpack .../6-libpython3.11-stdlib_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking libpython3.11-stdlib:amd64 (3.11.2-6+deb12u6) ...
+Selecting previously unselected package python3.11.
+Preparing to unpack .../7-python3.11_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking python3.11 (3.11.2-6+deb12u6) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../8-libpython3-stdlib_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up python3-minimal (3.11.2-1+b1) ...
+Selecting previously unselected package python3.
+(Reading database ... 13231 files and directories currently installed.)
+Preparing to unpack .../000-python3_3.11.2-1+b1_amd64.deb ...
+Unpacking python3 (3.11.2-1+b1) ...
+Selecting previously unselected package libproc2-0:amd64.
+Preparing to unpack .../001-libproc2-0_2%3a4.0.2-3_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.2-3) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../002-procps_2%3a4.0.2-3_amd64.deb ...
+Unpacking procps (2:4.0.2-3) ...
+Selecting previously unselected package sensible-utils.
+Preparing to unpack .../003-sensible-utils_0.0.17+nmu1_all.deb ...
+Unpacking sensible-utils (0.0.17+nmu1) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../004-libmagic-mgc_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic-mgc (1:5.44-3) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../005-libmagic1_1%3a5.44-3_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.44-3) ...
+Selecting previously unselected package file.
+Preparing to unpack .../006-file_1%3a5.44-3_amd64.deb ...
+Unpacking file (1:5.44-3) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../007-gettext-base_0.21-12_amd64.deb ...
+Unpacking gettext-base (0.21-12) ...
+Selecting previously unselected package libuchardet0:amd64.
+Preparing to unpack .../008-libuchardet0_0.0.7-1_amd64.deb ...
+Unpacking libuchardet0:amd64 (0.0.7-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../009-groff-base_1.22.4-10_amd64.deb ...
+Unpacking groff-base (1.22.4-10) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../010-bsdextrautils_2.38.1-5+deb12u3_amd64.deb ...
+Unpacking bsdextrautils (2.38.1-5+deb12u3) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../011-libpipeline1_1.5.7-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.5.7-1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../012-man-db_2.11.2-2_amd64.deb ...
+Unpacking man-db (2.11.2-2) ...
+Selecting previously unselected package libbsd0:amd64.
+Preparing to unpack .../013-libbsd0_0.11.7-2_amd64.deb ...
+Unpacking libbsd0:amd64 (0.11.7-2) ...
+Selecting previously unselected package libedit2:amd64.
+Preparing to unpack .../014-libedit2_3.1-20221030-2_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20221030-2) ...
+Selecting previously unselected package libcbor0.8:amd64.
+Preparing to unpack .../015-libcbor0.8_0.8.0-2+b1_amd64.deb ...
+Unpacking libcbor0.8:amd64 (0.8.0-2+b1) ...
+Selecting previously unselected package libfido2-1:amd64.
+Preparing to unpack .../016-libfido2-1_1.12.0-2+b1_amd64.deb ...
+Unpacking libfido2-1:amd64 (1.12.0-2+b1) ...
+Selecting previously unselected package openssh-client.
+Preparing to unpack .../017-openssh-client_1%3a9.2p1-2+deb12u7_amd64.deb ...
+Unpacking openssh-client (1:9.2p1-2+deb12u7) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../018-m4_1.4.19-3_amd64.deb ...
+Unpacking m4 (1.4.19-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../019-autoconf_2.71-3_all.deb ...
+Unpacking autoconf (2.71-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../020-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../021-automake_1%3a1.16.5-1.3_all.deb ...
+Unpacking automake (1:1.16.5-1.3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../022-autopoint_0.21-12_all.deb ...
+Unpacking autopoint (0.21-12) ...
+Selecting previously unselected package libicu72:amd64.
+Preparing to unpack .../023-libicu72_72.1-3+deb12u1_amd64.deb ...
+Unpacking libicu72:amd64 (72.1-3+deb12u1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../024-libxml2_2.9.14+dfsg-1.3~deb12u5_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3~deb12u5) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../025-libarchive13_3.6.2-1+deb12u3_amd64.deb ...
+Unpacking libarchive13:amd64 (3.6.2-1+deb12u3) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../026-libcurl4_7.88.1-10+deb12u14_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u14) ...
+Selecting previously unselected package libjsoncpp25:amd64.
+Preparing to unpack .../027-libjsoncpp25_1.9.5-4_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-4) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../028-librhash0_1.4.3-3_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.3-3) ...
+Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../029-libuv1_1.44.2-1+deb12u1_amd64.deb ...
+Unpacking libuv1:amd64 (1.44.2-1+deb12u1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../030-cmake-data_3.25.1-1_all.deb ...
+Unpacking cmake-data (3.25.1-1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../031-cmake_3.25.1-1_amd64.deb ...
+Unpacking cmake (3.25.1-1) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../032-libdebhelper-perl_13.11.4_all.deb ...
+Unpacking libdebhelper-perl (13.11.4) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../033-libtool_2.4.7-7~deb12u1_all.deb ...
+Unpacking libtool (2.4.7-7~deb12u1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../034-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../035-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../036-libsub-override-perl_0.09-4_all.deb ...
+Unpacking libsub-override-perl (0.09-4) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../037-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.1-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../038-dh-strip-nondeterminism_1.13.1-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.1-1) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../039-libelf1_0.188-2.1_amd64.deb ...
+Unpacking libelf1:amd64 (0.188-2.1) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../040-dwz_0.15-1_amd64.deb ...
+Unpacking dwz (0.15-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../041-gettext_0.21-12_amd64.deb ...
+Unpacking gettext (0.21-12) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../042-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../043-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../044-debhelper_13.11.4_all.deb ...
+Unpacking debhelper (13.11.4) ...
+Selecting previously unselected package dumb-init.
+Preparing to unpack .../045-dumb-init_1.2.5-2_amd64.deb ...
+Unpacking dumb-init (1.2.5-2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../046-libfakeroot_1.31-1.2_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.31-1.2) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../047-fakeroot_1.31-1.2_amd64.deb ...
+Unpacking fakeroot (1.31-1.2) ...
+Selecting previously unselected package libgfortran5:amd64.
+Preparing to unpack .../048-libgfortran5_12.2.0-14+deb12u1_amd64.deb ...
+Unpacking libgfortran5:amd64 (12.2.0-14+deb12u1) ...
+Selecting previously unselected package libgfortran-12-dev:amd64.
+Preparing to unpack .../049-libgfortran-12-dev_12.2.0-14+deb12u1_amd64.deb ...
+Unpacking libgfortran-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Selecting previously unselected package gfortran-12.
+Preparing to unpack .../050-gfortran-12_12.2.0-14+deb12u1_amd64.deb ...
+Unpacking gfortran-12 (12.2.0-14+deb12u1) ...
+Selecting previously unselected package libnl-3-200:amd64.
+Preparing to unpack .../051-libnl-3-200_3.7.0-0.2+b1_amd64.deb ...
+Unpacking libnl-3-200:amd64 (3.7.0-0.2+b1) ...
+Selecting previously unselected package libnl-route-3-200:amd64.
+Preparing to unpack .../052-libnl-route-3-200_3.7.0-0.2+b1_amd64.deb ...
+Unpacking libnl-route-3-200:amd64 (3.7.0-0.2+b1) ...
+Selecting previously unselected package libibverbs1:amd64.
+Preparing to unpack .../053-libibverbs1_44.0-2_amd64.deb ...
+Unpacking libibverbs1:amd64 (44.0-2) ...
+Selecting previously unselected package ibverbs-providers:amd64.
+Preparing to unpack .../054-ibverbs-providers_44.0-2_amd64.deb ...
+Unpacking ibverbs-providers:amd64 (44.0-2) ...
+Selecting previously unselected package icu-devtools.
+Preparing to unpack .../055-icu-devtools_72.1-3+deb12u1_amd64.deb ...
+Unpacking icu-devtools (72.1-3+deb12u1) ...
+Selecting previously unselected package libboost1.74-dev:amd64.
+Preparing to unpack .../056-libboost1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-dev:amd64.
+Preparing to unpack .../057-libboost-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost1.74-tools-dev.
+Preparing to unpack .../058-libboost1.74-tools-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost1.74-tools-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-tools-dev.
+Preparing to unpack .../059-libboost-tools-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-tools-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-atomic1.74.0:amd64.
+Preparing to unpack .../060-libboost-atomic1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-atomic1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-atomic1.74-dev:amd64.
+Preparing to unpack .../061-libboost-atomic1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-atomic1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-atomic-dev:amd64.
+Preparing to unpack .../062-libboost-atomic-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-atomic-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-chrono1.74.0:amd64.
+Preparing to unpack .../063-libboost-chrono1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-chrono1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-chrono1.74-dev:amd64.
+Preparing to unpack .../064-libboost-chrono1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-chrono1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-chrono-dev:amd64.
+Preparing to unpack .../065-libboost-chrono-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-chrono-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-container1.74.0:amd64.
+Preparing to unpack .../066-libboost-container1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-container1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-container1.74-dev:amd64.
+Preparing to unpack .../067-libboost-container1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-container1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-container-dev:amd64.
+Preparing to unpack .../068-libboost-container-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-container-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-date-time1.74.0:amd64.
+Preparing to unpack .../069-libboost-date-time1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-date-time1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-serialization1.74.0:amd64.
+Preparing to unpack .../070-libboost-serialization1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-serialization1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-serialization1.74-dev:amd64.
+Preparing to unpack .../071-libboost-serialization1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-serialization1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-date-time1.74-dev:amd64.
+Preparing to unpack .../072-libboost-date-time1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-date-time1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-system1.74.0:amd64.
+Preparing to unpack .../073-libboost-system1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-system1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-system1.74-dev:amd64.
+Preparing to unpack .../074-libboost-system1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-system1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-thread1.74.0:amd64.
+Preparing to unpack .../075-libboost-thread1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-thread1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-thread1.74-dev:amd64.
+Preparing to unpack .../076-libboost-thread1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-thread1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-context1.74.0:amd64.
+Preparing to unpack .../077-libboost-context1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-context1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-context1.74-dev:amd64.
+Preparing to unpack .../078-libboost-context1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-context1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-context-dev:amd64.
+Preparing to unpack .../079-libboost-context-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-context-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-coroutine1.74.0:amd64.
+Preparing to unpack .../080-libboost-coroutine1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-coroutine1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-coroutine1.74-dev:amd64.
+Preparing to unpack .../081-libboost-coroutine1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-coroutine1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-coroutine-dev:amd64.
+Preparing to unpack .../082-libboost-coroutine-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-coroutine-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-date-time-dev:amd64.
+Preparing to unpack .../083-libboost-date-time-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-date-time-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-exception1.74-dev:amd64.
+Preparing to unpack .../084-libboost-exception1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-exception1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-exception-dev:amd64.
+Preparing to unpack .../085-libboost-exception-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-exception-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-filesystem1.74.0:amd64.
+Preparing to unpack .../086-libboost-filesystem1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-filesystem1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-filesystem1.74-dev:amd64.
+Preparing to unpack .../087-libboost-filesystem1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-filesystem1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-fiber1.74.0:amd64.
+Preparing to unpack .../088-libboost-fiber1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-fiber1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-fiber1.74-dev:amd64.
+Preparing to unpack .../089-libboost-fiber1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-fiber1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-fiber-dev:amd64.
+Preparing to unpack .../090-libboost-fiber-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-fiber-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-filesystem-dev:amd64.
+Preparing to unpack .../091-libboost-filesystem-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-filesystem-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-regex1.74.0:amd64.
+Preparing to unpack .../092-libboost-regex1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-regex1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph1.74.0:amd64.
+Preparing to unpack .../093-libboost-graph1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-graph1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libicu-dev:amd64.
+Preparing to unpack .../094-libicu-dev_72.1-3+deb12u1_amd64.deb ...
+Unpacking libicu-dev:amd64 (72.1-3+deb12u1) ...
+Selecting previously unselected package libboost-regex1.74-dev:amd64.
+Preparing to unpack .../095-libboost-regex1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-regex1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-test1.74.0:amd64.
+Preparing to unpack .../096-libboost-test1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-test1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-test1.74-dev:amd64.
+Preparing to unpack .../097-libboost-test1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-test1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph1.74-dev:amd64.
+Preparing to unpack .../098-libboost-graph1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-graph1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph-dev:amd64.
+Preparing to unpack .../099-libboost-graph-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-graph-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libevent-core-2.1-7:amd64.
+Preparing to unpack .../100-libevent-core-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-core-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libevent-pthreads-2.1-7:amd64.
+Preparing to unpack .../101-libevent-pthreads-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-pthreads-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libpsm-infinipath1.
+Preparing to unpack .../102-libpsm-infinipath1_3.3+20.604758e7-6.2_amd64.deb ...
+Unpacking libpsm-infinipath1 (3.3+20.604758e7-6.2) ...
+Selecting previously unselected package libnuma1:amd64.
+Preparing to unpack .../103-libnuma1_2.0.16-1_amd64.deb ...
+Unpacking libnuma1:amd64 (2.0.16-1) ...
+Selecting previously unselected package libpsm2-2.
+Preparing to unpack .../104-libpsm2-2_11.2.185-2_amd64.deb ...
+Unpacking libpsm2-2 (11.2.185-2) ...
+Selecting previously unselected package librdmacm1:amd64.
+Preparing to unpack .../105-librdmacm1_44.0-2_amd64.deb ...
+Unpacking librdmacm1:amd64 (44.0-2) ...
+Selecting previously unselected package libfabric1:amd64.
+Preparing to unpack .../106-libfabric1_1.17.0-3_amd64.deb ...
+Unpacking libfabric1:amd64 (1.17.0-3) ...
+Selecting previously unselected package libhwloc15:amd64.
+Preparing to unpack .../107-libhwloc15_2.9.0-1_amd64.deb ...
+Unpacking libhwloc15:amd64 (2.9.0-1) ...
+Selecting previously unselected package libmunge2.
+Preparing to unpack .../108-libmunge2_0.5.15-2+deb12u1_amd64.deb ...
+Unpacking libmunge2 (0.5.15-2+deb12u1) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../109-libpciaccess0_0.17-2_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-2) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../110-libxau6_1%3a1.0.9-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.9-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../111-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../112-libxcb1_1.15-1_amd64.deb ...
+Unpacking libxcb1:amd64 (1.15-1) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../113-libx11-data_2%3a1.8.4-2+deb12u2_all.deb ...
+Unpacking libx11-data (2:1.8.4-2+deb12u2) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../114-libx11-6_2%3a1.8.4-2+deb12u2_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../115-libxext6_2%3a1.3.4-1+b1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.4-1+b1) ...
+Selecting previously unselected package libxnvctrl0:amd64.
+Preparing to unpack .../116-libxnvctrl0_525.85.05-3~deb12u1_amd64.deb ...
+Unpacking libxnvctrl0:amd64 (525.85.05-3~deb12u1) ...
+Selecting previously unselected package ocl-icd-libopencl1:amd64.
+Preparing to unpack .../117-ocl-icd-libopencl1_2.3.1-1_amd64.deb ...
+Unpacking ocl-icd-libopencl1:amd64 (2.3.1-1) ...
+Selecting previously unselected package libhwloc-plugins:amd64.
+Preparing to unpack .../118-libhwloc-plugins_2.9.0-1_amd64.deb ...
+Unpacking libhwloc-plugins:amd64 (2.9.0-1) ...
+Selecting previously unselected package libpmix2:amd64.
+Preparing to unpack .../119-libpmix2_4.2.2-1+deb12u1_amd64.deb ...
+Unpacking libpmix2:amd64 (4.2.2-1+deb12u1) ...
+Selecting previously unselected package libucx0:amd64.
+Preparing to unpack .../120-libucx0_1.13.1-1_amd64.deb ...
+Unpacking libucx0:amd64 (1.13.1-1) ...
+Selecting previously unselected package libopenmpi3:amd64.
+Preparing to unpack .../121-libopenmpi3_4.1.4-3+b1_amd64.deb ...
+Unpacking libopenmpi3:amd64 (4.1.4-3+b1) ...
+Selecting previously unselected package libboost-mpi1.74.0.
+Preparing to unpack .../122-libboost-mpi1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-mpi1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph-parallel1.74.0.
+Preparing to unpack .../123-libboost-graph-parallel1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-graph-parallel1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph-parallel1.74-dev.
+Preparing to unpack .../124-libboost-graph-parallel1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-graph-parallel1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-graph-parallel-dev.
+Preparing to unpack .../125-libboost-graph-parallel-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-graph-parallel-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-iostreams1.74.0:amd64.
+Preparing to unpack .../126-libboost-iostreams1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-iostreams1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-iostreams1.74-dev:amd64.
+Preparing to unpack .../127-libboost-iostreams1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-iostreams1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-iostreams-dev:amd64.
+Preparing to unpack .../128-libboost-iostreams-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-iostreams-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-locale1.74.0:amd64.
+Preparing to unpack .../129-libboost-locale1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-locale1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-locale1.74-dev:amd64.
+Preparing to unpack .../130-libboost-locale1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-locale1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-locale-dev:amd64.
+Preparing to unpack .../131-libboost-locale-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-locale-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-log1.74.0.
+Preparing to unpack .../132-libboost-log1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-log1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-log1.74-dev.
+Preparing to unpack .../133-libboost-log1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-log1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-log-dev.
+Preparing to unpack .../134-libboost-log-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-log-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-math1.74.0:amd64.
+Preparing to unpack .../135-libboost-math1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-math1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-math1.74-dev:amd64.
+Preparing to unpack .../136-libboost-math1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-math1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-math-dev:amd64.
+Preparing to unpack .../137-libboost-math-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-math-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package openmpi-common.
+Preparing to unpack .../138-openmpi-common_4.1.4-3_all.deb ...
+Unpacking openmpi-common (4.1.4-3) ...
+Selecting previously unselected package libnl-3-dev:amd64.
+Preparing to unpack .../139-libnl-3-dev_3.7.0-0.2+b1_amd64.deb ...
+Unpacking libnl-3-dev:amd64 (3.7.0-0.2+b1) ...
+Selecting previously unselected package libnl-route-3-dev:amd64.
+Preparing to unpack .../140-libnl-route-3-dev_3.7.0-0.2+b1_amd64.deb ...
+Unpacking libnl-route-3-dev:amd64 (3.7.0-0.2+b1) ...
+Selecting previously unselected package libibverbs-dev:amd64.
+Preparing to unpack .../141-libibverbs-dev_44.0-2_amd64.deb ...
+Unpacking libibverbs-dev:amd64 (44.0-2) ...
+Selecting previously unselected package libnuma-dev:amd64.
+Preparing to unpack .../142-libnuma-dev_2.0.16-1_amd64.deb ...
+Unpacking libnuma-dev:amd64 (2.0.16-1) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../143-libltdl7_2.4.7-7~deb12u1_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.7-7~deb12u1) ...
+Selecting previously unselected package libltdl-dev:amd64.
+Preparing to unpack .../144-libltdl-dev_2.4.7-7~deb12u1_amd64.deb ...
+Unpacking libltdl-dev:amd64 (2.4.7-7~deb12u1) ...
+Selecting previously unselected package libhwloc-dev:amd64.
+Preparing to unpack .../145-libhwloc-dev_2.9.0-1_amd64.deb ...
+Unpacking libhwloc-dev:amd64 (2.9.0-1) ...
+Selecting previously unselected package libevent-2.1-7:amd64.
+Preparing to unpack .../146-libevent-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libevent-extra-2.1-7:amd64.
+Preparing to unpack .../147-libevent-extra-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-extra-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libevent-openssl-2.1-7:amd64.
+Preparing to unpack .../148-libevent-openssl-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-openssl-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libevent-dev.
+Preparing to unpack .../149-libevent-dev_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-dev (2.1.12-stable-8) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../150-zlib1g-dev_1%3a1.2.13.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Selecting previously unselected package libpmix-dev:amd64.
+Preparing to unpack .../151-libpmix-dev_4.2.2-1+deb12u1_amd64.deb ...
+Unpacking libpmix-dev:amd64 (4.2.2-1+deb12u1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../152-libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb ...
+Unpacking libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Selecting previously unselected package libjs-jquery-ui.
+Preparing to unpack .../153-libjs-jquery-ui_1.13.2+dfsg-1_all.deb ...
+Unpacking libjs-jquery-ui (1.13.2+dfsg-1) ...
+Selecting previously unselected package openmpi-bin.
+Preparing to unpack .../154-openmpi-bin_4.1.4-3+b1_amd64.deb ...
+Unpacking openmpi-bin (4.1.4-3+b1) ...
+Selecting previously unselected package libopenmpi-dev:amd64.
+Preparing to unpack .../155-libopenmpi-dev_4.1.4-3+b1_amd64.deb ...
+Unpacking libopenmpi-dev:amd64 (4.1.4-3+b1) ...
+Selecting previously unselected package mpi-default-dev.
+Preparing to unpack .../156-mpi-default-dev_1.14_amd64.deb ...
+Unpacking mpi-default-dev (1.14) ...
+Selecting previously unselected package libboost-mpi1.74-dev.
+Preparing to unpack .../157-libboost-mpi1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-mpi1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-mpi-dev.
+Preparing to unpack .../158-libboost-mpi-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-mpi-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-python1.74.0.
+Preparing to unpack .../159-libboost-python1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-python1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package mpi-default-bin.
+Preparing to unpack .../160-mpi-default-bin_1.14_amd64.deb ...
+Unpacking mpi-default-bin (1.14) ...
+Selecting previously unselected package libboost-mpi-python1.74.0.
+Preparing to unpack .../161-libboost-mpi-python1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-mpi-python1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-mpi-python1.74-dev.
+Preparing to unpack .../162-libboost-mpi-python1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-mpi-python1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-mpi-python-dev.
+Preparing to unpack .../163-libboost-mpi-python-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-mpi-python-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-numpy1.74.0.
+Preparing to unpack .../164-libboost-numpy1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-numpy1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-numpy1.74-dev.
+Preparing to unpack .../165-libboost-numpy1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-numpy1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-numpy-dev.
+Preparing to unpack .../166-libboost-numpy-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-numpy-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-program-options1.74.0:amd64.
+Preparing to unpack .../167-libboost-program-options1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-program-options1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-program-options1.74-dev:amd64.
+Preparing to unpack .../168-libboost-program-options1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-program-options1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-program-options-dev:amd64.
+Preparing to unpack .../169-libboost-program-options-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-program-options-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libpython3.11:amd64.
+Preparing to unpack .../170-libpython3.11_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking libpython3.11:amd64 (3.11.2-6+deb12u6) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../171-libexpat1-dev_2.5.0-1+deb12u2_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.5.0-1+deb12u2) ...
+Selecting previously unselected package libpython3.11-dev:amd64.
+Preparing to unpack .../172-libpython3.11-dev_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking libpython3.11-dev:amd64 (3.11.2-6+deb12u6) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../173-libpython3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.11.2-1+b1) ...
+Selecting previously unselected package python3.11-dev.
+Preparing to unpack .../174-python3.11-dev_3.11.2-6+deb12u6_amd64.deb ...
+Unpacking python3.11-dev (3.11.2-6+deb12u6) ...
+Selecting previously unselected package python3-lib2to3.
+Preparing to unpack .../175-python3-lib2to3_3.11.2-3_all.deb ...
+Unpacking python3-lib2to3 (3.11.2-3) ...
+Selecting previously unselected package python3-distutils.
+Preparing to unpack .../176-python3-distutils_3.11.2-3_all.deb ...
+Unpacking python3-distutils (3.11.2-3) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../177-libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb ...
+Unpacking libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../178-libjs-sphinxdoc_5.3.0-4_all.deb ...
+Unpacking libjs-sphinxdoc (5.3.0-4) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../179-python3-dev_3.11.2-1+b1_amd64.deb ...
+Unpacking python3-dev (3.11.2-1+b1) ...
+Selecting previously unselected package libboost-python1.74-dev.
+Preparing to unpack .../180-libboost-python1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-python1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-python-dev.
+Preparing to unpack .../181-libboost-python-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-python-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-random1.74.0:amd64.
+Preparing to unpack .../182-libboost-random1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-random1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-random1.74-dev:amd64.
+Preparing to unpack .../183-libboost-random1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-random1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-random-dev:amd64.
+Preparing to unpack .../184-libboost-random-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-random-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-regex-dev:amd64.
+Preparing to unpack .../185-libboost-regex-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-regex-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-serialization-dev:amd64.
+Preparing to unpack .../186-libboost-serialization-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-serialization-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-stacktrace1.74.0:amd64.
+Preparing to unpack .../187-libboost-stacktrace1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-stacktrace1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-stacktrace1.74-dev:amd64.
+Preparing to unpack .../188-libboost-stacktrace1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-stacktrace1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-stacktrace-dev:amd64.
+Preparing to unpack .../189-libboost-stacktrace-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-stacktrace-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-system-dev:amd64.
+Preparing to unpack .../190-libboost-system-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-system-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-test-dev:amd64.
+Preparing to unpack .../191-libboost-test-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-test-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-thread-dev:amd64.
+Preparing to unpack .../192-libboost-thread-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-thread-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-timer1.74.0:amd64.
+Preparing to unpack .../193-libboost-timer1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-timer1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-timer1.74-dev:amd64.
+Preparing to unpack .../194-libboost-timer1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-timer1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-timer-dev:amd64.
+Preparing to unpack .../195-libboost-timer-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-timer-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-type-erasure1.74.0:amd64.
+Preparing to unpack .../196-libboost-type-erasure1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-type-erasure1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-type-erasure1.74-dev:amd64.
+Preparing to unpack .../197-libboost-type-erasure1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-type-erasure1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-type-erasure-dev:amd64.
+Preparing to unpack .../198-libboost-type-erasure-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-type-erasure-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-wave1.74.0:amd64.
+Preparing to unpack .../199-libboost-wave1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-wave1.74.0:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-wave1.74-dev:amd64.
+Preparing to unpack .../200-libboost-wave1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-wave1.74-dev:amd64 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-wave-dev:amd64.
+Preparing to unpack .../201-libboost-wave-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-wave-dev:amd64 (1.74.0.3) ...
+Selecting previously unselected package libboost-nowide1.74.0.
+Preparing to unpack .../202-libboost-nowide1.74.0_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-nowide1.74.0 (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-nowide1.74-dev.
+Preparing to unpack .../203-libboost-nowide1.74-dev_1.74.0+ds1-21_amd64.deb ...
+Unpacking libboost-nowide1.74-dev (1.74.0+ds1-21) ...
+Selecting previously unselected package libboost-nowide-dev.
+Preparing to unpack .../204-libboost-nowide-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-nowide-dev (1.74.0.3) ...
+Selecting previously unselected package libboost-all-dev.
+Preparing to unpack .../205-libboost-all-dev_1.74.0.3_amd64.deb ...
+Unpacking libboost-all-dev (1.74.0.3) ...
+Selecting previously unselected package libpkgconf3:amd64.
+Preparing to unpack .../206-libpkgconf3_1.8.1-1_amd64.deb ...
+Unpacking libpkgconf3:amd64 (1.8.1-1) ...
+Selecting previously unselected package pkgconf-bin.
+Preparing to unpack .../207-pkgconf-bin_1.8.1-1_amd64.deb ...
+Unpacking pkgconf-bin (1.8.1-1) ...
+Selecting previously unselected package pkgconf:amd64.
+Preparing to unpack .../208-pkgconf_1.8.1-1_amd64.deb ...
+Unpacking pkgconf:amd64 (1.8.1-1) ...
+Selecting previously unselected package pkg-config:amd64.
+Preparing to unpack .../209-pkg-config_1.8.1-1_amd64.deb ...
+Unpacking pkg-config:amd64 (1.8.1-1) ...
+Selecting previously unselected package libeigen3-dev.
+Preparing to unpack .../210-libeigen3-dev_3.4.0-4_all.deb ...
+Unpacking libeigen3-dev (3.4.0-4) ...
+Selecting previously unselected package ros-one-setup-files.
+Preparing to unpack .../211-ros-one-setup-files_0-2026.04.04.03.46_amd64.deb ...
+Unpacking ros-one-setup-files (0-2026.04.04.03.46) ...
+Selecting previously unselected package ros-one-ros-environment.
+Preparing to unpack .../212-ros-one-ros-environment_1.3.2-5-gee6d167-2026.04.04.03.46_amd64.deb ...
+Unpacking ros-one-ros-environment (1.3.2-5-gee6d167-2026.04.04.03.46) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../213-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up libboost-chrono1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up media-types (10.0.0) ...
+Setting up dumb-init (1.2.5-2) ...
+Setting up libpipeline1:amd64 (1.5.7-1) ...
+Setting up libboost-system1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libpciaccess0:amd64 (0.17-2) ...
+Setting up libxau6:amd64 (1:1.0.9-1) ...
+Setting up libboost1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libicu72:amd64 (72.1-3+deb12u1) ...
+Setting up libboost-atomic1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up bsdextrautils (2.38.1-5+deb12u3) ...
+Setting up libmagic-mgc (1:5.44-3) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libboost-iostreams1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-program-options1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libcbor0.8:amd64 (0.8.0-2+b1) ...
+Setting up libdebhelper-perl (13.11.4) ...
+Setting up libboost-chrono1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libsqlite3-0:amd64 (3.40.1-2+deb12u2) ...
+Setting up libboost-stacktrace1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libmagic1:amd64 (1:5.44-3) ...
+Setting up gettext-base (0.21-12) ...
+Setting up m4 (1.4.19-3) ...
+Setting up libboost-nowide1.74.0 (1.74.0+ds1-21) ...
+Setting up libboost-filesystem1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-exception1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up file (1:5.44-3) ...
+Setting up libboost-exception-dev:amd64 (1.74.0.3) ...
+Setting up libfakeroot:amd64 (1.31-1.2) ...
+Setting up libboost-program-options1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up fakeroot (1.31-1.2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up autotools-dev (20220109.1) ...
+Setting up libpkgconf3:amd64 (1.8.1-1) ...
+Setting up libuv1:amd64 (1.44.2-1+deb12u1) ...
+Setting up libmunge2 (0.5.15-2+deb12u1) ...
+Setting up libexpat1-dev:amd64 (2.5.0-1+deb12u2) ...
+Setting up libboost-test1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-program-options-dev:amd64 (1.74.0.3) ...
+Setting up libx11-data (2:1.8.4-2+deb12u2) ...
+Setting up libboost-system1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-nowide1.74-dev (1.74.0+ds1-21) ...
+Setting up libboost-regex1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libproc2-0:amd64 (2:4.0.2-3) ...
+Setting up libhwloc15:amd64 (2.9.0-1) ...
+Setting up libevent-core-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up libboost-context1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libevent-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up libboost-graph1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-random1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up autopoint (0.21-12) ...
+Setting up libjsoncpp25:amd64 (1.9.5-4) ...
+Setting up icu-devtools (72.1-3+deb12u1) ...
+Setting up libboost1.74-tools-dev (1.74.0+ds1-21) ...
+Setting up pkgconf-bin (1.8.1-1) ...
+Setting up libncursesw6:amd64 (6.4-4) ...
+Setting up libltdl7:amd64 (2.4.7-7~deb12u1) ...
+Setting up libgfortran5:amd64 (12.2.0-14+deb12u1) ...
+Setting up autoconf (2.71-3) ...
+Setting up libboost-atomic1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-math1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-serialization1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up zlib1g-dev:amd64 (1:1.2.13.dfsg-1) ...
+Setting up libboost-atomic-dev:amd64 (1.74.0.3) ...
+Setting up libnuma1:amd64 (2.0.16-1) ...
+Setting up libboost-container1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up sensible-utils (0.0.17+nmu1) ...
+Setting up ocl-icd-libopencl1:amd64 (2.3.1-1) ...
+Setting up librhash0:amd64 (1.4.3-3) ...
+Setting up libuchardet0:amd64 (0.0.7-1) ...
+Setting up procps (2:4.0.2-3) ...
+Setting up libnl-3-200:amd64 (3.7.0-0.2+b1) ...
+Setting up libpsm2-2 (11.2.185-2) ...
+Setting up openmpi-common (4.1.4-3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u14) ...
+Setting up libsub-override-perl (0.09-4) ...
+Setting up cmake-data (3.25.1-1) ...
+Setting up libboost-dev:amd64 (1.74.0.3) ...
+Setting up libboost-math1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libpsm-infinipath1 (3.3+20.604758e7-6.2) ...
+update-alternatives: using /usr/lib/libpsm1/libpsm_infinipath.so.1.16 to provide /usr/lib/x86_64-linux-gnu/libpsm_infinipath.so.1 (libpsm_infinipath.so.1) in auto mode
+Setting up libboost-filesystem1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libjs-jquery (3.6.1+dfsg+~3.5.14-1) ...
+Setting up libboost-date-time1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libfido2-1:amd64 (1.12.0-2+b1) ...
+Setting up libboost-python1.74.0 (1.74.0+ds1-21) ...
+Setting up libboost-fiber1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-stacktrace1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-test1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libbsd0:amd64 (0.11.7-2) ...
+Setting up libelf1:amd64 (0.188-2.1) ...
+Setting up readline-common (8.2-1.3) ...
+Setting up libboost-timer1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libicu-dev:amd64 (72.1-3+deb12u1) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3~deb12u5) ...
+Setting up libboost-filesystem-dev:amd64 (1.74.0.3) ...
+Setting up libjs-underscore (1.13.4~dfsg+~1.11.4-3) ...
+Setting up libboost-thread1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-numpy1.74.0 (1.74.0+ds1-21) ...
+Setting up libevent-pthreads-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up automake (1:1.16.5-1.3) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.13.1-1) ...
+Setting up libboost-log1.74.0 (1.74.0+ds1-21) ...
+Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
+Setting up libevent-extra-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up libxcb1:amd64 (1.15-1) ...
+Setting up gettext (0.21-12) ...
+Setting up libtool (2.4.7-7~deb12u1) ...
+Setting up libboost-container1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libarchive13:amd64 (3.6.2-1+deb12u3) ...
+Setting up libboost-chrono-dev:amd64 (1.74.0.3) ...
+Setting up libboost-math-dev:amd64 (1.74.0.3) ...
+Setting up libboost-coroutine1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libedit2:amd64 (3.1-20221030-2) ...
+Setting up libreadline8:amd64 (8.2-1.3) ...
+Setting up libboost-system-dev:amd64 (1.74.0.3) ...
+Setting up libevent-openssl-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up libboost-tools-dev (1.74.0.3) ...
+Setting up libgfortran-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Setting up libboost-nowide-dev (1.74.0.3) ...
+Setting up libboost-container-dev:amd64 (1.74.0.3) ...
+Setting up pkgconf:amd64 (1.8.1-1) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up libnuma-dev:amd64 (2.0.16-1) ...
+Setting up libnl-route-3-200:amd64 (3.7.0-0.2+b1) ...
+Setting up libboost-test-dev:amd64 (1.74.0.3) ...
+Setting up dh-autoreconf (20) ...
+Setting up libltdl-dev:amd64 (2.4.7-7~deb12u1) ...
+Setting up gfortran-12 (12.2.0-14+deb12u1) ...
+Setting up libjs-jquery-ui (1.13.2+dfsg-1) ...
+Setting up libevent-dev (2.1.12-stable-8) ...
+Setting up libboost-random1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libeigen3-dev (3.4.0-4) ...
+Setting up libboost-timer1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-numpy1.74-dev (1.74.0+ds1-21) ...
+Setting up pkg-config:amd64 (1.8.1-1) ...
+Setting up libjs-sphinxdoc (5.3.0-4) ...
+Setting up libboost-serialization1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up dh-strip-nondeterminism (1.13.1-1) ...
+Setting up libboost-wave1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up dwz (0.15-1) ...
+Setting up libboost-regex1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libnl-3-dev:amd64 (3.7.0-0.2+b1) ...
+Setting up groff-base (1.22.4-10) ...
+Setting up libboost-stacktrace-dev:amd64 (1.74.0.3) ...
+Setting up cmake (3.25.1-1) ...
+Setting up libx11-6:amd64 (2:1.8.4-2+deb12u2) ...
+Setting up libhwloc-dev:amd64 (2.9.0-1) ...
+Setting up libboost-locale1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-regex-dev:amd64 (1.74.0.3) ...
+Setting up libboost-timer-dev:amd64 (1.74.0.3) ...
+Setting up libboost-type-erasure1.74.0:amd64 (1.74.0+ds1-21) ...
+Setting up libibverbs1:amd64 (44.0-2) ...
+Setting up libboost-wave1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up ibverbs-providers:amd64 (44.0-2) ...
+Setting up openssh-client (1:9.2p1-2+deb12u7) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up libpython3.11-stdlib:amd64 (3.11.2-6+deb12u6) ...
+Setting up libxext6:amd64 (2:1.3.4-1+b1) ...
+Setting up libboost-random-dev:amd64 (1.74.0.3) ...
+Setting up libboost-wave-dev:amd64 (1.74.0.3) ...
+Setting up man-db (2.11.2-2) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libxnvctrl0:amd64 (525.85.05-3~deb12u1) ...
+Setting up libboost-iostreams1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libnl-route-3-dev:amd64 (3.7.0-0.2+b1) ...
+Setting up libboost-date-time1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-graph1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-numpy-dev (1.74.0.3) ...
+Setting up libboost-serialization-dev:amd64 (1.74.0.3) ...
+Setting up libboost-date-time-dev:amd64 (1.74.0.3) ...
+Setting up libboost-thread1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-thread-dev:amd64 (1.74.0.3) ...
+Setting up libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+Setting up librdmacm1:amd64 (44.0-2) ...
+Setting up libboost-graph-dev:amd64 (1.74.0.3) ...
+Setting up python3.11 (3.11.2-6+deb12u6) ...
+Setting up libucx0:amd64 (1.13.1-1) ...
+Setting up libboost-log1.74-dev (1.74.0+ds1-21) ...
+Setting up libpython3.11:amd64 (3.11.2-6+deb12u6) ...
+Setting up debhelper (13.11.4) ...
+Setting up python3 (3.11.2-1+b1) ...
+Setting up libboost-iostreams-dev:amd64 (1.74.0.3) ...
+Setting up libibverbs-dev:amd64 (44.0-2) ...
+Setting up libhwloc-plugins:amd64 (2.9.0-1) ...
+Setting up libboost-context1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-fiber1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-type-erasure1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libpython3.11-dev:amd64 (3.11.2-6+deb12u6) ...
+Setting up libboost-locale1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-coroutine1.74-dev:amd64 (1.74.0+ds1-21) ...
+Setting up libboost-coroutine-dev:amd64 (1.74.0.3) ...
+Setting up python3-lib2to3 (3.11.2-3) ...
+Setting up libboost-log-dev (1.74.0.3) ...
+Setting up libboost-fiber-dev:amd64 (1.74.0.3) ...
+Setting up python3-distutils (3.11.2-3) ...
+Setting up libfabric1:amd64 (1.17.0-3) ...
+Setting up libpython3-dev:amd64 (3.11.2-1+b1) ...
+Setting up libpmix2:amd64 (4.2.2-1+deb12u1) ...
+Setting up python3.11-dev (3.11.2-6+deb12u6) ...
+Setting up libopenmpi3:amd64 (4.1.4-3+b1) ...
+Setting up libboost-mpi1.74.0 (1.74.0+ds1-21) ...
+Setting up libboost-locale-dev:amd64 (1.74.0.3) ...
+Setting up libboost-context-dev:amd64 (1.74.0.3) ...
+Setting up libboost-type-erasure-dev:amd64 (1.74.0.3) ...
+Setting up python3-dev (3.11.2-1+b1) ...
+Setting up libboost-graph-parallel1.74.0 (1.74.0+ds1-21) ...
+Setting up libpmix-dev:amd64 (4.2.2-1+deb12u1) ...
+Setting up openmpi-bin (4.1.4-3+b1) ...
+update-alternatives: using /usr/bin/mpirun.openmpi to provide /usr/bin/mpirun (mpirun) in auto mode
+update-alternatives: using /usr/bin/mpicc.openmpi to provide /usr/bin/mpicc (mpi) in auto mode
+Setting up mpi-default-bin (1.14) ...
+Setting up libboost-python1.74-dev (1.74.0+ds1-21) ...
+Setting up libboost-python-dev (1.74.0.3) ...
+Setting up ros-one-setup-files (0-2026.04.04.03.46) ...
+Setting up ros-one-ros-environment (1.3.2-5-gee6d167-2026.04.04.03.46) ...
+Setting up libboost-graph-parallel1.74-dev (1.74.0+ds1-21) ...
+Setting up libopenmpi-dev:amd64 (4.1.4-3+b1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/openmpi/include to provide /usr/include/x86_64-linux-gnu/mpi (mpi-x86_64-linux-gnu) in auto mode
+Setting up libboost-mpi-python1.74.0 (1.74.0+ds1-21) ...
+Setting up libboost-graph-parallel-dev (1.74.0.3) ...
+Setting up mpi-default-dev (1.14) ...
+Setting up libboost-mpi1.74-dev (1.74.0+ds1-21) ...
+Setting up libboost-mpi-python1.74-dev (1.74.0+ds1-21) ...
+Setting up libboost-mpi-python-dev (1.74.0.3) ...
+Setting up libboost-mpi-dev (1.74.0.3) ...
+Setting up libboost-all-dev (1.74.0.3) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for ccache (4.8+really4.7.5-1) ...
+Updating symlinks in /usr/lib/ccache ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                          Sat, 04 Apr 2026 04:00:40 +0000 |
++------------------------------------------------------------------------------+
+
+Arch check ok (amd64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                            Sat, 04 Apr 2026 04:00:41 +0000 |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.17.0-1008-azure #8~24.04.1-Ubuntu SMP Mon Jan 26 18:35:40 UTC 2026 amd64 (x86_64)
+Toolchain package versions: binutils_2.40-2 dpkg-dev_1.21.22 g++-12_12.2.0-14+deb12u1 gcc-12_12.2.0-14+deb12u1 libc6-dev_2.36-9+deb12u13 libstdc++-12-dev_12.2.0-14+deb12u1 libstdc++6_12.2.0-14+deb12u1 linux-libc-dev_6.1.164-1
+Package versions: adduser_3.134 apt_2.6.1 autoconf_2.71-3 automake_1:1.16.5-1.3 autopoint_0.21-12 autotools-dev_20220109.1 base-files_12.4+deb12u13 base-passwd_3.6.1 bash_5.2.15-2+b10 binutils_2.40-2 binutils-common_2.40-2 binutils-x86-64-linux-gnu_2.40-2 bsdextrautils_2.38.1-5+deb12u3 bsdutils_1:2.38.1-5+deb12u3 build-essential_12.9 bzip2_1.0.8-5+b1 ca-certificates_20230311+deb12u1 ccache_4.8+really4.7.5-1 cmake_3.25.1-1 cmake-data_3.25.1-1 coreutils_9.1-1 cpp_4:12.2.0-3 cpp-12_12.2.0-14+deb12u1 dash_0.5.12-2 debconf_1.5.82 debhelper_13.11.4 debian-archive-keyring_2023.3+deb12u2 debianutils_5.7-0.5~deb12u1 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.8-4 dpkg_1.21.22 dpkg-dev_1.21.22 dumb-init_1.2.5-2 dwz_0.15-1 fakeroot_1.31-1.2 file_1:5.44-3 findutils_4.9.0-4 g++_4:12.2.0-3 g++-12_12.2.0-14+deb12u1 gcc_4:12.2.0-3 gcc-12_12.2.0-14+deb12u1 gcc-12-base_12.2.0-14+deb12u1 gettext_0.21-12 gettext-base_0.21-12 gfortran-12_12.2.0-14+deb12u1 git_1:2.39.5-0+deb12u3 git-man_1:2.39.5-0+deb12u3 gpgv_2.2.40-1.1+deb12u2 grep_3.8-5 groff-base_1.22.4-10 gzip_1.12-1 hostname_3.23+nmu1 ibverbs-providers_44.0-2 icu-devtools_72.1-3+deb12u1 init-system-helpers_1.65.2+deb12u1 intltool-debian_0.35.0+20060710.6 libacl1_2.3.1-3 libapt-pkg6.0_2.6.1 libarchive-zip-perl_1.68-1 libarchive13_3.6.2-1+deb12u3 libasan8_12.2.0-14+deb12u1 libatomic1_12.2.0-14+deb12u1 libattr1_1:2.5.1-4 libaudit-common_1:3.0.9-1 libaudit1_1:3.0.9-1 libbinutils_2.40-2 libblkid1_2.38.1-5+deb12u3 libboost-all-dev_1.74.0.3 libboost-atomic-dev_1.74.0.3 libboost-atomic1.74-dev_1.74.0+ds1-21 libboost-atomic1.74.0_1.74.0+ds1-21 libboost-chrono-dev_1.74.0.3 libboost-chrono1.74-dev_1.74.0+ds1-21 libboost-chrono1.74.0_1.74.0+ds1-21 libboost-container-dev_1.74.0.3 libboost-container1.74-dev_1.74.0+ds1-21 libboost-container1.74.0_1.74.0+ds1-21 libboost-context-dev_1.74.0.3 libboost-context1.74-dev_1.74.0+ds1-21 libboost-context1.74.0_1.74.0+ds1-21 libboost-coroutine-dev_1.74.0.3 libboost-coroutine1.74-dev_1.74.0+ds1-21 libboost-coroutine1.74.0_1.74.0+ds1-21 libboost-date-time-dev_1.74.0.3 libboost-date-time1.74-dev_1.74.0+ds1-21 libboost-date-time1.74.0_1.74.0+ds1-21 libboost-dev_1.74.0.3 libboost-exception-dev_1.74.0.3 libboost-exception1.74-dev_1.74.0+ds1-21 libboost-fiber-dev_1.74.0.3 libboost-fiber1.74-dev_1.74.0+ds1-21 libboost-fiber1.74.0_1.74.0+ds1-21 libboost-filesystem-dev_1.74.0.3 libboost-filesystem1.74-dev_1.74.0+ds1-21 libboost-filesystem1.74.0_1.74.0+ds1-21 libboost-graph-dev_1.74.0.3 libboost-graph-parallel-dev_1.74.0.3 libboost-graph-parallel1.74-dev_1.74.0+ds1-21 libboost-graph-parallel1.74.0_1.74.0+ds1-21 libboost-graph1.74-dev_1.74.0+ds1-21 libboost-graph1.74.0_1.74.0+ds1-21 libboost-iostreams-dev_1.74.0.3 libboost-iostreams1.74-dev_1.74.0+ds1-21 libboost-iostreams1.74.0_1.74.0+ds1-21 libboost-locale-dev_1.74.0.3 libboost-locale1.74-dev_1.74.0+ds1-21 libboost-locale1.74.0_1.74.0+ds1-21 libboost-log-dev_1.74.0.3 libboost-log1.74-dev_1.74.0+ds1-21 libboost-log1.74.0_1.74.0+ds1-21 libboost-math-dev_1.74.0.3 libboost-math1.74-dev_1.74.0+ds1-21 libboost-math1.74.0_1.74.0+ds1-21 libboost-mpi-dev_1.74.0.3 libboost-mpi-python-dev_1.74.0.3 libboost-mpi-python1.74-dev_1.74.0+ds1-21 libboost-mpi-python1.74.0_1.74.0+ds1-21 libboost-mpi1.74-dev_1.74.0+ds1-21 libboost-mpi1.74.0_1.74.0+ds1-21 libboost-nowide-dev_1.74.0.3 libboost-nowide1.74-dev_1.74.0+ds1-21 libboost-nowide1.74.0_1.74.0+ds1-21 libboost-numpy-dev_1.74.0.3 libboost-numpy1.74-dev_1.74.0+ds1-21 libboost-numpy1.74.0_1.74.0+ds1-21 libboost-program-options-dev_1.74.0.3 libboost-program-options1.74-dev_1.74.0+ds1-21 libboost-program-options1.74.0_1.74.0+ds1-21 libboost-python-dev_1.74.0.3 libboost-python1.74-dev_1.74.0+ds1-21 libboost-python1.74.0_1.74.0+ds1-21 libboost-random-dev_1.74.0.3 libboost-random1.74-dev_1.74.0+ds1-21 libboost-random1.74.0_1.74.0+ds1-21 libboost-regex-dev_1.74.0.3 libboost-regex1.74-dev_1.74.0+ds1-21 libboost-regex1.74.0_1.74.0+ds1-21 libboost-serialization-dev_1.74.0.3 libboost-serialization1.74-dev_1.74.0+ds1-21 libboost-serialization1.74.0_1.74.0+ds1-21 libboost-stacktrace-dev_1.74.0.3 libboost-stacktrace1.74-dev_1.74.0+ds1-21 libboost-stacktrace1.74.0_1.74.0+ds1-21 libboost-system-dev_1.74.0.3 libboost-system1.74-dev_1.74.0+ds1-21 libboost-system1.74.0_1.74.0+ds1-21 libboost-test-dev_1.74.0.3 libboost-test1.74-dev_1.74.0+ds1-21 libboost-test1.74.0_1.74.0+ds1-21 libboost-thread-dev_1.74.0.3 libboost-thread1.74-dev_1.74.0+ds1-21 libboost-thread1.74.0_1.74.0+ds1-21 libboost-timer-dev_1.74.0.3 libboost-timer1.74-dev_1.74.0+ds1-21 libboost-timer1.74.0_1.74.0+ds1-21 libboost-tools-dev_1.74.0.3 libboost-type-erasure-dev_1.74.0.3 libboost-type-erasure1.74-dev_1.74.0+ds1-21 libboost-type-erasure1.74.0_1.74.0+ds1-21 libboost-wave-dev_1.74.0.3 libboost-wave1.74-dev_1.74.0+ds1-21 libboost-wave1.74.0_1.74.0+ds1-21 libboost1.74-dev_1.74.0+ds1-21 libboost1.74-tools-dev_1.74.0+ds1-21 libbrotli1_1.0.9-2+b6 libbsd0_0.11.7-2 libbz2-1.0_1.0.8-5+b1 libc-bin_2.36-9+deb12u13 libc-dev-bin_2.36-9+deb12u13 libc6_2.36-9+deb12u13 libc6-dev_2.36-9+deb12u13 libcap-ng0_0.8.3-1+b3 libcap2_1:2.66-4+deb12u2+b2 libcbor0.8_0.8.0-2+b1 libcc1-0_12.2.0-14+deb12u1 libcom-err2_1.47.0-2+b2 libcrypt-dev_1:4.4.33-2 libcrypt1_1:4.4.33-2 libctf-nobfd0_2.40-2 libctf0_2.40-2 libcurl3-gnutls_7.88.1-10+deb12u14 libcurl4_7.88.1-10+deb12u14 libdb5.3_5.3.28+dfsg2-1 libdebconfclient0_0.270 libdebhelper-perl_13.11.4 libdpkg-perl_1.21.22 libedit2_3.1-20221030-2 libeigen3-dev_3.4.0-4 libelf1_0.188-2.1 liberror-perl_0.17029-2 libevent-2.1-7_2.1.12-stable-8 libevent-core-2.1-7_2.1.12-stable-8 libevent-dev_2.1.12-stable-8 libevent-extra-2.1-7_2.1.12-stable-8 libevent-openssl-2.1-7_2.1.12-stable-8 libevent-pthreads-2.1-7_2.1.12-stable-8 libexpat1_2.5.0-1+deb12u2 libexpat1-dev_2.5.0-1+deb12u2 libfabric1_1.17.0-3 libfakeroot_1.31-1.2 libffi8_3.4.4-1 libfido2-1_1.12.0-2+b1 libfile-find-rule-perl_0.34-4~deb12u1 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-12-dev_12.2.0-14+deb12u1 libgcc-s1_12.2.0-14+deb12u1 libgcrypt20_1.10.1-3 libgdbm-compat4_1.23-3 libgdbm6_1.23-3 libgfortran-12-dev_12.2.0-14+deb12u1 libgfortran5_12.2.0-14+deb12u1 libgmp10_2:6.2.1+dfsg1-1.1 libgnutls30_3.7.9-2+deb12u6 libgomp1_12.2.0-14+deb12u1 libgpg-error0_1.46-1 libgprofng0_2.40-2 libgssapi-krb5-2_1.20.1-2+deb12u4 libhiredis0.14_0.14.1-3 libhogweed6_3.8.1-2 libhwloc-dev_2.9.0-1 libhwloc-plugins_2.9.0-1 libhwloc15_2.9.0-1 libibverbs-dev_44.0-2 libibverbs1_44.0-2 libicu-dev_72.1-3+deb12u1 libicu72_72.1-3+deb12u1 libidn2-0_2.3.3-1+b1 libisl23_0.25-1.1 libitm1_12.2.0-14+deb12u1 libjansson4_2.14-2 libjs-jquery_3.6.1+dfsg+~3.5.14-1 libjs-jquery-ui_1.13.2+dfsg-1 libjs-sphinxdoc_5.3.0-4 libjs-underscore_1.13.4~dfsg+~1.11.4-3 libjsoncpp25_1.9.5-4 libk5crypto3_1.20.1-2+deb12u4 libkeyutils1_1.6.3-2 libkrb5-3_1.20.1-2+deb12u4 libkrb5support0_1.20.1-2+deb12u4 libldap-2.5-0_2.5.13+dfsg-5 liblsan0_12.2.0-14+deb12u1 libltdl-dev_2.4.7-7~deb12u1 libltdl7_2.4.7-7~deb12u1 liblz4-1_1.9.4-1 liblzma5_5.4.1-1 libmagic-mgc_1:5.44-3 libmagic1_1:5.44-3 libmd0_1.0.4-2 libmount1_2.38.1-5+deb12u3 libmpc3_1.3.1-1 libmpfr6_4.2.0-1 libmunge2_0.5.15-2+deb12u1 libncursesw6_6.4-4 libnettle8_3.8.1-2 libnghttp2-14_1.52.0-1+deb12u2 libnl-3-200_3.7.0-0.2+b1 libnl-3-dev_3.7.0-0.2+b1 libnl-route-3-200_3.7.0-0.2+b1 libnl-route-3-dev_3.7.0-0.2+b1 libnsl-dev_1.3.0-2 libnsl2_1.3.0-2 libnuma-dev_2.0.16-1 libnuma1_2.0.16-1 libnumber-compare-perl_0.03-3 libopenmpi-dev_4.1.4-3+b1 libopenmpi3_4.1.4-3+b1 libp11-kit0_0.24.1-2 libpam-modules_1.5.2-6+deb12u2 libpam-modules-bin_1.5.2-6+deb12u2 libpam-runtime_1.5.2-6+deb12u2 libpam0g_1.5.2-6+deb12u2 libpciaccess0_0.17-2 libpcre2-8-0_10.42-1 libperl5.36_5.36.0-7+deb12u3 libpipeline1_1.5.7-1 libpkgconf3_1.8.1-1 libpmix-dev_4.2.2-1+deb12u1 libpmix2_4.2.2-1+deb12u1 libproc2-0_2:4.0.2-3 libpsl5_0.21.2-1 libpsm-infinipath1_3.3+20.604758e7-6.2 libpsm2-2_11.2.185-2 libpython3-dev_3.11.2-1+b1 libpython3-stdlib_3.11.2-1+b1 libpython3.11_3.11.2-6+deb12u6 libpython3.11-dev_3.11.2-6+deb12u6 libpython3.11-minimal_3.11.2-6+deb12u6 libpython3.11-stdlib_3.11.2-6+deb12u6 libquadmath0_12.2.0-14+deb12u1 librdmacm1_44.0-2 libreadline8_8.2-1.3 librhash0_1.4.3-3 librtmp1_2.4+20151223.gitfa8646d.1-2+b2 libsasl2-2_2.1.28+dfsg-10 libsasl2-modules-db_2.1.28+dfsg-10 libseccomp2_2.5.4-1+deb12u1 libselinux1_3.4-1+b6 libsemanage-common_3.4-1 libsemanage2_3.4-1+b5 libsepol2_3.4-2.1 libsmartcols1_2.38.1-5+deb12u3 libsqlite3-0_3.40.1-2+deb12u2 libssh2-1_1.10.0-3+b1 libssl3_3.0.18-1~deb12u2 libstdc++-12-dev_12.2.0-14+deb12u1 libstdc++6_12.2.0-14+deb12u1 libsub-override-perl_0.09-4 libsystemd0_252.39-1~deb12u1 libtasn1-6_4.19.0-2+deb12u1 libtext-glob-perl_0.11-3 libtinfo6_6.4-4 libtirpc-common_1.3.3+ds-1 libtirpc-dev_1.3.3+ds-1 libtirpc3_1.3.3+ds-1 libtool_2.4.7-7~deb12u1 libtsan2_12.2.0-14+deb12u1 libubsan1_12.2.0-14+deb12u1 libuchardet0_0.0.7-1 libucx0_1.13.1-1 libudev1_252.39-1~deb12u1 libunistring2_1.0-2 libuuid1_2.38.1-5+deb12u3 libuv1_1.44.2-1+deb12u1 libx11-6_2:1.8.4-2+deb12u2 libx11-data_2:1.8.4-2+deb12u2 libxau6_1:1.0.9-1 libxcb1_1.15-1 libxdmcp6_1:1.1.2-3 libxext6_2:1.3.4-1+b1 libxml2_2.9.14+dfsg-1.3~deb12u5 libxnvctrl0_525.85.05-3~deb12u1 libxxhash0_0.8.1-1 libzstd1_1.5.4+dfsg2-5 linux-libc-dev_6.1.164-1 login_1:4.13+dfsg1-1+deb12u2 m4_1.4.19-3 make_4.3-4.1 man-db_2.11.2-2 mawk_1.3.4.20200120-3.1 media-types_10.0.0 mpi-default-bin_1.14 mpi-default-dev_1.14 ncurses-base_6.4-4 ncurses-bin_6.4-4 ocl-icd-libopencl1_2.3.1-1 openmpi-bin_4.1.4-3+b1 openmpi-common_4.1.4-3 openssh-client_1:9.2p1-2+deb12u7 openssl_3.0.18-1~deb12u2 passwd_1:4.13+dfsg1-1+deb12u2 patch_2.7.6-7 perl_5.36.0-7+deb12u3 perl-base_5.36.0-7+deb12u3 perl-modules-5.36_5.36.0-7+deb12u3 pkg-config_1.8.1-1 pkgconf_1.8.1-1 pkgconf-bin_1.8.1-1 po-debconf_1.0.21+nmu1 procps_2:4.0.2-3 python3_3.11.2-1+b1 python3-dev_3.11.2-1+b1 python3-distutils_3.11.2-3 python3-lib2to3_3.11.2-3 python3-minimal_3.11.2-1+b1 python3.11_3.11.2-6+deb12u6 python3.11-dev_3.11.2-6+deb12u6 python3.11-minimal_3.11.2-6+deb12u6 readline-common_8.2-1.3 ros-one-ros-environment_1.3.2-5-gee6d167-2026.04.04.03.46 ros-one-setup-files_0-2026.04.04.03.46 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-1 sensible-utils_0.0.17+nmu1 sysvinit-utils_3.06-4 tar_1.34+dfsg-1.2+deb12u1 usrmerge_37~deb12u1 util-linux_2.38.1-5+deb12u3 util-linux-extra_2.38.1-5+deb12u3 xz-utils_5.4.1-1 zlib1g_1:1.2.13.dfsg-1 zlib1g-dev_1:1.2.13.dfsg-1
+
++------------------------------------------------------------------------------+
+| Build                                        Sat, 04 Apr 2026 04:00:41 +0000 |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-one-libnabo
+Binary: ros-one-libnabo
+Architecture: any
+Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Maintainer: Stéphane Magnenat <stephane.magnenat@mavt.ethz.ch>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), cmake, libboost-all-dev, libeigen3-dev
+Package-List:
+ ros-one-libnabo deb misc optional arch=any
+Checksums-Sha1:
+ 991d4c9411beaf0924fb75b02bd3e17489e0c946 9566505 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.tar.gz
+Checksums-Sha256:
+ 318fddab1d6f65d4ce4364704dff81506ee9661976c7666aa0e7e9f68928f74d 9566505 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.tar.gz
+Files:
+ 328434b92a41090e9e274ba8cb787379 9566505 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.dsc)
+dpkg-source: info: extracting ros-one-libnabo in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/sbuild-nonexistent
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -Pnocheck -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-one-libnabo
+dpkg-buildpackage: info: source version 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+dpkg-buildpackage: info: source distribution bookworm
+dpkg-buildpackage: info: source changed by Stéphane Magnenat <stephane.magnenat@mavt.ethz.ch>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_auto_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_clean -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-one-libnabo.substvars debian/files
+	rm -fr -- debian/ros-one-libnabo/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_update_autotools_config -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_autoreconf -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DFETCHCONTENT_FULLY_DISCONNECTED=OFF \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/one" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/one" \
+	-DBUILD_TESTING=OFF
+	cd .obj-x86_64-linux-gnu && cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/x86_64-linux-gnu -DFETCHCONTENT_FULLY_DISCONNECTED=OFF -DCMAKE_INSTALL_PREFIX=/opt/ros/one -DCMAKE_PREFIX_PATH=/opt/ros/one -DBUILD_TESTING=OFF ..
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found package version: 1.1.2
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+OpenCL disabled, not looking for it
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+ANN not found, disabling it in benchmarks
+FLANN not found, disabling it in benchmarks
+-- Found PythonInterp: /usr/bin/python3 (found version "3.11.2") 
+Python version from interpreter is 3.11.2
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.11.so (found version "3.11.2") 
+Python libs and executable found, looking for numpy and boost::python
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python3 
+-- Could NOT find numpy (missing: PY_NUMPY) 
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    FETCHCONTENT_FULLY_DISCONNECTED
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/.obj-x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-libnabo.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_build
+	cd .obj-x86_64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/nabo.dir/build.make CMakeFiles/nabo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/nabo.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/nabo.dir/build.make CMakeFiles/nabo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[  5%] Building CXX object CMakeFiles/nabo.dir/nabo/nabo.cpp.o
+[ 11%] Building CXX object CMakeFiles/nabo.dir/nabo/brute_force_cpu.cpp.o
+[ 17%] Building CXX object CMakeFiles/nabo.dir/nabo/kdtree_cpu.cpp.o
+[ 23%] Building CXX object CMakeFiles/nabo.dir/nabo/kdtree_opencl.cpp.o
+/usr/lib/ccache/c++ -DHAVE_OPENMP -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -fPIC -fopenmp -std=gnu++11 -MD -MT CMakeFiles/nabo.dir/nabo/nabo.cpp.o -MF CMakeFiles/nabo.dir/nabo/nabo.cpp.o.d -o CMakeFiles/nabo.dir/nabo/nabo.cpp.o -c /<<BUILDDIR>>package/nabo/nabo.cpp
+/usr/lib/ccache/c++ -DHAVE_OPENMP -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -fPIC -fopenmp -std=gnu++11 -MD -MT CMakeFiles/nabo.dir/nabo/brute_force_cpu.cpp.o -MF CMakeFiles/nabo.dir/nabo/brute_force_cpu.cpp.o.d -o CMakeFiles/nabo.dir/nabo/brute_force_cpu.cpp.o -c /<<BUILDDIR>>package/nabo/brute_force_cpu.cpp
+/usr/lib/ccache/c++ -DHAVE_OPENMP -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -fPIC -fopenmp -std=gnu++11 -MD -MT CMakeFiles/nabo.dir/nabo/kdtree_cpu.cpp.o -MF CMakeFiles/nabo.dir/nabo/kdtree_cpu.cpp.o.d -o CMakeFiles/nabo.dir/nabo/kdtree_cpu.cpp.o -c /<<BUILDDIR>>package/nabo/kdtree_cpu.cpp
+/usr/lib/ccache/c++ -DHAVE_OPENMP -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -fPIC -fopenmp -std=gnu++11 -MD -MT CMakeFiles/nabo.dir/nabo/kdtree_opencl.cpp.o -MF CMakeFiles/nabo.dir/nabo/kdtree_opencl.cpp.o.d -o CMakeFiles/nabo.dir/nabo/kdtree_opencl.cpp.o -c /<<BUILDDIR>>package/nabo/kdtree_opencl.cpp
+[ 29%] Linking CXX static library libnabo.a
+/usr/bin/cmake -P CMakeFiles/nabo.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/nabo.dir/link.txt --verbose=1
+/usr/bin/ar qc libnabo.a CMakeFiles/nabo.dir/nabo/nabo.cpp.o CMakeFiles/nabo.dir/nabo/brute_force_cpu.cpp.o CMakeFiles/nabo.dir/nabo/kdtree_cpu.cpp.o CMakeFiles/nabo.dir/nabo/kdtree_opencl.cpp.o
+/usr/bin/ranlib libnabo.a
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 29%] Built target nabo
+make  -f examples/CMakeFiles/trivial.dir/build.make examples/CMakeFiles/trivial.dir/depend
+make  -f examples/CMakeFiles/usage.dir/build.make examples/CMakeFiles/usage.dir/depend
+make  -f tests/CMakeFiles/knnvalidate.dir/build.make tests/CMakeFiles/knnvalidate.dir/depend
+make  -f tests/CMakeFiles/knnbench.dir/build.make tests/CMakeFiles/knnbench.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/trivial.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnvalidate.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnbench.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/usage.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnvalidate.dir/build.make tests/CMakeFiles/knnvalidate.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnbench.dir/build.make tests/CMakeFiles/knnbench.dir/build
+make  -f examples/CMakeFiles/trivial.dir/build.make examples/CMakeFiles/trivial.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/usage.dir/build.make examples/CMakeFiles/usage.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 35%] Building CXX object tests/CMakeFiles/knnbench.dir/knnbench.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/tests/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT tests/CMakeFiles/knnbench.dir/knnbench.cpp.o -MF CMakeFiles/knnbench.dir/knnbench.cpp.o.d -o CMakeFiles/knnbench.dir/knnbench.cpp.o -c /<<BUILDDIR>>package/tests/knnbench.cpp
+[ 41%] Building CXX object examples/CMakeFiles/trivial.dir/trivial.cpp.o
+[ 47%] Building CXX object tests/CMakeFiles/knnvalidate.dir/knnvalidate.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/examples/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT examples/CMakeFiles/trivial.dir/trivial.cpp.o -MF CMakeFiles/trivial.dir/trivial.cpp.o.d -o CMakeFiles/trivial.dir/trivial.cpp.o -c /<<BUILDDIR>>package/examples/trivial.cpp
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/tests/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT tests/CMakeFiles/knnvalidate.dir/knnvalidate.cpp.o -MF CMakeFiles/knnvalidate.dir/knnvalidate.cpp.o.d -o CMakeFiles/knnvalidate.dir/knnvalidate.cpp.o -c /<<BUILDDIR>>package/tests/knnvalidate.cpp
+[ 52%] Building CXX object examples/CMakeFiles/usage.dir/usage.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/examples/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT examples/CMakeFiles/usage.dir/usage.cpp.o -MF CMakeFiles/usage.dir/usage.cpp.o.d -o CMakeFiles/usage.dir/usage.cpp.o -c /<<BUILDDIR>>package/examples/usage.cpp
+[ 58%] Linking CXX executable trivial
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/trivial.dir/link.txt --verbose=1
+[ 64%] Linking CXX executable usage
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/usage.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/trivial.dir/trivial.cpp.o -o trivial  ../libnabo.a -lgomp 
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/usage.dir/usage.cpp.o -o usage  ../libnabo.a -lgomp 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 64%] Built target trivial
+make  -f tests/CMakeFiles/knnepsilon.dir/build.make tests/CMakeFiles/knnepsilon.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnepsilon.dir/DependInfo.cmake --color=
+[ 64%] Built target usage
+make  -f tests/CMakeFiles/knnbucketsize.dir/build.make tests/CMakeFiles/knnbucketsize.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnbucketsize.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnepsilon.dir/build.make tests/CMakeFiles/knnepsilon.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnbucketsize.dir/build.make tests/CMakeFiles/knnbucketsize.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 70%] Building CXX object tests/CMakeFiles/knnepsilon.dir/knnepsilon.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/tests/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT tests/CMakeFiles/knnepsilon.dir/knnepsilon.cpp.o -MF CMakeFiles/knnepsilon.dir/knnepsilon.cpp.o.d -o CMakeFiles/knnepsilon.dir/knnepsilon.cpp.o -c /<<BUILDDIR>>package/tests/knnepsilon.cpp
+[ 76%] Building CXX object tests/CMakeFiles/knnbucketsize.dir/knnbucketsize.cpp.o
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/lib/ccache/c++  -I/<<BUILDDIR>>package/tests/.. -I/usr/include/eigen3 -I/<<BUILDDIR>>package -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra   -O3 -std=gnu++11 -MD -MT tests/CMakeFiles/knnbucketsize.dir/knnbucketsize.cpp.o -MF CMakeFiles/knnbucketsize.dir/knnbucketsize.cpp.o.d -o CMakeFiles/knnbucketsize.dir/knnbucketsize.cpp.o -c /<<BUILDDIR>>package/tests/knnbucketsize.cpp
+[ 82%] Linking CXX executable knnbench
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/knnbench.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/knnbench.dir/knnbench.cpp.o -o knnbench  ../libnabo.a -lgomp 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 82%] Built target knnbench
+[ 88%] Linking CXX executable knnepsilon
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/knnepsilon.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/knnepsilon.dir/knnepsilon.cpp.o -o knnepsilon  ../libnabo.a -lgomp 
+[ 94%] Linking CXX executable knnbucketsize
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/knnbucketsize.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/knnbucketsize.dir/knnbucketsize.cpp.o -o knnbucketsize  ../libnabo.a -lgomp 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 94%] Built target knnepsilon
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Linking CXX executable knnvalidate
+[100%] Built target knnbucketsize
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/knnvalidate.dir/link.txt --verbose=1
+/usr/lib/ccache/c++ -g -O2 -ffile-prefix-map=/<<BUILDDIR>>package=. -fstack-protector-strong -Wformat -Werror=format-security -DNDEBUG -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -Wextra CMakeFiles/knnvalidate.dir/knnvalidate.cpp.o -o knnvalidate  ../libnabo.a -lgomp 
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[100%] Built target knnvalidate
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-one-libnabo.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake --builddirectory=.obj-x86_64-linux-gnu
+   dh_testroot -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_prep -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f -- debian/ros-one-libnabo.substvars
+	rm -fr -- debian/.debhelper/generated/ros-one-libnabo/ debian/ros-one-libnabo/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-one-libnabo
+	cd .obj-x86_64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-one-libnabo AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/.obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/.obj-x86_64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/nabo.dir/build.make CMakeFiles/nabo.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles/nabo.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f CMakeFiles/nabo.dir/build.make CMakeFiles/nabo.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'CMakeFiles/nabo.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 29%] Built target nabo
+make  -f examples/CMakeFiles/trivial.dir/build.make examples/CMakeFiles/trivial.dir/depend
+make  -f examples/CMakeFiles/usage.dir/build.make examples/CMakeFiles/usage.dir/depend
+make  -f tests/CMakeFiles/knnvalidate.dir/build.make tests/CMakeFiles/knnvalidate.dir/depend
+make  -f tests/CMakeFiles/knnbench.dir/build.make tests/CMakeFiles/knnbench.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/trivial.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/examples/CMakeFiles/usage.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnvalidate.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnbench.dir/DependInfo.cmake --color=
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnvalidate.dir/build.make tests/CMakeFiles/knnvalidate.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/usage.dir/build.make examples/CMakeFiles/usage.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f examples/CMakeFiles/trivial.dir/build.make examples/CMakeFiles/trivial.dir/build
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnbench.dir/build.make tests/CMakeFiles/knnbench.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'tests/CMakeFiles/knnvalidate.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/usage.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 41%] Built target knnvalidate
+make  -f tests/CMakeFiles/knnepsilon.dir/build.make tests/CMakeFiles/knnepsilon.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'examples/CMakeFiles/trivial.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnepsilon.dir/DependInfo.cmake --color=
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'tests/CMakeFiles/knnbench.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 52%] Built target usage
+make  -f tests/CMakeFiles/knnbucketsize.dir/build.make tests/CMakeFiles/knnbucketsize.dir/depend
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+cd /<<BUILDDIR>>package/.obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /<<BUILDDIR>>package /<<BUILDDIR>>package/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/tests/CMakeFiles/knnbucketsize.dir/DependInfo.cmake --color=
+[ 64%] Built target trivial
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnepsilon.dir/build.make tests/CMakeFiles/knnepsilon.dir/build
+[ 76%] Built target knnbench
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make  -f tests/CMakeFiles/knnbucketsize.dir/build.make tests/CMakeFiles/knnbucketsize.dir/build
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'tests/CMakeFiles/knnepsilon.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for 'tests/CMakeFiles/knnbucketsize.dir/build'.
+make[4]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+[ 88%] Built target knnepsilon
+[100%] Built target knnbucketsize
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/.obj-x86_64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/lib/libnabo.a
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/include/nabo/nabo.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/include/nabo/third_party/any.hpp
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/doc/libnabo/README.md
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/libnabo/package.xml
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/lib/x86_64-linux-gnu/libnabo.a
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/libnabo/cmake/libnabo-targets.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/libnabo/cmake/libnabo-targets-none.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/libnabo/cmake/libnaboConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-one-libnabo/opt/ros/one/share/libnabo/cmake/libnaboConfigVersion.cmake
+make[2]: Leaving directory '/<<BUILDDIR>>package/.obj-x86_64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo
+	install -m0755 -d debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo
+	cp --reflink=auto -a ./README.md debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo
+	chown -R 0:0 debian/ros-one-libnabo/usr/share/doc
+	chmod -R u\+rw,go=rX debian/ros-one-libnabo/usr/share/doc
+	install -p -m0644 debian/copyright debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo/copyright
+   dh_installchangelogs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo
+	install -p -m0644 debian/.debhelper/generated/ros-one-libnabo/dh_installchangelogs.dch.trimmed debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo/changelog.Debian
+	install -p -m0644 ./CHANGELOG.rst debian/ros-one-libnabo/usr/share/doc/ros-one-libnabo/changelog
+   dh_installinit -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_perl -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_link -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_compress -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	cd debian/ros-one-libnabo
+	chmod a-x usr/share/doc/ros-one-libnabo/README.md usr/share/doc/ros-one-libnabo/changelog usr/share/doc/ros-one-libnabo/changelog.Debian
+	gzip -9nf usr/share/doc/ros-one-libnabo/README.md usr/share/doc/ros-one-libnabo/changelog usr/share/doc/ros-one-libnabo/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	find debian/ros-one-libnabo -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-one-libnabo ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-one-libnabo/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-one-libnabo/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-one-libnabo/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-one-libnabo -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+   dh_strip -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	strip --strip-debug --remove-section=.comment --remove-section=.note --enable-deterministic-archives -R .gnu.lto_\* -R .gnu.debuglto_\* -N __gnu_lto_slim -N __gnu_lto_v1 debian/ros-one-libnabo/opt/ros/one/lib/libnabo.a
+	strip --strip-debug --remove-section=.comment --remove-section=.note --enable-deterministic-archives -R .gnu.lto_\* -R .gnu.debuglto_\* -N __gnu_lto_slim -N __gnu_lto_v1 debian/ros-one-libnabo/opt/ros/one/lib/x86_64-linux-gnu/libnabo.a
+   dh_makeshlibs -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	rm -f debian/ros-one-libnabo/DEBIAN/shlibs
+	rm -f debian/ros-one-libnabo.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/one/setup.sh" ]; then . "/opt/ros/one/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-one-libnabo//opt/ros/one/lib/:/<<BUILDDIR>>package/debian/ros-one-libnabo//opt/ros/one/lib/x86_64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-libnabo/DEBIAN
+   dh_gencontrol -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-libnabo/DEBIAN
+	echo misc:Depends= >> debian/ros-one-libnabo.substvars
+	echo misc:Pre-Depends= >> debian/ros-one-libnabo.substvars
+	dpkg-gencontrol -pros-one-libnabo -ldebian/changelog -Tdebian/ros-one-libnabo.substvars -Pdebian/ros-one-libnabo
+dpkg-gencontrol: warning: Depends field of package ros-one-libnabo: substitution variable ${shlibs:Depends} used, but is not defined
+	chmod 0644 -- debian/ros-one-libnabo/DEBIAN/control
+	chown 0:0 -- debian/ros-one-libnabo/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	install -m0755 -d debian/ros-one-libnabo/DEBIAN
+	cd debian/ros-one-libnabo >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-one-libnabo/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-one-libnabo/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake -O--builddirectory=.obj-x86_64-linux-gnu
+	dpkg-deb --build debian/ros-one-libnabo ..
+dpkg-deb: building package 'ros-one-libnabo' in '../ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2026-04-04T04:01:03Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                      Sat, 04 Apr 2026 04:01:03 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.changes:
+----------------------------------------------------------------
+
+Format: 1.8
+Date: Thu, 23 May 2024 00:00:00 -0000
+Source: ros-one-libnabo
+Binary: ros-one-libnabo
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Distribution: bookworm
+Urgency: high
+Maintainer: Stéphane Magnenat <stephane.magnenat@mavt.ethz.ch>
+Changed-By: Stéphane Magnenat <stephane.magnenat@mavt.ethz.ch>
+Description:
+ ros-one-libnabo - libnabo is a fast K Nearest Neighbour library for low-dimensional
+Changes:
+ ros-one-libnabo (1.1.2-4-g0ce6ecb-2026.04.04.04.00) bookworm; urgency=high
+ .
+   * Merge pull request #137 <https://github.com/ethz-asl/libnabo/issues/137> from norlab-ulaval/github-action-api-docs
+     Add a GitHub action to upload API documentation to a webpage
+   * CMake read libnabo version from package.xml, instead of the header of nabo.h
+   * Merge pull request #136 <https://github.com/ethz-asl/libnabo/issues/136> from norlab-ulaval/release
+     Mod docker compose services for running with docker-container driver
+   * ci: update submodule to latest and mod service for docker-container driver
+   * ci: force norlab-teamcity-server release build configuration
+     [skip release]
+   * Contributors: Luc Coupal, RedLeaderOne, boxanm
+Checksums-Sha1:
+ 3f6f0325db1836adcd98309787c8a49020c1b0f8 12987 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.buildinfo
+ ed25eacaeb9237145289d931f1fc1b9524bdd9e5 95864 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+Checksums-Sha256:
+ 8cdb017014f9e30f1a18461feccfc1bd350723f20a6ce67fc6ea3d2fbb8b7f43 12987 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.buildinfo
+ b930910a851f636fe8c7d0c6b84be1f2d5b9b8d52aabe32574b5484ef0573688 95864 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+Files:
+ e45623253510b8b7f026be02e97eabf3 12987 misc optional ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.buildinfo
+ e6eb837766f56bce6ded2a0b49ed47db 95864 misc optional ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                    Sat, 04 Apr 2026 04:01:04 +0000 |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-one-libnabo
+Binary: ros-one-libnabo
+Architecture: amd64
+Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Checksums-Md5:
+ e6eb837766f56bce6ded2a0b49ed47db 95864 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+Checksums-Sha1:
+ ed25eacaeb9237145289d931f1fc1b9524bdd9e5 95864 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+Checksums-Sha256:
+ b930910a851f636fe8c7d0c6b84be1f2d5b9b8d52aabe32574b5484ef0573688 95864 ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Sat, 04 Apr 2026 04:01:03 +0000
+Build-Path: /<<BUILDDIR>>package
+Build-Tainted-By:
+ merged-usr-via-aliased-dirs
+Installed-Build-Depends:
+ adduser (= 3.134),
+ autoconf (= 2.71-3),
+ automake (= 1:1.16.5-1.3),
+ autopoint (= 0.21-12),
+ autotools-dev (= 20220109.1),
+ base-files (= 12.4+deb12u13),
+ base-passwd (= 3.6.1),
+ bash (= 5.2.15-2+b10),
+ binutils (= 2.40-2),
+ binutils-common (= 2.40-2),
+ binutils-x86-64-linux-gnu (= 2.40-2),
+ bsdextrautils (= 2.38.1-5+deb12u3),
+ bsdutils (= 1:2.38.1-5+deb12u3),
+ build-essential (= 12.9),
+ bzip2 (= 1.0.8-5+b1),
+ cmake (= 3.25.1-1),
+ cmake-data (= 3.25.1-1),
+ coreutils (= 9.1-1),
+ cpp (= 4:12.2.0-3),
+ cpp-12 (= 12.2.0-14+deb12u1),
+ dash (= 0.5.12-2),
+ debconf (= 1.5.82),
+ debhelper (= 13.11.4),
+ debianutils (= 5.7-0.5~deb12u1),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.13.1-1),
+ diffutils (= 1:3.8-4),
+ dpkg (= 1.21.22),
+ dpkg-dev (= 1.21.22),
+ dwz (= 0.15-1),
+ file (= 1:5.44-3),
+ findutils (= 4.9.0-4),
+ g++ (= 4:12.2.0-3),
+ g++-12 (= 12.2.0-14+deb12u1),
+ gcc (= 4:12.2.0-3),
+ gcc-12 (= 12.2.0-14+deb12u1),
+ gcc-12-base (= 12.2.0-14+deb12u1),
+ gettext (= 0.21-12),
+ gettext-base (= 0.21-12),
+ gfortran-12 (= 12.2.0-14+deb12u1),
+ grep (= 3.8-5),
+ groff-base (= 1.22.4-10),
+ gzip (= 1.12-1),
+ hostname (= 3.23+nmu1),
+ ibverbs-providers (= 44.0-2),
+ icu-devtools (= 72.1-3+deb12u1),
+ init-system-helpers (= 1.65.2+deb12u1),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.1-3),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13 (= 3.6.2-1+deb12u3),
+ libasan8 (= 12.2.0-14+deb12u1),
+ libatomic1 (= 12.2.0-14+deb12u1),
+ libattr1 (= 1:2.5.1-4),
+ libaudit-common (= 1:3.0.9-1),
+ libaudit1 (= 1:3.0.9-1),
+ libbinutils (= 2.40-2),
+ libblkid1 (= 2.38.1-5+deb12u3),
+ libboost-all-dev (= 1.74.0.3),
+ libboost-atomic-dev (= 1.74.0.3),
+ libboost-atomic1.74-dev (= 1.74.0+ds1-21),
+ libboost-atomic1.74.0 (= 1.74.0+ds1-21),
+ libboost-chrono-dev (= 1.74.0.3),
+ libboost-chrono1.74-dev (= 1.74.0+ds1-21),
+ libboost-chrono1.74.0 (= 1.74.0+ds1-21),
+ libboost-container-dev (= 1.74.0.3),
+ libboost-container1.74-dev (= 1.74.0+ds1-21),
+ libboost-container1.74.0 (= 1.74.0+ds1-21),
+ libboost-context-dev (= 1.74.0.3),
+ libboost-context1.74-dev (= 1.74.0+ds1-21),
+ libboost-context1.74.0 (= 1.74.0+ds1-21),
+ libboost-coroutine-dev (= 1.74.0.3),
+ libboost-coroutine1.74-dev (= 1.74.0+ds1-21),
+ libboost-coroutine1.74.0 (= 1.74.0+ds1-21),
+ libboost-date-time-dev (= 1.74.0.3),
+ libboost-date-time1.74-dev (= 1.74.0+ds1-21),
+ libboost-date-time1.74.0 (= 1.74.0+ds1-21),
+ libboost-dev (= 1.74.0.3),
+ libboost-exception-dev (= 1.74.0.3),
+ libboost-exception1.74-dev (= 1.74.0+ds1-21),
+ libboost-fiber-dev (= 1.74.0.3),
+ libboost-fiber1.74-dev (= 1.74.0+ds1-21),
+ libboost-fiber1.74.0 (= 1.74.0+ds1-21),
+ libboost-filesystem-dev (= 1.74.0.3),
+ libboost-filesystem1.74-dev (= 1.74.0+ds1-21),
+ libboost-filesystem1.74.0 (= 1.74.0+ds1-21),
+ libboost-graph-dev (= 1.74.0.3),
+ libboost-graph-parallel-dev (= 1.74.0.3),
+ libboost-graph-parallel1.74-dev (= 1.74.0+ds1-21),
+ libboost-graph-parallel1.74.0 (= 1.74.0+ds1-21),
+ libboost-graph1.74-dev (= 1.74.0+ds1-21),
+ libboost-graph1.74.0 (= 1.74.0+ds1-21),
+ libboost-iostreams-dev (= 1.74.0.3),
+ libboost-iostreams1.74-dev (= 1.74.0+ds1-21),
+ libboost-iostreams1.74.0 (= 1.74.0+ds1-21),
+ libboost-locale-dev (= 1.74.0.3),
+ libboost-locale1.74-dev (= 1.74.0+ds1-21),
+ libboost-locale1.74.0 (= 1.74.0+ds1-21),
+ libboost-log-dev (= 1.74.0.3),
+ libboost-log1.74-dev (= 1.74.0+ds1-21),
+ libboost-log1.74.0 (= 1.74.0+ds1-21),
+ libboost-math-dev (= 1.74.0.3),
+ libboost-math1.74-dev (= 1.74.0+ds1-21),
+ libboost-math1.74.0 (= 1.74.0+ds1-21),
+ libboost-mpi-dev (= 1.74.0.3),
+ libboost-mpi-python-dev (= 1.74.0.3),
+ libboost-mpi-python1.74-dev (= 1.74.0+ds1-21),
+ libboost-mpi-python1.74.0 (= 1.74.0+ds1-21),
+ libboost-mpi1.74-dev (= 1.74.0+ds1-21),
+ libboost-mpi1.74.0 (= 1.74.0+ds1-21),
+ libboost-nowide-dev (= 1.74.0.3),
+ libboost-nowide1.74-dev (= 1.74.0+ds1-21),
+ libboost-nowide1.74.0 (= 1.74.0+ds1-21),
+ libboost-numpy-dev (= 1.74.0.3),
+ libboost-numpy1.74-dev (= 1.74.0+ds1-21),
+ libboost-numpy1.74.0 (= 1.74.0+ds1-21),
+ libboost-program-options-dev (= 1.74.0.3),
+ libboost-program-options1.74-dev (= 1.74.0+ds1-21),
+ libboost-program-options1.74.0 (= 1.74.0+ds1-21),
+ libboost-python-dev (= 1.74.0.3),
+ libboost-python1.74-dev (= 1.74.0+ds1-21),
+ libboost-python1.74.0 (= 1.74.0+ds1-21),
+ libboost-random-dev (= 1.74.0.3),
+ libboost-random1.74-dev (= 1.74.0+ds1-21),
+ libboost-random1.74.0 (= 1.74.0+ds1-21),
+ libboost-regex-dev (= 1.74.0.3),
+ libboost-regex1.74-dev (= 1.74.0+ds1-21),
+ libboost-regex1.74.0 (= 1.74.0+ds1-21),
+ libboost-serialization-dev (= 1.74.0.3),
+ libboost-serialization1.74-dev (= 1.74.0+ds1-21),
+ libboost-serialization1.74.0 (= 1.74.0+ds1-21),
+ libboost-stacktrace-dev (= 1.74.0.3),
+ libboost-stacktrace1.74-dev (= 1.74.0+ds1-21),
+ libboost-stacktrace1.74.0 (= 1.74.0+ds1-21),
+ libboost-system-dev (= 1.74.0.3),
+ libboost-system1.74-dev (= 1.74.0+ds1-21),
+ libboost-system1.74.0 (= 1.74.0+ds1-21),
+ libboost-test-dev (= 1.74.0.3),
+ libboost-test1.74-dev (= 1.74.0+ds1-21),
+ libboost-test1.74.0 (= 1.74.0+ds1-21),
+ libboost-thread-dev (= 1.74.0.3),
+ libboost-thread1.74-dev (= 1.74.0+ds1-21),
+ libboost-thread1.74.0 (= 1.74.0+ds1-21),
+ libboost-timer-dev (= 1.74.0.3),
+ libboost-timer1.74-dev (= 1.74.0+ds1-21),
+ libboost-timer1.74.0 (= 1.74.0+ds1-21),
+ libboost-tools-dev (= 1.74.0.3),
+ libboost-type-erasure-dev (= 1.74.0.3),
+ libboost-type-erasure1.74-dev (= 1.74.0+ds1-21),
+ libboost-type-erasure1.74.0 (= 1.74.0+ds1-21),
+ libboost-wave-dev (= 1.74.0.3),
+ libboost-wave1.74-dev (= 1.74.0+ds1-21),
+ libboost-wave1.74.0 (= 1.74.0+ds1-21),
+ libboost1.74-dev (= 1.74.0+ds1-21),
+ libboost1.74-tools-dev (= 1.74.0+ds1-21),
+ libbrotli1 (= 1.0.9-2+b6),
+ libbsd0 (= 0.11.7-2),
+ libbz2-1.0 (= 1.0.8-5+b1),
+ libc-bin (= 2.36-9+deb12u13),
+ libc-dev-bin (= 2.36-9+deb12u13),
+ libc6 (= 2.36-9+deb12u13),
+ libc6-dev (= 2.36-9+deb12u13),
+ libcap-ng0 (= 0.8.3-1+b3),
+ libcap2 (= 1:2.66-4+deb12u2+b2),
+ libcbor0.8 (= 0.8.0-2+b1),
+ libcc1-0 (= 12.2.0-14+deb12u1),
+ libcom-err2 (= 1.47.0-2+b2),
+ libcrypt-dev (= 1:4.4.33-2),
+ libcrypt1 (= 1:4.4.33-2),
+ libctf-nobfd0 (= 2.40-2),
+ libctf0 (= 2.40-2),
+ libcurl4 (= 7.88.1-10+deb12u14),
+ libdb5.3 (= 5.3.28+dfsg2-1),
+ libdebconfclient0 (= 0.270),
+ libdebhelper-perl (= 13.11.4),
+ libdpkg-perl (= 1.21.22),
+ libedit2 (= 3.1-20221030-2),
+ libeigen3-dev (= 3.4.0-4),
+ libelf1 (= 0.188-2.1),
+ libevent-2.1-7 (= 2.1.12-stable-8),
+ libevent-core-2.1-7 (= 2.1.12-stable-8),
+ libevent-dev (= 2.1.12-stable-8),
+ libevent-extra-2.1-7 (= 2.1.12-stable-8),
+ libevent-openssl-2.1-7 (= 2.1.12-stable-8),
+ libevent-pthreads-2.1-7 (= 2.1.12-stable-8),
+ libexpat1 (= 2.5.0-1+deb12u2),
+ libexpat1-dev (= 2.5.0-1+deb12u2),
+ libfabric1 (= 1.17.0-3),
+ libffi8 (= 3.4.4-1),
+ libfido2-1 (= 1.12.0-2+b1),
+ libfile-find-rule-perl (= 0.34-4~deb12u1),
+ libfile-stripnondeterminism-perl (= 1.13.1-1),
+ libgcc-12-dev (= 12.2.0-14+deb12u1),
+ libgcc-s1 (= 12.2.0-14+deb12u1),
+ libgcrypt20 (= 1.10.1-3),
+ libgdbm-compat4 (= 1.23-3),
+ libgdbm6 (= 1.23-3),
+ libgfortran-12-dev (= 12.2.0-14+deb12u1),
+ libgfortran5 (= 12.2.0-14+deb12u1),
+ libgmp10 (= 2:6.2.1+dfsg1-1.1),
+ libgnutls30 (= 3.7.9-2+deb12u6),
+ libgomp1 (= 12.2.0-14+deb12u1),
+ libgpg-error0 (= 1.46-1),
+ libgprofng0 (= 2.40-2),
+ libgssapi-krb5-2 (= 1.20.1-2+deb12u4),
+ libhogweed6 (= 3.8.1-2),
+ libhwloc-dev (= 2.9.0-1),
+ libhwloc-plugins (= 2.9.0-1),
+ libhwloc15 (= 2.9.0-1),
+ libibverbs-dev (= 44.0-2),
+ libibverbs1 (= 44.0-2),
+ libicu-dev (= 72.1-3+deb12u1),
+ libicu72 (= 72.1-3+deb12u1),
+ libidn2-0 (= 2.3.3-1+b1),
+ libisl23 (= 0.25-1.1),
+ libitm1 (= 12.2.0-14+deb12u1),
+ libjansson4 (= 2.14-2),
+ libjs-jquery (= 3.6.1+dfsg+~3.5.14-1),
+ libjs-jquery-ui (= 1.13.2+dfsg-1),
+ libjs-sphinxdoc (= 5.3.0-4),
+ libjs-underscore (= 1.13.4~dfsg+~1.11.4-3),
+ libjsoncpp25 (= 1.9.5-4),
+ libk5crypto3 (= 1.20.1-2+deb12u4),
+ libkeyutils1 (= 1.6.3-2),
+ libkrb5-3 (= 1.20.1-2+deb12u4),
+ libkrb5support0 (= 1.20.1-2+deb12u4),
+ libldap-2.5-0 (= 2.5.13+dfsg-5),
+ liblsan0 (= 12.2.0-14+deb12u1),
+ libltdl-dev (= 2.4.7-7~deb12u1),
+ libltdl7 (= 2.4.7-7~deb12u1),
+ liblz4-1 (= 1.9.4-1),
+ liblzma5 (= 5.4.1-1),
+ libmagic-mgc (= 1:5.44-3),
+ libmagic1 (= 1:5.44-3),
+ libmd0 (= 1.0.4-2),
+ libmount1 (= 2.38.1-5+deb12u3),
+ libmpc3 (= 1.3.1-1),
+ libmpfr6 (= 4.2.0-1),
+ libmunge2 (= 0.5.15-2+deb12u1),
+ libncursesw6 (= 6.4-4),
+ libnettle8 (= 3.8.1-2),
+ libnghttp2-14 (= 1.52.0-1+deb12u2),
+ libnl-3-200 (= 3.7.0-0.2+b1),
+ libnl-3-dev (= 3.7.0-0.2+b1),
+ libnl-route-3-200 (= 3.7.0-0.2+b1),
+ libnl-route-3-dev (= 3.7.0-0.2+b1),
+ libnsl-dev (= 1.3.0-2),
+ libnsl2 (= 1.3.0-2),
+ libnuma-dev (= 2.0.16-1),
+ libnuma1 (= 2.0.16-1),
+ libnumber-compare-perl (= 0.03-3),
+ libopenmpi-dev (= 4.1.4-3+b1),
+ libopenmpi3 (= 4.1.4-3+b1),
+ libp11-kit0 (= 0.24.1-2),
+ libpam-modules (= 1.5.2-6+deb12u2),
+ libpam-modules-bin (= 1.5.2-6+deb12u2),
+ libpam-runtime (= 1.5.2-6+deb12u2),
+ libpam0g (= 1.5.2-6+deb12u2),
+ libpciaccess0 (= 0.17-2),
+ libpcre2-8-0 (= 10.42-1),
+ libperl5.36 (= 5.36.0-7+deb12u3),
+ libpipeline1 (= 1.5.7-1),
+ libpkgconf3 (= 1.8.1-1),
+ libpmix-dev (= 4.2.2-1+deb12u1),
+ libpmix2 (= 4.2.2-1+deb12u1),
+ libproc2-0 (= 2:4.0.2-3),
+ libpsl5 (= 0.21.2-1),
+ libpsm-infinipath1 (= 3.3+20.604758e7-6.2),
+ libpsm2-2 (= 11.2.185-2),
+ libpython3-dev (= 3.11.2-1+b1),
+ libpython3-stdlib (= 3.11.2-1+b1),
+ libpython3.11 (= 3.11.2-6+deb12u6),
+ libpython3.11-dev (= 3.11.2-6+deb12u6),
+ libpython3.11-minimal (= 3.11.2-6+deb12u6),
+ libpython3.11-stdlib (= 3.11.2-6+deb12u6),
+ libquadmath0 (= 12.2.0-14+deb12u1),
+ librdmacm1 (= 44.0-2),
+ libreadline8 (= 8.2-1.3),
+ librhash0 (= 1.4.3-3),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2+b2),
+ libsasl2-2 (= 2.1.28+dfsg-10),
+ libsasl2-modules-db (= 2.1.28+dfsg-10),
+ libseccomp2 (= 2.5.4-1+deb12u1),
+ libselinux1 (= 3.4-1+b6),
+ libsemanage-common (= 3.4-1),
+ libsemanage2 (= 3.4-1+b5),
+ libsepol2 (= 3.4-2.1),
+ libsmartcols1 (= 2.38.1-5+deb12u3),
+ libsqlite3-0 (= 3.40.1-2+deb12u2),
+ libssh2-1 (= 1.10.0-3+b1),
+ libssl3 (= 3.0.18-1~deb12u2),
+ libstdc++-12-dev (= 12.2.0-14+deb12u1),
+ libstdc++6 (= 12.2.0-14+deb12u1),
+ libsub-override-perl (= 0.09-4),
+ libsystemd0 (= 252.39-1~deb12u1),
+ libtasn1-6 (= 4.19.0-2+deb12u1),
+ libtext-glob-perl (= 0.11-3),
+ libtinfo6 (= 6.4-4),
+ libtirpc-common (= 1.3.3+ds-1),
+ libtirpc-dev (= 1.3.3+ds-1),
+ libtirpc3 (= 1.3.3+ds-1),
+ libtool (= 2.4.7-7~deb12u1),
+ libtsan2 (= 12.2.0-14+deb12u1),
+ libubsan1 (= 12.2.0-14+deb12u1),
+ libuchardet0 (= 0.0.7-1),
+ libucx0 (= 1.13.1-1),
+ libudev1 (= 252.39-1~deb12u1),
+ libunistring2 (= 1.0-2),
+ libuuid1 (= 2.38.1-5+deb12u3),
+ libuv1 (= 1.44.2-1+deb12u1),
+ libx11-6 (= 2:1.8.4-2+deb12u2),
+ libx11-data (= 2:1.8.4-2+deb12u2),
+ libxau6 (= 1:1.0.9-1),
+ libxcb1 (= 1.15-1),
+ libxdmcp6 (= 1:1.1.2-3),
+ libxext6 (= 2:1.3.4-1+b1),
+ libxml2 (= 2.9.14+dfsg-1.3~deb12u5),
+ libxnvctrl0 (= 525.85.05-3~deb12u1),
+ libzstd1 (= 1.5.4+dfsg2-5),
+ linux-libc-dev (= 6.1.164-1),
+ login (= 1:4.13+dfsg1-1+deb12u2),
+ m4 (= 1.4.19-3),
+ make (= 4.3-4.1),
+ man-db (= 2.11.2-2),
+ mawk (= 1.3.4.20200120-3.1),
+ media-types (= 10.0.0),
+ mpi-default-bin (= 1.14),
+ mpi-default-dev (= 1.14),
+ ncurses-base (= 6.4-4),
+ ncurses-bin (= 6.4-4),
+ ocl-icd-libopencl1 (= 2.3.1-1),
+ openmpi-bin (= 4.1.4-3+b1),
+ openmpi-common (= 4.1.4-3),
+ openssh-client (= 1:9.2p1-2+deb12u7),
+ passwd (= 1:4.13+dfsg1-1+deb12u2),
+ patch (= 2.7.6-7),
+ perl (= 5.36.0-7+deb12u3),
+ perl-base (= 5.36.0-7+deb12u3),
+ perl-modules-5.36 (= 5.36.0-7+deb12u3),
+ pkg-config (= 1.8.1-1),
+ pkgconf (= 1.8.1-1),
+ pkgconf-bin (= 1.8.1-1),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.2-3),
+ python3 (= 3.11.2-1+b1),
+ python3-dev (= 3.11.2-1+b1),
+ python3-distutils (= 3.11.2-3),
+ python3-lib2to3 (= 3.11.2-3),
+ python3-minimal (= 3.11.2-1+b1),
+ python3.11 (= 3.11.2-6+deb12u6),
+ python3.11-dev (= 3.11.2-6+deb12u6),
+ python3.11-minimal (= 3.11.2-6+deb12u6),
+ readline-common (= 8.2-1.3),
+ rpcsvc-proto (= 1.4.3-1),
+ sed (= 4.9-1),
+ sensible-utils (= 0.0.17+nmu1),
+ sysvinit-utils (= 3.06-4),
+ tar (= 1.34+dfsg-1.2+deb12u1),
+ usrmerge (= 37~deb12u1),
+ util-linux (= 2.38.1-5+deb12u3),
+ util-linux-extra (= 2.38.1-5+deb12u3),
+ xz-utils (= 5.4.1-1),
+ zlib1g (= 1:1.2.13.dfsg-1),
+ zlib1g-dev (= 1:1.2.13.dfsg-1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="nocheck"
+ LANG="C.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LD_LIBRARY_PATH="/opt/ros/one/lib:/opt/ros/one/lib/x86_64-linux-gnu"
+ SOURCE_DATE_EPOCH="1716422400"
+
+
++------------------------------------------------------------------------------+
+| Package contents                             Sat, 04 Apr 2026 04:01:04 +0000 |
++------------------------------------------------------------------------------+
+
+
+ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00_amd64.deb
+-----------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 95864 bytes: control archive=960 bytes.
+     370 bytes,     9 lines      control              
+    1100 bytes,    14 lines      md5sums              
+ Package: ros-one-libnabo
+ Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+ Architecture: amd64
+ Maintainer: Stéphane Magnenat <stephane.magnenat@mavt.ethz.ch>
+ Installed-Size: 1807
+ Depends: catkin, libboost-all-dev, libeigen3-dev, libgmock-dev, libgtest-dev
+ Section: misc
+ Priority: optional
+ Description: libnabo is a fast K Nearest Neighbour library for low-dimensional spaces.
+
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/include/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/include/nabo/
+-rw-r--r-- root/root     22472 2024-05-23 00:00 ./opt/ros/one/include/nabo/nabo.h
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/include/nabo/third_party/
+-rw-r--r-- root/root     15040 2024-05-23 00:00 ./opt/ros/one/include/nabo/third_party/any.hpp
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/lib/
+-rw-r--r-- root/root    879504 2024-05-23 00:00 ./opt/ros/one/lib/libnabo.a
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    879504 2024-05-23 00:00 ./opt/ros/one/lib/x86_64-linux-gnu/libnabo.a
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/share/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/share/doc/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/share/doc/libnabo/
+-rw-r--r-- root/root      9737 2024-05-23 00:00 ./opt/ros/one/share/doc/libnabo/README.md
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/share/libnabo/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./opt/ros/one/share/libnabo/cmake/
+-rw-r--r-- root/root       853 2024-05-23 00:00 ./opt/ros/one/share/libnabo/cmake/libnabo-targets-none.cmake
+-rw-r--r-- root/root      4083 2024-05-23 00:00 ./opt/ros/one/share/libnabo/cmake/libnabo-targets.cmake
+-rw-r--r-- root/root      1363 2024-05-23 00:00 ./opt/ros/one/share/libnabo/cmake/libnaboConfig.cmake
+-rw-r--r-- root/root      1977 2024-05-23 00:00 ./opt/ros/one/share/libnabo/cmake/libnaboConfigVersion.cmake
+-rw-r--r-- root/root       884 2024-05-23 00:00 ./opt/ros/one/share/libnabo/package.xml
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./usr/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./usr/share/doc/
+drwxr-xr-x root/root         0 2024-05-23 00:00 ./usr/share/doc/ros-one-libnabo/
+-rw-r--r-- root/root      4059 2024-05-23 00:00 ./usr/share/doc/ros-one-libnabo/README.md.gz
+-rw-r--r-- root/root      2620 2024-05-23 00:00 ./usr/share/doc/ros-one-libnabo/changelog.Debian.gz
+-rw-r--r-- root/root      4881 2024-05-23 00:00 ./usr/share/doc/ros-one-libnabo/changelog.gz
+-rw-r--r-- root/root       320 2024-05-23 00:00 ./usr/share/doc/ros-one-libnabo/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                   Sat, 04 Apr 2026 04:01:04 +0000 |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                      Sat, 04 Apr 2026 04:01:04 +0000 |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                      Sat, 04 Apr 2026 04:01:06 +0000 |
++------------------------------------------------------------------------------+
+
+Build Architecture: amd64
+Build Profiles: nocheck
+Build Type: binary
+Build-Space: 141296
+Build-Time: 21
+Distribution: bookworm
+Host Architecture: amd64
+Install-Time: 19
+Job: /home/runner/work/ros-o-builder/ros-o-builder/src/ros-one-libnabo_1.1.2-4-g0ce6ecb-2026.04.04.04.00.dsc
+Machine Architecture: amd64
+Package: ros-one-libnabo
+Package-Time: 52
+Source-Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+Space: 141296
+Status: successful
+Version: 1.1.2-4-g0ce6ecb-2026.04.04.04.00
+--------------------------------------------------------------------------------
+Finished at 2026-04-04T04:01:03Z
+Build needed 00:00:52, 141296k disk space

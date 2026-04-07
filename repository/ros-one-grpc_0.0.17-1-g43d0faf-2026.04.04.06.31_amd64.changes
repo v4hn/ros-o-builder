@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Wed, 14 May 2025 00:00:00 -0000
+Source: ros-one-grpc
+Binary: ros-one-grpc ros-one-grpc-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.0.17-1-g43d0faf-2026.04.04.06.31
+Distribution: bookworm
+Urgency: high
+Maintainer: Shengye Wang <shengye@ucsd.edu>
+Changed-By: Shengye Wang <shengye@ucsd.edu>
+Description:
+ ros-one-grpc - Catkinized gRPC Package
+Changes:
+ ros-one-grpc (0.0.17-1-g43d0faf-2026.04.04.06.31) bookworm; urgency=high
+ .
+   * Allow users settings CXX standard (#63 <https://github.com/CogRob/catkin_grpc/issues/63>)
+   * Exclude unsecure library from exported libraries (#62 <https://github.com/CogRob/catkin_grpc/issues/62>)
+   * Reduce cmake warning (#60 <https://github.com/CogRob/catkin_grpc/issues/60>)
+     * Remove -DBUILD_TESTING=OFF because it generates a warning message
+     in cmake.
+   * Use submodule instead of ExternalProject_Add (#56 <https://github.com/CogRob/catkin_grpc/issues/56>)
+     * Use submodule instead of ExternalProject_Add
+   * Mitigate access denial issue from github.com (#55 <https://github.com/CogRob/catkin_grpc/issues/55>)
+     * Decrease the number of jobs to run git fetch to
+     clone submodules in parallel.
+   * Contributors: Ryohei Ueda, Yuki Furuta
+Checksums-Sha1:
+ 76781768df779f9eff114e394571a0634feac928 214247204 ros-one-grpc-dbgsym_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb
+ 1199ea6652fabae7c021180a6ac26a8b8902d417 8101 ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.buildinfo
+ 2d6f3558977ecb063fb025ccb92d92a375d6e1ea 9957768 ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb
+Checksums-Sha256:
+ 82476c15df9941ccc84dfad03f3d18b7354284bcd91952a027b5f5ed619ccb68 214247204 ros-one-grpc-dbgsym_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb
+ 55091638b527d33d1397d172a99cad091cca3bb8a8614ffbacabe1020d19f98f 8101 ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.buildinfo
+ f8ee9c6e408f061845f65d8466b9b88d93d0e650b3c73a2232e6d39906ecb1f0 9957768 ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb
+Files:
+ c0d3e496f33c7aa5dc71bd9ab8e9aa76 214247204 debug optional ros-one-grpc-dbgsym_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb
+ ac35dd617733e9139f7aebd4df27a9cb 8101 misc optional ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.buildinfo
+ baebf20680e96140b2970d8e73aa0d14 9957768 misc optional ros-one-grpc_0.0.17-1-g43d0faf-2026.04.04.06.31_amd64.deb

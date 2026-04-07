@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 27 Mar 2026 00:00:00 -0000
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library ros-one-ur-client-library-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.9.0-4-g343e5ca-2026.04.04.03.50
+Distribution: bookworm
+Urgency: high
+Maintainer: Felix Exner <feex@universal-robots.com>
+Changed-By: Felix Exner <feex@universal-robots.com>
+Description:
+ ros-one-ur-client-library - Standalone C++ library for accessing Universal Robots interfaces.
+Changes:
+ ros-one-ur-client-library (2.9.0-4-g343e5ca-2026.04.04.03.50) bookworm; urgency=high
+ .
+   * [RTDEClient] stop producer on destruction (#472 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/472>)
+   * Primary Client power on improvements (#473 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/473>)
+   * Move TCPServer disconnection log events from Info to Debug (#471 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/471>)
+   * Refactor tool communication into standalone socat initialization script (#470 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/470>)
+   * Contributors: Felix Exner, JohnN193, Rune Søe-Knudsen, Sergi Romero
+Checksums-Sha1:
+ 981f24de75b555d969351fa1a0016ed8636b98ab 8633680 ros-one-ur-client-library-dbgsym_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb
+ 17a0098fc42070ff8ae7f40ef6e9d52c72871c7a 6679 ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.buildinfo
+ 31caca593571eb133c1617003df89089d720af2a 525240 ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb
+Checksums-Sha256:
+ eddacd5e37ceeb184dd94c93a455b60663e696ba8f19acb9dd85dd6d2746ba4f 8633680 ros-one-ur-client-library-dbgsym_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb
+ cb6cd240ce0c97225def0eb2e8e248d30bbef6cd2ffbd1ae8ecfcd8844da1827 6679 ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.buildinfo
+ 67da7d6135fc32b673362f0d0a86051390c4913e1ad780d50bbf0e65559c4674 525240 ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb
+Files:
+ 9aed42f054c63de61622f3d6f52ff97e 8633680 debug optional ros-one-ur-client-library-dbgsym_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb
+ 33fa38fed4e854bb638203d0ab631308 6679 misc optional ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.buildinfo
+ c4f98e1f811f5592456aaf14e3656675 525240 misc optional ros-one-ur-client-library_2.9.0-4-g343e5ca-2026.04.04.03.50_amd64.deb

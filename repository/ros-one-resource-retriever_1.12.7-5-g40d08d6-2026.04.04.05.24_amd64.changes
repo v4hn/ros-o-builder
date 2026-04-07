@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2026.04.04.05.24
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2026.04.04.05.24) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ fab73b2d97820f9da826c6e336c23ba15ef71a86 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb
+ 4542b15b0980938ff348b9cd38e4f62351b5d72d 15884 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.buildinfo
+ 6e2168ae4643d46d396f657b327956f6638a7e05 61564 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb
+Checksums-Sha256:
+ 0303dbc490d7dfb7a005dd297035fce561a57aa29d8ef988d5aeb9dd874b7294 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb
+ ad8d4a8b39ee4c77c18422b5eb0583d66580444d2902a76f629b64760050bd70 15884 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.buildinfo
+ 49aa5c5a028ff028ea12d1652cc87a92f4933042ec779b668d19ee633dc2e401 61564 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb
+Files:
+ e6dafbdf754eaaf60c117073bc48edc6 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb
+ 95200b552134b842b47635d6af24a4da 15884 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.buildinfo
+ eee2b7933442f04260ecbb4b51ef9b6e 61564 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.04.04.05.24_amd64.deb

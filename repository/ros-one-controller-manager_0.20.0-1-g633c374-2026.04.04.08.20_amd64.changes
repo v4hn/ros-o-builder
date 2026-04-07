@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 27 Oct 2023 00:00:00 -0000
+Source: ros-one-controller-manager
+Binary: ros-one-controller-manager ros-one-controller-manager-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.20.0-1-g633c374-2026.04.04.08.20
+Distribution: bookworm
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-controller-manager - The controller manager.
+Changes:
+ ros-one-controller-manager (0.20.0-1-g633c374-2026.04.04.08.20) bookworm; urgency=high
+ .
+   * Reorder waiting for services and ros time to speed up controller start (#508 <https://github.com/ros-controls/ros_control/issues/508>)
+   * duplicate controller name in start and stop list will throw error (#506 <https://github.com/ros-controls/ros_control/issues/506>)
+   * Contributors: Bence Magyar, Captain Yoshi, Martin Oehler
+   * Reorder waiting for services and ros time to speed up controller start (#508 <https://github.com/ros-controls/ros_control/issues/508>)
+   * duplicate controller name in start and stop list will throw error (#506 <https://github.com/ros-controls/ros_control/issues/506>)
+   * Contributors: Captain Yoshi, Martin Oehler
+Checksums-Sha1:
+ 2304de8fd4ef8e4b58c58cbd59eb6a673d5ff172 1380244 ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb
+ e70393934fc150f93bf093bfbe660020b427164a 14644 ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.buildinfo
+ 76f8f8cccd934cddfc9e16765fe37459929cf2b7 127320 ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb
+Checksums-Sha256:
+ c8edd41bef5133db2a291671dc7ef66f00952536a505e8707e39d370e092050e 1380244 ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb
+ 3b1eff6465ac1e75f1ce6ba9c06fdea5a8bd4f3c301e4e65914c7c745e440b85 14644 ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.buildinfo
+ 70cf17f30a1b2b5fd0c71fd0f6619e24f2e6532092175e9232d68356bf749979 127320 ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb
+Files:
+ 421da11c23437405020b204dc5cda60e 1380244 debug optional ros-one-controller-manager-dbgsym_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb
+ 2fed47fc5d285afdb770660c5ac7da53 14644 misc optional ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.buildinfo
+ 067696cf9b1c5f2cfa7743656ab877a9 127320 misc optional ros-one-controller-manager_0.20.0-1-g633c374-2026.04.04.08.20_amd64.deb

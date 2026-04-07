@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Fri, 06 Feb 2026 00:00:00 -0000
+Source: ros-one-urdfdom
+Binary: ros-one-urdfdom ros-one-urdfdom-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 5.1.0-4-gbd4d695-2026.04.04.04.13
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@openrobotics.org>
+Changed-By: Chris Lalancette <clalancette@openrobotics.org>
+Description:
+ ros-one-urdfdom - A library to access URDFs using the DOM model.
+Changes:
+ ros-one-urdfdom (5.1.0-4-gbd4d695-2026.04.04.04.13) bookworm; urgency=high
+ .
+   * Support for URDF Specification 1.1
+ .
+     Add support for capsule geometry type (#238)
+     * Add documentation about versioning
+     * Require version 2.1.0 of urdfdom_headers
+     Co-authored-by: Steve Peters <scpeters@openrobotics.org>
+ .
+     Support quaternions in URDF 1.1 (#235)
+     Co-authored-by: Guillaume Doisy <doisyg@users.noreply.github.com>
+   * Fix multiple format-string vulnerabilities in URDF parser logging (#243 <https://github.com/ros/urdfdom/issues/243>)
+     User-controlled URDF content was passed directly to CONSOLE_BRIDGE_logError()
+     at multiple call sites, allowing printf-style format string interpretation.
+     All affected logging paths now use explicit "%s" format specifiers to ensure
+     input is treated as data and to prevent information disclosure or undefined
+     behavior.
+   * More logging format string fixes (#244 <https://github.com/ros/urdfdom/issues/244>)
+     * Add explicit "%s" format strings when logging
+     * Use %s format string instead of string addition
+   * Read cmake version from package.xml (#236 <https://github.com/ros/urdfdom/issues/236>)
+     * Use regex to match version string.
+     Based on suggestion from Chris Lalancette.
+     * Require cmake minimum version 3.10
+     Co-authored-by: Chris Lalancette <mailto:clalancette@gmail.com>
+   * Contributors: Florencia, Sai Kishor Kothakota, Steve Peters
+Checksums-Sha1:
+ ae3068fc903639bf318ace3bb9be45a2f0ea521f 1282344 ros-one-urdfdom-dbgsym_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb
+ 8706aaafdc0b887cdf9d4b0785fedf4bbab38b9d 8727 ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.buildinfo
+ 09371ec5c65d96efe854092c3493bf3ea7629c79 71224 ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb
+Checksums-Sha256:
+ 84a3861e5c11d43a5650ba38bb5b4416fbeee7556164b89b54374c64cab70194 1282344 ros-one-urdfdom-dbgsym_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb
+ ad27b38e23d62f0011bd61f780bd7cf7cc0dffe3428f4f3151490048c5dc917b 8727 ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.buildinfo
+ a3c33f19b13d3c5bf18882ef83d3b82c8db31edfdbd9f7473adc262176bccce2 71224 ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb
+Files:
+ c0aceef44318cdd81ffdd33edd0bbbe1 1282344 debug optional ros-one-urdfdom-dbgsym_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb
+ b0d4f25d80b41e0977a42f1d0ec40ca5 8727 misc optional ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.buildinfo
+ a790062d3c7962d6cb3155216a01f64d 71224 misc optional ros-one-urdfdom_5.1.0-4-gbd4d695-2026.04.04.04.13_amd64.deb

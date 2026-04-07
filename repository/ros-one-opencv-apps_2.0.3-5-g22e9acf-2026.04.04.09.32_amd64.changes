@@ -1,0 +1,49 @@
+Format: 1.8
+Date: Thu, 22 May 2025 00:00:00 -0000
+Source: ros-one-opencv-apps
+Binary: ros-one-opencv-apps ros-one-opencv-apps-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.0.3-5-g22e9acf-2026.04.04.09.32
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <kei.okada@gmail.com>
+Changed-By: Kei Okada <kei.okada@gmail.com>
+Description:
+ ros-one-opencv-apps - opencv_apps provides various nodes that run internally OpenCV's f
+Changes:
+ ros-one-opencv-apps (2.0.3-5-g22e9acf-2026.04.04.09.32) bookworm; urgency=high
+ .
+   * [lk_flow] Keep matching information for sparse optical flow (#149 <https://github.com/ros-perception/opencv_apps/issues/149>)
+   * use bgr8 for output visualization (#145 <https://github.com/ros-perception/opencv_apps/issues/145>)
+   * add ROS-O test (#147 <https://github.com/ros-perception/opencv_apps/issues/147>)
+   * Suppress cmake warning (#146 <https://github.com/ros-perception/opencv_apps/issues/146>)
+   * [TEST] Fix catkin_lint version 1.6.18 to avoid cmake_minimum_required error (#143 <https://github.com/ros-perception/opencv_apps/issues/143>)
+   * Add sync_.reset/async_.reset to destructor in face_recognition (#139 <https://github.com/ros-perception/opencv_apps/issues/139>)
+   * fix github actions (#140 <https://github.com/ros-perception/opencv_apps/issues/140>)
+   * fix missing .git directory (#136 <https://github.com/ros-perception/opencv_apps/issues/136>)
+   * Add histogram equalization default and clahe (#126 <https://github.com/ros-perception/opencv_apps/issues/126>)
+   * check all output of test/test-pyramids.test (#127 <https://github.com/ros-perception/opencv_apps/issues/127>)
+   * tests: properly remap camera_info (#125 <https://github.com/ros-perception/opencv_apps/issues/125>)
+   * add Morphology Transformations nodelet (#122 <https://github.com/ros-perception/opencv_apps/issues/122>)
+   * add test to check when adding two images, whcih has different size. (#123 <https://github.com/ros-perception/opencv_apps/issues/123>)
+   * contour_moments_nodelet: don't publish empty image (#124 <https://github.com/ros-perception/opencv_apps/issues/124>)
+   * Add Lab color filter (#114 <https://github.com/ros-perception/opencv_apps/issues/114>)
+   * add test to check on debain_unstable (#121 <https://github.com/ros-perception/opencv_apps/issues/121>)
+   * Remove timestamp from face_data.tar.gz (#117 <https://github.com/ros-perception/opencv_apps/issues/117>)
+   * use snapshot of rosdep list (#120 <https://github.com/ros-perception/opencv_apps/issues/120>)
+   * fix travis, speed up GA tests (#116 <https://github.com/ros-perception/opencv_apps/issues/116>)
+   * add .github/workflows (#115 <https://github.com/ros-perception/opencv_apps/issues/115>)
+   * Contributors: Aoi Nakane, Jochen Sprickerhof, Kei Okada, Martin Günther, Naoto Tsukamoto, Shingo Kitagawa, Yuki Furuta, Iori Yanokura, Ivan Oliveira Tarifa
+Checksums-Sha1:
+ 499440f51b528b5e61ccb48348692daf55ca2a44 29058432 ros-one-opencv-apps-dbgsym_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb
+ 8f6a14abee02227c9fdc061d39316b951f4bd9d5 28933 ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.buildinfo
+ d2f839ba9861bbdc4a7763f2e582e2d02800d539 882576 ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb
+Checksums-Sha256:
+ e2802cf8b9e0e4f69ad934822ed2f71a7709dadc62ff20af00020a82d56f4a76 29058432 ros-one-opencv-apps-dbgsym_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb
+ ec48ec9c2c9a9457728d043bf7dd3d4159e9cf184447b3db8029f1d1317d05c4 28933 ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.buildinfo
+ 579bd99c2c18caefdf98f3e71d1231fc39fa76b6318a0b0c93dd620ee61a0cc0 882576 ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb
+Files:
+ 59f1c9550b3f4880e930325315128a89 29058432 debug optional ros-one-opencv-apps-dbgsym_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb
+ 405d06e68dd107b0beab7af696a8df72 28933 misc optional ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.buildinfo
+ 63fa9f90ce59dda2e0323f6ccae27b35 882576 misc optional ros-one-opencv-apps_2.0.3-5-g22e9acf-2026.04.04.09.32_amd64.deb

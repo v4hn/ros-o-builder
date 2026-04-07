@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 09 May 2025 00:00:00 -0000
+Source: ros-one-roscpp
+Binary: ros-one-roscpp ros-one-roscpp-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.0-36-g4007da616-2026.04.04.05.51
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-roscpp - roscpp is a C++ implementation of ROS.
+Changes:
+ ros-one-roscpp (1.17.0-36-g4007da616-2026.04.04.05.51) bookworm; urgency=high
+ .
+   * adding boost/bind/bind.hpp includes to files missing them (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Fix "roscpp multithreaded spinners eat up CPU when callbacks take too long" (#2377 <https://github.com/ros/ros_comm/issues/2377>) (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Contributors: Johannes Meyer, Lucas Walter
+Checksums-Sha1:
+ 93e51cda669cf57d835fed1d9357b4e420b80da2 13187792 ros-one-roscpp-dbgsym_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb
+ 75506ea4633a8ed1da07fc857923d74c44621162 10339 ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.buildinfo
+ 65e144dea036bae71555fd91ceda228efce2a457 510520 ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb
+Checksums-Sha256:
+ 36148e56df17e90b0e89f816b305b7b4e01899011846e1bee2497ebf72accc24 13187792 ros-one-roscpp-dbgsym_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb
+ 9fa79c3a05fad2c0f88b16fee3138d1f9db33c02cc2018f73dc3ae9daa4075ec 10339 ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.buildinfo
+ 0aae9e502a800b647b0b9a6ad1d370f16bdb874ac72ce4765e969ad04bd51576 510520 ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb
+Files:
+ 227aa0fdaf001d1b66b0d33abe124234 13187792 debug optional ros-one-roscpp-dbgsym_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb
+ 336ad46b066001ebcd96ecdc4776c9a0 10339 misc optional ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.buildinfo
+ 96541a8b438afa3dc9c7dfad07eac81d 510520 misc optional ros-one-roscpp_1.17.0-36-g4007da616-2026.04.04.05.51_amd64.deb

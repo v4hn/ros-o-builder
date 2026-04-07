@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 02 Apr 2021 00:00:00 -0000
+Source: ros-one-rosserial-client
+Binary: ros-one-rosserial-client
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.9.2-5-gc169ae2-2026.04.04.08.23
+Distribution: bookworm
+Urgency: high
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Changed-By: Paul Bouchier <paul.bouchier@gmail.com>
+Description:
+ ros-one-rosserial-client - Generalized client side source for rosserial.
+Changes:
+ ros-one-rosserial-client (0.9.2-5-gc169ae2-2026.04.04.08.23) bookworm; urgency=high
+ .
+   * Use shutil.copyfile() instead of shutil.copy() (#530 <https://github.com/ros-drivers/rosserial/issues/530>)
+   * Changed C++ STL include and code into original C versions (#525 <https://github.com/ros-drivers/rosserial/issues/525>)
+   * Contributors: Ben Wolsieffer, Rafael Oliveira
+Checksums-Sha1:
+ 7a3e74cd76243c76a34d3ae16248730b3ed712d7 7385 ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.buildinfo
+ 8a31c32d17018257533a626b8a068da368ded5ec 34044 ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.deb
+Checksums-Sha256:
+ a6e155eda302e9ea89c1c3d52fb81b33d34182435ce17729055bbd0adbd47912 7385 ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.buildinfo
+ c2c7e232c8085fda8a16b45aa34b52765e6bc30e272293526a4b6d7d5a69075e 34044 ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.deb
+Files:
+ a3003b47b2809075ce61a85b2b5613bd 7385 misc optional ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.buildinfo
+ 8e7d4aabe7463e932073f57c492a4bb2 34044 misc optional ros-one-rosserial-client_0.9.2-5-gc169ae2-2026.04.04.08.23_amd64.deb

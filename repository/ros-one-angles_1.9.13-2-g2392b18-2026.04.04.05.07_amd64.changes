@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 11 Mar 2020 00:00:00 -0000
+Source: ros-one-angles
+Binary: ros-one-angles
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.9.13-2-g2392b18-2026.04.04.05.07
+Distribution: bookworm
+Urgency: high
+Maintainer: Geoffrey Biggs <geoff@openrobotics.org>
+Changed-By: Geoffrey Biggs <geoff@openrobotics.org>
+Description:
+ ros-one-angles - This package provides a set of simple math utilities to work with
+Changes:
+ ros-one-angles (1.9.13-2-g2392b18-2026.04.04.05.07) bookworm; urgency=high
+ .
+   * Update the angle normalization function to a simpler implementation (#19 <https://github.com/ros/angles/issues/19>)
+     * Update the angle normalization function for a simpler alternative
+     * Simplify 2*pi angle wrapping.
+     * Simplify/fasten the C++ implementation of angle normalization (removes one fmod call)
+   * Bump CMake version to avoid CMP0048 warning (#20 <https://github.com/ros/angles/issues/20>)
+   * Contributors: Alexis Paques, Shane Loretz
+Checksums-Sha1:
+ 0f34a4df486f932f63b97689991d90fb4262f24b 7339 ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.buildinfo
+ 1cecd67983a9456ac7cfdd731bdec38b0751afaa 14616 ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.deb
+Checksums-Sha256:
+ fcea6d715061ebe805240f347e4b491262693dcee41718f5478409268113f113 7339 ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.buildinfo
+ 6ced7f4fbe278be6d4da9efbb8957a126981459a30385ea4d06826a64eb041e5 14616 ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.deb
+Files:
+ a8b672aa2e273f1f2729cc80a62953c7 7339 misc optional ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.buildinfo
+ a2a64679851c381330a86961ded3cf76 14616 misc optional ros-one-angles_1.9.13-2-g2392b18-2026.04.04.05.07_amd64.deb

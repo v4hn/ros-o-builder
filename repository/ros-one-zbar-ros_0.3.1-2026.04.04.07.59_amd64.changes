@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 28 Jun 2022 00:00:00 -0000
+Source: ros-one-zbar-ros
+Binary: ros-one-zbar-ros ros-one-zbar-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.3.1-2026.04.04.07.59
+Distribution: bookworm
+Urgency: high
+Maintainer: Paul Bovbel <paul@bovbel.com>
+Changed-By: Paul Bovbel <paul@bovbel.com>
+Description:
+ ros-one-zbar-ros - Lightweight ROS wrapper for Zbar barcode/qrcode reader library (h
+Changes:
+ ros-one-zbar-ros (0.3.1-2026.04.04.07.59) bookworm; urgency=high
+ .
+   * Fix iterator invalidation bug when cleaning the database of previously detected barcodes (#14 <https://github.com/ros-drivers/zbar_ros/issues/14>)
+   * Trigger CI
+   * Add LICENSE
+   * Contributors: Paul Bovbel, Stephen Williams
+Checksums-Sha1:
+ e59f3dba3feae825fdf2ef75ffe822e4826e4744 759508 ros-one-zbar-ros-dbgsym_0.3.1-2026.04.04.07.59_amd64.deb
+ 044c9ba09385c8a61b18a59d1e13ae8560bf9c1a 32169 ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.buildinfo
+ 351301ebd09be67dbe602d26c475fa3a9364505f 49052 ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.deb
+Checksums-Sha256:
+ d056e5d6b5b3edd83558b23afd19baaaef4835e1d9d420e23550f82cb42cfc9f 759508 ros-one-zbar-ros-dbgsym_0.3.1-2026.04.04.07.59_amd64.deb
+ 1de11c5d73bdc0c34f7c01a1e7b36897aa60164b64c43c9b4cf35c312b93dbfd 32169 ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.buildinfo
+ 1f6c0a517a957a0a740e7a7234fe033ef9f46f18617e1eeaacfc593237a167d6 49052 ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.deb
+Files:
+ e6c5983e9ad866b186277f42106eb5e1 759508 debug optional ros-one-zbar-ros-dbgsym_0.3.1-2026.04.04.07.59_amd64.deb
+ cf0b37e7495269db3de280864a1494f8 32169 misc optional ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.buildinfo
+ 60654d50533e33b846bee7bf8f06772b 49052 misc optional ros-one-zbar-ros_0.3.1-2026.04.04.07.59_amd64.deb

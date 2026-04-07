@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Thu, 30 Nov 2023 00:00:00 -0000
+Source: ros-one-euscollada
+Binary: ros-one-euscollada ros-one-euscollada-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.4.5-39-g8a5b2cd-2026.04.05.02.46
+Distribution: bookworm
+Urgency: high
+Maintainer: Yohei Kakiuchi <youhei@jsk.t.u-tokyo.ac.jp>
+Changed-By: Yohei Kakiuchi <youhei@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-euscollada - euscollada
+Changes:
+ ros-one-euscollada (0.4.5-39-g8a5b2cd-2026.04.05.02.46) bookworm; urgency=high
+ .
+   * [collada2eus_urdfmodel.cpp] print links in the order of link names (#252 <https://github.com/jsk-ros-pkg/jsk_model_tools/issues/252>)
+   * enable to read custom limb name from .yaml file (fix for #249 <https://github.com/jsk-ros-pkg/jsk_model_tools/issues/249>) (#250 <https://github.com/jsk-ros-pkg/jsk_model_tools/issues/250>)
+ .
+       * [collada2eus_urdfmodel.cpp] refactor code
+       * [euscollada] add generate-pr2-custom-limb-test
+       * [collada2eus_urdfmodel.cpp] fix comment. fix indent
+       * [collada2eus_urdfmodel.cpp] support multiple config_files
+       * enable to read custom limb name from .yaml file: ignore sensors key. ignore limb with invalid joint
+       * [collada2eus_urdfmodel.cpp] change duplicated variable name
+       * enable to read custom limb name from .yaml file: if the limb name is other than head,torso,larm,rarm,lleg,rleg, we set limb name to robot models
+ .
+   * On Noetic build environment, only python3 is available (#247 <https://github.com/jsk-ros-pkg/jsk_model_tools/issues/247>)
+   * Contributors: Kei Okada, Naoki-Hiraoka
+Checksums-Sha1:
+ c4044dccfdd68cb7da31eac12678b53cd80c04d1 3924496 ros-one-euscollada-dbgsym_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb
+ 7c3c348e3d2e9eea4221a84b008a3ed4c880b6c0 23987 ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.buildinfo
+ 9ca03d07ca6d7ac0a2e02365353618b3c927dd57 192644 ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb
+Checksums-Sha256:
+ 4ccd59fb01e6e0c7054a59bfd2ac213c73fe31a3905b6c2615de5e1106b93c3f 3924496 ros-one-euscollada-dbgsym_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb
+ 6a5ae55e346c8212a38dfa016e630a7dff910afb55af66a8891be06054e1345a 23987 ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.buildinfo
+ 4d9ade2e2f114ff4f1c9a4bcf42ec7ed69bafb79eab81f80a62b234253c2e931 192644 ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb
+Files:
+ fc3452065c070b12295807feeb224811 3924496 debug optional ros-one-euscollada-dbgsym_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb
+ 9be8837fe0abdf8a445126052b082d2b 23987 misc optional ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.buildinfo
+ e41c775942a9e3daa97d91d19df16197 192644 misc optional ros-one-euscollada_0.4.5-39-g8a5b2cd-2026.04.05.02.46_amd64.deb

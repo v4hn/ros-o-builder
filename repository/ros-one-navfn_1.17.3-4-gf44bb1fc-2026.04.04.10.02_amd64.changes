@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-navfn
+Binary: ros-one-navfn ros-one-navfn-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.3-4-gf44bb1fc-2026.04.04.10.02
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-navfn - navfn provides a fast interpolated navigation function that can b
+Changes:
+ ros-one-navfn (1.17.3-4-gf44bb1fc-2026.04.04.10.02) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ a17cf8d1004d193d165722047720289199a3ae56 1565504 ros-one-navfn-dbgsym_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb
+ d8e32c395f187f4234504a3fdec04e03e0ada5db 18556 ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.buildinfo
+ 3a3a557f2bc3c96a2a436408dd03b8afa8f0a029 117852 ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb
+Checksums-Sha256:
+ 1e785a93f1604ea7ab22127eb968e5dabf1bda1bbb74321712b2f80da0225431 1565504 ros-one-navfn-dbgsym_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb
+ d5139e9773df2ace3011f1293b8351f38cd44e95eac58ae465a9356b37d7349c 18556 ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.buildinfo
+ ef06f055d5ae85fccbd793bb2fff3c1a6bc038b3d8ef9f649425e4721a00090f 117852 ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb
+Files:
+ ab6cd5ccb292f30f428c0cbcac2c7b8f 1565504 debug optional ros-one-navfn-dbgsym_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb
+ 757617d8345df05ca4a37a286d4392b8 18556 misc optional ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.buildinfo
+ 8a540d3c791a6299a1e2c250ce27bda8 117852 misc optional ros-one-navfn_1.17.3-4-gf44bb1fc-2026.04.04.10.02_amd64.deb

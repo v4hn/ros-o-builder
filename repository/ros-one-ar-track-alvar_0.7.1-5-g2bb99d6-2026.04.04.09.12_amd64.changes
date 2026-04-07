@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 14 Jun 2017 00:00:00 -0000
+Source: ros-one-ar-track-alvar
+Binary: ros-one-ar-track-alvar ros-one-ar-track-alvar-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.7.1-5-g2bb99d6-2026.04.04.09.12
+Distribution: bookworm
+Urgency: high
+Maintainer: Scott Niekum <sniekum@cs.umass.edu>
+Changed-By: Scott Niekum <sniekum@cs.umass.edu>
+Description:
+ ros-one-ar-track-alvar - This package is a ROS wrapper for Alvar, an open source AR tag tr
+Changes:
+ ros-one-ar-track-alvar (0.7.1-5-g2bb99d6-2026.04.04.09.12) bookworm; urgency=high
+ .
+   * [maintenance] Remove unnecessary metapkg.
+   * [fix][build][CMakeLists] Prevent rosdep errors that only occur when running tests with catkin_make_isolated. See http://answers.ros.org/question/262558/buildfarm-missing-package-dependencies-pkg_namepackagexml/
+   * [test] Relax tf test criteria #39 <https://github.com/ros-perception/ar_track_alvar/pull/39>
+   * Contributors: Isaac I.Y. Saito
+Checksums-Sha1:
+ d4b185e8508a7b1807cdbb8e54c9f84e5a8e8cae 14270996 ros-one-ar-track-alvar-dbgsym_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb
+ 3167cf4e4b86991762f75c524c5cbcbf29107635 38907 ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.buildinfo
+ 6287c2bbcac2ee2e2201f741b84257814094a7ad 473716 ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb
+Checksums-Sha256:
+ 2aafb608bf9dba0e965fbf751112774d654cc104b3720b5435387988e4877fdd 14270996 ros-one-ar-track-alvar-dbgsym_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb
+ 92d222b2c3d3f5c4ca2bf927a009a146a99247073ab121c0e89e0008270ac0ed 38907 ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.buildinfo
+ fe56694344171358623de1e01cd844b8902177081dc708f46ac9a1e1af207ed0 473716 ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb
+Files:
+ af2c902a1aae8038d536c0c02989ae03 14270996 debug optional ros-one-ar-track-alvar-dbgsym_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb
+ 93e81207e6334183a0e6e54e2ca55a9c 38907 misc optional ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.buildinfo
+ a16e5c05e8c321cb6760219ab40b59fc 473716 misc optional ros-one-ar-track-alvar_0.7.1-5-g2bb99d6-2026.04.04.09.12_amd64.deb

@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Wed, 15 Oct 2025 00:00:00 -0000
+Source: ros-one-moveit-task-constructor-capabilities
+Binary: ros-one-moveit-task-constructor-capabilities ros-one-moveit-task-constructor-capabilities-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1-0.1.4-6-gc13fe5c5-2026.04.04.14.52
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael v4hn Goerner <me@v4hn.de>
+Changed-By: Michael v4hn Goerner <me@v4hn.de>
+Description:
+ ros-one-moveit-task-constructor-capabilities - MoveGroupCapabilites to interact with MoveIt
+Changes:
+ ros-one-moveit-task-constructor-capabilities (1-0.1.4-6-gc13fe5c5-2026.04.04.14.52) bookworm; urgency=high
+ .
+   * Add missing include fmt/ranges.h (#712 <https://github.com/moveit/moveit_task_constructor/issues/712>)
+   * Provide action feedback during task execution (#653 <https://github.com/moveit/moveit_task_constructor/issues/653>)
+   * Increase minimum required CMake version to 3.16 supported by Ubuntu 20.04
+   * Silent error "Found empty JointState message"
+   * Simplify formatting code with https://github.com/fmtlib (#499 <https://github.com/moveit/moveit_task_constructor/issues/499>)
+   * Drop Melodic support
+   * Fix Solution::fillMessage() (#432 <https://github.com/moveit/moveit_task_constructor/issues/432>)
+   * Add property trajectory_execution_info (#355 <https://github.com/moveit/moveit_task_constructor/issues/355>, #502 <https://github.com/moveit/moveit_task_constructor/issues/502>)
+   * ExecuteTaskSolutionCapability: Rename goalCallback() -> execCallback()
+   * Replace namespace robot_[model|state] with moveit::core
+   * Use pluginlib consistently (#463 <https://github.com/moveit/moveit_task_constructor/issues/463>)
+   * Contributors: Dhruv Patel, Michael Görner, Robert Haschke
+Checksums-Sha1:
+ 60c4ecab9c2046a20c7b76c977539157753374e2 3345272 ros-one-moveit-task-constructor-capabilities-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb
+ 69d8355dc473d1927954b282a510e0dd67da803a 26251 ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.buildinfo
+ 84fd5ad0a51c7a0fa90cc3bc13468230f9b7a210 116272 ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb
+Checksums-Sha256:
+ ab4f74a47a3ef634ba03b2f44de7f1d5f88c70cc9111a7183e483ebb05d75fde 3345272 ros-one-moveit-task-constructor-capabilities-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb
+ 7b00318b216c3345654b70bfcd9c65c3ff1c712a65e9b7f972ef10dc03154d97 26251 ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.buildinfo
+ 080354789189bcc11489b4c8b8296ea4b178b6fdbc6d4f5725ea8ea6ee83a9f6 116272 ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb
+Files:
+ f7a4fd115d1269a7b7f509a1dab5dc2a 3345272 debug optional ros-one-moveit-task-constructor-capabilities-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb
+ deb3ce81639e9a1dbce7650a6bd039f8 26251 misc optional ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.buildinfo
+ b16db85ad63d0a52652e1537e0a2b79f 116272 misc optional ros-one-moveit-task-constructor-capabilities_1-0.1.4-6-gc13fe5c5-2026.04.04.14.52_amd64.deb

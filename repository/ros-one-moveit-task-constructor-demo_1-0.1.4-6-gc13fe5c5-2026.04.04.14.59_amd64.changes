@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Wed, 15 Oct 2025 00:00:00 -0000
+Source: ros-one-moveit-task-constructor-demo
+Binary: ros-one-moveit-task-constructor-demo ros-one-moveit-task-constructor-demo-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1-0.1.4-6-gc13fe5c5-2026.04.04.14.59
+Distribution: bookworm
+Urgency: high
+Maintainer: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Changed-By: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Description:
+ ros-one-moveit-task-constructor-demo - demo tasks illustrating various capabilities of MTC.
+Changes:
+ ros-one-moveit-task-constructor-demo (1-0.1.4-6-gc13fe5c5-2026.04.04.14.59) bookworm; urgency=high
+ .
+   * Allow max Cartesian link speed in PlannerInterface (#277 <https://github.com/moveit/moveit_task_constructor/issues/277>)
+   * Add missing dependency
+   * CI: Fix Noble builds
+   * Pick with custom max_velocity_scaling_factor during approach+lift
+   * Fix pick+place: connect should plan both, arm and hand motion
+   * Increase minimum required CMake version to 3.16 supported by Ubuntu 20.04
+   * clang-tidy fixes: std::endl -> 'n'
+   * examples: add orientation path constraint
+   * Update API: JumpThreshold -> CartesianPrecision (#611 <https://github.com/moveit/moveit_task_constructor/issues/611>)
+   * Unify Python demo scripts
+   * Switch shebang to python3
+   * Improve comments for pick-and-place task (#238 <https://github.com/moveit/moveit_task_constructor/issues/238>)
+   * Expose MultiPlanner to Python (#474 <https://github.com/moveit/moveit_task_constructor/issues/474>)
+   * Example of constrained orientation planning
+   * Switch to package py_binding_tools
+   * Fix demos (#493 <https://github.com/moveit/moveit_task_constructor/issues/493>)
+   * Merge PR #460 <https://github.com/moveit/moveit_task_constructor/issues/460>: improvements to ModifyPlanningScene stage
+   * Fix SolutionBase::fillMessage(): also write start_scene
+   * Contributors: Fabian Schuetze, Gauthier Hentz, Michael Görner, Robert Haschke, VideoSystemsTech
+Checksums-Sha1:
+ d5a44d5ce44ea748aa92cb42987dd6d8603ac9eb 12380040 ros-one-moveit-task-constructor-demo-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb
+ 8520ae10f3178655a9f7297484f496f4196f743b 26314 ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.buildinfo
+ 0f9e5949ba56a8e87de5d8406ce0dcfab9353777 96068 ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb
+Checksums-Sha256:
+ 99cfb5aae3874f1934c0519ba7c2f8f9c66ee6d3aa580d9118a6b2fc5308ca5a 12380040 ros-one-moveit-task-constructor-demo-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb
+ 7c26e8bade78080dc422a1abe2855edb61809e069867435b8f92756e438649f7 26314 ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.buildinfo
+ f84c9adb421d7b36092450f0ae39c701b0d5a7c1323e417ba36659b72a26021c 96068 ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb
+Files:
+ 88460668dda69e8833b7bcc59255285a 12380040 debug optional ros-one-moveit-task-constructor-demo-dbgsym_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb
+ da3478833b81afddfdf89622c95357fb 26314 misc optional ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.buildinfo
+ 428fd9301cdc32a5f03e68edd10991f5 96068 misc optional ros-one-moveit-task-constructor-demo_1-0.1.4-6-gc13fe5c5-2026.04.04.14.59_amd64.deb

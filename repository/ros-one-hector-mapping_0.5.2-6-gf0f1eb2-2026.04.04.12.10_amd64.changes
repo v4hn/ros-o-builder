@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Thu, 08 Apr 2021 00:00:00 -0000
+Source: ros-one-hector-mapping
+Binary: ros-one-hector-mapping ros-one-hector-mapping-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.2-6-gf0f1eb2-2026.04.04.12.10
+Distribution: bookworm
+Urgency: high
+Maintainer: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Changed-By: Johannes Meyer <meyer@fsr.tu-darmstadt.de>
+Description:
+ ros-one-hector-mapping - hector_mapping is a SLAM approach that can be used without odomet
+Changes:
+ ros-one-hector-mapping (0.5.2-6-gf0f1eb2-2026.04.04.12.10) bookworm; urgency=high
+ .
+   * Remove tf_conversions as a dependency (#93 <https://github.com/tu-darmstadt-ros-pkg/hector_slam/issues/93>)
+   * Add reset mapping (and pose) service (#87 <https://github.com/tu-darmstadt-ros-pkg/hector_slam/issues/87>)
+     * add service to reset the mapping with a new initial pose
+   * Reorganize scanCallback and add comments (#89 <https://github.com/tu-darmstadt-ros-pkg/hector_slam/issues/89>)
+     * Refactor, reformat and comment scanCallback
+     * make rosPointCloudToDataContainer void
+     * make rosLaserScanToDataContainer void
+   * Add pause and reset services to hector_mapping (#86 <https://github.com/tu-darmstadt-ros-pkg/hector_slam/issues/86>)
+     * Add pause and reset services to Hector
+   * Contributors: Marcelino Almeida
+Checksums-Sha1:
+ 8897e2d1ce1ea1de24c804a504970b7eb70cbbf3 6535668 ros-one-hector-mapping-dbgsym_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb
+ fb066bdcad96f84b9ef4c3644eb147891e480650 22428 ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.buildinfo
+ 7bc6a74f46f052143f3c848d2da0296e62072b62 192700 ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb
+Checksums-Sha256:
+ 2456bf6799ca6bbfdd8d0e3f020712e24270f9389ee679da8bbc9df3c20b8589 6535668 ros-one-hector-mapping-dbgsym_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb
+ e5a9568da00a081e1a3d7cec4f3824328954eb2d48185aa5665d4f3386dc03a4 22428 ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.buildinfo
+ 4512c71605ef9db334d90af086c7ecfe02ad27fe1684bb82860a0da953f5f9b6 192700 ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb
+Files:
+ 8668d5a4f0be99b385314ab6b91ba000 6535668 debug optional ros-one-hector-mapping-dbgsym_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb
+ 72d00c39a11bbbc269cb1e1c41e57aa8 22428 misc optional ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.buildinfo
+ bc9e16eb9f6335c5b6484d21b87cd13a 192700 misc optional ros-one-hector-mapping_0.5.2-6-gf0f1eb2-2026.04.04.12.10_amd64.deb

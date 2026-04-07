@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Tue, 26 Oct 2021 00:00:00 -0000
+Source: ros-one-mbf-abstract-nav
+Binary: ros-one-mbf-abstract-nav ros-one-mbf-abstract-nav-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.4.0-43-g981f950-2026.04.04.12.33
+Distribution: bookworm
+Urgency: high
+Maintainer: Sebastian Pütz <spuetz@uos.de>
+Changed-By: Sebastian Pütz <spuetz@uos.de>
+Description:
+ ros-one-mbf-abstract-nav - The mbf_abstract_nav package contains the abstract navigation ser
+Changes:
+ ros-one-mbf-abstract-nav (0.4.0-43-g981f950-2026.04.04.12.33) bookworm; urgency=high
+ .
+   * Fixes planner execution API compatibility, see #279 and https://github.com/uos/mesh_navigation/issues/18
+   * return empty footprint if partly outside of the map, see #272
+   * Allow the controller to handle cancel if properly implemented, see #274
+   * Do not reset cancel_, as that will invalidate ongoing canceling
+   * Run replanning in its own thread, fixes #223, see #267
+   * enable max retries logic for controller execution test, see #264
+   * fix controller termination, see #263
+   * abstract controller execution unit tests, see #261
+   * planner action unit tests, see #244
+   * Fix number of retries check, see #262
+   * transform pose to global frame before calling planner in costmap planner execution, see #256
+   * Use ROS rates for sleeping to support simulation time, see #257
+   * wait for timeout in abstract eecution base, since cancel call could be missed, see #255
+   * add unit test for the abstract execution base, see #249
+   * fix race-condition in the test, see #254
+   * AbstractPlannerExecution refactoring and unit tests, see #237
+   * add documentation, missing includes, joinable check, and fixup and test the abstract_action_base
+Checksums-Sha1:
+ 00c46cc7c7e8dc11026abad4c122ad9b3a965b2b 7544652 ros-one-mbf-abstract-nav-dbgsym_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
+ ea4381fcd80251546b7ac30cb3bd8a00d0d545fa 18293 ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.buildinfo
+ ca9d750ab59ca8fdff6161179cc0a65a138a1ceb 384488 ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
+Checksums-Sha256:
+ d4cdc6056c0192d3c35519dbf960f7ef0660c99b94538404b41fb6b1da862058 7544652 ros-one-mbf-abstract-nav-dbgsym_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
+ 20b2a6c13398e981beaf25ef04cdd95b2f0902aa49c1ea4eb70503f2de551e20 18293 ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.buildinfo
+ 5b1d2a4c1da50f16895551e520de76324df431f486738cbf984d434e2cda7214 384488 ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
+Files:
+ f1e61b760cc0d83a7b3a010deab32f6a 7544652 debug optional ros-one-mbf-abstract-nav-dbgsym_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
+ 33a1ba2e88210e901c06ac472c50a6fa 18293 misc optional ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.buildinfo
+ 8bd48bc6c2e105dd652d9c431f2792b4 384488 misc optional ros-one-mbf-abstract-nav_0.4.0-43-g981f950-2026.04.04.12.33_amd64.deb
