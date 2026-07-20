@@ -16,7 +16,7 @@ jobs:
             exit 1
           fi
       - name: checkout unstable branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: turn git into regular folder
         run: |
           # without this intermediate step the publish action below fails saying ${{ env.stable_branch }} cannot be found.

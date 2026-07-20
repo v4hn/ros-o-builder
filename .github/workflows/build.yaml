@@ -24,7 +24,7 @@ jobs:
       workers: ${{ steps.prepare.outputs.workers }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Prepare Pipeline
         id: prepare
         uses: ./.github/actions/prepare-worker-pipeline
@@ -1443,7 +1443,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: get apt packages from last job
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: ${{ env.AGG }}
           key: apt-repo-stage18-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}

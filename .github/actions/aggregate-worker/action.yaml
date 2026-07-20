@@ -10,7 +10,7 @@ runs:
   steps:
     - name: Fetch results of ${{ inputs.worker }}
       id: restore
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@v6
       with:
         path: ${{ env.REPO }}
         key: apt-repo-${{ inputs.worker }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
