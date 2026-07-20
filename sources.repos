@@ -3,6 +3,18 @@ repositories:
     type: git
     url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
     version: 3a00bc307e511611203fdd0acdaadbad8d68a772
+  Cartesian-Impedance-Controller:
+    type: git
+    url: https://github.com/matthias-mayr/Cartesian-Impedance-Controller.git
+    version: master
+  LMS1xx:
+    type: git
+    url: https://github.com/clearpathrobotics/LMS1xx.git
+    version: noetic-devel
+  ROS-TCP-Endpoint:
+    type: git
+    url: https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+    version: dev-ros
   Stage:
     type: git
     url: https://github.com/ros-o/Stage.git
@@ -55,14 +67,18 @@ repositories:
     type: git
     url: https://github.com/AprilRobotics/apriltag_ros.git
     version: master
+  ar_track_alvar:
+    type: git
+    url: https://github.com/ros-o/ar_track_alvar.git
+    version: obese-devel
   audio_common:
     type: git
     url: https://github.com/ros-drivers/audio_common.git
     version: master
   axis_camera:
     type: git
-    url: https://github.com/ros-drivers/axis_camera.git
-    version: noetic-devel
+    url: https://github.com/ros-o/axis_camera.git
+    version: obese-devel
   backward_ros:
     type: git
     url: https://github.com/pal-robotics/backward_ros.git
@@ -95,22 +111,49 @@ repositories:
     type: git
     url: https://github.com/ros-o/camera_info_manager_py.git
     version: obese-devel
+  camera_umd:
+    type: git
+    url: https://github.com/ros-drivers/camera_umd.git
+    version: master
+  cartesian_controllers:
+    type: git
+    url: https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers.git
+    version: ros1
+  catch_ros:
+    url: https://github.com/AIS-Bonn/catch_ros.git
+    version: master
+  catkin:
+    type: git
+    url: https://github.com/ros-o/catkin.git
+    version: modernize-python-conflict-setup-files
+  catkin_grpc:
+    type: git
+    url: https://github.com/CogRob/catkin_grpc.git
+    version: master
   catkin_virtualenv:
     type: git
-    url: https://github.com/locusrobotics/catkin_virtualenv.git
-    version: master
+    url: https://github.com/ros-o/catkin_virtualenv.git
+    version: obese-devel
   class_loader:
     type: git
-    url: https://github.com/ros/class_loader.git
-    version: noetic-devel
+    url: https://github.com/ros-o/class_loader.git
+    version: obese-devel
   cmake_modules:
     type: git
     url: https://github.com/ros/cmake_modules.git
     version: 0.5-devel
+  cob_extern:
+    type: git
+    url: https://github.com/ros-o/cob_extern.git
+    version: obese-devel
   code_coverage:
     type: git
     url: https://github.com/mikeferguson/code_coverage.git
     version: master
+  codec_image_transport:
+    type: git
+    url: https://github.com/ros-o/codec_image_transport.git
+    version: obese-devel
   collada_urdf:
     type: git
     url: https://github.com/ros-o/collada_urdf.git
@@ -135,9 +178,25 @@ repositories:
     type: git
     url: https://github.com/ros/convex_decomposition.git
     version: melodic-devel
+  costmap_converter:
+    type: git
+    url: https://github.com/ros-o/costmap_converter.git
+    version: obese-devel
+  cpr_onav_description:
+    type: git
+    url: https://github.com/cpr-application/cpr_onav_description.git
+    version: main
+  cras_msgs:
+    type: git
+    url: https://github.com/ctu-vras/cras_msgs.git
+    version: master
   criutils:
     type: git
     url: https://github.com/crigroup/criutils.git
+    version: master
+  cv_camera:
+    type: git
+    url: https://github.com/OTL/cv_camera.git
     version: master
   ddynamic_reconfigure:
     type: git
@@ -166,15 +225,15 @@ repositories:
   eigenpy:
     type: git
     url: https://github.com/stack-of-tasks/eigenpy.git
-    version: master
+    version: devel
   eml:
     type: git
     url: https://github.com/ros-o/eml.git
     version: main
   ethercat_grant:
     type: git
-    url: https://github.com/shadow-robot/ethercat_grant.git
-    version: noetic-devel
+    url: https://github.com/ros-o/ethercat_grant.git
+    version: obese-devel
   euslisp:
     type: git
     url: https://github.com/tork-a/euslisp-release.git
@@ -191,6 +250,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/fake_joint.git
     version: obese-devel
+  fath_pivot_mount_description:
+    type: git
+    url: https://github.com/clearpathrobotics/fath_pivot_mount_description.git
+    version: main
   fetch_ros:
     type: git
     url: https://github.com/ros-o/fetch_ros.git
@@ -203,6 +266,34 @@ repositories:
     type: git
     url: https://github.com/ros-drivers/four_wheel_steering_msgs.git
     version: master
+  find-object:
+    type: git
+    url: https://github.com/introlab/find-object.git
+    version: master
+  flir_camera_driver:
+    type: git
+    url: https://github.com/ros-drivers/flir_camera_driver.git
+    version: noetic-devel
+  four_wheel_steering_msgs:
+    type: git
+    url: https://github.com/ros-drivers/four_wheel_steering_msgs.git
+    version: master
+  freenect_stack:
+    type: git
+    url: https://github.com/ros-drivers/freenect_stack.git
+    version: master
+  foxglove_bridge:
+    type: git
+    url: https://github.com/foxglove/ros-foxglove-bridge.git
+    version: main
+  foxglove_msgs:
+    type: git
+    url: https://github.com/ros2-gbp/foxglove_bridge-release.git
+    version: release/rolling/foxglove_msgs
+  franka_lock_unlock:
+    type: git
+    url: https://github.com/jk-ethz/franka_lock_unlock.git
+    version: ros1
   franka_ros:
     type: git
     url: https://github.com/rhaschke/franka_ros.git
@@ -231,14 +322,18 @@ repositories:
     type: git
     url: https://github.com/ros/genmsg.git
     version: kinetic-devel
+  genmypy:
+    type: git
+    url: https://github.com/rospypi/genmypy.git
+    version: master
   gennodejs:
     type: git
     url: https://github.com/RethinkRobotics-opensource/gennodejs.git
     version: kinetic-devel
   genpy:
     type: git
-    url: https://github.com/ros/genpy.git
-    version: main
+    url: https://github.com/ros-o/genpy.git
+    version: obese-devel
   geographic_info:
     type: git
     url: https://github.com/ros-geographic-info/geographic_info.git
@@ -267,14 +362,34 @@ repositories:
     type: git
     url: https://github.com/PickNikRobotics/graph_msgs.git
     version: jade-devel
+  grid_map:
+    type: git
+    url: https://github.com/ros-o/grid_map.git
+    version: obese-devel
+  gtsam:
+    type: git
+    url: https://github.com/ros-o/gtsam.git
+    version: add-missing-boost-depends
   handeye:
     type: git
     url: https://github.com/crigroup/handeye.git
     version: master
+  hector_slam:
+    type: git
+    url: https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
+    version: noetic-devel
+  hls_lfcd_lds_driver:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+    version: noetic
   hpp-fcl:
     type: git
     url: https://github.com/humanoid-path-planner/hpp-fcl.git
     version: v2.4.5
+  husky:
+    type: git
+    url: https://github.com/husky/husky.git
+    version: noetic-devel
   image_common:
     type: git
     url: https://github.com/ros-perception/image_common.git
@@ -287,6 +402,14 @@ repositories:
     type: git
     url: https://github.com/ros-perception/image_transport_plugins.git
     version: noetic-devel
+  imu_pipeline:
+    type: git
+    url: https://github.com/ros-perception/imu_pipeline.git
+    version: noetic-devel
+  imu_tools:
+    type: git
+    url: https://github.com/CCNYRoboticsLab/imu_tools.git
+    version: noetic
   industrial_core:
     type: git
     url: https://github.com/ros-o/industrial_core.git
@@ -295,6 +418,18 @@ repositories:
     type: git
     url: https://github.com/gavanderhoorn/industrial_robot_status_controller.git
     version: master
+  intera_common:
+    type: git
+    url: https://github.com/RethinkRobotics/intera_common.git
+    version: master
+  intera_sdk:
+    type: git
+    url: https://github.com/ros-o/intera_sdk.git
+    version: obese-devel
+  interactive_marker_twist_server:
+    type: git
+    url: https://github.com/ros-visualization/interactive_marker_twist_server.git
+    version: kinetic-devel
   interactive_markers:
     type: git
     url: https://github.com/ros-o/interactive_markers.git
@@ -311,6 +446,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/joystick_drivers.git
     version: obese-devel
+  jrl_cmakemodules:
+    type: git
+    url: https://github.com/jrl-umi3218/jrl-cmakemodules.git
+    version: master
   jsk_3rdparty:
     type: git
     url: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
@@ -323,10 +462,22 @@ repositories:
     type: git
     url: https://github.com/jsk-ros-pkg/jsk_common_msgs.git
     version: master
+  jsk_control:
+    type: git
+    url: https://github.com/jsk-ros-pkg/jsk_control.git
+    version: master
+  jsk_model_tools:
+    type: git
+    url: https://github.com/jsk-ros-pkg/jsk_model_tools.git
+    version: master
+  jsk_pr2eus:
+    type: git
+    url: https://github.com/jsk-ros-pkg/jsk_pr2eus.git
+    version: master
   jsk_recognition:
     type: git
     url: https://github.com/ros-o/jsk_recognition.git
-    version: obese-devel
+    version: modernize-python
   jsk_roseus:
     type: git
     url: https://github.com/jsk-ros-pkg/jsk_roseus.git
@@ -371,6 +522,18 @@ repositories:
     type: git
     url: https://github.com/ros-o/libfranka.git
     version: obese-devel
+  libg2o:
+    type: git
+    url: https://github.com/ros-gbp/libg2o-release.git
+    version: upstream/2020.5.3
+  libnabo:
+    type: git
+    url: https://github.com/ethz-asl/libnabo.git
+    version: master
+  libpointmatcher:
+    type: git
+    url: https://github.com/norlab-ulaval/libpointmatcher.git
+    version: master
   librealsense2:
     type: git
     url: https://github.com/ros-o/librealsense.git
@@ -379,6 +542,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/libuvc_ros.git
     version: obese-devel
+  magic_enum:
+    type: git
+    url: https://github.com/Neargye/magic_enum.git
+    version: master
   mavlink:
     type: git
     url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -419,6 +586,14 @@ repositories:
     type: git
     url: https://github.com/ros-o/mongodb_store.git
     version: obese-devel
+  move_base_flex:
+    type: git
+    url: https://github.com/naturerobots/move_base_flex.git
+    version: master
+  move_group_online_collision_predictor:
+    type: git
+    url: https://github.com/TAMS-Group/move_group_online_collision_predictor.git
+    version: master
   moveit:
     type: git
     url: https://github.com/moveit/moveit.git
@@ -430,7 +605,7 @@ repositories:
   moveit_calibration:
     type: git
     url: https://github.com/moveit/moveit_calibration.git
-    version: master
+    version: master-modernize-python
   moveit_monitoring:
     type: git
     url: https://github.com/v4hn/moveit_monitoring.git
@@ -451,6 +626,10 @@ repositories:
     type: git
     url: https://github.com/moveit/moveit_resources.git
     version: master
+  moveit_sim_controller:
+    type: git
+    url: https://github.com/PickNikRobotics/moveit_sim_controller
+    version: noetic-devel
   moveit_task_constructor:
     type: git
     url: https://github.com/moveit/moveit_task_constructor.git
@@ -479,10 +658,6 @@ repositories:
     type: git
     url: https://github.com/ros-planning/navigation_msgs.git
     version: ros1
-  openslam_gmapping:
-    type: git
-    url: https://github.com/ros-perception/openslam_gmapping.git
-    version: melodic-devel
   nodelet_core:
     type: git
     url: https://github.com/ros/nodelet_core.git
@@ -505,8 +680,8 @@ repositories:
     version: melodic-devel
   ompl:
     type: git
-    url: https://github.com/ompl/ompl.git
-    version: main
+    url: https://github.com/v4hn/ompl.git
+    version: pr-boost-without-python
   open_karto:
     type: git
     url: https://github.com/ros-perception/open_karto.git
@@ -554,7 +729,7 @@ repositories:
   pinocchio:
     type: git
     url: https://github.com/stack-of-tasks/pinocchio.git
-    version: master
+    version: devel
   plotjuggler:
     type: git
     url: https://github.com/facontidavide/PlotJuggler.git
@@ -571,6 +746,18 @@ repositories:
     type: git
     url: https://github.com/ros-o/pluginlib.git
     version: obese-devel
+  point_cloud_transport:
+    type: git
+    url: https://github.com/ctu-vras/point_cloud_transport.git
+    version: master
+  pointcloud_to_laserscan:
+    type: git
+    url: https://github.com/ros-perception/pointcloud_to_laserscan.git
+    version: lunar-devel
+  pointgrey_camera_driver:
+    type: git
+    url: https://github.com/ros-drivers/pointgrey_camera_driver.git
+    version: noetic-devel
   pr2_common:
     type: git
     url: https://github.com/pr2/pr2_common.git
@@ -583,6 +770,10 @@ repositories:
     type: git
     url: https://github.com/pr2/pr2_ethercat_drivers.git
     version: kinetic-devel
+  pr2_gripper_sensor:
+    type: git
+    url: https://github.com/PR2/pr2_gripper_sensor
+    version: hydro-devel
   pr2_kinematics:
     type: git
     url: https://github.com/PR2/pr2_kinematics.git
@@ -603,6 +794,10 @@ repositories:
     type: git
     url: https://github.com/pr2/pr2_robot.git
     version: kinetic-devel
+  pr2_simulator:
+    type: git
+    url: https://github.com/PR2/pr2_simulator.git
+    version: kinetic-devel
   prosilica_driver:
     type: git
     url: https://github.com/ros-o/prosilica_driver.git
@@ -617,12 +812,12 @@ repositories:
     version: main
   pybind11_catkin:
     type: git
-    url: https://github.com/wxmerkt/pybind11_catkin.git
-    version: master
+    url: https://github.com/ros-o/pybind11_catkin.git
+    version: modernize-python
   python_qt_binding:
     type: git
     url: https://github.com/ros-o/python_qt_binding.git
-    version: obese-devel
+    version: pr-fix-python3.13
   qbdevice-ros:
     type: git
     url: https://github.com/ros-o/qbdevice-ros.git
@@ -671,6 +866,10 @@ repositories:
     type: git
     url: https://github.com/mikeferguson/robot_calibration.git
     version: ros1
+  robot_localization:
+    type: git
+    url: https://github.com/cra-ros-pkg/robot_localization.git
+    version: noetic-devel
   robot_pose_ekf:
     type: git
     url: https://github.com/ros-planning/robot_pose_ekf.git
@@ -687,6 +886,18 @@ repositories:
     type: git
     url: https://github.com/ros/ros.git
     version: noetic-devel
+  ros-utils:
+    type: git
+    url: https://github.com/ctu-vras/ros-utils.git
+    version: master
+  ros_babel_fish:
+    type: git
+    url: https://github.com/ros-o/ros_babel_fish.git
+    version: obese-devel
+  ros_canopen:
+    type: git
+    url: https://github.com/ros-industrial/ros_canopen.git
+    version: melodic-devel
   ros_comm:
     type: git
     url: https://github.com/ros-o/ros_comm.git
@@ -714,7 +925,7 @@ repositories:
   ros_environment:
     type: git
     url: https://github.com/ros-o/ros_environment.git
-    version: debian
+    version: debian-standalone-catkin
   ros_industrial_cmake_boilerplate:
     type: git
     url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
@@ -781,12 +992,24 @@ repositories:
     version: master
   rospack:
     type: git
-    url: https://github.com/ros/rospack.git
-    version: noetic-devel
+    url: https://github.com/ros-o/rospack.git
+    version: obese-devel
   rosparam_shortcuts:
     type: git
     url: https://github.com/ros-o/rosparam_shortcuts.git
     version: obese-devel
+  rospy_message_converter:
+    type: git
+    url: https://github.com/DFKI-NI/rospy_message_converter.git
+    version: master
+  rosserial:
+    type: git
+    url: https://github.com/ros-drivers/rosserial.git
+    version: noetic-devel
+  rosx_introspection:
+    type: git
+    url: https://github.com/facontidavide/rosx_introspection
+    version: master
   rqt:
     type: git
     url: https://github.com/ros-o/rqt.git
@@ -813,8 +1036,8 @@ repositories:
     version: master
   rqt_ez_publisher:
     type: git
-    url: https://github.com/OTL/rqt_ez_publisher.git
-    version: noetic-devel
+    url: https://github.com/ros-o/rqt_ez_publisher.git
+    version: obese-devel
   rqt_graph:
     type: git
     url: https://github.com/ros-visualization/rqt_graph.git
@@ -855,6 +1078,10 @@ repositories:
     type: git
     url: https://github.com/ros-visualization/rqt_pose_view.git
     version: master
+  rqt_pr2_dashboard:
+    type: git
+    url: https://github.com/PR2/rqt_pr2_dashboard.git
+    version: kinetic-devel
   rqt_publisher:
     type: git
     url: https://github.com/ros-visualization/rqt_publisher.git
@@ -919,18 +1146,42 @@ repositories:
     type: git
     url: https://github.com/ros-visualization/rqt_web.git
     version: master
+  rtabmap:
+    type: git
+    url: https://github.com/v4hn/rtabmap.git
+    version: gtsam-4.3
+  rtabmap_ros:
+    type: git
+    url: https://github.com/ros-o/rtabmap_ros.git
+    version: obese-devel
   ruckig:
     type: git
     url: https://github.com/pantor/ruckig.git
-    version: main
+    version: 4e15d8aef128ee678dc5ab8ecffa6515152d0eaa # last state before C++20 transition
   rviz:
     type: git
     url: https://github.com/ros-visualization/rviz.git
-    version: noetic-devel
+    version: main
+  rviz_textured_quads:
+    type: git
+    url: https://github.com/ros-o/rviz_textured_quads.git
+    version: obese-devel
   rviz_visual_tools:
     type: git
     url: https://github.com/PickNikRobotics/rviz_visual_tools.git
     version: master
+  sawyer_robot:
+    type: git
+    url: https://github.com/RethinkRobotics/sawyer_robot
+    version: master
+  sensor_filters:
+    type: git
+    url: https://github.com/ctu-vras/sensor_filters.git
+    version: master
+  serial:
+    type: git
+    url: https://github.com/wjwwood/serial.git
+    branch: main
   setup_files:
     type: git
     url: https://github.com/v4hn/setup_files.git
@@ -967,10 +1218,18 @@ repositories:
     type: git
     url: https://github.com/TAMS-Group/tams_execute.git
     version: main
+  teb_local_planner:
+    type: git
+    url: https://github.com/ros-o/teb_local_planner.git
+    version: obese-devel
   teleop_tools:
     type: git
     url: https://github.com/ros-teleop/teleop_tools.git
     version: noetic-devel
+  teleop_twist_joy:
+    type: git
+    url: https://github.com/ros-teleop/teleop_twist_joy.git
+    version: indigo-devel
   teleop_twist_keyboard:
     type: git
     url: https://github.com/ros-teleop/teleop_twist_keyboard.git
@@ -983,6 +1242,30 @@ repositories:
     type: git
     url: https://github.com/ros-o/trac_ik.git
     version: obese-devel
+  turtlebot3:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3.git
+    version: noetic
+  turtlebot3_msgs:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+    version: noetic
+  turtlebot3_simulations:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+    version: noetic
+  twist_mux:
+    type: git
+    url: https://github.com/ros-teleop/twist_mux.git
+    version: noetic-devel
+  twist_mux_msgs:
+    type: git
+    url: https://github.com/ros-teleop/twist_mux_msgs.git
+    version: melodic-devel
+  unique_identifier:
+    type: git
+    url: https://github.com/ros-geographic-info/unique_identifier.git
+    version: master
   universal_robot:
     type: git
     url: https://github.com/ros-industrial/universal_robot.git
@@ -1007,6 +1290,14 @@ repositories:
     type: git
     url: https://github.com/ros/urdf_tutorial.git
     version: master
+  urdfdom:
+    type: git
+    url: https://github.com/ros/urdfdom.git
+    version: rolling
+  urdfdom_headers:
+    type: git
+    url: https://github.com/ros/urdfdom_headers.git
+    version: rolling
   urdfdom_py:
     type: git
     url: https://github.com/ros/urdf_parser_py.git
@@ -1021,12 +1312,20 @@ repositories:
     version: obese-devel
   usb_cam:
     type: git
-    url: https://github.com/ros-drivers/usb_cam.git
-    version: develop
-  unique_identifier:
+    url: https://github.com/ros-o/usb_cam.git
+    version: obese-devel
+  velodyne:
     type: git
-    url: https://github.com/ros-geographic-info/unique_identifier.git
+    url: https://github.com/ros-drivers/velodyne.git
     version: master
+  velodyne_simulator:
+    type: git
+    url: https://bitbucket.org/DataspeedInc/velodyne_simulator.git
+    version: master
+  video_stream_opencv:
+    type: git
+    url: https://github.com/ros-o/video_stream_opencv.git
+    version: obese-devel
   view_controller_msgs:
     type: git
     url: https://github.com/ros-visualization/view_controller_msgs.git
@@ -1075,3 +1374,7 @@ repositories:
     type: git
     url: https://github.com/ros/xacro.git
     version: noetic-devel
+  zbar_ros:
+    type: git
+    url: https://github.com/ros-drivers/zbar_ros.git
+    version: melodic-devel
