@@ -10,7 +10,7 @@ runs:
   using: "composite"
   steps:
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Prepare environment
         shell: bash
         run: |
@@ -43,7 +43,7 @@ runs:
           ./scripts/generate-jobs.py workspace | tee ${{ env.JOBS_YAML }}
           echo "workers=$(cat ${{ env.JOBS_YAML }} | sed -n '/^stage.*:$/ p' | tr -d '\n')" >> $GITHUB_OUTPUT
       - name: Store jobs cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: ${{ env.JOBS_YAML }}
           key: jobs-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -56,7 +56,7 @@ runs:
           mkdir -p ${{ env.AGG }}/.github/workflows
           cp .github/workflows/sync-unstable.yaml ${{ env.AGG }}/.github/workflows/sync-unstable.yaml
       - name: Store meta data cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: ${{ env.AGG }}
           key: apt-repo-stage-1-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}

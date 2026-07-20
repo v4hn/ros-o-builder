@@ -17,13 +17,13 @@ jobs:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 10
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Prepare
         run: |
           echo "previous_stage=stage$((${{ inputs.stage }}-1))" >> $GITHUB_ENV
           mkdir -p ${{ env.AGG }}
       - name: Fetch results of previous stage
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: ${{ env.AGG }}
           key: apt-repo-${{ env.previous_stage }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -110,7 +110,7 @@ jobs:
         with:
           worker: ${{ env.stage }}-worker19
       - name: Store apt repo
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         if: always()
         with:
           path: ${{ env.AGG }}
