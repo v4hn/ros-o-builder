@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sun, 30 Apr 2017 00:00:00 -0000
+Source: ros-one-stage-ros
+Binary: ros-one-stage-ros ros-one-stage-ros-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.8.0-2-g6d8588c-2026.07.20.22.21
+Distribution: trixie
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-stage-ros - This package provides ROS specific hooks for stage
+Changes:
+ ros-one-stage-ros (1.8.0-2-g6d8588c-2026.07.20.22.21) trixie; urgency=high
+ .
+   * Now uses Stage's native event loop properly and added reassuring startup output.
+   * Added a GUI section so that the world starts in a good place.
+   * Fixed issue such that ranger intensity values are no longer clipped to 256
+     See: #31 <https://github.com/ros-simulation/stage_ros/issues/31>
+   * Contributors: Richard Vaughan, Shane Loretz, William Woodall, gerkey
+Checksums-Sha1:
+ 24e27746867015b359d0da8bfb57e072b8b9bf05 747820 ros-one-stage-ros-dbgsym_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb
+ 4643b297d8763dfa4bb89048ccc04183819d909b 27724 ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.buildinfo
+ db67025d84a0d2db96c19c332df7c687cf900a3c 99212 ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb
+Checksums-Sha256:
+ 4fb93099c21ab81a9ddac4330ae01324134bf14f025ba65f72a19f6ceff585a0 747820 ros-one-stage-ros-dbgsym_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb
+ 90ce73039a64ab2fca19eaa1f914b179dcd4c13169c009b5a527340e47831529 27724 ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.buildinfo
+ 99321bce58b3fc7bbc59f8cd3c20cda3dabc88da254cf011b6443a71ee1777a9 99212 ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb
+Files:
+ 502d2bd99cda7c7b1193a6dbfd18f553 747820 debug optional ros-one-stage-ros-dbgsym_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb
+ 8887afa7c4a03a48a379f2b7c9c3e22e 27724 misc optional ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.buildinfo
+ 3b5454b295ea90b443682183932ac002 99212 misc optional ros-one-stage-ros_1.8.0-2-g6d8588c-2026.07.20.22.21_amd64.deb

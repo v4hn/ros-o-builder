@@ -1,0 +1,54 @@
+# Helper script to sync *-unstable branch to same branch without suffix
+# This can be invoked from the web GUI
+name: sync-unstable
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: validate branch is unstable
+        run: |
+          if [[ ${{ github.ref_name }} != *-unstable ]]; then
+            echo "Invoked branch is not unstable, nothing to sync."
+            exit 1
+          fi
+      - name: checkout unstable branch
+        uses: actions/checkout@v4
+      - name: turn git into regular folder
+        run: |
+          # without this intermediate step the publish action below fails saying ${{ env.stable_branch }} cannot be found.
+          rm -rf .git
+      - name: Strip -unstable suffix
+        run: |
+          find . -type f -exec sed -i 's/-unstable//g' {} +
+          echo stable_branch=$(echo ${{ github.ref_name }} | sed 's/-unstable//') >> $GITHUB_ENV
+      - name: Add sync date to README
+        run: |
+          sed -i "/ Date/ a | Synced As Stable | $(date) |" README.md
+#      # TODO: these would be more elegant, but fail with git index errors
+#      - name: Commit
+#        run: |
+#          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+#          git config --local user.name "github-actions[bot]"
+#          git commit -a -m "sync from unstable"
+#      - name: Push
+#        uses: ad-m/github-push-action@v0.8.0
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: ${{ env.stable_branch }}
+      - name: Move to public
+        run: |
+          mkdir public
+          mv -f * public || true
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ${{ env.stable_branch }}
+          FOLDER: public
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          MESSAGE: "sync from unstable"

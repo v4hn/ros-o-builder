@@ -1,0 +1,47 @@
+[31m[1mCould not resolve rosdep key 'libogre' for distro 'trixie':[0m
+[31m[1mTry to resolve the problem with rosdep and then continue.[0m
+ROS Distro index file associate with commit '989a74401808a6710f4b369307b70f682268f3e1'[0m
+New ROS Distro index url: 'https://raw.githubusercontent.com/ros/rosdistro/989a74401808a6710f4b369307b70f682268f3e1/index-v4.yaml'[0m
+[1m[32m==> [0m[0mGenerating debs for [36mdebian:trixie[0m for package(s) ['rviz'][0m[0m
+No definition of [libogre] for OS version [trixie]
+	rosdep key : libogre
+	OS name    : debian
+	OS version : trixie
+	Data:
+arch:
+		- ogre
+		debian:
+		  bookworm:
+		  - libogre-1.12-dev
+		  buster:
+		  - libogre-1.9.0v5
+		  stretch:
+		  - libogre-1.9.0v5
+		  wheezy:
+		  - libogre-dev
+		fedora:
+		- ogre-devel
+		freebsd:
+		- ogre3d
+		gentoo:
+		- dev-games/ogre
+		macports:
+		- ogre
+		nixos:
+		- ogre1_9
+		openembedded:
+		- ogre@meta-ros-common
+		opensuse:
+		- ogre-devel
+		slackware:
+		- ogre
+		ubuntu:
+		  '*':
+		  - libogre-1.9.0t64
+		  focal:
+		  - libogre-1.9.0v5
+		  jammy:
+		  - libogre-1.9.0v5
+		
+[31m[1merror: (25, 'Inappropriate ioctl for device')[0m
+[33mThis version of bloom is '0.12.0', but the newest available version is '0.14.3'. Please update.[0m

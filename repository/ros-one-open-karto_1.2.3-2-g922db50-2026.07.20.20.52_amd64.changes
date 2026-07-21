@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 10 Nov 2020 00:00:00 -0000
+Source: ros-one-open-karto
+Binary: ros-one-open-karto ros-one-open-karto-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.2.3-2-g922db50-2026.07.20.20.52
+Distribution: trixie
+Urgency: high
+Maintainer: Michael Ferguson <mfergs7@gmail.com>
+Changed-By: Michael Ferguson <mfergs7@gmail.com>
+Description:
+ ros-one-open-karto - Catkinized ROS packaging of the OpenKarto library
+Changes:
+ ros-one-open-karto (1.2.3-2-g922db50-2026.07.20.20.52) trixie; urgency=high
+ .
+   * update destructor to not use c11 feature (#26 <https://github.com/ros-perception/open_karto/issues/26>)
+   * fix parameter passing bug of first link to other robots (#23 <https://github.com/ros-perception/open_karto/issues/23>)
+   * Fix -Wdelete-non-virtual-dtor and -Wreorder warnings (#24 <https://github.com/ros-perception/open_karto/issues/24>)
+   * Contributors: Michael Ferguson, Survy Vaish, Zezhou.Sun
+Checksums-Sha1:
+ 300fa2d44a7d7f5a86e95e1c236429700f67f232 1119260 ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb
+ 654ade9880c8a59dac052f0780433372d0c12a5b 16915 ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.buildinfo
+ d67bb2f70680a0476caf7c1e7c6ab24c6ce41026 126680 ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb
+Checksums-Sha256:
+ 9e5564617da9531ac4076e755f074ec864292fdb1774464aa75d1c2c52a5cf97 1119260 ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb
+ 4fb59ec1b9816acaba1f64668de841691f70688ea445b13419af7ca5bebaed26 16915 ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.buildinfo
+ 036173179e053fe303f4116f119a39f9780649a73eeefc1685a5b47671e67fb9 126680 ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb
+Files:
+ d871430da791af9a6f4526d03120ca67 1119260 debug optional ros-one-open-karto-dbgsym_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb
+ 9d3475e980e4f3651c98fef7352ebd6b 16915 misc optional ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.buildinfo
+ b535a51c67f2d845d0e948a465db72e6 126680 misc optional ros-one-open-karto_1.2.3-2-g922db50-2026.07.20.20.52_amd64.deb

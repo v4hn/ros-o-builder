@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 22 Sep 2020 00:00:00 -0000
+Source: ros-one-socketcan-interface
+Binary: ros-one-socketcan-interface ros-one-socketcan-interface-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.8.5-21-g76283814-2026.07.20.23.12
+Distribution: trixie
+Urgency: high
+Maintainer: Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>
+Changed-By: Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>
+Description:
+ ros-one-socketcan-interface - Generic CAN interface description with helpers for filtering and
+Changes:
+ ros-one-socketcan-interface (0.8.5-21-g76283814-2026.07.20.23.12) trixie; urgency=high
+ .
+   * check settings pointer and print error if null
+   * initalize settings properly in deprecated SocketCANInterface::init
+   * Contributors: Mathias Lüdtke
+Checksums-Sha1:
+ df7bae08a8f32190d892f64b6f9a7c931c53d777 1685740 ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb
+ 9cec69e1fd8cba0632c627e48961577825aee1c0 10272 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.buildinfo
+ 02ce057ac48b48c8f50e91cd2fcf8b362a975eb9 140476 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb
+Checksums-Sha256:
+ ed3ccae3ac540883d2a2ed42cee4f9bb8497b596f245620e11559d9e7edebb48 1685740 ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb
+ 4bad6e0a879d132e43eed1ff1200287d2fcc64c70137973e97fb27c039523440 10272 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.buildinfo
+ 98bbeeec69f2541f0dac4ac00755481304e377f59c05e46858907e645f03c9a4 140476 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb
+Files:
+ f6169da630b48f55059c52b06d1e445e 1685740 debug optional ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb
+ e7a72e452c3bd52aebcce30e9b53bf83 10272 misc optional ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.buildinfo
+ 2e7ea50ef423337132c73a24b655e7f4 140476 misc optional ros-one-socketcan-interface_0.8.5-21-g76283814-2026.07.20.23.12_amd64.deb

@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Fri, 23 Dec 2022 00:00:00 -0000
+Source: ros-one-robot-calibration
+Binary: ros-one-robot-calibration ros-one-robot-calibration-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.7.2-3-g80c2be2-2026.07.20.21.56
+Distribution: trixie
+Urgency: high
+Maintainer: Michael Ferguson <mike@vanadiumlabs.com>
+Changed-By: Michael Ferguson <mike@vanadiumlabs.com>
+Description:
+ ros-one-robot-calibration - Calibrate a Robot
+Changes:
+ ros-one-robot-calibration (0.7.2-3-g80c2be2-2026.07.20.21.56) trixie; urgency=high
+ .
+   * calibrate falling attributes as well if they exist (#144 <https://github.com/mikeferguson/robot_calibration/issues/144>)
+     For continuous joints actually both flags could be specified.
+   * Changes for Ubuntu 22.04 (#141 <https://github.com/mikeferguson/robot_calibration/issues/141>)
+     * no longer use c++11
+     * Add missing boost header
+     * Switch to non deprecated pluginlib header
+   * Contributors: Jochen Sprickerhof, Michael Görner
+Checksums-Sha1:
+ 335c9da9ceeebd977d8a6dd9d4cb3a6d99a30797 18918028 ros-one-robot-calibration-dbgsym_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb
+ 641fb7c26b208072c76f0c9f713a9539deae7275 34481 ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.buildinfo
+ 607cc8e9b9cabc4b6a1c86970d49f8dce37fae62 691284 ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb
+Checksums-Sha256:
+ 9541edb974a42a213da38a625cfdf2be7efdab56ea73cfc1ab8c7adfabaae0a8 18918028 ros-one-robot-calibration-dbgsym_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb
+ d46b936570b6a8ce1cf02940b7ab4f2297f231a719e0364e5a414c27cebb5b3f 34481 ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.buildinfo
+ 25b64d253fd6f46b0f1cc3973bdec9a8772369eb8493de31e3f22736a3224e69 691284 ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb
+Files:
+ c7880477a6db46a108a096511b0f8641 18918028 debug optional ros-one-robot-calibration-dbgsym_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb
+ 30df84bb7f1d3e03bdcb324c03cd35d1 34481 misc optional ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.buildinfo
+ f0ccabd1640d32a57cb74bdc2972d535 691284 misc optional ros-one-robot-calibration_0.7.2-3-g80c2be2-2026.07.20.21.56_amd64.deb

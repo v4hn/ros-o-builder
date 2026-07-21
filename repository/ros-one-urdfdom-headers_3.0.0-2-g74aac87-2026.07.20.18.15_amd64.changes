@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Mon, 20 Apr 2026 00:00:00 -0000
+Source: ros-one-urdfdom-headers
+Binary: ros-one-urdfdom-headers
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.0.0-2-g74aac87-2026.07.20.18.15
+Distribution: trixie
+Urgency: high
+Maintainer: Steve Peters <scpeters@openrobotics.org>
+Changed-By: Steve Peters <scpeters@openrobotics.org>
+Description:
+ ros-one-urdfdom-headers - C++ headers for URDF.
+Changes:
+ ros-one-urdfdom-headers (3.0.0-2-g74aac87-2026.07.20.18.15) trixie; urgency=high
+ .
+   * Update lower, upper, effort, and velocity default joint limits (#95 <https://github.com/ros/urdfdom_headers/issues/95>)
+   * Clean up declaration of ModelInterface's SharedPtrs (#99 <https://github.com/ros/urdfdom_headers/issues/99>)
+   * Extend ``JointLimits`` class to include acceleration, deceleration and jerk limits (#83 <https://github.com/ros/urdfdom_headers/issues/83>)
+   * Contributors: Aarav Gupta, Alejandro Hernández Cordero, Robert Haschke, Sai Kishor Kothakota
+Checksums-Sha1:
+ a15110a6730af0f9e721b9485ed1856bfba2ea53 5985 ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.buildinfo
+ bd9fb7b3719180b0f61ce14782f86ce50ae01e71 19332 ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.deb
+Checksums-Sha256:
+ 48593101a7d35fb9d1ceb3bb1a2796850e21fd726c3b64f205f0f5cf83efd479 5985 ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.buildinfo
+ 1ce533db368772f681e5e12a7e2c83ab3279b1973688f06c072c7270cc5cea34 19332 ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.deb
+Files:
+ 5c11a55c408b0674e9300da28a07c814 5985 misc optional ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.buildinfo
+ ed9ed24cc3e41ebb961583511b99c846 19332 misc optional ros-one-urdfdom-headers_3.0.0-2-g74aac87-2026.07.20.18.15_amd64.deb

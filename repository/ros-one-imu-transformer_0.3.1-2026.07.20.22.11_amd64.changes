@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 22 Nov 2022 00:00:00 -0000
+Source: ros-one-imu-transformer
+Binary: ros-one-imu-transformer ros-one-imu-transformer-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.3.1-2026.07.20.22.11
+Distribution: trixie
+Urgency: high
+Maintainer: Paul Bovbel <pbovbel@clearpathrobotics.com>
+Changed-By: Paul Bovbel <pbovbel@clearpathrobotics.com>
+Description:
+ ros-one-imu-transformer - Node/nodelet combination to transform sensor_msgs::Imu data from
+Changes:
+ ros-one-imu-transformer (0.3.1-2026.07.20.22.11) trixie; urgency=high
+ .
+   * imu_transformer: Fix transformation of the orientation of IMU.
+     The previous computation was wrong. According to REP-145, IMU orientation should express attitude of the sensor frame in a world frame. imu_transformer changes the sensor frame, so it should just recompute the new attitude by transforming the old sensor frame into the new one.
+   * Contributors: Martin Pecka
+Checksums-Sha1:
+ 7c95d15289089a4c234c8d4eec2131c06e8ba277 1892612 ros-one-imu-transformer-dbgsym_0.3.1-2026.07.20.22.11_amd64.deb
+ b02ae014cab095583f1318dda38eedeb2a7493c8 14769 ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.buildinfo
+ 153360efe1b751fa153440f7eb0beb42bce84dbe 105516 ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.deb
+Checksums-Sha256:
+ 83fd001ca5df68a7f3dafd30aa3eae1b4c1011c993c93aea7020fe25d6974e03 1892612 ros-one-imu-transformer-dbgsym_0.3.1-2026.07.20.22.11_amd64.deb
+ fb249b5e1fffd54beb9a5285916067a4537fcc48a02b523f6e03327e67177869 14769 ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.buildinfo
+ ceb2277d760dfde6fc2c36aa69272e2098fdc73bfceec9bd1242ed84c75d0afd 105516 ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.deb
+Files:
+ dec3629371561337fc56fae70ed7f0ac 1892612 debug optional ros-one-imu-transformer-dbgsym_0.3.1-2026.07.20.22.11_amd64.deb
+ a28a21be35ac23ceec41596bd10f6879 14769 misc optional ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.buildinfo
+ 555c2d374bb334b1997dfb89b84a2ecc 105516 misc optional ros-one-imu-transformer_0.3.1-2026.07.20.22.11_amd64.deb

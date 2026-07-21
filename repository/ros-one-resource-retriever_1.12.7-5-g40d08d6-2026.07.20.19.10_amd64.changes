@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2026.07.20.19.10
+Distribution: trixie
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2026.07.20.19.10) trixie; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ aec7d37c495d6531453d5a840a37db58aae76b75 687084 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb
+ d5a76a2ab3de3d425b614f50a994a04b8df022f9 17250 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.buildinfo
+ 8b2ef012c1a9b4201db73938a1300d63069e37d3 64468 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb
+Checksums-Sha256:
+ 9a3ea7ab801163935058706c467017da456ad3d13b3be708b235c6a55094e3a3 687084 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb
+ 9cf9fcfdcbd16ae7ecb2e02734eb67bb916c62ea5104d9621067ea26a17713c3 17250 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.buildinfo
+ fb8cbec9689d6fb78abf387ff5dfee6b72476adeb59ff8b3540ff4ccb541da15 64468 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb
+Files:
+ 947e963fde0510dd7268ef5c0450a49e 687084 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb
+ c559ec2148d8df3a413068e4052b6a12 17250 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.buildinfo
+ 756d2d78c16e5a3c1a1ff6d339a61482 64468 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.07.20.19.10_amd64.deb

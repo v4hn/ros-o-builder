@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 12 Sep 2022 00:00:00 -0000
+Source: ros-one-rospy-message-converter
+Binary: ros-one-rospy-message-converter
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.9-8-g6d907be-2026.07.20.20.18
+Distribution: trixie
+Urgency: high
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Changed-By: Martin Günther <martin.guenther@dfki.de>
+Description:
+ ros-one-rospy-message-converter - Converts between Python dictionaries and JSON to rospy messages.
+Changes:
+ ros-one-rospy-message-converter (0.5.9-8-g6d907be-2026.07.20.20.18) trixie; urgency=high
+ .
+   * Fix flake8 errors
+   * Re-format code using black
+   * package.xml: Add missing build_export_depend
+   * Fix EOF and trailing whitespace
+   * Add pre-commit config
+   * README: Add note about branches
+   * pass down log_level to helper functions (#60 <https://github.com/uos/rospy_message_converter/issues/60>)
+   * Declare file encoding
+     This is necessary on ROS Melodic (Python2), because I have added a
+     non-ASCII character (u umlaut) in my last commit.
+   * Add LICENSE file and license headers
+   * Contributors: Martin Günther, Yuri Rocha
+Checksums-Sha1:
+ 755e46ba62df6a882934b7c8fe59e680a042ffe2 8983 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.buildinfo
+ 50ee2436b026eead99d155f8806b45ffc1a245e2 39540 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.deb
+Checksums-Sha256:
+ 8b1ae780e25113ba95d8ac9bbcbb633307ec7557e2adfc6d948d1c3548a32e8d 8983 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.buildinfo
+ 740d81b8e9773a99900ced6fb7be3bd282f5364d697fb5be346117565dd603b5 39540 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.deb
+Files:
+ 776157a6dfca59df1f2da36eb241e129 8983 misc optional ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.buildinfo
+ 0073ba310fcda219ccdd975144f615cd 39540 misc optional ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.07.20.20.18_amd64.deb

@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Sun, 21 Jun 2026 00:00:00 -0000
+Source: ros-one-rosx-introspection
+Binary: ros-one-rosx-introspection
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.1.1-2-gef6dffe-2026.07.20.20.21
+Distribution: trixie
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-rosx-introspection - Parse any ROS/ROS2 message without compile-time information
+Changes:
+ ros-one-rosx-introspection (3.1.1-2-gef6dffe-2026.07.20.20.21) trixie; urgency=high
+ .
+   * DDS ``@key`` members now contribute to the field path *in position*: the key
+     value is rendered as a bracket immediately after the struct that owns it
+     (e.g. ``topic[ArmID:0]/State``) instead of being appended at the end of the
+     path. For a sequence of keyed structs the key replaces the numeric array
+     index (e.g. ``Moves[J1]/...``, ``Moves[J2]/...``), so elements are identified
+     by key rather than by unstable position.
+   * Fix key brackets accumulating across sequence elements (e.g.
+     ``Moves[1]/...[J1][J2]``) by rolling them back per element.
+   * Key bracket formats: integral ``[field:value]``, enum ``[EnumName]``,
+     string ``[value]``.
+   * Tests: added the IDLKeyConvergence suite asserting exact key paths.
+   * Contributors: Davide Faconti
+Checksums-Sha1:
+ 65369b22058cb1bf343ba20d5638e415e318a094 10062 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.buildinfo
+ a9687b0300745d77c737c0d902a6afa68e6846a5 417536 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.deb
+Checksums-Sha256:
+ 0efb20aa8705711e8328a1eddd71de1629894d7b81c3249972a378bf8e2fddaf 10062 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.buildinfo
+ 8d927e03aaa92f8857b0c93d82bc3281a83debd6465b7c50a2d086cd6ea0958e 417536 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.deb
+Files:
+ baed91f3c9a57eaeb65530ccdf1fc48d 10062 misc optional ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.buildinfo
+ c45f336f26a6029e2bd87a5c4f2f9e73 417536 misc optional ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.07.20.20.21_amd64.deb

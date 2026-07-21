@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-navfn
+Binary: ros-one-navfn ros-one-navfn-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.07.20.23.29
+Distribution: trixie
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-navfn - navfn provides a fast interpolated navigation function that can b
+Changes:
+ ros-one-navfn (0-2026.07.20.23.29) trixie; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 0f414b9b05b248d0a747670b95ece9be628408d5 1511208 ros-one-navfn-dbgsym_0-2026.07.20.23.29_amd64.deb
+ 7b9bd22c389dc733f86030f0b1be0a0997bbb0e4 18469 ros-one-navfn_0-2026.07.20.23.29_amd64.buildinfo
+ 07febcd7367090ab9526286d07d3ee83d9ff50cb 116180 ros-one-navfn_0-2026.07.20.23.29_amd64.deb
+Checksums-Sha256:
+ 1f5d58c4369baed1c5cac840490b25c9eb0b0b7ab4d66973fb9de380e7696801 1511208 ros-one-navfn-dbgsym_0-2026.07.20.23.29_amd64.deb
+ 12058b33e0ed74ee39c0fa5fddfc14ea0cbbeeaa98f2f5f4ad71583189f461e4 18469 ros-one-navfn_0-2026.07.20.23.29_amd64.buildinfo
+ c7600228fafa20bb8fcd649d7f338db6a7fe5b48480c246402046981ab683d1d 116180 ros-one-navfn_0-2026.07.20.23.29_amd64.deb
+Files:
+ ec481375f1be5c99bc8e5973162ab71f 1511208 debug optional ros-one-navfn-dbgsym_0-2026.07.20.23.29_amd64.deb
+ e2a08ea89b7c77026b49e9cd1d43b160 18469 misc optional ros-one-navfn_0-2026.07.20.23.29_amd64.buildinfo
+ b84fe29f5c3305f1adaf5674935b6d13 116180 misc optional ros-one-navfn_0-2026.07.20.23.29_amd64.deb

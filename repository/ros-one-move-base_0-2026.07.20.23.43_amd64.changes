@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-move-base
+Binary: ros-one-move-base ros-one-move-base-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.07.20.23.43
+Distribution: trixie
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-move-base - The move_base package provides an implementation of an action (se
+Changes:
+ ros-one-move-base (0-2026.07.20.23.43) trixie; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 88325378909ef837b943c652ed133ca712d1b1d8 3126356 ros-one-move-base-dbgsym_0-2026.07.20.23.43_amd64.deb
+ fae563c54e88b005db8028fb43c009b84c821e25 18646 ros-one-move-base_0-2026.07.20.23.43_amd64.buildinfo
+ b2aab1a5f6cedf799e35e09eb4220710c33ed73f 240656 ros-one-move-base_0-2026.07.20.23.43_amd64.deb
+Checksums-Sha256:
+ b5dff72b1471e4c28cd31661003ad8fd48a532a282629e40451f3f667d5b26ea 3126356 ros-one-move-base-dbgsym_0-2026.07.20.23.43_amd64.deb
+ 42452e3fd6fe04814efdaf4194f11fa1fdb1c69912c19bdba4043c04497889e8 18646 ros-one-move-base_0-2026.07.20.23.43_amd64.buildinfo
+ 414e6b5b064863d95cd2d549dc5de98648dc13df2464148d1d0e5fd598b115f8 240656 ros-one-move-base_0-2026.07.20.23.43_amd64.deb
+Files:
+ 4b7b2f687707575e8125f26ba39f593e 3126356 debug optional ros-one-move-base-dbgsym_0-2026.07.20.23.43_amd64.deb
+ 5c3dfe3b2411086e515d64ac353526a4 18646 misc optional ros-one-move-base_0-2026.07.20.23.43_amd64.buildinfo
+ fa342d7c6f839a08e014acfcd1d3f88f 240656 misc optional ros-one-move-base_0-2026.07.20.23.43_amd64.deb

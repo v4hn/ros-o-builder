@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 09 May 2025 00:00:00 -0000
+Source: ros-one-roscpp
+Binary: ros-one-roscpp ros-one-roscpp-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.0-37-g8b631fb42-2026.07.20.19.34
+Distribution: trixie
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-roscpp - roscpp is a C++ implementation of ROS.
+Changes:
+ ros-one-roscpp (1.17.0-37-g8b631fb42-2026.07.20.19.34) trixie; urgency=high
+ .
+   * adding boost/bind/bind.hpp includes to files missing them (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Fix "roscpp multithreaded spinners eat up CPU when callbacks take too long" (#2377 <https://github.com/ros/ros_comm/issues/2377>) (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Contributors: Johannes Meyer, Lucas Walter
+Checksums-Sha1:
+ 7045ccacafcd30c70dc456b28f9ed67bc3e520cd 12514656 ros-one-roscpp-dbgsym_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb
+ 4ec16f3137f14840f022277dd043801e18a73972 10482 ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.buildinfo
+ ee95bf32a81c375869470e34e17b53f2262dcd3a 529584 ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb
+Checksums-Sha256:
+ 90277cc5cb328e39f1f3c780340499aad695fb44f8d29bc7cd9d38ebd9d8d3cf 12514656 ros-one-roscpp-dbgsym_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb
+ 169c41eabee30d40003ce6c8453f9e072f0ead1c189b42b89adc3437fdb41f6b 10482 ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.buildinfo
+ 75adfd10663ba6e5c3fdf6ab1b27164a307c3a624fde3b0c61f25d3cf801ca3c 529584 ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb
+Files:
+ bc1970eabd5f4f2184f705e62e7a485b 12514656 debug optional ros-one-roscpp-dbgsym_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb
+ cb715a337b167c35cc1078e0d29476ad 10482 misc optional ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.buildinfo
+ f37dca9f8257220891e9834cf50df359 529584 misc optional ros-one-roscpp_1.17.0-37-g8b631fb42-2026.07.20.19.34_amd64.deb

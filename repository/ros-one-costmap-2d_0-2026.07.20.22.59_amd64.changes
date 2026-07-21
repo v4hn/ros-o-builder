@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-costmap-2d
+Binary: ros-one-costmap-2d ros-one-costmap-2d-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.07.20.22.59
+Distribution: trixie
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-costmap-2d - This package provides an implementation of a 2D costmap that take
+Changes:
+ ros-one-costmap-2d (0-2026.07.20.22.59) trixie; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 5db1c3ee2961d9654a2c143680b9b58b63843d67 10050108 ros-one-costmap-2d-dbgsym_0-2026.07.20.22.59_amd64.deb
+ 50a6e99981ae83d5227817d9c87885c1eee92efa 18429 ros-one-costmap-2d_0-2026.07.20.22.59_amd64.buildinfo
+ f8005a0bb380eab175637289c597f0ea3beefc4e 447208 ros-one-costmap-2d_0-2026.07.20.22.59_amd64.deb
+Checksums-Sha256:
+ e7115d6a8e336221b3518b9a5f78d54a5d2f12a75f69a83c703044273143bd8f 10050108 ros-one-costmap-2d-dbgsym_0-2026.07.20.22.59_amd64.deb
+ 270643eea7c01fb84b184b51cd2ab7104d479adb13916d18258976497ee70e8a 18429 ros-one-costmap-2d_0-2026.07.20.22.59_amd64.buildinfo
+ 3c45602229ff3119f15c289d61917b135a15df24b464dbd3fdae682d4cc8833e 447208 ros-one-costmap-2d_0-2026.07.20.22.59_amd64.deb
+Files:
+ eccf5b3eb9b2de638f4a7a22426f1a82 10050108 debug optional ros-one-costmap-2d-dbgsym_0-2026.07.20.22.59_amd64.deb
+ 5a78f86635e0db799015f7294b3ddcec 18429 misc optional ros-one-costmap-2d_0-2026.07.20.22.59_amd64.buildinfo
+ b3c45a39d991309d5d6f818c10f13f22 447208 misc optional ros-one-costmap-2d_0-2026.07.20.22.59_amd64.deb

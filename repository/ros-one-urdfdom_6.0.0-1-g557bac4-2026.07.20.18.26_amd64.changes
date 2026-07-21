@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Mon, 20 Apr 2026 00:00:00 -0000
+Source: ros-one-urdfdom
+Binary: ros-one-urdfdom ros-one-urdfdom-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 6.0.0-1-g557bac4-2026.07.20.18.26
+Distribution: trixie
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@openrobotics.org>
+Changed-By: Chris Lalancette <clalancette@openrobotics.org>
+Description:
+ ros-one-urdfdom - A library to access URDFs using the DOM model.
+Changes:
+ ros-one-urdfdom (6.0.0-1-g557bac4-2026.07.20.18.26) trixie; urgency=high
+ .
+   * Support for URDF Specification 1.2
+ .
+     Extend parsing of acceleration, deceleration and jerk limits from limit tag (#212)
+ .
+     Update default limits for the joint limits and safety limits (#249)
+ .
+     Add invalid data checks to the Geometry data (#242)
+ .
+     Require urdfdom_headers 3.0.0 (#257)
+   * Use URDF_MAJOR_VERSION for SOVERSION (#248 <https://github.com/ros/urdfdom/issues/248>)
+   * Contributors: Jose Luis Rivero, Sai Kishor Kothakota, Steve Peters
+Checksums-Sha1:
+ 5d559e566dfedf0d9bd56015154a45e136fdc382 1291124 ros-one-urdfdom-dbgsym_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb
+ 4ce2645b83d67d147f67933234c48ad6a8a23335 8453 ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.buildinfo
+ 8a214281bf6d93371b5b3468aa85766cbdaed0b7 76776 ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb
+Checksums-Sha256:
+ 48936191f63c473ad20cb3eec4e847d4a1491bfbe640c2633d1c70684c802cfc 1291124 ros-one-urdfdom-dbgsym_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb
+ e64dac5fc49f2b4b18285d6fb4bfb132045c3fca0b75619c8036ab8d69cd7eeb 8453 ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.buildinfo
+ e3baf3419fdeb6f92a29994ac8a13297b86adbba181e27ed2148259274fa3dbf 76776 ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb
+Files:
+ 492925420147021f88b2a41d63da9a34 1291124 debug optional ros-one-urdfdom-dbgsym_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb
+ 8b97263baa8876940994ca978dd20a53 8453 misc optional ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.buildinfo
+ 44a99e02a502760b65e3cc2bc4c94b5b 76776 misc optional ros-one-urdfdom_6.0.0-1-g557bac4-2026.07.20.18.26_amd64.deb

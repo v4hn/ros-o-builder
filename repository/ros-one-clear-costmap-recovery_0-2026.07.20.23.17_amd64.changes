@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-clear-costmap-recovery
+Binary: ros-one-clear-costmap-recovery ros-one-clear-costmap-recovery-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.07.20.23.17
+Distribution: trixie
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-clear-costmap-recovery - This package provides a recovery behavior for the navigation stac
+Changes:
+ ros-one-clear-costmap-recovery (0-2026.07.20.23.17) trixie; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 1150190dc308c526a049be0bd37678ee7a9eb7f9 634444 ros-one-clear-costmap-recovery-dbgsym_0-2026.07.20.23.17_amd64.deb
+ 7493e423580f80e390d004d824f5c5d2c90eb946 18549 ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.buildinfo
+ 40f9c4390810bc5acd9e375bc6a40182552ea480 42328 ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.deb
+Checksums-Sha256:
+ abe8070bfa153395399f53cb96b7bfc284b6ed2a9b4212bdf8eeccca6822cbaa 634444 ros-one-clear-costmap-recovery-dbgsym_0-2026.07.20.23.17_amd64.deb
+ 199cbf5bb04bc1f10ef688f8f0230fbaa7797387b7917c245d44ef4a831a7097 18549 ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.buildinfo
+ 8779443514dd97b101e61abf455915cd416977fcec39f955d94c1bedbf5ee93d 42328 ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.deb
+Files:
+ a9f4f83b2b55805f52c90a7025fb3dec 634444 debug optional ros-one-clear-costmap-recovery-dbgsym_0-2026.07.20.23.17_amd64.deb
+ fa066339f9cd055b7d34014246af4925 18549 misc optional ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.buildinfo
+ c5a94aeb0ca5568d9db54f44f02f27a4 42328 misc optional ros-one-clear-costmap-recovery_0-2026.07.20.23.17_amd64.deb
