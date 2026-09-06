@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 05 Mar 2021 00:00:00 -0000
+Source: ros-one-fetch-depth-layer
+Binary: ros-one-fetch-depth-layer ros-one-fetch-depth-layer-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.9.1-5-g11f8df9-2026.09.05.15.59
+Distribution: bookworm
+Urgency: high
+Maintainer: Carl Saldanha <csaldanha@fetchrobotics.com>
+Changed-By: Carl Saldanha <csaldanha@fetchrobotics.com>
+Description:
+ ros-one-fetch-depth-layer - The fetch_depth_layer package
+Changes:
+ ros-one-fetch-depth-layer (0.9.1-5-g11f8df9-2026.09.05.15.59) bookworm; urgency=high
+ .
+   * Fixup: Remove version specification for OpenCV
+     Debian Buster only has 3.x available, while Ubuntu 20.04 has 4.x available.
+     This package works with either.
+   * Contributors: Eric Relson
+Checksums-Sha1:
+ 28dcf9135482de134eded72e3cce1766374c72c1 1503732 ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb
+ a054787c1429047414a14b9959fe043f48e18c72 31111 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.buildinfo
+ 8deb4c6074f11314d0fdddeae84364bbbfe7bb1a 95904 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb
+Checksums-Sha256:
+ 66d62c8d760d940039903f4ec9b560ee95217b687ee14f3a1340fd5f9c8810a7 1503732 ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb
+ 5f02919e433cbaec6e1e96a44310ed7117246819f16b2f591511929bd52fad25 31111 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.buildinfo
+ bb3484ac1885e5165f5754396f57e0358a5c008bdb9f7ab307d8cab82e6bfbdb 95904 ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb
+Files:
+ 6f63b85dae773b2c86bd0504da8bc95d 1503732 debug optional ros-one-fetch-depth-layer-dbgsym_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb
+ ee5ef1536903bfa6d6fefea72b12ae60 31111 misc optional ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.buildinfo
+ 6a3bc6dbec6fe63e0ab853ddecdf77cd 95904 misc optional ros-one-fetch-depth-layer_0.9.1-5-g11f8df9-2026.09.05.15.59_amd64.deb

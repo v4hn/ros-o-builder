@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 11 May 2026 00:00:00 -0000
+Source: ros-one-plotjuggler
+Binary: ros-one-plotjuggler ros-one-plotjuggler-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.17.2-1-gb079dd17-2026.09.05.08.25
+Distribution: bookworm
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-plotjuggler - PlotJuggler: juggle with data
+Changes:
+ ros-one-plotjuggler (3.17.2-1-gb079dd17-2026.09.05.08.25) bookworm; urgency=high
+ .
+   * Rework Foxglove and PlotJuggler websocket bridge plugins to accept arbitrary websocket URLs (#1361 <https://github.com/facontidavide/PlotJuggler/issues/1361>)
+   * Fix crash when saving empty/zero-byte layout XML files (#1362 <https://github.com/facontidavide/PlotJuggler/issues/1362>)
+   * Add alert for plotjuggler.com phishing site
+Checksums-Sha1:
+ 62cdef12b3bfbcd139dc8c3fd3fc93036764fde5 120336328 ros-one-plotjuggler-dbgsym_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb
+ 7027c009738e53b6cc3af0f036e452f17109495b 21023 ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.buildinfo
+ 51a3e2a79d2e4ce25d76471fc70c5ad84a1dba96 21693012 ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb
+Checksums-Sha256:
+ af167cbabbf1f75bf195bcd2eebfd53f60f69bf3e9446fa34af3591d5fa123fc 120336328 ros-one-plotjuggler-dbgsym_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb
+ 9e8aee1f2390e0b5e0c336fc03b590ac5f290d751beb61d8273082a1f22fa7c4 21023 ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.buildinfo
+ a2ff940fd8cdc08644d1584e5ffede196df11034e786cc28371120cb3579bc92 21693012 ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb
+Files:
+ ee5486f385c3cb50579bbec808376c10 120336328 debug optional ros-one-plotjuggler-dbgsym_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb
+ 14475ddd67a50e2976cc1bbab1abc6f2 21023 misc optional ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.buildinfo
+ 626355b88facbc8bcac15ee06f1b1ade 21693012 misc optional ros-one-plotjuggler_3.17.2-1-gb079dd17-2026.09.05.08.25_amd64.deb

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-global-planner
+Binary: ros-one-global-planner ros-one-global-planner-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.11.46
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-global-planner - A path planner library and node.
+Changes:
+ ros-one-global-planner (0-2026.09.05.11.46) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 4d1c2fbe9d3104b2981daa5b05a71eec7aa1dbcf 2970304 ros-one-global-planner-dbgsym_0-2026.09.05.11.46_amd64.deb
+ 37f64cc3559fce8b1642bf4b7d12844b99bdc85f 18452 ros-one-global-planner_0-2026.09.05.11.46_amd64.buildinfo
+ 9666002b2daf02073b53112ad464b9a8cc395345 135300 ros-one-global-planner_0-2026.09.05.11.46_amd64.deb
+Checksums-Sha256:
+ ceb93c63dde009b559f4088aa80bca8e23015d7c4fa174bbbbf745aefa413a7c 2970304 ros-one-global-planner-dbgsym_0-2026.09.05.11.46_amd64.deb
+ 0a08bf8fcf0bc7ded560a81679110b46f061d53da4f5ce5b37373bab70b34013 18452 ros-one-global-planner_0-2026.09.05.11.46_amd64.buildinfo
+ 39b6c9ecbb04705b032a97ac0256199d4dacac1d53565ed58c979c2bfe3500b6 135300 ros-one-global-planner_0-2026.09.05.11.46_amd64.deb
+Files:
+ b9830d591f9835e85bdc789cd66132de 2970304 debug optional ros-one-global-planner-dbgsym_0-2026.09.05.11.46_amd64.deb
+ 14f5901bd4ccc9e928b0ac373ec18dc9 18452 misc optional ros-one-global-planner_0-2026.09.05.11.46_amd64.buildinfo
+ 0c7379aaf2505abf38d61a015ee8a69e 135300 misc optional ros-one-global-planner_0-2026.09.05.11.46_amd64.deb

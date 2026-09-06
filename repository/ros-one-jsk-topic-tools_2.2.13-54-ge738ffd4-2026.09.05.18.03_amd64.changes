@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Mon, 06 Jan 2025 00:00:00 -0000
+Source: ros-one-jsk-topic-tools
+Binary: ros-one-jsk-topic-tools ros-one-jsk-topic-tools-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.2.13-54-ge738ffd4-2026.09.05.18.03
+Distribution: bookworm
+Urgency: high
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Changed-By: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Description:
+ ros-one-jsk-topic-tools - jsk_topic_tools
+Changes:
+ ros-one-jsk-topic-tools (2.2.13-54-ge738ffd4-2026.09.05.18.03) bookworm; urgency=high
+ .
+   * remove inline from ConnectionBaseNodelet::isSubscribed() (#1812 <https://github.com/jsk-ros-pkg/jsk_common/issues/1812>)
+ .
+       * jsk_peceptino could not find isSubscribed if it is defined as inline
+     ```
+     usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+     2025-01-05T05:23:12.3723125Z /usr/bin/ld: /tmp/ccUI43It.ltrans0.ltrans.o:(.data.rel.ro+0xc08): undefined reference to jsk_topic_tools::ConnectionBasedNodelet::isSubscribed()'
+     2025-01-05T05:23:12.3918628Z /usr/bin/ld: /tmp/ccUI43It.ltrans7.ltrans.o:(.data.rel.ro+0x578): undefined reference to jsk_topic_tools::ConnectionBasedNodelet::isSubscribed()'
+     2025-01-05T05:23:12.4099509Z /usr/bin/ld: /tmp/ccUI43It.ltrans14.ltrans.o:(.data.rel.ro+0x178): undefined reference to jsk_topic_tools::ConnectionBasedNodelet::isSubscribed()' follow
+     ```
+   * Contributors: Kei Okada
+Checksums-Sha1:
+ 1e1b755b6a24a33d3bf8893f2d2e776c19710707 16157456 ros-one-jsk-topic-tools-dbgsym_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb
+ fb13cb5a6da2d05a4fc81b4ce6efae5d14d46c09 18546 ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.buildinfo
+ ea1f8cfe056085d467db1112ef8234f6f14024c5 1946924 ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb
+Checksums-Sha256:
+ 59bf945e73776256f072901fd153bd876b6e2375cebc01b09133c0adc4320956 16157456 ros-one-jsk-topic-tools-dbgsym_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb
+ cbaf59105a84ea5c2d847b8ea18be1ca69af4e7278cffbfd2587f86590d2588f 18546 ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.buildinfo
+ b8deb046d52be5c480fa211dd16366fd5ac1c3b7ea5e34ab0e68d75585f4d5ca 1946924 ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb
+Files:
+ 4014f00378bb2ad15616a36c8279da6b 16157456 debug optional ros-one-jsk-topic-tools-dbgsym_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb
+ 8296fefda40741158b07c89d1939fe3e 18546 misc optional ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.buildinfo
+ 995f5158d388cdccc9d4123b3da6d362 1946924 misc optional ros-one-jsk-topic-tools_2.2.13-54-ge738ffd4-2026.09.05.18.03_amd64.deb

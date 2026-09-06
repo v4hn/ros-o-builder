@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Mon, 30 Jan 2023 00:00:00 -0000
+Source: ros-one-compressed-depth-image-transport
+Binary: ros-one-compressed-depth-image-transport ros-one-compressed-depth-image-transport-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.15.0-9-gcae592c-2026.09.05.08.43
+Distribution: bookworm
+Urgency: high
+Maintainer: Kenji Brameld <kenjibrameld@gmail.com>
+Changed-By: Kenji Brameld <kenjibrameld@gmail.com>
+Description:
+ ros-one-compressed-depth-image-transport - Compressed_depth_image_transport provides a plugin to image_trans
+Changes:
+ ros-one-compressed-depth-image-transport (1.15.0-9-gcae592c-2026.09.05.08.43) bookworm; urgency=high
+ .
+   * Update maintainer in ros1 branches (#132 <https://github.com/ros-perception/image_transport_plugins/issues/132>)
+   * Fix number of elements in vector parameter to call cv::imencode for OpenCV 4.7 (#130 <https://github.com/ros-perception/image_transport_plugins/issues/130>)
+   * Fix uninitialized memory usage (#125 <https://github.com/ros-perception/image_transport_plugins/issues/125>)
+   * Make the default compressed depth png_level 1 instead of 9 to save cpu (#85 <https://github.com/ros-perception/image_transport_plugins/issues/85>)
+     The default 9 is so cpu intensive to be frequently unusable and results in many dropped frames, and there is still plenty of bandwidth savings from the compression at level 1.
+   * Fix copyright year 20012 -> 2012 (#80 <https://github.com/ros-perception/image_transport_plugins/issues/80>)
+   * Fix regression in compressed_depth_image_transport with old bags (#64 <https://github.com/ros-perception/image_transport_plugins/issues/64>)
+   * Contributors: Johannes Meyer, Kenji Brameld, Lucas Walter, Martin Pecka, Michael Carroll, Timm Linder, ijnek, v4hn
+Checksums-Sha1:
+ ee01811c4e4601e062aa82000b66e5f76fa45fce 1791240 ros-one-compressed-depth-image-transport-dbgsym_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb
+ 45c453f7508837be91dc7b68c76735fff2b4e166 29057 ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.buildinfo
+ 8e5de6c1fe4472dcac8edb86863e5c49254a4842 92024 ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb
+Checksums-Sha256:
+ 04067021f068738f6746a8881deb40a6e30d95004555d97ebbaaa4f69f2f3541 1791240 ros-one-compressed-depth-image-transport-dbgsym_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb
+ 76aa2691ca76c98ffeb3086a43c0edc8fad0604485df9ef6f0ef1bfb5375e1b8 29057 ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.buildinfo
+ 4c1103de43f2d3003381eb6bd2ce26a4ac6f0207437d42a2a51f82f6308f7c81 92024 ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb
+Files:
+ 5d5b3e2acc78f996f1b7b5d3f2d6ad07 1791240 debug optional ros-one-compressed-depth-image-transport-dbgsym_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb
+ 6bcccd97161316559a59e101f189e1d9 29057 misc optional ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.buildinfo
+ d8aa7809ead02d6bb1cbf8739d6e20c8 92024 misc optional ros-one-compressed-depth-image-transport_1.15.0-9-gcae592c-2026.09.05.08.43_amd64.deb

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 22 Sep 2020 00:00:00 -0000
+Source: ros-one-socketcan-interface
+Binary: ros-one-socketcan-interface ros-one-socketcan-interface-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.8.5-21-g76283814-2026.09.05.11.29
+Distribution: bookworm
+Urgency: high
+Maintainer: Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>
+Changed-By: Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>
+Description:
+ ros-one-socketcan-interface - Generic CAN interface description with helpers for filtering and
+Changes:
+ ros-one-socketcan-interface (0.8.5-21-g76283814-2026.09.05.11.29) bookworm; urgency=high
+ .
+   * check settings pointer and print error if null
+   * initalize settings properly in deprecated SocketCANInterface::init
+   * Contributors: Mathias Lüdtke
+Checksums-Sha1:
+ ae7edd980540dd633f93da861d4702e9e30dee4d 1766888 ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb
+ b9ee285aaa27d3356978cdd052eb360ca5b3d827 10246 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.buildinfo
+ e3017e87b1db3cff58b34b86a38e043ac42fea2c 137752 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb
+Checksums-Sha256:
+ 7c289874d6fd9771a21cc3a31c4773412a204a5f7e1abaada35e6f543b5471d0 1766888 ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb
+ ff38c3afe4f6b0307af4ceb16ade7236b41ce3ffdb4000007482b531b862e840 10246 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.buildinfo
+ 9c0adf59e7e6ab5b0999a0996043ce8631011474e91df479fdb325f1d71631ad 137752 ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb
+Files:
+ 4c72c91f2e153f5eef42edc2614f49bf 1766888 debug optional ros-one-socketcan-interface-dbgsym_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb
+ ca818c9e9b941d880ed3518b8f1169ba 10246 misc optional ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.buildinfo
+ b996d9285fb1c06d97234e585213045e 137752 misc optional ros-one-socketcan-interface_0.8.5-21-g76283814-2026.09.05.11.29_amd64.deb

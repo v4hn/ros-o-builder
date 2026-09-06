@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Wed, 05 Jan 2022 00:00:00 -0000
+Source: ros-one-moveit-opw-kinematics-plugin
+Binary: ros-one-moveit-opw-kinematics-plugin ros-one-moveit-opw-kinematics-plugin-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.4.0-4-gfa51c00-2026.09.05.16.04
+Distribution: bookworm
+Urgency: high
+Maintainer: Jeroen De Maeyer <lousymessenger@gmail.com>
+Changed-By: Jeroen De Maeyer <lousymessenger@gmail.com>
+Description:
+ ros-one-moveit-opw-kinematics-plugin - MoveIt kinematics plugin for industrial robots.
+Changes:
+ ros-one-moveit-opw-kinematics-plugin (0.4.0-4-gfa51c00-2026.09.05.16.04) bookworm; urgency=high
+ .
+   * Update status badge noetic-devel (default) branch
+   * Run melodic ci job on ubuntu 18.04
+   * Sync melodic changes to noetic
+     - fix bug introduced when cherry-picking commits
+     - minor formatting improvement
+     - replace logstring with variable LOGNAME
+     - print out odd posture used in self-test on error
+     - Print all deviations and check zero pose as well
+   * Update Jeroen's email address
+   * Add github actions
+     - Add roscpp as CATKIN_DEPENDS
+     - Use the .ci.rosinstall to install dependencies
+     - Move rosinstall for testing to typical place for industrial-ci
+     - Update ci badges to GHA
+     - Remove travis
+   * Contributors: JeroenDM, Simon Schmeisser
+Checksums-Sha1:
+ d0d697a4211080a3b1dc003659643618a666e5eb 2289360 ros-one-moveit-opw-kinematics-plugin-dbgsym_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb
+ 8965fec939a6b05371f2f6d1b4f636c5018547ec 21547 ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.buildinfo
+ 6458a5d4135ee6d3212030215fd49724fcd35588 53344 ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb
+Checksums-Sha256:
+ 85013cc6483e87911a848c2b55b891579f942c7edf00480deda0876864a1e509 2289360 ros-one-moveit-opw-kinematics-plugin-dbgsym_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb
+ 13609fdceaa61eca3785bc7b588fd5e243687e1ffcf4e86884fd01c56f668c27 21547 ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.buildinfo
+ a136126567b8ae665942969627d9ba74ef3119aa3374fb70b7d766af3261eecf 53344 ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb
+Files:
+ d03469702906f04b86b2964877a0b18d 2289360 debug optional ros-one-moveit-opw-kinematics-plugin-dbgsym_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb
+ 8f3774c9eda3b963d597d02294ac95ff 21547 misc optional ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.buildinfo
+ e2bc34accd1e22e4687e8509162d58ae 53344 misc optional ros-one-moveit-opw-kinematics-plugin_0.4.0-4-gfa51c00-2026.09.05.16.04_amd64.deb

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 11 May 2021 00:00:00 -0000
+Source: ros-one-interval-intersection
+Binary: ros-one-interval-intersection ros-one-interval-intersection-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.08.57
+Distribution: bookworm
+Urgency: high
+Maintainer: David Feil-Seifer <david.feilseifer@gmail.com>
+Changed-By: David Feil-Seifer <david.feilseifer@gmail.com>
+Description:
+ ros-one-interval-intersection - Tools for calculating the intersection of interval messages comin
+Changes:
+ ros-one-interval-intersection (0-2026.09.05.08.57) bookworm; urgency=high
+ .
+   * Merge pull request #47 <https://github.com/ros-perception/calibration/issues/47> from PR2-prime/noetic-devel
+     Noetic devel
+   * fixes for compiler warnings CMP0048 and CMP0046
+   * update maintainer for most packages; first try at setup for travis testing (#46 <https://github.com/ros-perception/calibration/issues/46>)
+   * Merge pull request #41 <https://github.com/ros-perception/calibration/issues/41> from Hodorgasm/hydro
+     Fix "stdlib.h: No such file or directory" errors in GCC-6
+   * Fix "stdlib.h: No such file or directory" errors in GCC-6
+     Including '-isystem /usr/include' breaks building with GCC-6.
+     See https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70129
+   * Contributors: Dave Feil-Seifer, Hodorgasm, Vincent Rabaud
+Checksums-Sha1:
+ 526ca18dd2f4629fa7896164da5337f23a3f36a1 1586124 ros-one-interval-intersection-dbgsym_0-2026.09.05.08.57_amd64.deb
+ f9191d1dec45068c76b7d6d8b62d857886ed8aeb 17261 ros-one-interval-intersection_0-2026.09.05.08.57_amd64.buildinfo
+ be54c416fe1c61d5a8177056bb849098a50f6326 144232 ros-one-interval-intersection_0-2026.09.05.08.57_amd64.deb
+Checksums-Sha256:
+ f7cbaa33198e2d873ea352c7c5f6c11db8fec3a087095fa4b9e919357d3e7761 1586124 ros-one-interval-intersection-dbgsym_0-2026.09.05.08.57_amd64.deb
+ 450281bb7ffe24446eac5c5df2cd8059fa9a8bd98326878fbef5bfa6617a6586 17261 ros-one-interval-intersection_0-2026.09.05.08.57_amd64.buildinfo
+ 255fdb409e3b3592470e224f7acf03f7e343f319570baf3cae40faa5ae882aee 144232 ros-one-interval-intersection_0-2026.09.05.08.57_amd64.deb
+Files:
+ d3667c9f9ea787a284e4986ff3efbd73 1586124 debug optional ros-one-interval-intersection-dbgsym_0-2026.09.05.08.57_amd64.deb
+ 6c89b591397b067d5f27822e81ccfa40 17261 misc optional ros-one-interval-intersection_0-2026.09.05.08.57_amd64.buildinfo
+ c56a59bf58ac2cb5ef85db1168be24d2 144232 misc optional ros-one-interval-intersection_0-2026.09.05.08.57_amd64.deb

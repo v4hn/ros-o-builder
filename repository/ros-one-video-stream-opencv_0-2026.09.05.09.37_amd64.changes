@@ -1,0 +1,58 @@
+Format: 1.8
+Date: Tue, 08 Dec 2020 00:00:00 -0000
+Source: ros-one-video-stream-opencv
+Binary: ros-one-video-stream-opencv ros-one-video-stream-opencv-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.09.37
+Distribution: bookworm
+Urgency: high
+Maintainer: Sammy Pfeiffer <Sammy.Pfeiffer@student.uts.edu.au>
+Changed-By: Sammy Pfeiffer <Sammy.Pfeiffer@student.uts.edu.au>
+Description:
+ ros-one-video-stream-opencv - The video_stream_opencv package contains a node to publish a vide
+Changes:
+ ros-one-video-stream-opencv (0-2026.09.05.09.37) bookworm; urgency=high
+ .
+   * #67 Deal better with looping on a video file and the start and stop frame selection
+   * #77 Noticed the default camera info was actually wrong, corrected
+   * #69 Get canonical file for target device and give a warning if we convert to a canonical path
+   * Fix typo when moving log to debug
+   * #57 Enable to select the start and stop points for playing video file.
+   * Avoid the excess of start_frame compared to stop_frame for playing video file.
+   * #55 Add title and travis badge
+   * #54 Enable testing on melodic
+   * Add linesep for each mp jpeg
+   * #53 Upgrade to OpenCV 4
+   * #52 video_stream: fix disconnect callbacks never being called
+   * Video_stream: make sure to always increase suscriber count
+   * #50 Add option to set output_encoding
+   * Add link to cv_bridge::cvtColor
+   * Add config to set output_encoding
+   * #49 Use variable config instead of class properties
+   * #51 install with source permissions, install small.mp4, install test directory to enable testing in catkin install space
+   * #45 libvideo_stream_opencv now depends on gencfg
+   * #44 Don't download test data on source directory
+   * #43 Add option to re-open camera device on read failure
+   * #39 Add dependency for gencfg
+   * #37 Support camera property settings on dynamic reconfigure
+   * #36 Fix bugs for thread initialization/deinitialization
+   * #34 Support changing parameter by using dynamic reconfigure
+   * Add dependencies for test
+   * Support dynamic_reconfigure
+   * #33 Convert video_stream node to nodelet, use nodelet for video_stream
+   * #31 Do not flip old image multiple times, closes #30
+   * #35 Enable CI
+   * Contributors: Alexander Rössler, GITAI, Leonardo Lai, Michael Sobrepera, Ryohei Ueda, Sam Pfeiffer, Sammy Pfeiffer, Yuki Furuta, moju zhao
+Checksums-Sha1:
+ f97ef78ad34f0c9b87569797032fa221274af155 1449888 ros-one-video-stream-opencv-dbgsym_0-2026.09.05.09.37_amd64.deb
+ 988c23f374a87773ee450a515934bd99624a0c72 29250 ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.buildinfo
+ 8e2ffadd5ccbdeb876bc69939944eb6c122efadf 499376 ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.deb
+Checksums-Sha256:
+ 596bb85f664e47556f40a0e4b95e56bee0575e06b5b1b0eacfc52bb34c455472 1449888 ros-one-video-stream-opencv-dbgsym_0-2026.09.05.09.37_amd64.deb
+ face6d1d44b2912a78cd528fca23c576f6dcd93fa213a9148e33827449c6171e 29250 ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.buildinfo
+ cf78722ddd275c760e38a2f2641d90680929ba00d0633c872a5a0a8529b06b07 499376 ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.deb
+Files:
+ 85758865de64d3a5e7622668b1621120 1449888 debug optional ros-one-video-stream-opencv-dbgsym_0-2026.09.05.09.37_amd64.deb
+ b6530cef3e0e9549ea67568379f513c1 29250 misc optional ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.buildinfo
+ 3f229b4ebb37c66645b7ecb05551f759 499376 misc optional ros-one-video-stream-opencv_0-2026.09.05.09.37_amd64.deb

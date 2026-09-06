@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 02 Apr 2021 00:00:00 -0000
+Source: ros-one-rosserial-python
+Binary: ros-one-rosserial-python
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.9.2-5-gc169ae2-2026.09.05.10.08
+Distribution: bookworm
+Urgency: high
+Maintainer: Paul Bouchier <paul.bouchier@gmail.com>
+Changed-By: Paul Bouchier <paul.bouchier@gmail.com>
+Description:
+ ros-one-rosserial-python - A Python-based implementation of the rosserial protocol.
+Changes:
+ ros-one-rosserial-python (0.9.2-5-gc169ae2-2026.09.05.10.08) bookworm; urgency=high
+ .
+   * Adds a shutdown hook for sending txStopRequest (#551 <https://github.com/ros-drivers/rosserial/issues/551>)
+   * Gracefully handle socket server end. (#550 <https://github.com/ros-drivers/rosserial/issues/550>)
+   * Contributors: Can Altineller, Karl Kangur
+Checksums-Sha1:
+ 9b2bee4c472ce40240b43fe2133f0da2635cc2f2 7425 ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.buildinfo
+ bde1c4c22f99fff521deaee79041e50c5c079764 31304 ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.deb
+Checksums-Sha256:
+ de47772c470dd3ba03240ead6176bc233f17afb5f0f3ce8b8e913c5e8da43edd 7425 ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.buildinfo
+ 78d1fb4661af28ac965df73ebbe497fd5692c1f53109b02fd9a386700bb75f10 31304 ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.deb
+Files:
+ 84200ab458e6500d5793154708d75989 7425 misc optional ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.buildinfo
+ 463ae6e5f711c51647416dd5995dc848 31304 misc optional ros-one-rosserial-python_0.9.2-5-gc169ae2-2026.09.05.10.08_amd64.deb

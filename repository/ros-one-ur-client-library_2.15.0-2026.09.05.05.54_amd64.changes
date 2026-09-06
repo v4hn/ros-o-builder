@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Thu, 03 Sep 2026 00:00:00 -0000
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library ros-one-ur-client-library-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.15.0-2026.09.05.05.54
+Distribution: bookworm
+Urgency: high
+Maintainer: Felix Exner <feex@universal-robots.com>
+Changed-By: Felix Exner <feex@universal-robots.com>
+Description:
+ ros-one-ur-client-library - Standalone C++ library for accessing Universal Robots interfaces.
+Changes:
+ ros-one-ur-client-library (2.15.0-2026.09.05.05.54) bookworm; urgency=high
+ .
+   * Robot api 10.14 (#549 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/549>)
+   * Fix spline point velocity and acceleration precision (#559 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/559>)
+   * MotionTarget helpers (#558 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/558>)
+   * [CI] Support running PolyScope X robot in remote control mode in CI (#553 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/553>)
+   * [CI] Update downstream branch for lyrical (#555 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/555>)
+   * [CI] Add exclude rule for stackoverflow (#557 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/557>)
+   * [CI] Separate standalone instruction executor test into its own file (#554 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/554>)
+   * Contributors: Felix Exner, Hasan Amin, URJala
+Checksums-Sha1:
+ 43b81b1035291debff0b018c0cddab34ece94fe9 10666464 ros-one-ur-client-library-dbgsym_2.15.0-2026.09.05.05.54_amd64.deb
+ c5b4345e421fab8b07e0860cff65a7da7b2e4bf6 6652 ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.buildinfo
+ 94cbc0ca6644f8ac6cfb73f65c5f8759b79b6832 627628 ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.deb
+Checksums-Sha256:
+ 1ad0891b99f476ac755097fc7547bcc4b7ea4a3b69bde604c2d0e6a843a982f6 10666464 ros-one-ur-client-library-dbgsym_2.15.0-2026.09.05.05.54_amd64.deb
+ 1c0507bafc212a23c02bcb3bdd2cb3112b1079bf0252c811e6d7e324f2f9cc6e 6652 ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.buildinfo
+ 73465315fbc3af89dd2fc6d4a44f53e675973343d37ff3a65bc7355e2bce3cbe 627628 ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.deb
+Files:
+ c179c662189503eafd0ded455cafce12 10666464 debug optional ros-one-ur-client-library-dbgsym_2.15.0-2026.09.05.05.54_amd64.deb
+ 394382cbe8a253c73f161c393daa813f 6652 misc optional ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.buildinfo
+ 357c2171bf625942f9a78b6a366e9768 627628 misc optional ros-one-ur-client-library_2.15.0-2026.09.05.05.54_amd64.deb

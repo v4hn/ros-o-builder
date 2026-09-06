@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2026.09.05.07.03
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2026.09.05.07.03) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ 5a196b894633ad480a5780b4b76d0791081c10d6 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb
+ b89d45cc90824c522e7f97ad24c540467c93f542 15941 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.buildinfo
+ 6fef791a059d9e754b8bb76844e4310102a8ce81 61560 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb
+Checksums-Sha256:
+ 42c2c3427a0f4c47215247df5e0e7927319830d30871da6adca8778ac56d5356 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb
+ 9b2c3257ef6f21be2ea9952b6da83f351d987db5ffcb4c0fcbb32d9aa7d87020 15941 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.buildinfo
+ da4c672864684c8d922c89360d979040806b77449689177f9b79d712b5c409f5 61560 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb
+Files:
+ b8670dd5ba6d84126cc1bad9373c8f60 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb
+ 9b58f667b822acf63acc633af71f962e 15941 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.buildinfo
+ 3696afbb6fda79de26ee814869f4da9d 61560 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.05.07.03_amd64.deb

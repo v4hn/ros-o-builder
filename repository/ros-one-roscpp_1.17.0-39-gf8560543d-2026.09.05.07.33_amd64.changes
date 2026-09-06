@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 09 May 2025 00:00:00 -0000
+Source: ros-one-roscpp
+Binary: ros-one-roscpp ros-one-roscpp-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.17.0-39-gf8560543d-2026.09.05.07.33
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael Carroll <michael@openrobotics.org>
+Changed-By: Michael Carroll <michael@openrobotics.org>
+Description:
+ ros-one-roscpp - roscpp is a C++ implementation of ROS.
+Changes:
+ ros-one-roscpp (1.17.0-39-gf8560543d-2026.09.05.07.33) bookworm; urgency=high
+ .
+   * adding boost/bind/bind.hpp includes to files missing them (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Fix "roscpp multithreaded spinners eat up CPU when callbacks take too long" (#2377 <https://github.com/ros/ros_comm/issues/2377>) (#2388 <https://github.com/ros/ros_comm/pull/2388>)
+   * Contributors: Johannes Meyer, Lucas Walter
+Checksums-Sha1:
+ 32aba6ef8d5dd8b1a3a7672969861290647f0693 13187796 ros-one-roscpp-dbgsym_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb
+ d9b42161320ea40d53d1fbf0709af5cd7623e098 10395 ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.buildinfo
+ 2c8ec82236c6e7da62faa3d93c89c32c8b7c7c5a 510500 ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb
+Checksums-Sha256:
+ 2e9ce4bf3cc7d45280b071f998778a15684b56f12ae71bf06a3dbd7f8331425f 13187796 ros-one-roscpp-dbgsym_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb
+ d78579eeabc7c086094e62b7c17992bfe8ea59cbb99b7ac70e9420072fe7b704 10395 ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.buildinfo
+ f676c13bd86b8dd4dfbf023f7aef2f74658fe889ca7b4ffd8058589ae9121caa 510500 ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb
+Files:
+ 02ebbf851720c885c87cea75a4bfa217 13187796 debug optional ros-one-roscpp-dbgsym_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb
+ e2844b1dcd82768b39141b7f88edc194 10395 misc optional ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.buildinfo
+ 8e1d85b135390ee4ff9a94842307a5c0 510500 misc optional ros-one-roscpp_1.17.0-39-gf8560543d-2026.09.05.07.33_amd64.deb

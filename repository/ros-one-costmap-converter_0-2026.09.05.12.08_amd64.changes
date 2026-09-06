@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 13 May 2020 00:00:00 -0000
+Source: ros-one-costmap-converter
+Binary: ros-one-costmap-converter ros-one-costmap-converter-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.12.08
+Distribution: bookworm
+Urgency: high
+Maintainer: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Changed-By: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Description:
+ ros-one-costmap-converter - A ros package that includes plugins and nodes to convert occupied
+Changes:
+ ros-one-costmap-converter (0-2026.09.05.12.08) bookworm; urgency=high
+ .
+   * Changed minimum CMake version to 3.1
+   * Fixed wrong return type of method pointToNeighborCells
+   * OpenCV 4 compatibility fix (Thanks to daviddudas)
+   * Contributors: Christoph Rösmann, daviddudas
+Checksums-Sha1:
+ 3299e9965db24ee7763647ba06fb99323408518e 6922852 ros-one-costmap-converter-dbgsym_0-2026.09.05.12.08_amd64.deb
+ 022753bc3cc45ba784f3e004462e882f3edb75c3 30955 ros-one-costmap-converter_0-2026.09.05.12.08_amd64.buildinfo
+ 9343c8db1172557927cc2f9b4bed822fc0ec1774 333240 ros-one-costmap-converter_0-2026.09.05.12.08_amd64.deb
+Checksums-Sha256:
+ e6d9634e4894dd1558db9d5947fdf920b2c7e12168f70a236d8b6223d5bd0b47 6922852 ros-one-costmap-converter-dbgsym_0-2026.09.05.12.08_amd64.deb
+ 67eb571eed48fd791645337cd53d854ac21260105ace9dfa66b3dcfd4976c4b2 30955 ros-one-costmap-converter_0-2026.09.05.12.08_amd64.buildinfo
+ 1e086fb177b63a85aef77d9fee5e35cbd4baa491bd1da831ca2273888defda64 333240 ros-one-costmap-converter_0-2026.09.05.12.08_amd64.deb
+Files:
+ a32efc0eac4969ec5e59d0ad29d96fb8 6922852 debug optional ros-one-costmap-converter-dbgsym_0-2026.09.05.12.08_amd64.deb
+ 83a04766df46b583403a8468035b47b9 30955 misc optional ros-one-costmap-converter_0-2026.09.05.12.08_amd64.buildinfo
+ 5a88946a6034d88b8c5b5fdf537b6a27 333240 misc optional ros-one-costmap-converter_0-2026.09.05.12.08_amd64.deb

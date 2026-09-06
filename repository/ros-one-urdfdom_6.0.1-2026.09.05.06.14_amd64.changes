@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 30 Jul 2026 00:00:00 -0000
+Source: ros-one-urdfdom
+Binary: ros-one-urdfdom ros-one-urdfdom-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 6.0.1-2026.09.05.06.14
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@openrobotics.org>
+Changed-By: Chris Lalancette <clalancette@openrobotics.org>
+Description:
+ ros-one-urdfdom - A library to access URDFs using the DOM model.
+Changes:
+ ros-one-urdfdom (6.0.1-2026.09.05.06.14) bookworm; urgency=high
+ .
+   * Move the headers from .h to .hpp (#250 <https://github.com/ros/urdfdom/issues/250>)
+   * Update the minimum build version of the urdfdom_headers (#262 <https://github.com/ros/urdfdom/issues/262>)
+   * package.xml: add saikishor as maintainer (#261 <https://github.com/ros/urdfdom/issues/261>)
+   * Contributors: Sai Kishor Kothakota
+Checksums-Sha1:
+ fa655fa8fe46473579dbacd756193f7c93346510 1288560 ros-one-urdfdom-dbgsym_6.0.1-2026.09.05.06.14_amd64.deb
+ aa3185018373d54128407f4e8d490c2e68b1a8b0 8695 ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.buildinfo
+ 2a1b4eec234ced216aa444b1d680f7b45c934968 73668 ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.deb
+Checksums-Sha256:
+ 1224432624be390285aff962615e89531f05b47a46e67d772e0879968c045139 1288560 ros-one-urdfdom-dbgsym_6.0.1-2026.09.05.06.14_amd64.deb
+ 17dedabf1641f6ea8d428cb9ca6b666187d44cee17bdb90f7f0a33f9e8fad149 8695 ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.buildinfo
+ 2b14ecaf729caaf0faaaa2377a1df8e3aac3394e5911c6a9f039aa9b4bfa57fc 73668 ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.deb
+Files:
+ 227a5f624388f9ecc2f8b5548d45fc8e 1288560 debug optional ros-one-urdfdom-dbgsym_6.0.1-2026.09.05.06.14_amd64.deb
+ 7d193485c39a8ed189a68f51bd434cb4 8695 misc optional ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.buildinfo
+ 4e504ffff207eefeb0b2e6b73efb7de4 73668 misc optional ros-one-urdfdom_6.0.1-2026.09.05.06.14_amd64.deb

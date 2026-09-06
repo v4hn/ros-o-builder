@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 29 May 2020 00:00:00 -0000
+Source: ros-one-teb-local-planner
+Binary: ros-one-teb-local-planner ros-one-teb-local-planner-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.16.29
+Distribution: bookworm
+Urgency: high
+Maintainer: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Changed-By: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Description:
+ ros-one-teb-local-planner - The teb_local_planner package implements a plugin to the base_loc
+Changes:
+ ros-one-teb-local-planner (0-2026.09.05.16.29) bookworm; urgency=high
+ .
+   * Fixed RobotFootprintModel visualization bug (thanks to Anson Wang)
+   * Reserve the size of the relevant obstacles vector to avoid excessive memory allocations (thanks to João Monteiro)
+   * CMake: Removed system include to avoid compiling issues on some platforms
+   * Contributors: Anson Wang, Christoph Rösmann, João Carlos Espiúca Monteiro
+Checksums-Sha1:
+ aae514b6c48b6eaff4460f30965ce8dd17843472 22417388 ros-one-teb-local-planner-dbgsym_0-2026.09.05.16.29_amd64.deb
+ 900de1b3caf3fbdc5063275fa60e433b28c05e27 32786 ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.buildinfo
+ 41200136f229a35734a0257e4df6c4aa65d74332 633964 ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.deb
+Checksums-Sha256:
+ fddc228059fdd705401f20b77e2d5239b0c92527a35f7b80bfab0f58dc8e1362 22417388 ros-one-teb-local-planner-dbgsym_0-2026.09.05.16.29_amd64.deb
+ 4d3bd19e00bce62b804bd58ce8e0c0aa8b08274867a6e58e71757d8b3defe37d 32786 ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.buildinfo
+ d64735e93a6c864aece3fc5e90162b13d531180d7caaf6bcd676c56e53338597 633964 ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.deb
+Files:
+ 7822d0c9766b4247fab02b34ae294a5c 22417388 debug optional ros-one-teb-local-planner-dbgsym_0-2026.09.05.16.29_amd64.deb
+ e731d29783e5bd268bb0d57ed7f5f56d 32786 misc optional ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.buildinfo
+ 0c3fd34d672da935dbe8b6797a5356d0 633964 misc optional ros-one-teb-local-planner_0-2026.09.05.16.29_amd64.deb

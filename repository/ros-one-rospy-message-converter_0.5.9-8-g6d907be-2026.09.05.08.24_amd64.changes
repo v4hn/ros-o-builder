@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 12 Sep 2022 00:00:00 -0000
+Source: ros-one-rospy-message-converter
+Binary: ros-one-rospy-message-converter
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.9-8-g6d907be-2026.09.05.08.24
+Distribution: bookworm
+Urgency: high
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Changed-By: Martin Günther <martin.guenther@dfki.de>
+Description:
+ ros-one-rospy-message-converter - Converts between Python dictionaries and JSON to rospy messages.
+Changes:
+ ros-one-rospy-message-converter (0.5.9-8-g6d907be-2026.09.05.08.24) bookworm; urgency=high
+ .
+   * Fix flake8 errors
+   * Re-format code using black
+   * package.xml: Add missing build_export_depend
+   * Fix EOF and trailing whitespace
+   * Add pre-commit config
+   * README: Add note about branches
+   * pass down log_level to helper functions (#60 <https://github.com/uos/rospy_message_converter/issues/60>)
+   * Declare file encoding
+     This is necessary on ROS Melodic (Python2), because I have added a
+     non-ASCII character (u umlaut) in my last commit.
+   * Add LICENSE file and license headers
+   * Contributors: Martin Günther, Yuri Rocha
+Checksums-Sha1:
+ bc5298404aba45a45239b8f5dd5f08bc57ae9d77 9001 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.buildinfo
+ 859bba6bf7a75652f18a95f3624027991feb9630 38876 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.deb
+Checksums-Sha256:
+ 82bf54f429744647643e58cfcfd98698d324d32c1416f86bb7242ee629621f56 9001 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.buildinfo
+ 7b4f24016c1e75201e00027ddf40d13caefd0c788c3b496e25ac756d13d6d4b2 38876 ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.deb
+Files:
+ ffd90a00187e6bc14cb8cc50d23b08ab 9001 misc optional ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.buildinfo
+ b03e1ed8bc7789494c73498914009c79 38876 misc optional ros-one-rospy-message-converter_0.5.9-8-g6d907be-2026.09.05.08.24_amd64.deb

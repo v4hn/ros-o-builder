@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Sun, 21 Jun 2026 00:00:00 -0000
+Source: ros-one-rosx-introspection
+Binary: ros-one-rosx-introspection
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.1.1-2-gef6dffe-2026.09.05.08.22
+Distribution: bookworm
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-rosx-introspection - Parse any ROS/ROS2 message without compile-time information
+Changes:
+ ros-one-rosx-introspection (3.1.1-2-gef6dffe-2026.09.05.08.22) bookworm; urgency=high
+ .
+   * DDS ``@key`` members now contribute to the field path *in position*: the key
+     value is rendered as a bracket immediately after the struct that owns it
+     (e.g. ``topic[ArmID:0]/State``) instead of being appended at the end of the
+     path. For a sequence of keyed structs the key replaces the numeric array
+     index (e.g. ``Moves[J1]/...``, ``Moves[J2]/...``), so elements are identified
+     by key rather than by unstable position.
+   * Fix key brackets accumulating across sequence elements (e.g.
+     ``Moves[1]/...[J1][J2]``) by rolling them back per element.
+   * Key bracket formats: integral ``[field:value]``, enum ``[EnumName]``,
+     string ``[value]``.
+   * Tests: added the IDLKeyConvergence suite asserting exact key paths.
+   * Contributors: Davide Faconti
+Checksums-Sha1:
+ 9ec9be8b7282e118bb265e553bdbb379fb48b60b 10074 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.buildinfo
+ 2f41325bd1a117467b50d9853aa57d3ec08a6b1d 398784 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.deb
+Checksums-Sha256:
+ 86b468ea030d147eb0f9166164e9943c324c5c673cfbb7f6511a74ab357b5866 10074 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.buildinfo
+ 09383cff8ff558ee3cd5dea16aaec66c7397a4321e0811f1e235670e9256ae17 398784 ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.deb
+Files:
+ dd6c79e326172eb51eb9d2b75bf39db1 10074 misc optional ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.buildinfo
+ 285c59910333ed9c8093434b8674d793 398784 misc optional ros-one-rosx-introspection_3.1.1-2-gef6dffe-2026.09.05.08.22_amd64.deb

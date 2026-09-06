@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-base-local-planner
+Binary: ros-one-base-local-planner ros-one-base-local-planner-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.05.11.19
+Distribution: bookworm
+Urgency: high
+Maintainer: Michael Ferguson <mfergs7@gmail.com>
+Changed-By: Michael Ferguson <mfergs7@gmail.com>
+Description:
+ ros-one-base-local-planner - This package provides implementations of the Trajectory Rollout a
+Changes:
+ ros-one-base-local-planner (0-2026.09.05.11.19) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 6a4638f5956604a12dd7680f7d551ba790014bb7 5627608 ros-one-base-local-planner-dbgsym_0-2026.09.05.11.19_amd64.deb
+ 8c566ad492b1cb07efadab8655990d68bf8cef36 18511 ros-one-base-local-planner_0-2026.09.05.11.19_amd64.buildinfo
+ bee176d81560c0e886f884c07ad37886c015285a 235476 ros-one-base-local-planner_0-2026.09.05.11.19_amd64.deb
+Checksums-Sha256:
+ 7ef10459c59f60a3e16d61c9f8920c5149666aae22d54bee58d8e3442e3d4582 5627608 ros-one-base-local-planner-dbgsym_0-2026.09.05.11.19_amd64.deb
+ de24992eca7f00b76b9ba061de3057b3f32447c0077523bedec0d74c8c9dc752 18511 ros-one-base-local-planner_0-2026.09.05.11.19_amd64.buildinfo
+ 9b3303eab3f662b1fd21adda617b468dc7f387755af0c3c4f53b1045de9db5bd 235476 ros-one-base-local-planner_0-2026.09.05.11.19_amd64.deb
+Files:
+ a440a1a17f851ac43507594ee2740e08 5627608 debug optional ros-one-base-local-planner-dbgsym_0-2026.09.05.11.19_amd64.deb
+ 72bebec85052c893b8a999ff8fdd2dba 18511 misc optional ros-one-base-local-planner_0-2026.09.05.11.19_amd64.buildinfo
+ eb39fb1aa728fb05018efb93312e4307 235476 misc optional ros-one-base-local-planner_0-2026.09.05.11.19_amd64.deb
