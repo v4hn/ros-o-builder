@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sat, 12 Sep 2026 00:00:00 -0000
+Source: ros-one-rosx-introspection
+Binary: ros-one-rosx-introspection
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 3.1.2-2026.09.26.08.49
+Distribution: bookworm
+Urgency: high
+Maintainer: Davide Faconti <davide.faconti@gmail.com>
+Changed-By: Davide Faconti <davide.faconti@gmail.com>
+Description:
+ ros-one-rosx-introspection - Parse any ROS/ROS2 message without compile-time information
+Changes:
+ ros-one-rosx-introspection (3.1.2-2026.09.26.08.49) bookworm; urgency=high
+ .
+   * Fix: a CDR sequence length was read as unsigned but stored in ``int32_t``; a length
+     with the high bit set wrapped negative, bypassed the max-array guard, parsed the
+     sequence as empty and let following fields be read from element bytes while
+     ``deserialize()`` still reported success. The length is now unsigned and rejected
+     when it exceeds the remaining bytes, at both walk sites (#47).
+   * Convert package share paths to strings for RoboStack/rolling (#45, Tobias Fischer).
+   * CI: add Lyrical to the matrix (#44).
+   * Contributors: Davide Faconti, Tobias Fischer
+Checksums-Sha1:
+ b51b61072419f429868fc98cb300414a7766e909 10035 ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.buildinfo
+ 651af112c2da779111dd9d5cecc3cfdbd1207408 399600 ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.deb
+Checksums-Sha256:
+ b24ae66bd91c94cef373a9ac5d675e35a964d8366f9e616655192e35154010c3 10035 ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.buildinfo
+ fa71603d7a2defa37eb69d8f3449171e0f5852fbce265ee470a576885d320bd0 399600 ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.deb
+Files:
+ 2acb6f1d25ac4c0a2944ed5b4c8f47ff 10035 misc optional ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.buildinfo
+ ea938290998947843ab7c1934b77caab 399600 misc optional ros-one-rosx-introspection_3.1.2-2026.09.26.08.49_amd64.deb

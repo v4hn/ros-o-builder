@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 13 May 2025 00:00:00 -0000
+Source: ros-one-ur-description
+Binary: ros-one-ur-description
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.5.0-2-g39ad110-2026.09.26.18.55
+Distribution: bookworm
+Urgency: high
+Maintainer: G.A. vd. Hoorn <g.a.vanderhoorn@tudelft.nl>
+Changed-By: G.A. vd. Hoorn <g.a.vanderhoorn@tudelft.nl>
+Description:
+ ros-one-ur-description - URDF description for Universal UR3(e), UR5(e), UR7e, UR10(e), UR1
+Changes:
+ ros-one-ur-description (1.5.0-2-g39ad110-2026.09.26.18.55) bookworm; urgency=high
+ .
+   * Add support for UR15 (#702 <https://github.com/ros-industrial/universal_robot/issues/702>)
+   * Fix materials for UR20 upper arm mesh (#699 <https://github.com/ros-industrial/universal_robot/issues/699>)
+   * Update the inertia matrices for the UR5e and UR3e (#697 <https://github.com/ros-industrial/universal_robot/issues/697>)
+     They have been updated from the CAD model and should be more accurate than
+     the cylinder approximations
+   * Add License files to packages (#695 <https://github.com/ros-industrial/universal_robot/issues/695>)
+   * Contributors: Felix Exner
+Checksums-Sha1:
+ 274abc6bc265afe6d50ee2acfc5b9fa90bc7a782 7429 ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.buildinfo
+ a43039d9a0a15dd3d291d96db06eaf4daa9e98dd 21005608 ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.deb
+Checksums-Sha256:
+ 6f3c6c705695c50e4e1c1b13a6fd35a66b213b7ca167b34d32ab9c1482ffc336 7429 ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.buildinfo
+ bb21d69655bf7b424aa2f4a2beebfb8b9697014a780d30b1b26af60c7b8036fc 21005608 ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.deb
+Files:
+ 1687e364d25c568c036c84c9b9d7c062 7429 misc optional ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.buildinfo
+ dacfeafd2cebf1f777dc5e4b21c852a5 21005608 misc optional ros-one-ur-description_1.5.0-2-g39ad110-2026.09.26.18.55_amd64.deb

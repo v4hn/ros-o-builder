@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Mon, 16 Dec 2024 00:00:00 -0000
+Source: ros-one-libpointmatcher
+Binary: ros-one-libpointmatcher ros-one-libpointmatcher-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.4.4-5-g62b3478-2026.09.26.06.39
+Distribution: bookworm
+Urgency: high
+Maintainer: Francois Pomerleau <f.pomerleau@gmail.com>
+Changed-By: Francois Pomerleau <f.pomerleau@gmail.com>
+Description:
+ ros-one-libpointmatcher - libpointmatcher is a modular ICP library, useful for robotics and
+Changes:
+ ros-one-libpointmatcher (1.4.4-5-g62b3478-2026.09.26.06.39) bookworm; urgency=high
+ .
+   **New features:**
+   * Added Angle Limit Datapointsfilter, which filters points if they lie inside or outside of a given spherical wedge
+   * Added support for binary PLY files IO
+   **Major changes:**
+   * Min. Cmake version pumped to 3.15
+   * Removed dependency on boost filesystem
+   * Python bindings compile with recent versions of pybind11
+   **Other changes:**
+   * Updated Python GitHub action
+   * Updated gitignore
+   * Updated docs
+Checksums-Sha1:
+ 5803e7f36d1fd7b385ae94de1d9a259f7831c5b2 94192708 ros-one-libpointmatcher-dbgsym_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb
+ d5fd1f1b5b6641a5eaac9a8936176f446c9c5b3f 14288 ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.buildinfo
+ e15daf130b1c8375453900fd84f88c9b5ff12320 99809072 ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb
+Checksums-Sha256:
+ 7bba4cf573b193f26dffd3149c64a479e0f8151fa5524eddfe830418c533c59e 94192708 ros-one-libpointmatcher-dbgsym_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb
+ 0fb2ca95ed26cb9db2f5ed3ae1c7f60a660d15ad19ac074c301ff70ab14697ef 14288 ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.buildinfo
+ 6268965d21feb2cadae05e09b77628813fe343dc20f70c32cc8cddc95d7f0a84 99809072 ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb
+Files:
+ 309b175e2454e6cb2b4ab524f6966fbe 94192708 debug optional ros-one-libpointmatcher-dbgsym_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb
+ f1c38795a36ab3c2c378fc82ef076afa 14288 misc optional ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.buildinfo
+ e5ec94286d61a8bda49589dc2068de91 99809072 misc optional ros-one-libpointmatcher_1.4.4-5-g62b3478-2026.09.26.06.39_amd64.deb

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Feb 2025 00:00:00 -0000
+Source: ros-one-gazebo-ros-pkgs
+Binary: ros-one-gazebo-ros-pkgs
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.9.3-2026.09.26.11.24
+Distribution: bookworm
+Urgency: high
+Maintainer: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Changed-By: Alejandro Hernández Cordero <ahcorde@osrfoundation.org>
+Description:
+ ros-one-gazebo-ros-pkgs - Interface for using ROS with the Gazebo simulator.
+Changes:
+ ros-one-gazebo-ros-pkgs (2.9.3-2026.09.26.11.24) bookworm; urgency=high
+ .
+   * Noetic: Add <deprecated> tag to package.xml files (#1566 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1566>)
+     These packages are now deprecated with Gazebo classic 11 reaching
+     end-of-life. This adds the <deprecated> tag (https://www.ros.org/reps/rep-0149.html#deprecated)
+     enabling tools to notify users about the deprecation.
+   * Add ahcorde as maintainer (noetic-devel) (#1437 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/1437>)
+   * Contributors: Addisu Z. Taddese, Jose Luis Rivero
+Checksums-Sha1:
+ 7642a35f8d3f55b036ea9e544e36155ca333a6cc 7378 ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.buildinfo
+ 09d498de335ceee63f1fb238c811e7bed5e39001 4096 ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.deb
+Checksums-Sha256:
+ 74d75c29bf5cbfe03f131ce164e3c7b67f8032b32b14437e9b35d64c27f197e9 7378 ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.buildinfo
+ ba2bd6400a1f8257f580a6a34d03b3d2ed1f8a828ea905028a616e1339fa0fd3 4096 ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.deb
+Files:
+ 2381e245a0d19657d0e3a2eb4fe980a4 7378 misc optional ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.buildinfo
+ 40f01d55883224c918a0dabba6600a9b 4096 misc optional ros-one-gazebo-ros-pkgs_2.9.3-2026.09.26.11.24_amd64.deb

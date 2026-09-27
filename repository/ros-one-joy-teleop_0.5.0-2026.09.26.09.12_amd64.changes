@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Thu, 04 May 2023 00:00:00 -0000
+Source: ros-one-joy-teleop
+Binary: ros-one-joy-teleop
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.5.0-2026.09.26.09.12
+Distribution: bookworm
+Urgency: high
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Changed-By: Bence Magyar <bence.magyar.robotics@gmail.com>
+Description:
+ ros-one-joy-teleop - A (to be) generic joystick interface to control a robot
+Changes:
+ ros-one-joy-teleop (0.5.0-2026.09.26.09.12) bookworm; urgency=high
+ .
+   * When allow_multiple_commands is True, Use AND operation with match_command instead of OR operation (#82 <https://github.com/ros-teleop/teleop_tools/issues/82>)
+     * Use AND operation with match_command instead of OR operation
+     * added allow_multiple_commands parameter to have some control over the joystick combinations
+   * Contributors: Sai Kishor Kothakota
+Checksums-Sha1:
+ 28d1bc2dd9d431e092e1ef65ed731dff3fa1db79 7356 ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.buildinfo
+ b27406aacfbb41907bc1b7f21ab48e8bb7bf0acc 10764 ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.deb
+Checksums-Sha256:
+ 5bb5e6a5319656cf0081eb2c1a50dc919a4a49d50d13f5f2dce9701b67e37c20 7356 ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.buildinfo
+ 6be9aa63db02c9f50081beef1babc3b3925157a525448332275fb5b0ed4124fa 10764 ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.deb
+Files:
+ 70247dfc19f650a8a3241c6edf8c125f 7356 misc optional ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.buildinfo
+ 216377126b6e8a36674b533a8a0a98da 10764 misc optional ros-one-joy-teleop_0.5.0-2026.09.26.09.12_amd64.deb

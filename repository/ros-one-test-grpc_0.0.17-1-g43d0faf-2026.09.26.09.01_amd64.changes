@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Wed, 14 May 2025 00:00:00 -0000
+Source: ros-one-test-grpc
+Binary: ros-one-test-grpc ros-one-test-grpc-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.0.17-1-g43d0faf-2026.09.26.09.01
+Distribution: bookworm
+Urgency: high
+Maintainer: Yuki Furuta <furushchev@gmail.com>
+Changed-By: Yuki Furuta <furushchev@gmail.com>
+Description:
+ ros-one-test-grpc - A package for testing the grpc package
+Changes:
+ ros-one-test-grpc (0.0.17-1-g43d0faf-2026.09.26.09.01) bookworm; urgency=high
+ .
+   * Allow users settings CXX standard (#63 <https://github.com/CogRob/catkin_grpc/issues/63>)
+   * Exclude unsecure library from exported libraries (#62 <https://github.com/CogRob/catkin_grpc/issues/62>)
+   * Fix bug in realpath (#61 <https://github.com/CogRob/catkin_grpc/issues/61>)
+   * Depend on roscpp (#59 <https://github.com/CogRob/catkin_grpc/issues/59>)
+   * Set the right version for test_grpc
+   * Add CHANGELOG.rst for test_grpc
+   * Add package to test grpc (#57 <https://github.com/CogRob/catkin_grpc/issues/57>)
+     * Add package to test grpc
+     * Enable Github Actions
+     * support realpath on cmake <3.19
+   * Contributors: Ryohei Ueda, Yuki Furuta
+   * Add package to test grpc (#57 <https://github.com/CogRob/catkin_grpc/issues/57>)
+     * Add package to test grpc
+     * Enable Github Actions
+     * support realpath on cmake <3.19
+   * Contributors: Yuki Furuta
+Checksums-Sha1:
+ 82734a449155bc6cc1fc22e6144bc68ede5cfb27 842988 ros-one-test-grpc-dbgsym_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb
+ 57e51e4b4888c8cb4f6bcee844e4e9a64aadf4a5 10601 ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.buildinfo
+ 1ce9f119822cc1f7df33b2fcc40cf41061d0f5ac 620236 ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb
+Checksums-Sha256:
+ d3cc4098195c80f482aba74c2848e7f35bea82eabc6e36c158171d70753568bf 842988 ros-one-test-grpc-dbgsym_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb
+ 2a3d9c25c806b1e75740fb9fc3788d6492d529ac042a3f9a60b265b5bca48b48 10601 ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.buildinfo
+ 00d8c162f6b29d17b5318cc5b277ce1060cff1d2476d52ef67f1d31e7d71ac11 620236 ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb
+Files:
+ b89dde1558cbdfdbdd92ab301e8b18ff 842988 debug optional ros-one-test-grpc-dbgsym_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb
+ 70409f5248582e684a1352a56b4deab3 10601 misc optional ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.buildinfo
+ 8edc633b2d7da8215c00fe049608da0a 620236 misc optional ros-one-test-grpc_0.0.17-1-g43d0faf-2026.09.26.09.01_amd64.deb

@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-rotate-recovery
+Binary: ros-one-rotate-recovery ros-one-rotate-recovery-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.26.12.05
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-rotate-recovery - This package provides a recovery behavior for the navigation stac
+Changes:
+ ros-one-rotate-recovery (0-2026.09.26.12.05) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ f16e869b4a6cbf3482f1a3771462a007a8b9e871 644588 ros-one-rotate-recovery-dbgsym_0-2026.09.26.12.05_amd64.deb
+ baa6fd8ffb2df240bda7f66159d5590b60644720 18535 ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.buildinfo
+ 51554622ba11ca0e6cf3e654679fce6cf32cc4ec 40596 ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.deb
+Checksums-Sha256:
+ 54553224e45e216bb0e688b214b214c34d1e4abd3c2b455578d5b311c6ae34dc 644588 ros-one-rotate-recovery-dbgsym_0-2026.09.26.12.05_amd64.deb
+ 4b0344a06c503fb2bc3411ca1ab329264cbeac028980d4187205045fee06bb3c 18535 ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.buildinfo
+ 43063e603fc5b8d36600881a6a4aa66dd758967bb5ba228397d47eafd38395e0 40596 ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.deb
+Files:
+ 860fc45b0b6a26c9aa0ed90fc5a327f0 644588 debug optional ros-one-rotate-recovery-dbgsym_0-2026.09.26.12.05_amd64.deb
+ 035063479c0168785c1ef357f952e131 18535 misc optional ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.buildinfo
+ eb47b0a421ccdbe28916760bdfb58e74 40596 misc optional ros-one-rotate-recovery_0-2026.09.26.12.05_amd64.deb

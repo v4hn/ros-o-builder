@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 20 May 2025 00:00:00 -0000
+Source: ros-one-ur-robot-driver
+Binary: ros-one-ur-robot-driver ros-one-ur-robot-driver-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.4.1-10-g64f3f1a-2026.09.26.22.30
+Distribution: bookworm
+Urgency: high
+Maintainer: Felix Exner <feex@universal-robots.com>
+Changed-By: Felix Exner <feex@universal-robots.com>
+Description:
+ ros-one-ur-robot-driver - The new driver for Universal Robots UR3, UR5 and UR10 robots with
+Changes:
+ ros-one-ur-robot-driver (2.4.1-10-g64f3f1a-2026.09.26.22.30) bookworm; urgency=high
+ .
+   * Fix minimum required polyscope version in the output (#751 <https://github.com/UniversalRobots/Universal_Robots_ROS_Driver/issues/751>)
+     When we raised the version requirements to 3.14/5.9 we didn't update the
+     output in the ROS driver.
+   * Contributors: Felix Exner
+Checksums-Sha1:
+ 2b2798e4047b1bd42076977e708924956e835c27 11111416 ros-one-ur-robot-driver-dbgsym_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb
+ 8eefc093b8d6fb398db8d6eb692f46cfa86a3dfa 24520 ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.buildinfo
+ 7063dfe123e72072a343a6e00b215ac713f75811 503456 ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb
+Checksums-Sha256:
+ 2a1d4e9878f1b47a79787efb4a678c801d7e71d8431b6ced672f9c4396e4efc3 11111416 ros-one-ur-robot-driver-dbgsym_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb
+ ce053f4cc46990b1e44c3f839075448b768c7e8873f30ba079361c54884e0afe 24520 ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.buildinfo
+ b1a9df028810f4e45432a62fc468eba223c21ec256d3cbc61ad8fefb5a5e20ba 503456 ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb
+Files:
+ 66ebf4217837af5539351d8cef74c4ad 11111416 debug optional ros-one-ur-robot-driver-dbgsym_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb
+ bb9fcb763552336ad723fc9742adfc3a 24520 misc optional ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.buildinfo
+ c0e489713e7499f2f6b821c5f42e8ff0 503456 misc optional ros-one-ur-robot-driver_2.4.1-10-g64f3f1a-2026.09.26.22.30_amd64.deb

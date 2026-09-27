@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Wed, 09 Apr 2025 00:00:00 -0000
+Source: ros-one-camera-info-manager
+Binary: ros-one-camera-info-manager ros-one-camera-info-manager-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.1-2026.09.26.08.41
+Distribution: bookworm
+Urgency: high
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Changed-By: Jack O'Quin <jack.oquin@gmail.com>
+Description:
+ ros-one-camera-info-manager - This package provides a C++ interface for camera calibration info
+Changes:
+ ros-one-camera-info-manager (1.12.1-2026.09.26.08.41) bookworm; urgency=high
+ .
+   * Revert "Virtualize CameraInfoManager  (#234 <https://github.com/ros-perception/image_common/issues/234>)" (#353 <https://github.com/ros-perception/image_common/issues/353>)
+     This reverts commit e9c8c3246007d7717708b5267e1e2e909e4c0694.
+     It cannot be released into ROS Noetic because it breaks ABI.
+   * Add support for missing CameraInfo.msg fields (#175 <https://github.com/ros-perception/image_common/issues/175>)
+     Co-authored-by: anre <mailto:andreas.reich@unibw.de>
+   * Virtualize CameraInfoManager  (#234 <https://github.com/ros-perception/image_common/issues/234>)
+     * Virtualize CameraInfoManager so custom camera implementations can support flash operations
+     * Update camera_info_manager/src/camera_info_manager.cpp
+     Co-authored-by: Geoffrey Biggs <mailto:gbiggs@killbots.net>
+     * Move function bodies
+     Co-authored-by: Geoffrey Biggs <mailto:gbiggs@killbots.net>
+   * fix linter warnings due to extra ";" after end of namespace braces (#210 <https://github.com/ros-perception/image_common/issues/210>)
+   * (camera_info_manager) include own dirs before catkin dirs (#199 <https://github.com/ros-perception/image_common/issues/199>)
+   * Contributors: Bernd Pfrommer, Matthijs van der Burgh, Shane Loretz, UniBwTAS, jdavidberger
+Checksums-Sha1:
+ b9aba715c4137a44c63bb7b3d59d825ecb30a94f 437584 ros-one-camera-info-manager-dbgsym_1.12.1-2026.09.26.08.41_amd64.deb
+ cbe0d319b8bc5e6d0751a1be0ed51e4635bcdc8e 18796 ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.buildinfo
+ e2a7598f98ba886b5be8a22ecffe8a3784afb6d8 46636 ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.deb
+Checksums-Sha256:
+ 781af70fd08105187814213b28f89b2e0547cff826986ba966f4a15878329595 437584 ros-one-camera-info-manager-dbgsym_1.12.1-2026.09.26.08.41_amd64.deb
+ fdadf256645e16e9fc330dd5651120e997d50441d0b3bb05622645d1c8bad42e 18796 ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.buildinfo
+ 3bbc69f5371ea411b1bb9b6fa53b06036335953921ce2948019fb7fd084f19ab 46636 ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.deb
+Files:
+ 484c448889eec110f8781bdf9e713a72 437584 debug optional ros-one-camera-info-manager-dbgsym_1.12.1-2026.09.26.08.41_amd64.deb
+ bbd219ecebe5860753e3465859ab9caa 18796 misc optional ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.buildinfo
+ 4f2cbe6cde587dea775a8d35ab4a040b 46636 misc optional ros-one-camera-info-manager_1.12.1-2026.09.26.08.41_amd64.deb

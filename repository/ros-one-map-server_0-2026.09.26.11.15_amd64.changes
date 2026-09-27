@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-map-server
+Binary: ros-one-map-server ros-one-map-server-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.09.26.11.15
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-map-server - map_server provides the map_server ROS Node, which offers map dat
+Changes:
+ ros-one-map-server (0-2026.09.26.11.15) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 0ac1c41da65045ff8e0af538979a2961862ac377 986328 ros-one-map-server-dbgsym_0-2026.09.26.11.15_amd64.deb
+ fd406e77bb8a17a19ba2fb2d3ae005baed78fc8c 14179 ros-one-map-server_0-2026.09.26.11.15_amd64.buildinfo
+ d1bcf2a97b0f75bbccbd1fe2370d41bcb99175c0 68920 ros-one-map-server_0-2026.09.26.11.15_amd64.deb
+Checksums-Sha256:
+ 8ef71b95f815dc20866ec70b3d77fb25095455b4ffebcb26c4cecdfa984a1775 986328 ros-one-map-server-dbgsym_0-2026.09.26.11.15_amd64.deb
+ 25e6f718ad328176067e471484ff47d2e476c7ad7598dce4bca18d1261252e94 14179 ros-one-map-server_0-2026.09.26.11.15_amd64.buildinfo
+ 261f685b3369d0d7708d2c72c9fbc0af68e6a44a5ad1bb7f9db09c6564d8176d 68920 ros-one-map-server_0-2026.09.26.11.15_amd64.deb
+Files:
+ 95c104dbd0bd694b943877770e1f6c3c 986328 debug optional ros-one-map-server-dbgsym_0-2026.09.26.11.15_amd64.deb
+ 8435215e115a3e30155f17831ccd7143 14179 misc optional ros-one-map-server_0-2026.09.26.11.15_amd64.buildinfo
+ 548e3ff658c0e0073de63604275da1f7 68920 misc optional ros-one-map-server_0-2026.09.26.11.15_amd64.deb

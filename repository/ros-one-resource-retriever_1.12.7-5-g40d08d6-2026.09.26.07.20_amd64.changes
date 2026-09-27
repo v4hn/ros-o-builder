@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 06 Dec 2021 00:00:00 -0000
+Source: ros-one-resource-retriever
+Binary: ros-one-resource-retriever ros-one-resource-retriever-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.12.7-5-g40d08d6-2026.09.26.07.20
+Distribution: bookworm
+Urgency: high
+Maintainer: Chris Lalancette <clalancette@osrfoundation.org>
+Changed-By: Chris Lalancette <clalancette@osrfoundation.org>
+Description:
+ ros-one-resource-retriever - This package retrieves data from url-format files such as http://
+Changes:
+ ros-one-resource-retriever (1.12.7-5-g40d08d6-2026.09.26.07.20) bookworm; urgency=high
+ .
+   * Split curl dependency to avoid dev package at runtime (#67 <https://github.com/ros/resource_retriever/issues/67>)
+   * Contributors: Scott K Logan
+Checksums-Sha1:
+ ce6a2802b03910d2a4bd2d1879e3b1d241950c8d 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb
+ bb69afcc5f09c92227c8458c9dab1ee92bade4f6 15994 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.buildinfo
+ f494f69adfb302033f77aec0fbddf7c239f5a43c 61560 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb
+Checksums-Sha256:
+ 3dae8bfa7a31a3706e4bdaa5ec8c71d8e1cc56db4036068881e03a10dd53cc32 670860 ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb
+ ab0032a4865cf498c59df305cdf287e2bfb3458d0f2873ef91d1edf1a9a2f0f0 15994 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.buildinfo
+ 3b74f81d983e8c3e04a1228333695c01041c94c9f4c5ff0077f5ebd3e3034cf3 61560 ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb
+Files:
+ c14e15e330030bb2cd14e79eb6560e2c 670860 debug optional ros-one-resource-retriever-dbgsym_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb
+ 56027edfbd01b8bfaaab3fd12206fb57 15994 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.buildinfo
+ 99d0b4fdd2a198dc8f8a30ffbfb9e15d 61560 misc optional ros-one-resource-retriever_1.12.7-5-g40d08d6-2026.09.26.07.20_amd64.deb

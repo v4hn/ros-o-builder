@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 21 Jan 2019 00:00:00 -0000
+Source: ros-one-teleop-twist-joy
+Binary: ros-one-teleop-twist-joy ros-one-teleop-twist-joy-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.1.3-5-g4f61e6d-2026.09.26.14.23
+Distribution: bookworm
+Urgency: high
+Maintainer: Mike Purvis <mpurvis@clearpathrobotics.com>
+Changed-By: Mike Purvis <mpurvis@clearpathrobotics.com>
+Description:
+ ros-one-teleop-twist-joy - Generic joystick teleop for twist robots.
+Changes:
+ ros-one-teleop-twist-joy (0.1.3-5-g4f61e6d-2026.09.26.14.23) bookworm; urgency=high
+ .
+   * Use industrial ci
+   * Don't crash with invalid axes.
+   * Make sure to not crash when the Joy message buttons is too small.
+   * Don't get the axis twice.
+   * Add ROS Wiki link (#26 <https://github.com/ros-teleop/teleop_twist_joy/issues/26>)
+   * Contributors: Chris Lalancette, Julian Gaal, Rousseau Vincent, vincentrou
+Checksums-Sha1:
+ 258cd46e01fc537f50f364941a63afea50aa01fe 662224 ros-one-teleop-twist-joy-dbgsym_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb
+ 36cfff4824b58c7b11418840fc72f8cf25175958 13912 ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.buildinfo
+ d0830e3483e8015fe80517f94456256661b16549 43676 ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb
+Checksums-Sha256:
+ 426ee6e5d766fa8b4cb523dde7f98ec16d2d9c66d748d274145b04040d2497f5 662224 ros-one-teleop-twist-joy-dbgsym_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb
+ afaedfc6c18112f3187519f54af65e278e59ec5b4c0f6e1c16e8345c681d1b0e 13912 ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.buildinfo
+ eb0a642e8c7b31f23ea02546211c88e58db365a10c4afa1ea655d59a1f8f37f5 43676 ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb
+Files:
+ 8a6554642744b3804ccf8f8960bab0ab 662224 debug optional ros-one-teleop-twist-joy-dbgsym_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb
+ 7875d2fc2564632e89b0aab3dea0d100 13912 misc optional ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.buildinfo
+ 82e06f76ea494514e25524afdd2281e4 43676 misc optional ros-one-teleop-twist-joy_0.1.3-5-g4f61e6d-2026.09.26.14.23_amd64.deb

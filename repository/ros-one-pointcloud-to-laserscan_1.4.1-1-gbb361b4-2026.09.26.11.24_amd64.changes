@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 30 Aug 2019 00:00:00 -0000
+Source: ros-one-pointcloud-to-laserscan
+Binary: ros-one-pointcloud-to-laserscan ros-one-pointcloud-to-laserscan-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.4.1-1-gbb361b4-2026.09.26.11.24
+Distribution: bookworm
+Urgency: high
+Maintainer: Paul Bovbel <paul@bovbel.com>
+Changed-By: Paul Bovbel <paul@bovbel.com>
+Description:
+ ros-one-pointcloud-to-laserscan - Converts a 3D Point Cloud into a 2D laser scan.
+Changes:
+ ros-one-pointcloud-to-laserscan (1.4.1-1-gbb361b4-2026.09.26.11.24) bookworm; urgency=high
+ .
+   * LaserScan to PointCloud node + nodelet (#28 <https://github.com/ros-perception/pointcloud_to_laserscan/issues/28>)
+   * fix roslint (#29 <https://github.com/ros-perception/pointcloud_to_laserscan/issues/29>)
+   * Merge pull request #20 <https://github.com/ros-perception/pointcloud_to_laserscan/issues/20> from ros-perception/range_max_check
+     Add check for range_max
+   * Add check for range_max
+   * Contributors: Paul Bovbel, Rein Appeldoorn
+Checksums-Sha1:
+ 58aece8e12ee5341ff2809f9d51c944b407e19b8 3396400 ros-one-pointcloud-to-laserscan-dbgsym_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb
+ 4c5776d38f24b0b7d0fff0f4b4e483ac19f3eee6 18519 ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.buildinfo
+ db93e3e41313ceeba2016ff4d6896fb1d51c37d2 138580 ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb
+Checksums-Sha256:
+ 68586967507df38ce8b55162dda4de1149c7ab9a498d078d83c271f020cf1cc9 3396400 ros-one-pointcloud-to-laserscan-dbgsym_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb
+ f67652b8dfabf4d2a677c964ef317df8dbe212ad19d57e980cea7e4fb6194eda 18519 ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.buildinfo
+ 48ff491ab71353bac1e2a0217ee87f56fd34e8057c40c7e1f72c5114de66f0fc 138580 ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb
+Files:
+ e14c3498b9b530b88f878db3e14d1657 3396400 debug optional ros-one-pointcloud-to-laserscan-dbgsym_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb
+ 1372f9101e401aa05d3d066d1ef72dd9 18519 misc optional ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.buildinfo
+ 66659bcde2a52852a75a14ff9f26f5fe 138580 misc optional ros-one-pointcloud-to-laserscan_1.4.1-1-gbb361b4-2026.09.26.11.24_amd64.deb

@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 14 Sep 2026 00:00:00 -0000
+Source: ros-one-ur-client-library
+Binary: ros-one-ur-client-library ros-one-ur-client-library-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 2.15.2-25-g47b5f70-2026.09.26.06.14
+Distribution: bookworm
+Urgency: high
+Maintainer: Felix Exner <feex@universal-robots.com>
+Changed-By: Felix Exner <feex@universal-robots.com>
+Description:
+ ros-one-ur-client-library - Standalone C++ library for accessing Universal Robots interfaces.
+Changes:
+ ros-one-ur-client-library (2.15.2-25-g47b5f70-2026.09.26.06.14) bookworm; urgency=high
+ .
+   * Remove Symlink to UR5 programs as it was not needed and blocked the bloom release tool (#569 <https://github.com/UniversalRobots/Universal_Robots_Client_Library/issues/569>)
+   * Contributors: Felix Exner
+Checksums-Sha1:
+ ce3b06f0b08ba12bae643e3be3c703481610b158 10785328 ros-one-ur-client-library-dbgsym_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
+ 83e2ddbb776aa6deb473042cbc953844dd4641c8 6741 ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.buildinfo
+ 3a14f4d5b16d4eb6d2fd2b4e1aa9ade49ff3241d 665248 ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
+Checksums-Sha256:
+ 6228a10b2544962ddc006f79b21c888fd6554681900167fe8fb82ecbdc8bdb25 10785328 ros-one-ur-client-library-dbgsym_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
+ 07811e958b3fa7f9bd33199f8b69188abcf652d3af117682a83b2024c46cf498 6741 ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.buildinfo
+ 475b950d3d08968774fcfdbc0b9362e20e6dd2f68bfde57f12167c105121ecf9 665248 ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
+Files:
+ 3d4953d3b71593fd3268224f34452d33 10785328 debug optional ros-one-ur-client-library-dbgsym_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
+ 0b9446fa432623070dc745a3a8d8c95a 6741 misc optional ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.buildinfo
+ 47f16b571a65c11d023ffe36ebb7b85f 665248 misc optional ros-one-ur-client-library_2.15.2-25-g47b5f70-2026.09.26.06.14_amd64.deb
