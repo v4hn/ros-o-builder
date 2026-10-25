@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Wed, 15 Oct 2025 00:00:00 -0000
+Source: ros-one-rviz-marker-tools
+Binary: ros-one-rviz-marker-tools ros-one-rviz-marker-tools-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07
+Distribution: bookworm
+Urgency: high
+Maintainer: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Changed-By: Robert Haschke <rhaschke@techfak.uni-bielefeld.de>
+Description:
+ ros-one-rviz-marker-tools - Tools for marker creation / handling
+Changes:
+ ros-one-rviz-marker-tools (1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07) bookworm; urgency=high
+ .
+   * Increase minimum required CMake version to 3.16 supported by Ubuntu 20.04
+   * clang-tidy fixes: use uint8_t enums
+   * Ignore Debian-specific catkin_lint error around urdfdom_headers (#614 <https://github.com/moveit/moveit_task_constructor/issues/614>)
+   * clean up dependencies for rviz_marker_tools (#610 <https://github.com/moveit/moveit_task_constructor/issues/610>)
+   * rviz_marker_tools: add missing dependency on urdfdom
+   * rviz_marker_tools: drop rviz dependency
+   * Contributors: Michael Görner, Robert Haschke
+Checksums-Sha1:
+ acceb7c3979f4eaceab055197e92e48ff0f7823f 520556 ros-one-rviz-marker-tools-dbgsym_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb
+ d942698d5ff414bde0508f0c27b7b00149c5b1be 10925 ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.buildinfo
+ c5bdd0cf809668f4bcba4fda88cde90ab12cd25c 15640 ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb
+Checksums-Sha256:
+ 887aee0debc73a0a60eb4dcc2cc87dbad6b3600521f6d98f782f36b05a5b1ea5 520556 ros-one-rviz-marker-tools-dbgsym_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb
+ cbd4cc9c9442b349bd3537632ef8ec75db4a278ce802bf00fd561bafc741d64a 10925 ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.buildinfo
+ 4f34dedca6427514f0b00b7bd89973ed13f79cb895a12b7a18d35d4419bbc153 15640 ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb
+Files:
+ edf2f272692eccc0d7237aeb72371236 520556 debug optional ros-one-rviz-marker-tools-dbgsym_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb
+ 04dfa04a84300a8d6ab8a5fbb6e628ee 10925 misc optional ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.buildinfo
+ ed15f9fcbc20b25aa9e856aa6fb42bcb 15640 misc optional ros-one-rviz-marker-tools_1-0.1.4-16-g9d8d2dd6-2026.10.24.16.07_amd64.deb

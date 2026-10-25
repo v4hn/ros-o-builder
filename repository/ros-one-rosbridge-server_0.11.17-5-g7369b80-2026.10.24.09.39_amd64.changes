@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 10 Sep 2025 00:00:00 -0000
+Source: ros-one-rosbridge-server
+Binary: ros-one-rosbridge-server
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.11.17-5-g7369b80-2026.10.24.09.39
+Distribution: bookworm
+Urgency: high
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Changed-By: Russell Toris <rctoris@wpi.edu>
+Description:
+ ros-one-rosbridge-server - A WebSocket interface to rosbridge.
+Changes:
+ ros-one-rosbridge-server (0.11.17-5-g7369b80-2026.10.24.09.39) bookworm; urgency=high
+ .
+   * Fix IP binding of rosbridge_server (#1047 <https://github.com/RobotWebTools/rosbridge_suite/issues/1047>)
+   * Catch race condition if websocket is closed while messages are in queue (#1004 <https://github.com/RobotWebTools/rosbridge_suite/issues/1004>)
+   * Contributors: Johnson Lee, jobafr
+Checksums-Sha1:
+ 190e90e5b56527fcc54419ff48642a0c45cfe36e 7443 ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.buildinfo
+ 4ff1b4edd8742d0b826522921ab73d9e37e68030 40748 ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.deb
+Checksums-Sha256:
+ 84ad6cb50cf25b2fe465aab9ca66560117859d12a9b38a616c216a504ad9c8d3 7443 ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.buildinfo
+ 060d43f3c5db554ae9a9e5d95de1bff0c9470d4fb346e08cbc5277fb128c7e62 40748 ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.deb
+Files:
+ bef130d3113ca5d328a178c0d5e7d543 7443 misc optional ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.buildinfo
+ d4166400b5280d414c157b0e398cb5c8 40748 misc optional ros-one-rosbridge-server_0.11.17-5-g7369b80-2026.10.24.09.39_amd64.deb

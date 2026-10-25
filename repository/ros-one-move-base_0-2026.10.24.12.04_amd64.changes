@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 10 Jan 2023 00:00:00 -0000
+Source: ros-one-move-base
+Binary: ros-one-move-base ros-one-move-base-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0-2026.10.24.12.04
+Distribution: bookworm
+Urgency: high
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Changed-By: David V. Lu!! <davidvlu@gmail.com>
+Description:
+ ros-one-move-base - The move_base package provides an implementation of an action (se
+Changes:
+ ros-one-move-base (0-2026.10.24.12.04) bookworm; urgency=high
+ .
+   * [ROS-O] various patches (#1225 <https://github.com/ros-planning/navigation/issues/1225>)
+     * do not specify obsolete c++11 standard
+     this breaks with current versions of log4cxx.
+     * update pluginlib include paths
+     the non-hpp headers have been deprecated since kinetic
+     * use lambdas in favor of boost::bind
+     Using boost's _1 as a global system is deprecated since C++11.
+     The ROS packages in Debian removed the implicit support for the global symbols,
+     so this code fails to compile there without the patch.
+   * Contributors: Michael Görner
+Checksums-Sha1:
+ 7310a8683ef0198822b445d597d1f6f624da8d10 3143712 ros-one-move-base-dbgsym_0-2026.10.24.12.04_amd64.deb
+ db815c8414807f5f00716b8726e50dcd0033321c 18689 ros-one-move-base_0-2026.10.24.12.04_amd64.buildinfo
+ b0ea93c4a863bcca807b7e7ff025ad565f0aa6e3 236096 ros-one-move-base_0-2026.10.24.12.04_amd64.deb
+Checksums-Sha256:
+ 42760f175d844b787faf676e66d971fd46d8b584d5582d4dbe4f21bfe422c296 3143712 ros-one-move-base-dbgsym_0-2026.10.24.12.04_amd64.deb
+ 13dcec5b7300497a22ce3da9f1e04a5365d9f9dec0e2313eb0a805929cddf8a6 18689 ros-one-move-base_0-2026.10.24.12.04_amd64.buildinfo
+ 96f857f41df73c3a0cd250c3b02ee5e329126036ebdf243077627746bd11c608 236096 ros-one-move-base_0-2026.10.24.12.04_amd64.deb
+Files:
+ f6a1d2610d28db08b59412f73e5f7fe6 3143712 debug optional ros-one-move-base-dbgsym_0-2026.10.24.12.04_amd64.deb
+ 49ca36aaf4c71cc740f3aa39d66975ec 18689 misc optional ros-one-move-base_0-2026.10.24.12.04_amd64.buildinfo
+ ae55909b55237651b7e109f75e11a1ac 236096 misc optional ros-one-move-base_0-2026.10.24.12.04_amd64.deb

@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Tue, 21 Apr 2015 00:00:00 -0000
+Source: ros-one-serial
+Binary: ros-one-serial ros-one-serial-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 1.2.1-41-g69e0372-2026.10.24.05.56
+Distribution: bookworm
+Urgency: high
+Maintainer: William Woodall <william@osrfoundation.org>
+Changed-By: William Woodall <william@osrfoundation.org>
+Description:
+ ros-one-serial - Serial is a cross-platform, simple to use library for using seria
+Changes:
+ ros-one-serial (1.2.1-41-g69e0372-2026.10.24.05.56) bookworm; urgency=high
+ .
+   * Removed the use of a C++11 feature for compatibility with older browsers.
+   * Fixed an issue with cross compiling with mingw on Windows.
+   * Restructured Visual Studio project layout.
+   * Added include of ``#include <AvailabilityMacros.h>`` on OS X (listing of ports).
+   * Fixed MXE for the listing of ports on Windows.
+   * Now closes file device if ``reconfigureDevice`` fails (Windows).
+   * Added the MARK/SPACE parity bit option, also made it optional.
+     Adding the enumeration values for MARK and SPACE was the only code change to an API header.
+     It should not affect ABI or API.
+   * Added support for 576000 baud on Linux.
+   * Now releases iterator properly in listing of ports code for OS X.
+   * Fixed the ability to open COM ports over COM10 on Windows.
+   * Fixed up some documentation about exceptions in ``serial.h``.
+Checksums-Sha1:
+ a7d2b03da0935151633b343ec927d8b2d2770498 278296 ros-one-serial-dbgsym_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb
+ 87506bb18f1310fc64e7d9f5572a93bae3b77ccc 7775 ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.buildinfo
+ 8e1194459efa002cec2749fc51fcaf5edc0a5d86 40200 ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb
+Checksums-Sha256:
+ 4c97620926360bad24c70559f5407b5817783844102110903104f769babcfedf 278296 ros-one-serial-dbgsym_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb
+ af2d6c0d4ebcdb54e87d90b7c23841507002f530d9e4bef07e39dba69cf14d18 7775 ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.buildinfo
+ ab3274e36e992b776215aa0604adace85782bfe5d9c81998dcace6170c54f1a2 40200 ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb
+Files:
+ 8b5588e102b15155e725ce3cebd5ad74 278296 debug optional ros-one-serial-dbgsym_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb
+ 5eb40e470a3b138c046f386c1ebab35f 7775 misc optional ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.buildinfo
+ 3e0901181284cdee4dd4699febb46414 40200 misc optional ros-one-serial_1.2.1-41-g69e0372-2026.10.24.05.56_amd64.deb

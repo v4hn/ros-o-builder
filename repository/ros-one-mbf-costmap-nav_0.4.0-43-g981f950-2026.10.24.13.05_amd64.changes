@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 26 Oct 2021 00:00:00 -0000
+Source: ros-one-mbf-costmap-nav
+Binary: ros-one-mbf-costmap-nav ros-one-mbf-costmap-nav-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.4.0-43-g981f950-2026.10.24.13.05
+Distribution: bookworm
+Urgency: high
+Maintainer: Sebastian Pütz <spuetz@uos.de>
+Changed-By: Sebastian Pütz <spuetz@uos.de>
+Description:
+ ros-one-mbf-costmap-nav - The mbf_costmap_nav package contains the costmap navigation serve
+Changes:
+ ros-one-mbf-costmap-nav (0.4.0-43-g981f950-2026.10.24.13.05) bookworm; urgency=high
+ .
+   * make the costmaps used for planning and controlling configurable, see #278
+   * return empty footprint if partly outside of the map, see #272
+   * add tf_transform_ptr to the abstract planner execution, see #256
+   * transform pose to global frame before calling planner in costmap planner execution, see #256
+Checksums-Sha1:
+ f693b5f6a61d24ee00c3fa18787acaf7464eec00 6826464 ros-one-mbf-costmap-nav-dbgsym_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb
+ bc9d08ef93c027a697bc8e2e9b1929df92b99ca2 18862 ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.buildinfo
+ 5d1271abb2ffa08f104eb13292ccc300b90dc3d7 258192 ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb
+Checksums-Sha256:
+ 1c36ccc5d1d911ef28ba817fb8a8ca84494fabed01dca08f92cf19f71b9eb9a3 6826464 ros-one-mbf-costmap-nav-dbgsym_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb
+ 8814069cf610823c40838b67cdb9c6b04b9e3511d3eda1f3fe8d970fb45f56b9 18862 ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.buildinfo
+ f8413074b4e729eb6565eec0c8565296eb10db64084355a5eca2c32a67b01d30 258192 ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb
+Files:
+ 9f9a827685b3f39e15c2a502fa5bcf6e 6826464 debug optional ros-one-mbf-costmap-nav-dbgsym_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb
+ 26f4fae99b6a18941ec480193a19026a 18862 misc optional ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.buildinfo
+ 4e0f3674544edc09ba02a16c719de4f7 258192 misc optional ros-one-mbf-costmap-nav_0.4.0-43-g981f950-2026.10.24.13.05_amd64.deb

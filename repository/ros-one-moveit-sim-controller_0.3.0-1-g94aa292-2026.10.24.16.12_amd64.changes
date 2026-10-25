@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 26 Oct 2021 00:00:00 -0000
+Source: ros-one-moveit-sim-controller
+Binary: ros-one-moveit-sim-controller ros-one-moveit-sim-controller-dbgsym
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.3.0-1-g94aa292-2026.10.24.16.12
+Distribution: bookworm
+Urgency: high
+Maintainer: Dave Coleman <davetcoleman@gmail.com>
+Changed-By: Dave Coleman <davetcoleman@gmail.com>
+Description:
+ ros-one-moveit-sim-controller - A simulation interface for a hardware interface for ros_control,
+Changes:
+ ros-one-moveit-sim-controller (0.3.0-1-g94aa292-2026.10.24.16.12) bookworm; urgency=high
+ .
+   * Fix shared pointer conversion bug (#9 <https://github.com/PickNikRobotics/moveit_sim_controller/issues/9>)
+   * Fixup SFINAE detection of boilerplate API (#6 <https://github.com/PickNikRobotics/moveit_sim_controller/issues/6>)
+   * Cleanup & Fix main executable (#4 <https://github.com/PickNikRobotics/moveit_sim_controller/issues/4>)
+     * if the pose does not exist, still initialize joints Otherwise this warning should be fatal...
+     * conditionally call loop only when available
+   * Contributors: Dave Coleman, Henning Kayser, Jafar Abdi, Michael Görner, Rick Staa
+Checksums-Sha1:
+ b4784aabb3df535e1f0609be423af8349eb42634 3567496 ros-one-moveit-sim-controller-dbgsym_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb
+ 89466c8a3be1258c2623a9da14dd455f59b6889f 23700 ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.buildinfo
+ 6e1ce988980fa964fd4e1a24019e522967906210 60944 ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb
+Checksums-Sha256:
+ 4c071b577253b418fc8d0432018bb1e314911b15a5a5ec42858fbf16c244fc21 3567496 ros-one-moveit-sim-controller-dbgsym_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb
+ 5d1f980de5b66fb212b407296ea3be3a4b01d0c680960ff083c60a6ef7b6607d 23700 ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.buildinfo
+ 3cf7575992853dfc6d95a617f19d732d4ffb27ec70ac3ff444947100ead400d9 60944 ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb
+Files:
+ 545c511b9e4d6260a581448a868e6bb4 3567496 debug optional ros-one-moveit-sim-controller-dbgsym_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb
+ 5de8fe8d4094e75078058c10e955a7b6 23700 misc optional ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.buildinfo
+ 2ffd6897c742d05e1f916b7569e23bbb 60944 misc optional ros-one-moveit-sim-controller_0.3.0-1-g94aa292-2026.10.24.16.12_amd64.deb

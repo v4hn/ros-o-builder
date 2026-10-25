@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 18 Mar 2024 00:00:00 -0000
+Source: ros-one-husky-control
+Binary: ros-one-husky-control
+Built-For-Profiles: nocheck
+Architecture: amd64
+Version: 0.6.10-3-g41e15d2-2026.10.24.17.05
+Distribution: bookworm
+Urgency: high
+Maintainer: Tony Baltovski <tbaltovski@clearpathrobotics.com>
+Changed-By: Tony Baltovski <tbaltovski@clearpathrobotics.com>
+Description:
+ ros-one-husky-control - Clearpath Husky controller configurations
+Changes:
+ ros-one-husky-control (0.6.10-3-g41e15d2-2026.10.24.17.05) bookworm; urgency=high
+ .
+   * Mod: Set 'publish_cmd' param to true in husky_control/config
+     - With this change the diff drive controller will output the final cmd_vel to /husky_velocity_controller/cmd_vel_out after any filters are applied (e.g., speed/acceleration limits).
+   * Contributors: Stephen Phillips
+Checksums-Sha1:
+ 96a0d8e9f8b9dea590661fbed2e781ed94976be0 11709 ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.buildinfo
+ fb8c537d131d755db974c79749b98c4b0c1f155b 13880 ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.deb
+Checksums-Sha256:
+ 96ea808539a5cbf187cdd78662ad1d0a8a7d09ea01110c03542d36f1cc7b7f4c 11709 ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.buildinfo
+ 7b871d62d65f94a6ed16e9d8edb8ca83d287a125b8212587d22295fa8fe5607f 13880 ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.deb
+Files:
+ c54bfa0cd91b94c5d77e9c8cd38bf754 11709 misc optional ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.buildinfo
+ e2f7e95837b6d6274e03d118474ccc73 13880 misc optional ros-one-husky-control_0.6.10-3-g41e15d2-2026.10.24.17.05_amd64.deb
